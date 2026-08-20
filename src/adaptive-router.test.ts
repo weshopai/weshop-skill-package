@@ -66,7 +66,7 @@ test("turns research and material ambiguity into explicit planning decisions", (
 test("accepts a first-party comic workflow as planning, character, page, and copy-repair nodes", () => {
   const comicSkills: RuntimeSkill[] = [
     { id: "plan-comic-storyboard", description: "Create a validated comic storyboard manifest." },
-    { id: "create-character", description: "Create an eight-image canonical-first character production pack." },
+    { id: "create-character", description: "Create one canonical character sheet with an optional confirmed seven-asset expansion." },
     { id: "render-comic-page", description: "Render one approved comic page." },
     { id: "add-speech-bubble", description: "Add exact dialogue to accepted artwork." }
   ];
@@ -84,7 +84,7 @@ test("accepts a first-party comic workflow as planning, character, page, and cop
     decision: "execute",
     steps: [
       { id: "storyboard", kind: "skill", skillId: "plan-comic-storyboard", objective: "Plan the exact two-page narrative", dependsOn: [], inputs: { story: "user.story" }, output: "validated comic manifest", selectionReason: "This Skill owns comic page and panel planning." },
-      { id: "hero", kind: "skill", skillId: "create-character", objective: "Create the recurring hero pack", dependsOn: ["storyboard"], inputs: { character: "storyboard.characters.hero" }, output: "eight-asset hero pack with canonical sheet", selectionReason: "This Skill owns canonical-first reusable identity and production assets." },
+      { id: "hero", kind: "skill", skillId: "create-character", objective: "Create and review the recurring hero anchor", dependsOn: ["storyboard"], inputs: { character: "storyboard.characters.hero" }, output: "accepted canonical hero sheet and optional confirmed expansion", selectionReason: "This Skill owns the reusable identity anchor and its post-QA expansion gate." },
       { id: "page-1", kind: "skill", skillId: "render-comic-page", objective: "Render page 1", dependsOn: ["storyboard", "hero"], inputs: { page: "storyboard.pages[0]", character: "hero.output" }, output: "accepted page 1", selectionReason: "This Skill owns one finished reference-aware comic page." },
       { id: "page-2", kind: "skill", skillId: "render-comic-page", objective: "Render page 2 with carried state", dependsOn: ["storyboard", "hero", "page-1"], inputs: { page: "storyboard.pages[1]", character: "hero.output", continuity: "page-1.output" }, output: "accepted page 2 artwork", selectionReason: "This Skill owns one page and can bind previous-page continuity." },
       { id: "page-2-copy", kind: "skill", skillId: "add-speech-bubble", objective: "Repair page 2 exact dialogue only if flagged", dependsOn: ["page-2"], inputs: { artwork: "page-2.output", copy: "storyboard.pages[1].dialogue" }, output: "page 2 with exact dialogue", selectionReason: "This Skill owns bubble placement and exact copy without redrawing accepted artwork." }
@@ -103,26 +103,26 @@ test("accepts a first-party comic workflow as planning, character, page, and cop
   assert.deepEqual(plan.steps[3].dependsOn, ["storyboard", "hero", "page-1"]);
 });
 
-test("accepts one create-character node that owns the canonical-first eight-task pack", () => {
+test("accepts one create-character node with a canonical QA and optional expansion gate", () => {
   const characterSkills: RuntimeSkill[] = [
-    { id: "create-character", description: "Create an eight-image canonical-first character production pack." }
+    { id: "create-character", description: "Create one canonical character sheet with an optional confirmed seven-asset expansion." }
   ];
   const characterPlan: AdaptiveRouteProposal = {
     intent: {
       raw: "Create a recurring manga hero and one finished key artwork for later pages.",
-      outcome: "One reusable eight-image hero production pack",
+      outcome: "One reviewed canonical hero identity with an optional production expansion",
       assets: [],
-      constraints: ["canonical sheet must finish first", "same face, hair, proportions, wardrobe, palette, and signature prop", "eight tasks with batch count one"],
-      deliverables: ["eight separate character images"],
+      constraints: ["canonical sheet must finish first", "ask before the seven derived tasks", "same face, hair, proportions, wardrobe, palette, and signature prop", "batch count one"],
+      deliverables: ["canonical sheet", "optional seven-asset expansion after confirmation"],
       requiresResearch: false,
       confidence: 0.96,
       ambiguities: []
     },
     decision: "execute",
     steps: [
-      { id: "character-pack", kind: "skill", skillId: "create-character", objective: "Create the canonical-first eight-task hero pack", dependsOn: [], inputs: { character: "user.brief" }, output: "eight separate character assets", selectionReason: "This Skill owns the canonical sheet and seven reference-bound derived assets." }
+      { id: "character-pack", kind: "skill", skillId: "create-character", objective: "Create and review the canonical hero, then offer the expansion", dependsOn: [], inputs: { character: "user.brief" }, output: "one canonical sheet and optional confirmed reference-bound assets", selectionReason: "This Skill owns the canonical identity, QA gate, and optional expansion." }
     ],
-    finalAcceptance: ["Exactly eight separate character images are returned.", "Tasks two through eight preserve the canonical identity and wardrobe invariants."]
+    finalAcceptance: ["One canonical sheet is returned before expansion approval.", "No derived task runs without confirmation.", "Any confirmed derived assets preserve the canonical identity and wardrobe invariants."]
   };
 
   const plan = validateAdaptiveRoute(characterPlan, characterSkills);

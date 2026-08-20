@@ -1,12 +1,20 @@
 # Handoff
 
+## 2026-08-20: character canonical QA and optional expansion gate
+
+- Changed `create-character` from an automatically planned eight-task pack to a two-phase workflow: submit one canonical sheet, inspect and show it, then ask whether the user wants the seven additional assets.
+- Tasks 2–8 are no longer authorized or submitted by default. After explicit post-QA confirmation, they form one seven-task expansion with `batchCount: 1` per task.
+- Added a hard reference preflight for confirmed expansion: extract one public canonical result URL and require the same URL in both `input.images` and `params.images` for every derived GPT Image request. A missing URL triggers read-only recovery through task 1's durable operation key and exact execution ID, result extraction, persistence, payload repair, and a repeated seven-request preflight; it never triggers task-1 regeneration.
+- Added `skills/create-character/references/canonical-sheet-prompt.md`, adapting the former Character Reference Sheet identity anchors and the user's first-party `Jason12196/Ai-Comic-Generator` character design Prompt into a WeShop-specific canonical sheet contract. It uses a front/side/genuine-rear turnaround, identity close-up, three expressions, construction/detail tiles, palette, consistent studio light, and a separate text invariant manifest.
+- Updated deterministic/adaptive Router contracts and tests for `runs: 1`, the post-QA confirmation gate, optional seven-task expansion, and structured dual-field reference binding. No paid generation was run. Changes remain uncommitted pending validation and explicit commit approval.
+
 ## 2026-08-20: merged eight-task character production workflow
 
 - Merged character reference creation into `create-character`; `character-reference-sheet` remains only as a backward-compatible redirect and must not submit an independent or ninth generation.
 - `create-character` now owns exactly eight atomic tasks: canonical multi-panel design sheet, full-body front, full-body back, head close-up, lighting study, final-look portrait, scene 1, and scene 2.
 - The canonical design sheet is submitted and visually accepted first. Its output is then bound through `images` into tasks 2–8 to preserve face, age, hair, proportions, wardrobe, palette, marks, and signature props.
 - Every task uses GPT Image 2 Medium/2K, its own stable operation key, and `batchCount: 1`; artistic style wording cannot switch the workflow to Midjourney's four-image response.
-- Updated deterministic and adaptive Router behavior so character-sheet and character-creation requests resolve to one `create-character` node with `runs: 8`, canonical-first execution, and pack-level acceptance. No paid generation was run. Changes were validated before migration to `weshopai/main`.
+- Updated deterministic and adaptive Router behavior so character-sheet and character-creation requests initially resolved to one `create-character` node with `runs: 8`; the later post-QA gate above supersedes automatic derived-task submission. No paid generation was run.
 
 ## 2026-08-20: MIT crawl intake batch 9 (rows 41–44)
 

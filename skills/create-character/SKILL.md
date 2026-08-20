@@ -1,6 +1,6 @@
 ---
 name: create-character
-description: "Create one complete original character production pack as eight separate reference-bound images: a canonical multi-panel design sheet first, then front, back, close-up, lighting study, final-look portrait, and two scene images. Use when creating a reusable hero or recurring character for comics, storyboards, images, or video; also owns requests previously phrased as character reference sheets. Do not use for game-role-specific NPC design, small avatars, fashion lookbooks, or changing an existing person's appearance."
+description: "Create an original reusable character through a canonical-first workflow. Generate and review one polished multi-panel character design sheet first; only after the user confirms expansion, create seven separate reference-bound assets for front, back, close-up, lighting, final look, and two scenes. Use for recurring characters in comics, storyboards, images, or video; also owns requests previously phrased as character reference sheets. Do not use for game-role-specific NPC design, small avatars, fashion lookbooks, or changing an existing person's appearance."
 ---
 # Create Character
 
@@ -17,7 +17,7 @@ description: "Create one complete original character production pack as eight se
 
 - Turns a brief or authorized identity reference into one reusable original character.
 - Establishes the character with one canonical multi-panel design sheet before any derived image is submitted.
-- Produces eight separate assets for identity, wardrobe, lighting, portrait, and scene continuity.
+- Produces one canonical identity asset by default, then offers seven identity-bound production assets as an optional confirmed expansion.
 - Replaces the former standalone `character-reference-sheet` generation workflow.
 
 ## How to use
@@ -37,11 +37,11 @@ Create a complete character pack for Lin, a tired 24-year-old night courier with
 3. If the user supplies an authorized identity reference, use it to establish the first canonical sheet. Never inherit an unrelated reference background, action, layout, or pose.
 4. Keep the same character and default wardrobe across all eight assets. Change only the task-owned property such as viewpoint, crop, lighting, portrait treatment, or scene.
 
-## Eight-run workflow
+## Two-phase workflow
 
-Plan exactly eight atomic image tasks. Persist one stable `operationKey` per task and use `batchCount: 1` for every submission.
+Plan up to eight atomic image tasks. Persist one stable `operationKey` per submitted task and use `batchCount: 1` for every submission. Do not treat the seven derived tasks as authorized merely because they are listed in the workflow.
 
-1. **Canonical character design sheet — submit first.** Create one intentional multi-panel sheet containing readable identity views, a useful expression set, wardrobe and signature-prop details, plus concise visual invariant callouts. Use a neutral production background. This output becomes the canonical identity reference for tasks 2–8.
+1. **Canonical character design sheet — the only default submission.** Read [references/canonical-sheet-prompt.md](references/canonical-sheet-prompt.md), compile its contract with the user's brief and authorized references, and create one polished multi-panel identity sheet. This output may become the canonical identity reference for tasks 2–8.
 2. **Full-body front view.** Neutral full-body front view with the complete canonical wardrobe and proportions visible.
 3. **Full-body rear view.** Genuine full-body back view showing the canonical hair, garment construction, accessories, and silhouette from behind.
 4. **Head close-up.** Head-and-shoulders identity close-up with a readable canonical face, apparent age, hairline, and distinctive marks.
@@ -50,9 +50,36 @@ Plan exactly eight atomic image tasks. Persist one stable `operationKey` per tas
 7. **Character scene 1.** Place the canonical character into the first supplied or story-derived environment with one observable action and intentional composition.
 8. **Character scene 2.** Place the same character into the second supplied or story-derived environment with a distinct story beat and composition.
 
-Submit task 1 alone and poll it to terminal success. Visually accept its originality, identity coherence, anatomy, panel usefulness, expressions, wardrobe, props, and invariant readability before submitting any later task. Bind the accepted task-1 image in the `images` field of every task 2–8 request. The brief remains authoritative where small rendered callout text is imperfect.
+Submit task 1 alone and poll it to terminal success. Visually inspect originality, identity coherence, anatomy, turnaround accuracy, expression consistency, wardrobe construction, material logic, palette, props, and panel usefulness. Return the canonical sheet, the inspection result, and a concise text invariant manifest to the user.
 
-After task 1 is accepted, tasks 2–8 are independent planned slots and may execute separately when their briefs fully define continuity. Sequence scene 2 after scene 1 only when scene 2 depends on scene 1's visible state. Never submit tasks 2–8 before the canonical reference exists merely to reduce latency.
+Then stop at a user confirmation gate. Ask whether tasks 2–8 are needed, naming the seven deliverables and their additional generation cost. Do not prepare submission receipts, reserve operation keys, or submit any derived task until the user explicitly confirms the expansion after seeing task 1.
+
+If the user confirms, extract exactly one reusable public image URL from the accepted task-1 result and store it as `canonicalImageUrl`. Build all seven derived requests before submission and assert that every request contains the exact same non-empty reference binding:
+
+```json
+{
+  "input": { "images": ["<canonicalImageUrl>"] },
+  "params": {
+    "images": ["<canonicalImageUrl>"],
+    "textDescription": "<task-specific prompt>",
+    "quality": "medium",
+    "imageSize": "2K",
+    "batchCount": 1
+  }
+}
+```
+
+Use both documented GPT Image reference locations so native and fallback execution surfaces preserve the binding. If `canonicalImageUrl` is missing, non-public, or malformed, do not merely stop and do not regenerate task 1. Recover the accepted task-1 result:
+
+1. Read the durable task-1 ledger entry by its existing `operationKey` and recover its `executionId`.
+2. Poll or query that exact `executionId` again and require its recorded terminal status to be Success.
+3. Extract the first valid public image URL from `data.executions[*].result[*].image`; if the harness stored a normalized task-1 result or callback, reconcile it against the same execution ID and use that URL.
+4. Persist the recovered URL back onto the task-1 record as `canonicalImageUrl`, then rebuild all seven payloads.
+5. Verify that both `input.images[0]` and `params.images[0]` equal the recovered URL for every request before submitting the expansion.
+
+A missing Canvas item, missing local download, empty material search, or delayed publication is not a missing generation result; recover from the accepted WeShop execution first. If the exact task-1 execution is terminal Success but repeated read-only reconciliation still returns no valid image URL, report a blocked reference-recovery state and keep tasks 2–8 unsubmitted. Never create another task-1 run merely to obtain the URL.
+
+If either reference field is absent from a prepared derived request, repair that payload from the persisted `canonicalImageUrl` and rerun the complete seven-request preflight. Once all seven payloads pass, submit them as one confirmed expansion batch of seven independent tasks. Sequence scene 2 only when it depends on scene 1's visible state; otherwise the seven tasks may be submitted together.
 
 ## Route and execution
 
@@ -60,15 +87,15 @@ Use `gpt-image` v1.0 / GPT Image 2 for all eight tasks with one complete `textDe
 
 - Default the canonical sheet and lighting study to a layout-capable ratio selected for readable panels; default the front, back, close-up, final-look portrait, and scene images to `3:4` unless the user requests another supported ratio.
 - Do not route any task to Midjourney merely because the user requests manga, anime, comic, concept-art, or another artistic style. Midjourney's four-image response violates the one-result-per-task contract.
-- Require a non-empty `executionId` for every accepted submission and poll that exact run to terminal state.
+- Require a non-empty `executionId` for every accepted submission and poll that exact run to terminal state. The task-1 receipt never authorizes tasks 2–8.
 - An unknown create outcome freezes only that task. Reconcile its existing `operationKey`; never submit a replacement blindly.
 - A known terminal or visual failure may replace only the failed slot with a new linked operation key and a materially revised request. Never regenerate accepted slots or increase the eight-task plan.
 
 ## Acceptance
 
-Apply one final pack gate after task 8 while preserving the task-1 canonical identity between runs:
+Apply a task-1 gate before asking for expansion. If expansion is confirmed, apply one final pack gate after task 8 while preserving the task-1 canonical identity between runs:
 
-- Exactly eight separate image assets exist, one per named task; no task returns an unrequested four-image batch.
+- Without expansion approval, exactly one canonical sheet exists and no derived tasks were submitted. With approval, exactly eight separate image assets exist, one per named task; no task returns an unrequested four-image batch.
 - Tasks 2–8 visibly preserve the canonical face, age, hair, proportions, wardrobe construction, palette, marks, and signature props.
 - Front and rear views are genuine opposing views; the close-up clearly establishes identity.
 - Lighting changes illumination rather than character design.
@@ -80,7 +107,7 @@ Record each task name, reference bindings, parameters, exact Prompt, operation k
 ## User-facing output
 
 - Media type: Image pack
-- Default quantity: 8 separate images from 8 tasks; `batchCount: 1` for each task
+- Default quantity: 1 canonical sheet; optionally expand to 8 total separate images only after post-QA user confirmation; `batchCount: 1` for each submitted task
 - Content: Canonical design sheet, full-body front, full-body back, head close-up, lighting study, final-look portrait, scene 1, and scene 2
 - Default layout: One canonical multi-panel sheet plus seven separate task-specific images
 - Model policy: GPT Image 2 Medium/2K for all eight tasks

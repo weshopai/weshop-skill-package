@@ -19,25 +19,28 @@ export function route(request: RouteRequest & Pick<IntentCard, "raw" | "confiden
     if (request.requestedModel && request.requestedModel !== "gpt-image") throw new RouteError("Final Character Reference Sheets require GPT Image 2 Medium/2K.");
     const model = getModel("gpt-image");
     if (!model || model.media !== "image") throw new RouteError("Character reference sheets require an image model.");
-    return plan(request, 8, 1, {
+    return plan(request, 1, 1, {
       model,
       category: "workflow",
       workflow: {
         id: "create-character",
         version: "v1.0",
         steps: hasIdentityReference
-          ? ["bind the authorized identity reference and submit the canonical design sheet first", "accept the canonical sheet", "submit seven separate reference-bound character tasks", "apply one final eight-asset identity and wardrobe gate"]
-          : ["submit the canonical design sheet first", "accept the canonical sheet", "submit seven separate reference-bound character tasks", "apply one final eight-asset identity and wardrobe gate"]
+          ? ["bind the authorized identity reference and submit the canonical design sheet", "inspect the canonical sheet and return its invariant manifest", "ask whether the user wants the seven derived assets", "after explicit confirmation, preflight seven payloads with the canonical URL in input.images and params.images", "submit the confirmed seven-task expansion and apply one final identity gate"]
+          : ["submit the canonical design sheet", "inspect the canonical sheet and return its invariant manifest", "ask whether the user wants the seven derived assets", "after explicit confirmation, preflight seven payloads with the canonical URL in input.images and params.images", "submit the confirmed seven-task expansion and apply one final identity gate"]
       },
       params: {
         imageSize: "2K",
         quality: "medium",
         batchCount: 1,
-        executionOrder: "canonical-first-then-derived",
-        tasks: ["canonical-design-sheet", "full-body-front", "full-body-back", "head-close-up", "lighting-study", "final-look-portrait", "scene-1", "scene-2"],
-        canonicalReferenceBinding: "bind the accepted canonical-design-sheet output into images for tasks 2-8"
+        executionOrder: "canonical-qa-confirmation-gate-then-optional-seven-task-expansion",
+        defaultTasks: ["canonical-design-sheet"],
+        optionalConfirmedTasks: ["full-body-front", "full-body-back", "head-close-up", "lighting-study", "final-look-portrait", "scene-1", "scene-2"],
+        expansionRequiresPostQaUserConfirmation: true,
+        canonicalReferenceBinding: { source: "canonical-design-sheet.result.image", requiredIn: ["input.images", "params.images"], appliesTo: "all optional confirmed tasks" },
+        canonicalReferenceRecovery: { lookup: "task-1 operationKey then exact executionId", extract: "data.executions[*].result[*].image", persistAs: "canonicalImageUrl", repairPayloads: true, regenerateTask1: false, derivedSubmissionBeforeRecovery: false }
       },
-      acceptance: ["Return exactly 8 separate image files from 8 atomic tasks.", "Every task uses batchCount 1.", "The canonical design sheet completes and is accepted before tasks 2-8 are submitted.", "Tasks 2-8 preserve the canonical face, age, hair, proportions, wardrobe, palette, marks, and signature props."]
+      acceptance: ["Return exactly 1 canonical sheet before the confirmation gate.", "Do not submit the seven derived tasks without explicit post-QA user confirmation.", "Every submitted task uses batchCount 1.", "Recover a missing canonical URL from the original accepted operationKey and executionId; never regenerate task 1 for retrieval.", "If expansion is confirmed, every derived request includes the same canonical URL in input.images and params.images.", "Derived assets preserve the canonical face, age, hair, proportions, wardrobe, palette, marks, and signature props."]
     });
   }
   if (request.operation === "make-mugshot-photo") {

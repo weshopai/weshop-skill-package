@@ -39,7 +39,7 @@ One node may satisfy several user phrases when one Skill explicitly owns the com
 
 ### Comic workflow example
 
-For a story-to-comic request, use `$plan-comic-storyboard` to produce the validated project manifest. Create only missing character packs with `$create-character`; inside that Atom, submit and accept the canonical design sheet first, then bind it into seven separate derived tasks, always with `batchCount: 1`. Invoke `$render-comic-page` once per approved page and bind the accepted canonical sheet plus the manifest's style and character IDs into every page node. Bind a preceding accepted page only when its visible state is needed for continuity. If exact dialogue alone fails on an otherwise accepted page, use `$add-speech-bubble` downstream instead of regenerating the story, character assets, or accepted artwork.
+For a story-to-comic request, use `$plan-comic-storyboard` to produce the validated project manifest. Create only missing canonical identities with `$create-character`. Inside that Atom, submit and inspect one canonical design sheet, then ask whether the seven additional character assets are needed; do not submit the expansion without post-QA confirmation. The canonical sheet alone is sufficient to continue into `$render-comic-page` when accepted. Bind that sheet plus the manifest's style and character IDs into every page node. Bind a preceding accepted page only when its visible state is needed for continuity. If exact dialogue alone fails on an otherwise accepted page, use `$add-speech-bubble` downstream instead of regenerating the story, character assets, or accepted artwork.
 
 ## Research
 

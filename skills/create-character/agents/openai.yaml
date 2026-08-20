@@ -1,3 +1,3 @@
 interface:
   display_name: "Create Character"
-  short_description: "Create an eight-image canonical character pack"
+  short_description: "Create one canonical character sheet, then optionally expand"

@@ -7,11 +7,11 @@
 </p>
 
 <p align="center">
-  <img alt="74 Skills" src="https://img.shields.io/badge/Skills-74-111111?style=flat-square" />
-  <img alt="Codex" src="https://img.shields.io/badge/Codex-ready-111111?style=flat-square" />
-  <img alt="Claude Code" src="https://img.shields.io/badge/Claude_Code-ready-111111?style=flat-square" />
-  <img alt="Cursor" src="https://img.shields.io/badge/Cursor-ready-111111?style=flat-square" />
-  <img alt="MIT License" src="https://img.shields.io/badge/License-MIT-111111?style=flat-square" />
+  <img alt="74 Skills" src="https://img.shields.io/badge/Skills-74-7530FE?style=flat-square" />
+  <img alt="Codex" src="https://img.shields.io/badge/Codex-ready-10A37F?style=flat-square" />
+  <img alt="Claude Code" src="https://img.shields.io/badge/Claude_Code-ready-D97757?style=flat-square" />
+  <img alt="Cursor" src="https://img.shields.io/badge/Cursor-ready-2563EB?style=flat-square" />
+  <img alt="MIT License" src="https://img.shields.io/badge/License-MIT-F2C94C?style=flat-square" />
 </p>
 
 WeShop Skills turns plain-language creative requests into production-ready image, video, product, portrait, layout, and spatial workflows powered by WeShop OpenAPI. Install the complete collection or pick only the Skills you need.

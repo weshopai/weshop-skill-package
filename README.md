@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img alt="74 Skills" src="https://img.shields.io/badge/Skills-74-7530FE?style=flat-square" />
+  <img alt="77 Skills" src="https://img.shields.io/badge/Skills-77-7530FE?style=flat-square" />
   <img alt="Codex" src="https://img.shields.io/badge/Codex-ready-10A37F?style=flat-square" />
   <img alt="Claude Code" src="https://img.shields.io/badge/Claude_Code-ready-D97757?style=flat-square" />
   <img alt="Cursor" src="https://img.shields.io/badge/Cursor-ready-2563EB?style=flat-square" />

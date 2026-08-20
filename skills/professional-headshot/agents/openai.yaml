@@ -1,0 +1,4 @@
+interface:
+  display_name: "Professional Headshot"
+  short_description: "Create one polished identity-faithful headshot"
+  default_prompt: "Use $professional-headshot to research the channel and create a properly posed, lit, and framed professional portrait."

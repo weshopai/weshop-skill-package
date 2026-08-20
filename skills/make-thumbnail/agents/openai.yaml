@@ -1,0 +1,4 @@
+interface:
+  display_name: "Make Thumbnail"
+  short_description: "Create a current platform-aware thumbnail"
+  default_prompt: "Use $make-thumbnail to check the platform requirements and create one thumbnail."

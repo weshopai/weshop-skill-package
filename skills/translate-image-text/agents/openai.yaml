@@ -1,0 +1,4 @@
+interface:
+  display_name: "Translate Image Text"
+  short_description: "Translate image copy in its original layout"
+  default_prompt: "Use $translate-image-text to translate the visible text accurately and preserve the image layout."

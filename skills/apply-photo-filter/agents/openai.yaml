@@ -1,0 +1,4 @@
+interface:
+  display_name: "Apply Photo Filter"
+  short_description: "Apply one controlled photographic treatment"
+  default_prompt: "Use $apply-photo-filter to apply the requested photographic filter without changing content."

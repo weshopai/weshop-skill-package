@@ -1,0 +1,4 @@
+interface:
+  display_name: "Photo Collage"
+  short_description: "Arrange original photos into one intentional collage"
+  default_prompt: "Use $photo-collage to arrange these photos into one intentional collage."

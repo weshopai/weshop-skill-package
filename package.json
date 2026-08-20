@@ -1,0 +1,26 @@
+{
+  "name": "@jason12196/weshop-skill-package",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Package-first WeShop router, model catalog, and skill foundation.",
+  "type": "module",
+  "bin": { "weshop-skill": "./dist/bin.js" },
+  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node scripts/make-cli-executable.mjs",
+    "check": "tsc --noEmit",
+    "test": "npm run build && node --test dist/**/*.test.js",
+    "models:validate": "node scripts/validate-model-catalog.mjs",
+    "models:routing-validate": "node scripts/validate-model-routing.mjs",
+    "api-key:check": "node scripts/check-api-key.mjs",
+    "cli": "npm run build --silent && node dist/bin.js",
+    "prepare": "npm run build",
+    "skills:manage": "node scripts/manage-skills.mjs",
+    "skills:intake": "node scripts/create-skill-intake.mjs",
+    "docs:validate": "node scripts/validate-readme.mjs",
+    "maintainers:validate": "node scripts/validate-maintainer-docs.mjs",
+    "web:dev": "npm --prefix web run dev",
+    "web:build": "npm --prefix web run build"
+  },
+  "devDependencies": { "@types/node": "^22.15.3", "typescript": "^5.8.3" }
+}

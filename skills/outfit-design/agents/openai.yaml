@@ -1,0 +1,4 @@
+interface:
+  display_name: "Outfit Design"
+  short_description: "Invent or redesign a complete outfit"
+  default_prompt: "Use $outfit-design to redesign this person’s outfit while preserving their identity, body, pose, and background."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Add Tattoo"
+  short_description: "Preview one tattoo on visible skin"
+  default_prompt: "Use $add-tattoo to place a small botanical tattoo on the forearm."

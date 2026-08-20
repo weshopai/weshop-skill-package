@@ -1,0 +1,4 @@
+interface:
+  display_name: "Smooth Wrinkles"
+  short_description: "Reduce selected wrinkles without flattening texture"
+  default_prompt: "Use $smooth-wrinkles to reduce the specified skin or garment wrinkles naturally."

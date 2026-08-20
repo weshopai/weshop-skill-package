@@ -1,0 +1,4 @@
+interface:
+  display_name: "Remove Glasses"
+  short_description: "Remove eyewear and restore the natural eye area"
+  default_prompt: "Use $remove-glasses to remove these glasses while preserving the person's identity."

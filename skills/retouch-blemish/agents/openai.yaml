@@ -1,0 +1,4 @@
+interface:
+  display_name: "Retouch Blemish"
+  short_description: "Remove temporary blemishes while preserving skin"
+  default_prompt: "Use $retouch-blemish to remove only the specified temporary blemishes from this portrait."

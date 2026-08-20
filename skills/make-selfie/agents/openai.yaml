@@ -1,0 +1,4 @@
+interface:
+  display_name: "Make Selfie"
+  short_description: "Turn one or two everyday photos into a selfie"
+  default_prompt: "Use $make-selfie to turn these two authorized person photos into one realistic cafe selfie."

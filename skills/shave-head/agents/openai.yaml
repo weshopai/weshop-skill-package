@@ -1,0 +1,4 @@
+interface:
+  display_name: "Shave Head"
+  short_description: "Preview a natural shaved or bald appearance"
+  default_prompt: "Use $shave-head to show this person with a clean shaved head."

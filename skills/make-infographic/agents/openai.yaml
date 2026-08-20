@@ -1,0 +1,4 @@
+interface:
+  display_name: "Make Infographic"
+  short_description: "Research and create a sourced infographic"
+  default_prompt: "Use $make-infographic to research this topic and create one accurate infographic."

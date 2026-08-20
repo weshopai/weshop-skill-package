@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Detail Page"
+  short_description: "Build modular ecommerce detail-page image sets"
+  default_prompt: "Use $product-detail-page to research my target marketplace and create a modular product detail page from these product assets."

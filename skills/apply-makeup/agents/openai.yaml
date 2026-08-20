@@ -1,0 +1,4 @@
+interface:
+  display_name: "Apply Makeup"
+  short_description: "Preview one makeup look without changing identity"
+  default_prompt: "Use $apply-makeup to apply a natural editorial makeup look."

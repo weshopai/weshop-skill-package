@@ -1,0 +1,4 @@
+interface:
+  display_name: "Colorize Image"
+  short_description: "Add plausible color to a grayscale photograph"
+  default_prompt: "Use $colorize-image to colorize this grayscale image while preserving its content."

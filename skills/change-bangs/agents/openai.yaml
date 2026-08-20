@@ -1,0 +1,4 @@
+interface:
+  display_name: "Change Bangs"
+  short_description: "Preview one fringe style on a portrait"
+  default_prompt: "Use $change-bangs to add soft curtain bangs to this portrait."

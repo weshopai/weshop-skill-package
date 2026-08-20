@@ -1,0 +1,4 @@
+interface:
+  display_name: "ID Photo Format"
+  short_description: "Format one portrait to an exact ID-photo spec"
+  default_prompt: "Use $id-photo-format to research the named authority and prepare this portrait to its current crop, lighting, visibility, and file rules."

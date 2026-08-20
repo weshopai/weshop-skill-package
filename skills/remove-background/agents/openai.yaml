@@ -1,0 +1,4 @@
+interface:
+  display_name: "Remove Background"
+  short_description: "Create clean transparent PNG cutouts"
+  default_prompt: "Use $remove-background to remove this image background and return a clean transparent PNG."

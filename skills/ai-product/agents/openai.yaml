@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Product"
+  short_description: "Place a real product into a new commercial scene"
+  default_prompt: "Use $ai-product to place this supplied product into a new commercial scene while preserving the exact product."

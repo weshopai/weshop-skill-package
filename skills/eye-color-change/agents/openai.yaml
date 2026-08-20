@@ -1,0 +1,4 @@
+interface:
+  display_name: "Eye Color Change"
+  short_description: "Preview one iris color while preserving the eyes"
+  default_prompt: "Use $eye-color-change to preview natural hazel irises."

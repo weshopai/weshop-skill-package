@@ -1,0 +1,4 @@
+interface:
+  display_name: "Make Silhouette"
+  short_description: "Turn one subject into a clean silhouette"
+  default_prompt: "Use $make-silhouette to turn the named subject into a clean silhouette."

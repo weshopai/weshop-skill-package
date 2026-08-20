@@ -1,0 +1,4 @@
+interface:
+  display_name: "Compose Lookbook"
+  short_description: "Arrange outfit photos into one lookbook page"
+  default_prompt: "Use $compose-lookbook to arrange these outfit photos into one editorial lookbook page."

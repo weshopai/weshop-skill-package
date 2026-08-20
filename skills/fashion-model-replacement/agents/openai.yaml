@@ -1,0 +1,4 @@
+interface:
+  display_name: "Fashion Model Replacement"
+  short_description: "Replace a fashion model while preserving the outfit"
+  default_prompt: "Use $fashion-model-replacement to replace the model in this fashion image while keeping the outfit unchanged."

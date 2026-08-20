@@ -1,0 +1,4 @@
+interface:
+  display_name: "Change Pose"
+  short_description: "Change poses while preserving the person and full look"
+  default_prompt: "Use $change-pose to create new pose options for this dressed person while preserving their identity, outfit, and scene."

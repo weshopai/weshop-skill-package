@@ -1,0 +1,4 @@
+interface:
+  display_name: "Add Braces"
+  short_description: "Preview dental braces on a visible smile"
+  default_prompt: "Use $add-braces to add realistic silver braces to this smiling portrait."

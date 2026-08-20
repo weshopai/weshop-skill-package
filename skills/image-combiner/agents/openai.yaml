@@ -1,0 +1,4 @@
+interface:
+  display_name: "Image Combiner"
+  short_description: "Merge multiple images into one coherent scene"
+  default_prompt: "Use $image-combiner to merge these images into one coherent scene."

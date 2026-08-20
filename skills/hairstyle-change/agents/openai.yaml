@@ -1,0 +1,4 @@
+interface:
+  display_name: "Hairstyle Change"
+  short_description: "Preview one new hairstyle while preserving identity"
+  default_prompt: "Use $hairstyle-change to preview a chin-length bob on this portrait."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Packaging"
+  short_description: "Create structured packaging concept boards from references"
+  default_prompt: "Use $product-packaging to turn my product references into a clear packaging concept board."

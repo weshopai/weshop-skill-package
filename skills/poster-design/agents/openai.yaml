@@ -1,0 +1,4 @@
+interface:
+  display_name: "Poster Design"
+  short_description: "Create distinctive posters across varied art directions"
+  default_prompt: "Use $poster-design to create a distinctive poster from this brief."

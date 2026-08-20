@@ -1,0 +1,4 @@
+interface:
+  display_name: "Hair Color Change"
+  short_description: "Preview one new hair color while preserving identity"
+  default_prompt: "Use $hair-color-change to preview auburn hair on this portrait."

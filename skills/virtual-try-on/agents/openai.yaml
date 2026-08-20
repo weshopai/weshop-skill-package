@@ -1,0 +1,4 @@
+interface:
+  display_name: "Virtual Try-On"
+  short_description: "Try on or replace a garment with fidelity checks"
+  default_prompt: "Use $virtual-try-on to put this garment on the supplied model."

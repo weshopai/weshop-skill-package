@@ -1,0 +1,4 @@
+interface:
+  display_name: "White Background Product Mockup"
+  short_description: "Create faithful product, flat-lay, and ghost mockups"
+  default_prompt: "Use $create-white-background-product-mockup to create a product-faithful mockup from my description or reference image."

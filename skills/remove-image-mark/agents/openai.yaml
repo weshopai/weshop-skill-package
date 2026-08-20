@@ -1,0 +1,4 @@
+interface:
+  display_name: "Remove Image Mark"
+  short_description: "Remove an approved ordinary mark from an image"
+  default_prompt: "Use $remove-image-mark to remove the identified ordinary mark and rebuild the covered image."

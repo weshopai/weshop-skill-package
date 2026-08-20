@@ -1,0 +1,4 @@
+interface:
+  display_name: "Add Speech Bubble"
+  short_description: "Add exact speaker-bound dialogue bubbles"
+  default_prompt: "Use $add-speech-bubble to add these exact speech bubbles to the supplied image."

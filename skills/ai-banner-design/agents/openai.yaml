@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Banner Design"
+  short_description: "Research and design channel-ready commercial banners"
+  default_prompt: "Use $ai-banner-design to research the placement and create a commercial banner."

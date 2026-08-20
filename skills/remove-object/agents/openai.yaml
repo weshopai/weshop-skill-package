@@ -1,0 +1,4 @@
+interface:
+  display_name: "Remove Object"
+  short_description: "Remove one object and rebuild the hidden scene"
+  default_prompt: "Use $remove-object to remove the named object and preserve everything else."

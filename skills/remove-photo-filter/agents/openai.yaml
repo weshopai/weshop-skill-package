@@ -1,0 +1,4 @@
+interface:
+  display_name: "Remove Photo Filter"
+  short_description: "Restore a filtered image to a natural appearance"
+  default_prompt: "Use $remove-photo-filter to remove the artificial filter and restore a natural look."

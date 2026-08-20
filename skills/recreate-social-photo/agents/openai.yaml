@@ -1,0 +1,4 @@
+interface:
+  display_name: "Recreate Social Photo"
+  short_description: "Recreate a reference-led social photograph"
+  default_prompt: "Use $recreate-social-photo to recreate this everyday photo in the supplied social-photo reference style."

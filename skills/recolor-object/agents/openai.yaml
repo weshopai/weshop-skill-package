@@ -1,0 +1,4 @@
+interface:
+  display_name: "Recolor Object"
+  short_description: "Recolor one object and preserve its material"
+  default_prompt: "Use $recolor-object to change only the named object's color in this image."

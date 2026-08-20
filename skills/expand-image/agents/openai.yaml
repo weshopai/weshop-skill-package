@@ -1,0 +1,4 @@
+interface:
+  display_name: "Expand Image"
+  short_description: "Extend an image to a new aspect ratio without stretching it"
+  default_prompt: "Use $expand-image to extend this image to the requested aspect ratio while preserving the original content."

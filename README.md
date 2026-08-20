@@ -16,7 +16,7 @@
 
 WeShop Skills turns plain-language creative requests into production-ready image, video, product, portrait, layout, and spatial workflows powered by WeShop OpenAPI. Install the complete collection or pick only the Skills you need.
 
-> This repository contains **75 focused Atom Skills + 1 adaptive Router**. It also includes a standalone `weshop-skill` CLI, so the official WeShop CLI is not required.
+> This repository contains **76 focused Atom Skills + 1 adaptive Router**. It also includes a standalone `weshop-skill` CLI, so the official WeShop CLI is not required.
 
 ## 🚀 Install with one prompt
 
@@ -150,7 +150,7 @@ The Router discovers installed Skills from their descriptions, decomposes compou
 
 ## Complete Skill inventory 🧩
 
-The `skills/` directory contains 75 Atom Skills and one Router. Categories below are for browsing only and do not participate in hard-coded Router selection.
+The `skills/` directory contains 76 Atom Skills and one Router. Categories below are for browsing only and do not participate in hard-coded Router selection.
 
 | Category | Skills |
 | --- | --- |
@@ -160,7 +160,7 @@ The `skills/` directory contains 75 Atom Skills and one Router. Categories below
 | Personal appearance | `add-braces`, `add-tattoo`, `apply-makeup`, `change-bangs`, `eye-color-change`, `hair-color-change`, `hairstyle-change`, `make-selfie`, `shave-head` |
 | Portrait production | `id-photo-format`, `professional-headshot` |
 | Image repair and utilities | `clean-room`, `colorize-image`, `expand-image`, `remove-background`, `remove-glasses`, `remove-image-mark`, `remove-object`, `remove-photo-filter`, `retouch-blemish`, `smooth-wrinkles` |
-| Characters, animals, and brands | `character-reference-sheet`, `create-animal`, `create-avatar`, `create-character`, `create-flag`, `create-logo`, `create-npc`, `make-pet-portrait` |
+| Characters, animals, and brands | `character-reference-sheet`, `create-animal`, `create-avatar`, `create-character`, `create-flag`, `create-logo`, `create-mascot-logo`, `create-npc`, `make-pet-portrait` |
 | Narrative and comics | `plan-comic-storyboard`, `render-comic-page` |
 | Spaces, diagrams, and CAD | `create-cad`, `make-flowchart`, `preview-landscape`, `preview-paint`, `restyle-room`, `visualize-floor-plan` |
 | Video | `add-video-effect`, `animate-image`, `combine-videos`, `correct-video-color`, `edit-social-video`, `generate-video`, `make-podcast-video`, `make-talking-video`, `make-video-intro`, `remove-video-mark`, `restyle-video`, `upscale-video` |
@@ -225,7 +225,7 @@ Useful commands:
 | `npm run check` | Run TypeScript checks |
 | `npm test` | Test routing and execution safety |
 | `npm run models:validate` | Validate the model catalog |
-| `npm run models:routing-validate` | Validate model routes across all 75 Atom Skills |
+| `npm run models:routing-validate` | Validate model routes across all 76 Atom Skills |
 | `npm run docs:validate` | Validate this README and Skill inventory |
 | `npm run maintainers:validate` | Validate maintainer documentation |
 | `npm run web:build` | Build the generated visual Skill catalog |

@@ -9,6 +9,15 @@
 - Replaced provider-specific Gemini/Nano fallback behavior, automatic identical timeout retries, and unconditional page fan-out with the package's GPT Image 2 Medium/2K route, durable operation keys, terminal polling, continuity-aware sequencing, and page-scoped error-responsive recovery.
 - No paid image generation was run. Both new Skills, the enhanced character Skill, and the Router passed quick validation; `npm run check`, 73 tests including a five-node comic DAG dry run, model validators, docs validators, web build, install smoke tests, and `git diff --check` passed before the original commit and are rerun against this repository during the port.
 
+## 2026-08-20: `ip-as-logo` external Skill intake and adaptation
+
+- Tested `npm run skills:intake` against `s1dashu/ip-as-logo-skill` and pinned the review to commit `88031b38854ebbcc41eb71ab6b169e9b1772e4fb`.
+- Confirmed the upstream MIT license and reviewed `SKILL.md`, `README.md`, `LICENSE`, and the repository tree. No upstream code was executed and the showcase asset was not copied.
+- Promoted the useful behavior as a separate `create-mascot-logo` Atom instead of broadening `create-logo`: it owns three-direction discovery, separately labeled square candidates, a simple rounded silhouette contract, and a controlled color/background contract.
+- Replaced provider-agnostic generation and subagent fan-out with `gpt-image` v1.0 / GPT Image 2 Medium/2K, `batchCount: 1`, one stable operation key per candidate, terminal polling, visible acceptance reporting, and bounded replacement behavior.
+- Packaged upstream attribution and the complete MIT notice in the promoted Skill.
+- No paid representative image run was made; static Skill and repository validation remain the promotion evidence for this change.
+
 ## 2026-08-20: built-in WeShop CLI
 
 - Added the `weshop-skill` package command as a direct WeShop OpenAPI executor; the separate official `weshop-cli` package is not required.

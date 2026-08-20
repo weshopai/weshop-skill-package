@@ -37,6 +37,10 @@ Prefer several operation nodes when the request changes artifact responsibility,
 
 One node may satisfy several user phrases when one Skill explicitly owns the combined outcome. Conversely, do not force one broad Skill to own distinct outputs merely because it can technically generate them.
 
+### Comic workflow example
+
+For a story-to-comic request, use `$plan-comic-storyboard` to produce the validated project manifest. Create only missing canonical identities with `$character-reference-sheet`, then invoke `$render-comic-page` once per approved page. Bind the manifest's style and character IDs into every page node; bind a preceding accepted page only when its visible state is needed for continuity. If exact dialogue alone fails on an otherwise accepted page, use `$add-speech-bubble` downstream instead of regenerating the story, character sheets, or accepted artwork.
+
 ## Research
 
 Add a research node when current platform specifications, laws, market facts, competitor evidence, placement dimensions, or other unstable external facts affect downstream work. Bind its verified output into the consuming node. Research is not automatically required because the user used a marketplace name when the requested task does not depend on current specifications.

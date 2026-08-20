@@ -1,11 +1,11 @@
 ---
 name: character-reference-sheet
-description: Create a consistent multi-view cinematic character reference sheet from a brief or supplied identity reference. Use when downstream creation needs canonical front, back, close-up, wardrobe, and identity guidance; do not use for one standalone character image, a game-role-specific NPC, a small profile avatar, or a fashion lookbook.
+description: Create a consistent multi-view character reference sheet from a brief or supplied identity reference. Use when film, comic, storyboard, image, or video production needs canonical front, back, close-up, expression, wardrobe, and identity guidance; do not use for one standalone character image, a game-role-specific NPC, a small profile avatar, or a fashion lookbook.
 ---
 
 # Character Reference Sheet
 
-Use this workflow for character casting sheets, front/back views, close-up identity anchors, and reusable film character references.
+Use this workflow for character casting sheets, front/back views, close-up and expression identity anchors, and reusable film or comic character references.
 
 ## Catalog
 
@@ -22,6 +22,7 @@ Use this workflow for character casting sheets, front/back views, close-up ident
 - Plans the sheet around identity anchors: facial structure, age, body proportions, hair, wardrobe construction, materials, accessories, and distinctive marks.
 - Routes text-only creation to a layout-capable WeShop image model and reference-led work to a confirmed identity-aware editing model.
 - Produces an explicit front view, rear view, and close-up while keeping the character, costume, lighting, and photographic register consistent.
+- For comic production, adds three readable expressions and a concise invariant list without turning the sheet into a scene or comic page.
 - Evaluates the result against composition and continuity gates instead of accepting a visually attractive but unusable sheet.
 - Returns the generated asset together with the selected WeShop model and any fidelity limitations that downstream skills should preserve.
 
@@ -49,12 +50,18 @@ Use the attached image as the canonical identity reference. Create a film-ready 
 Turn this character concept into a reusable identity anchor for later storyboard and video generation. Prioritize a clearly readable face, distinctive wardrobe construction, neutral poses, and consistent studio light. Return the reference sheet plus a concise list of identity and wardrobe invariants that every downstream WeShop generation must preserve.
 ```
 
+#### Create a comic character anchor
+
+```text
+Create a comic-production character sheet for Lin, a tired 24-year-old night courier with a blunt black bob, amber raincoat, red parcel bag, and guarded expression. Include full-body front and back views, one face close-up, and calm, alarmed, and relieved expressions. Use a neutral studio background and return the exact face, hair, coat, bag, palette, and proportion invariants for later comic pages.
+```
+
 ## User-facing output
 
 - Media type: Image
 - Default quantity: Task-dependent; start with one canonical sheet and add separate views or variants when the brief requires them
-- Content per image: 3 views — full-body front, genuine full-body rear, and head-and-shoulders close-up
+- Content per image: Core 3 views — full-body front, genuine full-body rear, and head-and-shoulders close-up; add expression anchors when downstream continuity requires them
 - Default layout: A canonical sheet, separate view files, or both, selected from the requested downstream use
 - Video output: Optional downstream handoff; the core identity stage produces images
 - Model policy: GPT Image 2 Medium/2K for the final consistency-sensitive sheet; use Midjourney only for optional text-free artistic exploration before identity is fixed
-- Downstream use: Identity and wardrobe reference for storyboard, image, and video skills
+- Downstream use: Identity and wardrobe reference for comic-page, storyboard, image, and video skills

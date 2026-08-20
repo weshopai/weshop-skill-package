@@ -62,3 +62,43 @@ test("turns research and material ambiguity into explicit planning decisions", (
   const clarify = proposal({ decision: "clarify", clarification: "Which marketplace and locale should the final asset target?", steps: [] });
   assert.equal(validateAdaptiveRoute(clarify, skills).decision, "clarify");
 });
+
+test("accepts a first-party comic workflow as planning, character, page, and copy-repair nodes", () => {
+  const comicSkills: RuntimeSkill[] = [
+    { id: "plan-comic-storyboard", description: "Create a validated comic storyboard manifest." },
+    { id: "character-reference-sheet", description: "Create a canonical multi-view character identity." },
+    { id: "render-comic-page", description: "Render one approved comic page." },
+    { id: "add-speech-bubble", description: "Add exact dialogue to accepted artwork." }
+  ];
+  const comicPlan: AdaptiveRouteProposal = {
+    intent: {
+      raw: "Turn my courier story into a two-page Chinese comic with a recurring hero.",
+      outcome: "Two finished, sequential Chinese comic pages",
+      assets: [],
+      constraints: ["same hero and wardrobe", "exact dialogue", "3:4 pages"],
+      deliverables: ["page 1", "page 2"],
+      requiresResearch: false,
+      confidence: 0.95,
+      ambiguities: []
+    },
+    decision: "execute",
+    steps: [
+      { id: "storyboard", kind: "skill", skillId: "plan-comic-storyboard", objective: "Plan the exact two-page narrative", dependsOn: [], inputs: { story: "user.story" }, output: "validated comic manifest", selectionReason: "This Skill owns comic page and panel planning." },
+      { id: "hero", kind: "skill", skillId: "character-reference-sheet", objective: "Create the recurring hero anchor", dependsOn: ["storyboard"], inputs: { character: "storyboard.characters.hero" }, output: "canonical hero sheet", selectionReason: "This Skill owns reusable identity and wardrobe anchors." },
+      { id: "page-1", kind: "skill", skillId: "render-comic-page", objective: "Render page 1", dependsOn: ["storyboard", "hero"], inputs: { page: "storyboard.pages[0]", character: "hero.output" }, output: "accepted page 1", selectionReason: "This Skill owns one finished reference-aware comic page." },
+      { id: "page-2", kind: "skill", skillId: "render-comic-page", objective: "Render page 2 with carried state", dependsOn: ["storyboard", "hero", "page-1"], inputs: { page: "storyboard.pages[1]", character: "hero.output", continuity: "page-1.output" }, output: "accepted page 2 artwork", selectionReason: "This Skill owns one page and can bind previous-page continuity." },
+      { id: "page-2-copy", kind: "skill", skillId: "add-speech-bubble", objective: "Repair page 2 exact dialogue only if flagged", dependsOn: ["page-2"], inputs: { artwork: "page-2.output", copy: "storyboard.pages[1].dialogue" }, output: "page 2 with exact dialogue", selectionReason: "This Skill owns bubble placement and exact copy without redrawing accepted artwork." }
+    ],
+    finalAcceptance: ["Both pages are present in order.", "Hero identity and wardrobe are continuous.", "Approved Chinese dialogue is exact and readable."]
+  };
+
+  const plan = validateAdaptiveRoute(comicPlan, comicSkills);
+  assert.deepEqual(plan.steps.map((step) => step.skillId), [
+    "plan-comic-storyboard",
+    "character-reference-sheet",
+    "render-comic-page",
+    "render-comic-page",
+    "add-speech-bubble"
+  ]);
+  assert.deepEqual(plan.steps[3].dependsOn, ["storyboard", "hero", "page-1"]);
+});

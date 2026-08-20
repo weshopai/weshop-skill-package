@@ -1,0 +1,3 @@
+interface:
+  display_name: "Render Comic Page"
+  short_description: "Render one storyboarded comic page"

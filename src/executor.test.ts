@@ -4,7 +4,7 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import test from "node:test";
 import { ExecutionLedger } from "./execution-ledger.js";
-import { executeRun, pollRun } from "./executor.js";
+import { executeRun, executeRunWave, pollRun } from "./executor.js";
 import { WeShopOpenApiClient } from "./openapi-client.js";
 
 const jsonResponse = (body: unknown, status = 200) => new Response(JSON.stringify(body), { status, headers: { "Content-Type": "application/json" } });
@@ -110,6 +110,51 @@ test("serializes concurrent preparation and sends only one create request per op
   assert.equal(attempts.filter((attempt) => attempt.status === "fulfilled").length, 1);
   assert.equal(attempts.filter((attempt) => attempt.status === "rejected").length, 1);
   assert.equal(creates, 1);
+});
+
+test("persists every slot and submits a seven-run expansion as one parallel wave", async () => {
+  const directory = await mkdtemp(join(tmpdir(), "weshop-wave-"));
+  let activeCreates = 0;
+  let maximumConcurrentCreates = 0;
+  let observedCreates = 0;
+  let releaseCreates!: () => void;
+  const createGate = new Promise<void>((resolve) => { releaseCreates = resolve; });
+  let allCreatesObserved!: () => void;
+  const allCreates = new Promise<void>((resolve) => { allCreatesObserved = resolve; });
+  const client = new WeShopOpenApiClient({
+    apiKey: "test-key",
+    fetchImpl: (async (input) => {
+      if (!String(input).endsWith("/runs")) return jsonResponse({ success: true, data: { status: "Success" } });
+      activeCreates += 1;
+      observedCreates += 1;
+      maximumConcurrentCreates = Math.max(maximumConcurrentCreates, activeCreates);
+      if (observedCreates === 7) allCreatesObserved();
+      const id = observedCreates;
+      await createGate;
+      activeCreates -= 1;
+      return jsonResponse({ success: true, data: {}, meta: { executionId: `exec-wave-${id}` } });
+    }) as typeof fetch
+  });
+  const ledger = new ExecutionLedger(join(directory, "ledger.json"));
+  const canonicalUrl = "https://example.test/canonical.png";
+  const slots = Array.from({ length: 7 }, (_, index) => ({
+    request: {
+      agent: { name: "gpt-image", version: "v1.0" },
+      input: { images: [canonicalUrl] },
+      params: { images: [canonicalUrl], textDescription: `derived-${index + 2}`, batchCount: 1 }
+    },
+    options: { operationKey: `character-derived-${index + 2}`, wait: false }
+  }));
+
+  const running = executeRunWave(client, ledger, slots);
+  await allCreates;
+  for (const slot of slots) assert.equal((await ledger.get(slot.options.operationKey))?.submissionState, "prepared");
+  assert.equal(maximumConcurrentCreates, 7);
+  releaseCreates();
+  const wave = await running;
+  assert.equal(wave.submissionMode, "parallel-wave");
+  assert.equal(wave.results.length, 7);
+  assert.equal(wave.results.every((result) => result.status === "fulfilled"), true);
 });
 
 test("rejects polling intervals that could amplify provider traffic", async () => {

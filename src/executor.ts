@@ -22,6 +22,16 @@ export interface ExecuteRunResult {
   terminal: boolean;
 }
 
+export interface ExecuteRunWaveSlot {
+  request: RunRequest;
+  options: ExecuteRunOptions;
+}
+
+export interface ExecuteRunWaveResult {
+  submissionMode: "parallel-wave";
+  results: PromiseSettledResult<ExecuteRunResult>[];
+}
+
 export class ReceiptPersistenceError extends Error {
   constructor(readonly operationKey: string, readonly executionId: string, cause: unknown) {
     super(`Run accepted with executionId ${executionId}, but its receipt could not be persisted for operation ${operationKey}. Do not resubmit; query this executionId directly. Cause: ${(cause as Error).message}`);
@@ -69,6 +79,17 @@ export async function executeRun(
     request: request as unknown as Record<string, unknown>
   });
 
+  return executePreparedRun(client, ledger, request, options);
+}
+
+async function executePreparedRun(
+  client: WeShopOpenApiClient,
+  ledger: ExecutionLedger,
+  request: RunRequest,
+  options: ExecuteRunOptions
+): Promise<ExecuteRunResult> {
+  const operationKey = options.operationKey.trim();
+
   let submitted: WeShopEnvelope;
   try {
     submitted = await client.createRun(request);
@@ -99,4 +120,41 @@ export async function executeRun(
     await ledger.update(operationKey, { terminalStatus: runStatusFrom(polled.response), terminalObservedAt: new Date().toISOString() });
   }
   return { operationKey, submissionState: "accepted", executionId, response: polled.response, terminal: polled.terminal };
+}
+
+/**
+ * Persists every intended slot before issuing any create request, then submits
+ * the complete wave without awaiting another slot's receipt or terminal state.
+ */
+export async function executeRunWave(
+  client: WeShopOpenApiClient,
+  ledger: ExecutionLedger,
+  slots: ExecuteRunWaveSlot[]
+): Promise<ExecuteRunWaveResult> {
+  if (slots.length < 2) throw new Error("A parallel wave requires at least two independent run slots.");
+  const keys = slots.map(({ options }) => options.operationKey.trim());
+  if (keys.some((key) => !key)) throw new Error("Every parallel-wave slot requires a non-empty operationKey.");
+  if (new Set(keys).size !== keys.length) throw new Error("Parallel-wave operation keys must be unique.");
+
+  for (const { request, options } of slots) {
+    if (options.parentOperationKey) {
+      const parent = await ledger.get(options.parentOperationKey);
+      if (!parent || parent.terminalStatus?.toLowerCase() !== "failed") {
+        throw new Error(`Parent operation ${options.parentOperationKey} is not recorded as terminal Failed; refusing retry submission.`);
+      }
+    }
+  }
+  for (const { request, options } of slots) {
+    await ledger.prepare({
+      operationKey: options.operationKey.trim(),
+      parentOperationKey: options.parentOperationKey,
+      agent: request.agent,
+      request: request as unknown as Record<string, unknown>
+    });
+  }
+
+  const results = await Promise.allSettled(slots.map(({ request, options }) =>
+    executePreparedRun(client, ledger, request, options)
+  ));
+  return { submissionMode: "parallel-wave", results };
 }

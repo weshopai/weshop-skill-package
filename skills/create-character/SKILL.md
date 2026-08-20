@@ -79,7 +79,9 @@ Use both documented GPT Image reference locations so native and fallback executi
 
 A missing Canvas item, missing local download, empty material search, or delayed publication is not a missing generation result; recover from the accepted WeShop execution first. If the exact task-1 execution is terminal Success but repeated read-only reconciliation still returns no valid image URL, report a blocked reference-recovery state and keep tasks 2–8 unsubmitted. Never create another task-1 run merely to obtain the URL.
 
-If either reference field is absent from a prepared derived request, repair that payload from the persisted `canonicalImageUrl` and rerun the complete seven-request preflight. Once all seven payloads pass, submit them as one confirmed expansion batch of seven independent tasks. Sequence scene 2 only when it depends on scene 1's visible state; otherwise the seven tasks may be submitted together.
+If either reference field is absent from a prepared derived request, repair that payload from the persisted `canonicalImageUrl` and rerun the complete seven-request preflight. Once all seven payloads pass, persist all seven distinct operation keys before the first create call, then submit tasks 2–8 as one parallel wave of seven independent create-run calls. Do not await an execution receipt, status, or result from one slot before submitting another slot. Collect all seven create receipts after the wave has been launched, then poll the accepted execution IDs independently. Use `executeRunWave` when the package executor is available; with a native harness, issue the seven create calls concurrently with equivalent all-settled behavior.
+
+This parallel wave is mandatory for an approved expansion. It is not `batchCount: 7`: each task keeps its own Prompt, `operationKey`, `executionId`, and `batchCount: 1`. A failure or unknown outcome in one slot does not cancel, duplicate, or serialize the other already-planned slots. Only when scene 2 explicitly depends on scene 1's newly generated visible state may that one scene task be held for a second wave; record that dependency instead of silently serializing the whole expansion.
 
 ## Route and execution
 
@@ -88,6 +90,7 @@ Use `gpt-image` v1.0 / GPT Image 2 for all eight tasks with one complete `textDe
 - Default the canonical sheet and lighting study to a layout-capable ratio selected for readable panels; default the front, back, close-up, final-look portrait, and scene images to `3:4` unless the user requests another supported ratio.
 - Do not route any task to Midjourney merely because the user requests manga, anime, comic, concept-art, or another artistic style. Midjourney's four-image response violates the one-result-per-task contract.
 - Require a non-empty `executionId` for every accepted submission and poll that exact run to terminal state. The task-1 receipt never authorizes tasks 2–8.
+- For an approved expansion, use submission mode `parallel-wave`, concurrency `7`, and `awaitBetweenSubmissions: false`; prepare every payload and durable key before launching the wave.
 - An unknown create outcome freezes only that task. Reconcile its existing `operationKey`; never submit a replacement blindly.
 - A known terminal or visual failure may replace only the failed slot with a new linked operation key and a materially revised request. Never regenerate accepted slots or increase the eight-task plan.
 

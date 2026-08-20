@@ -37,10 +37,11 @@ export function route(request: RouteRequest & Pick<IntentCard, "raw" | "confiden
         defaultTasks: ["canonical-design-sheet"],
         optionalConfirmedTasks: ["full-body-front", "full-body-back", "head-close-up", "lighting-study", "final-look-portrait", "scene-1", "scene-2"],
         expansionRequiresPostQaUserConfirmation: true,
+        expansionSubmission: { mode: "parallel-wave", concurrency: 7, awaitBetweenSubmissions: false, prepareAllPayloadsAndKeysBeforeFirstSubmit: true, batchCountPerTask: 1 },
         canonicalReferenceBinding: { source: "canonical-design-sheet.result.image", requiredIn: ["input.images", "params.images"], appliesTo: "all optional confirmed tasks" },
         canonicalReferenceRecovery: { lookup: "task-1 operationKey then exact executionId", extract: "data.executions[*].result[*].image", persistAs: "canonicalImageUrl", repairPayloads: true, regenerateTask1: false, derivedSubmissionBeforeRecovery: false }
       },
-      acceptance: ["Return exactly 1 canonical sheet before the confirmation gate.", "Do not submit the seven derived tasks without explicit post-QA user confirmation.", "Every submitted task uses batchCount 1.", "Recover a missing canonical URL from the original accepted operationKey and executionId; never regenerate task 1 for retrieval.", "If expansion is confirmed, every derived request includes the same canonical URL in input.images and params.images.", "Derived assets preserve the canonical face, age, hair, proportions, wardrobe, palette, marks, and signature props."]
+      acceptance: ["Return exactly 1 canonical sheet before the confirmation gate.", "Do not submit the seven derived tasks without explicit post-QA user confirmation.", "Every submitted task uses batchCount 1.", "Recover a missing canonical URL from the original accepted operationKey and executionId; never regenerate task 1 for retrieval.", "If expansion is confirmed, every derived request includes the same canonical URL in input.images and params.images.", "Launch the seven approved derived create calls as one parallel wave without awaiting between submissions.", "Derived assets preserve the canonical face, age, hair, proportions, wardrobe, palette, marks, and signature props."]
     });
   }
   if (request.operation === "make-mugshot-photo") {

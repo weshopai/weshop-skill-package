@@ -1,5 +1,12 @@
 # Handoff
 
+## 2026-08-20: parallel seven-task character expansion
+
+- Added `executeRunWave` to persist every planned slot before any create call, then launch all create calls concurrently and collect their results with all-settled semantics.
+- An approved `create-character` expansion now requires `parallel-wave` mode with concurrency 7, no awaiting between submissions, seven independent operation keys and execution IDs, and `batchCount: 1` per task. It never converts the expansion into one `batchCount: 7` request.
+- Added an executor test that holds all seven create calls open simultaneously, verifies maximum create concurrency is seven, and confirms all durable ledger entries existed before submission began.
+- A scene-2 dependency may create one explicit second wave; it must not silently serialize the other six tasks. No paid generation was run. Changes remain uncommitted pending validation and explicit commit approval.
+
 ## 2026-08-20: character canonical QA and optional expansion gate
 
 - Changed `create-character` from an automatically planned eight-task pack to a two-phase workflow: submit one canonical sheet, inspect and show it, then ask whether the user wants the seven additional assets.

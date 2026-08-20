@@ -1,13 +1,13 @@
 ---
 name: weshop-router
-description: Plan simple or compound WeShop creative requests by discovering currently available Atom Skills from their use-case descriptions, decomposing the desired outcome into an adaptive multi-operation route, binding outputs between Skills, and applying safe execution recovery. Use when a request may need Skill selection, several ordered transformations, current research, or a choice between specialized Atoms; do not use as a fixed catalog or keyword-to-operation lookup table.
+description: Plan simple or compound WeShop creative requests by discovering currently available Atom Skills, scoring each plausible Skill against the complete user intent, invoking the highest-scoring match, decomposing multi-operation outcomes, binding outputs, and applying safe recovery. Use when a request needs Skill selection, ordered transformations, research, or a choice between similar specialized Atoms; unlike an individual Atom (relationship varies by request), this Router chooses and composes Atoms rather than producing their media result itself.
 ---
 
 # WeShop Router
 
 1. Inspect the Skills currently visible to the harness. Treat each Skill's frontmatter description as its discovery use case; do not rely on a Router-owned list, operation enum, or remembered package count.
 2. Infer an intent card from the user's outcome, assets, constraints, deliverables, research need, confidence, and material ambiguities. Do not reduce the request to one keyword label.
-3. Decompose compound requests into meaningful operations, then select the narrowest currently available Skill whose stated use case owns each operation. The harness model makes this semantic decision; deterministic code may validate the plan but must not replace it with keyword matching.
+3. Decompose compound requests into meaningful operations. For each operation, identify every plausible Skill and assign an `intentMatchScore` from `0..1` against the complete intent card: outcome, input roles, constraints/preservation, deliverable, exclusions, and relationship context from the descriptions. Select the candidate with the highest score. The harness model makes the semantic scores; deterministic code validates that the selected Skill is available and actually has the maximum score. Never replace this with keyword counting.
 4. Bind every downstream input to a user asset or an upstream output. Use a DAG when independent branches can run separately; otherwise preserve the required order.
 5. If several Atoms are required, define one final acceptance contract. Do not repeat QA after every Atom: preserve handoff invariants and run one final gate after the last generative step. A recurring composition may later become its own Atom when it still produces one clear result.
 6. If current external facts materially affect execution, add an explicit research operation and bind its evidence downstream. `requiresResearch` must change the route rather than remain unused metadata.
@@ -33,7 +33,7 @@ description: Plan simple or compound WeShop creative requests by discovering cur
 
 Use the harness's current Skill list as the registry. New Skills become eligible as soon as their frontmatter description is visible; the Router requires no operation-union, registry, or branch update.
 
-Judge a candidate from its stated use case, exclusions, required inputs, promised output, preservation scope, and downstream use. Read the full `SKILL.md` only for selected or genuinely ambiguous candidates. Never invent a Skill ID or select a broad visual generator when a narrower installed Atom owns the operation.
+Judge a candidate from its stated use case, exclusions, required inputs, promised output, preservation scope, downstream use, and named relationships in its description. Similar Skills remain independent even at high relationship scores. Score all plausible candidates for the current intent, invoke the highest `intentMatchScore`, and retain the candidate list and reasons in the route record. A static relationship score describes adjacency between Skills; it never overrides the request-specific intent score. Read the full `SKILL.md` only for the winner or genuinely tied candidates. Never invent a Skill ID or select a lower-scoring broad visual generator when a specialized candidate scores higher.
 
 ## Hard model routing
 

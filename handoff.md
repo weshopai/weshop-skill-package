@@ -139,3 +139,28 @@
 - Local execution now prefers a native WeShop tool, then the installed official `weshop` CLI, with `weshop-skill` only as the absence fallback.
 - Added a secret-safe `doctor`/`backend` diagnostic, `--version`, routing `catalog`, the `gpt-image-2` compatibility alias, and legacy `input.text` migration for GPT Image calls.
 - Documented official versus built-in syntax, wrapper `inspect`/`execute` modes, missing versus invalid API keys, unsupported `run`/`list-agents` assumptions, and the no-cross-backend-retry safety rule.
+
+## 2026-08-20: MiniMax local Skill intake
+
+- Reviewed the supplied local `3d-animation-short-generator` v1.1.14 package and `brand-promo-video-generator` v0.1.13 package as untrusted source material. Recorded content fingerprints, author metadata, all inspected files, product decomposition, security boundaries, and per-operation WeShop substitutions under `intake/external-skills/`.
+- License metadata is no longer an intake gate. No upstream reference file, tool binding, cover media, executable code, or dependency was copied or run.
+- Retained the 3D animation package as an independent `3d-animation-short-generator` Atom candidate. Its intake description distinguishes complete-film ownership from `develop-story`, `plan-film-storyboard`, `generate-video`, `combine-videos`, and `make-product-commercial`, with relationship scores and composition boundaries.
+- Retained the brand promo package as an independent `brand-promo-video-generator` Atom candidate. Its intake description distinguishes wider brand/app/site/shop/service campaigns from product-benefit commercials, explainers, one-shot generation, and editing-only requests.
+- No paid generation, installable Skill change, commit, or push was performed. `git diff --check` and `npm run maintainers:validate` passed.
+
+## 2026-08-20: license-free intake and highest-score Skill routing
+
+- Removed `--license` and `--mode` from the external intake command and template. New intake records source provenance, product decomposition, WeShop substitutions, security, and validation without a license decision or license-based stop.
+- Changed the package rule for similar Skills: similarity never requires fusion. New Skills remain independent and must name materially related Skills in frontmatter descriptions, record a `0..1` relationship score, explain when each side wins, and state valid handoffs.
+- Added request-specific candidate scoring to adaptive route plans. Every Skill step must record all plausible candidates with `intentMatchScore`, and validation rejects any selected Skill whose score is below the maximum. Static relationship scores aid discovery but never override the current request's intent score.
+- Updated the two MiniMax intakes to standalone Atom candidates under the new policy. No installable Skill was created in this mechanism-change turn.
+
+## 2026-08-20: promote the two MiniMax-derived independent Atoms
+
+- Added `3d-animation-short-generator` as a complete story-to-film Atom. Its frontmatter distinguishes `plan-film-storyboard` (0.78), `generate-video` (0.62), `develop-story` (0.55), `combine-videos` (0.38), and `make-product-commercial` (0.34); it owns original-style story lock, reference assets, atomic shots, terminal generation, assembly, and final-film QC.
+- Added `brand-promo-video-generator` as a complete brand/app/site/shop/service campaign Atom. Its frontmatter distinguishes `make-product-commercial` (0.86), `make-explainer-video` (0.58), `generate-video` (0.49), and `combine-videos` (0.36); it owns brand truth, identity provenance, multi-beat campaign production, deterministic exact-copy finishing, and authenticity QC.
+- Both Atoms remain independent from their related Skills. Their static relationship scores discover plausible candidates; the adaptive Router's request-specific `intentMatchScore` still determines the invoked winner.
+- Updated both intake promotion records, packaged source-provenance notes, added both Skills to the Video inventory, and advanced repository counts to 89 Atoms plus one Router.
+- No paid generation was run. Release validation, commit, push, and stable Release are authorized by the user's explicit `c,p,r` request and recorded below when complete.
+- Validation completed before release: both new Skills and `weshop-router` passed `quick_validate.py`; TypeScript checks passed; 80 core tests and 2 updater tests passed; 19 catalog models and 89 Atom routes validated; README and maintainer docs validated; the website built with 88 displayable Skill detail records; `git diff --check` passed; and a clean copy-mode install/status smoke reported 90/90 Skills current.
+- The first full test exposed an old hard-coded updater expectation of 88 installed Skills. Replaced it with the current `skills/` directory count, then reran the complete release validation successfully.

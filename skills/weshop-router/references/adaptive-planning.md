@@ -31,7 +31,15 @@ depends_on: upstream node IDs
 inputs: role-to-user-asset or role-to-upstream-output bindings
 output: the artifact handed downstream
 selection_reason: why this Skill's use case is narrower than alternatives
+candidates:
+  - skill_id: a visible runtime Skill
+    intent_match_score: 0..1
+    reason: how its description matches or misses this exact operation
 ```
+
+Every Skill node must list all plausible candidates, not the full unrelated registry. Score semantically from the complete intent card: outcome, asset roles, constraints and preservation, requested deliverable, exclusions, and description relationships. The selected `skill_id` must equal a candidate with the maximum `intent_match_score`; deterministic validation rejects a lower score. When candidates tie at the maximum, keep the narrower output contract or better input/preservation fit and explain the tie-break in `selection_reason`.
+
+Frontmatter relationship scores are static discovery metadata showing how adjacent two Skills are. They help find candidates but never substitute for the request-specific `intent_match_score`.
 
 Prefer several operation nodes when the request changes artifact responsibility, for example scene creation then poster composition, or product cutout then detail-page assembly. Do not split prompt writing, polling, downloading, and QA into separate operations; those belong to the selected Skill or execution harness.
 

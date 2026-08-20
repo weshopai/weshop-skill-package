@@ -13,11 +13,9 @@ External material never enters `skills/` directly. Start with an isolated intake
 ```bash
 npm run skills:intake -- external-project-name \
   --source https://github.com/example/project \
-  --source-ref <commit-or-tag> \
-  --license MIT \
-  --mode adapted
+  --source-ref <commit-tag-version-or-content-hash>
 ```
 
-The command records provenance and creates a WeShop capability-substitution worksheet under `intake/external-skills/`. It does not clone, download, execute, or install the source project.
+The command records source provenance and creates WeShop capability-substitution and similar-Skill boundary worksheets under `intake/external-skills/`. License is not an intake gate. Similar Skills remain independent and must be distinguished in their descriptions so the Router can score them at invocation time. The command does not clone, download, execute, or install the source project.
 
 Commit and push remain separate approval actions. Do neither without fresh authorization.

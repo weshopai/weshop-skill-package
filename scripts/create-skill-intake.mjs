@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const args = process.argv.slice(2);
 const slug = args.shift();
-const usage = "npm run skills:intake -- <slug> --source <url> --source-ref <commit|tag|version> --license <SPDX|NO-LICENSE> --mode <adapted|licensed-reuse|clean-room>";
+const usage = "npm run skills:intake -- <slug> --source <url-or-local-path> --source-ref <commit|tag|version|content-hash>";
 
 const option = (name) => {
   const index = args.indexOf(name);
@@ -19,10 +19,7 @@ const option = (name) => {
 if (!slug || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)) throw new Error(`Use a lowercase kebab-case intake slug.\n${usage}`);
 const source = option("--source");
 const sourceRef = option("--source-ref");
-const license = option("--license");
-const mode = option("--mode");
-if (!source || !sourceRef || !license || !mode || args.length) throw new Error(usage);
-if (!["adapted", "licensed-reuse", "clean-room"].includes(mode)) throw new Error(`Unsupported mode: ${mode}\n${usage}`);
+if (!source || !sourceRef || args.length) throw new Error(usage);
 
 const intakeRoot = path.join(root, "intake", "external-skills");
 const target = path.join(intakeRoot, slug);
@@ -34,18 +31,8 @@ const intake = `# External Skill intake: ${slug}
 - Source: ${source}
 - Source revision: ${sourceRef}
 - Author or organization: Pending review
-- License: ${license}
-- Reuse mode: ${mode}
 - Reviewed date: ${today}
 - Files inspected: Pending review
-
-## Permission decision
-
-- License evidence: Pending review
-- Required notices: Pending review
-- Material allowed to reuse: Pending review
-- Material that must be independently authored: Pending review
-- Decision: Pending review
 
 ## Product decomposition
 
@@ -59,11 +46,23 @@ const intake = `# External Skill intake: ${slug}
 
 ## Package decision
 
-- Existing Atom updates: Pending review
-- New Atom candidates: Pending review
+- Intake result: Create a standalone Atom unless the source has no coherent user-visible outcome
+- Proposed standalone Atom: Pending review
 - Router compositions: Pending review
 - Rejected or unsupported behavior: Pending review
-- Promotion decision and rationale: Pending review
+- Promotion decision and rationale: Pending review; similarity alone is never a reason to merge or reject
+
+## Similar Skill boundaries
+
+Complete one row for every materially similar or adjacent installed Skill. Similar Skills remain independent.
+
+| Related Skill | Relationship score (0-1) | Shared use case | Use this intake when | Use the related Skill when | Composition or handoff |
+| --- | ---: | --- | --- | --- | --- |
+| Pending review | 0.00 | Pending review | Pending review | Pending review | Pending review |
+
+- Proposed frontmatter distinction: Pending review
+- Highest-risk ambiguity: Pending review
+- Router scoring evidence: Pending review
 
 ## Security review
 
@@ -78,7 +77,7 @@ const intake = `# External Skill intake: ${slug}
 - Official WeShop schema checked: Pending review
 - Representative execution: Not authorized or not run
 - Acceptance result: Pending review
-- Attribution packaged: Pending review
+- Source record packaged: Pending review
 `;
 
 const capabilityMap = `# WeShop capability substitution: ${slug}

@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { execFileSync, spawnSync } from "node:child_process";
-import { cp, mkdir, mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
+import { cp, mkdir, mkdtemp, readFile, readdir, rm, writeFile } from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
 import test from "node:test";
@@ -88,7 +88,9 @@ test("full installations track future Skills and register their target", async (
     const registry = JSON.parse(await readFile(path.join(state, "installations.json"), "utf8"));
     assert.equal(lock.tracksAll, true);
     assert.equal(lock.defaultMode, "symlink");
-    assert.equal(Object.keys(lock.skills).length, 88);
+    const availableSkillCount = (await readdir(path.join(root, "skills"), { withFileTypes: true }))
+      .filter((entry) => entry.isDirectory()).length;
+    assert.equal(Object.keys(lock.skills).length, availableSkillCount);
     assert.deepEqual(registry.installations.map((entry) => entry.target), [target]);
   } finally {
     await rm(fixture, { recursive: true, force: true });

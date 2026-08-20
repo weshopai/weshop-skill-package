@@ -37,8 +37,9 @@ Turn episode 1 into a 75-second 9:16 AI-video storyboard. Stay faithful to the p
 4. Make every formal shot atomic: one continuous time/place, one primary purpose, one dominant shot size, one main action, and at most one simple camera move. Record start/end state, subject/action, composition, angle, duration, dialogue, sound, props, continuity locks, source trace, production method, and acceptance.
 5. Confirm dialogue, action, reaction, camera, and sound fit the duration. Split overloaded shots, especially multi-person dialogue, complex hands/props, action chains, large framing changes, or hidden edits.
 6. Validate adjacent end/start states, eyelines, axis, entrances/exits, wardrobe, injuries, prop handoffs, knowledge, time, and sound bridges. Maintain coverage for every fixed beat and required reaction.
-7. For each AI shot, compile an execution brief with authorized references, first/end state, one action, camera, duration, ratio, sound, preservation locks, risks, and a simpler fallback. Do not submit generation here.
-8. Deliver source/fact ledger, shot manifest, continuity/coverage report, change log, and generation handoffs. Claim “plan validated” only; actual media requires separate inspection.
+7. Inventory which recurring character, subject, scene, style, first-frame, and end-frame references actually exist. Propose only missing reference assets and require approval before generating them; do not create full frame sets by default.
+8. For each AI shot, compile an execution brief with authorized references, first/end state, one action, camera, duration, ratio, sound, preservation locks, risks, and a simpler fallback. Do not submit generation here.
+9. Deliver source/fact ledger, shot manifest, continuity/coverage report, change log, and generation handoffs. Claim “plan validated” only; actual media requires separate inspection.
 
 Read [source-attribution.md](references/source-attribution.md) when reviewing provenance or redistributing this adapted Skill.
 

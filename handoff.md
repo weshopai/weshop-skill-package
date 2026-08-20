@@ -1,5 +1,12 @@
 # Handoff
 
+## 2026-08-20: MIT crawl intake batch 9 (rows 41–44)
+
+- Pinned and verified MIT sources: `pxeodev/study-film-skill` at `3a7fac2c1879edaef66c882300b317af623c8aea`, `yanshangcha01/libtv-shortdrama-storyboard` at `78326bdef885b501a63e520de06fbdd335966ee6`, `ymh3753201/visual-director-skill` at `fefad96e5cf0537260c44bc81b7a46ca7c95806a`, and `chenmisss/laoxu-video-script` at `b24ed211c50b9c5151d84ed0422bc83c8fcaae07`.
+- No installable Skill changed: the study-film workflow is a developer-content application; LibTV's stable approval/anchor/node safeguards are already represented by focused short-drama/storyboard/reference/video Atoms and Router policy; visual-director duplicates the same upstream lineage already adapted as `create-social-carousel`; laoxu-video-script is creator strategy/copywriting outside package scope.
+- No HTML/TTS/recording stack, CLI node script, provider model names, style library, templates, examples, image corpus, creator corpus, or performance claims were copied or executed. No paid generation was run.
+- Final crawl audit matched all 44 unique MIT CSV repositories to 44 ledger rows with no pending status; 45 complete external intake directories include the earlier `ip-as-logo` intake. All 88 installable Skills passed static validation, all 14 packaged attribution files contain an MIT notice, 76 core tests and 2 updater tests passed, all 87 Atom model routes validated, the website built, and an 88/88 copy-install smoke test reported current.
+
 ## 2026-08-20: MIT crawl intake batch 8 (rows 36–40)
 
 - Pinned and verified MIT sources: `arome3/code-to-content` at `c3f1f178598b3aa45430923eb42ee592344bd4ca`, `lukasersil/seedance-25` at `aa5dfc56e89e35defab851164959bcdf2f43198d`, `lordhoell/davinci-resolve-mcp` at `b134a4d5bb9110a23af7669d5bbe183b9f626aa5`, `nhanhxxm2can9351-glitch/script-to-storyboard` at `781be51dcbabed1e13d2f4c73e04e411abdc317d`, and `MaoranSun/paper-to-storyboard` at `4f5d97513931f5cfffccd377b923dd08050cf3cb`.

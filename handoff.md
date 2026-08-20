@@ -1,5 +1,13 @@
 # Handoff
 
+## 2026-08-20: MIT crawl intake batch 6 (rows 26–30)
+
+- Pinned and verified MIT sources: `buluslan/seedance-video-script` at `ae7c78d9cb5365286bffb95510fe43eed5c6daba`, `dennisonbertram/emulsion` at `f28083faf1945975f96dea44f846ab3724ecb652`, `mathruffian-dot/yaml-image-deck` at `8fd0e1ef81f10e43ba3677eb41410a316501d244`, `SumOneHK/short-drama-scriptwriter` at `269036c81f2d17eacfccb197734f21e5c554c978`, and `SumOneHK/tiktok-short-drama` at `97c956aa23ea8ffff035c2bf75e645670259299f`. Completed intake and capability maps for all five; no upstream code was executed.
+- Added `create-image-deck` for source-traced slide manifests, baked-versus-editable routing, a visual-master gate, one GPT Image 2 operation per page, terminal inspection, page-scoped repair, and deterministic packaging.
+- Enhanced `write-short-drama-series` with explicit phase gates, resume reconciliation, version-specific acceptance, and bidirectional dependency invalidation for shared facts.
+- Did not promote the provider-specific Seedance prompt wrapper because its stable behavior already exists in storyboard/video Atoms. Did not package Emulsion because meaningful parity requires its companion three.js UI, local bridge, persistence, and exporter.
+- Packaged full MIT notices for promoted adaptations. Upstream scripts, templates, example scenes, local apps, hard-coded provider limits, automatic subagents, and platform guarantees were not copied. No paid generation was run.
+
 ## 2026-08-20: MIT crawl intake batch 5 (rows 21–25)
 
 - Pinned and verified MIT sources: `shyman159/seedance-prompts-skill` at `0436b392873c9be4dbe7f1cb8880b6b33a20396f`, `iart-ai/explainer-video-skills` at `3e2d411b725d9a72939cf8e5eb81579e751373e7`, `SyberSister/short-drama-adapter-skill` at `06a8b750b3dc86a767e70ada73a946c877c5809c`, `doublesq97-ui/su-ai-short-drama` at `351a103158dac08027cfff51bdae36899e08d721`, and `ChaiWithJai/davinci-resolve-claude-skills` at `cf7e4275f10d6d7b709a5c50155769715c8d14f0`. Completed intake and capability maps for all five; no upstream code was executed.

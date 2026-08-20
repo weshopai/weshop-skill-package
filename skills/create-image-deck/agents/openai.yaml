@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create Image Deck"
+  short_description: "Create a consistent image-first presentation deck"
+  default_prompt: "Turn this content into a consistent image-first presentation deck."

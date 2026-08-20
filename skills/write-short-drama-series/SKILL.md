@@ -31,13 +31,14 @@ Adapt this workplace revenge synopsis into a 20-episode vertical short drama in 
 
 ## Workflow
 
-1. Create a source-fact ledger with `fixed`, `inferred`, `open`, and `proposed change` entries. Ask before changing a fixed protagonist, relationship, central motive, ending, episode count, rating, or market constraint.
+1. Create a source-fact ledger with `fixed`, `inferred`, `open`, and `proposed change` entries plus a rights/adaptation record. Distinguish user-owned, licensed, public-domain, analysis-only, and unknown material; an adaptation request does not prove production or publication rights. Ask before changing a fixed protagonist, relationship, motive, ending, episode count, rating, or market constraint.
 2. Lock a compact series bible: logline, audience promise, genre/tone, world rules, character goals/secrets/relationships, core conflict, escalation engine, reveal schedule, ending, and prohibited changes.
 3. Build the exact-count episode table before scripting. Each row records opening image, immediate objective, conflict, visible turn, new information, payoff/debt, end hook, and continuity changes. Seed major payoffs early enough to feel earned.
 4. Validate the season arc: a concrete hook in episode 1; no repeated conflict with only renamed dialogue; rising cost and agency; tracked setup/payoff debts; and a final resolution matching the requested ending. Treat platform/compliance notes as editorial checks, not legal guarantees.
-5. Write only the requested episodes using stable scene headings and production-visible action. Include characters present, location/time, action, dialogue, on-screen text, sound, estimated duration, and the final hook. Do not use internal emotion as a substitute for observable behavior.
-6. After each accepted script, update the continuity ledger: character knowledge, injuries/wardrobe/props, locations, relationships, promises, reveals, unresolved debts, and episode-end physical state. The next episode must start from that state.
-7. Review facts, causality, character voice, duration budget, hook/payoff integrity, duplicated beats, content rating, and exact output scope. Revise only affected episodes and report downstream continuity changes; never silently rewrite accepted fixed facts.
+5. When a product or sponsor must appear, record the exact truthful claim, required visibility, and story function. Integrate it as a causal prop/action or openly labeled message; never conceal sponsorship, invent a benefit, or bend character logic around placement.
+6. Write only the requested episodes using stable scene headings and production-visible action. Include characters present, location/time, action, dialogue, on-screen text, sound, estimated duration, and the final hook. Do not use internal emotion as a substitute for observable behavior.
+7. After each accepted script, update the continuity ledger: character knowledge, injuries/wardrobe/props, locations, relationships, promises, reveals, unresolved debts, and episode-end physical state. The next episode must start from that state.
+8. Review facts, causality, character voice, duration budget, hook/payoff integrity, duplicated beats, content rating, and exact output scope. Revise only affected episodes and report downstream continuity changes; never silently rewrite accepted fixed facts.
 
 This is a planning and writing Atom. It performs no paid media generation. Use `$character-reference-sheet` for accepted recurring characters, then a film-storyboard Atom when available or `$generate-video` for independently approved atomic shots.
 

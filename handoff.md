@@ -1,5 +1,13 @@
 # Handoff
 
+## 2026-08-20: MIT crawl intake batch 5 (rows 21–25)
+
+- Pinned and verified MIT sources: `shyman159/seedance-prompts-skill` at `0436b392873c9be4dbe7f1cb8880b6b33a20396f`, `iart-ai/explainer-video-skills` at `3e2d411b725d9a72939cf8e5eb81579e751373e7`, `SyberSister/short-drama-adapter-skill` at `06a8b750b3dc86a767e70ada73a946c877c5809c`, `doublesq97-ui/su-ai-short-drama` at `351a103158dac08027cfff51bdae36899e08d721`, and `ChaiWithJai/davinci-resolve-claude-skills` at `cf7e4275f10d6d7b709a5c50155769715c8d14f0`. Completed intake and capability maps for all five; no upstream code was executed.
+- Enhanced `make-explainer-video` with content-driven diagram, whiteboard, isometric, data-recap, or custom-documentary treatment selection and treatment-specific communication checks.
+- Enhanced `write-short-drama-series` with a source-rights/adaptation record and truthful, disclosed, story-causal product-placement rules. Rejected gender-essentialist duplicate workflows, rigid market formulas, hidden advertising, and assumed adaptation rights.
+- Did not promote the provider-specific Seedance prompt collection because durable parts already exist in current film/video Atoms and its volatile platform claims, moderation-evasion advice, anecdotal limits, and hard-coded formulas are unsuitable. Did not copy the 11 DaVinci-specific Skills because existing outcome Atoms own their editing/color/audio/export results.
+- Packaged full MIT notices for promoted adaptations. ZIPs, showcase GIF/video, HTML generators, shell utilities, NLE click paths, and provider-specific syntax were not copied. No paid generation was run. Both changed Skills passed quick validation; TypeScript checks, 73 core tests, 2 updater/install tests, model catalog/routing validation, docs/maintainer validation, website build, and `git diff --check` passed.
+
 ## 2026-08-20: MIT crawl intake batch 4 (rows 16–20)
 
 - Pinned and verified MIT sources: `MustBeSimo/cinematic-scroll-skill` at `089cd3aeccc950a579e5aa402c473715b608dece`, `Aaryan-Kapoor/video-production-skill` at `662738c012174788d860fdee9627239e23cffef6`, `crowscc/seedance-director` at `2f0525b3be9b45d5ef2d5d67568b1c6cd562a1c9`, `Olalall/AI-The-Storyteller-of-the-Blood-Stained-Clock-Tower` at `726095722d344c6b3ffddfc05780541358556eb6`, and `isaacrowntree/color-grade-ai` at `a6eef94e0d773b1a9475cd9bac8bc15bc3944f46`. Completed intake and capability maps for all five; no upstream code was executed.

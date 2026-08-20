@@ -4,6 +4,8 @@ This Skill adapts series-planning, continuity, hook/payoff, and staged-review co
 
 - [0xsline/short-drama](https://github.com/0xsline/short-drama) at revision `8979a428c31a865421d661bdb606e24314b683a0`.
 - [worldwonderer/drama-skills](https://github.com/worldwonderer/drama-skills) at revision `3b9f807cd384cd63324d0856d92950be4c95b40d`.
+- [SyberSister/short-drama-adapter-skill](https://github.com/SyberSister/short-drama-adapter-skill) at revision `06a8b750b3dc86a767e70ada73a946c877c5809c`.
+- [doublesq97-ui/su-ai-short-drama](https://github.com/doublesq97-ui/su-ai-short-drama) at revision `351a103158dac08027cfff51bdae36899e08d721`.
 
 They have been merged and modified into one narrow WeShop planning Atom. Upstream command/state implementations and repository structures were not copied.
 
@@ -12,6 +14,10 @@ MIT License
 Copyright (c) 2025 0xsline
 
 Copyright (c) 2026 drama-skills contributors
+
+Copyright (c) 2026
+
+Copyright (c) 2026 Su X @Sukiea1008 / doublesq
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

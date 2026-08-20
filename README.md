@@ -1,277 +1,137 @@
-# WeShop Skill Package
+<p align="center">
+  <img src="assets/readme/weshop-skills-banner.png" alt="WeShop Skills" width="100%" />
+</p>
 
-WeShop Skill Package is a creative production toolkit for Codex and other runtimes that support the Agent Skills standard. It turns image, video, product, character, layout, and spatial work into independently installable Atom Skills, with an adaptive Router for compound requests.
+<p align="center">
+  Creative AI Skills for Codex, Claude Code, Cursor, and any Agent Skills-compatible runtime.
+</p>
 
-This README is for installation and use. Maintainers who add, change, or adapt Skills from external projects should start with [CONTRIBUTING.md](CONTRIBUTING.md) and the dedicated [maintainer documentation](docs/maintainers/README.md).
+<p align="center">
+  <img alt="74 Skills" src="https://img.shields.io/badge/Skills-74-111111?style=flat-square" />
+  <img alt="Codex" src="https://img.shields.io/badge/Codex-ready-111111?style=flat-square" />
+  <img alt="Claude Code" src="https://img.shields.io/badge/Claude_Code-ready-111111?style=flat-square" />
+  <img alt="Cursor" src="https://img.shields.io/badge/Cursor-ready-111111?style=flat-square" />
+  <img alt="MIT License" src="https://img.shields.io/badge/License-MIT-111111?style=flat-square" />
+</p>
 
-The repository currently contains:
+WeShop Skills turns plain-language creative requests into production-ready image, video, product, portrait, layout, and spatial workflows powered by WeShop OpenAPI. Install the complete collection or pick only the Skills you need.
 
-- one package-wide Router: `weshop-router`;
-- 73 independently installable Atom Skills;
-- a validated routing catalog for image and video models;
-- TypeScript routing, model selection, duplicate-submission protection, and plan validation;
-- Skill installation, synchronization, documentation, and model-validation tooling.
+> This repository contains **73 focused Atom Skills + 1 adaptive Router**. It also includes a standalone `weshop-skill` CLI, so the official WeShop CLI is not required.
 
-> This is a private source package, not a public npm package. GitHub repository access and WeShop API access require separate authorization.
+## 🚀 Install with one prompt
 
-## Contents
-
-- [Architecture](#architecture)
-- [Quick start](#quick-start)
-- [Configure the WeShop API key](#configure-the-weshop-api-key)
-- [Built-in WeShop CLI](#built-in-weshop-cli)
-- [Install all or selected Skills](#install-all-or-selected-skills)
-- [Track and update installations](#track-and-update-installations)
-- [Router implementation](#router-implementation)
-- [Skill structure](#skill-structure)
-- [Complete Skill inventory](#complete-skill-inventory)
-- [Model and execution safety](#model-and-execution-safety)
-- [Development, validation, and release](#development-validation-and-release)
-- [Repository structure](#repository-structure)
-- [Visual catalog](#visual-catalog)
-- [Design references](#design-references)
-
-## Architecture
+Open Codex, Claude Code, or Cursor and paste this:
 
 ```text
-User outcome
-  ↓
-Harness model reads the visible Skill names and descriptions
-  ↓
-WeShop Router builds an intent card
-  ↓
-Decompose into Skill, research, and deterministic operations
-  ↓
-Build a dependency-aware route DAG and bind user assets and upstream outputs
-  ↓
-Each Atom selects its verified WeShop Agent or model
-  ↓
-Execute, poll, and run one risk-tiered final acceptance check
-  ↓
-Deliver one or more explicit files
+Install all WeShop Skills from https://github.com/weshopai/weshop-skill-pakage for the agent you are running in. Clone the repository, install its npm dependencies, use its skills manager to install all Skills into the correct global skills directory for this agent, verify the installation, and tell me whether I need to restart the agent. Do not ask me to paste or print my WeShop API key.
 ```
 
-The package has only two Skill layers:
+The agent should clone this repository, run `npm ci`, and install the Skills into its own global Skill directory.
 
-1. **WeShop Router** understands simple and compound outcomes, discovers currently installed Skills, and builds ordered or parallel plans.
-2. **Atom Skill** owns one user outcome, input contract, execution route, output contract, and acceptance boundary.
+## 📦 Install manually
 
-There is no manually maintained intermediate category layer, and adding a Skill does not require a new Router operation enum. A new Skill becomes eligible for runtime discovery when its frontmatter description accurately states its use case.
-
-## Quick start
-
-### Requirements
-
-- macOS or Linux; use WSL on Windows
-- Git
-- Node.js 22 LTS
-- npm, with `package-lock.json` as the dependency source of truth
-- access to this private GitHub repository
-- a server or execution harness that securely provides `WESHOP_API_KEY` for live WeShop calls
-- no separate installation of the official `weshop-cli`; this package includes the `weshop-skill` command for direct WeShop OpenAPI execution
-
-### Clone and validate
+### 1. Clone the package
 
 ```bash
-git clone https://github.com/Jason12196/weshop-skill-package.git
-cd weshop-skill-package
+git clone https://github.com/weshopai/weshop-skill-pakage.git
+cd weshop-skill-pakage
 npm ci
-npm test
-npm run models:validate
-npm run models:routing-validate
 ```
 
-## Configure the WeShop API key
+Node.js 22 LTS, npm, Git, and access to this repository are required.
 
-Before the first asset upload or run creation, the execution harness must verify that `WESHOP_API_KEY` is non-empty:
+### 2. Choose your agent
 
-```bash
-npm run api-key:check
-```
-
-If it is not configured:
-
-1. Get or manage a key on the [WeShop API Key page](https://www.weshop.ai/apiKey).
-2. Add `WESHOP_API_KEY` to the trusted harness, server, or secret manager that will execute WeShop calls.
-3. Restart or reload the executor if it captures environment variables at startup.
-
-For a temporary macOS or Linux terminal session, avoid leaving the key in shell history:
-
-```bash
-read -s WESHOP_API_KEY && export WESHOP_API_KEY
-```
-
-Never paste the key into chat or store it in a Skill, README, frontend bundle, Git history, URL, command argument, or log. Only a trusted server-side executor may send it to `https://openapi.weshop.ai`. A missing key is a configuration prerequisite, not a generation failure; the Router stops before upload or execution and provides setup guidance.
-
-## Built-in WeShop CLI
-
-The built-in `weshop-skill` command calls WeShop OpenAPI directly and supports every Standard or Premium Agent authorized for the account. It does not depend on the official `weshop-cli` npm package and does not change server-side permissions or credits.
-
-Use it from the repository:
-
-```bash
-npm run cli -- --help
-npm run cli -- info aiproduct
-npm run cli -- upload ./product.png
-```
-
-After installing this package, use `weshop-skill` directly. For example:
-
-```bash
-weshop-skill run gpt-image \
-  --operation-key campaign-logo-v1 \
-  --params '{"textDescription":"Create a clean geometric logo","quality":"medium","imageSize":"2K","batchCount":1}'
-```
-
-Strings beginning with `file:` inside `--input` or `--params` JSON are uploaded as local images:
-
-```bash
-weshop-skill run aiproduct \
-  --operation-key product-scene-v1 \
-  --input '{"originalImage":"file:./product.png"}' \
-  --params '{"textDescription":"Place the unchanged product in a warm studio scene","batchCount":1}'
-```
-
-Every submission requires an explicit, stable `operationKey`. The CLI waits for a terminal state by default; `--no-wait` returns an `executionId` for later lookup with `weshop-skill status <executionId>`. Before submission, the CLI atomically records the key in `~/.weshop-skill-package/operations.json`; inspect it with `weshop-skill operation <operationKey>`. An ambiguous create response becomes `outcome-unknown` and blocks blind resubmission, protecting against duplicate output and spend. Run `weshop-skill help` for the full command reference.
-
-## Install all or selected Skills
-
-The `skills:manage` command installs to `~/.codex/skills` by default. Symlinks keep this repository as the single source of truth; `--copy` creates an isolated copy.
-
-### List available Skills
-
-```bash
-npm run skills:manage -- list
-```
-
-### Install the complete package
+<details open>
+<summary><strong>Codex</strong></summary>
 
 ```bash
 npm run skills:manage -- install --all
 ```
 
-This installs all 73 Atoms plus `weshop-router`. Use this option for natural-language routing and multi-Skill composition.
+The default destination is `~/.codex/skills`.
 
-### Install one Skill
+</details>
 
-```bash
-npm run skills:manage -- install create-logo
-```
-
-Install the Router as well if the selected Skill should participate in compound tasks:
+<details>
+<summary><strong>Claude Code</strong></summary>
 
 ```bash
-npm run skills:manage -- install create-logo
-npm run skills:manage -- install weshop-router
+npm run skills:manage -- install --all --target ~/.claude/skills
 ```
 
-### Custom target or copy mode
+</details>
+
+<details>
+<summary><strong>Cursor</strong></summary>
 
 ```bash
-npm run skills:manage -- install create-logo --target /absolute/path/to/skills
-npm run skills:manage -- install create-logo --copy
+npm run skills:manage -- install --all --target ~/.cursor/skills
 ```
 
-Symlinks are best for continuously tracking the repository. Copy mode is useful for isolated delivery, but copied installations must be synchronized after updates. The target directory's `.weshop-skill-lock.json` records the source repository, source commit, installation mode, and content hash.
+</details>
 
-## Track and update installations
+Restart the agent after the first installation so it can discover the new Skills.
 
-### Update the complete package
+By default, installation uses symlinks, so pulling this repository updates the installed Skill content immediately. Add `--copy` if you need an isolated copy:
 
 ```bash
-git fetch origin
-git status -sb
-git pull --ff-only origin main
-npm ci
-npm test
-npm run models:validate
-npm run models:routing-validate
-npm run skills:manage -- sync --all
+npm run skills:manage -- install --all --copy
 ```
 
-- Symlink installations point to the updated files immediately after `git pull`; `sync --all` refreshes the lock record.
-- `sync --all` updates copied installations.
-- `git pull --ff-only` refuses to create an implicit merge commit when the local branch has diverged.
+### 3. Configure WeShop OpenAPI
 
-### Synchronize one installed Skill
+Get a key from [WeShop OpenAPI](https://www.weshop.ai/apiKey), then provide it only to the trusted local process that performs generation:
 
 ```bash
-git fetch origin
-git pull --ff-only origin main
-npm run skills:manage -- status create-logo
-npm run skills:manage -- sync create-logo
+read -s WESHOP_API_KEY && export WESHOP_API_KEY
+npm run api-key:check
 ```
 
-`status` returns `current`, `update available`, or `missing installation`. A single-Skill update synchronizes only the selected Skill into the Agent installation directory. Upstream versions still come from this Git repository, preserving commit history, private authentication, and shared policy.
+Never paste the key into chat, source files, frontend code, Git history, URLs, or command arguments.
 
-## Router implementation
+## 💬 Use it
 
-### Adaptive Router
+You do not need to memorize Skill names. Describe the result you want and the Router will select and combine the right Skills.
 
-The extension points are [src/adaptive-router.ts](src/adaptive-router.ts) and [skills/weshop-router/SKILL.md](skills/weshop-router/SKILL.md). The harness model performs semantic planning:
-
-- selects Skills from their runtime descriptions;
-- works backward from the final outcome into operations;
-- chooses the narrowest Skill for each operation;
-- binds user assets and upstream outputs to downstream inputs;
-- adds a research node when current platform specifications, regulations, or market facts affect execution;
-- asks a focused question only when ambiguity changes the Skill, material, cost, irreversible action, or delivery contract.
-
-TypeScript does not replace model judgment with keyword routing. It validates the proposed plan: Skill IDs exist, step IDs are unique, dependencies are complete and acyclic, research-dependent plans contain research nodes, and clarifications contain substantive questions.
-
-```ts
-type AdaptiveRouteStep = {
-  id: string;
-  kind: "skill" | "research" | "deterministic";
-  skillId?: string;
-  objective: string;
-  dependsOn: string[];
-  inputs: Record<string, string>;
-  output: string;
-  selectionReason: string;
-};
-```
-
-See [adaptive-planning.md](skills/weshop-router/references/adaptive-planning.md) for the complete intent, DAG, and handoff contracts.
-
-### Compatibility Router
-
-[src/router.ts](src/router.ts) retains `routeNaturalLanguage` for existing callers. It contains the earlier operation detection and verified hard routes, but it is no longer the extension point for new Skills.
-
-```ts
-import { routeNaturalLanguage } from "@jason12196/weshop-skill-package";
-
-const plan = routeNaturalLanguage(
-  "Generate four virtual try-on images with this garment and preserve its logo",
-  { assets: ["garment"] }
-);
-```
-
-### QA budget
-
-- Ordinary generation and editing: one final checkpoint covering the first result and anything already flagged.
-- Identity, apparel, product, and pose work: inspect only the declared preservation invariants.
-- Strict per-output inspection: reserve for hard file or safety contracts such as transparent PNG delivery and fictional mugshot labeling.
-- Download, ingestion, or publication failure: repair only the failed downstream stage; do not regenerate accepted content.
-
-## Skill structure
+Try prompts like:
 
 ```text
-skills/example-skill/
-├── SKILL.md                 # Required: name, description, and execution guidance
-├── agents/openai.yaml       # Optional: Codex UI metadata and default invocation prompt
-├── references/              # Optional: parameters, rules, and acceptance details
-├── scripts/                 # Optional: repeatable deterministic processing
-└── assets/                  # Optional: templates, fonts, or static output resources
+Turn this product photo into a clean white-background marketplace hero image. Keep the product shape, label, and colors unchanged.
 ```
 
-Progressive disclosure has three stages: the harness first sees the Skill name, description, and path; it reads `SKILL.md` after a match; and it reads references or runs scripts only for the selected branch. The description must therefore state the capability, positive use case, and necessary exclusions.
+```text
+Put this jacket on the model, preserve the garment logo and fit, then create a matching lifestyle campaign image.
+```
 
-A publishable Atom defines one user outcome, trigger and adjacent boundaries, input roles, preservation invariants, verified route, output contract, observable acceptance, non-identical retry and stopping rules, and execution-record requirements.
+```text
+Remove the person in the background, expand this photo to 16:9, and animate it into a five-second cinematic shot.
+```
 
-## Complete Skill inventory
+```text
+Create one minimal logo for NORTHLINE COFFEE: an original N plus mountain-path symbol in black and cream.
+```
 
-The `skills/` directory currently contains 73 Atoms. Categories are for browsing only and do not participate in hard-coded Router selection.
+You can also invoke a Skill directly, for example `$remove-background`, `$virtual-try-on`, `$create-logo`, or `$generate-video`.
+
+## ✨ What you get
+
+| Capability | Examples |
+| --- | --- |
+| 🛒 Product & e-commerce | Product scenes, packaging, white-background mockups, virtual try-on, model replacement |
+| 🎨 Image creation | Logos, characters, animals, banners, posters, thumbnails, infographics |
+| ✂️ Image editing | Remove objects or backgrounds, expand, recolor, retouch, clean, restore |
+| 🧑 Portrait & appearance | Headshots, ID photos, makeup, hair, pose, glasses, tattoos |
+| 🎬 Video | Image animation, talking video, intros, effects, editing, combining, upscaling |
+| 🏠 Space & design | Room restyling, landscape previews, floor plans, flowcharts, CAD |
+| 🧠 Multi-step routing | Natural-language planning, parallel or ordered Skills, asset handoff, final QA |
+| 🛡️ Safe execution | Stable operation keys, duplicate-spend protection, polling, recovery records |
+
+The Router discovers installed Skills from their descriptions, decomposes compound requests, connects outputs to downstream inputs, selects verified WeShop models or Agents, and performs one focused acceptance check on the final result.
+
+## Complete Skill inventory 🧩
+
+The `skills/` directory contains 73 Atom Skills and one Router. Categories below are for browsing only.
 
 | Category | Skills |
 | --- | --- |
@@ -286,84 +146,83 @@ The `skills/` directory currently contains 73 Atoms. Categories are for browsing
 | Video | `add-video-effect`, `animate-image`, `combine-videos`, `correct-video-color`, `edit-social-video`, `generate-video`, `make-podcast-video`, `make-talking-video`, `make-video-intro`, `remove-video-mark`, `restyle-video`, `upscale-video` |
 | Social and commemorative | `make-birthday-video`, `make-holiday-card`, `make-mugshot-photo`, `make-wallet-photo`, `make-wedding-photo` |
 
-`npm run docs:validate` checks this inventory against the directories on disk, so there is no second production ledger.
+List them from your terminal:
 
-## Model and execution safety
+```bash
+npm run skills:manage -- list
+```
 
-[models/catalog.json](models/catalog.json) is the source of truth for model IDs, media types, status, capabilities, limits, strengths, exclusions, default use, sources, and verification dates. `unknown` does not mean supported, and discoverability does not mean an executable API contract exists. Shared selection rules live in [model-selection-policy.md](model-selection-policy.md).
+Install only what you need:
 
-Every atomic generation run persists a unique `operationKey` before submission. Only a non-empty `executionId` proves normal acceptance. A create timeout, transport error, empty or malformed response, or missing ID becomes `outcome-unknown` and requires reconciliation rather than blind resubmission. Download, ingestion, and Canvas publication failures retry only their downstream stage. See [src/execution.ts](src/execution.ts).
+```bash
+npm run skills:manage -- install create-logo
+npm run skills:manage -- install weshop-router
+```
 
-## Development, validation, and release
+## ⌨️ Built-in WeShop CLI
+
+The package includes `weshop-skill`, a direct WeShop OpenAPI CLI for uploads, Agent discovery, generation, polling, and operation-ledger inspection. It supports the Standard and Premium Agents enabled for your account and does not depend on the official `weshop-cli` package.
+
+```bash
+npm run cli -- --help
+npm run cli -- info aiproduct
+npm run cli -- upload ./product.png
+```
+
+Run an Agent directly:
+
+```bash
+weshop-skill run gpt-image \
+  --operation-key campaign-logo-v1 \
+  --params '{"textDescription":"Create a clean geometric logo","quality":"medium","imageSize":"2K","batchCount":1}'
+```
+
+Local images can be written as `file:./image.png` inside `--input` or `--params` JSON. Each submission requires a stable `--operation-key`; the CLI waits for completion by default and prevents blind duplicate submissions.
+
+## 🔄 Update
+
+```bash
+git pull --ff-only
+npm ci
+npm run skills:manage -- sync --all
+```
+
+Check one installation before updating it:
+
+```bash
+npm run skills:manage -- status create-logo
+npm run skills:manage -- sync create-logo
+```
+
+## 🏗️ For maintainers
+
+Start with [CONTRIBUTING.md](CONTRIBUTING.md) and the [maintainer guide](docs/maintainers/README.md). The repository includes separate workflows for [creating a Skill](docs/maintainers/adding-skills.md) and [adapting an external project to WeShop](docs/maintainers/importing-external-projects.md).
+
+Useful commands:
 
 | Command | Purpose |
 | --- | --- |
-| `npm ci` | Install root dependencies from the lockfile |
-| `npm run build` | Compile TypeScript and prepare the CLI binary |
-| `npm run check` | Run TypeScript static checks |
+| `npm run build` | Compile TypeScript and prepare the CLI |
+| `npm run check` | Run TypeScript checks |
 | `npm test` | Test routing and execution safety |
 | `npm run models:validate` | Validate the model catalog |
-| `npm run models:routing-validate` | Validate model routes across all 73 Atoms |
-| `npm run skills:manage -- ...` | Install, inspect, and synchronize Skills |
-| `npm run skills:intake -- ...` | Create an isolated provenance and WeShop substitution record for an external project |
-| `npm run api-key:check` | Check whether the execution environment provides a WeShop API key |
-| `npm run cli -- ...` | Upload, submit, poll, and inspect WeShop runs through the built-in CLI |
-| `npm run docs:validate` | Validate README inventory, local links, and required command documentation |
-| `npm run maintainers:validate` | Validate maintainer entrypoints, external intake guidance, and local links |
-| `npm run web:build` | Generate and build the visual catalog from current Skill documents |
+| `npm run models:routing-validate` | Validate routes across all Atom Skills |
+| `npm run docs:validate` | Validate this README and Skill inventory |
+| `npm run maintainers:validate` | Validate maintainer documentation |
+| `npm run web:build` | Build the generated visual Skill catalog |
+| `npm run skills:intake -- ...` | Start a provenance-safe external Skill intake |
 
-Run before release:
+## 🔒 Security
 
-```bash
-npm run check
-npm test
-npm run models:validate
-npm run models:routing-validate
-npm run docs:validate
-npm run maintainers:validate
-npm run web:build
-git diff --check
-```
+- `WESHOP_API_KEY` is read from the environment and sent only to `https://openapi.weshop.ai`.
+- Every generation uses a durable operation key before submission.
+- A missing or ambiguous execution receipt blocks automatic resubmission to avoid duplicate output and spend.
+- Accepted runs are polled by execution ID; downstream download or publication failures do not trigger regeneration.
 
-For each changed Skill, also run `skill-creator`'s `quick_validate.py`. Commit and push are separate permissioned actions; do not perform either without explicit authorization.
+## 📄 License
 
-## Repository structure
+Available under the [MIT License](https://github.com/weshopai/weshop-skill-pakage/blob/main/LICENSE).
 
-```text
-.
-├── CONTRIBUTING.md                 # Maintainer entrypoint
-├── docs/maintainers/               # Atom creation and external intake workflows
-├── intake/external-skills/         # Isolated external project analysis; created on demand
-├── skills/                         # 73 Atoms plus one Router
-├── src/                            # Routing, model selection, execution safety, CLI, and tests
-├── models/catalog.json             # Model source of truth
-├── schemas/model-catalog.schema.json
-├── scripts/                        # Installation, intake, build, and validation tooling
-├── web/                            # Visual Skill catalog; not installed with Skills
-├── model-selection-policy.md       # Shared model policy
-└── package.json                    # Installation, build, test, and validation commands
-```
+---
 
-`dist/`, `node_modules/`, website build output, and temporary `output/` files do not enter the repository. Production research, smoke-test checklists, execution records, and generated samples are also excluded from the release package.
-
-## Visual catalog
-
-The standalone `web/` application displays the name, use case, route, output contract, Prompt examples, and installation entrypoint for each installable Skill. It contains no API keys, generated samples, or production files, and `skills:manage` never installs it into an Agent's Skill directory.
-
-```bash
-npm --prefix web ci
-npm run web:dev
-```
-
-At startup and build time, the website generates its data directly from `skills/*/SKILL.md`. Adding a Skill does not require a second hard-coded frontend list.
-
-## Design references
-
-- [OpenAI Codex Skills documentation](https://developers.openai.com/codex/skills) for runtime discovery and progressive disclosure.
-- [OpenAI Skills catalog](https://github.com/openai/skills) for official repository organization and installation patterns.
-- [Agent Skills specification](https://agentskills.io/specification) for portable frontmatter and resource-directory conventions.
-- [Anthropic Skills](https://github.com/anthropics/skills) for decomposing complex capabilities into instructions, scripts, and on-demand references.
-- [Vercel skills CLI](https://github.com/vercel-labs/skills) for multi-source installation, lockfiles, update checks, and cross-Agent distribution.
-- [Microsoft Skills](https://github.com/microsoft/skills) for large catalogs, browsing, and continuous validation.
-
-This package adopts a front-loaded quick start, complete inventory, generated catalog, source locks, external-update checks, and progressive disclosure. It does not automatically trust public registries, overwrite unreviewed content, depend on vendor-specific hooks, treat marketing pages as executable capability, or bypass private repository and WeShop API authorization.
+Built with ❤️ by the WeShop AI team.

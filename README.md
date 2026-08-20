@@ -23,7 +23,7 @@ WeShop Skills turns plain-language creative requests into production-ready image
 Open Codex, Claude Code, or Cursor and paste this:
 
 ```text
-Install all WeShop Skills from https://github.com/weshopai/weshop-skill-pakage for the agent you are running in. Clone the repository, install its npm dependencies, use its skills manager to install all Skills into the correct global skills directory for this agent, verify the installation, and tell me whether I need to restart the agent. Do not ask me to paste or print my WeShop API key.
+Install the latest stable GitHub Release of all WeShop Skills from https://github.com/weshopai/weshop-skill-pakage for the agent you are running in. Clone the repository, check out the newest stable vX.Y.Z tag in detached mode, install its npm dependencies, use its skills manager to install all Skills into the correct global skills directory for this agent, enable the package's silent Release-based auto-updater, verify the installation, and tell me whether I need to restart the agent. Do not ask me to paste or print my WeShop API key.
 ```
 
 The agent should clone this repository, run `npm ci`, and install the Skills into its own global Skill directory.
@@ -35,6 +35,7 @@ The agent should clone this repository, run `npm ci`, and install the Skills int
 ```bash
 git clone https://github.com/weshopai/weshop-skill-pakage.git
 cd weshop-skill-pakage
+git checkout --detach "$(git tag --list 'v[0-9]*' --sort=-v:refname | head -n 1)"
 npm ci
 ```
 
@@ -73,13 +74,31 @@ npm run skills:manage -- install --all --target ~/.cursor/skills
 
 Restart the agent after the first installation so it can discover the new Skills.
 
+### 3. Enable silent Skill updates
+
+After installing all Skills, enable the background updater once:
+
+```bash
+npm run skills:auto-update -- install
+```
+
+It checks every six hours for the latest stable GitHub Release. When the repository is clean and the release is a safe fast-forward update, it advances the detached release checkout and synchronizes every managed installation. It never follows unreleased changes on `main`. If you installed `--all`, Skills added in future releases are installed automatically too.
+
+```bash
+npm run skills:auto-update -- status
+npm run skills:auto-update -- check
+npm run skills:auto-update -- uninstall
+```
+
+The updater uses the Git credentials already configured for this private repository. Successful checks are silent; state and errors are stored under `~/.weshop-skill-package/`. It never overwrites a dirty or diverged checkout. Newly added Skills become visible when the agent next refreshes its Skill list, usually in a new task or after an app reload.
+
 By default, installation uses symlinks, so pulling this repository updates the installed Skill content immediately. Add `--copy` if you need an isolated copy:
 
 ```bash
 npm run skills:manage -- install --all --copy
 ```
 
-### 3. Configure WeShop OpenAPI
+### 4. Configure WeShop OpenAPI
 
 Get a key from [WeShop OpenAPI](https://www.weshop.ai/apiKey), then provide it only to the trusted local process that performs generation:
 
@@ -181,17 +200,16 @@ Local images can be written as `file:./image.png` inside `--input` or `--params`
 
 ## 🔄 Update
 
+Automatic-update users do not need to run a manual update command. To update immediately instead of waiting for the next background check:
+
 ```bash
-git pull --ff-only
-npm ci
-npm run skills:manage -- sync --all
+npm run skills:auto-update -- run
 ```
 
-Check one installation before updating it:
+Inspect one managed Skill at any time:
 
 ```bash
 npm run skills:manage -- status create-logo
-npm run skills:manage -- sync create-logo
 ```
 
 ## 🏗️ For maintainers
@@ -211,6 +229,7 @@ Useful commands:
 | `npm run maintainers:validate` | Validate maintainer documentation |
 | `npm run web:build` | Build the generated visual Skill catalog |
 | `npm run skills:intake -- ...` | Start a provenance-safe external Skill intake |
+| `npm run skills:auto-update -- ...` | Install or inspect the Release-based background updater |
 
 ## 🔒 Security
 

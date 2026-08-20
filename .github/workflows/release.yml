@@ -1,0 +1,62 @@
+name: Publish stable release
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Stable semantic version tag, for example v0.2.0
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  validate-and-release:
+    runs-on: ubuntu-latest
+    env:
+      RELEASE_TAG: ${{ inputs.tag }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Validate release tag
+        run: |
+          if [[ ! "$RELEASE_TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "Release tag must use stable semantic versioning such as v0.2.0."
+            exit 1
+          fi
+
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: |
+          npm ci
+          npm --prefix web ci
+
+      - name: Validate package
+        run: |
+          npm run check
+          npm test
+          npm run models:validate
+          npm run models:routing-validate
+          npm run docs:validate
+          npm run maintainers:validate
+          npm run web:build
+
+      - name: Publish release
+        run: |
+          if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
+            echo "Release $RELEASE_TAG already exists."
+            exit 1
+          fi
+          gh release create "$RELEASE_TAG" \
+            --target "$GITHUB_SHA" \
+            --title "$RELEASE_TAG" \
+            --generate-notes \
+            --latest

@@ -8,6 +8,8 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const skillsRoot = path.join(root, "skills");
 const lockName = ".weshop-skill-lock.json";
+const stateRoot = path.resolve(process.env.WESHOP_SKILL_HOME ?? path.join(os.homedir(), ".weshop-skill-package"));
+const installationsPath = path.join(stateRoot, "installations.json");
 const usage = `Usage:
   npm run skills:manage -- list
   npm run skills:manage -- install <skill|--all> [--target <dir>] [--copy]
@@ -73,6 +75,20 @@ const writeLock = async (lock) => {
   lock.sourceCommit = git("rev-parse", "HEAD");
   lock.updatedAt = new Date().toISOString();
   await writeFile(path.join(targetRoot, lockName), `${JSON.stringify(lock, null, 2)}\n`);
+  await mkdir(stateRoot, { recursive: true });
+  let registry = { schemaVersion: 1, installations: [] };
+  try { registry = JSON.parse(await readFile(installationsPath, "utf8")); }
+  catch (error) { if (error.code !== "ENOENT") throw error; }
+  const installation = {
+    target: targetRoot,
+    sourceRepository: git("remote", "get-url", "origin"),
+    updatedAt: lock.updatedAt
+  };
+  registry.installations = [
+    ...registry.installations.filter((entry) => path.resolve(entry.target) !== targetRoot),
+    installation
+  ].sort((left, right) => left.target.localeCompare(right.target));
+  await writeFile(installationsPath, `${JSON.stringify(registry, null, 2)}\n`);
 };
 
 const select = async (value, lock, forExisting = false) => {
@@ -119,14 +135,20 @@ if (command === "list") {
   const lock = await readLock();
   const selected = await select(requested, lock);
   if (!selected.length) throw new Error(usage);
+  if (requested === "--all") {
+    lock.tracksAll = true;
+    lock.defaultMode = copyMode ? "copy" : "symlink";
+  }
   await mkdir(targetRoot, { recursive: true });
   for (const name of selected) await installOne(name, copyMode ? "copy" : "symlink", lock);
   await writeLock(lock);
 } else if (command === "sync") {
   const lock = await readLock();
-  const selected = await select(requested, lock, true);
+  const selected = requested === "--all" && lock.tracksAll
+    ? await skillNames()
+    : await select(requested, lock, true);
   if (!selected.length) throw new Error(`No managed Skills in ${targetRoot}.`);
-  for (const name of selected) await installOne(name, lock.skills[name]?.mode ?? "symlink", lock);
+  for (const name of selected) await installOne(name, lock.skills[name]?.mode ?? lock.defaultMode ?? "symlink", lock);
   await writeLock(lock);
 } else if (command === "status") {
   const lock = await readLock();

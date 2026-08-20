@@ -1,5 +1,13 @@
 # Handoff
 
+## 2026-08-20: MIT crawl intake batch 7 (rows 31–35)
+
+- Pinned and verified MIT sources: `ZiadAbdelkarim/beat-synced-edit` at `48c09c92ee69c2d89b7e44b146bbd7b9c26fff08`, `Gnurpreet/promo-video-script-skill` at `0d34d65fb02b29016a25b38c3e1a593731732f76`, `iart-ai/kinetic-typography-skills` at `fccc94bd325d824235ee9e715e65abde57b6513a`, `MLiang0920/mliang-ui-design-skill` at `b8a0d9316d23ccf7e99b6e09994a3ebce8727dd3`, and `62656456/ai-storyboard-director-v5.2` at `a8d9ad6362ed38d76857199cb9ba92956f87ae5d`.
+- Added `make-beat-synced-video` for measured beat/energy analysis, inspectable EDL planning, deterministic assembly, restrained effects, safe crops, and complete-export QC.
+- Added `make-kinetic-typography` for exact-copy, licensed-font, accessible and reduced-motion text animation with deterministic frame/playback review.
+- Enhanced `plan-film-storyboard` with an approved visual-concept/motif pass, spatial power geometry, non-default creative choices, and per-shot editorial motivation. Kept duplicate promo scripting intake-only and excluded web UI codegen as out of scope.
+- No upstream code, dependencies, examples, archives, HTML templates, or showcase media were copied or executed. No paid generation was run.
+
 ## 2026-08-20: MIT crawl intake batch 6 (rows 26–30)
 
 - Pinned and verified MIT sources: `buluslan/seedance-video-script` at `ae7c78d9cb5365286bffb95510fe43eed5c6daba`, `dennisonbertram/emulsion` at `f28083faf1945975f96dea44f846ab3724ecb652`, `mathruffian-dot/yaml-image-deck` at `8fd0e1ef81f10e43ba3677eb41410a316501d244`, `SumOneHK/short-drama-scriptwriter` at `269036c81f2d17eacfccb197734f21e5c554c978`, and `SumOneHK/tiktok-short-drama` at `97c956aa23ea8ffff035c2bf75e645670259299f`. Completed intake and capability maps for all five; no upstream code was executed.

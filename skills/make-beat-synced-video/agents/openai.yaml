@@ -1,0 +1,4 @@
+interface:
+  display_name: "Make Beat-Synced Video"
+  short_description: "Edit supplied footage to an analyzed music beat map"
+  default_prompt: "Edit these supplied clips into one beat-synced video."

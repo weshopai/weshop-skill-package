@@ -1,0 +1,4 @@
+interface:
+  display_name: "Make Kinetic Typography"
+  short_description: "Create one accessible animated typography deliverable"
+  default_prompt: "Turn this copy into one polished kinetic-typography animation."

@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img alt="86 Skills" src="https://img.shields.io/badge/Skills-86-7530FE?style=flat-square" />
+  <img alt="88 Skills" src="https://img.shields.io/badge/Skills-88-7530FE?style=flat-square" />
   <img alt="Codex" src="https://img.shields.io/badge/Codex-ready-10A37F?style=flat-square" />
   <img alt="Claude Code" src="https://img.shields.io/badge/Claude_Code-ready-D97757?style=flat-square" />
   <img alt="Cursor" src="https://img.shields.io/badge/Cursor-ready-2563EB?style=flat-square" />
@@ -16,7 +16,7 @@
 
 WeShop Skills turns plain-language creative requests into production-ready image, video, product, portrait, layout, and spatial workflows powered by WeShop OpenAPI. Install the complete collection or pick only the Skills you need.
 
-> This repository contains **85 focused Atom Skills + 1 adaptive Router**. It prefers the official WeShop CLI when installed and includes a standalone `weshop-skill` fallback.
+> This repository contains **87 focused Atom Skills + 1 adaptive Router**. It prefers the official WeShop CLI when installed and includes a standalone `weshop-skill` fallback.
 
 ## 🚀 Install with one prompt
 
@@ -150,7 +150,7 @@ The Router discovers installed Skills from their descriptions, decomposes compou
 
 ## Complete Skill inventory 🧩
 
-The `skills/` directory contains 85 Atom Skills and one Router. Categories below are for browsing only and do not participate in hard-coded Router selection.
+The `skills/` directory contains 87 Atom Skills and one Router. Categories below are for browsing only and do not participate in hard-coded Router selection.
 
 | Category | Skills |
 | --- | --- |
@@ -163,7 +163,7 @@ The `skills/` directory contains 85 Atom Skills and one Router. Categories below
 | Characters, animals, and brands | `character-reference-sheet`, `create-animal`, `create-avatar`, `create-character`, `create-flag`, `create-logo`, `create-mascot-logo`, `create-npc`, `make-pet-portrait` |
 | Narrative and comics | `develop-story`, `plan-comic-storyboard`, `plan-film-storyboard`, `render-comic-page`, `write-short-drama-series`, `write-short-video-hooks` |
 | Spaces, diagrams, and CAD | `create-cad`, `make-flowchart`, `preview-landscape`, `preview-paint`, `restyle-room`, `visualize-floor-plan` |
-| Video | `add-video-effect`, `animate-image`, `combine-videos`, `correct-video-color`, `edit-social-video`, `generate-video`, `make-explainer-video`, `make-music-video`, `make-podcast-video`, `make-product-commercial`, `make-talking-video`, `make-video-intro`, `remove-video-mark`, `restyle-video`, `upscale-video` |
+| Video | `add-video-effect`, `animate-image`, `combine-videos`, `correct-video-color`, `edit-social-video`, `generate-video`, `make-beat-synced-video`, `make-explainer-video`, `make-kinetic-typography`, `make-music-video`, `make-podcast-video`, `make-product-commercial`, `make-talking-video`, `make-video-intro`, `remove-video-mark`, `restyle-video`, `upscale-video` |
 | Social and commemorative | `make-birthday-video`, `make-holiday-card`, `make-mugshot-photo`, `make-wallet-photo`, `make-wedding-photo` |
 
 List them from your terminal:
@@ -232,7 +232,7 @@ Useful commands:
 | `npm run check` | Run TypeScript checks |
 | `npm test` | Test routing and execution safety |
 | `npm run models:validate` | Validate the model catalog |
-| `npm run models:routing-validate` | Validate model routes across all 85 Atom Skills |
+| `npm run models:routing-validate` | Validate model routes across all 87 Atom Skills |
 | `npm run docs:validate` | Validate this README and Skill inventory |
 | `npm run maintainers:validate` | Validate maintainer documentation |
 | `npm run web:build` | Build the generated visual Skill catalog |

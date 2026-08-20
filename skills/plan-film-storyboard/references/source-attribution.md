@@ -7,6 +7,7 @@ This Skill adapts fact-tracing, visible-evidence, atomic-shot, blocking, continu
 - [OYYH-Apple/video-storyboard-generator](https://github.com/OYYH-Apple/video-storyboard-generator) at revision `4ccbe8abd80b9a44da43024aec11b2aa41b2bbb4`, copyright (c) 2024 Video Storyboard Generator Contributors.
 - [kevinchin12/storyboard-director](https://github.com/kevinchin12/storyboard-director) at revision `208782096ad7be19d609b4f3f70568507245ef30`, copyright (c) 2026 Storyboard Director contributors.
 - [crowscc/seedance-director](https://github.com/crowscc/seedance-director) at revision `2f0525b3be9b45d5ef2d5d67568b1c6cd562a1c9`, copyright (c) 2026 seedance-director contributors.
+- [62656456/ai-storyboard-director-v5.2](https://github.com/62656456/ai-storyboard-director-v5.2) at revision `a8d9ad6362ed38d76857199cb9ba92956f87ae5d`, copyright (c) 2026 62656456.
 
 The upstream schemas, validators, prompt variants, example images, provider registry, and boilerplate are not copied.
 

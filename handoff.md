@@ -1,5 +1,14 @@
 # Handoff
 
+## 2026-08-20: MIT crawl intake batch 2 (rows 6–10)
+
+- Pinned and verified MIT sources: `zhanghaonan777/Seedance2-skill` at `4ecc0046eee2c56d517fa9e4fbe802527d39ddb3`, `zyz254009-crypto/script-to-shootable-storyboard` at `e1ee698cf5cc94b035560937540134fb7bdb0a07`, `CK42BB/vox-explainer-skill` at `7003225dc3ed1dee9e2ef8b91b05b82c04691aa9`, `rediumvex/viral-hooks-skill` at `e26b339ccf452abf43bb97df54603e4781ae0a8e`, and `YvonneMovingon/short-drama-skills` at `6d632fd7d790cfa45ccf81916bf0e26efd7744c7`. Completed a provenance and capability map for each; no upstream code was executed.
+- Updated `generate-video` with one visible creative change and source-composition/camera compatibility checks. Removed the upstream Volcengine client, credential flow, callback/task controls, trend scraping, fixed platform-limit claims, and automatic fallback.
+- Added `plan-film-storyboard` for fact-traceable, timed atomic film shots with blocking, sound, physical continuity, coverage, rights unknowns, risk/fallback briefs, and downstream generation handoffs. It remains separate from comic-page planning and does not call a plan a finished production.
+- Added `make-explainer-video` for source-backed beat scripts, narration-first timing, original visual anchors, per-beat media, subtitles, deterministic assembly, audio ducking, and end-to-end QC. Named-publisher style imitation, Atlas execution, stale price/model claims, and implied unsupported standalone audio generation were removed.
+- Added `write-short-video-hooks` for three truthful, distinct, platform-fit openings with body-payoff validation. The upstream 100-formula database and preview were not copied and virality is not guaranteed.
+- Full MIT notices and pinned source links are packaged with every adapted installable Skill. Paid representative media generation was not run. Four affected Skills passed quick validation; TypeScript checks, 73 core tests, 2 updater/install tests, model catalog/routing validation, docs/maintainer validation, website build, an 83-Skill install-all smoke test, and `git diff --check` passed.
+
 ## 2026-08-20: MIT crawl intake batch 1 (rows 1–5)
 
 - Parsed `/Users/jasonjiang/Downloads/github_skill_20260820_140556.csv`: 100 candidates contain 44 rows labeled MIT. Added `intake/mit-crawl-20260820.md` as the durable queue; every MIT label still requires a pinned revision and repository license verification.

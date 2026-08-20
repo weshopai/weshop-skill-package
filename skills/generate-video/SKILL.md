@@ -30,10 +30,13 @@ Generate a 5-second 16:9 video of a paper boat drifting through a rain puddle; s
 
 ## Workflow
 
-1. Compile one atomic shot with subject, action, setting, camera, light, duration, ratio and audio.
-2. Select exactly one cataloged model before submission: MiniMax H3 for large-amplitude/high-dynamic motion; Kling 3.0 for precise first/last-frame, product, image-animation, or complex-reference control; Seedance 2.5 for audio-visual synchronization or artistic expression; Seedance 2.0 for routine video generation. Do not trial models in sequence.
-3. Start one WeShop run, poll to terminal success and download MP4.
-4. Inspect first, middle and last frames, motion continuity, camera, duration, ratio and audio.
+1. Compile one atomic shot with subject, action, setting, camera, light, duration, ratio and audio. When the request is underspecified, choose one visible change from A to B with a clear emotional or visual payoff; avoid a merely drifting camera over a static subject.
+2. When references are supplied, label each role as identity/content, first or last frame, motion, style, or audio timing. Reject a camera move that fights the source composition—for example, revealing space outside a tightly cropped reference—unless an upstream expansion step is approved.
+3. Select exactly one cataloged model before submission: MiniMax H3 for large-amplitude/high-dynamic motion; Kling 3.0 for precise first/last-frame, product, image-animation, or complex-reference control; Seedance 2.5 for audio-visual synchronization or artistic expression; Seedance 2.0 for routine video generation. Do not trial models in sequence.
+4. Start one WeShop run, poll to terminal success and download MP4.
+5. Inspect first, middle and last frames, motion continuity, reference-role fidelity, camera/source compatibility, visible change, duration, ratio and audio.
+
+Read [source-attribution.md](references/source-attribution.md) when reviewing provenance or redistributing this adapted Skill.
 
 ## User-facing output
 

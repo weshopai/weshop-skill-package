@@ -88,7 +88,7 @@ test("full installations track future Skills and register their target", async (
     const registry = JSON.parse(await readFile(path.join(state, "installations.json"), "utf8"));
     assert.equal(lock.tracksAll, true);
     assert.equal(lock.defaultMode, "symlink");
-    assert.equal(Object.keys(lock.skills).length, 83);
+    assert.equal(Object.keys(lock.skills).length, 85);
     assert.deepEqual(registry.installations.map((entry) => entry.target), [target]);
   } finally {
     await rm(fixture, { recursive: true, force: true });

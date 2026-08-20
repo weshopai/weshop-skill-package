@@ -1,5 +1,14 @@
 # Handoff
 
+## 2026-08-20: MIT crawl intake batch 3 (rows 11–15)
+
+- Pinned and verified MIT sources: `OYYH-Apple/video-storyboard-generator` at `4ccbe8abd80b9a44da43024aec11b2aa41b2bbb4`, `guigulaoshi/music-video-director-skill` at `80651450ca45d7acf543a372d19f81a91f640966`, `longhang2004/vietnamese-humanizer` at `611c6e9ed911897c8febffc056d62543d76ea411`, `jackterror/writers-room-story-engine` at `f146ab0a7778e545d95d3c95afdae6fb29a55823`, and `kevinchin12/storyboard-director` at `208782096ad7be19d609b4f3f70568507245ef30`. Completed intake and capability maps for all five; no upstream code was executed.
+- Merged useful discovery, audio, stage-approval, session-handoff, and text-self-contained prompt concepts from both storyboard sources into the existing `plan-film-storyboard` boundary. Upstream home-directory preference state, fixed duration claims, installer/session/HTML systems, forced delegation, and generation dependencies were not copied.
+- Added `make-music-video` for rights-aware source inventory, song/lyric/dynamic analysis, source-range review, a validated EDL, deterministic rendering, and full-export QC. Removed automatic site downloads, shell-profile/package installation, mandatory watermarking, brittle source assumptions, and arbitrary quota rules.
+- Added `develop-story` for phase diagnosis, premise options, story core, ending direction, protagonist engine, story-relevant world pressure, causal beats, scene briefs, and top-down revision.
+- Completed but did not promote `vietnamese-humanizer`: its preservation-aware Vietnamese editing is sound, but it is a general language-quality tool outside this package's creative-media execution scope. Its full provenance and rejection rationale remain in intake.
+- Full MIT notices are packaged for promoted adaptations. No paid generation was run. Three affected Skills passed quick validation; TypeScript checks, 73 core tests, 2 updater/install tests, model catalog/routing validation, docs/maintainer validation, website build, an 85-Skill install-all smoke test, and `git diff --check` passed.
+
 ## 2026-08-20: MIT crawl intake batch 2 (rows 6–10)
 
 - Pinned and verified MIT sources: `zhanghaonan777/Seedance2-skill` at `4ecc0046eee2c56d517fa9e4fbe802527d39ddb3`, `zyz254009-crypto/script-to-shootable-storyboard` at `e1ee698cf5cc94b035560937540134fb7bdb0a07`, `CK42BB/vox-explainer-skill` at `7003225dc3ed1dee9e2ef8b91b05b82c04691aa9`, `rediumvex/viral-hooks-skill` at `e26b339ccf452abf43bb97df54603e4781ae0a8e`, and `YvonneMovingon/short-drama-skills` at `6d632fd7d790cfa45ccf81916bf0e26efd7744c7`. Completed a provenance and capability map for each; no upstream code was executed.

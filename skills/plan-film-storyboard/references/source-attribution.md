@@ -4,6 +4,8 @@ This Skill adapts fact-tracing, visible-evidence, atomic-shot, blocking, continu
 
 - [zyz254009-crypto/script-to-shootable-storyboard](https://github.com/zyz254009-crypto/script-to-shootable-storyboard) at revision `e1ee698cf5cc94b035560937540134fb7bdb0a07`, copyright (c) 2026 zyz254009-crypto.
 - [YvonneMovingon/short-drama-skills](https://github.com/YvonneMovingon/short-drama-skills) at revision `6d632fd7d790cfa45ccf81916bf0e26efd7744c7`, copyright (c) 2025 LuxReal.
+- [OYYH-Apple/video-storyboard-generator](https://github.com/OYYH-Apple/video-storyboard-generator) at revision `4ccbe8abd80b9a44da43024aec11b2aa41b2bbb4`, copyright (c) 2024 Video Storyboard Generator Contributors.
+- [kevinchin12/storyboard-director](https://github.com/kevinchin12/storyboard-director) at revision `208782096ad7be19d609b4f3f70568507245ef30`, copyright (c) 2026 Storyboard Director contributors.
 
 The upstream schemas, validators, prompt variants, example images, provider registry, and boilerplate are not copied.
 

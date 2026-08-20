@@ -8,6 +8,7 @@ This Skill adapts fact-tracing, visible-evidence, atomic-shot, blocking, continu
 - [kevinchin12/storyboard-director](https://github.com/kevinchin12/storyboard-director) at revision `208782096ad7be19d609b4f3f70568507245ef30`, copyright (c) 2026 Storyboard Director contributors.
 - [crowscc/seedance-director](https://github.com/crowscc/seedance-director) at revision `2f0525b3be9b45d5ef2d5d67568b1c6cd562a1c9`, copyright (c) 2026 seedance-director contributors.
 - [62656456/ai-storyboard-director-v5.2](https://github.com/62656456/ai-storyboard-director-v5.2) at revision `a8d9ad6362ed38d76857199cb9ba92956f87ae5d`, copyright (c) 2026 62656456.
+- [nhanhxxm2can9351-glitch/script-to-storyboard](https://github.com/nhanhxxm2can9351-glitch/script-to-storyboard) at revision `781be51dcbabed1e13d2f4c73e04e411abdc317d`, copyright (c) 2026 nhanhxxm2can9351-glitch.
 
 The upstream schemas, validators, prompt variants, example images, provider registry, and boilerplate are not copied.
 

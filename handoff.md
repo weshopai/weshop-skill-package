@@ -1,5 +1,12 @@
 # Handoff
 
+## 2026-08-20: MIT crawl intake batch 8 (rows 36–40)
+
+- Pinned and verified MIT sources: `arome3/code-to-content` at `c3f1f178598b3aa45430923eb42ee592344bd4ca`, `lukasersil/seedance-25` at `aa5dfc56e89e35defab851164959bcdf2f43198d`, `lordhoell/davinci-resolve-mcp` at `b134a4d5bb9110a23af7669d5bbe183b9f626aa5`, `nhanhxxm2can9351-glitch/script-to-storyboard` at `781be51dcbabed1e13d2f4c73e04e411abdc317d`, and `MaoranSun/paper-to-storyboard` at `4f5d97513931f5cfffccd377b923dd08050cf3cb`.
+- Enhanced `plan-film-storyboard` with observable preparation/contact/result/settling phases and story-relevant secondary physical effects for material action.
+- Retained developer-content and PDF-to-scrollytelling website systems as out-of-scope intake; retained the Seedance snapshot prompt as a duplicate of existing provider-aware film/video behavior; retained the Resolve MCP as an application connector rather than copying it into outcome Atoms.
+- Upstream agents, commands, Python/JavaScript, MCP server, templates, examples, media, archives, dependency installers, and API-key flows were not copied or executed. No paid generation was run.
+
 ## 2026-08-20: MIT crawl intake batch 7 (rows 31–35)
 
 - Pinned and verified MIT sources: `ZiadAbdelkarim/beat-synced-edit` at `48c09c92ee69c2d89b7e44b146bbd7b9c26fff08`, `Gnurpreet/promo-video-script-skill` at `0d34d65fb02b29016a25b38c3e1a593731732f76`, `iart-ai/kinetic-typography-skills` at `fccc94bd325d824235ee9e715e65abde57b6513a`, `MLiang0920/mliang-ui-design-skill` at `b8a0d9316d23ccf7e99b6e09994a3ebce8727dd3`, and `62656456/ai-storyboard-director-v5.2` at `a8d9ad6362ed38d76857199cb9ba92956f87ae5d`.

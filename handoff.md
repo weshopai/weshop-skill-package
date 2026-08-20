@@ -1,5 +1,15 @@
 # Handoff
 
+## 2026-08-20: MIT crawl intake batch 1 (rows 1–5)
+
+- Parsed `/Users/jasonjiang/Downloads/github_skill_20260820_140556.csv`: 100 candidates contain 44 rows labeled MIT. Added `intake/mit-crawl-20260820.md` as the durable queue; every MIT label still requires a pinned revision and repository license verification.
+- Completed isolated intake and capability maps for `ziguishian/xhs-visual-director-skill` at `5c730c688f2c7e64f798d611608997ffba43813d`, `0xsline/short-drama` at `8979a428c31a865421d661bdb606e24314b683a0`, `worldwonderer/drama-skills` at `3b9f807cd384cd63324d0856d92950be4c95b40d`, `nutllwhy/seedance-tvc-director` at `9fef40f955f476551eb7e6fc5a7355f7dbc44181`, and `jijiutong/ai-visual-director` at `b47f664ca00c50539c5365109e9360f82170972d`. Repository-root MIT licenses were verified and no upstream code was executed.
+- Added `create-social-carousel`: one ordered mobile-first carousel, a visual-master approval gate, one GPT Image 2 operation per page, complete-sequence QA, and page-scoped recovery.
+- Merged the two complementary short-drama sources into `write-short-drama-series`: source-fact ledger, locked bible, exact-count episode arc, shootable requested scripts, and an accepted-episode continuity ledger. It performs no paid generation.
+- Added `make-product-commercial`: truthful claim lock, product-caused treatment, timed atomic shots, product/reference-aware model routing, durable per-shot operations, accepted-clip assembly, and end-to-end commercial QA.
+- Did not promote the broad `ai-visual-director` hierarchy. Its useful stage/anchor concepts map to the package's existing narrow Atoms and adaptive Router, avoiding a duplicate monolithic orchestrator.
+- Packaged source revision links and full MIT notices with all three adapted Atoms. No paid representative generation was run. All three Skills passed `quick_validate.py`; `git diff --check`, TypeScript checks, 73 core tests, 2 updater/install tests, model catalog/routing validation, README and maintainer-doc validation, the generated website build, an 80-Skill install-all smoke test, and status checks for all three new Skills passed.
+
 ## 2026-08-20: first-party AI Comic workflow decomposition
 
 - Reviewed the user's `Jason12196/Ai-Comic-Generator` at commit `f1a86c3aad624cd52c273707f789a69ab7689ae0` as first-party product evidence; did not use the external Skill intake template or copy its UI, provider adapters, deployment, or secret-storage behavior.

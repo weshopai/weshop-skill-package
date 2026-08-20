@@ -1,5 +1,13 @@
 # Handoff
 
+## 2026-08-20: merged eight-task character production workflow
+
+- Merged character reference creation into `create-character`; `character-reference-sheet` remains only as a backward-compatible redirect and must not submit an independent or ninth generation.
+- `create-character` now owns exactly eight atomic tasks: canonical multi-panel design sheet, full-body front, full-body back, head close-up, lighting study, final-look portrait, scene 1, and scene 2.
+- The canonical design sheet is submitted and visually accepted first. Its output is then bound through `images` into tasks 2–8 to preserve face, age, hair, proportions, wardrobe, palette, marks, and signature props.
+- Every task uses GPT Image 2 Medium/2K, its own stable operation key, and `batchCount: 1`; artistic style wording cannot switch the workflow to Midjourney's four-image response.
+- Updated deterministic and adaptive Router behavior so character-sheet and character-creation requests resolve to one `create-character` node with `runs: 8`, canonical-first execution, and pack-level acceptance. No paid generation was run. Changes were validated before migration to `weshopai/main`.
+
 ## 2026-08-20: MIT crawl intake batch 9 (rows 41–44)
 
 - Pinned and verified MIT sources: `pxeodev/study-film-skill` at `3a7fac2c1879edaef66c882300b317af623c8aea`, `yanshangcha01/libtv-shortdrama-storyboard` at `78326bdef885b501a63e520de06fbdd335966ee6`, `ymh3753201/visual-director-skill` at `fefad96e5cf0537260c44bc81b7a46ca7c95806a`, and `chenmisss/laoxu-video-script` at `b24ed211c50b9c5151d84ed0422bc83c8fcaae07`.
@@ -73,13 +81,12 @@
 - Added `make-product-commercial`: truthful claim lock, product-caused treatment, timed atomic shots, product/reference-aware model routing, durable per-shot operations, accepted-clip assembly, and end-to-end commercial QA.
 - Did not promote the broad `ai-visual-director` hierarchy. Its useful stage/anchor concepts map to the package's existing narrow Atoms and adaptive Router, avoiding a duplicate monolithic orchestrator.
 - Packaged source revision links and full MIT notices with all three adapted Atoms. No paid representative generation was run. All three Skills passed `quick_validate.py`; `git diff --check`, TypeScript checks, 73 core tests, 2 updater/install tests, model catalog/routing validation, README and maintainer-doc validation, the generated website build, an 80-Skill install-all smoke test, and status checks for all three new Skills passed.
-
 ## 2026-08-20: first-party AI Comic workflow decomposition
 
 - Reviewed the user's `Jason12196/Ai-Comic-Generator` at commit `f1a86c3aad624cd52c273707f789a69ab7689ae0` as first-party product evidence; did not use the external Skill intake template or copy its UI, provider adapters, deployment, or secret-storage behavior.
 - Extracted the useful Prompt contracts: story expansion, visual-style selection, structured character extraction, exact-count pagination, character design sheets, reference-bound page rendering, per-page progress, and targeted page regeneration.
-- Added `plan-comic-storyboard` for a validated story/character/page/panel manifest and `render-comic-page` for one reference-aware finished page. Enhanced `character-reference-sheet` with comic expression and invariant handoffs.
-- The Router composes storyboard planning, only the missing character sheets, one render operation per page, and `add-speech-bubble` only when accepted artwork needs deterministic copy repair.
+- Added `plan-comic-storyboard` for a validated story/character/page/panel manifest and `render-comic-page` for one reference-aware finished page. Character creation was subsequently merged into the canonical-first eight-task `create-character` workflow documented above.
+- The Router composes storyboard planning, only the missing `create-character` packs, one render operation per page, and `add-speech-bubble` only when accepted artwork needs deterministic copy repair.
 - Replaced provider-specific Gemini/Nano fallback behavior, automatic identical timeout retries, and unconditional page fan-out with the package's GPT Image 2 Medium/2K route, durable operation keys, terminal polling, continuity-aware sequencing, and page-scoped error-responsive recovery.
 - No paid image generation was run. Both new Skills, the enhanced character Skill, and the Router passed quick validation; `npm run check`, 73 tests including a five-node comic DAG dry run, model validators, docs validators, web build, install smoke tests, and `git diff --check` passed before the original commit and are rerun against this repository during the port.
 

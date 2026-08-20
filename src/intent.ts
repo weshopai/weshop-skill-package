@@ -7,7 +7,7 @@ const quantity = (text: string) => Number(text.match(/(?:生成|要|给我|creat
 export function compileIntent(raw: string): IntentCard {
   const text = raw.toLowerCase();
   const video = has(text, ["视频", "短片", "video", "film", "动画", "animate", "动起来", "motion"]);
-  const operation: Operation = has(text, ["角色设定图", "人物设定图", "角色三视图", "人物三视图", "character sheet", "casting sheet"]) ? "character-sheet"
+  const operation: Operation = has(text, ["角色设定图", "人物设定图", "角色三视图", "人物三视图", "创建角色", "设计角色", "原创角色", "漫画角色", "漫画人物", "电影角色", "character sheet", "casting sheet", "create character", "original character", "character design"]) ? "create-character"
     : has(text, ["mugshot", "mug shot", "虚构入案照", "虚构拘捕照", "入案照风格", "拘捕照风格"]) ? "make-mugshot-photo"
     : has(text, ["流程图", "flowchart", "flow chart"]) ? "make-flowchart"
     : has(text, ["景观预览", "庭院改造", "庭院设计", "景观设计", "preview landscape", "landscape preview", "redesign this courtyard", "redesign this yard"]) ? "preview-landscape"
@@ -31,7 +31,7 @@ export function compileIntent(raw: string): IntentCard {
   if (has(text, ["商品", "产品", "product", "包装"])) assets.push("product");
   if (has(text, ["图片", "图像", "照片", "image", "photo"])) assets.push("image");
   if (video && has(text, ["视频", "video", "素材"])) assets.push("video");
-  if (assets.length === 0 && operation !== "character-sheet" && operation !== "generate-image" && operation !== "generate-video") assets.push("image");
+  if (assets.length === 0 && operation !== "create-character" && operation !== "generate-image" && operation !== "generate-video") assets.push("image");
   const preserve = ["服装|衣服|apparel" , "商品|产品|product|包装", "logo|商标", "人物|人脸|identity", "背景|background"].flatMap((pattern, index) => has(text, pattern.split("|")) ? [["apparel", "product", "logo", "identity", "background"][index]] : []);
   const priority: Priority = has(text, ["高质量", "4k", "高清", "quality"]) ? "quality" : has(text, ["保真", "一致", "preserve", "fidelity"]) ? "fidelity" : has(text, ["快速", "快", "speed"]) ? "speed" : "cost";
   return { raw, operation, media, assets, preserve, outputCount: quantity(text), namedVariations: has(text, ["分别", "每张", "each", "不同的"]), priority, requiresResearch: has(text, ["amazon", "tiktok shop", "temu", "shopee", "规格", "合规", "竞品"]), confidence: operation === "generate-image" || operation === "generate-video" ? 0.72 : 0.9 };

@@ -1,7 +1,7 @@
 export type MediaType = "image" | "video";
 export type CapabilitySupport = "yes" | "no" | "unknown";
 export type AssetRole = "garment" | "dressed-model" | "product" | "image" | "video" | "model-reference" | "scene-reference" | "pose-reference" | "text";
-export type Operation = "try-on" | "outfit-design" | "replace-model-or-scene" | "change-pose" | "product-scene" | "remove-background" | "expand-image" | "character-sheet" | "make-mugshot-photo" | "create-animal" | "create-logo" | "create-flag" | "restyle-room" | "preview-landscape" | "make-flowchart" | "generate-image" | "edit-image" | "generate-video" | "animate-image";
+export type Operation = "try-on" | "outfit-design" | "replace-model-or-scene" | "change-pose" | "product-scene" | "remove-background" | "expand-image" | "character-sheet" | "create-character" | "make-mugshot-photo" | "create-animal" | "create-logo" | "create-flag" | "restyle-room" | "preview-landscape" | "make-flowchart" | "generate-image" | "edit-image" | "generate-video" | "animate-image";
 export type Priority = "speed" | "quality" | "fidelity" | "cost";
 export interface ModelDefinition {
   id: string;

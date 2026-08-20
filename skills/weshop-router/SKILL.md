@@ -50,7 +50,7 @@ Judge a candidate from its stated use case, exclusions, required inputs, promise
 - Prefer Nano 2 for fast divergence and Nano Pro for fast convergence/internal review when readable text is absent.
 - For video, route large-amplitude motion to MiniMax H3, complex references to Kling V3 Omni when cataloged, precise frame/product control to Kling V3, audio-visual/artistic work to Seedance 2.5, routine work to Seedance 2.0, and lightweight validation to Seedance Mini when cataloged.
 
-When a platform-specific model such as Soul is unavailable, route to a package workflow such as `character-reference-sheet`. The workflow owns the output contract; the current model adapter may be replaced when the catalog changes.
+When a platform-specific model such as Soul is unavailable, route to a package workflow such as `create-character`. It owns the canonical-first eight-task character pack; `character-reference-sheet` is only a compatibility redirect. The workflow owns the output contract, and the current model adapter may be replaced when the catalog changes.
 
 ## Run submission safety
 

@@ -40,7 +40,7 @@ Plan a six-page vertical Chinese comic from this premise: a night-shift courier 
 7. Validate the manifest against [storyboard-schema.md](references/storyboard-schema.md). The pages array must equal the requested page count, page numbers must be contiguous, every character ID must exist, and every line of dialogue must have a speaker or be marked narration.
 8. If structural validation fails, revise only the invalid fields. Do not silently change the requested page count, ending, language, or fixed characters.
 
-This is a planning Atom. It does not submit a WeShop generation run. Hand its complete manifest to `$render-comic-page` one page at a time; create missing canonical character assets with `$character-reference-sheet` first.
+This is a planning Atom. It does not submit a WeShop generation run. Hand its complete manifest to `$render-comic-page` one page at a time; create each missing canonical character pack with `$create-character` first and bind its accepted canonical design sheet into page rendering.
 
 ## User-facing output
 

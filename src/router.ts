@@ -14,22 +14,30 @@ export function routeNaturalLanguage(text: string, overrides: Partial<RouteReque
 export function route(request: RouteRequest & Pick<IntentCard, "raw" | "confidence" | "requiresResearch">): RoutePlan {
   if (isUnsupportedAudioRequest(request.raw)) throw new RouteError("WeShop currently has no verified standalone audio-generation or audio-processing model.");
   const runs = request.namedVariations ? request.outputCount : 1, batchCount = request.namedVariations ? 1 : request.outputCount;
-  if (request.operation === "character-sheet") {
+  if (request.operation === "character-sheet" || request.operation === "create-character") {
     const hasIdentityReference = request.assets.includes("model-reference") || request.assets.includes("image");
     if (request.requestedModel && request.requestedModel !== "gpt-image") throw new RouteError("Final Character Reference Sheets require GPT Image 2 Medium/2K.");
     const model = getModel("gpt-image");
     if (!model || model.media !== "image") throw new RouteError("Character reference sheets require an image model.");
-    return plan(request, 1, 1, {
+    return plan(request, 8, 1, {
       model,
       category: "workflow",
       workflow: {
-        id: "character-reference-sheet",
+        id: "create-character",
         version: "v1.0",
         steps: hasIdentityReference
-          ? ["bind identity reference", "render front, back, and close-up views", "apply one final identity and wardrobe gate"]
-          : ["establish canonical character identity", "render front, back, and close-up views", "apply one final cross-view consistency gate"]
+          ? ["bind the authorized identity reference and submit the canonical design sheet first", "accept the canonical sheet", "submit seven separate reference-bound character tasks", "apply one final eight-asset identity and wardrobe gate"]
+          : ["submit the canonical design sheet first", "accept the canonical sheet", "submit seven separate reference-bound character tasks", "apply one final eight-asset identity and wardrobe gate"]
       },
-      params: { layout: "three-panel", explicitMultiPanel: true, imageSize: "2K", quality: "medium", batchCount: 1 }
+      params: {
+        imageSize: "2K",
+        quality: "medium",
+        batchCount: 1,
+        executionOrder: "canonical-first-then-derived",
+        tasks: ["canonical-design-sheet", "full-body-front", "full-body-back", "head-close-up", "lighting-study", "final-look-portrait", "scene-1", "scene-2"],
+        canonicalReferenceBinding: "bind the accepted canonical-design-sheet output into images for tasks 2-8"
+      },
+      acceptance: ["Return exactly 8 separate image files from 8 atomic tasks.", "Every task uses batchCount 1.", "The canonical design sheet completes and is accepted before tasks 2-8 are submitted.", "Tasks 2-8 preserve the canonical face, age, hair, proportions, wardrobe, palette, marks, and signature props."]
     });
   }
   if (request.operation === "make-mugshot-photo") {
@@ -314,7 +322,7 @@ function isUnsupportedAudioRequest(raw: string) {
 }
 function plan(intent: IntentCard, runs: number, batchCount: number, partial: Partial<RoutePlan>): RoutePlan {
   const strict = intent.operation === "remove-background" || intent.operation === "make-mugshot-photo";
-  const targeted = !strict && (intent.priority === "fidelity" || intent.preserve.length > 0 || ["try-on", "outfit-design", "replace-model-or-scene", "change-pose", "product-scene", "character-sheet"].includes(intent.operation));
+  const targeted = !strict && (intent.priority === "fidelity" || intent.preserve.length > 0 || ["try-on", "outfit-design", "replace-model-or-scene", "change-pose", "product-scene", "character-sheet", "create-character"].includes(intent.operation));
   const qaPolicy = strict
     ? { mode: "strict" as const, coverage: "all-outputs" as const, checkpoints: 1 as const, triggers: ["safety or file-contract requirement"] }
     : targeted

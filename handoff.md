@@ -90,3 +90,8 @@
 - Promotion requires an explicit decision to update an Atom, create an Atom, compose existing Atoms, retain a deterministic operation, or reject unsupported behavior.
 - The intake command never clones, downloads, executes, or installs the external source.
 - No commit or push was performed for this workflow change.
+# 2026-08-20: CLI backend priority and failure diagnostics
+
+- Local execution now prefers a native WeShop tool, then the installed official `weshop` CLI, with `weshop-skill` only as the absence fallback.
+- Added a secret-safe `doctor`/`backend` diagnostic, `--version`, routing `catalog`, the `gpt-image-2` compatibility alias, and legacy `input.text` migration for GPT Image calls.
+- Documented official versus built-in syntax, wrapper `inspect`/`execute` modes, missing versus invalid API keys, unsupported `run`/`list-agents` assumptions, and the no-cross-backend-retry safety rule.

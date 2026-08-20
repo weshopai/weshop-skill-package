@@ -4,17 +4,26 @@ import { resolve } from "node:path";
 import { ExecutionLedger } from "./execution-ledger.js";
 import { executeRun, pollRun } from "./executor.js";
 import { WeShopOpenApiClient, isTerminalRun, runStatusFrom, type RunRequest } from "./openapi-client.js";
+import { BUILT_IN_CLI_VERSION, detectCliBackend, normalizeAgentName, normalizeRunPayload } from "./cli-backend.js";
+import { modelCatalog } from "./models.js";
 
 type Arguments = Record<string, string | boolean | string[]> & { _: string[] };
 
 const HELP = `WeShop Skill Package CLI
 
 Usage:
+  weshop-skill doctor
+  weshop-skill catalog
   weshop-skill upload <image-path>
   weshop-skill run <agent> --input <json|@json-file> --params <json|@json-file> [options]
   weshop-skill status <execution-id> [--wait]
   weshop-skill operation <operation-key>
   weshop-skill info <agent> [--version v1.0]
+
+Execution priority:
+  Prefer the official local CLI when "weshop --version" succeeds. Use its native
+  syntax, for example: weshop gpt-image --prompt "...". This built-in CLI is the
+  fallback when the official executable is absent; its syntax is not interchangeable.
 
 Run options:
   --version <version>              Agent version (default: v1.0)
@@ -32,6 +41,10 @@ Run options:
 Local images inside --input or --params:
   Use a string such as "file:./product.png". It is uploaded once per command and
   replaced with the reusable WeShop URL before submission.
+
+Agent notes:
+  GPT Image 2 uses the Agent ID "gpt-image", not "gpt-image-2".
+  Neither CLI has a "list-agents" command; use catalog, info, or --help.
 
 The API key is read only from WESHOP_API_KEY and is sent only to openapi.weshop.ai.`;
 
@@ -94,9 +107,24 @@ function print(value: unknown): void {
 }
 
 export async function runCli(argv = process.argv.slice(2)): Promise<void> {
+  if (argv.length === 1 && (argv[0] === "--version" || argv[0] === "-v")) { process.stdout.write(`${BUILT_IN_CLI_VERSION}\n`); return; }
   const args = parseArguments(argv);
   const [command, subject] = args._;
   if (!command || command === "help" || args.help === true) { process.stdout.write(`${HELP}\n`); return; }
+  if (command === "version") { process.stdout.write(`${BUILT_IN_CLI_VERSION}\n`); return; }
+  if (command === "doctor" || command === "backend") {
+    print({
+      ...detectCliBackend(),
+      apiKeyConfigured: Boolean(process.env.WESHOP_API_KEY?.trim()),
+      guidance: "Use the official weshop CLI when available. Fall back only when it is absent; auth or request failures are not fallback signals."
+    });
+    return;
+  }
+  if (command === "catalog") {
+    print({ note: "Routing catalog IDs, not a server-side list of account-enabled Agents.", models: modelCatalog.map(({ id, label, media, status }) => ({ id, label, media, status })) });
+    return;
+  }
+  if (command === "list-agents") throw new Error("list-agents is not supported. Use 'weshop-skill catalog', 'weshop-skill info <agent>', or 'weshop --help'.");
   if (command === "operation") {
     if (!subject) throw new Error("operation requires an operation key.");
     const record = await new ExecutionLedger(one(args, "ledger")).get(subject);
@@ -126,20 +154,23 @@ export async function runCli(argv = process.argv.slice(2)): Promise<void> {
   }
   if (command === "info") {
     if (!subject) throw new Error("info requires an agent name.");
-    print(await client.getAgentInfo(subject, one(args, "version") ?? "v1.0"));
+    print(await client.getAgentInfo(normalizeAgentName(subject), one(args, "version") ?? "v1.0"));
     return;
   }
   if (command !== "run") throw new Error(`Unknown command: ${command}.`);
   if (!subject) throw new Error("run requires an agent name.");
+  const agent = normalizeAgentName(subject);
   const operationKey = one(args, "operation-key")?.trim();
   if (!operationKey) throw new Error("run requires --operation-key with a stable value chosen before submission.");
 
   const input = await resolveLocalImages(await jsonObject(one(args, "input"), "input"), client) as Record<string, unknown>;
   const params = await resolveLocalImages(await jsonObject(one(args, "params"), "params"), client) as Record<string, unknown>;
+  normalizeRunPayload(agent, input, params);
+  if (agent === "gpt-image" && typeof params.textDescription !== "string") throw new Error("gpt-image requires params.textDescription (the built-in CLI also accepts legacy input.text and moves it there).");
   const taskName = one(args, "task-name");
   if (taskName) input.taskName = taskName;
   const request: RunRequest = {
-    agent: { name: subject, version: one(args, "version") ?? "v1.0" },
+    agent: { name: agent, version: one(args, "version") ?? "v1.0" },
     input,
     params,
     ...(one(args, "callback-url") ? { callbackUrl: one(args, "callback-url") } : {})

@@ -7,7 +7,7 @@ If it is present, continue without displaying, logging, copying, or otherwise re
 If it is absent:
 
 1. Stop before uploading materials or creating a run. This is a configuration prerequisite, not a creative-task failure.
-2. Tell the user to obtain or manage a key at <https://www.weshop.ai/apiKey>.
+2. Tell the user to obtain or manage a key at <https://open.weshop.ai/authorization/apikey>.
 3. Ask them to store it in the secret or environment-variable settings of the harness that will execute WeShop, under the exact name `WESHOP_API_KEY`.
 4. Ask them to restart or reload that harness if its environment is captured at startup, then retry the original request.
 

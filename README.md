@@ -16,7 +16,7 @@
 
 WeShop Skills turns plain-language creative requests into production-ready image, video, product, portrait, layout, and spatial workflows powered by WeShop OpenAPI. Install the complete collection or pick only the Skills you need.
 
-> This repository contains **85 focused Atom Skills + 1 adaptive Router**. It also includes a standalone `weshop-skill` CLI, so the official WeShop CLI is not required.
+> This repository contains **85 focused Atom Skills + 1 adaptive Router**. It prefers the official WeShop CLI when installed and includes a standalone `weshop-skill` fallback.
 
 ## 🚀 Install with one prompt
 
@@ -100,7 +100,7 @@ npm run skills:manage -- install --all --copy
 
 ### 4. Configure WeShop OpenAPI
 
-Get a key from [WeShop OpenAPI](https://www.weshop.ai/apiKey), then provide it only to the trusted local process that performs generation:
+Get a key from [WeShop OpenAPI](https://open.weshop.ai/authorization/apikey), then provide it only to the trusted local process that performs generation:
 
 ```bash
 read -s WESHOP_API_KEY && export WESHOP_API_KEY
@@ -179,17 +179,22 @@ npm run skills:manage -- install create-logo
 npm run skills:manage -- install weshop-router
 ```
 
-## ⌨️ Built-in WeShop CLI
+## ⌨️ WeShop CLI
 
-The package includes `weshop-skill`, a direct WeShop OpenAPI CLI for uploads, Agent discovery, generation, polling, and operation-ledger inspection. It supports the Standard and Premium Agents enabled for your account and does not depend on the official `weshop-cli` package.
+Execution uses this order: a native WeShop tool exposed by the agent, the official local `weshop` CLI, then the built-in `weshop-skill` fallback. Check the local choice without revealing credentials:
 
 ```bash
-npm run cli -- --help
-npm run cli -- info aiproduct
-npm run cli -- upload ./product.png
+npm run cli -- doctor
 ```
 
-Run an Agent directly:
+When the official CLI is installed, use its native Agent commands:
+
+```bash
+weshop gpt-image --help
+weshop gpt-image --prompt "Create a clean geometric logo"
+```
+
+If `weshop` is absent, use the built-in fallback:
 
 ```bash
 weshop-skill run gpt-image \
@@ -197,7 +202,9 @@ weshop-skill run gpt-image \
   --params '{"textDescription":"Create a clean geometric logo","quality":"medium","imageSize":"2K","batchCount":1}'
 ```
 
-Local images can be written as `file:./image.png` inside `--input` or `--params` JSON. Each submission requires a stable `--operation-key`; the CLI waits for completion by default and prevents blind duplicate submissions.
+The label GPT Image 2 maps to the Agent ID `gpt-image`, not `gpt-image-2`. Neither CLI supports `list-agents`; use `weshop --help`, `weshop info <agent>`, or the fallback's `weshop-skill catalog`. The two CLIs have different argument syntax, so commands must not be copied between them.
+
+Local images can be written as `file:./image.png` inside the fallback's `--input` or `--params` JSON. Each fallback submission requires a stable `--operation-key`; it waits for completion by default and prevents blind duplicate submissions. An authentication, validation, timeout, or ambiguous submission error is **not** a signal to switch backends and retry.
 
 ## 🔄 Update
 

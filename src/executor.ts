@@ -7,6 +7,11 @@ export interface ExecuteRunOptions {
   wait?: boolean;
   pollIntervalMs?: number;
   timeoutMs?: number;
+  onAccepted?: (receipt: {
+    operationKey: string;
+    submissionState: "accepted";
+    executionId: string;
+  }) => void | Promise<void>;
 }
 
 export interface ExecuteRunResult {
@@ -86,6 +91,7 @@ export async function executeRun(
   } catch (error) {
     throw new ReceiptPersistenceError(operationKey, executionId, error);
   }
+  await options.onAccepted?.({ operationKey, submissionState: "accepted", executionId });
   if (options.wait === false) return { operationKey, submissionState: "accepted", executionId, response: submitted, terminal: false };
 
   const polled = await pollRun(client, executionId, options);

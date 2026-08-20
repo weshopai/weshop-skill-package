@@ -48,6 +48,16 @@ Agent notes:
 
 The API key is read only from WESHOP_API_KEY and is sent only to openapi.weshop.ai.`;
 
+function printAcceptedReceipt(receipt: { operationKey: string; executionId: string }): void {
+  process.stdout.write([
+    "[submitted]",
+    `  operationKey: ${receipt.operationKey}`,
+    `  executionId: ${receipt.executionId}`,
+    "  submissionState: accepted",
+    ""
+  ].join("\n"));
+}
+
 function parseArguments(argv: string[]): Arguments {
   const parsed: Arguments = { _: [] };
   for (let index = 0; index < argv.length; index += 1) {
@@ -181,6 +191,7 @@ export async function runCli(argv = process.argv.slice(2)): Promise<void> {
     parentOperationKey: one(args, "parent-operation-key"),
     wait: args["no-wait"] !== true,
     pollIntervalMs: numberOption(args, "poll-interval-ms"),
-    timeoutMs: numberOption(args, "timeout-ms")
+    timeoutMs: numberOption(args, "timeout-ms"),
+    onAccepted: printAcceptedReceipt
   }));
 }

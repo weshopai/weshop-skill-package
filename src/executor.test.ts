@@ -30,6 +30,38 @@ test("submits once, persists the receipt, and polls the accepted execution", asy
   assert.equal(persisted.operations["op-1"].executionId, "exec-1");
 });
 
+test("emits the persisted execution receipt before polling completes", async () => {
+  const directory = await mkdtemp(join(tmpdir(), "weshop-executor-"));
+  let releasePoll!: () => void;
+  const pollGate = new Promise<void>((resolve) => { releasePoll = resolve; });
+  let acceptReceipt!: (value: { operationKey: string; executionId: string }) => void;
+  const accepted = new Promise<{ operationKey: string; executionId: string }>((resolve) => { acceptReceipt = resolve; });
+  const client = new WeShopOpenApiClient({
+    apiKey: "test-key",
+    fetchImpl: (async (input) => {
+      if (String(input).endsWith("/runs")) return jsonResponse({ success: true, data: {}, meta: { executionId: "exec-streamed" } });
+      await pollGate;
+      return jsonResponse({ success: true, data: { status: "Success" } });
+    }) as typeof fetch
+  });
+  const ledger = new ExecutionLedger(join(directory, "ledger.json"));
+  const running = executeRun(
+    client,
+    ledger,
+    { agent: { name: "gpt-image", version: "v1.0" }, params: { textDescription: "test" } },
+    { operationKey: "op-streamed", onAccepted: acceptReceipt }
+  );
+
+  assert.deepEqual(await accepted, {
+    operationKey: "op-streamed",
+    submissionState: "accepted",
+    executionId: "exec-streamed"
+  });
+  assert.equal((await ledger.get("op-streamed"))?.submissionState, "accepted");
+  releasePoll();
+  assert.equal((await running).terminal, true);
+});
+
 test("freezes an ambiguous create response and refuses duplicate submission", async () => {
   const directory = await mkdtemp(join(tmpdir(), "weshop-executor-"));
   let calls = 0;

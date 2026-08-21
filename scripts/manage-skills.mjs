@@ -129,6 +129,30 @@ const installOne = async (name, mode, lock) => {
   console.log(`${name}: ${mode} -> ${destination}`);
 };
 
+const removeRetired = async (name, lock) => {
+  const managed = lock.skills[name];
+  const destination = path.join(targetRoot, name);
+  if (!(await exists(destination))) {
+    delete lock.skills[name];
+    console.log(`${name}: removed from managed state (already absent)`);
+    return;
+  }
+  const destinationStat = await lstat(destination);
+  if (managed.mode === "symlink") {
+    if (!destinationStat.isSymbolicLink()) throw new Error(`${destination} replaced a managed symlink; refusing to remove it.`);
+    const link = await readlink(destination);
+    const recordedSource = path.resolve(root, managed.source);
+    if (path.resolve(path.dirname(destination), link) !== recordedSource) throw new Error(`${destination} points outside its recorded package source; refusing to remove it.`);
+  } else {
+    if (!destinationStat.isDirectory()) throw new Error(`${destination} is not the managed copied directory; refusing to remove it.`);
+    const installedHash = await hashDirectory(destination);
+    if (installedHash !== managed.contentHash) throw new Error(`${destination} has local changes; preserve or remove it before pruning the retired Skill.`);
+  }
+  await rm(destination, { recursive: true, force: true });
+  delete lock.skills[name];
+  console.log(`${name}: removed (no longer included in the package)`);
+};
+
 if (command === "list") {
   for (const name of await skillNames()) console.log(name);
 } else if (command === "install") {
@@ -144,6 +168,11 @@ if (command === "list") {
   await writeLock(lock);
 } else if (command === "sync") {
   const lock = await readLock();
+  if (requested === "--all" && lock.tracksAll) {
+    const available = new Set(await skillNames());
+    const retired = Object.keys(lock.skills).filter((name) => !available.has(name)).sort();
+    for (const name of retired) await removeRetired(name, lock);
+  }
   const selected = requested === "--all" && lock.tracksAll
     ? await skillNames()
     : await select(requested, lock, true);
@@ -160,6 +189,7 @@ if (command === "list") {
     if (!record) { console.log(`${name}: not managed`); stale = true; continue; }
     const source = path.join(root, record.source);
     const destination = path.join(targetRoot, name);
+    if (!(await exists(source))) { console.log(`${name}: removed upstream; run sync --all`); stale = true; continue; }
     if (!(await exists(destination))) { console.log(`${name}: missing installation`); stale = true; continue; }
     const sourceHash = await hashDirectory(source);
     let installedHash;

@@ -218,6 +218,12 @@
 - Updated the Release workflow to GitHub Actions `checkout@v6` and `setup-node@v6`, Node.js 24, npm 11.5.1 or newer, `id-token: write`, and tokenless `npm publish`. npm will generate provenance automatically for future public releases through OIDC.
 - The existing `NPM_TOKEN` repository secret remains temporarily available but is no longer referenced. Remove/revoke it only after the first OIDC release succeeds, preserving a recovery path during migration.
 
+## 2026-08-21: managed removal convergence after the 0.3.9 release
+
+- `v0.3.9` was the first successful tokenless OIDC release and carries npm SLSA provenance. An isolated public-registry upgrade from `0.3.8` exposed that `sync --all` updated and added current Skills but retained a dangling managed symlink for the retired `review-custom-skill`; `status --all` then failed while hashing the absent upstream source.
+- Prepared `0.3.10` so full tracked installations prune Skills removed from the package only when the lock proves package ownership. Recorded symlinks must still point to their recorded package source, and copied Skills must still match their recorded content hash; replaced, redirected, or locally modified entries are preserved with an actionable refusal. Unmanaged user custom Skills are never scanned or removed.
+- `status --all` now reports a retired upstream Skill as needing `sync --all` instead of throwing. Added a regression test that injects a retired managed symlink, preserves an unmanaged custom Skill, syncs, and verifies the retired lock record and link are removed.
+
 ## 2026-08-21: exhaustive local application intake and Router handoff discipline
 
 - Replaced the application-level aggregate with 24 isolated, neutral-name intake records for every discovered Skill, plugin Skill, active/disabled profile workflow, and OpenCode workflow entrypoint. The review inventory covered all 1,631 Resources files (1,573 text / 58 binary), including every 531 Markdown file and both ASAR images. Source materials were never executed, copied, installed, or treated as instructions.

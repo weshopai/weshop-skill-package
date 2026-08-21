@@ -2,9 +2,9 @@
 
 ## Provenance
 
-- Source: Local MiniMax Skill package at `/Users/jasonjiang/Downloads/minimax skill/3d-animation-short-generator`
+- Source: Confidential local external Skill package
 - Source revision: Content fingerprint `sha256:2476848bb32f50c6167cbb53d46de790774bcdd99e3e1f69d802549b87d506de`
-- Author or organization: MiniMax Design (`exported-by: MiniMax-hub`, `source: official-featured` in supplied metadata)
+- Author or organization: Not surfaced in the package
 - Reviewed date: 2026-08-20
 - Files inspected: `SKILL.md`, `meta.yaml`, and all five Markdown files in `references/`; `.DS_Store` ignored
 
@@ -46,7 +46,7 @@
 - Remote domains and uploads: Upload only user-authorized assets through existing WeShop routes; the supplied cover URL is metadata evidence, not an authorized production input
 - Installation and executable code: No upstream dependency, script, or package installation was requested or performed
 - Retry and provider-spend behavior: One durable key per shot; inspect terminal output; retry only a failed/rejected shot with a changed prompt and a new linked key; no blind model cascade
-- Unsafe or removed behavior: Remove trademarked-studio style defaults, false capability guarantees, autonomous publication, and rules tied only to MiniMax Design canvas tools
+- Unsafe or removed behavior: Remove trademarked-studio style defaults, false capability guarantees, autonomous publication, and rules tied only to source-specific canvas tools
 
 ## Validation evidence
 

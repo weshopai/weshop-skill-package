@@ -2,9 +2,9 @@
 
 ## Provenance
 
-- Source: Local MiniMax Skill package at `/Users/jasonjiang/Downloads/minimax skill/brand-promo-video-generator`
+- Source: Confidential local external Skill package
 - Source revision: Content fingerprint `sha256:0a35646832654eb7a90d9039cbb709efee0962edfae5f88be1e71b019438d4f9`
-- Author or organization: MiniMax Design (`exported-by: MiniMax-hub`, `source: official-featured` in supplied metadata)
+- Author or organization: Not surfaced in the package
 - Reviewed date: 2026-08-20
 - Files inspected: `SKILL.md` and `meta.yaml`
 

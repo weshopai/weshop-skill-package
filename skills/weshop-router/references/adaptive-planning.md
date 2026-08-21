@@ -43,6 +43,14 @@ Frontmatter relationship scores are static discovery metadata showing how adjace
 
 Prefer several operation nodes when the request changes artifact responsibility, for example scene creation then poster composition, or product cutout then detail-page assembly. Do not split prompt writing, polling, downloading, and QA into separate operations; those belong to the selected Skill or execution harness.
 
+## Stage handoffs
+
+Treat each route node as a small contract, not as a new agent role. Before a dependent node starts, bind only the accepted upstream artifacts and the preservation facts it actually needs. Keep the handoff compact: a stable artifact identifier, its role, immutable facts, requested transformation, and observable acceptance target are enough.
+
+Plan the full DAG when it helps the user understand dependencies, but do not materialize, pay for, or claim a downstream artifact while its required upstream decision or media is unresolved. A node that produces a selectable set ends after registering its candidates; create a separate selection node only when the user's choice becomes a real downstream input. Do not make generic “approve the plan” nodes.
+
+Put detailed guidance in the narrowest owner: model quirks in the selected model guide, source-specific evidence in a research record, and media acceptance in the owning Atom. The Router retains route selection, handoff bindings, and final acceptance; it must not become a planner/executor/director layer.
+
 One node may satisfy several user phrases when one Skill explicitly owns the combined outcome. Conversely, do not force one broad Skill to own distinct outputs merely because it can technically generate them.
 
 ### Comic workflow example

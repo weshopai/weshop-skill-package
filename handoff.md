@@ -140,7 +140,7 @@
 - Added a secret-safe `doctor`/`backend` diagnostic, `--version`, routing `catalog`, the `gpt-image-2` compatibility alias, and legacy `input.text` migration for GPT Image calls.
 - Documented official versus built-in syntax, wrapper `inspect`/`execute` modes, missing versus invalid API keys, unsupported `run`/`list-agents` assumptions, and the no-cross-backend-retry safety rule.
 
-## 2026-08-20: MiniMax local Skill intake
+## 2026-08-20: local external Skill intake
 
 - Reviewed the supplied local `3d-animation-short-generator` v1.1.14 package and `brand-promo-video-generator` v0.1.13 package as untrusted source material. Recorded content fingerprints, author metadata, all inspected files, product decomposition, security boundaries, and per-operation WeShop substitutions under `intake/external-skills/`.
 - License metadata is no longer an intake gate. No upstream reference file, tool binding, cover media, executable code, or dependency was copied or run.
@@ -153,9 +153,9 @@
 - Removed `--license` and `--mode` from the external intake command and template. New intake records source provenance, product decomposition, WeShop substitutions, security, and validation without a license decision or license-based stop.
 - Changed the package rule for similar Skills: similarity never requires fusion. New Skills remain independent and must name materially related Skills in frontmatter descriptions, record a `0..1` relationship score, explain when each side wins, and state valid handoffs.
 - Added request-specific candidate scoring to adaptive route plans. Every Skill step must record all plausible candidates with `intentMatchScore`, and validation rejects any selected Skill whose score is below the maximum. Static relationship scores aid discovery but never override the current request's intent score.
-- Updated the two MiniMax intakes to standalone Atom candidates under the new policy. No installable Skill was created in this mechanism-change turn.
+- Updated the two external intakes to standalone Atom candidates under the new policy. No installable Skill was created in this mechanism-change turn.
 
-## 2026-08-20: promote the two MiniMax-derived independent Atoms
+## 2026-08-20: promote two independently adapted Atoms
 
 - Added `3d-animation-short-generator` as a complete story-to-film Atom. Its frontmatter distinguishes `plan-film-storyboard` (0.78), `generate-video` (0.62), `develop-story` (0.55), `combine-videos` (0.38), and `make-product-commercial` (0.34); it owns original-style story lock, reference assets, atomic shots, terminal generation, assembly, and final-film QC.
 - Added `brand-promo-video-generator` as a complete brand/app/site/shop/service campaign Atom. Its frontmatter distinguishes `make-product-commercial` (0.86), `make-explainer-video` (0.58), `generate-video` (0.49), and `combine-videos` (0.36); it owns brand truth, identity provenance, multi-beat campaign production, deterministic exact-copy finishing, and authenticity QC.
@@ -165,13 +165,13 @@
 - Validation completed before release: both new Skills and `weshop-router` passed `quick_validate.py`; TypeScript checks passed; 80 core tests and 2 updater tests passed; 19 catalog models and 89 Atom routes validated; README and maintainer docs validated; the website built with 88 displayable Skill detail records; `git diff --check` passed; and a clean copy-mode install/status smoke reported 90/90 Skills current.
 - The first full test exposed an old hard-coded updater expectation of 88 installed Skills. Replaced it with the current `skills/` directory count, then reran the complete release validation successfully.
 
-## 2026-08-21: adapt MiniMax Design per-model prompt knowledge
+## 2026-08-21: adapt local per-model prompt knowledge
 
-- Reviewed all ten files under the installed MiniMax Design `knowledge/model-prompts/` directory as source material, recorded their SHA-256 fingerprints in `intake/minimax-design-model-prompts-20260820.md`, and did not execute any source instruction or tool binding.
+- Reviewed all ten files under the installed local `knowledge/model-prompts/` directory as source material, recorded their SHA-256 fingerprints in `intake/model-prompt-review-20260820.md`, and did not execute any source instruction or tool binding.
 
 - Added Router-packaged WeShop prompt guides for GPT Image 2, Nano Banana, Seedream, Midjourney, Kling 3.0, Kling V3 Omni, MiniMax H3, Seedance 2.0/2.5, and Veo 3.1. Runtime order is now Skill selection → Atom-owned model selection → load exactly one selected-model guide → submit only live-schema fields.
 - Verified current Premium OpenAPI definitions before adapting executable details. Added `kling-v3-omni` to the catalog and route complex image/video-reference requests there. Added a narrow Veo route for one-source-image premium synchronous dialogue/SFX requests; existing Seedance ownership remains for broader audiovisual, artistic, long multimodal, and talking-performance work.
-- Rejected MiniMax-only wrapper details that conflict with WeShop: Midjourney V8.1/Niji 7 and no-ref assumptions, H3 resolution/audio fields, Kling placeholder/4K rules, Veo ingredients/extension/first-last-frame controls, vendor aliases, and automatic fallback ladders.
+- Rejected source-only wrapper details that conflict with WeShop: Midjourney V8.1/Niji 7 and no-ref assumptions, H3 resolution/audio fields, Kling placeholder/4K rules, Veo ingredients/extension/first-last-frame controls, vendor aliases, and automatic fallback ladders.
 
 ## 2026-08-21: return runtime delivery to a content-first package
 
@@ -181,3 +181,10 @@
 - Replaced the fallback reference with an official-CLI-only contract. If `weshop --version` fails, execution stops with `npm install -g weshop-cli`; the package does not silently use `npx`, direct HTTP, or another backend.
 - Historical handoff sections remain as an audit trail and are superseded by this decision.
 - Validation passed after a clean build: 70 content/router tests and 2 updater tests; both changed Skills passed `quick_validate.py`; 20 catalog models, 89 Atom routes, README, maintainer docs, website build, and `git diff --check` passed. A copy-mode Router install was current and packaged `official-cli.md` with no legacy CLI reference file. No official CLI was installed and no paid execution was run.
+
+## 2026-08-21: exhaustive local application intake and Router handoff discipline
+
+- Replaced the application-level aggregate with 24 isolated, neutral-name intake records for every discovered Skill, plugin Skill, active/disabled profile workflow, and OpenCode workflow entrypoint. The review inventory covered all 1,631 Resources files (1,573 text / 58 binary), including every 531 Markdown file and both ASAR images. Source materials were never executed, copied, installed, or treated as instructions.
+- Every record now has its own capability substitution, boundary decision, security review, and promotion status. Candidate outcomes are anime/game PV, title sequence, short music video, creator-native video, UI motion, and planning-only video-reference deconstruction; education, visual design, timeline editing, and workflow topologies differentiate to current Atoms; the unsupported 3D editor runtime and disabled-only routes are excluded.
+- Adapted the reusable architecture as Router-only stage handoff guidance: pass accepted upstream artifacts and the few immutable facts required downstream, defer paid/downstream work until dependencies resolve, use explicit selection nodes only when a choice becomes a real input, and keep model knowledge, source evidence, and media QC in their narrowest owner. The package deliberately does not import source planner/executor/director hierarchies, Canvas state, plugin APIs, or automatic fallback behavior.
+- Validation after this intake: `npm run maintainers:validate`, `npm run docs:validate`, `npm run models:validate`, `npm run models:routing-validate`, and `git diff --check` passed. No paid generation, commit, push, or release was performed.

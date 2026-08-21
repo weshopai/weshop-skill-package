@@ -1,11 +1,11 @@
-# MiniMax Design model-prompt review
+# Local model-prompt review
 
 ## Source
 
-- Path: `/Applications/MiniMax Design.app/Contents/Resources/opencode/config/knowledge/model-prompts/`
+- Path: Confidential local application model-prompt snapshot
 - Reviewed: 2026-08-20 to 2026-08-21
 - Files: `README.md`, `gpt-image-2.md`, `kling.md`, `kling-omni.md`, `midjourney.md`, `minimax-h3.md`, `nano-banana.md`, `seedance.md`, `seedream.md`, `veo.md`
-- Source type: MiniMax Design application knowledge snapshot; treated as reference material, never executed
+- Source type: local application knowledge snapshot; treated as reference material, never executed
 
 ## File fingerprints
 
@@ -31,7 +31,7 @@
 
 ## Rejected or corrected concepts
 
-- MiniMax Hub tool names, vendor fields, model IDs, aliases, hidden wrapper behavior, automatic fallbacks, and platform-specific limits.
+- Source tool names, vendor fields, model aliases, hidden wrapper behavior, automatic fallbacks, and platform-specific limits.
 - Midjourney V8.1/Niji 7 and no-reference assumptions: current WeShop exposes 6.1/7/Niji 6 and one optional reference.
 - H3 `resolution` and `generate_audio`: not exposed by the current WeShop `minimax-h3` schema.
 - Kling placeholder/4K/variant claims that are not WeShop fields.

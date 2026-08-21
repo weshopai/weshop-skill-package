@@ -16,4 +16,4 @@ Read exactly one matching guide after the selected Atom has chosen an executable
 
 Do not load every guide. Do not turn guide claims into parameters unless the current catalog and live Agent schema expose them. If a guide conflicts with an Atom preservation contract, the Atom wins; if it conflicts with the live schema, the live schema wins.
 
-Source review: MiniMax Design `model-prompts/` snapshot inspected 2026-08-20, with per-file hashes recorded in `handoff.md`. The text here is independently adapted to current WeShop routes.
+Source review: a confidential local model-prompt snapshot inspected 2026-08-20, with per-file hashes recorded in `handoff.md`. The text here is independently adapted to current WeShop routes.

@@ -212,6 +212,12 @@
 - Renamed the deterministic helper from `weshop-skills custom review` to `weshop-skills custom check` and moved it inside `create-custom-skill`. The package inventory is now 89 creative Atom Skills, one platform Skill, and one Router (91 total).
 - Prepared this behavior change as package version `0.3.9`; publication remains a separate release action.
 
+## 2026-08-21: npm Trusted Publishing after repository visibility change
+
+- The GitHub source repository is now public. Configured npm Trusted Publishing for `weshopai/weshop-skill-pakage` using `.github/workflows/release.yml`, with permission for `npm publish` only.
+- Updated the Release workflow to GitHub Actions `checkout@v6` and `setup-node@v6`, Node.js 24, npm 11.5.1 or newer, `id-token: write`, and tokenless `npm publish`. npm will generate provenance automatically for future public releases through OIDC.
+- The existing `NPM_TOKEN` repository secret remains temporarily available but is no longer referenced. Remove/revoke it only after the first OIDC release succeeds, preserving a recovery path during migration.
+
 ## 2026-08-21: exhaustive local application intake and Router handoff discipline
 
 - Replaced the application-level aggregate with 24 isolated, neutral-name intake records for every discovered Skill, plugin Skill, active/disabled profile workflow, and OpenCode workflow entrypoint. The review inventory covered all 1,631 Resources files (1,573 text / 58 binary), including every 531 Markdown file and both ASAR images. Source materials were never executed, copied, installed, or treated as instructions.

@@ -164,3 +164,10 @@
 - No paid generation was run. Release validation, commit, push, and stable Release are authorized by the user's explicit `c,p,r` request and recorded below when complete.
 - Validation completed before release: both new Skills and `weshop-router` passed `quick_validate.py`; TypeScript checks passed; 80 core tests and 2 updater tests passed; 19 catalog models and 89 Atom routes validated; README and maintainer docs validated; the website built with 88 displayable Skill detail records; `git diff --check` passed; and a clean copy-mode install/status smoke reported 90/90 Skills current.
 - The first full test exposed an old hard-coded updater expectation of 88 installed Skills. Replaced it with the current `skills/` directory count, then reran the complete release validation successfully.
+
+## 2026-08-21: adapt MiniMax Design per-model prompt knowledge
+
+- Reviewed all ten files under the installed MiniMax Design `knowledge/model-prompts/` directory as source material, recorded their SHA-256 fingerprints in `intake/minimax-design-model-prompts-20260820.md`, and did not execute any source instruction or tool binding.
+- Added Router-packaged WeShop prompt guides for GPT Image 2, Nano Banana, Seedream, Midjourney, Kling 3.0, Kling V3 Omni, MiniMax H3, Seedance 2.0/2.5, and Veo 3.1. Runtime order is now Skill selection → Atom-owned model selection → load exactly one selected-model guide → submit only live-schema fields.
+- Verified current Premium OpenAPI definitions before adapting executable details. Added `kling-v3-omni` to the catalog and route complex image/video-reference requests there. Added a narrow Veo route for one-source-image premium synchronous dialogue/SFX requests; existing Seedance ownership remains for broader audiovisual, artistic, long multimodal, and talking-performance work.
+- Rejected MiniMax-only wrapper details that conflict with WeShop: Midjourney V8.1/Niji 7 and no-ref assumptions, H3 resolution/audio fields, Kling placeholder/4K rules, Veo ingredients/extension/first-last-frame controls, vendor aliases, and automatic fallback ladders.

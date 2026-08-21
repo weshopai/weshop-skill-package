@@ -25,7 +25,7 @@ for (const entry of await readdir(skillRoot, { withFileTypes: true })) {
     if (!constrained) failures.push(`${entry.name}: Nano use is not limited to explicit draft divergence and internal convergence/review.`);
   }
   if (/Sora 2|sora-2/i.test(production)) failures.push(`${entry.name}: offline Sora 2 appears in production instructions.`);
-  for (const match of production.matchAll(/`(gpt-image|nano-banana-edit|seedream|qwen-image-edit|midjourney|z-image|firered-image-edit|grok-imagine|seedance-2-5|minimax-h3|seedance|kling|happyhorse|sora-2|wan-ai|grok-imagine-video|hailuo-ai|vidu-ai|veo-ai)`/gi)) {
+  for (const match of production.matchAll(/`(gpt-image|nano-banana-edit|seedream|qwen-image-edit|midjourney|z-image|firered-image-edit|grok-imagine|seedance-2-5|minimax-h3|seedance|kling-v3-omni|kling|happyhorse|sora-2|wan-ai|grok-imagine-video|hailuo-ai|vidu-ai|veo-ai)`/gi)) {
     if (!activeModelIds.has(match[1].toLowerCase())) failures.push(`${entry.name}: unavailable or offline model id ${match[1]}.`);
   }
 }

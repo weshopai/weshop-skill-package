@@ -20,6 +20,8 @@ Source: [WeShop AI Model Selection Guide](https://open.weshop.ai/doc/guides/ai-g
 - Demanding lighting/material rendering or Asian fashion/e-commerce aesthetics: consider Seedream. Use it only when one of those conditions exists, and never for readable text.
 - Every GPT Image 2 route defaults to Medium at 2K, including drafts, validation, references, edits, and final deliverables. Change quality or resolution only when the user explicitly requests a different tier; do not silently lower either setting for cost or speed.
 - Nano 2 is for fast draft divergence. Nano Pro is for faster high-quality convergence/internal review. Neither owns readable text.
+- After model selection, load only the matching guide from `skills/weshop-router/references/model-prompt-routing.md`. Guides shape prompts; the live WeShop schema alone authorizes parameters.
+- Video: MiniMax H3 for large/natural human motion and H3 multimodal or first/last-frame modes; Kling V3 Omni for several image roles or one motion-reference video; Kling 3.0 for precise one/two-frame or product I2V; Seedance 2.5 for long multimodal, audiovisual, artistic, or talking performance; Veo 3.1 for one-source-image premium synchronous dialogue/SFX at 16:9 or 9:16; Seedance 2.0 for routine image-led video.
 - Dedicated tools precede generation models when their exact contract matches: transparent cutout → Remove BG; supported try-on input set → Virtual Try-On; size/canvas utility → Expand Image. Route generative fill or content changes to an image model.
 
 ## Availability rule

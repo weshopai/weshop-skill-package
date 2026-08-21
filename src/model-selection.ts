@@ -62,9 +62,11 @@ export function selectVideoModel(request: RouteRequest & { raw: string }): Model
   const complexReferences = request.assets.includes("scene-reference") || request.assets.includes("pose-reference") || request.assets.includes("model-reference") || includesAny(text, ["多图参考", "多参考", "视频参考", "复杂参考", "multi-reference", "video reference", "complex reference"]);
   const preciseFramesOrProduct = includesAny(text, ["首尾帧", "首帧", "尾帧", "产品展示", "商品展示", "first frame", "last frame", "product showcase"]);
   const audioVisual = includesAny(text, ["音画同步", "音乐卡点", "对口型", "艺术短片", "audio-visual", "lip sync", "music sync", "artistic video"]);
+  const premiumSynchronousAudio = request.assets.includes("image") && includesAny(text, ["电影级对话", "同步对话", "精准音效", "高质量原生音频", "premium dialogue", "synchronous dialogue", "precise sound effects", "rich native audio"]);
   const lightweight = request.priority === "cost" && includesAny(text, ["草稿", "概念验证", "预览", "draft", "concept validation", "preview"]);
   if (largeMotion) return pick("minimax-h3", {}, "large-amplitude or high-dynamic motion");
-  if (complexReferences) return pick("kling", { modelName: "Kling_3_0" }, "complex references; Kling V3 Omni is not yet cataloged, so use the closest verified adapter and record the limitation");
+  if (complexReferences) return pick("kling-v3-omni", { modelName: "Kling_V3_Omni" }, "several named image roles or a motion-reference video require Kling V3 Omni");
+  if (premiumSynchronousAudio) return pick("veo-ai", { modelName: "Veo_3_1" }, "source-image premium synchronous dialogue or sound-effects request");
   if (preciseFramesOrProduct || request.operation === "animate-image") return pick("kling", { modelName: "Kling_3_0" }, "precise frame or controllable product showcase");
   if (audioVisual) return pick("seedance-2-5", {}, "audio-visual synchronization or artistic expression");
   if (lightweight) return pick("seedance", {}, "lightweight validation; Seedance Mini is not yet cataloged");

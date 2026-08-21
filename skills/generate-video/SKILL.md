@@ -32,7 +32,7 @@ Generate a 5-second 16:9 video of a paper boat drifting through a rain puddle; s
 
 1. Compile one atomic shot with subject, action, setting, camera, light, duration, ratio and audio. When the request is underspecified, choose one visible change from A to B with a clear emotional or visual payoff; avoid a merely drifting camera over a static subject.
 2. When references are supplied, label each role as identity/content, first or last frame, motion, style, or audio timing. Reject a camera move that fights the source composition—for example, revealing space outside a tightly cropped reference—unless an upstream expansion step is approved.
-3. Select exactly one cataloged model before submission: MiniMax H3 for large-amplitude/high-dynamic motion; Kling 3.0 for precise first/last-frame, product, image-animation, or complex-reference control; Seedance 2.5 for audio-visual synchronization or artistic expression; Seedance 2.0 for routine video generation. Do not trial models in sequence.
+3. Select exactly one cataloged model before submission: MiniMax H3 for large-amplitude/natural human motion or H3 multimodal and first/last-frame modes; Kling V3 Omni for several named image roles or one motion-reference video; Kling 3.0 for precise one/two-frame, product, or ordinary image animation; Seedance 2.5 for long multimodal, audio-visual, artistic, or talking-performance work; Veo 3.1 for one-source-image premium synchronous dialogue/SFX at 16:9 or 9:16; Seedance 2.0 for routine image-led video. Do not trial models in sequence. After selection, apply the matching `weshop-router` model prompt guide when installed, while using only the selected Agent's live fields.
 4. Start one WeShop run, poll to terminal success and download MP4.
 5. Inspect first, middle and last frames, motion continuity, reference-role fidelity, camera/source compatibility, visible change, duration, ratio and audio.
 
@@ -44,5 +44,5 @@ Read [source-attribution.md](references/source-attribution.md) when reviewing pr
 - Default quantity: 1
 - Content per video: One coherent generated shot
 - Default layout: User-requested delivery format
-- Model policy: MiniMax H3 for large motion; Kling 3.0 for precise frames/products/complex references; Seedance 2.5 for audio-visual or artistic work; Seedance 2.0 for routine generation
+- Model policy: H3 large/natural motion; Kling Omni complex/motion references; Kling 3 precise frames/products; Seedance 2.5 long audiovisual/artistic/performance; Veo source-image premium synchronous audio; Seedance 2.0 routine
 - Downstream use: General video generation

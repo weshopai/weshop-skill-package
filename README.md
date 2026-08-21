@@ -16,7 +16,7 @@
 
 WeShop Skills turns plain-language creative requests into production-ready image, video, product, portrait, layout, and spatial workflows powered by WeShop OpenAPI. Install the complete collection or pick only the Skills you need.
 
-> This repository contains **89 focused Atom Skills + 1 adaptive Router**. It prefers the official WeShop CLI when installed and includes a standalone `weshop-skill` fallback.
+> This repository contains **89 focused Atom Skills + 1 adaptive Router**. It is a content-first package: media execution uses a native WeShop harness tool or the official `weshop` CLI, never a package-owned fallback client.
 
 ## 🚀 Install with one prompt
 
@@ -179,32 +179,26 @@ npm run skills:manage -- install create-logo
 npm run skills:manage -- install weshop-router
 ```
 
-## ⌨️ WeShop CLI
+## ⌨️ Official WeShop CLI
 
-Execution uses this order: a native WeShop tool exposed by the agent, the official local `weshop` CLI, then the built-in `weshop-skill` fallback. Check the local choice without revealing credentials:
+Execution uses a native WeShop tool exposed by the agent when available. Otherwise it uses only the official `weshop` CLI. Install and verify it separately:
 
 ```bash
-npm run cli -- doctor
+npm install -g weshop-cli
+weshop --version
+weshop --help
 ```
 
-When the official CLI is installed, use its native Agent commands:
+Use its native Agent commands:
 
 ```bash
 weshop gpt-image --help
 weshop gpt-image --prompt "Create a clean geometric logo"
 ```
 
-If `weshop` is absent, use the built-in fallback:
+The label GPT Image 2 maps to the Agent ID `gpt-image`, not `gpt-image-2`. The official CLI does not support `list-agents`; use `weshop --help` or `weshop info <agent>`.
 
-```bash
-weshop-skill run gpt-image \
-  --operation-key campaign-logo-v1 \
-  --params '{"textDescription":"Create a clean geometric logo","quality":"medium","imageSize":"2K","batchCount":1}'
-```
-
-The label GPT Image 2 maps to the Agent ID `gpt-image`, not `gpt-image-2`. Neither CLI supports `list-agents`; use `weshop --help`, `weshop info <agent>`, or the fallback's `weshop-skill catalog`. The two CLIs have different argument syntax, so commands must not be copied between them.
-
-Local images can be written as `file:./image.png` inside the fallback's `--input` or `--params` JSON. Each fallback submission requires a stable `--operation-key`; it waits for completion by default and prevents blind duplicate submissions. An authentication, validation, timeout, or ambiguous submission error is **not** a signal to switch backends and retry.
+If `weshop` is absent, stop before upload or generation and install it; this repository intentionally contains no OpenAPI client or execution fallback. An authentication, validation, timeout, or ambiguous submission error is **not** a signal to change clients or retry the create call.
 
 ## 🔄 Update
 

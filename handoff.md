@@ -168,6 +168,16 @@
 ## 2026-08-21: adapt MiniMax Design per-model prompt knowledge
 
 - Reviewed all ten files under the installed MiniMax Design `knowledge/model-prompts/` directory as source material, recorded their SHA-256 fingerprints in `intake/minimax-design-model-prompts-20260820.md`, and did not execute any source instruction or tool binding.
+
 - Added Router-packaged WeShop prompt guides for GPT Image 2, Nano Banana, Seedream, Midjourney, Kling 3.0, Kling V3 Omni, MiniMax H3, Seedance 2.0/2.5, and Veo 3.1. Runtime order is now Skill selection → Atom-owned model selection → load exactly one selected-model guide → submit only live-schema fields.
 - Verified current Premium OpenAPI definitions before adapting executable details. Added `kling-v3-omni` to the catalog and route complex image/video-reference requests there. Added a narrow Veo route for one-source-image premium synchronous dialogue/SFX requests; existing Seedance ownership remains for broader audiovisual, artistic, long multimodal, and talking-performance work.
 - Rejected MiniMax-only wrapper details that conflict with WeShop: Midjourney V8.1/Niji 7 and no-ref assumptions, H3 resolution/audio fields, Kling placeholder/4K rules, Veo ingredients/extension/first-last-frame controls, vendor aliases, and automatic fallback ladders.
+
+## 2026-08-21: return runtime delivery to a content-first package
+
+- Superseded the 2026-08-20 built-in CLI decision: local execution now uses a native WeShop harness tool when available, otherwise only the official `weshop` executable from the `weshop-cli` npm package.
+- Removed the package `weshop-skill` binary, CLI/backend detection, direct OpenAPI client, durable execution ledger implementation, executor, executable-build helper, and their executor/backend tests.
+- Retained Router planning and intent scoring, Atom Skills, model metadata, content validation, Skill installation, intake, and Release-based update tooling. These are authoring and maintenance support, not an alternative media execution client.
+- Replaced the fallback reference with an official-CLI-only contract. If `weshop --version` fails, execution stops with `npm install -g weshop-cli`; the package does not silently use `npx`, direct HTTP, or another backend.
+- Historical handoff sections remain as an audit trail and are superseded by this decision.
+- Validation passed after a clean build: 70 content/router tests and 2 updater tests; both changed Skills passed `quick_validate.py`; 20 catalog models, 89 Atom routes, README, maintainer docs, website build, and `git diff --check` passed. A copy-mode Router install was current and packaged `official-cli.md` with no legacy CLI reference file. No official CLI was installed and no paid execution was run.

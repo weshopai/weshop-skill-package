@@ -30,7 +30,7 @@ Use `references/` for conditional API schemas or substantial acceptance rules, `
 
 Use an existing active entry in `models/catalog.json` when possible. If the Agent or model is new, verify its current WeShop schema and capability before adding it to the catalog. Discoverability is not execution approval.
 
-The built-in `weshop-skill` command is the fallback executor when the harness has no native WeShop tool. It requires a stable `--operation-key`, uploads explicit `file:` inputs, polls the accepted run, and records the receipt.
+When the harness has no native WeShop tool, execution uses only the official `weshop` CLI from the `weshop-cli` npm package. Do not add a package-owned OpenAPI client or fallback executor. Inspect the selected Agent command's current `--help` output before documenting parameters.
 
 ## 5. Promote into the package
 

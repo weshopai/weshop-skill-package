@@ -40,14 +40,18 @@ Inventory behavior before looking for one-to-one model replacements:
 - preservation and quality claims;
 - examples and assets that cannot be reused.
 
-Then decide independently for each coherent outcome:
+Then create an isolated intake record for every supplied external Skill. Keep every coherent user-visible outcome as its own standalone Atom candidate; do not collapse it into an installed Skill during intake. Router compositions may describe downstream handoffs, but they must not erase the candidate's independent ownership.
+
+For a source that actually contains several coherent user-visible outcomes, split it into several candidates rather than merging those outcomes into existing Skills. Reject only behavior WeShop cannot safely support; record the unsupported behavior without deleting the source outcome from the intake.
+
+After the independent candidate record exists, its later promotion decision may be:
 
 - create a new Atom;
 - compose existing Atoms through the Router;
 - retain a deterministic local operation;
 - reject it because WeShop cannot verify the capability or the product value is weak.
 
-Similarity to an installed Skill is not a merge or rejection reason. Keep distinct outcomes as separate Atoms, even when their implementation or media type overlaps. One external project may produce zero, one, or several new Atoms; never mirror its folder structure mechanically.
+Similarity to an installed Skill is never a merge or rejection reason. Keep distinct outcomes as separate candidates, even when their implementation or media type overlaps. One external project may produce one or several candidates; never mirror its folder structure mechanically.
 
 ## 4. Distinguish similar Skills instead of merging them
 
@@ -58,6 +62,8 @@ For every similar or adjacent installed Skill, record:
 - the conditions that favor the new Skill;
 - the conditions that favor the related Skill;
 - whether they can compose or hand off to each other.
+
+Calibrate the static relationship score from the requested outcome, required input roles, preservation contract, output/delivery contract, and exclusions—not shared media type or keywords. Use `0.00–0.24` for incidental adjacency, `0.25–0.49` for a shared component, `0.50–0.74` for a closely related but clearly different outcome, `0.75–0.89` for a strongly adjacent outcome, and `0.90–1.00` only when the two requests are nearly the same absent a named decisive boundary. Record that decisive boundary in the row and in the candidate's Router scoring evidence. This is static discovery metadata, never a merge decision or a runtime selection score.
 
 Put the important distinctions directly in the new Skill's frontmatter `description`. Name the related Skill, include its relationship score, and explain both sides of the boundary in natural language. A useful shape is: `Use for ...; unlike $related-skill (relationship 0.82), choose this when ...; choose $related-skill when ...; the two can compose when ...`. Descriptions are discovery evidence, so include outcome, inputs, preservation scope, deliverable, exclusions, and adjacent relationships without relying on keywords alone.
 
@@ -101,7 +107,7 @@ After the intake decision is approved, follow [Adding or changing an Atom](addin
 
 Do not move work into `skills/` until the intake answers all of these:
 
-- Does each coherent outcome create a standalone Atom or remain a Router composition for a product reason other than similarity?
+- Does each supplied Skill/coherent outcome have its own standalone candidate record, never replaced by an existing Skill because of similarity?
 - Does the description distinguish every materially similar Skill, state relationship scores, and explain both sides of each boundary?
 - Is every external AI call mapped to a verified WeShop route or declared unsupported?
 - Are parameter and Prompt transformations documented?

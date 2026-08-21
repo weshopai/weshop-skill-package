@@ -46,15 +46,17 @@ const intake = `# External Skill intake: ${slug}
 
 ## Package decision
 
-- Intake result: Create a standalone Atom unless the source has no coherent user-visible outcome
+- Intake result: Standalone Atom candidate; never merge this source outcome into an existing Skill during intake
 - Proposed standalone Atom: Pending review
 - Router compositions: Pending review
 - Rejected or unsupported behavior: Pending review
-- Promotion decision and rationale: Pending review; similarity alone is never a reason to merge or reject
+- Promotion decision and rationale: Pending review; preserve this candidate independently and use similar Skills only to state routing distinctions
 
 ## Similar Skill boundaries
 
 Complete one row for every materially similar or adjacent installed Skill. Similar Skills remain independent.
+
+Calibrate the static relationship score from outcome, input roles, preservation, deliverable, and exclusions: 0.00–0.24 incidental; 0.25–0.49 shared component; 0.50–0.74 closely related but clearly different; 0.75–0.89 strongly adjacent; 0.90–1.00 nearly the same absent the recorded decisive boundary. It is discovery metadata, never a merge or runtime-selection score.
 
 | Related Skill | Relationship score (0-1) | Shared use case | Use this intake when | Use the related Skill when | Composition or handoff |
 | --- | ---: | --- | --- | --- | --- |

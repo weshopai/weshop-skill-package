@@ -200,6 +200,11 @@
 - `npm pack` is machine-gated: required runtime files must exist; intake, handoff, maintainer docs, TypeScript source, website, GitHub configuration, output, and tests are forbidden. The accepted tarball contains 273 files, is approximately 196 KB packed and 618 KB unpacked.
 - An isolated tarball install verified version `0.3.8`, all 92 Skills, managed status, custom draft creation, expected rejection of an unfinished draft, and absence of forbidden files. Validation passed: 71 core tests, 2 updater tests, 2 custom-Skill lifecycle tests, one package CLI test, model/catalog routing, README, maintainer docs, website build, npm package validation, and `git diff --check`. No paid media generation was run.
 
+## 2026-08-21: user-facing npm install and update documentation
+
+- Expanded the root README with linked npm version/download badges, an explicit `@latest` installation path, Agent-specific and custom-target installation examples, local-versus-registry version checks, `npm outdated` usage, managed symlink/copy synchronization behavior, restart guidance, custom-Skill preservation guarantees, and GitHub Release/Atom subscription links.
+- Clarified that `weshop-skills status` validates installed Skill content but does not query npm, and removed a duplicated maintainer command entry. README and npm package-content validation pass.
+
 ## 2026-08-21: exhaustive local application intake and Router handoff discipline
 
 - Replaced the application-level aggregate with 24 isolated, neutral-name intake records for every discovered Skill, plugin Skill, active/disabled profile workflow, and OpenCode workflow entrypoint. The review inventory covered all 1,631 Resources files (1,573 text / 58 binary), including every 531 Markdown file and both ASAR images. Source materials were never executed, copied, installed, or treated as instructions.

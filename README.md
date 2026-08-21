@@ -8,6 +8,8 @@
 
 <p align="center">
   <img alt="92 Skills" src="https://img.shields.io/badge/Skills-92-7530FE?style=flat-square" />
+  <a href="https://www.npmjs.com/package/weshop-skill-package"><img alt="npm version" src="https://img.shields.io/npm/v/weshop-skill-package?style=flat-square&color=CB3837" /></a>
+  <a href="https://www.npmjs.com/package/weshop-skill-package"><img alt="npm downloads" src="https://img.shields.io/npm/dm/weshop-skill-package?style=flat-square&color=CB3837" /></a>
   <img alt="Codex" src="https://img.shields.io/badge/Codex-ready-10A37F?style=flat-square" />
   <img alt="Claude Code" src="https://img.shields.io/badge/Claude_Code-ready-D97757?style=flat-square" />
   <img alt="Cursor" src="https://img.shields.io/badge/Cursor-ready-2563EB?style=flat-square" />
@@ -30,14 +32,14 @@ The Agent should use the npm package and install the Skills into its own global 
 
 ## 📦 Install manually
 
-### 1. Install the npm package
+### 1. Download the latest stable package
 
 ```bash
-npm install -g weshop-skill-package
+npm install -g weshop-skill-package@latest
 weshop-skills version
 ```
 
-Node.js 22 LTS and npm are required. The npm version matches the stable GitHub Release version.
+Node.js 22 LTS and npm are required. The npm package is public and does not require a GitHub checkout. Its version always matches the corresponding stable [GitHub Release](https://github.com/weshopai/weshop-skill-pakage/releases).
 
 ### 2. Choose your agent
 
@@ -72,17 +74,42 @@ weshop-skills install --agent cursor
 
 Restart the agent after the first installation so it can discover the new Skills.
 
-### 3. Update
-
-Every stable GitHub Release publishes the same version to npm. Update the package, then synchronize managed installations:
+For another Agent Skills-compatible runtime or a project-local setup, choose the destination explicitly:
 
 ```bash
-npm update -g weshop-skill-package
+weshop-skills install --all --target /absolute/path/to/skills
+```
+
+Use `weshop-skills list` to inspect the package or install one Skill by name instead of the full collection.
+
+### 3. Check for and install updates
+
+Compare the version installed on your machine with the latest version published to npm:
+
+```bash
+weshop-skills version
+npm view weshop-skill-package version
+```
+
+You can also use npm's outdated report. It prints nothing when the global package is current:
+
+```bash
+npm outdated -g weshop-skill-package
+```
+
+Every stable GitHub Release publishes the same version to npm. Upgrade explicitly to the current `latest` version, then synchronize managed installations:
+
+```bash
+npm install -g weshop-skill-package@latest
 weshop-skills sync --all
 weshop-skills status --all
 ```
 
-Symlink installations follow the upgraded npm package immediately; `sync --all` also discovers newly added official Skills. Copy installations are refreshed only by `sync`. Package updates never scan, modify, upload, or delete user-owned custom Skills.
+By default, managed installations are symlinks. Existing symlinked Skills follow the upgraded npm package immediately, while `sync --all` also installs newly added official Skills. Copy installations are refreshed only by `sync`. Restart the Agent after an update when it caches Skill metadata.
+
+Package updates never scan, modify, upload, or delete user-owned custom Skills. Custom drafts remain under `~/.weshop-skill-package/custom-skills/`, and user-installed custom Skills remain owned by the user.
+
+To follow future releases without running a command, use [GitHub Releases](https://github.com/weshopai/weshop-skill-pakage/releases), subscribe through the repository's **Watch → Custom → Releases** option, or follow the [release Atom feed](https://github.com/weshopai/weshop-skill-pakage/releases.atom).
 
 By default, installation uses symlinks. Add `--copy` if you need an isolated copy:
 
@@ -210,11 +237,15 @@ If `weshop` is absent, stop before upload or generation and install it; this rep
 
 ## 🔄 Inspect updates
 
-Inspect one managed Skill at any time:
+Inspect one managed Skill at any time, or compare the local package version with npm:
 
 ```bash
 weshop-skills status create-logo --agent codex
+weshop-skills version
+npm view weshop-skill-package version
 ```
+
+`status` checks installed Skill content; it does not query npm. Use the two version commands above to determine whether a new package release exists.
 
 ## 🏗️ For maintainers
 
@@ -237,7 +268,6 @@ Useful commands:
 | `npm run skills:custom:review -- ...` | Run read-only mechanical checks on a custom Skill |
 | `npm run skills:auto-update -- ...` | Install or inspect the Release-based background updater |
 | `npm run api-key:check` | Check local WeShop API key presence without printing it |
-| `npm run package:check` | Inspect the exact npm package contents before publishing |
 | `npm run package:check` | Inspect the exact npm package contents before publishing |
 
 ## 🔒 Security

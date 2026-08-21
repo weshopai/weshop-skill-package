@@ -205,6 +205,13 @@
 - Expanded the root README with linked npm version/download badges, an explicit `@latest` installation path, Agent-specific and custom-target installation examples, local-versus-registry version checks, `npm outdated` usage, managed symlink/copy synchronization behavior, restart guidance, custom-Skill preservation guarantees, and GitHub Release/Atom subscription links.
 - Clarified that `weshop-skills status` validates installed Skill content but does not query npm, and removed a duplicated maintainer command entry. README and npm package-content validation pass.
 
+## 2026-08-21: unified local custom-Skill lifecycle
+
+- Replaced the earlier two-Skill local creator/reviewer design with one `create-custom-skill` lifecycle. It now owns local creation, revision, mechanical and semantic self-checks, and user-confirmed local installation. The standalone `review-custom-skill` is removed.
+- Independent intake and review are deferred until a user explicitly asks to upload, publish, or contribute a local Skill to the official package. Local similarity still does not trigger fusion: relationship scores and two-way routing boundaries remain required in the custom intake and frontmatter description.
+- Renamed the deterministic helper from `weshop-skills custom review` to `weshop-skills custom check` and moved it inside `create-custom-skill`. The package inventory is now 89 creative Atom Skills, one platform Skill, and one Router (91 total).
+- Prepared this behavior change as package version `0.3.9`; publication remains a separate release action.
+
 ## 2026-08-21: exhaustive local application intake and Router handoff discipline
 
 - Replaced the application-level aggregate with 24 isolated, neutral-name intake records for every discovered Skill, plugin Skill, active/disabled profile workflow, and OpenCode workflow entrypoint. The review inventory covered all 1,631 Resources files (1,573 text / 58 binary), including every 531 Markdown file and both ASAR images. Source materials were never executed, copied, installed, or treated as instructions.

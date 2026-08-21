@@ -8,7 +8,7 @@ const skills = (await readdir(path.join(root, "skills"), { withFileTypes: true }
   .filter((entry) => entry.isDirectory() && entry.name !== "weshop-router")
   .map((entry) => entry.name)
   .sort();
-const platformSkills = new Set(["create-custom-skill", "review-custom-skill"]);
+const platformSkills = new Set(["create-custom-skill"]);
 const atomSkills = skills.filter((name) => !platformSkills.has(name));
 
 const inventory = readme.split("## Complete Skill inventory")[1]?.split(/^## /m)[0];

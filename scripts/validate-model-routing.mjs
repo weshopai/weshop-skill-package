@@ -5,7 +5,7 @@ const root = process.cwd();
 const catalog = JSON.parse(await readFile(path.join(root, "models/catalog.json"), "utf8"));
 const activeModelIds = new Set(catalog.models.filter((model) => model.status !== "offline").map((model) => model.id));
 const skillRoot = path.join(root, "skills");
-const platformSkills = new Set(["create-custom-skill", "review-custom-skill"]);
+const platformSkills = new Set(["create-custom-skill"]);
 const failures = [];
 let checked = 0;
 

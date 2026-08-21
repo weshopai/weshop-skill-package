@@ -104,13 +104,14 @@ Similarity never requires fusion. Complete one row for every plausible installed
 - Paid-operation confirmation and duplicate-submission safety: Pending
 - Acceptance and stopping conditions: Pending
 
-## Review and installation
+## Local check and installation
 
-- Mechanical review command: \`weshop-skills custom review ${target}\`
-- Independent review verdict: Pending
+- Mechanical check command: \`weshop-skills custom check ${target}\`
+- Local semantic self-check: Pending
 - Blocking findings resolved: Pending
 - User approved installation: No
 - Installed target: Not installed
+- Official upload requested: No; maintainer intake and independent review are deferred until requested
 `;
 
 await mkdir(draftRoot, { recursive: true });

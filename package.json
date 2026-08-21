@@ -1,6 +1,6 @@
 {
   "name": "weshop-skill-package",
-  "version": "0.3.8",
+  "version": "0.3.9",
   "description": "Content-first WeShop Router, Atom Skills, model catalog, and maintenance tooling.",
   "license": "MIT",
   "author": "WeShop AI",
@@ -42,7 +42,7 @@
     "skills:auto-update": "node scripts/auto-update.mjs",
     "skills:intake": "node scripts/create-skill-intake.mjs",
     "skills:custom:init": "node scripts/create-custom-skill-draft.mjs",
-    "skills:custom:review": "node skills/review-custom-skill/scripts/review-custom-skill.mjs",
+    "skills:custom:check": "node skills/create-custom-skill/scripts/check-custom-skill.mjs",
     "package:check": "node scripts/validate-npm-package.mjs",
     "docs:validate": "node scripts/validate-readme.mjs",
     "maintainers:validate": "node scripts/validate-maintainer-docs.mjs",

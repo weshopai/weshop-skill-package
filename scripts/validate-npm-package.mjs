@@ -12,7 +12,7 @@ const required = [
   "scripts/manage-skills.mjs",
   "skills/weshop-router/SKILL.md",
   "skills/create-custom-skill/SKILL.md",
-  "skills/review-custom-skill/scripts/review-custom-skill.mjs",
+  "skills/create-custom-skill/scripts/check-custom-skill.mjs",
   "models/catalog.json"
 ];
 for (const file of required) {

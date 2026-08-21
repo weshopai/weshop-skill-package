@@ -19,7 +19,7 @@ description: Plan simple or compound WeShop creative requests by discovering cur
 12. The catalog is authoritative for discoverability, not execution approval. A model gets execution parameters only after its Atom Skill and API schema are added.
 13. Use named variations as independent runs; ordinary alternatives can use a batch count. Do not impose an arbitrary ceiling: derive the useful output set from the objective.
 14. If an accepted image only misses the requested ratio, keep it and add `$expand-image` as a downstream operation.
-15. For user-owned Skill authoring, keep creation and review independent. Route new, captured, or modified custom-Skill requests to `create-custom-skill`, then route the isolated draft to `review-custom-skill`. A passing review plus explicit user confirmation may lead to a deterministic local-install step; it never promotes the draft into this package automatically. Third-party source material still starts with external intake.
+15. Route the complete local lifecycle for a new, captured, or modified user-owned Skill to `create-custom-skill`: isolated authoring, mechanical and semantic self-checks, and an explicit-confirmation local install. Do not invoke a separate review Skill for local use. If the user asks to upload or contribute it to the official package, begin the maintainer intake and independent review workflow instead. Third-party source material still starts with external intake.
 
 ## QA budget
 

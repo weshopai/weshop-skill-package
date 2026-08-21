@@ -2,7 +2,7 @@ import { lstat, readFile, readdir } from "node:fs/promises";
 import path from "node:path";
 
 const input = process.argv[2];
-if (!input || process.argv.length !== 3) throw new Error("Usage: review-custom-skill.mjs <skill-directory>");
+if (!input || process.argv.length !== 3) throw new Error("Usage: check-custom-skill.mjs <skill-directory>");
 const directory = path.resolve(input);
 const skillPath = path.join(directory, "SKILL.md");
 const source = await readFile(skillPath, "utf8");

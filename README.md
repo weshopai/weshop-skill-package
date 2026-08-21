@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img alt="92 Skills" src="https://img.shields.io/badge/Skills-92-7530FE?style=flat-square" />
+  <img alt="91 Skills" src="https://img.shields.io/badge/Skills-91-7530FE?style=flat-square" />
   <a href="https://www.npmjs.com/package/weshop-skill-package"><img alt="npm version" src="https://img.shields.io/npm/v/weshop-skill-package?style=flat-square&color=CB3837" /></a>
   <a href="https://www.npmjs.com/package/weshop-skill-package"><img alt="npm downloads" src="https://img.shields.io/npm/dm/weshop-skill-package?style=flat-square&color=CB3837" /></a>
   <img alt="Codex" src="https://img.shields.io/badge/Codex-ready-10A37F?style=flat-square" />
@@ -18,7 +18,7 @@
 
 WeShop Skills turns plain-language creative requests into production-ready image, video, product, portrait, layout, and spatial workflows powered by WeShop OpenAPI. Install the complete collection or pick only the Skills you need.
 
-> This repository contains **89 focused Atom Skills + 2 user-authoring Skills + 1 adaptive Router**. It is a content-first package: media execution uses a native WeShop harness tool or the official `weshop` CLI, never a package-owned fallback client.
+> This repository contains **89 focused Atom Skills + 1 user-authoring Skill + 1 adaptive Router**. It is a content-first package: media execution uses a native WeShop harness tool or the official `weshop` CLI, never a package-owned fallback client.
 
 ## 🚀 Install with one prompt
 
@@ -154,7 +154,7 @@ You can also invoke a Skill directly, for example `$remove-background`, `$virtua
 
 ### Create your own Skill
 
-Ask for a reusable user-owned Skill in plain language. The Router composes `$create-custom-skill` and `$review-custom-skill`: creation stays in an isolated draft, review is read-only, and installation into your Agent's user Skill directory requires your confirmation.
+Ask for a reusable user-owned Skill in plain language. `$create-custom-skill` owns the complete local lifecycle: it creates or revises an isolated draft, checks structure and routing boundaries, and shows the install destination before requesting confirmation. Independent review begins only if you later ask to upload or contribute the Skill to the official package.
 
 ```text
 Save the workflow we just completed as my own reusable Skill. Keep it local, compare it with similar installed Skills, review it, and show me the install target before copying anything.
@@ -164,7 +164,7 @@ Drafts default to `~/.weshop-skill-package/custom-skills/` and are not visible t
 
 ```bash
 weshop-skills custom init my-custom-skill
-weshop-skills custom review ~/.weshop-skill-package/custom-skills/my-custom-skill
+weshop-skills custom check ~/.weshop-skill-package/custom-skills/my-custom-skill
 ```
 
 ## ✨ What you get
@@ -184,12 +184,12 @@ The Router discovers installed Skills from their descriptions, decomposes compou
 
 ## Complete Skill inventory 🧩
 
-The `skills/` directory contains 89 creative Atom Skills, two platform-tooling Skills, and one Router. Categories below are for browsing only and do not participate in hard-coded Router selection.
+The `skills/` directory contains 89 creative Atom Skills, one platform-tooling Skill, and one Router. Categories below are for browsing only and do not participate in hard-coded Router selection.
 
 | Category | Skills |
 | --- | --- |
 | Router | `weshop-router` |
-| User authoring and review | `create-custom-skill`, `review-custom-skill` |
+| User authoring | `create-custom-skill` |
 | Commercial products and apparel | `ai-product`, `change-pose`, `create-white-background-product-mockup`, `fashion-model-replacement`, `outfit-design`, `product-packaging`, `virtual-try-on` |
 | Layout and marketing | `ai-banner-design`, `add-speech-bubble`, `apply-photo-filter`, `compose-lookbook`, `create-image-deck`, `create-social-carousel`, `image-combiner`, `make-infographic`, `make-silhouette`, `make-thumbnail`, `photo-collage`, `poster-design`, `product-detail-page`, `recolor-object`, `recreate-social-photo`, `translate-image-text` |
 | Personal appearance | `add-braces`, `add-tattoo`, `apply-makeup`, `change-bangs`, `eye-color-change`, `hair-color-change`, `hairstyle-change`, `make-selfie`, `shave-head` |
@@ -265,7 +265,7 @@ Useful commands:
 | `npm run web:build` | Build the generated visual Skill catalog |
 | `npm run skills:intake -- ...` | Start a provenance-safe external Skill intake |
 | `npm run skills:custom:init -- ...` | Start an isolated user-owned custom Skill draft |
-| `npm run skills:custom:review -- ...` | Run read-only mechanical checks on a custom Skill |
+| `npm run skills:custom:check -- ...` | Run mechanical local checks on a custom Skill |
 | `npm run skills:auto-update -- ...` | Install or inspect the Release-based background updater |
 | `npm run api-key:check` | Check local WeShop API key presence without printing it |
 | `npm run package:check` | Inspect the exact npm package contents before publishing |

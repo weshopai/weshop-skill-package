@@ -1,6 +1,6 @@
 ---
 name: create-custom-skill
-description: "Create or revise one user-owned Agent Skill from a new brief, the current conversation, or an existing local Skill, keeping the draft isolated until it passes review. Use when the user asks to make, save, capture, customize, or update their own reusable Skill; unlike review-custom-skill (relationship 0.82), this Skill owns intent capture and authoring, while the reviewer owns the independent verdict. It may hand a passed draft to an explicit user-approved local installation, but never promotes it into the official WeShop package automatically."
+description: "Create, revise, check, and locally install one user-owned Agent Skill from a new brief, the current conversation, or an existing local Skill. Use when the user asks to make, save, capture, customize, validate, or update their own reusable local Skill. This Skill owns the complete local lifecycle; official package submission is a separate maintainer intake and review workflow and is never implied by local creation."
 ---
 # Create Custom Skill
 
@@ -11,14 +11,15 @@ description: "Create or revise one user-owned Agent Skill from a new brief, the 
 - Status: Ready
 - Route label: Isolated user-owned Skill authoring
 - Tone: purple
-- Short description: Turn a reusable workflow into a reviewed, user-owned Agent Skill draft.
+- Short description: Turn a reusable workflow into a checked, user-owned local Agent Skill.
 
 ## What this skill does
 
 - Creates one custom `SKILL.md` from a new requirement, a completed conversation workflow, or a requested revision.
 - Keeps unfinished work outside every Agent's auto-discovered Skill directory so a partial draft cannot trigger accidentally.
 - Distinguishes related installed Skills with relationship scores and explicit two-way boundaries rather than merging similar outcomes.
-- Hands the completed draft to `review-custom-skill`; installation happens only after a passing verdict and explicit user confirmation.
+- Checks the completed draft itself and can install it locally after showing the destination and receiving explicit user confirmation.
+- Keeps official package submission separate; maintainer intake and independent review begin only when the user asks to upload or contribute the Skill.
 
 ## How to use
 
@@ -46,9 +47,9 @@ Create a custom Skill that turns my weekly campaign brief into three channel-spe
 6. Write the smallest complete `SKILL.md`: required `name` and discriminating `description`, then purpose, inputs, workflow, constraints with reasons, acceptance/stopping conditions, examples, and user-facing output. Add `references/`, `scripts/`, or `assets/` only when the workflow genuinely needs them. Do not require MiniMax-specific `SKILL.cn.md`, `meta.yaml`, market tags, Hub paths, Hilo tokens, or fixed eight-step media templates.
 7. For an executable WeShop Skill, use only a native WeShop harness tool or the official `weshop` CLI, select a currently verified Agent/model, use its native fields, retain stable operation keys in durable harness state, and prohibit blind resubmission after ambiguous create outcomes. Never embed `WESHOP_API_KEY`, credentials, unrelated environment access, implicit package installation, or unreviewed remote execution.
 8. Create three realistic requests that should select the Skill and three near-neighbor requests that should not. Check the name and description alone against all six. Walk through a different example to verify every step has its required input, expensive actions have proportionate confirmation, and failures reach a bounded stopping state.
-9. Run the mechanical custom review: `weshop-skills custom review <draft-directory>`. Repair structural blockers, but do not treat the mechanical result as independent semantic approval.
-10. Hand the draft directory, intake, trigger cases, and walkthrough to `review-custom-skill`. Do not write the review verdict yourself. If the verdict is `Revise`, update only the supported issues and resubmit. `Reject` keeps the draft isolated.
-11. After a `Pass`, show the proposed installation target and ask for confirmation because copying into an Agent Skill directory changes runtime behavior. On confirmation, copy the reviewed directory without `intake.md` into that Agent's user-owned Skill root, verify references again, and report whether the harness requires a restart or new session. Never copy it into this repository's official `skills/` directory; official promotion is a separate maintainer decision and validation cycle.
+9. Run the bundled mechanical check: `weshop-skills custom check <draft-directory>`. Repair structural blockers, then self-check the description against the trigger cases, walk through one different example, inspect bundled scripts and remote behavior as source, and record the result in `intake.md`. This is local authoring QA, not independent publication approval.
+10. Show the proposed installation target and ask for confirmation because copying into an Agent Skill directory changes runtime behavior. On confirmation, copy the checked directory without `intake.md` into that Agent's user-owned Skill root, verify references again, and report whether the harness requires a restart or new session. Refuse to overwrite an unmanaged target without explicit permission.
+11. Never copy a local Skill into this repository's official `skills/` directory automatically. If the user later asks to upload, publish, or contribute it, stop the local lifecycle and hand the source to the maintainer intake and independent review workflow. A local check is evidence, not publication approval.
 
 ## Draft contract
 
@@ -56,7 +57,8 @@ Create a custom Skill that turns my weekly campaign brief into three channel-spe
 - `intake.md` is authoring/review evidence and is not installed as runtime instruction content.
 - A custom Skill remains owned by the user and is not managed by the package auto-updater.
 - Existing unmanaged target directories are never overwritten automatically.
-- Creator may revise files, but Reviewer remains read-only and supplies the verdict.
+- Local creation, revision, checking, and approved installation belong to this one Skill.
+- Independent review is deferred until official upload or package contribution is requested.
 
 Read [references/source-attribution.md](references/source-attribution.md) when auditing why this workflow differs from the MiniMax reference.
 
@@ -64,7 +66,7 @@ Read [references/source-attribution.md](references/source-attribution.md) when a
 
 - Media type: User-owned Agent Skill draft
 - Default quantity: One isolated Skill directory plus one user-custom intake record
-- Content per artifact: `SKILL.md`, only necessary resources, trigger tests, walkthrough evidence, and review handoff
+- Content per artifact: `SKILL.md`, only necessary resources, trigger tests, walkthrough evidence, and local check evidence
 - Default layout: Agent Skills-compatible folder outside runtime discovery until approval
 - Model policy: Agent-authored platform tooling; no paid media generation
-- Downstream use: Independent review, user-approved local installation, or separate official-package proposal
+- Downstream use: User-approved local installation or separate maintainer intake for an official-package proposal

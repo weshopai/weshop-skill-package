@@ -16,7 +16,7 @@ Usage:
   weshop-skills status [skill|--all] [--agent codex|claude|cursor] [--target <dir>]
   weshop-skills list
   weshop-skills custom init <slug> [--root <draft-root>]
-  weshop-skills custom review <skill-directory>
+  weshop-skills custom check <skill-directory>
   weshop-skills api-key check
   weshop-skills version`;
 
@@ -65,7 +65,7 @@ if (!command || command === "help" || command === "--help" || command === "-h") 
 } else if (command === "custom") {
   const subcommand = args.shift();
   if (subcommand === "init") run("scripts/create-custom-skill-draft.mjs", args);
-  else if (subcommand === "review") run("skills/review-custom-skill/scripts/review-custom-skill.mjs", args);
+  else if (subcommand === "check") run("skills/create-custom-skill/scripts/check-custom-skill.mjs", args);
   else throw new Error(usage);
 } else if (command === "api-key") {
   if (args.length !== 1 || args[0] !== "check") throw new Error(usage);

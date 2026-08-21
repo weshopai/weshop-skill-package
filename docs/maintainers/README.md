@@ -4,6 +4,7 @@ These documents are the source of truth for changing the Skill package. The root
 
 - [Adding or changing an Atom](adding-skills.md)
 - [Importing an external Skill or project](importing-external-projects.md)
+- [User custom Skills](user-custom-skills.md)
 
 ## Quality gates
 

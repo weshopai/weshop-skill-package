@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img alt="90 Skills" src="https://img.shields.io/badge/Skills-90-7530FE?style=flat-square" />
+  <img alt="92 Skills" src="https://img.shields.io/badge/Skills-92-7530FE?style=flat-square" />
   <img alt="Codex" src="https://img.shields.io/badge/Codex-ready-10A37F?style=flat-square" />
   <img alt="Claude Code" src="https://img.shields.io/badge/Claude_Code-ready-D97757?style=flat-square" />
   <img alt="Cursor" src="https://img.shields.io/badge/Cursor-ready-2563EB?style=flat-square" />
@@ -16,7 +16,7 @@
 
 WeShop Skills turns plain-language creative requests into production-ready image, video, product, portrait, layout, and spatial workflows powered by WeShop OpenAPI. Install the complete collection or pick only the Skills you need.
 
-> This repository contains **89 focused Atom Skills + 1 adaptive Router**. It is a content-first package: media execution uses a native WeShop harness tool or the official `weshop` CLI, never a package-owned fallback client.
+> This repository contains **89 focused Atom Skills + 2 user-authoring Skills + 1 adaptive Router**. It is a content-first package: media execution uses a native WeShop harness tool or the official `weshop` CLI, never a package-owned fallback client.
 
 ## 🚀 Install with one prompt
 
@@ -133,6 +133,21 @@ Create one minimal logo for NORTHLINE COFFEE: an original N plus mountain-path s
 
 You can also invoke a Skill directly, for example `$remove-background`, `$virtual-try-on`, `$create-logo`, or `$generate-video`.
 
+### Create your own Skill
+
+Ask for a reusable user-owned Skill in plain language. The Router composes `$create-custom-skill` and `$review-custom-skill`: creation stays in an isolated draft, review is read-only, and installation into your Agent's user Skill directory requires your confirmation.
+
+```text
+Save the workflow we just completed as my own reusable Skill. Keep it local, compare it with similar installed Skills, review it, and show me the install target before copying anything.
+```
+
+Drafts default to `~/.weshop-skill-package/custom-skills/` and are not visible to the Agent until reviewed and approved. They remain user-owned and are not overwritten by package updates. From the package checkout, deterministic scaffolding and mechanical review are also available:
+
+```bash
+npm run skills:custom:init -- my-custom-skill
+npm run skills:custom:review -- ~/.weshop-skill-package/custom-skills/my-custom-skill
+```
+
 ## ✨ What you get
 
 | Capability | Examples |
@@ -150,11 +165,12 @@ The Router discovers installed Skills from their descriptions, decomposes compou
 
 ## Complete Skill inventory 🧩
 
-The `skills/` directory contains 89 Atom Skills and one Router. Categories below are for browsing only and do not participate in hard-coded Router selection.
+The `skills/` directory contains 89 creative Atom Skills, two platform-tooling Skills, and one Router. Categories below are for browsing only and do not participate in hard-coded Router selection.
 
 | Category | Skills |
 | --- | --- |
 | Router | `weshop-router` |
+| User authoring and review | `create-custom-skill`, `review-custom-skill` |
 | Commercial products and apparel | `ai-product`, `change-pose`, `create-white-background-product-mockup`, `fashion-model-replacement`, `outfit-design`, `product-packaging`, `virtual-try-on` |
 | Layout and marketing | `ai-banner-design`, `add-speech-bubble`, `apply-photo-filter`, `compose-lookbook`, `create-image-deck`, `create-social-carousel`, `image-combiner`, `make-infographic`, `make-silhouette`, `make-thumbnail`, `photo-collage`, `poster-design`, `product-detail-page`, `recolor-object`, `recreate-social-photo`, `translate-image-text` |
 | Personal appearance | `add-braces`, `add-tattoo`, `apply-makeup`, `change-bangs`, `eye-color-change`, `hair-color-change`, `hairstyle-change`, `make-selfie`, `shave-head` |
@@ -222,15 +238,17 @@ Useful commands:
 
 | Command | Purpose |
 | --- | --- |
-| `npm run build` | Compile TypeScript and prepare the CLI |
+| `npm run build` | Clean and compile the Router validation library |
 | `npm run check` | Run TypeScript checks |
-| `npm test` | Test routing and execution safety |
+| `npm test` | Test routing, safety policy, installation, and updates |
 | `npm run models:validate` | Validate the model catalog |
-| `npm run models:routing-validate` | Validate model routes across all 89 Atom Skills |
+| `npm run models:routing-validate` | Validate model routes across all 89 creative Atom Skills |
 | `npm run docs:validate` | Validate this README and Skill inventory |
 | `npm run maintainers:validate` | Validate maintainer documentation |
 | `npm run web:build` | Build the generated visual Skill catalog |
 | `npm run skills:intake -- ...` | Start a provenance-safe external Skill intake |
+| `npm run skills:custom:init -- ...` | Start an isolated user-owned custom Skill draft |
+| `npm run skills:custom:review -- ...` | Run read-only mechanical checks on a custom Skill |
 | `npm run skills:auto-update -- ...` | Install or inspect the Release-based background updater |
 
 ## 🔒 Security

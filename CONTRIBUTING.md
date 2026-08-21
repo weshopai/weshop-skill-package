@@ -6,6 +6,7 @@ This repository separates end-user installation documentation from maintainer wo
 
 - Create a genuinely new Atom from a first-party requirement: read [Adding or changing an Atom](docs/maintainers/adding-skills.md).
 - Study an external Skill or project and replace its original AI providers with WeShop: read [Importing an external project](docs/maintainers/importing-external-projects.md).
+- Support a user-owned custom Skill without promoting it into the package: read [User custom Skills](docs/maintainers/user-custom-skills.md).
 - Change shared routing, execution safety, model policy, installation, or the website generator: read both the relevant source and [Maintainer validation](docs/maintainers/README.md).
 
 External material never enters `skills/` directly. Start with an isolated intake record:

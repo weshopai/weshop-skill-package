@@ -22,7 +22,7 @@ for (const file of files) {
 }
 
 const contributing = await readFile(path.join(root, "CONTRIBUTING.md"), "utf8");
-for (const required of ["adding-skills.md", "importing-external-projects.md", "skills:intake", "intake/external-skills/"]) {
+for (const required of ["adding-skills.md", "importing-external-projects.md", "user-custom-skills.md", "skills:intake", "intake/external-skills/"]) {
   if (!contributing.includes(required)) throw new Error(`CONTRIBUTING.md is missing maintainer entrypoint: ${required}`);
 }
 

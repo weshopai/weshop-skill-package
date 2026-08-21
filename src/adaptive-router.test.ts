@@ -154,3 +154,31 @@ test("accepts one create-character node with a canonical QA and optional expansi
   assert.deepEqual(plan.steps.map((step) => step.skillId), ["create-character"]);
   assert.deepEqual(plan.steps[0].dependsOn, []);
 });
+
+test("composes user custom Skill creation and independent review", () => {
+  const authoringSkills: RuntimeSkill[] = [
+    { id: "create-custom-skill", description: "Create or revise one isolated user-owned Skill draft." },
+    { id: "review-custom-skill", description: "Read-only review of an existing custom Skill draft." }
+  ];
+  const customPlan: AdaptiveRouteProposal = {
+    intent: {
+      raw: "Save the workflow we just completed as my own reusable Skill, review it, then show me where it would be installed.",
+      outcome: "One reviewed user-owned custom Skill",
+      assets: ["current conversation workflow"],
+      constraints: ["keep draft isolated", "do not install before confirmation", "do not promote into official package"],
+      deliverables: ["custom Skill draft", "independent review report", "proposed install target"],
+      requiresResearch: false,
+      confidence: 0.98,
+      ambiguities: []
+    },
+    decision: "execute",
+    steps: [
+      { id: "author", kind: "skill", skillId: "create-custom-skill", objective: "Capture the workflow in an isolated custom Skill draft", dependsOn: [], inputs: { workflow: "conversation.current" }, output: "draft directory and user intake", selectionReason: "This Skill owns intent capture and custom Skill authoring.", candidates: matches("create-custom-skill", [["review-custom-skill", 0.42]]) },
+      { id: "review", kind: "skill", skillId: "review-custom-skill", objective: "Independently review the completed draft", dependsOn: ["author"], inputs: { draft: "author.output" }, output: "Pass, Revise, or Reject report", selectionReason: "This Skill owns read-only custom Skill review and does not self-author the verdict.", candidates: matches("review-custom-skill", [["create-custom-skill", 0.51]]) }
+    ],
+    finalAcceptance: ["The draft remains outside runtime discovery.", "The review is independent and read-only.", "No installation or official promotion occurs without a separate decision."]
+  };
+  const plan = validateAdaptiveRoute(customPlan, authoringSkills);
+  assert.deepEqual(plan.steps.map((step) => step.skillId), ["create-custom-skill", "review-custom-skill"]);
+  assert.deepEqual(plan.steps[1].dependsOn, ["author"]);
+});

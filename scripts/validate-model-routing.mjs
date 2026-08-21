@@ -5,6 +5,7 @@ const root = process.cwd();
 const catalog = JSON.parse(await readFile(path.join(root, "models/catalog.json"), "utf8"));
 const activeModelIds = new Set(catalog.models.filter((model) => model.status !== "offline").map((model) => model.id));
 const skillRoot = path.join(root, "skills");
+const platformSkills = new Set(["create-custom-skill", "review-custom-skill"]);
 const failures = [];
 let checked = 0;
 
@@ -14,6 +15,7 @@ for (const entry of await readdir(skillRoot, { withFileTypes: true })) {
   let body;
   try { body = await readFile(file, "utf8"); } catch { continue; }
   if (entry.name === "weshop-router") continue;
+  if (platformSkills.has(entry.name)) continue;
   checked += 1;
   const production = body;
   const usesGptImage = /GPT Image 2|gpt-image/i.test(production);

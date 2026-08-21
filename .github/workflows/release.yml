@@ -10,7 +10,6 @@ on:
 
 permissions:
   contents: write
-  id-token: write
 
 jobs:
   validate-and-release:
@@ -66,7 +65,7 @@ jobs:
           if npm view "$PACKAGE_NAME@$PACKAGE_VERSION" version >/dev/null 2>&1; then
             echo "$PACKAGE_NAME@$PACKAGE_VERSION is already published; continuing bootstrap or retry."
           else
-            npm publish --access public --provenance
+            npm publish --access public
           fi
 
       - name: Publish release

@@ -13,8 +13,8 @@ User custom Skills are local, user-owned extensions. They do not enter this repo
 The package checkout offers deterministic helpers:
 
 ```bash
-npm run skills:custom:init -- <slug>
-npm run skills:custom:review -- ~/.weshop-skill-package/custom-skills/<slug>
+weshop-skills custom init <slug>
+weshop-skills custom review ~/.weshop-skill-package/custom-skills/<slug>
 ```
 
 The initializer intentionally creates an incomplete draft. A review failure on its `TODO` placeholders is the expected state until authoring finishes.

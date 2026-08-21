@@ -29,7 +29,7 @@ const localLinks = [...readme.matchAll(/\[[^\]]+\]\(([^)]+)\)/g)]
   .filter((link) => !link.startsWith("http") && !link.startsWith("#"));
 for (const link of localLinks) await access(path.join(root, link));
 
-const requiredCommands = ["skills:manage", "skills:custom:init", "skills:custom:review", "api-key:check", "models:validate", "models:routing-validate", "docs:validate", "web:build"];
+const requiredCommands = ["weshop-skills install", "weshop-skills sync", "weshop-skills custom", "weshop-skills api-key check", "package:check", "models:validate", "models:routing-validate", "docs:validate", "web:build"];
 for (const command of requiredCommands) {
   if (!readme.includes(command)) throw new Error(`README is missing command documentation for ${command}.`);
 }

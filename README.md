@@ -23,23 +23,21 @@ WeShop Skills turns plain-language creative requests into production-ready image
 Open Codex, Claude Code, or Cursor and paste this:
 
 ```text
-Install the latest stable GitHub Release of all WeShop Skills from https://github.com/weshopai/weshop-skill-pakage for the agent you are running in. Clone the repository, check out the newest stable vX.Y.Z tag in detached mode, install its npm dependencies, use its skills manager to install all Skills into the correct global skills directory for this agent, enable the package's silent Release-based auto-updater, verify the installation, and tell me whether I need to restart the agent. Do not ask me to paste or print my WeShop API key.
+Install the latest stable `weshop-skill-package` from npm globally, run `weshop-skills install` for the agent you are running in, verify the managed Skill installation, and tell me whether I need to restart the agent. Do not ask me to paste or print my WeShop API key. Preserve all user-owned custom Skills.
 ```
 
-The agent should clone this repository, run `npm ci`, and install the Skills into its own global Skill directory.
+The Agent should use the npm package and install the Skills into its own global Skill directory.
 
 ## 📦 Install manually
 
-### 1. Clone the package
+### 1. Install the npm package
 
 ```bash
-git clone https://github.com/weshopai/weshop-skill-pakage.git
-cd weshop-skill-pakage
-git checkout --detach "$(git tag --list 'v[0-9]*' --sort=-v:refname | head -n 1)"
-npm ci
+npm install -g weshop-skill-package
+weshop-skills version
 ```
 
-Node.js 22 LTS, npm, Git, and access to this repository are required.
+Node.js 22 LTS and npm are required. The npm version matches the stable GitHub Release version.
 
 ### 2. Choose your agent
 
@@ -47,7 +45,7 @@ Node.js 22 LTS, npm, Git, and access to this repository are required.
 <summary><strong>Codex</strong></summary>
 
 ```bash
-npm run skills:manage -- install --all
+weshop-skills install --agent codex
 ```
 
 The default destination is `~/.codex/skills`.
@@ -58,7 +56,7 @@ The default destination is `~/.codex/skills`.
 <summary><strong>Claude Code</strong></summary>
 
 ```bash
-npm run skills:manage -- install --all --target ~/.claude/skills
+weshop-skills install --agent claude
 ```
 
 </details>
@@ -67,35 +65,29 @@ npm run skills:manage -- install --all --target ~/.claude/skills
 <summary><strong>Cursor</strong></summary>
 
 ```bash
-npm run skills:manage -- install --all --target ~/.cursor/skills
+weshop-skills install --agent cursor
 ```
 
 </details>
 
 Restart the agent after the first installation so it can discover the new Skills.
 
-### 3. Enable silent Skill updates
+### 3. Update
 
-After installing all Skills, enable the background updater once:
+Every stable GitHub Release publishes the same version to npm. Update the package, then synchronize managed installations:
 
 ```bash
-npm run skills:auto-update -- install
+npm update -g weshop-skill-package
+weshop-skills sync --all
+weshop-skills status --all
 ```
 
-It checks every six hours for the latest stable GitHub Release. When the repository is clean and the release is a safe fast-forward update, it advances the detached release checkout and synchronizes every managed installation. It never follows unreleased changes on `main`. If you installed `--all`, Skills added in future releases are installed automatically too.
+Symlink installations follow the upgraded npm package immediately; `sync --all` also discovers newly added official Skills. Copy installations are refreshed only by `sync`. Package updates never scan, modify, upload, or delete user-owned custom Skills.
+
+By default, installation uses symlinks. Add `--copy` if you need an isolated copy:
 
 ```bash
-npm run skills:auto-update -- status
-npm run skills:auto-update -- check
-npm run skills:auto-update -- uninstall
-```
-
-The updater uses the Git credentials already configured for this private repository. Successful checks are silent; state and errors are stored under `~/.weshop-skill-package/`. It never overwrites a dirty or diverged checkout. Newly added Skills become visible when the agent next refreshes its Skill list, usually in a new task or after an app reload.
-
-By default, installation uses symlinks, so pulling this repository updates the installed Skill content immediately. Add `--copy` if you need an isolated copy:
-
-```bash
-npm run skills:manage -- install --all --copy
+weshop-skills install --agent codex --copy
 ```
 
 ### 4. Configure WeShop OpenAPI
@@ -104,7 +96,7 @@ Get a key from [WeShop OpenAPI](https://open.weshop.ai/authorization/apikey), th
 
 ```bash
 read -s WESHOP_API_KEY && export WESHOP_API_KEY
-npm run api-key:check
+weshop-skills api-key check
 ```
 
 Never paste the key into chat, source files, frontend code, Git history, URLs, or command arguments.
@@ -141,11 +133,11 @@ Ask for a reusable user-owned Skill in plain language. The Router composes `$cre
 Save the workflow we just completed as my own reusable Skill. Keep it local, compare it with similar installed Skills, review it, and show me the install target before copying anything.
 ```
 
-Drafts default to `~/.weshop-skill-package/custom-skills/` and are not visible to the Agent until reviewed and approved. They remain user-owned and are not overwritten by package updates. From the package checkout, deterministic scaffolding and mechanical review are also available:
+Drafts default to `~/.weshop-skill-package/custom-skills/` and are not visible to the Agent until reviewed and approved. They remain user-owned and are not overwritten by package updates. Deterministic scaffolding and mechanical review are also available:
 
 ```bash
-npm run skills:custom:init -- my-custom-skill
-npm run skills:custom:review -- ~/.weshop-skill-package/custom-skills/my-custom-skill
+weshop-skills custom init my-custom-skill
+weshop-skills custom review ~/.weshop-skill-package/custom-skills/my-custom-skill
 ```
 
 ## ✨ What you get
@@ -185,14 +177,14 @@ The `skills/` directory contains 89 creative Atom Skills, two platform-tooling S
 List them from your terminal:
 
 ```bash
-npm run skills:manage -- list
+weshop-skills list
 ```
 
 Install only what you need:
 
 ```bash
-npm run skills:manage -- install create-logo
-npm run skills:manage -- install weshop-router
+weshop-skills install create-logo --agent codex
+weshop-skills install weshop-router --agent codex
 ```
 
 ## ⌨️ Official WeShop CLI
@@ -216,18 +208,12 @@ The label GPT Image 2 maps to the Agent ID `gpt-image`, not `gpt-image-2`. The o
 
 If `weshop` is absent, stop before upload or generation and install it; this repository intentionally contains no OpenAPI client or execution fallback. An authentication, validation, timeout, or ambiguous submission error is **not** a signal to change clients or retry the create call.
 
-## 🔄 Update
-
-Automatic-update users do not need to run a manual update command. To update immediately instead of waiting for the next background check:
-
-```bash
-npm run skills:auto-update -- run
-```
+## 🔄 Inspect updates
 
 Inspect one managed Skill at any time:
 
 ```bash
-npm run skills:manage -- status create-logo
+weshop-skills status create-logo --agent codex
 ```
 
 ## 🏗️ For maintainers
@@ -250,6 +236,9 @@ Useful commands:
 | `npm run skills:custom:init -- ...` | Start an isolated user-owned custom Skill draft |
 | `npm run skills:custom:review -- ...` | Run read-only mechanical checks on a custom Skill |
 | `npm run skills:auto-update -- ...` | Install or inspect the Release-based background updater |
+| `npm run api-key:check` | Check local WeShop API key presence without printing it |
+| `npm run package:check` | Inspect the exact npm package contents before publishing |
+| `npm run package:check` | Inspect the exact npm package contents before publishing |
 
 ## 🔒 Security
 

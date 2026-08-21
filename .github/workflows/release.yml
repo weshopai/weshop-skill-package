@@ -4,12 +4,13 @@ on:
   workflow_dispatch:
     inputs:
       tag:
-        description: Stable semantic version tag, for example v0.2.0
+        description: Stable semantic version tag matching package.json, for example v0.3.8
         required: true
         type: string
 
 permissions:
   contents: write
+  id-token: write
 
 jobs:
   validate-and-release:
@@ -21,7 +22,7 @@ jobs:
       - name: Validate release tag
         run: |
           if [[ ! "$RELEASE_TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-            echo "Release tag must use stable semantic versioning such as v0.2.0."
+            echo "Release tag must use stable semantic versioning such as v0.3.8."
             exit 1
           fi
 
@@ -33,6 +34,7 @@ jobs:
         with:
           node-version: 22
           cache: npm
+          registry-url: https://registry.npmjs.org
 
       - name: Install dependencies
         run: |
@@ -41,6 +43,11 @@ jobs:
 
       - name: Validate package
         run: |
+          PACKAGE_VERSION="$(node -p 'require("./package.json").version')"
+          if [[ "$RELEASE_TAG" != "v$PACKAGE_VERSION" ]]; then
+            echo "Release tag $RELEASE_TAG must match package.json version v$PACKAGE_VERSION."
+            exit 1
+          fi
           npm run check
           npm test
           npm run models:validate
@@ -48,6 +55,19 @@ jobs:
           npm run docs:validate
           npm run maintainers:validate
           npm run web:build
+          npm run package:check
+
+      - name: Publish npm package
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          PACKAGE_NAME="$(node -p 'require("./package.json").name')"
+          PACKAGE_VERSION="$(node -p 'require("./package.json").version')"
+          if npm view "$PACKAGE_NAME@$PACKAGE_VERSION" version >/dev/null 2>&1; then
+            echo "$PACKAGE_NAME@$PACKAGE_VERSION is already published; continuing bootstrap or retry."
+          else
+            npm publish --access public --provenance
+          fi
 
       - name: Publish release
         run: |

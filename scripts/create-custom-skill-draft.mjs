@@ -4,7 +4,7 @@ import path from "node:path";
 
 const args = process.argv.slice(2);
 const slug = args.shift();
-const usage = "npm run skills:custom:init -- <slug> [--root <draft-root>]";
+const usage = "weshop-skills custom init <slug> [--root <draft-root>]";
 
 const option = (name) => {
   const index = args.indexOf(name);
@@ -106,7 +106,7 @@ Similarity never requires fusion. Complete one row for every plausible installed
 
 ## Review and installation
 
-- Mechanical review command: \`npm run skills:custom:review -- ${target}\`
+- Mechanical review command: \`weshop-skills custom review ${target}\`
 - Independent review verdict: Pending
 - Blocking findings resolved: Pending
 - User approved installation: No

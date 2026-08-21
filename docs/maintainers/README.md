@@ -33,4 +33,4 @@ An execution route is not `Ready` merely because its schema parses. Verify new W
 
 User installations can opt into the background updater documented in the root README. It follows only stable `vX.Y.Z` releases and ignores untagged changes and prerelease-style tags.
 
-To publish, open **Actions → Publish stable release → Run workflow**, enter the next semantic version such as `v0.3.0`, and run it from the intended commit on `main`. The workflow validates the package before it creates the tag and GitHub Release. Do not push the stable tag manually first: the updater treats the tag as installable release content.
+Before publishing, update `package.json` and `package-lock.json` to the next semantic version. Open **Actions → Publish stable release → Run workflow**, enter the identical `vX.Y.Z` tag, and run it from the intended commit on `main`. The workflow rejects a tag/package mismatch, validates the runtime tarball, publishes the same version to npm, then creates the GitHub tag and Release. Do not push the stable tag or publish npm manually during ordinary releases; a retry may continue only when that exact npm version already exists.

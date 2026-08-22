@@ -21,7 +21,7 @@
 ## Package decision
 
 - Intake result: Standalone Atom candidate
-- Proposed standalone Atom: `make-fpv-tour-video`
+- Proposed standalone Atom: `fpv-tour-video-generator`
 - Router compositions: Use `generate-video` for each atomic flight segment, `combine-videos` only for connected segments over the model limit, and `animate-image` for bounded motion from one still without a spatial tour
 - Rejected or unsupported behavior: Source Hub tools/state, paper-airplane default without user consent, automatic platform selection, blind retries, and a guaranteed H3 default
 - Promotion decision and rationale: An FPV one-take tour has a distinct spatial-route and continuity contract; do not promote until a live WeShop video route confirms the required reference and duration fields
@@ -52,5 +52,5 @@ Complete one row for every materially similar or adjacent installed Skill. Simil
 
 - Official WeShop schema checked: Current `generate-video`, `animate-image`, `combine-videos`, and Router video policy reviewed; no source model field adopted.
 - Representative execution: Not authorized or not run
-- Acceptance result: Intake complete; promotion is deliberately pending live-schema and representative-output verification.
-- Source record packaged: This isolated intake and capability map retain provenance; no installable Skill changed.
+- Acceptance result: Promoted as an independent Atom; static route verification passed. Representative paid execution remains unrun and does not imply a capability guarantee.
+- Source record packaged: `skills/fpv-tour-video-generator/references/source-provenance.md`

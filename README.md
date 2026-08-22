@@ -18,7 +18,7 @@
 
 WeShop Skills turns plain-language creative requests into production-ready image, video, product, portrait, layout, and spatial workflows powered by WeShop OpenAPI. Install the complete collection or pick only the Skills you need.
 
-> This repository contains **89 focused Atom Skills + 1 user-authoring Skill + 1 adaptive Router**. It is a content-first package: media execution uses a native WeShop harness tool or the official `weshop` CLI, never a package-owned fallback client.
+> This repository contains **94 focused Atom Skills + 1 user-authoring Skill + 1 adaptive Router**. It is a content-first package: media execution uses a native WeShop harness tool or the official `weshop` CLI, never a package-owned fallback client.
 
 ## 🚀 Install with one prompt
 
@@ -184,7 +184,7 @@ The Router discovers installed Skills from their descriptions, decomposes compou
 
 ## Complete Skill inventory 🧩
 
-The `skills/` directory contains 89 creative Atom Skills, one platform-tooling Skill, and one Router. Categories below are for browsing only and do not participate in hard-coded Router selection.
+The `skills/` directory contains 94 creative Atom Skills, one platform-tooling Skill, and one Router. Categories below are for browsing only and do not participate in hard-coded Router selection.
 
 | Category | Skills |
 | --- | --- |
@@ -198,7 +198,7 @@ The `skills/` directory contains 89 creative Atom Skills, one platform-tooling S
 | Characters, animals, and brands | `character-reference-sheet`, `create-animal`, `create-avatar`, `create-character`, `create-flag`, `create-logo`, `create-mascot-logo`, `create-npc`, `make-pet-portrait` |
 | Narrative and comics | `develop-story`, `plan-comic-storyboard`, `plan-film-storyboard`, `render-comic-page`, `write-short-drama-series`, `write-short-video-hooks` |
 | Spaces, diagrams, and CAD | `create-cad`, `make-flowchart`, `preview-landscape`, `preview-paint`, `restyle-room`, `visualize-floor-plan` |
-| Video | `3d-animation-short-generator`, `add-video-effect`, `animate-image`, `brand-promo-video-generator`, `combine-videos`, `correct-video-color`, `edit-social-video`, `generate-video`, `make-beat-synced-video`, `make-explainer-video`, `make-kinetic-typography`, `make-music-video`, `make-podcast-video`, `make-product-commercial`, `make-talking-video`, `make-video-intro`, `remove-video-mark`, `restyle-video`, `upscale-video` |
+| Video | `3d-animation-short-generator`, `add-video-effect`, `animate-image`, `brand-promo-video-generator`, `combine-videos`, `correct-video-color`, `edit-social-video`, `fpv-tour-video-generator`, `generate-video`, `make-beat-synced-video`, `make-explainer-video`, `make-kinetic-typography`, `make-music-video`, `make-podcast-video`, `make-product-commercial`, `make-talking-video`, `make-video-intro`, `minimalist-product-ad-generator`, `music-video-subtitle-generator`, `pov-short-film-generator`, `remove-video-mark`, `restyle-video`, `suspense-title-sequence-generator`, `upscale-video` |
 | Social and commemorative | `make-birthday-video`, `make-holiday-card`, `make-mugshot-photo`, `make-wallet-photo`, `make-wedding-photo` |
 
 List them from your terminal:
@@ -259,7 +259,7 @@ Useful commands:
 | `npm run check` | Run TypeScript checks |
 | `npm test` | Test routing, safety policy, installation, and updates |
 | `npm run models:validate` | Validate the model catalog |
-| `npm run models:routing-validate` | Validate model routes across all 89 creative Atom Skills |
+| `npm run models:routing-validate` | Validate model routes across all 94 creative Atom Skills |
 | `npm run docs:validate` | Validate this README and Skill inventory |
 | `npm run maintainers:validate` | Validate maintainer documentation |
 | `npm run web:build` | Build the generated visual Skill catalog |

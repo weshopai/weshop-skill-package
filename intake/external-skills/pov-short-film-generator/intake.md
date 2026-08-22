@@ -21,7 +21,7 @@
 ## Package decision
 
 - Intake result: Standalone Atom candidate
-- Proposed standalone Atom: `make-pov-short-film`
+- Proposed standalone Atom: `pov-short-film-generator`
 - Router compositions: `plan-film-storyboard` supplies planning when requested separately; `generate-video` owns atomic clips; `combine-videos` assembles; `make-music-video` owns a music-led edit instead
 - Rejected or unsupported behavior: Source Canvas tools/state, automatic provider fallback, unverified native audio, blind generation after failed POV checks, and publication
 - Promotion decision and rationale: POV grammar is a complete-film invariant that general storyboarding and one-shot generation do not own; promotion awaits live route and output verification
@@ -53,5 +53,5 @@ Complete one row for every materially similar or adjacent installed Skill. Simil
 
 - Official WeShop schema checked: Current `plan-film-storyboard`, `generate-video`, `combine-videos`, and Router policy reviewed.
 - Representative execution: Not authorized or not run
-- Acceptance result: Intake complete; standalone promotion requires live capability and representative-output evidence.
-- Source record packaged: This isolated intake and capability map retain provenance; no runtime Atom changed.
+- Acceptance result: Promoted as an independent Atom; static route verification passed. Representative paid execution remains unrun and does not imply a capability guarantee.
+- Source record packaged: `skills/pov-short-film-generator/references/source-provenance.md`

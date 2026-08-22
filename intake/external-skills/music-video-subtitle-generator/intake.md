@@ -52,5 +52,5 @@ Complete one row for every materially similar or adjacent installed Skill. Simil
 
 - Official WeShop schema checked: Current `make-music-video`, `make-kinetic-typography`, `generate-video`, and Router audio policy reviewed.
 - Representative execution: Not authorized or not run
-- Acceptance result: Independent candidate recorded; no installable Skill change until promotion validation.
-- Source record packaged: This isolated intake and capability map retain provenance.
+- Acceptance result: Promoted as an independent Atom; static route verification passed. Representative paid execution remains unrun and does not imply a capability guarantee.
+- Source record packaged: `skills/music-video-subtitle-generator/references/source-provenance.md`

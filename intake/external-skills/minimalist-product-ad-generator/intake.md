@@ -52,5 +52,5 @@ Complete one row for every materially similar or adjacent installed Skill. Simil
 
 - Official WeShop schema checked: Current `make-product-commercial`, `ai-product`, `generate-video`, and `make-kinetic-typography` contracts reviewed.
 - Representative execution: Not authorized or not run
-- Acceptance result: Independent candidate recorded; no runtime Atom change until promotion validation.
-- Source record packaged: This isolated intake and capability map retain provenance.
+- Acceptance result: Promoted as an independent Atom; static route verification passed. Representative paid execution remains unrun and does not imply a capability guarantee.
+- Source record packaged: `skills/minimalist-product-ad-generator/references/source-provenance.md`

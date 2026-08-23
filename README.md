@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img alt="104 Skills" src="https://img.shields.io/badge/Skills-104-7530FE?style=flat-square" />
+  <img alt="112 Skills" src="https://img.shields.io/badge/Skills-112-7530FE?style=flat-square" />
   <a href="https://www.npmjs.com/package/weshop-skill-package"><img alt="npm version" src="https://img.shields.io/npm/v/weshop-skill-package?style=flat-square&color=CB3837" /></a>
   <a href="https://www.npmjs.com/package/weshop-skill-package"><img alt="npm downloads" src="https://img.shields.io/npm/dm/weshop-skill-package?style=flat-square&color=CB3837" /></a>
   <img alt="Codex" src="https://img.shields.io/badge/Codex-ready-10A37F?style=flat-square" />
@@ -18,7 +18,7 @@
 
 WeShop Skills turns plain-language creative requests into production-ready image, video, product, portrait, layout, and spatial workflows powered by WeShop OpenAPI. Install the complete collection or pick only the Skills you need.
 
-> This repository contains **104 focused Atom Skills + 1 user-authoring Skill + 1 Router + 1 multi-step orchestration Skill**. `weshop-router` decides whether to call one Atom directly or escalate to orchestration. Media execution uses a native WeShop harness tool or the official `weshop` CLI, never a package-owned fallback client.
+> This repository contains **112 focused Atom Skills + 1 user-authoring Skill + 1 Router + 1 multi-step orchestration Skill**. `weshop-router` decides whether to call one Atom directly or escalate to orchestration. Media execution uses a native WeShop harness tool or the official `weshop` CLI, never a package-owned fallback client.
 
 ## 🚀 Install with one prompt
 
@@ -184,7 +184,7 @@ For compound work, `orchestrate-multi-step-workflow` discovers installed Skills 
 
 ## Complete Skill inventory 🧩
 
-The `skills/` directory contains 104 creative Atom Skills, one platform-tooling Skill, one Router, and one multi-step orchestration Skill. Categories below are for browsing only and do not participate in hard-coded selection.
+The `skills/` directory contains 112 creative Atom Skills, one platform-tooling Skill, one Router, and one multi-step orchestration Skill. Categories below are for browsing only and do not participate in hard-coded selection.
 
 | Category | Skills |
 | --- | --- |
@@ -199,7 +199,7 @@ The `skills/` directory contains 104 creative Atom Skills, one platform-tooling 
 | Characters, animals, and brands | `character-reference-sheet`, `create-animal`, `create-avatar`, `create-character`, `create-flag`, `create-logo`, `create-mascot-logo`, `create-npc`, `make-pet-portrait` |
 | Narrative and comics | `develop-story`, `plan-comic-storyboard`, `plan-film-storyboard`, `render-comic-page`, `write-short-drama-series`, `write-short-video-hooks` |
 | Spaces, diagrams, and CAD | `create-cad`, `make-flowchart`, `preview-landscape`, `preview-paint`, `restyle-room`, `visualize-floor-plan` |
-| Video | `3d-animation-short-generator`, `add-video-effect`, `animate-image`, `backrooms-dreamcore`, `brand-promo-video-generator`, `brand-stream-mg`, `co-op-game-intro-generator`, `combine-videos`, `correct-video-color`, `detail-page-skill-course`, `digital-product-promo-generator`, `dodge-game-video-generator`, `dot-matrix-brand-wordmark-motion`, `edit-social-video`, `film-reference-prompt-writer`, `fpv-tour-video-generator`, `generate-video`, `h3-prompt-expert`, `make-beat-synced-video`, `make-explainer-video`, `make-kinetic-typography`, `make-music-video`, `make-podcast-video`, `make-product-commercial`, `make-talking-video`, `make-video-intro`, `minimalist-product-ad-generator`, `music-video-subtitle-generator`, `paper-collage-explainer-generator`, `pov-short-film-generator`, `remove-video-mark`, `restyle-video`, `suspense-title-sequence-generator`, `upscale-video` |
+| Video | `3d-animation-short-generator`, `add-video-effect`, `animate-image`, `backrooms-dreamcore`, `brand-promo-video-generator`, `brand-stream-mg`, `character-toy-grid-motion`, `co-op-game-intro-generator`, `combine-videos`, `correct-video-color`, `detail-page-skill-course`, `digital-product-promo-generator`, `dodge-game-video-generator`, `dot-matrix-brand-wordmark-motion`, `edit-social-video`, `film-reference-prompt-writer`, `fpv-tour-video-generator`, `generate-video`, `h3-prompt-expert`, `handdrawn-live-action-fusion`, `line-doodle-explainer`, `lip-product-commercial`, `live-sketch-motion`, `make-beat-synced-video`, `make-explainer-video`, `make-kinetic-typography`, `make-music-video`, `make-podcast-video`, `make-product-commercial`, `make-talking-video`, `make-video-intro`, `micro-expression-performance`, `minimalist-product-ad-generator`, `music-video-subtitle-generator`, `paper-collage-explainer-generator`, `papercraft-stop-motion-explainer`, `pov-short-film-generator`, `primitive-folk-cgi-restyle`, `remove-video-mark`, `restyle-video`, `suspense-title-sequence-generator`, `upscale-video` |
 | Social and commemorative | `make-birthday-video`, `make-holiday-card`, `make-mugshot-photo`, `make-wallet-photo`, `make-wedding-photo` |
 
 List them from your terminal:
@@ -261,7 +261,7 @@ Useful commands:
 | `npm run check` | Run TypeScript checks |
 | `npm test` | Test routing, safety policy, installation, and updates |
 | `npm run models:validate` | Validate the model catalog |
-| `npm run models:routing-validate` | Validate model routes across all 104 creative Atom Skills |
+| `npm run models:routing-validate` | Validate model routes across all 112 creative Atom Skills |
 | `npm run docs:validate` | Validate this README and Skill inventory |
 | `npm run maintainers:validate` | Validate maintainer documentation |
 | `npm run web:build` | Build the generated visual Skill catalog |

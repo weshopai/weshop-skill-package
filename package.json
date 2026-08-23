@@ -1,7 +1,7 @@
 {
   "name": "weshop-skill-package",
-  "version": "0.3.13",
-  "description": "Content-first WeShop Router, Atom Skills, model catalog, and maintenance tooling.",
+  "version": "0.3.14",
+  "description": "Content-first WeShop Router, Atom Skills, multi-step workflow orchestration, model catalog, and maintenance tooling.",
   "license": "MIT",
   "author": "WeShop AI",
   "homepage": "https://github.com/weshopai/weshop-skill-pakage#readme",

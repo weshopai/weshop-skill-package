@@ -11,6 +11,7 @@ const required = [
   "scripts/weshop-skills.mjs",
   "scripts/manage-skills.mjs",
   "skills/weshop-router/SKILL.md",
+  "skills/orchestrate-multi-step-workflow/SKILL.md",
   "skills/create-custom-skill/SKILL.md",
   "skills/create-custom-skill/scripts/check-custom-skill.mjs",
   "models/catalog.json"

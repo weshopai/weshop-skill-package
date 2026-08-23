@@ -14,7 +14,7 @@ for (const entry of await readdir(skillRoot, { withFileTypes: true })) {
   const file = path.join(skillRoot, entry.name, "SKILL.md");
   let body;
   try { body = await readFile(file, "utf8"); } catch { continue; }
-  if (entry.name === "weshop-router") continue;
+  if (["weshop-router", "orchestrate-multi-step-workflow"].includes(entry.name)) continue;
   if (platformSkills.has(entry.name)) continue;
   checked += 1;
   const production = body;

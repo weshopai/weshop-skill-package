@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { classifySubmissionOutcome, executionPolicy, routeNaturalLanguage } from "./index.js";
+import { classifySubmissionOutcome, dispatchLegacyNaturalLanguage, executionPolicy } from "./index.js";
 
 test("accepts only a non-empty execution ID and keeps polling that run", () => {
   assert.deepEqual(classifySubmissionOutcome({ kind: "response", executionId: " run-123 " }), {
@@ -56,8 +56,8 @@ test("empty material or Canvas state is never accepted as absence evidence", () 
 });
 
 test("ordinary and direct workflow routes share the duplicate-prevention policy", () => {
-  const ordinary = routeNaturalLanguage("生成一张商品海报");
-  const pose = routeNaturalLanguage("给这个模特换一个姿势", { assets: ["dressed-model"] });
+  const ordinary = dispatchLegacyNaturalLanguage("生成一张商品海报");
+  const pose = dispatchLegacyNaturalLanguage("给这个模特换一个姿势", { assets: ["dressed-model"] });
   assert.equal(ordinary.executionPolicy, executionPolicy);
   assert.equal(pose.executionPolicy, executionPolicy);
   assert.equal(ordinary.executionPolicy.publicationFailureAction, "retry-publication-only");

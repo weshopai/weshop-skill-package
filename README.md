@@ -18,7 +18,7 @@
 
 WeShop Skills turns plain-language creative requests into production-ready image, video, product, portrait, layout, and spatial workflows powered by WeShop OpenAPI. Install the complete collection or pick only the Skills you need.
 
-> This repository contains **94 focused Atom Skills + 1 user-authoring Skill + 1 adaptive Router**. It is a content-first package: media execution uses a native WeShop harness tool or the official `weshop` CLI, never a package-owned fallback client.
+> This repository contains **94 focused Atom Skills + 1 user-authoring Skill + 1 Router + 1 multi-step orchestration Skill**. `weshop-router` decides whether to call one Atom directly or escalate to orchestration. Media execution uses a native WeShop harness tool or the official `weshop` CLI, never a package-owned fallback client.
 
 ## 🚀 Install with one prompt
 
@@ -130,7 +130,7 @@ Never paste the key into chat, source files, frontend code, Git history, URLs, o
 
 ## 💬 Use it
 
-You do not need to memorize Skill names. Describe the result you want and the Router will select and combine the right Skills.
+You do not need to memorize Skill names. `$weshop-router` sends a clear one-result request straight to its Atom; it escalates only compound work to the multi-step orchestration Skill.
 
 Try prompts like:
 
@@ -177,18 +177,19 @@ weshop-skills custom check ~/.weshop-skill-package/custom-skills/my-custom-skill
 | 🧑 Portrait & appearance | Headshots, ID photos, makeup, hair, pose, glasses, tattoos |
 | 🎬 Video | Image animation, talking video, intros, effects, editing, combining, upscaling |
 | 🏠 Space & design | Room restyling, landscape previews, floor plans, flowcharts, CAD |
-| 🧠 Multi-step routing | Natural-language planning, parallel or ordered Skills, asset handoff, final QA |
+| 🧠 Multi-step orchestration | Parallel or ordered Skills, asset handoff, final QA for compound work |
 | 🛡️ Safe execution | Stable operation keys, duplicate-spend protection, polling, recovery records |
 
-The Router discovers installed Skills from their descriptions, decomposes compound requests, connects outputs to downstream inputs, selects verified WeShop models or Agents, and performs one focused acceptance check on the final result.
+For compound work, `orchestrate-multi-step-workflow` discovers installed Skills from their descriptions, connects outputs to downstream inputs, selects verified WeShop models or Agents, and performs one focused acceptance check on the final result. It is not the Router: a clear single-Atom request never enters it.
 
 ## Complete Skill inventory 🧩
 
-The `skills/` directory contains 94 creative Atom Skills, one platform-tooling Skill, and one Router. Categories below are for browsing only and do not participate in hard-coded Router selection.
+The `skills/` directory contains 94 creative Atom Skills, one platform-tooling Skill, one Router, and one multi-step orchestration Skill. Categories below are for browsing only and do not participate in hard-coded selection.
 
 | Category | Skills |
 | --- | --- |
 | Router | `weshop-router` |
+| Multi-step orchestration | `orchestrate-multi-step-workflow` |
 | User authoring | `create-custom-skill` |
 | Commercial products and apparel | `ai-product`, `change-pose`, `create-white-background-product-mockup`, `fashion-model-replacement`, `outfit-design`, `product-packaging`, `virtual-try-on` |
 | Layout and marketing | `ai-banner-design`, `add-speech-bubble`, `apply-photo-filter`, `compose-lookbook`, `create-image-deck`, `create-social-carousel`, `image-combiner`, `make-infographic`, `make-silhouette`, `make-thumbnail`, `photo-collage`, `poster-design`, `product-detail-page`, `recolor-object`, `recreate-social-photo`, `translate-image-text` |
@@ -212,6 +213,7 @@ Install only what you need:
 ```bash
 weshop-skills install create-logo --agent codex
 weshop-skills install weshop-router --agent codex
+weshop-skills install orchestrate-multi-step-workflow --agent codex
 ```
 
 ## ⌨️ Official WeShop CLI
@@ -255,7 +257,7 @@ Useful commands:
 
 | Command | Purpose |
 | --- | --- |
-| `npm run build` | Clean and compile the Router validation library |
+| `npm run build` | Clean and compile the multi-step orchestration validation library |
 | `npm run check` | Run TypeScript checks |
 | `npm test` | Test routing, safety policy, installation, and updates |
 | `npm run models:validate` | Validate the model catalog |

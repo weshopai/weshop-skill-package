@@ -23,7 +23,7 @@ const parseSkill = async (slug) => {
   if (!whatThisSkillDoes.length || !promptExamples.length || !output["Media type"]) throw new Error(`${slug}: display fields are incomplete`);
   return [slug, { catalog, whatThisSkillDoes, howToUse: howToUseSection.split("\n\n")[0].trim(), promptExamples, output }];
 };
-const directories = (await readdir(skillsRoot, { withFileTypes: true })).filter((entry) => entry.isDirectory() && entry.name !== "weshop-router").map((entry) => entry.name).sort();
+const directories = (await readdir(skillsRoot, { withFileTypes: true })).filter((entry) => entry.isDirectory() && !["weshop-router", "orchestrate-multi-step-workflow"].includes(entry.name)).map((entry) => entry.name).sort();
 const parsed = (await Promise.all(directories.map(parseSkill))).filter(Boolean);
 const outputDir = path.join(root, "web/src/generated");
 await mkdir(outputDir, { recursive: true });

@@ -1,6 +1,6 @@
-# Adaptive planning contract
+# Multi-step planning contract
 
-Use this reference when one request may require several Skills, current research, deterministic processing, or clarification.
+Use this reference after the harness-level Router has determined that a request needs several operations, current research, deterministic processing, or clarification. One clear Atom request never enters this workflow.
 
 ## Intent card
 
@@ -24,14 +24,13 @@ Record this before creating execution nodes:
 
 ```yaml
 planning:
-  shape: single-atom | multi-step
-  reason: single_atomic | dependency_chain | ambiguity | research | risk
+  reason: dependency_chain | ambiguity | research | risk
   clarification_required: true | false
 ```
 
-Use `single-atom` only when exactly one independent Skill operation can produce the whole requested result. Its reason is `single_atomic`; it has exactly one independent Skill node and does not need Router composition. Use `multi-step` when the request needs several operations, a real artifact handoff, research before execution, or a risk-sensitive plan. `dependency_chain` requires an actual dependency, not merely multiple user phrases. `research` requires `requires_research: true` and a research node. `risk` covers irreversible, high-cost, or preservation-sensitive execution that needs explicit acceptance and safe submission handling.
+This is a multi-step workflow: an executable plan has at least two meaningful nodes. `dependency_chain` requires an actual dependency, not merely multiple user phrases. `research` requires `requires_research: true` and a research node. `risk` covers irreversible, high-cost, or preservation-sensitive execution that needs explicit acceptance and safe submission handling.
 
-When `clarification_required` is true, set the reason to `ambiguity`, ask one material question, and do not emit execution nodes until it is answered. Do not use this decision as a keyword classifier or a global Router entry point: an unambiguous single-atom request proceeds directly to its selected Skill.
+When `clarification_required` is true, set the reason to `ambiguity`, ask one material question, and do not emit execution nodes until it is answered. Do not use this workflow as a keyword classifier or a global entry point: an unambiguous single-Atom request proceeds directly to its selected Skill.
 
 ## Route DAG
 
@@ -64,7 +63,7 @@ Treat each route node as a small contract, not as a new agent role. Before a dep
 
 Plan the full DAG when it helps the user understand dependencies, but do not materialize, pay for, or claim a downstream artifact while its required upstream decision or media is unresolved. A node that produces a selectable set ends after registering its candidates; create a separate selection node only when the user's choice becomes a real downstream input. Do not make generic “approve the plan” nodes.
 
-Put detailed guidance in the narrowest owner: model quirks in the selected model guide, source-specific evidence in a research record, and media acceptance in the owning Atom. The Router retains route selection, handoff bindings, and final acceptance; it must not become a planner/executor/director layer.
+Put detailed guidance in the narrowest owner: model quirks in the selected model guide, source-specific evidence in a research record, and media acceptance in the owning Atom. This orchestrator retains plan selection, handoff bindings, and final acceptance; it must not become a planner/executor/director layer.
 
 One node may satisfy several user phrases when one Skill explicitly owns the combined outcome. Conversely, do not force one broad Skill to own distinct outputs merely because it can technically generate them.
 

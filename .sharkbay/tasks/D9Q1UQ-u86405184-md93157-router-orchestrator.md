@@ -4,7 +4,7 @@ taskId: D9Q1UQ-u86405184-md93157
 taskTag: D9Q1UQ
 mode: task
 title: 重构 Router 与多步骤编排器并发布
-status: active
+status: completed
 actor: Jason12196
 githubUserId: 86405184
 machine: d93157
@@ -12,7 +12,10 @@ agent: Codex GPT-5.6
 sessionId: 01a02d9b-eb62-7dc3-8fea-1ef9f3b47658
 branch: codex/skill-planning-decision
 createdAt: 2026-08-23T08:39:00Z
-updatedAt: 2026-08-23T08:39:35Z
+updatedAt: 2026-08-23T08:43:56Z
+completedAt: 2026-08-23T08:43:56Z
+commits:
+  - 08fe60fc24106b79404145cdc34fb8c7c7509c3c
 ---
 
 ## Summary
@@ -49,9 +52,10 @@ updatedAt: 2026-08-23T08:39:35Z
 
 ## Verification
 
-- 已通过 `npm run check`、`npm test`、`npm run docs:validate`、`npm run models:routing-validate`、`npm run package:check`、`npm run maintainers:validate`、`npm run web:build` 与 `git diff --check`。
+- 已通过 `npm run check`、`npm test`（75 个核心测试与 6 个脚本测试）、`npm run models:validate`、`npm run models:routing-validate`、`npm run docs:validate`、`npm run maintainers:validate`、`npm run web:build`、`npm run package:check` 与 `git diff --check`。
+- GitHub Actions 发布工作流 `32628986231` 成功；npm `latest` 已发布 `weshop-skill-package@0.3.14`；GitHub Release `v0.3.14` 指向 `08fe60fc`。
 
 ## Notes
 
 - 衔接已完成的 `WYXEW5-u86405184-md93157`：上一版把单 Atom 判定放进了原 `weshop-router`，本任务将它提升为唯一包内 Router，并将真正的多步骤编排单独命名。
-- 用户已授权 C/P/R；完成后记录实际提交、推送与发布结果。
+- 已推送至 `weshopai/main` 并完成 `v0.3.14` 发布。

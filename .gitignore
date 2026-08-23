@@ -8,3 +8,4 @@ pnpm-lock.yaml
 *.tsbuildinfo
 web/dist/
 web/src/generated/
+handoff.md

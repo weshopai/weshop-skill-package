@@ -23,6 +23,7 @@ const proposal = (overrides: Partial<AdaptiveRouteProposal> = {}): AdaptiveRoute
     confidence: 0.9,
     ambiguities: []
   },
+  planning: { shape: "multi-step", reason: "research", clarificationRequired: false },
   decision: "execute",
   steps: [
     { id: "research", kind: "research", objective: "Verify destination requirements", dependsOn: [], inputs: {}, output: "verified requirements", selectionReason: "The destination is current and platform-specific." },
@@ -43,6 +44,7 @@ test("accepts a newly installed Skill without changing an operation enum", () =>
   const runtime = [...skills, { id: "future-localizer", description: "Localize accepted commercial artwork." }];
   const next = proposal({
     intent: { ...proposal().intent, requiresResearch: false },
+    planning: { shape: "single-atom", reason: "single_atomic", clarificationRequired: false },
     steps: [{ id: "localize", kind: "skill", skillId: "future-localizer", objective: "Localize artwork", dependsOn: [], inputs: { artwork: "user.artwork" }, output: "localized artwork", selectionReason: "The runtime description exactly matches the requested transformation.", candidates: matches("future-localizer", [["poster-design", 0.31]]) }]
   });
   assert.equal(validateAdaptiveRoute(next, runtime).steps[0].skillId, "future-localizer");
@@ -52,6 +54,7 @@ test("rejects unavailable Skills and invalid dependency graphs", () => {
   assert.throws(() => validateAdaptiveRoute(proposal({ steps: [{ ...proposal().steps[0], kind: "skill", skillId: "invented-skill" }] }), skills), AdaptiveRouteError);
   const cyclic = proposal({
     intent: { ...proposal().intent, requiresResearch: false },
+    planning: { shape: "multi-step", reason: "dependency_chain", clarificationRequired: false },
     steps: [
       { ...proposal().steps[1], dependsOn: ["poster"] },
       { ...proposal().steps[2], dependsOn: ["scene"] }
@@ -63,6 +66,7 @@ test("rejects unavailable Skills and invalid dependency graphs", () => {
 test("rejects a selected Skill below the highest request-specific intent match", () => {
   const lowerSelected = proposal({
     intent: { ...proposal().intent, requiresResearch: false },
+    planning: { shape: "single-atom", reason: "single_atomic", clarificationRequired: false },
     steps: [{
       id: "scene",
       kind: "skill",
@@ -84,8 +88,38 @@ test("rejects a selected Skill below the highest request-specific intent match",
 test("turns research and material ambiguity into explicit planning decisions", () => {
   const withoutResearch = proposal().steps.slice(1).map((step, index) => ({ ...step, dependsOn: index === 0 ? [] : step.dependsOn }));
   assert.throws(() => validateAdaptiveRoute(proposal({ steps: withoutResearch }), skills), /no research step/);
-  const clarify = proposal({ decision: "clarify", clarification: "Which marketplace and locale should the final asset target?", steps: [] });
+  const clarify = proposal({ planning: { shape: "multi-step", reason: "ambiguity", clarificationRequired: true }, decision: "clarify", clarification: "Which marketplace and locale should the final asset target?", steps: [] });
   assert.equal(validateAdaptiveRoute(clarify, skills).decision, "clarify");
+});
+
+test("enforces the single-atom or multi-step planning decision before Skill execution", () => {
+  const single = proposal({
+    intent: { ...proposal().intent, requiresResearch: false },
+    planning: { shape: "single-atom", reason: "single_atomic", clarificationRequired: false },
+    steps: [{ id: "expand", kind: "skill", skillId: "expand-image", objective: "Extend the supplied image", dependsOn: [], inputs: { image: "user.image" }, output: "expanded image", selectionReason: "This Skill owns ratio extension while preserving accepted content.", candidates: matches("expand-image", [["poster-design", 0.22]]) }]
+  });
+  assert.equal(validateAdaptiveRoute(single, skills).planning.shape, "single-atom");
+
+  const falseSingle = proposal({
+    intent: { ...proposal().intent, requiresResearch: false },
+    planning: { shape: "single-atom", reason: "single_atomic", clarificationRequired: false },
+    steps: proposal().steps.slice(1)
+  });
+  assert.throws(() => validateAdaptiveRoute(falseSingle, skills), /single-atom plan/);
+
+  const falseMulti = proposal({
+    intent: { ...proposal().intent, requiresResearch: false },
+    planning: { shape: "multi-step", reason: "dependency_chain", clarificationRequired: false },
+    steps: [{ id: "expand", kind: "skill", skillId: "expand-image", objective: "Extend the supplied image", dependsOn: [], inputs: { image: "user.image" }, output: "expanded image", selectionReason: "This Skill owns ratio extension while preserving accepted content.", candidates: matches("expand-image") }]
+  });
+  assert.throws(() => validateAdaptiveRoute(falseMulti, skills), /at least two steps/);
+});
+
+test("requires planning ambiguity to agree with the clarification decision", () => {
+  const mismatch = proposal({
+    planning: { shape: "multi-step", reason: "ambiguity", clarificationRequired: true }
+  });
+  assert.throws(() => validateAdaptiveRoute(mismatch, skills), /clarificationRequired must agree/);
 });
 
 test("accepts a first-party comic workflow as planning, character, page, and copy-repair nodes", () => {
@@ -106,6 +140,7 @@ test("accepts a first-party comic workflow as planning, character, page, and cop
       confidence: 0.95,
       ambiguities: []
     },
+    planning: { shape: "multi-step", reason: "dependency_chain", clarificationRequired: false },
     decision: "execute",
     steps: [
       { id: "storyboard", kind: "skill", skillId: "plan-comic-storyboard", objective: "Plan the exact two-page narrative", dependsOn: [], inputs: { story: "user.story" }, output: "validated comic manifest", selectionReason: "This Skill owns comic page and panel planning.", candidates: matches("plan-comic-storyboard", [["render-comic-page", 0.45]]) },
@@ -143,6 +178,7 @@ test("accepts one create-character node with a canonical QA and optional expansi
       confidence: 0.96,
       ambiguities: []
     },
+    planning: { shape: "single-atom", reason: "single_atomic", clarificationRequired: false },
     decision: "execute",
     steps: [
       { id: "character-pack", kind: "skill", skillId: "create-character", objective: "Create and review the canonical hero, then offer the expansion", dependsOn: [], inputs: { character: "user.brief" }, output: "one canonical sheet and optional confirmed reference-bound assets", selectionReason: "This Skill owns the canonical identity, QA gate, and optional expansion.", candidates: matches("create-character") }
@@ -170,6 +206,7 @@ test("routes the complete local custom Skill lifecycle to one creator", () => {
       confidence: 0.98,
       ambiguities: []
     },
+    planning: { shape: "single-atom", reason: "single_atomic", clarificationRequired: false },
     decision: "execute",
     steps: [
       { id: "author", kind: "skill", skillId: "create-custom-skill", objective: "Capture, check, and propose local installation of the workflow", dependsOn: [], inputs: { workflow: "conversation.current" }, output: "checked draft, user intake, and proposed install target", selectionReason: "This Skill owns the complete local custom Skill lifecycle.", candidates: matches("create-custom-skill") }

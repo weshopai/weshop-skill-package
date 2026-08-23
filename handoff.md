@@ -1,5 +1,13 @@
 # Handoff
 
+## 2026-08-23: explicit single-Atom versus multi-step planning decision
+
+- Added the adaptive Router `planning` contract before any execution nodes: `shape` is `single-atom` or `multi-step`; `reason` is `single_atomic`, `dependency_chain`, `ambiguity`, `research`, or `risk`; and `clarificationRequired` records whether a material question must be answered before committing execution.
+- The Router no longer treats itself as a global preface. A `single-atom` request must execute exactly one independent Skill node; a `multi-step` request must have at least two real steps, while `dependency_chain`, `research`, and `ambiguity` each receive deterministic checks appropriate to their reason.
+- Existing per-operation candidate scoring remains authoritative: each plausible runtime Skill is recorded with a request-specific `intentMatchScore`, and the selected Skill must still be a maximum-score candidate.
+- Updated the Router Skill and adaptive-planning reference with the direct-versus-composed boundary. Canvas was intentionally not changed.
+- Release validation before the authorized CPR: `npm test` (73/73), `npm run check`, `npm run models:validate`, `npm run models:routing-validate`, `npm run docs:validate`, `npm run maintainers:validate`, `npm run web:build`, `npm run package:check`, and `git diff --check`.
+
 ## 2026-08-20: parallel seven-task character expansion
 
 - Added `executeRunWave` to persist every planned slot before any create call, then launch all create calls concurrently and collect their results with all-settled semantics.

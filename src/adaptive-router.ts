@@ -32,8 +32,15 @@ export interface SkillIntentMatch {
   reason: string;
 }
 
+export interface PlanningDecision {
+  shape: "single-atom" | "multi-step";
+  reason: "single_atomic" | "dependency_chain" | "ambiguity" | "research" | "risk";
+  clarificationRequired: boolean;
+}
+
 export interface AdaptiveRouteProposal {
   intent: AdaptiveIntent;
+  planning: PlanningDecision;
   steps: AdaptiveRouteStep[];
   finalAcceptance: string[];
   decision: "execute" | "clarify";
@@ -60,6 +67,7 @@ export function validateAdaptiveRoute(
 
   if (!proposal.intent.outcome.trim()) throw new AdaptiveRouteError("The route needs a concrete final outcome.");
   if (proposal.intent.confidence < 0 || proposal.intent.confidence > 1) throw new AdaptiveRouteError("Intent confidence must be between 0 and 1.");
+  validatePlanningDecision(proposal);
   if (proposal.decision === "clarify" && !proposal.clarification?.trim()) throw new AdaptiveRouteError("A clarification decision requires one material question.");
   if (proposal.decision === "execute" && proposal.steps.length === 0) throw new AdaptiveRouteError("An executable route needs at least one step.");
 
@@ -92,6 +100,33 @@ export function validateAdaptiveRoute(
   }
 
   return { ...proposal, availableSkillCount: availableSkills.length };
+}
+
+function validatePlanningDecision(proposal: AdaptiveRouteProposal) {
+  const { planning } = proposal;
+  if (planning.clarificationRequired !== (proposal.decision === "clarify")) {
+    throw new AdaptiveRouteError("Planning clarificationRequired must agree with the route decision.");
+  }
+  if (planning.clarificationRequired) {
+    if (planning.reason !== "ambiguity") throw new AdaptiveRouteError("A clarification-required plan must record ambiguity as its planning reason.");
+    if (proposal.steps.length) throw new AdaptiveRouteError("A clarification-required plan must not pre-commit execution steps.");
+    return;
+  }
+  if (planning.shape === "single-atom") {
+    if (planning.reason !== "single_atomic") throw new AdaptiveRouteError("A single-atom plan must record single_atomic as its planning reason.");
+    if (proposal.decision === "execute" && (proposal.steps.length !== 1 || proposal.steps[0].kind !== "skill" || proposal.steps[0].dependsOn.length)) {
+      throw new AdaptiveRouteError("A single-atom plan must execute exactly one independent Skill step.");
+    }
+    return;
+  }
+  if (planning.reason === "single_atomic") throw new AdaptiveRouteError("A multi-step plan needs a non-atomic planning reason.");
+  if (proposal.decision === "execute" && proposal.steps.length < 2) throw new AdaptiveRouteError("A multi-step plan must execute at least two steps.");
+  if (planning.reason === "dependency_chain" && proposal.decision === "execute" && !proposal.steps.some((step) => step.dependsOn.length)) {
+    throw new AdaptiveRouteError("A dependency-chain plan needs at least one dependent step.");
+  }
+  if (planning.reason === "research" && !proposal.intent.requiresResearch) {
+    throw new AdaptiveRouteError("A research-driven plan must mark the intent as requiring research.");
+  }
 }
 
 function validateHighestIntentMatch(step: AdaptiveRouteStep, registry: Map<string, RuntimeSkill>) {

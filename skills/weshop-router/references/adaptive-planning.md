@@ -18,6 +18,21 @@ ambiguities: unresolved facts that could materially change the route
 
 Confidence is evidence for a decision, not a universal threshold. Clarify only when an ambiguity changes the selected Skill, required input, irreversible work, cost, or final contract. Otherwise state the assumption and proceed.
 
+## Planning decision
+
+Record this before creating execution nodes:
+
+```yaml
+planning:
+  shape: single-atom | multi-step
+  reason: single_atomic | dependency_chain | ambiguity | research | risk
+  clarification_required: true | false
+```
+
+Use `single-atom` only when exactly one independent Skill operation can produce the whole requested result. Its reason is `single_atomic`; it has exactly one independent Skill node and does not need Router composition. Use `multi-step` when the request needs several operations, a real artifact handoff, research before execution, or a risk-sensitive plan. `dependency_chain` requires an actual dependency, not merely multiple user phrases. `research` requires `requires_research: true` and a research node. `risk` covers irreversible, high-cost, or preservation-sensitive execution that needs explicit acceptance and safe submission handling.
+
+When `clarification_required` is true, set the reason to `ambiguity`, ask one material question, and do not emit execution nodes until it is answered. Do not use this decision as a keyword classifier or a global Router entry point: an unambiguous single-atom request proceeds directly to its selected Skill.
+
 ## Route DAG
 
 Create one node per meaningful operation:

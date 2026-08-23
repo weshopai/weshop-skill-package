@@ -43,6 +43,8 @@ If the harness exposes a `weshop_cli` wrapper, always include its required mode.
 
 ## Authentication and submission safety
 
-The official CLI requires a valid `WESHOP_API_KEY` in the trusted environment. A missing key is a local configuration prerequisite. An invalid key must be replaced or re-authorized; it is not a reason to change clients.
+When the CLI is executed directly in a standalone or unmanaged harness, it requires a valid `WESHOP_API_KEY` in the trusted environment. A missing key is a local configuration prerequisite. An invalid key must be replaced or re-authorized; it is not a reason to change clients.
+
+When an explicitly managed native WeShop tool wraps the CLI, call that tool instead of invoking or probing the CLI through Shell. The host owns authentication and may bridge an OAuth access token into the CLI process without exposing it to the Agent. In that mode, an empty Shell `WESHOP_API_KEY` is expected and must not trigger standalone setup guidance.
 
 Before each paid create call, retain a stable operation key and normalized request in the harness's durable state when that capability exists. Once an `executionId` exists, poll only that run. A create timeout, malformed response, or apparent success without an ID is outcome-unknown: do not submit again through the CLI or another client. A known terminal failure may be retried only under the Router and selected Atom's recovery rules.

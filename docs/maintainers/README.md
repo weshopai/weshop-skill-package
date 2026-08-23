@@ -17,6 +17,7 @@ npm run models:validate
 npm run models:routing-validate
 npm run docs:validate
 npm run maintainers:validate
+npm run skills:intake -- validate <slug>
 npm run web:build
 git diff --check
 ```
@@ -27,7 +28,7 @@ Validate every changed Skill independently:
 python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py skills/<slug>
 ```
 
-An execution route is not `Ready` merely because its schema parses. Verify new WeShop routes with one representative, low-cardinality run, poll the accepted `executionId` to terminal state, inspect the declared invariants, and record the evidence in `handoff.md`. Never make a paid run without task authorization.
+An execution route is not `Ready` merely because its schema parses. When execution is authorized, verify new WeShop routes with one representative, low-cardinality run, poll the accepted `executionId` to terminal state, inspect the declared invariants, and record the evidence in `handoff.md`. Do not make a paid run merely to complete intake.
 
 ## Stable releases
 

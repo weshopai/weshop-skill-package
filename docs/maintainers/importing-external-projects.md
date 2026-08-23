@@ -20,7 +20,9 @@ intake/external-skills/<intake-slug>/
 └── capability-map.md
 ```
 
-An intake is analysis, not an installable Skill. It is excluded from the Router, website, README inventory, and Skill installer.
+An intake is analysis, not an installable Skill. It is excluded from the Router, website, README inventory, and Skill installer. New records use `Mechanism version: 2` and start `active`; set them `inactive` only when the source outcome should no longer be considered. There is no human-approval or `Pending review` stage.
+
+Records without the version-2 marker are historical archive evidence only. They may use a retired merge-era mechanism and must not be copied as current intake policy.
 
 ## 2. Record source provenance
 
@@ -44,7 +46,7 @@ Then create an isolated intake record for every supplied external Skill. Keep ev
 
 For a source that actually contains several coherent user-visible outcomes, split it into several candidates rather than merging those outcomes into existing Skills. Reject only behavior WeShop cannot safely support; record the unsupported behavior without deleting the source outcome from the intake.
 
-After the independent candidate record exists, its later promotion decision may be:
+After the independent candidate record exists, its lifecycle decision may be:
 
 - create a new Atom;
 - compose existing Atoms through the Router;
@@ -101,9 +103,9 @@ Only `https://openapi.weshop.ai` receives `WESHOP_API_KEY`.
 
 ## 7. Write a native Atom, not a wrapper around the source
 
-After the intake decision is approved, follow [Adding or changing an Atom](adding-skills.md). Use this package's naming, detailed discovery description, progressive disclosure, WeShop route, output contract, QA budget, execution ledger, and failure policy. Keep the intake as source provenance.
+When an active intake is complete, follow [Adding or changing an Atom](adding-skills.md). Use this package's naming, detailed discovery description, progressive disclosure, WeShop route, output contract, QA budget, execution ledger, and failure policy. Keep the intake as source provenance.
 
-## 8. Promotion gate
+## 8. Completeness gate
 
 Do not move work into `skills/` until the intake answers all of these:
 
@@ -113,6 +115,6 @@ Do not move work into `skills/` until the intake answers all of these:
 - Are parameter and Prompt transformations documented?
 - Are preservation gaps visible in the output contract?
 - Have unsafe scripts, remote domains, retries, and secret handling been removed?
-- Is the proposed result valuable enough to maintain?
+- Does a fuzzy semantic routing test contain at least three natural-language requests that select this candidate and three ambiguous requests that select named installed neighbors?
 
-Record the promotion/rejection decision in the intake and summarize it in `handoff.md`.
+Run `npm run skills:intake -- validate <slug>`. This is an autonomous completeness check; it does not request or require human approval. Record the lifecycle decision in the intake and summarize resulting package changes in `handoff.md`.

@@ -1,5 +1,12 @@
 # Handoff
 
+## 2026-08-23: autonomous external-Skill intake mechanism
+
+- Replaced the retired human-approval and `Pending review` intake model with version-2 records that start `active` and may be made `inactive` when an outcome is closed.
+- `intake/external-skills/README.md` explicitly marks all unversioned records as legacy archive evidence. They can retain provenance but must not teach Agents the retired merge/absorb/promotion policy.
+- `npm run skills:intake -- validate <slug>` now checks a current record's lifecycle marker, non-placeholder capability mapping, explicit similar-Skill boundary, and fuzzy semantic routing evidence: three candidate requests and three named installed-neighbor requests.
+- Added a focused test for both passing and insufficient-neighbor cases. No paid execution, historical-record migration, or source-reproducibility work was performed.
+
 ## 2026-08-23: explicit single-Atom versus multi-step planning decision
 
 - Added the adaptive Router `planning` contract before any execution nodes: `shape` is `single-atom` or `multi-step`; `reason` is `single_atomic`, `dependency_chain`, `ambiguity`, `research`, or `risk`; and `clarificationRequired` records whether a material question must be answered before committing execution.

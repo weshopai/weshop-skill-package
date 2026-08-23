@@ -1,5 +1,12 @@
 # Handoff
 
+## 2026-08-23: three independent external Skill intakes
+
+- Added version-2, active, independently scoped records for `backrooms-dreamcore`, `paper-collage-explainer-generator`, and `short-drama-multilingual-dubbing`; their external `SKILL.md` and `meta.yaml` files were read and fingerprinted without execution or copying.
+- Promoted `backrooms-dreamcore` and `paper-collage-explainer-generator` as independent Atoms. Backrooms owns a personalized Level-0 dossier plus reference-led visual route; paper collage owns approved visual-metaphor/still gates and tactile stop-motion continuity; both defer final media work to existing verified image/video and assembly Atoms. No paid representative media execution was run.
+- Short-drama multilingual dubbing remains an active non-executable candidate: its timeline/table contract is preserved, while voice separation, source-line replication, multilingual audio generation, subtitle burn-in, and final mux parity are explicitly unverified.
+- Each record passed `npm run skills:intake -- validate <slug>` with three candidate and three named-neighbor fuzzy semantic routing cases. Updated the validator to exclude the Markdown table separator from the reported case count. No paid execution or Atom promotion occurred.
+
 ## 2026-08-23: autonomous external-Skill intake mechanism
 
 - Replaced the retired human-approval and `Pending review` intake model with version-2 records that start `active` and may be made `inactive` when an outcome is closed.

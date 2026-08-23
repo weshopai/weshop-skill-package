@@ -34,7 +34,8 @@ if (command === "validate") {
   if (!/^\|\s*[^|-][^|]*\|\s*(?:0(?:\.\d+)?|1(?:\.0+)?)\s*\|/m.test(boundaries)) errors.push("intake.md needs a completed similar-Skill boundary row with a relationship score.");
   if (!/^\|\s*[^|-][^|]*\|\s*[^|]+\|\s*[^|]+\|\s*[^|]+\|\s*[^|]+\|\s*[^|]+\|\s*[^|]+\|\s*[^|]+\|/m.test(capabilityMap)) errors.push("capability-map.md needs a completed capability substitution row.");
   const semantic = intake.split("## Fuzzy semantic routing test")[1]?.split("## ")[0] ?? "";
-  const cases = [...semantic.matchAll(/^\|\s*[^|]+\|\s*`?([a-z0-9-]+)`?\s*\|\s*[^|]+\|$/gm)];
+  const cases = [...semantic.matchAll(/^\|\s*[^|]+\|\s*`?([a-z0-9-]+)`?\s*\|\s*[^|]+\|$/gm)]
+    .filter(([, expected]) => expected !== "---");
   const selfCases = cases.filter(([, expected]) => expected === slug).length;
   const neighborCases = cases.filter(([, expected]) => expected !== slug && installed.some((entry) => entry.isDirectory() && entry.name === expected)).length;
   if (selfCases < 3 || neighborCases < 3) errors.push("fuzzy semantic test needs 3 candidate requests and 3 near-neighbor requests that name installed Skills.");

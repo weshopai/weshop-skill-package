@@ -21,11 +21,31 @@ description: "Create a Chinese screen-role casting package from a six-field role
 - Stops for explicit face approval. Only then creates user-selected full-body, 3×3 expression-grid, and/or turnaround assets.
 - Uses separately controlled high-end CG rendering for 漫剧, 3D漫剧, 3D角色, 三维, CG, or 三渲二 requests.
 
-## Inputs and boundaries
+## How to use
 
 Request the six role-card fields when available: person type, build, facial features, skin/hair/makeup, temperament, and intended character type. A script or freeform description is acceptable. Complete only reasonable omissions and state them in one sentence before submission.
 
 This Skill creates original fictional people. Do not reproduce a protected character or edit a real person. References must be authorized. Bind only an accepted public image URL, in supplied order—never invent a URL or asset token. Clothing must not override the requested face, skin, expression, or bone-structure intent.
+
+#### Example
+
+```text
+为民国悬疑短剧选一个26岁女记者：身形清瘦，偏窄长脸、平直微挑眉、长眼微上扬，暖白细腻肤色和低盘发，表面温柔但在隐藏锋芒。先出纯白底定脸；我确认后再选全身或表情。
+```
+
+## User-facing output
+
+- Media type: Approval-gated image casting package
+- Default quantity: One face-setting portrait
+- Optional quantity: One selected full-body, expression grid, and/or turnaround board
+- Content: Original fictional Chinese screen-role character on a pure-white background
+- Default layout: Vertical 3:4 portrait; selected 3:4 derivatives; 16:9 turnaround board
+- Model policy: GPT Image 2 Medium/2K after current-schema verification
+- Downstream use: Short-drama, film, comic, and story production casting references
+
+## Route and execution
+
+Use `gpt-image` / GPT Image 2 at Medium/2K. Before a real run, inspect the current official CLI or native Agent schema: the local catalog marks identity consistency and multi-reference support unknown. If public image references are unsupported, stop before derivatives and explain that safe identity continuity cannot be claimed.
 
 ## Portrait and approval workflow
 
@@ -35,12 +55,6 @@ This Skill creates original fictional people. Do not reproduce a protected chara
 4. Submit one GPT Image 2 task: `quality: "medium"`, `imageSize: "2K"`, vertical `3:4`, `batchCount: 1`, and a persisted operation key. Poll its accepted execution to terminal state; do not replace an unknown create outcome.
 5. Inspect before presentation: seamless `#ffffff`; front-facing head-and-neck crop; balanced facial structure; refined natural skin or intended CG surface; clear ears/hair; logo-free clothing; exactly one character.
 6. Ask whether the face is approved. If it is not, alter only the failed constraints and submit one linked revision. Never create a derivative before explicit approval.
-
-#### Example
-
-```text
-为民国悬疑短剧选一个26岁女记者：身形清瘦，偏窄长脸、平直微挑眉、长眼微上扬，暖白细腻肤色和低盘发，表面温柔但在隐藏锋芒。先出纯白底定脸；我确认后再选全身或表情。
-```
 
 ## Approved expansion
 
@@ -60,13 +74,7 @@ For each derivative use a new operation key and `batchCount: 1`; reference URLs 
 - Keep apparel logo-free and restrained. Tops remain loose over the waistband; default male trousers are full-length straight or gently wide-leg, unless the card requires otherwise.
 - Do not alter the locked composition, rendering, and sharpness blocks or add the known harmful focus phrases listed in the reference.
 
-## Route and execution
+## Acceptance
 
-Use `gpt-image` / GPT Image 2 at Medium/2K. Before a real run, inspect the current official CLI or native Agent schema: the local catalog marks identity consistency and multi-reference support unknown. If public image references are unsupported, stop before derivatives and explain that safe identity continuity cannot be claimed.
-
-## Acceptance and output
-
-- Default: one approved or revision-requested face-setting portrait, with no derivatives before approval.
-- Optional: selected full-body, 3×3 expression grid, and/or 16:9 turnaround, each as a separate asset.
 - Report role, reference bindings, rendering mode, operation key, execution ID, and terminal state; report only successful assets as delivered.
 - Pass only when requested original role identity, white background, framing/proportion, no logos, coherent hair/skin/wardrobe, and the approved face remain observable. State model layout/reference limitations plainly.

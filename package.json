@@ -1,16 +1,32 @@
 {
   "name": "weshop-skill-package",
-  "version": "0.3.21",
+  "version": "0.3.22",
   "description": "Content-first WeShop Router, Atom Skills, multi-step workflow orchestration, model catalog, and maintenance tooling.",
   "license": "MIT",
   "author": "WeShop AI",
   "homepage": "https://github.com/weshopai/weshop-skill-pakage#readme",
-  "repository": { "type": "git", "url": "git+https://github.com/weshopai/weshop-skill-pakage.git" },
-  "bugs": { "url": "https://github.com/weshopai/weshop-skill-pakage/issues" },
-  "keywords": ["weshop", "agent-skills", "codex", "claude-code", "cursor", "creative-ai"],
-  "engines": { "node": ">=22" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weshopai/weshop-skill-pakage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/weshopai/weshop-skill-pakage/issues"
+  },
+  "keywords": [
+    "weshop",
+    "agent-skills",
+    "codex",
+    "claude-code",
+    "cursor",
+    "creative-ai"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
   "type": "module",
-  "bin": { "weshop-skills": "scripts/weshop-skills.mjs" },
+  "bin": {
+    "weshop-skills": "scripts/weshop-skills.mjs"
+  },
   "files": [
     "dist/",
     "!dist/**/*.test.js",
@@ -24,8 +40,15 @@
     "model-selection-policy.md",
     "LICENSE"
   ],
-  "publishConfig": { "access": "public" },
-  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
   "scripts": {
     "clean": "node -e \"require('node:fs').rmSync('dist',{recursive:true,force:true})\"",
     "build": "npm run clean --silent && tsc -p tsconfig.json",
@@ -51,5 +74,8 @@
     "web:dev": "npm --prefix web run dev",
     "web:build": "npm --prefix web run build"
   },
-  "devDependencies": { "@types/node": "^22.15.3", "typescript": "^5.8.3" }
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "typescript": "^5.8.3"
+  }
 }

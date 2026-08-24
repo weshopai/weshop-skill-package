@@ -18,7 +18,7 @@
 
 WeShop Skills turns plain-language creative requests into production-ready image, video, product, portrait, layout, and spatial workflows powered by WeShop OpenAPI. Install the complete collection or pick only the Skills you need.
 
-> This repository contains **117 focused Atom Skills + 1 user-authoring Skill + 1 Router + 1 multi-step orchestration Skill**. `weshop-router` decides whether to call one Atom directly or escalate to orchestration. Media execution uses a native WeShop harness tool or the official `weshop` CLI, never a package-owned fallback client.
+> This repository contains **125 focused Atom Skills + 1 user-authoring Skill + 1 Router + 1 multi-step orchestration Skill**. `weshop-router` decides whether to call one Atom directly or escalate to orchestration. Media execution uses a native WeShop harness tool or the official `weshop` CLI, never a package-owned fallback client.
 
 ## 🚀 Install with one prompt
 
@@ -184,7 +184,7 @@ For compound work, `orchestrate-multi-step-workflow` discovers installed Skills 
 
 ## Complete Skill inventory 🧩
 
-The `skills/` directory contains 118 creative Atom Skills, one platform-tooling Skill, one Router, and one multi-step orchestration Skill. Categories below are for browsing only and do not participate in hard-coded selection.
+The `skills/` directory contains 125 creative Atom Skills, one platform-tooling Skill, one Router, and one multi-step orchestration Skill. Categories below are for browsing only and do not participate in hard-coded selection.
 
 | Category | Skills |
 | --- | --- |
@@ -197,9 +197,9 @@ The `skills/` directory contains 118 creative Atom Skills, one platform-tooling 
 | Portrait production | `id-photo-format`, `professional-headshot` |
 | Image repair and utilities | `clean-room`, `colorize-image`, `expand-image`, `remove-background`, `remove-glasses`, `remove-image-mark`, `remove-object`, `remove-photo-filter`, `retouch-blemish`, `smooth-wrinkles` |
 | Characters, animals, and brands | `casting-cn`, `character-reference-sheet`, `create-animal`, `create-avatar`, `create-character`, `create-flag`, `create-logo`, `create-mascot-logo`, `create-npc`, `make-pet-portrait` |
-| Narrative and comics | `develop-story`, `plan-comic-storyboard`, `plan-film-storyboard`, `render-comic-page`, `write-short-drama-series`, `write-short-video-hooks` |
+| Narrative and comics | `develop-story`, `plan-comic-storyboard`, `plan-film-storyboard`, `render-comic-page`, `short-drama-action-breakdown`, `short-drama-continuity-split`, `short-drama-emotion-breakdown`, `short-drama-narrative-breakdown`, `write-short-drama-series`, `write-short-video-hooks` |
 | Spaces, diagrams, and CAD | `create-cad`, `make-flowchart`, `preview-landscape`, `preview-paint`, `restyle-room`, `visualize-floor-plan` |
-| Video | `3d-animation-short-generator`, `add-video-effect`, `animate-image`, `backrooms-dreamcore`, `brand-promo-video-generator`, `brand-stream-mg`, `character-toy-grid-motion`, `children-english-story-episode`, `co-op-game-intro-generator`, `combine-videos`, `correct-video-color`, `decorative-print-short`, `detail-page-skill-course`, `digital-product-promo-generator`, `dodge-game-video-generator`, `dot-matrix-brand-wordmark-motion`, `editorial-cutout-explainer`, `edit-social-video`, `film-reference-prompt-writer`, `fpv-tour-video-generator`, `generate-video`, `h3-prompt-expert`, `handdrawn-live-action-fusion`, `line-doodle-explainer`, `lip-product-commercial`, `live-sketch-motion`, `make-beat-synced-video`, `make-explainer-video`, `make-kinetic-typography`, `make-music-video`, `make-podcast-video`, `make-product-commercial`, `make-talking-video`, `make-video-intro`, `micro-expression-performance`, `minimalist-product-ad-generator`, `music-video-subtitle-generator`, `paper-collage-explainer-generator`, `papercraft-stop-motion-explainer`, `poster-motion`, `pov-short-film-generator`, `primitive-folk-cgi-restyle`, `remove-video-mark`, `restyle-video`, `suspense-title-sequence-generator`, `transcript-broll-plan`, `upscale-video` |
+| Video | `3d-animation-short-generator`, `add-video-effect`, `animate-image`, `backrooms-dreamcore`, `brand-promo-video-generator`, `brand-stream-mg`, `character-toy-grid-motion`, `children-english-story-episode`, `co-op-game-intro-generator`, `combine-videos`, `correct-video-color`, `decorative-print-short`, `detail-page-skill-course`, `digital-product-promo-generator`, `dodge-game-video-generator`, `dot-matrix-brand-wordmark-motion`, `editorial-cutout-explainer`, `edit-social-video`, `film-reference-prompt-writer`, `fpv-tour-video-generator`, `generate-video`, `h3-prompt-expert`, `handdrawn-live-action-fusion`, `line-doodle-explainer`, `lip-product-commercial`, `live-sketch-motion`, `make-beat-synced-video`, `make-explainer-video`, `make-kinetic-typography`, `make-music-video`, `make-podcast-video`, `make-product-commercial`, `make-talking-video`, `make-video-intro`, `micro-expression-performance`, `minimalist-product-ad-generator`, `music-video-subtitle-generator`, `paper-collage-explainer-generator`, `papercraft-stop-motion-explainer`, `poster-motion`, `pov-short-film-generator`, `primitive-folk-cgi-restyle`, `remove-video-mark`, `restyle-video`, `short-drama-high-impact-prompt`, `short-drama-slow-cinematic-prompt`, `short-drama-video-prompt-polish`, `suspense-title-sequence-generator`, `transcript-broll-plan`, `upscale-video` |
 | Social and commemorative | `make-birthday-video`, `make-holiday-card`, `make-mugshot-photo`, `make-wallet-photo`, `make-wedding-photo` |
 
 List them from your terminal:
@@ -261,7 +261,7 @@ Useful commands:
 | `npm run check` | Run TypeScript checks |
 | `npm test` | Test routing, safety policy, installation, and updates |
 | `npm run models:validate` | Validate the model catalog |
-| `npm run models:routing-validate` | Validate model routes across all 117 creative Atom Skills |
+| `npm run models:routing-validate` | Validate model routes across all 125 creative Atom Skills |
 | `npm run docs:validate` | Validate this README and Skill inventory |
 | `npm run maintainers:validate` | Validate maintainer documentation |
 | `npm run web:build` | Build the generated visual Skill catalog |

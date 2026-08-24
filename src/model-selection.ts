@@ -33,21 +33,21 @@ export function selectImageModel(request: RouteRequest & { raw: string }): Model
     if (bannerDeliverable && !bannerDirectionReference && requested.id !== "gpt-image") throw new Error("Final Banner production requires GPT Image 2 Medium; Midjourney may only create a text-free artistic-direction reference.");
     if (needsReadableText && requested.id !== "gpt-image") throw new Error("Readable text and multilingual image work require GPT Image 2 Medium.");
     if (requested.id === "nano-banana-edit" && !draftDivergence && !internalConvergence) throw new Error("Nano Banana is reserved for explicit draft divergence or internal convergence; routine final editing requires GPT Image 2 Medium/2K.");
-    return { model: requested, params: requested.id === "gpt-image" ? { quality: "medium", imageSize: "2K" } : {}, reason: "user-requested model passed hard capability rules" };
+    return { model: requested, params: imageParams(requested.id), reason: "user-requested model passed hard capability rules" };
   }
 
   if (bannerDirectionReference && !hasImageInput) return pick("midjourney", { outputCount: 4 }, "Midjourney creates a text-free artistic-direction reference only; GPT Image 2 must produce the final Banner");
   if (bannerDeliverable) return pick("gpt-image", { quality: "medium", imageSize: "2K" }, "GPT Image 2 Medium/2K produces every final Banner and all Banner copy");
   if (needsReadableText) return pick("gpt-image", { quality: "medium", imageSize: "2K" }, "readable text or multilingual work requires GPT Image 2 Medium/2K");
   if (hasImageInput) {
-    if (demandingLighting || asianAesthetic) return pick("seedream", { imageSize: "2K" }, "reference task requires demanding lighting or Asian commercial aesthetics");
+    if (demandingLighting || asianAesthetic) return pick("seedream", imageParams("seedream"), "reference task requires demanding lighting or Asian commercial aesthetics");
     if (draftDivergence) return pick("nano-banana-edit", { modelName: "nano2", imageSize: "1K", aspectRatio: "auto" }, "explicit fast draft divergence");
     if (internalConvergence) return pick("nano-banana-edit", { modelName: "nano", imageSize: "2K", aspectRatio: "auto" }, "explicit high-quality internal convergence or review");
     return pick("gpt-image", { quality: "medium", imageSize: "2K" }, consistency ? "reference task prioritizes subject or product consistency" : "routine final reference-image editing uses the general GPT Image 2 Medium/2K route");
   }
   if (artistic) return pick("midjourney", { outputCount: 4 }, "pure text-to-image artistic exploration");
   if (chineseCulture || photorealistic) return pick("z-image", {}, chineseCulture ? "pure text-to-image Chinese cultural direction" : "pure text-to-image photorealism");
-  if (demandingLighting || asianAesthetic) return pick("seedream", { imageSize: "2K" }, "demanding lighting or Asian commercial aesthetics");
+  if (demandingLighting || asianAesthetic) return pick("seedream", imageParams("seedream"), "demanding lighting or Asian commercial aesthetics");
   return pick("gpt-image", { quality: "medium", imageSize: "2K" }, "global GPT Image 2 default: Medium/2K");
 }
 
@@ -56,7 +56,7 @@ export function selectVideoModel(request: RouteRequest & { raw: string }): Model
   if (request.requestedModel) {
     const requested = getModel(request.requestedModel);
     if (!requested || requested.media !== "video") throw new Error(`Unavailable video model: ${request.requestedModel}.`);
-    return { model: requested, params: {}, reason: "user-requested video model" };
+    return { model: requested, params: videoParams(requested.id), reason: "user-requested video model" };
   }
   const largeMotion = includesAny(text, ["大幅度", "高动态", "激烈动作", "奔跑", "跳跃", "打斗", "large-amplitude", "high-dynamic", "action sequence"]);
   const complexReferences = request.assets.includes("scene-reference") || request.assets.includes("pose-reference") || request.assets.includes("model-reference") || includesAny(text, ["多图参考", "多参考", "视频参考", "复杂参考", "multi-reference", "video reference", "complex reference"]);
@@ -69,8 +69,21 @@ export function selectVideoModel(request: RouteRequest & { raw: string }): Model
   if (premiumSynchronousAudio) return pick("veo-ai", { modelName: "Veo_3_1" }, "source-image premium synchronous dialogue or sound-effects request");
   if (preciseFramesOrProduct || request.operation === "animate-image") return pick("kling", { modelName: "Kling_3_0" }, "precise frame or controllable product showcase");
   if (audioVisual) return pick("seedance-2-5", {}, "audio-visual synchronization or artistic expression");
-  if (lightweight) return pick("seedance", {}, "lightweight validation; Seedance Mini is not yet cataloged");
-  return pick("seedance", {}, "routine video generation");
+  if (lightweight) return pick("seedance-mini", videoParams("seedance-mini"), "explicit low-cost draft, preview, or concept validation uses Seedance 2.0 Mini");
+  return pick("seedance", videoParams("seedance"), "routine video generation");
+}
+
+function imageParams(id: string): Record<string, unknown> {
+  if (id === "gpt-image") return { quality: "medium", imageSize: "2K" };
+  if (id === "seedream") return { modelName: "Seedream_50_Pro", imageSize: "2K" };
+  if (id === "seedream-lite") return { modelName: "Seedream_50_Lite", imageSize: "2K" };
+  return {};
+}
+
+function videoParams(id: string): Record<string, unknown> {
+  if (id === "seedance") return { modelName: "Seedance_20", generateAudio: true };
+  if (id === "seedance-mini") return { modelName: "Seedance_20_Mini", generateAudio: true };
+  return {};
 }
 
 function pick(id: string, params: Record<string, unknown>, reason: string): ModelSelection {

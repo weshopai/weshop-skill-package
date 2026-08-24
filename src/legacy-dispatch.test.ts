@@ -183,11 +183,23 @@ test("excludes text-to-image-only models when an image input exists", () => {
 test("routes demanding commercial lighting to Seedream", () => {
   const plan = dispatchLegacyNaturalLanguage("生成一张珠宝广告，强调精细棚拍光线和材质塑造");
   assert.equal(plan.model?.id, "seedream");
+  assert.equal(plan.params.modelName, "Seedream_50_Pro");
+});
+test("keeps Seedream Lite as an explicit CLI model variant", () => {
+  const plan = dispatchLegacyNaturalLanguage("用 3K 生成产品参考图", { requestedModel: "seedream-lite" });
+  assert.equal(plan.model?.id, "seedream-lite");
+  assert.equal(plan.params.modelName, "Seedream_50_Lite");
 });
 test("routes image animation to Kling V3", () => { const plan = dispatchLegacyNaturalLanguage("让这张图片动起来，生成一个视频", { assets: ["image"] }); assert.equal(plan.model?.id, "kling"); assert.equal(plan.model?.media, "video"); assert.equal(plan.params.modelName, "Kling_3_0"); });
 test("routes large-amplitude motion to MiniMax H3", () => { const plan = dispatchLegacyNaturalLanguage("生成一段高动态奔跑和跳跃的视频"); assert.equal(plan.model?.id, "minimax-h3"); });
 test("routes complex multimodal references to Kling V3 Omni", () => { const plan = dispatchLegacyNaturalLanguage("用这些图片做一段多图参考视频，还要参考这段视频的镜头运动"); assert.equal(plan.model?.id, "kling-v3-omni"); });
 test("routes audio-visual artistic work to Seedance 2.5", () => { const plan = dispatchLegacyNaturalLanguage("生成一段音乐卡点的艺术短片，要求音画同步"); assert.equal(plan.model?.id, "seedance-2-5"); });
+test("routes explicit low-cost previews to Seedance 2.0 Mini", () => {
+  const plan = dispatchLegacyNaturalLanguage("低成本生成一个视频概念验证预览", { priority: "cost" });
+  assert.equal(plan.model?.id, "seedance-mini");
+  assert.equal(plan.params.modelName, "Seedance_20_Mini");
+  assert.equal(plan.params.generateAudio, true);
+});
 test("routes source-image premium synchronous dialogue to Veo", () => { const plan = dispatchLegacyNaturalLanguage("用这张图片生成电影级对话视频，要求同步对话和精准音效"); assert.equal(plan.model?.id, "veo-ai"); });
 test("keeps image and video catalogs separate", () => {
   const images = listModels("image"), videos = listModels("video"), all = listModels();

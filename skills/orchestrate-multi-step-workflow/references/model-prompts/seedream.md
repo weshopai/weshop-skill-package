@@ -6,4 +6,4 @@
 - For sketch-to-render, explicitly lock camera, proportions, layout, and object placement before describing materials and plausible detail.
 - For a consistent series, define the invariant product/character block once and repeat it in each independent operation.
 - Avoid adjective piles, anonymous references, mixed-language fragments, exact long copy, and trying to solve every refinement in one prompt.
-- Current WeShop `seedream` accepts up to 14 images, `2K|3K`, supported aspect ratios, `jpeg|png`, and optional tools; use only fields returned by the live schema.
+- Current WeShop `seedream` has explicit variants: `Seedream_50_Pro` (default; up to 10 images, `1K|2K`, `auto` aspect, no tools) and `Seedream_50_Lite` (up to 14 images, `2K|3K`, optional `web_search`). Keep the selected variant explicit; use only fields returned by the live schema.

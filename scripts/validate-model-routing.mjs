@@ -14,6 +14,14 @@ for (const entry of await readdir(skillRoot, { withFileTypes: true })) {
   const file = path.join(skillRoot, entry.name, "SKILL.md");
   let body;
   try { body = await readFile(file, "utf8"); } catch { continue; }
+  const policyReferences = body.matchAll(/\[[^\]]*model-selection-policy\.md[^\]]*\]\(([^)]+)\)/gi);
+  if (/`model-selection-policy\.md`/i.test(body)) {
+    failures.push(`${entry.name}: shared model policy must be a relative Markdown link, not an unqualified file reference.`);
+  }
+  for (const match of policyReferences) {
+    const target = path.resolve(path.dirname(file), match[1]);
+    try { await readFile(target, "utf8"); } catch { failures.push(`${entry.name}: shared model policy link does not resolve: ${match[1]}.`); }
+  }
   if (["weshop-router", "orchestrate-multi-step-workflow"].includes(entry.name)) continue;
   if (platformSkills.has(entry.name)) continue;
   checked += 1;

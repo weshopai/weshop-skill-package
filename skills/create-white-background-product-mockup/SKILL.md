@@ -77,7 +77,7 @@ Use one product or one pair/set only when the category naturally requires it. Do
 
 ### 2. Select the model and route
 
-- Apply the shared `model-selection-policy.md`. For a normal product-faithful deliverable, prefer GPT Image 2 Medium at `1:1`, `2K`, and `batchCount: 1`; Low is only for an explicitly requested draft. When demanding studio lighting/material rendering or Asian e-commerce aesthetics are the primary requirement and no readable text must be rendered, consider the current Seedream adapter. Attach every real product reference and never use Midjourney or Z-Image for reference-led work.
+- Apply the shared [model-selection-policy.md](../../model-selection-policy.md). For a normal product-faithful deliverable, prefer GPT Image 2 Medium at `1:1`, `2K`, and `batchCount: 1`; Low is only for an explicitly requested draft. When demanding studio lighting/material rendering or Asian e-commerce aesthetics are the primary requirement and no readable text must be rendered, consider the current Seedream adapter. Attach every real product reference and never use Midjourney or Z-Image for reference-led work.
 - Treat `aiproduct`, `flat-lay`, `ai-ghost-mannequin-generator`, and sketch-to-garment agents as optional routes, not permanent dependencies. Use one only when its current API contract is available, verified, and materially improves the selected mode.
 - If a named agent disappears or changes, keep the mode and recompile its Prompt for the best current foundation model instead of removing the Skill capability.
 - Do not switch models merely because a run is slow or one output fails acceptance.

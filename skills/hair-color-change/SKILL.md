@@ -13,6 +13,7 @@ description: Change only the hair color in one authorized portrait while preserv
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: rose
 - Short description: Preview one new hair color without changing the person or cut.
+- Cover image: /skill-covers/hair-color-change.png
 
 ## What this skill does
 

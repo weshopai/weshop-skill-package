@@ -1,0 +1,387 @@
+{
+  "schemaVersion": 1,
+  "covers": {
+    "add-braces": {
+      "executionId": "6a8d456094e0cdaf69681ff0",
+      "agent": "gpt-image",
+      "agentVersion": "1.0",
+      "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_af172073-426e-40e9-b95b-e081783c5775_1536x2048.png",
+      "sha256": "64915ebe0c10fa62739381c87f68bc32f3553fb5c73d882c2ef33f024fd76dd0",
+      "inputSource": {"executionId": "6a8d450e94e0cdaf69681fdb", "file": "/skill-covers/sources/add-braces-source.png", "sha256": "218bd1b41afc82d6b23ecbb95ca1d3bd6a4afcd7ec1719f0dd19fcabebf11035"}
+    },
+    "add-speech-bubble": {
+      "executionId": "6a8d459c6c0356b0c81c70ba", "agent": "gpt-image", "agentVersion": "1.0", "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_f8d07e67-26de-4e90-bebb-37fb99a85bbb_2048x1536.png", "sha256": "667ceee6981cbb84c0587c0742cf512bb63b26315d7b9b9bb68e1ba194b043b7",
+      "inputSource": {"executionId": "6a8d453394e0cdaf69681fe5", "file": "/skill-covers/sources/add-speech-bubble-source.png", "sha256": "4d2b864caa2f51a45e7a0a5c3d59749998682b1f9c4ac7c3f6745f13622d8dcf"}
+    },
+    "add-tattoo": {
+      "executionId": "6a8d42f394e0cdaf69681fa5",
+      "agent": "gpt-image",
+      "agentVersion": "1.0",
+      "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_e64e3f1b-f492-4b1e-9e1b-9deba5ed87e2_1536x2048.png",
+      "sha256": "29d5cdbe927767f8d3e927ea6311df2326326a8bce8768dd46fd0be017c081bf",
+      "inputSource": {"executionId": "6a8d42906c0356b0c81c7076", "file": "/skill-covers/sources/add-tattoo-source.png", "sha256": "494c2df8d9b53e1c8f3600a51bf183577d28837b965e00e48ee0146ad6813336"}
+    },
+    "apply-makeup": {
+      "executionId": "6a8d43036c0356b0c81c7089",
+      "agent": "gpt-image",
+      "agentVersion": "1.0",
+      "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_0b6a84c4-cdb2-4c5c-9dc2-cb3414b4a59b_1536x2048.png",
+      "sha256": "0f33762172fb759b068103f12b5088b515eec22b0bee57679c2529ab3df0f062",
+      "inputSource": {"executionId": "6a8d42916c0356b0c81c707b", "file": "/skill-covers/sources/apply-makeup-source.png", "sha256": "fbe8e40faab2af0276aaf4bd7b21f8507691ea298b16e090d2e3b7a9b07dc9ef"}
+    },
+    "apply-photo-filter": {
+      "executionId": "6a8d45a26c0356b0c81c70bf", "agent": "gpt-image", "agentVersion": "1.0", "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_16181db6-2cd6-4d26-a7ca-3d8855cebcbf_1536x2048.png", "sha256": "9be25e7b363ec267d1fac5adb917b70428ebf94adf2f0d442dce3b7b81e05e5e",
+      "inputSource": {"executionId": "6a8d45356c0356b0c81c70b3", "file": "/skill-covers/sources/apply-photo-filter-source.png", "sha256": "e72f97b5ec3dc23fc5ea05064d21e8217108bde31897542eca1d579631b98ae0"}
+    },
+    "create-animal": {
+      "executionId": "6a8d3a7e94e0cdaf69681f50",
+      "agent": "z-image",
+      "agentVersion": "1.0",
+      "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_e1a53f83-edaa-4a83-97e5-9013fb2084cd_1248x832.png",
+      "sha256": "375ba54b2c2d49512b9f2f27365897c0fee5c450fc0d8e634371bf5accb67c0e"
+    },
+    "create-character": {
+      "executionId": "6a8d42706c0356b0c81c706c",
+      "agent": "gpt-image",
+      "agentVersion": "1.0",
+      "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_79ea8907-f633-4535-8023-ae591aabad99_1536x2048.png",
+      "sha256": "334e4898a5ac6ccd7aec0aa75bfbdf5ebcc6fc665d070a9305417f2000fbae6b"
+    },
+    "clean-room": {
+      "executionId": "6a8d430694e0cdaf69681fb4",
+      "agent": "gpt-image",
+      "agentVersion": "1.0",
+      "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_67239f86-54f5-406d-b4c6-df1d5134d9db_2048x1536.png",
+      "sha256": "eccc9100d58da835c0e7df28c33e89f4a0b90e7800d887be2ef02cf7c42961c9",
+      "inputSource": {"executionId": "6a8d429394e0cdaf69681f9a", "file": "/skill-covers/sources/clean-room-source.png", "sha256": "c97f1d4f41a1e15b20a6072632201662f4c3356ecdfafafce60d4df1a71c881b"}
+    },
+    "colorize-image": {
+      "executionId": "6a8d448394e0cdaf69681fd5",
+      "agent": "gpt-image",
+      "agentVersion": "1.0",
+      "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_b5f9f0de-3893-43d5-843b-9d87b2124db5_2048x1536.png",
+      "sha256": "ae38ac60eef8a8c6eeaa6a5131b99ecad1f37f5420d7ea1b96ddec014b2a1363",
+      "inputSource": {"executionId": "6a8d442394e0cdaf69681fca", "file": "/skill-covers/sources/colorize-image-source.png", "sha256": "e47f00d3756f35c391aae08ec90abd0ae48e27a7fd3d6e54ae97d3959dc313c9"}
+    },
+    "change-bangs": {
+      "executionId": "6a8d40066c0356b0c81c7061",
+      "agent": "gpt-image",
+      "agentVersion": "1.0",
+      "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_eb95e139-4789-4eb9-b9d3-e304df13b2b3_1536x2048.png",
+      "sha256": "56d5f04383eae69ae2bd0d5fb6db1884e63ed454ebaa85951e960209f73c3b33",
+      "inputSource": {"executionId": "6a8d3fa96c0356b0c81c7057", "file": "/skill-covers/sources/change-bangs-source.png"}
+    },
+    "create-flag": {
+      "executionId": "6a8d3aa194e0cdaf69681f55",
+      "agent": "gpt-image",
+      "agentVersion": "1.0",
+      "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_417f7055-1b96-4069-b0cc-b2a17e083fb4_1024x672.png",
+      "sha256": "7c7c5dda4db02945a21d93b27fc38192a7da34acec85b981893620d22c2adf3d"
+    },
+    "create-avatar": {
+      "executionId": "6a8d3b0d94e0cdaf69681f5a",
+      "agent": "gpt-image",
+      "agentVersion": "1.0",
+      "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_1c9de507-ce42-4815-a167-f77cea1fd65c_2048x2048.png",
+      "sha256": "ad3a39c93ae5d3848a25fef3cb98a144c6b101de4900698e0e9e967fcf2bd4e3"
+    },
+    "create-image-deck": {
+      "executionId": "6a8d3cdb6c0356b0c81c7038",
+      "agent": "gpt-image",
+      "agentVersion": "1.0",
+      "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_925b8ea1-5406-4d60-9171-b2b0eda115e1_2048x1152.png",
+      "sha256": "df79b92c85a8126c39944cb935f2428755031ce2dd7696ff4f4b37395d68d396"
+    },
+    "create-social-carousel": {
+      "executionId": "6a8d3cdd94e0cdaf69681f6e",
+      "agent": "gpt-image",
+      "agentVersion": "1.0",
+      "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_ff14905f-48e0-40f0-850f-4973e43515c2_1536x2048.png",
+      "sha256": "ffe4476cfb4f37a5d8831f1686d243725922a9c24bc83125739bcb48fe386cd3"
+    },
+    "create-white-background-product-mockup": {
+      "executionId": "6a8d3de46c0356b0c81c703d",
+      "agent": "gpt-image",
+      "agentVersion": "1.0",
+      "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_816f8c0a-5636-46d6-897a-a9eb6592ec24_2048x2048.png",
+      "sha256": "29e2c23105f210c3ad023fa75ebf4d4c010be134e0e30e4872b9bd4e1880f699"
+    },
+    "create-npc": {
+      "executionId": "6a8d3b1094e0cdaf69681f5f",
+      "agent": "gpt-image",
+      "agentVersion": "1.0",
+      "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_647eb627-c5c5-43f0-a425-16c4ee5e3f81_1536x2048.png",
+      "sha256": "dd1136db1b675e3926cbf58adb8b3085728e4f32ffd4e606064eb08f63c17b8e"
+    },
+    "expand-image": {
+      "executionId": "6a8d45a96c0356b0c81c70c4", "agent": "gpt-image", "agentVersion": "1.0", "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_585f2313-c34e-4900-896d-34070f9e73d9_2048x1152.png", "sha256": "6b2c3de6fd4639c5a6d159f21d2dae53f227bb08aff3848e4631eaa8221cbbcc",
+      "inputSource": {"executionId": "6a8d453694e0cdaf69681fea", "file": "/skill-covers/sources/expand-image-source.png", "sha256": "2def5b9aa46234467fde37776dee5e8bd597eda2d33d247bd93fde04a5d05dd8"}
+    },
+    "make-flowchart": {
+      "executionId": "6a8d3bd994e0cdaf69681f64",
+      "agent": "gpt-image",
+      "agentVersion": "1.0",
+      "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_64d2d133-85be-4a61-afa7-b0bbcfe27b5e_1536x2048.png",
+      "sha256": "357668a029a2b03dd381e7182c1fdb678a39791ea3286e4ddc56639db2690779"
+    },
+    "make-infographic": {
+      "executionId": "6a8d3bd86c0356b0c81c7033",
+      "agent": "gpt-image",
+      "agentVersion": "1.0",
+      "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_0bf7b707-aec5-48ed-a961-00ea028977be_1360x2048.png",
+      "sha256": "020ed118ee17e7eae2e3d9078b243ff6140a59ed2621992cce1d33c57297b527"
+    },
+    "make-pet-portrait": {
+      "executionId": "6a8d42b66c0356b0c81c7080",
+      "agent": "gpt-image",
+      "agentVersion": "1.0",
+      "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_d9b4a6b2-efce-403d-9dba-1214143a09dd_1536x2048.png",
+      "sha256": "7b1587cadba611aade3c88d369c94be2fbdcd2e4afc73fea046b1c416a9c9e57",
+      "inputSource": {"executionId": "6a8d427194e0cdaf69681f95", "file": "/skill-covers/sources/make-pet-portrait-source.png", "sha256": "d1fa63c721a9b71be5d2146537b7b0f21058d7f6c3e479fc5afebcafe74c513f"}
+    },
+    "make-selfie": {
+      "executionId": "6a8d42eb94e0cdaf69681fa0",
+      "agent": "gpt-image",
+      "agentVersion": "1.0",
+      "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_d9210a41-1a91-4f6d-ab64-8d379dfde602_1536x2048.png",
+      "sha256": "60ea834c79a0ed88fc5bfdf877f99bf31c06a736c3813075569739e0fba959ed",
+      "inputSource": {"executionId": "6a8d42726c0356b0c81c7071", "file": "/skill-covers/sources/make-selfie-source.png", "sha256": "a4fc19514eda06cb9e7d179fae24c39ac8611d3077d660c1854be276997e321c"}
+    },
+    "make-holiday-card": {
+      "executionId": "6a8d3cde94e0cdaf69681f73",
+      "agent": "gpt-image",
+      "agentVersion": "1.0",
+      "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_94e915ec-637a-4328-b0fe-4d72d7710e28_1360x2048.png",
+      "sha256": "a566cd95f8bd7c3fcac58c7301b399f6bc3afd604a5faac8ac737584744da717"
+    },
+    "make-thumbnail": {
+      "executionId": "6a8d3bdb94e0cdaf69681f69",
+      "agent": "gpt-image",
+      "agentVersion": "1.0",
+      "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_a1ba682f-4bd2-47ea-a00f-c2e9b5e7d3e2_2048x1152.png",
+      "sha256": "a3b69910968c2c366827c86e55e77474b761cb39501df7df7dd8f970a28cac2c"
+    },
+    "product-packaging": {
+      "executionId": "6a8d3de394e0cdaf69681f78",
+      "agent": "gpt-image",
+      "agentVersion": "1.0",
+      "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_a7864a2a-f873-4b6e-95b6-9e8783c5f929_1536x2048.png",
+      "sha256": "30a50625c460ac7ae4e46bc6ada98ad29e310dc5193a6f19f02a9ca97c24be7d"
+    },
+    "professional-headshot": {
+      "executionId": "6a8d3f2494e0cdaf69681f83",
+      "agent": "gpt-image",
+      "agentVersion": "1.0",
+      "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_1474cc8c-2449-4f0d-ac24-9c25fee8bbcd_1536x2048.png",
+      "sha256": "4b9e4c51fbd1d3356c3ce6ab46a00fed8eadc2fbdd87e9be95fbdaa76955f756",
+      "inputSource": {
+        "executionId": "6a8d3e836c0356b0c81c7042",
+        "file": "/skill-covers/sources/professional-headshot-source.png",
+        "sha256": "3c68c244b7b90249078f4f83ab2b517f0298bff6991285a91d887326c01e9611"
+      }
+    },
+    "eye-color-change": {
+      "executionId": "6a8d40146c0356b0c81c7067",
+      "agent": "gpt-image",
+      "agentVersion": "1.0",
+      "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_da0486fd-b9f4-46f6-98e7-e5a41661bf19_1536x2048.png",
+      "sha256": "98871a157f2b582950809876d13f6468a4379f23ef0bd4a251e2de867632ab13",
+      "inputSource": {"executionId": "6a8d3fac6c0356b0c81c705c", "file": "/skill-covers/sources/eye-color-change-source.png"}
+    },
+    "hair-color-change": {
+      "executionId": "6a8d400d94e0cdaf69681f90",
+      "agent": "gpt-image",
+      "agentVersion": "1.0",
+      "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_2fbc5116-aaa1-46a3-95d9-5916225d2d33_1536x2048.png",
+      "sha256": "f1ac7f0ebd3b61f6881c54fffbb25976db3ecaadc48442159bde6b18153a53be",
+      "inputSource": {"executionId": "6a8d3faa94e0cdaf69681f89", "file": "/skill-covers/sources/hair-color-change-source.png", "sha256": "9e2883c41234a7b3a0f3154e5992102fb356c5bb39b9c1985d2c22986d6c461a"}
+    },
+    "preview-landscape": {
+      "executionId": "6a8d3f2d6c0356b0c81c7052",
+      "agent": "gpt-image",
+      "agentVersion": "1.0",
+      "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_3310f3b5-cfc0-4772-a79e-3117cbbd2afa_2048x1536.png",
+      "sha256": "a12ededca04b69544374cfcf17a14a07a64c06a9cf44b8530acecd10e343dda3",
+      "inputSource": {
+        "executionId": "6a8d3e8694e0cdaf69681f7d",
+        "file": "/skill-covers/sources/preview-landscape-source.png",
+        "sha256": "f5632b7bfccb1f281257f84800ab526aaeb68fd0a14b7a9cd661e5130051d4d5"
+      }
+    },
+    "restyle-room": {
+      "executionId": "6a8d3ed06c0356b0c81c704c",
+      "agent": "gpt-image",
+      "agentVersion": "1.0",
+      "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_d4b04fd6-9acf-4d27-af67-2e44475ca3b1_2048x1536.png",
+      "sha256": "28494d2460a2c033e014bd4227119e997cb7f5afb0f7f69121c62b19a1276112",
+      "inputSource": {
+        "executionId": "6a8d3e846c0356b0c81c7047",
+        "file": "/skill-covers/sources/restyle-room-source.png",
+        "sha256": "dcfa9f3b8901db28909d0e35d84ce55c37be33774fc754072f5fea3bf0e2b17a"
+      }
+    },
+    "retouch-blemish": {
+      "executionId": "6a8d46d394e0cdaf69682017", "agent": "gpt-image", "agentVersion": "1.0", "status": "Success", "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_9b995acf-6061-4c50-a73d-3cf50e9922f9_1536x2048.png", "sha256": "fc3d8639db2eef25e242a5d8409dab1bf44f82c7ed71ecde93c3029367f73877", "inputSource": {"executionId": "6a8d467894e0cdaf69682007", "file": "/skill-covers/sources/retouch-blemish-source.png", "sha256": "c68f5bcc4f4f5d762682ba8ed6f3fd901ad68b79c8c7f163d8d8813c1562dd77"}
+    },
+    "make-silhouette": {
+      "executionId": "6a8d46dc6c0356b0c81c70df", "agent": "gpt-image", "agentVersion": "1.0", "status": "Success", "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_d88807c8-a60d-4579-b925-a318e9d5b1df_2048x1536.png", "sha256": "05f72f92bceae1477feeed1efe4ac0b8e6fff030e99878087ebf819aaebbe488", "inputSource": {"executionId": "6a8d46796c0356b0c81c70d3", "file": "/skill-covers/sources/make-silhouette-source.png", "sha256": "b52488b0be09a2d824da7a3d945384805b71ee61cca5ced99c8af17705f45107"}
+    },
+    "recolor-object": {
+      "executionId": "6a8d43e36c0356b0c81c7093",
+      "agent": "gpt-image",
+      "agentVersion": "1.0",
+      "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_ae193660-041f-40a1-9b86-fee5eb569859_2048x1536.png",
+      "sha256": "c953cc715e11aa50d03ca6e6a3bb2802ebcaef7fa1de891214e979ef5a0dfdac",
+      "inputSource": {"executionId": "6a8d43a294e0cdaf69681fb9", "file": "/skill-covers/sources/recolor-object-source.png", "sha256": "e3d4514ccace17d806a7fc727796788bda39e107a306851131edb7c311884f9f"}
+    },
+    "remove-object": {
+      "executionId": "6a8d43e994e0cdaf69681fc4",
+      "agent": "gpt-image",
+      "agentVersion": "1.0",
+      "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_4c3128ad-a34e-45d8-8f31-6dcfbd833e12_2048x1536.png",
+      "sha256": "5157f7b328b82bb2b0065a0217a62c5d2b614b31da8ab999f548f47fa94bc6b5",
+      "inputSource": {"executionId": "6a8d43a46c0356b0c81c708e", "file": "/skill-covers/sources/remove-object-source.png", "sha256": "20260b7ea8605782f311198bae79470cea24ac7700642de4d5f12f773eb8f090"}
+    },
+    "remove-image-mark": {
+      "executionId": "6a8d485f94e0cdaf69682031", "agent": "gpt-image", "agentVersion": "1.0", "status": "Success", "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_138a76be-26e2-46a2-b509-4e942f440c83_2048x1536.png", "sha256": "06dc844c7c29c1ce00d3ebac2816b4b01a6cd88d67fbe5721c7b0909cb8610f6", "inputSource": {"executionId": "6a8d47ec94e0cdaf69682027", "file": "/skill-covers/sources/remove-image-mark-source.png", "sha256": "7ee1c63b72efd6073b398977533df1dfe0000d406bf6ca492122af95bcf50b5a"}
+    },
+    "remove-glasses": {
+      "executionId": "6a8d447d6c0356b0c81c70a3",
+      "agent": "gpt-image",
+      "agentVersion": "1.0",
+      "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_669b1b27-931e-452e-9d61-e737c4d09a3d_1536x2048.png",
+      "sha256": "d5ab6e7f8f99cdea11d8b263ed5342ca9553a545716db264c9ac1103c62f6dd5",
+      "inputSource": {"executionId": "6a8d43a694e0cdaf69681fbe", "file": "/skill-covers/sources/remove-glasses-source-verified.png", "sha256": "d5e50f020463bcbf2c953c1e316603cc3bcc88778c80d9cd2219e9de7bd8d57f"}
+    },
+    "remove-photo-filter": {
+      "executionId": "6a8d44936c0356b0c81c70a9",
+      "agent": "gpt-image",
+      "agentVersion": "1.0",
+      "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_9a9ec912-d432-40c4-ba92-5dc9ff23e619_1536x2048.png",
+      "sha256": "1fcfc8703e4dd9e4b1aacd423f8e523444e483459f1f1864b6ba82abfc83e41f",
+      "inputSource": {"executionId": "6a8d44246c0356b0c81c709e", "file": "/skill-covers/sources/remove-photo-filter-source.png", "sha256": "df516a5cc9656d12af80ece1bee9c3cbe435fc1cf3ee1012aa32ade5485739a8"}
+    },
+    "make-mugshot-photo": {
+      "executionId": "6a8d473094e0cdaf69682022", "agent": "gpt-image", "agentVersion": "1.0", "status": "Success", "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_9b1eb2d0-7147-4043-9c51-c425ecb8f429_1536x2048.png", "sha256": "ec33103f228a23dcc0c2726af577bcaaccbe1dfc9946be53091b7bb66bd1e5ab", "inputSource": {"executionId": "6a8d46596c0356b0c81c70c9", "file": "/skill-covers/sources/make-mugshot-photo-source.png", "sha256": "52ff101de2f699307c18bdc699f9ce1f971ee7b4f918dee69cdd8c682d9336cb"}
+    },
+    "preview-paint": {
+      "executionId": "6a8d46e294e0cdaf6968201d", "agent": "gpt-image", "agentVersion": "1.0", "status": "Success", "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_c3dd3f31-1160-48dc-90c0-e885a82635d7_2048x1536.png", "sha256": "ea307f6f084bd4c42bae7e9dde85d79929e5873c4bb9186746bdc30d410ffb14", "inputSource": {"executionId": "6a8d467a94e0cdaf6968200c", "file": "/skill-covers/sources/preview-paint-source.png", "sha256": "cccaed13fb272b7d19585b9dafa80bc81a0c6560c42206cd33043fc8567374c2"}
+    },
+    "outfit-design": {
+      "executionId": "6a8d48bf94e0cdaf69682036", "agent": "gpt-image", "agentVersion": "1.0", "status": "Success", "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_f718cb9b-8d03-4b2b-8d9b-554ed1fd2eef_1536x2048.png", "sha256": "001643eeba8103fcdacf32526fe9df839c37b8404b0010d44d5187e1f9c7be8f", "inputSource": {"executionId": "6a8d483994e0cdaf6968202c", "file": "/skill-covers/sources/outfit-design-source.png", "sha256": "a4008afb0354284278998a8566f4d5834676c8f2f851bb724fe8bd6b3c7097d0"}
+    },
+    "photo-collage": {
+      "executionId": "6a8d499e6c0356b0c81c70f7", "agent": "gpt-image", "agentVersion": "1.0", "status": "Success", "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_b7359fd5-8f24-4360-bd1f-31af2675f7bf_2048x1536.png", "sha256": "e40a62c164c6e746b56ee1b86ef51d042876414b9cc6b8098e162cd8235d6ea5", "inputSources": [{"executionId": "6a8d494794e0cdaf6968203b", "file": "/skill-covers/sources/photo-collage-a.png", "sha256": "a39ec7394505abf09ff1fef88713b56943b8d9275c3f955490a0c2c3e2449995"}, {"executionId": "6a8d494c6c0356b0c81c70f2", "file": "/skill-covers/sources/photo-collage-b.png", "sha256": "b08e892239b85a5fa7fe7743711082a8942fd223d09ad4afa94f1746a317372b"}]
+    },
+    "recreate-social-photo": {
+      "executionId": "6a8d4ae06c0356b0c81c7102", "agent": "gpt-image", "agentVersion": "1.0", "status": "Success", "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_c1e3f086-9339-41fb-814c-1ba24f9ff7bd_1536x2048.png", "sha256": "f208ce1b8613c0157c5406dc6e18f2a77cb69dcce6a13e0b7874c11ae6dd0eb6", "inputSource": {"executionId": "6a8d49f16c0356b0c81c70fc", "file": "/skill-covers/sources/recreate-social-photo-source.png", "sha256": "45ddd8a670daf5b7121588e10a48abf23fd2a1c91dc20a376109df45d5fc6b34"}
+    },
+    "ai-banner-design": {
+      "executionId": "6a8d4ba46c0356b0c81c7107", "agent": "gpt-image", "agentVersion": "1.0", "status": "Success", "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_586d3c3b-9665-4e2d-9bb0-57932bd75ddd_2048x1152.png", "sha256": "965e35fc7527a8da164e1fb8f9c99229c1d4059de85b611cc8ce6658b472cf09"
+    },
+    "create-logo": {
+      "executionId": "6a8d3a0f94e0cdaf69681f4b",
+      "agent": "gpt-image",
+      "agentVersion": "1.0",
+      "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_c514ae55-9cd4-440e-b3bb-349404ffc362_1024x1024.png",
+      "sha256": "188353292a39ad146953fa907614c7992145ca8d664e6157c7468b248669d6b1"
+    },
+    "create-mascot-logo": {
+      "executionId": "6a8d3b0f6c0356b0c81c702e",
+      "agent": "gpt-image",
+      "agentVersion": "1.0",
+      "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_de7ced21-3258-48f4-97cb-7c17740fdb06_2048x2048.png",
+      "sha256": "73a45d16f792ecfd27636951abc0b6028c2dea03d6b73faf2dbcf5d20186b08e"
+    },
+    "hairstyle-change": {
+      "executionId": "6a8d469e6c0356b0c81c70d8", "agent": "gpt-image", "agentVersion": "1.0", "status": "Success", "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_1e93c731-adb4-43f3-aa70-67b9f77754a7_1536x2048.png", "sha256": "3c6027f8f40302028171db00efd062f0c9fa0958076af7d73d1c8e4368b9a6c7", "inputSource": {"executionId": "6a8d465794e0cdaf69682002", "file": "/skill-covers/sources/hairstyle-change-source.png", "sha256": "070abeab9aefd86ae55d5dcf1d49f2a36243ab9a3d66a9291bd4368b7b352894"}
+    },
+    "make-wallet-photo": {
+      "executionId": "6a8d46a594e0cdaf69682012", "agent": "gpt-image", "agentVersion": "1.0", "status": "Success", "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_7cd5b16d-32b5-4f08-996d-c5f045c67240_1536x2048.png", "sha256": "9ff26fb9952d7e3ef69056b30859b41560c440d42b93f8c73dbff2b48527e92d", "inputSource": {"executionId": "6a8d465b6c0356b0c81c70ce", "file": "/skill-covers/sources/make-wallet-photo-source.png", "sha256": "e47928f746eb7d67b7d49d4d063a06b0f1013da1cb41c99f215d67fa1fecf1b5"}
+    },
+    "shave-head": {
+      "executionId": "6a8d456794e0cdaf69681ff5",
+      "agent": "gpt-image",
+      "agentVersion": "1.0",
+      "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_0c7c81aa-7a0b-4f12-8bcb-3a390a1a16c1_1536x2048.png",
+      "sha256": "7e3aa23254cce3ce8f169a4680b316becb5b18473075e3c2e18b6a920c8097d3",
+      "inputSource": {"executionId": "6a8d450f6c0356b0c81c70ae", "file": "/skill-covers/sources/shave-head-source.png", "sha256": "571332a9764f9754ff2f0a8e42496c0aa8b26af0bca9c754b43404ba2eca99f5"}
+    },
+    "smooth-wrinkles": {
+      "executionId": "6a8d456d94e0cdaf69681ffa", "agent": "gpt-image", "agentVersion": "1.0", "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_454418ce-cb7c-4075-8162-d53dd12b596f_1536x2048.png", "sha256": "7bfd30460e9a79ec668c55e9ca30afa67c06b3c1671a16b781d10722774714ea",
+      "inputSource": {"executionId": "6a8d451094e0cdaf69681fe0", "file": "/skill-covers/sources/smooth-wrinkles-source.png", "sha256": "33f4c639e1ea37265453088c381c779da76952a6a9ae408a00111efe7954d643"}
+    },
+    "backrooms-dreamcore": {
+      "executionId": "6a8d4d406c0356b0c81c711d", "agent": "gpt-image", "agentVersion": "1.0", "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_51514c0b-d641-4bd1-92eb-06de8a34a6b2_2048x1536.png", "sha256": "c492e31611ba44b230402511dc87448b4f5c74cf94748000c12474859f90634d",
+      "inputSource": {"executionId": "6a8d4d006c0356b0c81c7112", "file": "/skill-covers/sources/backrooms-dreamcore-source.png", "sha256": "d103439cb67986e38f8a2a828f5294a369f904711369d76756e08135e7515bf8"}
+    },
+    "ai-product": {
+      "executionId": "6a8d4d986c0356b0c81c7122", "agent": "gpt-image", "agentVersion": "1.0", "status": "Success",
+      "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_d8219428-0d84-4f3d-ba59-e89ffc8b3251_2048x2048.png", "sha256": "bc2501fda65ec7d259b5c7c0590690a6272cddf19abcb86e860600f14579d858",
+      "inputSource": {"executionId": "6a8d4c0094e0cdaf69682042", "file": "/skill-covers/sources/ai-product-source.png", "sha256": "be72865b3976ec74525cd4b5719d9ed5f48884ea76265f04a17aafd84201baf3"},
+      "fallback": {"fromAgent": "aiproduct", "failedExecutionIds": ["6a8d4cc36c0356b0c81c710d", "6a8d4d256c0356b0c81c7117"], "reason": "aiproduct results respectively failed grounding and added an unrequested cable; GPT Image fallback was accepted."}
+    },
+    "add-video-effect": {"status": "Migrated legacy result", "legacyRepository": "Jason12196/weshop-skill-package", "legacyCommit": "7483557e6ecd7e888cf31649461b3713903bc413", "legacyPath": "web/public/generated/p1-rest/add-video-effect-cover.png", "sha256": "f82f9682a37c39302c17858c0f5a87c9e1470bbc708fb89a48415460061b937c"},
+    "animate-image": {"status": "Migrated legacy result", "legacyRepository": "Jason12196/weshop-skill-package", "legacyCommit": "7483557e6ecd7e888cf31649461b3713903bc413", "legacyPath": "web/public/generated/p1-rest/animate-image-cover.png", "sha256": "53ad1a4e5ae3716554a4d78c4559311b9ae4eb37bbdb7da824d83ce7f37a0a97"},
+    "combine-videos": {"status": "Migrated legacy result", "legacyRepository": "Jason12196/weshop-skill-package", "legacyCommit": "7483557e6ecd7e888cf31649461b3713903bc413", "legacyPath": "web/public/generated/p1-rest/combine-videos-cover.png", "sha256": "dcfb461d59693ba436ddf8c81091dfc8af402a5a53984c0a1b799a21c6757742"},
+    "compose-lookbook": {"status": "Migrated legacy result", "legacyRepository": "Jason12196/weshop-skill-package", "legacyCommit": "7483557e6ecd7e888cf31649461b3713903bc413", "legacyPath": "web/public/generated/p0-image/compose-lookbook-result.png", "sha256": "2253e9b088fbd3a5d4c3f8fb1956db723162103fe96ce82eeb51f05385ba5449"},
+    "correct-video-color": {"status": "Migrated legacy result", "legacyRepository": "Jason12196/weshop-skill-package", "legacyCommit": "7483557e6ecd7e888cf31649461b3713903bc413", "legacyPath": "web/public/generated/p1-rest/correct-video-color-cover.png", "sha256": "e709393e1edd4119c6aaf53193bb949cc7070ad4c84da422aacb989e7748402c"},
+    "create-cad": {"status": "Migrated legacy result", "legacyRepository": "Jason12196/weshop-skill-package", "legacyCommit": "7483557e6ecd7e888cf31649461b3713903bc413", "legacyPath": "web/public/generated/p1-rest/create-cad-cover.png", "sha256": "04f5b2007a3edfa5453ba513c3006c3777dbd5ab524a3555d8ab8ec1064f1d09"},
+    "edit-social-video": {"status": "Migrated legacy result", "legacyRepository": "Jason12196/weshop-skill-package", "legacyCommit": "7483557e6ecd7e888cf31649461b3713903bc413", "legacyPath": "web/public/generated/p1-rest/edit-social-video-cover.png", "sha256": "e99888f7a2901143c7dff53cc4a09e24db4e709b0d047344e258d59681548ef8"},
+    "generate-video": {"status": "Migrated legacy result", "legacyRepository": "Jason12196/weshop-skill-package", "legacyCommit": "7483557e6ecd7e888cf31649461b3713903bc413", "legacyPath": "web/public/generated/p1-rest/generate-video-cover.png", "sha256": "ebddf5c8882aba40bc0534d5c5e80b6ed5a10c6a4182fb9e16910252155db45a"},
+    "id-photo-format": {"status": "Migrated legacy result", "legacyRepository": "Jason12196/weshop-skill-package", "legacyCommit": "7483557e6ecd7e888cf31649461b3713903bc413", "legacyPath": "web/public/generated/person-appearance/id-photo-format-result.png", "sha256": "00b262ebd5d36ec2de921ded0571cce5a38c7b8504da077841dc071f63c22e94"},
+    "make-birthday-video": {"status": "Migrated legacy result", "legacyRepository": "Jason12196/weshop-skill-package", "legacyCommit": "7483557e6ecd7e888cf31649461b3713903bc413", "legacyPath": "web/public/generated/p1-rest/make-birthday-video-cover.png", "sha256": "876874c46590b422b14d09d55e73ee18f0c734f559c2eb2b5e6dbef2bd1ab370"},
+    "make-podcast-video": {"status": "Migrated legacy result", "legacyRepository": "Jason12196/weshop-skill-package", "legacyCommit": "7483557e6ecd7e888cf31649461b3713903bc413", "legacyPath": "web/public/generated/p1-rest/make-podcast-video-cover.png", "sha256": "1e85c2c69ec87673edf0ee8a8d346ff947e69964c5f9041e8bb33a8a6e49c81f"},
+    "make-talking-video": {"status": "Migrated legacy result", "legacyRepository": "Jason12196/weshop-skill-package", "legacyCommit": "7483557e6ecd7e888cf31649461b3713903bc413", "legacyPath": "web/public/generated/p1-rest/make-talking-video-cover.png", "sha256": "61384c84c86e215d4b84e37ed7de1a77c5c26ef9ac2365717429589d18d59627"},
+    "make-video-intro": {"status": "Migrated legacy result", "legacyRepository": "Jason12196/weshop-skill-package", "legacyCommit": "7483557e6ecd7e888cf31649461b3713903bc413", "legacyPath": "web/public/generated/p1-rest/make-video-intro-cover.png", "sha256": "dd0920e70673dd2b4bfda33d8631eb4e6b183b9929d55c16e5b68ecf769a8c30"},
+    "make-wedding-photo": {"status": "Migrated legacy result", "legacyRepository": "Jason12196/weshop-skill-package", "legacyCommit": "7483557e6ecd7e888cf31649461b3713903bc413", "legacyPath": "web/public/generated/p1-rest/make-wedding-photo-cover.png", "sha256": "06dde8b40e5daa48bf88234b425355d5765547caa1d7bafc2b590766306a2ddf"},
+    "remove-video-mark": {"status": "Migrated legacy result", "legacyRepository": "Jason12196/weshop-skill-package", "legacyCommit": "7483557e6ecd7e888cf31649461b3713903bc413", "legacyPath": "web/public/generated/p1-rest/remove-video-mark-cover.png", "sha256": "ad22db2baf9a858d31475a96019df72fb54e3b440d396db6e6e35f2b476a4d6f"},
+    "restyle-video": {"status": "Migrated legacy result", "legacyRepository": "Jason12196/weshop-skill-package", "legacyCommit": "7483557e6ecd7e888cf31649461b3713903bc413", "legacyPath": "web/public/generated/p1-rest/restyle-video-cover.png", "sha256": "5b75b0f87560520dbb722cde9db0fff16c4840be16672bf6a15b02d8023e01bb"},
+    "translate-image-text": {"status": "Migrated legacy result", "legacyRepository": "Jason12196/weshop-skill-package", "legacyCommit": "7483557e6ecd7e888cf31649461b3713903bc413", "legacyPath": "web/public/generated/p0-image/translate-image-text-result.png", "sha256": "c71047426e81a7852e864bf5e3e5609e0f3c68bd8e543288bdd4137616b0df33"},
+    "upscale-video": {"status": "Migrated legacy result", "legacyRepository": "Jason12196/weshop-skill-package", "legacyCommit": "7483557e6ecd7e888cf31649461b3713903bc413", "legacyPath": "web/public/generated/p1-rest/upscale-video-cover.png", "sha256": "2d910402068454c36a96a95df8f9f544217acf2b948fba51f6ee89b9fbb13e60"},
+    "visualize-floor-plan": {"status": "Migrated legacy result", "legacyRepository": "Jason12196/weshop-skill-package", "legacyCommit": "7483557e6ecd7e888cf31649461b3713903bc413", "legacyPath": "web/public/generated/p1-rest/visualize-floor-plan-cover.png", "sha256": "42ac2d504b53f294843301934d9814f43d17ae1636cda6445c4823e8d0f2c914"},
+    "character-reference-sheet": {"status": "Migrated legacy result", "legacyRepository": "Jason12196/weshop-skill-package", "legacyCommit": "7483557e6ecd7e888cf31649461b3713903bc413", "legacyPath": "web/public/generated/smoke-character-reference-sheet-display.jpg", "sha256": "2d1c3055530d051c61e546f283df36175fe17388fd272bd2530524a8a6cdd9c6"},
+    "fashion-model-replacement": {"status": "Migrated legacy result", "legacyRepository": "Jason12196/weshop-skill-package", "legacyCommit": "7483557e6ecd7e888cf31649461b3713903bc413", "legacyPath": "web/public/generated/smoke-fashion-model-replacement-display.jpg", "sha256": "bffcf3f662c2743be113b63b0b81d58ed04c0388aeae0db4d27d1fa02fee8d07"},
+    "image-combiner": {"status": "Migrated legacy result", "legacyRepository": "Jason12196/weshop-skill-package", "legacyCommit": "7483557e6ecd7e888cf31649461b3713903bc413", "legacyPath": "web/public/generated/smoke-image-combiner-display.jpg", "sha256": "31250ca1a7851879471006ba6dc512cca873402336f4aa7e1b59e24c7d7c242d"},
+    "product-detail-page": {"status": "Migrated legacy result", "legacyRepository": "Jason12196/weshop-skill-package", "legacyCommit": "7483557e6ecd7e888cf31649461b3713903bc413", "legacyPath": "web/public/generated/product-detail-page-smoke/delivery/portable-blender-long-page.jpg", "sha256": "783897b4c70001fe26cd5de90ea39ec8bff97ca5f474561365ddcf3c89476dad"},
+    "render-comic-page": {"executionId": "6a8d4dba6c0356b0c81c7127", "agent": "gpt-image", "agentVersion": "1.0", "status": "Success", "sourceUrl": "https://ai-global-image.weshop.com/20260825_1_2c080a9d-f81b-4454-b2d9-798f605479d1_1536x2048.png", "sha256": "64758fefd6107119d6f880c5b12e9dc530a1bbe874672d00a20394a7b2507f97", "inputSource": {"executionId": "6a8d4d5d94e0cdaf69682047", "file": "/skill-covers/sources/render-comic-page-source.png", "sha256": "87dd2fd28c046d749eec915980ee66c3703127d5e7254e5e0c05b412a23580a5"}}
+  }
+}

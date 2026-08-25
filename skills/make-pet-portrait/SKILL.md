@@ -12,6 +12,7 @@ description: Create one stylized or photographic portrait of a supplied pet whil
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: amber
 - Short description: Create one stylized or photographic portrait of a supplied pet while preserving distinctive markings and proportions.
+- Cover image: /skill-covers/make-pet-portrait.png
 
 ## What this skill does
 

@@ -12,6 +12,7 @@ description: Create one accurate readable flowchart from an explicit process mod
 - Route label: GPT Image 2 flowchart rendering
 - Tone: blue
 - Short description: Create one accurate readable flowchart from an explicit process model with verified nodes, decisions and connections.
+- Cover image: /skill-covers/make-flowchart.png
 
 ## What this skill does
 

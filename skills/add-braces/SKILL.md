@@ -13,6 +13,7 @@ description: Add one realistic braces treatment to the visible teeth of an autho
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: rose
 - Short description: Preview one braces style on clearly visible teeth.
+- Cover image: /skill-covers/add-braces.png
 
 ## What this skill does
 

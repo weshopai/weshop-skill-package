@@ -12,6 +12,7 @@ description: Preview one specified wall or architectural surface in an exact pai
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: yellow
 - Short description: Preview one specified wall or architectural surface in an exact paint color without redesigning the room.
+- Cover image: /skill-covers/preview-paint.png
 
 ## What this skill does
 

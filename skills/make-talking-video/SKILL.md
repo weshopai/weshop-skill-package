@@ -13,6 +13,8 @@ description: Create one talking-person video from an authorized or fictional por
 - Tone: purple
 - Short description: Create one talking-person video from an authorized or fictional portrait and approved script with synchronized speech.
 
+- Cover image: /skill-covers/make-talking-video.png
+
 ## What this skill does
 
 - Combines a consent-cleared face, exact script, voice and performance direction.

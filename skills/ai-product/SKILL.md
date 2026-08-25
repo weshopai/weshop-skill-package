@@ -15,6 +15,7 @@ Create one product-faithful commercial scene from one real product image. Keep t
 - Route label: WeShop AI Product or GPT Image 2
 - Tone: sage
 - Short description: Place a real product into a new commercial scene.
+- Cover image: /skill-covers/ai-product.png
 
 ## What this skill does
 

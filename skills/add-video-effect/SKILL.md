@@ -13,6 +13,8 @@ description: Add one specified visual effect to supplied video at a defined time
 - Tone: pink
 - Short description: Add one specified effect to a supplied video at a defined time and region while preserving underlying footage.
 
+- Cover image: /skill-covers/add-video-effect.png
+
 ## What this skill does
 
 - Adds a bounded effect such as glow, particles, flare, weather or speed treatment.

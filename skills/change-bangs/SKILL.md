@@ -13,6 +13,7 @@ description: Add or change only bangs in one authorized portrait while preservin
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: rose
 - Short description: Preview one fringe style without replacing the full haircut.
+- Cover image: /skill-covers/change-bangs.png
 
 ## What this skill does
 

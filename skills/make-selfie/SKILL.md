@@ -13,6 +13,7 @@ description: Turn one authorized everyday person photo into one realistic solo s
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: rose
 - Short description: Turn one or two everyday photos into one realistic selfie.
+- Cover image: /skill-covers/make-selfie.png
 
 ## What this skill does
 

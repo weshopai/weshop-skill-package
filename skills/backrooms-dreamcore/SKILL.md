@@ -12,6 +12,7 @@ description: Create one personalized Backrooms Level-0/dreamcore space dossier a
 - Route label: Personalized Level-0 space dossier and visual route
 - Tone: lime
 - Short description: Turn one authorized reference into a restrained, photoreal liminal-space dossier and optional media.
+- Cover image: /skill-covers/backrooms-dreamcore.png
 
 ## What this skill does
 

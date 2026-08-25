@@ -12,6 +12,7 @@ description: Create a consistent image-first presentation deck from supplied con
 - Route label: Image-first presentation production
 - Tone: blue
 - Short description: Plan, generate, inspect, and package a consistent image-first deck.
+- Cover image: /skill-covers/create-image-deck.png
 
 ## What this skill does
 

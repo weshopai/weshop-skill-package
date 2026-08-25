@@ -13,6 +13,8 @@ description: Create one short reusable branded video intro with exact identity, 
 - Tone: amber
 - Short description: Create one short reusable branded intro with exact identity, legible title and a clean transition into program content.
 
+- Cover image: /skill-covers/make-video-intro.png
+
 ## What this skill does
 
 - Turns approved logo, name and sonic direction into compact motion identity.

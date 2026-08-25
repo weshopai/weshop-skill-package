@@ -10,6 +10,7 @@ description: Change only a named object or PNG element to a target color while p
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: violet
 - Short description: Recolor one object without tinting the whole image.
+- Cover image: /skill-covers/recolor-object.png
 ## What this skill does
 - Identifies one target region and changes hue/chroma without flattening material.
 - Keeps untargeted objects, people, background, lighting, and geometry unchanged.

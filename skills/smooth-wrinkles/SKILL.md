@@ -10,6 +10,7 @@ description: Reduce specified skin lines or garment wrinkles in a supplied image
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: sand
 - Short description: Reduce chosen skin or clothing wrinkles without flattening structure.
+- Cover image: /skill-covers/smooth-wrinkles.png
 ## What this skill does
 - Treats skin lines and fabric creases as different AI edits with different protected traits.
 - Reduces distracting wrinkles while retaining realistic texture and form-defining folds.

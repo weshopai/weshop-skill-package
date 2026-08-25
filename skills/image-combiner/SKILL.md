@@ -15,6 +15,7 @@ Create one unified image from multiple sources. Treat the capability as a multi-
 - Route label: Multi-reference image composition
 - Tone: cyan
 - Short description: Merge multiple images into one coherent scene.
+- Cover image: /skill-covers/image-combiner.jpg
 
 ## What this skill does
 

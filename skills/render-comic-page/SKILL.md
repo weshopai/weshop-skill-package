@@ -12,6 +12,7 @@ description: Render one finished comic page from an approved page storyboard, ch
 - Route label: GPT Image 2 reference-aware comic page
 - Tone: purple
 - Short description: Render one storyboarded comic page with character, style, panel, and dialogue continuity.
+- Cover image: /skill-covers/render-comic-page.png
 
 ## What this skill does
 

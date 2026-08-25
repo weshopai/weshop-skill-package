@@ -13,6 +13,8 @@ description: Turn supplied footage into one platform-ready social video using cu
 - Tone: red
 - Short description: Turn supplied footage into one platform-ready social video using current placement rules, a strong opening and evidence-faithful captions.
 
+- Cover image: /skill-covers/edit-social-video.png
+
 ## What this skill does
 
 - Selects and orders the best moments for a named social placement and runtime.

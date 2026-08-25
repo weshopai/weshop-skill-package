@@ -13,6 +13,8 @@ description: Combine supplied clips into one ordered video with intentional trim
 - Tone: blue
 - Short description: Combine supplied clips into one ordered video with intentional trims, transitions and audio handling; do not regenerate footage.
 
+- Cover image: /skill-covers/combine-videos.png
+
 ## What this skill does
 
 - Builds one timeline from multiple clips with explicit order and cut points.

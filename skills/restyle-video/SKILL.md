@@ -13,6 +13,8 @@ description: Transform the overall visual style of supplied video while retainin
 - Tone: violet
 - Short description: Transform the visual treatment of a supplied video while retaining timing, motion, subjects and continuity.
 
+- Cover image: /skill-covers/restyle-video.png
+
 ## What this skill does
 
 - Applies one declared style across moving footage rather than a static color filter.

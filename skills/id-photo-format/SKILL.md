@@ -14,6 +14,8 @@ description: Prepare one authorized portrait for one explicitly named ID-photo o
 - Tone: rose
 - Short description: Research the authority, correct the capture, then crop around the measured head.
 
+- Cover image: /skill-covers/id-photo-format.png
+
 ## What this skill does
 
 - Produces one exact ID-photo file for one named authority and document type.

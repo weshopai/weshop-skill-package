@@ -13,6 +13,8 @@ description: Generate one coherent video from a text or multimodal shot brief us
 - Tone: purple
 - Short description: Generate one coherent video from a shot brief using a deliberately selected current model and one observable action.
 
+- Cover image: /skill-covers/generate-video.png
+
 ## What this skill does
 
 - Turns text into one shot with explicit subject, action, environment, camera, duration and sound.

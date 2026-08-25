@@ -14,6 +14,7 @@ Turn supplied photos into one designed canvas. Keep original photos as source as
 - Status: Ready
 - Route label: Source-faithful collage composition
 - Tone: cyan
+- Cover image: /skill-covers/photo-collage.png
 - Short description: Arrange original photos into one intentional collage.
 
 ## What this skill does

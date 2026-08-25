@@ -12,6 +12,7 @@ description: Generate one specified real species or original animal creature in 
 - Route label: Z-Image photorealistic animal generation
 - Tone: green
 - Short description: Generate one specified real or original animal in an anatomically and ecologically coherent scene.
+- Cover image: /skill-covers/create-animal.png
 
 ## What this skill does
 

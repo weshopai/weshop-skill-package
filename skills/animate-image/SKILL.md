@@ -13,6 +13,8 @@ description: Animate one supplied still into a short video with bounded subject 
 - Tone: cyan
 - Short description: Animate one supplied still with bounded subject and camera motion while preserving identity and composition.
 
+- Cover image: /skill-covers/animate-image.png
+
 ## What this skill does
 
 - Adds controlled motion to a still rather than regenerating an unrelated scene.

@@ -13,6 +13,8 @@ description: Remove an ordinary user-authorized overlay, logo, timestamp, or ann
 - Tone: slate
 - Short description: Remove an ordinary user-authorized overlay or annotation while preserving motion and reconstructing the covered region consistently.
 
+- Cover image: /skill-covers/remove-video-mark.png
+
 ## What this skill does
 
 - Removes a specified mark only when the user is authorized to edit it.

@@ -12,6 +12,7 @@ description: Create a highly simplified square IP mascot logo through three prod
 - Route label: GPT Image 2 mascot-logo generation
 - Tone: purple
 - Short description: Create a compact, cute mascot mark with controlled silhouette, color, and separately labeled directions.
+- Cover image: /skill-covers/create-mascot-logo.png
 
 ## What this skill does
 

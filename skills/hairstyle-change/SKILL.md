@@ -13,6 +13,7 @@ description: Replace only the hairstyle in one authorized portrait while preserv
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: rose
 - Short description: Preview one different hairstyle without changing identity.
+- Cover image: /skill-covers/hairstyle-change.png
 
 ## What this skill does
 

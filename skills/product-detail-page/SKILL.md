@@ -16,6 +16,7 @@ Create one product-detail deliverable as a set of independent modules. Treat a l
 - Route label: Researched modular PDP production
 - Tone: teal
 - Short description: Build modular ecommerce detail-page image sets.
+- Cover image: /skill-covers/product-detail-page.jpg
 
 ## What this skill does
 

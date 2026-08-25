@@ -12,6 +12,7 @@ description: Create one clearly fictional or novelty mugshot-style portrait that
 - Route label: GPT Image 2 novelty mugshot-style portrait
 - Tone: gray
 - Short description: Create one clearly fictional or novelty mugshot-style portrait that cannot be mistaken for an official booking record.
+- Cover image: /skill-covers/make-mugshot-photo.png
 
 ## What this skill does
 

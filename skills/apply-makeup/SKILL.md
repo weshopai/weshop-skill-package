@@ -13,6 +13,7 @@ description: Apply one makeup look to an authorized portrait while preserving id
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: rose
 - Short description: Preview one makeup look without replacing or reshaping the face.
+- Cover image: /skill-covers/apply-makeup.png
 
 ## What this skill does
 

@@ -10,6 +10,7 @@ description: Add plausible, context-aware color to a black-and-white or grayscal
 - Route label: GPT Image 2 contextual colorization
 - Tone: gold
 - Short description: Add plausible color while preserving the original photograph.
+- Cover image: /skill-covers/colorize-image.png
 ## What this skill does
 - Uses whole-image context to infer coherent skin, fabric, object, and environment colors.
 - Distinguishes documented color references from plausible creative inference.

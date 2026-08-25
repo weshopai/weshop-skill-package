@@ -10,6 +10,7 @@ description: Add position-accurate speech or thought bubbles with exact text to 
 - Route label: GPT Image 2 overlay
 - Tone: blue
 - Short description: Add exact dialogue bubbles at the right subjects.
+- Cover image: /skill-covers/add-speech-bubble.png
 ## What this skill does
 - Adds oval, cloud, rectangle, starburst, caption, or text-only bubbles.
 - Binds each text string, body, and tail endpoint to a declared speaker.

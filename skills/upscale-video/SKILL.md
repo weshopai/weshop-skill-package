@@ -13,6 +13,8 @@ description: Increase supplied video resolution and clarity while preserving tim
 - Tone: green
 - Short description: Increase supplied video resolution and clarity while preserving timing, content, grain intent and natural detail.
 
+- Cover image: /skill-covers/upscale-video.png
+
 ## What this skill does
 
 - Upscales one video to requested resolution with temporal consistency.

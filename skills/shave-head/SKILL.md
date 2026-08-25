@@ -13,6 +13,7 @@ description: Preview one authorized person with a natural bald or closely shaved
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: rose
 - Short description: Preview a natural bald or shaved-head appearance.
+- Cover image: /skill-covers/shave-head.png
 
 ## What this skill does
 

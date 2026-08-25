@@ -15,6 +15,7 @@ Turn one product brief or reference image into one commercial mockup. Treat name
 - Route label: Model-routed product mockups
 - Tone: peach
 - Short description: Create product, flat-lay, and ghost-mannequin mockups without identity drift.
+- Cover image: /skill-covers/create-white-background-product-mockup.png
 
 ## What this skill does
 

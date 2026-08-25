@@ -4,7 +4,7 @@ taskId: BFUB5B-u86405184-m8ca483
 taskTag: BFUB5B
 mode: quick
 title: 将 Casting Skill 调用名改为 casting
-status: active
+status: completed
 actor: Jason12196
 githubUserId: 86405184
 machine: 8ca483
@@ -12,7 +12,10 @@ agent: Codex GPT-5.6
 sessionId: 01a03757-d716-7433-bcad-f3d165df0e65
 branch: codex/add-tool-call-assembly
 createdAt: 2026-08-25T05:28:19Z
-updatedAt: 2026-08-25T05:28:19Z
+updatedAt: 2026-08-25T05:29:04Z
+completedAt: 2026-08-25T05:29:04Z
+commits:
+  - d0b13eb
 ---
 
 ## Summary

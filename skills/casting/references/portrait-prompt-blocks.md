@@ -1,6 +1,6 @@
 # Casting portrait prompt blocks
 
-Use only for `casting-cn`; the user role card supplies character-specific facts. Prompts are Chinese-led; retain the following English anchors, proportions, negatives, and `#ffffff` unchanged.
+Use only for `casting`; the user role card supplies character-specific facts. Prompts are Chinese-led; retain the following English anchors, proportions, negatives, and `#ffffff` unchanged.
 
 ## Photographic compiler
 

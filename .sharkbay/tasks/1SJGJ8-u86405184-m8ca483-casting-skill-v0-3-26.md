@@ -4,7 +4,7 @@ taskId: 1SJGJ8-u86405184-m8ca483
 taskTag: 1SJGJ8
 mode: task
 title: 发布 Casting Skill v0.3.26
-status: active
+status: completed
 actor: Jason12196
 githubUserId: 86405184
 machine: 8ca483
@@ -12,7 +12,10 @@ agent: Codex GPT-5.6
 sessionId: 01a03757-d716-7433-bcad-f3d165df0e65
 branch: codex/add-tool-call-assembly
 createdAt: 2026-08-25T05:34:00Z
-updatedAt: 2026-08-25T05:34:00Z
+updatedAt: 2026-08-25T05:36:17Z
+completedAt: 2026-08-25T05:36:17Z
+commits:
+  - 3a24d09
 ---
 
 ## Summary
@@ -33,8 +36,9 @@ updatedAt: 2026-08-25T05:34:00Z
 ## Verification
 
 - 已验证源提交可从 `origin/main` 干净应用。
-- 发布前将运行完整 `npm test`、`npm run maintainers:validate`、`npm run web:build` 和 `npm run package:check`。
+- 通过 `npm test`（85 tests）、`npm run maintainers:validate`、`npm run web:build` 和 `npm run package:check`。
+- GitHub Actions `Publish stable release` #32813419809 成功。
 
 ## Notes
 
-- 发布工作流必须在 `main` 的版本提交上以 tag `v0.3.26` 运行；不手动 npm publish 或创建 tag。
+- 发布工作流在 `main` 的 `3a24d09` 上创建 `v0.3.26`；npm 已验证为 `0.3.26`，GitHub Release 已公开发布。

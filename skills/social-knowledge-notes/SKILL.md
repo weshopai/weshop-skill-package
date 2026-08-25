@@ -12,6 +12,7 @@ description: Use for fact-checked multi-page social knowledge-note plan from app
 - Route label: Agent-authored structured brief
 - Tone: blue
 - Short description: Fact-checked multi-page social knowledge-note plan.
+- Cover image: /skill-covers/social-knowledge-notes.png
 
 ## What this skill does
 

@@ -12,6 +12,7 @@ description: Use for interactive self-contained html technical explanation from 
 - Route label: Agent-authored structured brief
 - Tone: blue
 - Short description: Interactive self-contained HTML technical explanation.
+- Cover image: /skill-covers/technical-visual-explainer.png
 
 ## What this skill does
 

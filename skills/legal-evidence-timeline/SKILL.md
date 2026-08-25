@@ -12,6 +12,7 @@ description: Use for traceable chronology from user-supplied evidence from appro
 - Route label: Agent-authored structured brief
 - Tone: blue
 - Short description: Traceable chronology from user-supplied evidence.
+- Cover image: /skill-covers/legal-evidence-timeline.png
 
 ## What this skill does
 

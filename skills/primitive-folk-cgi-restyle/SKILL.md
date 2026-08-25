@@ -12,6 +12,7 @@ description: Use for a supplied image reconstructed as intentionally awkward, pr
 - Route label: Broad-anchor-preserving primitive-3D reconstruction
 - Tone: green
 - Short description: Restyle a source image into readable but deliberately crude early-3D imagery, with optional awkward motion continuation.
+- Cover image: /skill-covers/primitive-folk-cgi-restyle.png
 
 ## What this skill does
 

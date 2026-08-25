@@ -38,6 +38,7 @@
     "scripts/create-custom-skill-draft.mjs",
     "scripts/check-api-key.mjs",
     "model-selection-policy.md",
+    "tool-call-assembly.md",
     "LICENSE"
   ],
   "publishConfig": {

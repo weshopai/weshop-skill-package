@@ -12,6 +12,7 @@ description: Arrange several supplied outfit photographs into one intentional lo
 - Short description: Arrange several outfit photos into one editorial page.
 - Cover image: /skill-covers/compose-lookbook.png
 
+- Similar skills: photo-collage, create-social-carousel, create-image-deck
 ## What this skill does
 - Places multiple supplied looks into one ordered editorial page.
 - Preserves each outfit and person while controlling crop, whitespace, captions, and reading order.

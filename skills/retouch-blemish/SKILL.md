@@ -11,6 +11,7 @@ description: Remove named temporary skin blemishes from an authorized portrait w
 - Tone: rose
 - Short description: Remove temporary blemishes without plastic-looking skin.
 - Cover image: /skill-covers/retouch-blemish.png
+- Similar skills: apply-makeup, smooth-wrinkles
 ## What this skill does
 - Removes only specified temporary spots, redness, or small imperfections.
 - Preserves identity, pores, natural tonal variation, freckles, moles, and age unless explicitly targeted.

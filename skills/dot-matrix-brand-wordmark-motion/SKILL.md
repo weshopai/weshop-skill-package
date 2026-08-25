@@ -13,6 +13,7 @@ description: "Create one exact brand wordmark dot-matrix motion from authorized 
 - Tone: purple
 - Short description: Produce one exact brand wordmark dot-matrix motion with explicit inputs, boundaries, and acceptance checks.
 
+- Similar skills: brand-stream-mg, make-video-intro, poster-motion
 ## What this skill does
 
 - Captures the specific requested outcome and authorized asset roles.

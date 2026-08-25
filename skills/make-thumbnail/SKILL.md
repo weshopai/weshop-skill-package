@@ -11,6 +11,7 @@ description: Research current requirements of a named platform and placement, th
 - Tone: amber
 - Short description: Create a platform-aware cover or thumbnail.
 - Cover image: /skill-covers/make-thumbnail.png
+- Similar skills: ai-banner-design, poster-design, product-detail-page
 ## What this skill does
 - Checks current official size, ratio, file, and safe-area rules before design.
 - Creates one focal image with mobile-readable copy and protected UI zones.

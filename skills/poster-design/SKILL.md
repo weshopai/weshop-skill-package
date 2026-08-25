@@ -18,6 +18,7 @@ Turn a communication idea into one poster with a clear focal point, intentional 
 - Tone: coral
 - Short description: Create distinctive posters across varied art directions.
 
+- Similar skills: ai-banner-design, make-thumbnail, product-detail-page
 ## What this skill does
 
 - Distills a theme or campaign into one message, one focal subject, one visual metaphor, and a readable copy hierarchy.

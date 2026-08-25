@@ -16,6 +16,7 @@ description: "Create a Chinese screen-role casting package from a six-field role
 - Tone: violet
 - Short description: Select and approve a screen-ready Chinese character face before deriving optional studio assets.
 
+- Similar skills: create-character, create-npc
 ## What this skill does
 
 - Converts a role card or script description into a Chinese screen character.

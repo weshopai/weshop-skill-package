@@ -172,7 +172,24 @@
         "Default layout": "User-requested delivery format",
         "Model policy": "MiniMax H3 for source-video editing; stop when the required tracking/edit contract is unavailable",
         "Downstream use": "Creative post-production"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "correct-video-color",
+          "displayName": "Correct Video Color",
+          "difference": "Correct Video Color: Correct white balance, exposure and shot-to-shot consistency without changing content or creative look. In contrast, Add Video Effect: Add one specified effect to a supplied video at a defined time and region while preserving underlying footage."
+        },
+        {
+          "id": "restyle-video",
+          "displayName": "Restyle Video",
+          "difference": "Restyle Video: Transform the visual treatment of a supplied video while retaining timing, motion, subjects and continuity. In contrast, Add Video Effect: Add one specified effect to a supplied video at a defined time and region while preserving underlying footage."
+        },
+        {
+          "id": "upscale-video",
+          "displayName": "Upscale Video",
+          "difference": "Upscale Video: Increase supplied video resolution and clarity while preserving timing, content, grain intent and natural detail. In contrast, Add Video Effect: Add one specified effect to a supplied video at a defined time and region while preserving underlying footage."
+        }
+      ]
     },
     {
       "id": "ai-banner-design",
@@ -218,7 +235,24 @@
         "Specification source": "Live official research when available; otherwise a labeled built-in official snapshot, project working preset, or user-supplied dimensions",
         "Model policy": "GPT Image 2 Medium produces every final banner; Midjourney may only produce an optional text-free artistic-direction reference that is then supplied to GPT Image 2",
         "Downstream use": "Website heroes, YouTube channels, paid display, social covers, email headers, marketplace campaigns, launches, and announcements"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "make-thumbnail",
+          "displayName": "Make Thumbnail",
+          "difference": "Make Thumbnail: Create a platform-aware cover or thumbnail. In contrast, AI Banner Design: Research and design channel-ready commercial banners."
+        },
+        {
+          "id": "poster-design",
+          "displayName": "Poster Design",
+          "difference": "Poster Design: Create distinctive posters across varied art directions. In contrast, AI Banner Design: Research and design channel-ready commercial banners."
+        },
+        {
+          "id": "product-detail-page",
+          "displayName": "Product Detail Page",
+          "difference": "Product Detail Page: Build modular ecommerce detail-page image sets. In contrast, AI Banner Design: Research and design channel-ready commercial banners."
+        }
+      ]
     },
     {
       "id": "ai-product",
@@ -263,7 +297,19 @@
         "Default layout": "One image; no typography, grid, collage, or extra product",
         "Model policy": "GPT Image 2 medium/2K for empty background generation, then AI Product with a custom Location for product placement; GPT Image 2 composition is the fallback",
         "Downstream use": "Product pages, posters, banners, detail layouts, social graphics, and collages"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "create-white-background-product-mockup",
+          "displayName": "White Background Product Mockup",
+          "difference": "White Background Product Mockup: Create product, flat-lay, and ghost-mannequin mockups without identity drift. In contrast, AI Product: Place a real product into a new commercial scene."
+        },
+        {
+          "id": "product-packaging",
+          "displayName": "Product Packaging",
+          "difference": "Product Packaging: Turn product references into a structured packaging concept board. In contrast, AI Product: Place a real product into a new commercial scene."
+        }
+      ]
     },
     {
       "id": "animate-image",
@@ -332,7 +378,19 @@
         "Default layout": "Preserve source composition; no collage",
         "Model policy": "GPT Image 2 Medium/2K for consistency-sensitive final image editing",
         "Downstream use": "Beauty consultation, campaign planning, and personal preview"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "retouch-blemish",
+          "displayName": "Retouch Blemish",
+          "difference": "Retouch Blemish: Remove temporary blemishes without plastic-looking skin. In contrast, Apply Makeup: Preview one makeup look without replacing or reshaping the face."
+        },
+        {
+          "id": "smooth-wrinkles",
+          "displayName": "Smooth Wrinkles",
+          "difference": "Smooth Wrinkles: Reduce chosen skin or clothing wrinkles without flattening structure. In contrast, Apply Makeup: Preview one makeup look without replacing or reshaping the face."
+        }
+      ]
     },
     {
       "id": "apply-photo-filter",
@@ -366,7 +424,19 @@
         "Default layout": "Source composition",
         "Model policy": "GPT Image 2 Medium/2K for consistency-sensitive final image editing",
         "Downstream use": "Social, editorial, and campaign grading"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "remove-photo-filter",
+          "displayName": "Remove Photo Filter",
+          "difference": "Remove Photo Filter: Remove an artificial grade and restore a natural look. In contrast, Apply Photo Filter: Apply one filter without changing scene content."
+        },
+        {
+          "id": "recolor-object",
+          "displayName": "Recolor Object",
+          "difference": "Recolor Object: Recolor one object without tinting the whole image. In contrast, Apply Photo Filter: Apply one filter without changing scene content."
+        }
+      ]
     },
     {
       "id": "backrooms-dreamcore",
@@ -436,7 +506,14 @@
         "Default layout": "User-requested channel ratio, duration, resolution, copy language, and audio plan",
         "Model policy": "Kling 3 precise product/UI frames; Kling Omni complex/motion references; Seedance 2.5 long audiovisual/artistic/performance; Veo source-image synchronous audio; Seedance 2.0 routine; H3 large/natural motion",
         "Downstream use": "Human brand, claim, rights, channel, and publication review"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "digital-product-promo-generator",
+          "displayName": "Digital Product Promo Generator",
+          "difference": "Digital Product Promo Generator: Produce one authentic digital-product promo plan and video with explicit inputs, boundaries, and acceptance checks. In contrast, Brand Promo Video Generator: Produce one authenticity-checked promotional short for a brand, app, website, shop, service, or launch."
+        }
+      ]
     },
     {
       "id": "brand-stream-mg",
@@ -471,7 +548,24 @@
         "Default layout": "User-requested format",
         "Model policy": "Existing verified native Atoms only",
         "Downstream use": "Review, assembly, or publication after user approval"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "dot-matrix-brand-wordmark-motion",
+          "displayName": "Dot Matrix Brand Wordmark Motion",
+          "difference": "Dot Matrix Brand Wordmark Motion: Produce one exact brand wordmark dot-matrix motion with explicit inputs, boundaries, and acceptance checks. In contrast, Brand Stream MG: Produce one logo-led neon brand motion with explicit inputs, boundaries, and acceptance checks."
+        },
+        {
+          "id": "make-video-intro",
+          "displayName": "Make Video Intro",
+          "difference": "Make Video Intro: Create one short reusable branded intro with exact identity, legible title and a clean transition into program content. In contrast, Brand Stream MG: Produce one logo-led neon brand motion with explicit inputs, boundaries, and acceptance checks."
+        },
+        {
+          "id": "poster-motion",
+          "displayName": "Poster Motion",
+          "difference": "Poster Motion: Animate an uploaded poster into one readable, full-frame motion poster. In contrast, Brand Stream MG: Produce one logo-led neon brand motion with explicit inputs, boundaries, and acceptance checks."
+        }
+      ]
     },
     {
       "id": "casting",
@@ -508,7 +602,19 @@
         "Default layout": "Vertical 3:4 portrait; selected 3:4 derivatives; 16:9 turnaround board",
         "Model policy": "GPT Image 2 Medium/2K after current-schema verification",
         "Downstream use": "Short-drama, film, comic, and story production casting references"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "create-character",
+          "displayName": "Create Character",
+          "difference": "Create Character: Build one canonical identity, then derive seven consistent character assets from it. In contrast, Casting: Select and approve a screen-ready Chinese character face before deriving optional studio assets."
+        },
+        {
+          "id": "create-npc",
+          "displayName": "Create NPC",
+          "difference": "Create NPC: Create one original non-player character image whose occupation, faction and gameplay role are visually legible. In contrast, Casting: Select and approve a screen-ready Chinese character face before deriving optional studio assets."
+        }
+      ]
     },
     {
       "id": "change-bangs",
@@ -543,7 +649,24 @@
         "Default layout": "Preserve source composition; no collage",
         "Model policy": "GPT Image 2 Medium/2K for consistency-sensitive final image editing",
         "Downstream use": "Salon consultation and haircut planning"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "hairstyle-change",
+          "displayName": "Hairstyle Change",
+          "difference": "Hairstyle Change: Preview one different hairstyle without changing identity. In contrast, Change Bangs: Preview one fringe style without replacing the full haircut."
+        },
+        {
+          "id": "hair-color-change",
+          "displayName": "Hair Color Change",
+          "difference": "Hair Color Change: Preview one new hair color without changing the person or cut. In contrast, Change Bangs: Preview one fringe style without replacing the full haircut."
+        },
+        {
+          "id": "shave-head",
+          "displayName": "Shave Head",
+          "difference": "Shave Head: Preview a natural bald or shaved-head appearance. In contrast, Change Bangs: Preview one fringe style without replacing the full haircut."
+        }
+      ]
     },
     {
       "id": "change-pose",
@@ -588,7 +711,19 @@
         "Default layout": "Preserve source scene and framing; no collage",
         "Model policy": "`aipose` pro for text poses; GPT Image 2 medium/2K for supplied pose references",
         "Downstream use": "Lookbooks, collages, product pages, photoshoots, posters, and banners"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "fashion-model-replacement",
+          "displayName": "Fashion Model Replacement",
+          "difference": "Fashion Model Replacement: Replace a fashion model while keeping the outfit intact. In contrast, Change Pose: Change a person’s pose without changing their look."
+        },
+        {
+          "id": "virtual-try-on",
+          "displayName": "Virtual Try-On",
+          "difference": "Virtual Try-On: Try on or replace a garment with fidelity checks. In contrast, Change Pose: Change a person’s pose without changing their look."
+        }
+      ]
     },
     {
       "id": "character-reference-sheet",
@@ -724,7 +859,24 @@
         "Default layout": "Validated Markdown",
         "Model policy": "Agent-authored planning; no paid media generation or unverified provider call",
         "Downstream use": "$generate-video or another verified Atom selected by Router intent matching"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "narrative-video-prompt",
+          "displayName": "Narrative Video Prompt",
+          "difference": "Narrative Video Prompt: Structured prompt for one narrative video shot. In contrast, Cinematic Video Prompt: Cinematic or image-to-video motion prompt."
+        },
+        {
+          "id": "short-audiovisual-prompt",
+          "displayName": "Short Audiovisual Prompt",
+          "difference": "Short Audiovisual Prompt: Compact single-shot audiovisual video prompt. In contrast, Cinematic Video Prompt: Cinematic or image-to-video motion prompt."
+        },
+        {
+          "id": "cross-model-video-prompt-adapter",
+          "displayName": "Cross-model Video Prompt Adapter",
+          "difference": "Cross-model Video Prompt Adapter: Semantic adaptation of an existing video prompt. In contrast, Cinematic Video Prompt: Cinematic or image-to-video motion prompt."
+        }
+      ]
     },
     {
       "id": "clean-room",
@@ -758,7 +910,19 @@
         "Default layout": "Source composition",
         "Model policy": "GPT Image 2 Medium/2K for consistency-sensitive final image editing",
         "Downstream use": "Real-estate, hospitality, and interior listings"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "remove-object",
+          "displayName": "Remove Object",
+          "difference": "Remove Object: Remove one object and naturally rebuild what was behind it. In contrast, Clean Room: Remove room clutter without redesigning the space."
+        },
+        {
+          "id": "restyle-room",
+          "displayName": "Restyle Room",
+          "difference": "Restyle Room: Restyle a supplied room while preserving architecture, layout constraints and declared keep-items. In contrast, Clean Room: Remove room clutter without redesigning the space."
+        }
+      ]
     },
     {
       "id": "co-op-game-intro-generator",
@@ -861,7 +1025,24 @@
         "Default layout": "User-requested delivery format",
         "Model policy": "Deterministic timeline assembly",
         "Downstream use": "Basic editorial assembly"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "edit-social-video",
+          "displayName": "Edit Social Video",
+          "difference": "Edit Social Video: Turn supplied footage into one platform-ready social video using current placement rules, a strong opening and evidence-faithful captions. In contrast, Combine Videos: Combine supplied clips into one ordered video with intentional trims, transitions and audio handling; do not regenerate footage."
+        },
+        {
+          "id": "make-beat-synced-video",
+          "displayName": "Make Beat-Synced Video",
+          "difference": "Make Beat-Synced Video: Cut supplied visuals to measured music structure and verify the export. In contrast, Combine Videos: Combine supplied clips into one ordered video with intentional trims, transitions and audio handling; do not regenerate footage."
+        },
+        {
+          "id": "make-music-video",
+          "displayName": "Make Music Video",
+          "difference": "Make Music Video: Cut authorized footage to one song through a validated lyric, rhythm, and visual-arc EDL. In contrast, Combine Videos: Combine supplied clips into one ordered video with intentional trims, transitions and audio handling; do not regenerate footage."
+        }
+      ]
     },
     {
       "id": "compose-lookbook",
@@ -895,7 +1076,24 @@
         "Default layout": "Editorial multi-photo page",
         "Model policy": "GPT Image 2 Medium",
         "Downstream use": "Fashion decks, social posts, and line sheets"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "photo-collage",
+          "displayName": "Photo Collage",
+          "difference": "Photo Collage: Arrange original photos into one intentional collage. In contrast, Compose Lookbook: Arrange several outfit photos into one editorial page."
+        },
+        {
+          "id": "create-social-carousel",
+          "displayName": "Create Social Carousel",
+          "difference": "Create Social Carousel: Create a coherent mobile-first social carousel as separately generated ordered pages. In contrast, Compose Lookbook: Arrange several outfit photos into one editorial page."
+        },
+        {
+          "id": "create-image-deck",
+          "displayName": "Create Image Deck",
+          "difference": "Create Image Deck: Plan, generate, inspect, and package a consistent image-first deck. In contrast, Compose Lookbook: Arrange several outfit photos into one editorial page."
+        }
+      ]
     },
     {
       "id": "correct-video-color",
@@ -929,7 +1127,24 @@
         "Default layout": "User-requested delivery format",
         "Model policy": "Deterministic measured grading/LUT first; MiniMax H3 only for temporal correction that requires video rewriting",
         "Downstream use": "Video finishing"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "add-video-effect",
+          "displayName": "Add Video Effect",
+          "difference": "Add Video Effect: Add one specified effect to a supplied video at a defined time and region while preserving underlying footage. In contrast, Correct Video Color: Correct white balance, exposure and shot-to-shot consistency without changing content or creative look."
+        },
+        {
+          "id": "restyle-video",
+          "displayName": "Restyle Video",
+          "difference": "Restyle Video: Transform the visual treatment of a supplied video while retaining timing, motion, subjects and continuity. In contrast, Correct Video Color: Correct white balance, exposure and shot-to-shot consistency without changing content or creative look."
+        },
+        {
+          "id": "upscale-video",
+          "displayName": "Upscale Video",
+          "difference": "Upscale Video: Increase supplied video resolution and clarity while preserving timing, content, grain intent and natural detail. In contrast, Correct Video Color: Correct white balance, exposure and shot-to-shot consistency without changing content or creative look."
+        }
+      ]
     },
     {
       "id": "create-animal",
@@ -1067,7 +1282,19 @@
         "Default layout": "One canonical multi-panel sheet plus seven separate task-specific images",
         "Model policy": "GPT Image 2 Medium/2K for all eight tasks",
         "Downstream use": "Canonical identity and production references for comics, storyboards, images, and video"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "casting",
+          "displayName": "Casting",
+          "difference": "Casting: Select and approve a screen-ready Chinese character face before deriving optional studio assets. In contrast, Create Character: Build one canonical identity, then derive seven consistent character assets from it."
+        },
+        {
+          "id": "create-npc",
+          "displayName": "Create NPC",
+          "difference": "Create NPC: Create one original non-player character image whose occupation, faction and gameplay role are visually legible. In contrast, Create Character: Build one canonical identity, then derive seven consistent character assets from it."
+        }
+      ]
     },
     {
       "id": "create-custom-skill",
@@ -1177,7 +1404,24 @@
         "Default layout": "16:9 unless the user or destination requires another ratio",
         "Model policy": "GPT Image 2 Medium/2K, one page per operation; deterministic packaging after acceptance",
         "Downstream use": "Presentation, teaching, pitching, review, or export through the active presentation tooling"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "compose-lookbook",
+          "displayName": "Compose Lookbook",
+          "difference": "Compose Lookbook: Arrange several outfit photos into one editorial page. In contrast, Create Image Deck: Plan, generate, inspect, and package a consistent image-first deck."
+        },
+        {
+          "id": "photo-collage",
+          "displayName": "Photo Collage",
+          "difference": "Photo Collage: Arrange original photos into one intentional collage. In contrast, Create Image Deck: Plan, generate, inspect, and package a consistent image-first deck."
+        },
+        {
+          "id": "create-social-carousel",
+          "displayName": "Create Social Carousel",
+          "difference": "Create Social Carousel: Create a coherent mobile-first social carousel as separately generated ordered pages. In contrast, Create Image Deck: Plan, generate, inspect, and package a consistent image-first deck."
+        }
+      ]
     },
     {
       "id": "create-logo",
@@ -1211,7 +1455,14 @@
         "Default layout": "User-requested or source-preserving format",
         "Model policy": "GPT Image 2 Medium/2K for final logo geometry and readable brand text",
         "Downstream use": "Brand identity selection and refinement"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "create-mascot-logo",
+          "displayName": "Create Mascot Logo",
+          "difference": "Create Mascot Logo: Create a compact, cute mascot mark with controlled silhouette, color, and separately labeled directions. In contrast, Create Logo: Design one selected original logo mark or lockup from a brand brief, after concept reduction and application checks."
+        }
+      ]
     },
     {
       "id": "create-mascot-logo",
@@ -1246,7 +1497,14 @@
         "Default layout": "Independent 1:1 assets, never a grid or contact sheet",
         "Model policy": "GPT Image 2 Medium/2K, one candidate per run",
         "Downstream use": "Mascot selection, brand-system refinement, and small-size application testing"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "create-logo",
+          "displayName": "Create Logo",
+          "difference": "Create Logo: Design one selected original logo mark or lockup from a brand brief, after concept reduction and application checks. In contrast, Create Mascot Logo: Create a compact, cute mascot mark with controlled silhouette, color, and separately labeled directions."
+        }
+      ]
     },
     {
       "id": "create-npc",
@@ -1280,7 +1538,19 @@
         "Default layout": "User-requested or source-preserving format",
         "Model policy": "GPT Image 2 game-character concept",
         "Downstream use": "Games and interactive fiction"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "casting",
+          "displayName": "Casting",
+          "difference": "Casting: Select and approve a screen-ready Chinese character face before deriving optional studio assets. In contrast, Create NPC: Create one original non-player character image whose occupation, faction and gameplay role are visually legible."
+        },
+        {
+          "id": "create-character",
+          "displayName": "Create Character",
+          "difference": "Create Character: Build one canonical identity, then derive seven consistent character assets from it. In contrast, Create NPC: Create one original non-player character image whose occupation, faction and gameplay role are visually legible."
+        }
+      ]
     },
     {
       "id": "create-social-carousel",
@@ -1315,7 +1585,24 @@
         "Default layout": "Current platform ratio and safe zones; 3:4 for explicit Xiaohongshu placement",
         "Model policy": "GPT Image 2 Medium/2K, one page per operation",
         "Downstream use": "Human review and manual platform publishing"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "compose-lookbook",
+          "displayName": "Compose Lookbook",
+          "difference": "Compose Lookbook: Arrange several outfit photos into one editorial page. In contrast, Create Social Carousel: Create a coherent mobile-first social carousel as separately generated ordered pages."
+        },
+        {
+          "id": "photo-collage",
+          "displayName": "Photo Collage",
+          "difference": "Photo Collage: Arrange original photos into one intentional collage. In contrast, Create Social Carousel: Create a coherent mobile-first social carousel as separately generated ordered pages."
+        },
+        {
+          "id": "create-image-deck",
+          "displayName": "Create Image Deck",
+          "difference": "Create Image Deck: Plan, generate, inspect, and package a consistent image-first deck. In contrast, Create Social Carousel: Create a coherent mobile-first social carousel as separately generated ordered pages."
+        }
+      ]
     },
     {
       "id": "create-white-background-product-mockup",
@@ -1368,7 +1655,19 @@
         "Video output": "No",
         "Model policy": "Route the best current foundation image model first; use specialized product/flat-lay/ghost agents only while verified and useful",
         "Downstream use": "Catalogs, product pages, marketplace-main-image drafts, and commercial layout handoff"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "ai-product",
+          "displayName": "AI Product",
+          "difference": "AI Product: Place a real product into a new commercial scene. In contrast, White Background Product Mockup: Create product, flat-lay, and ghost-mannequin mockups without identity drift."
+        },
+        {
+          "id": "product-packaging",
+          "displayName": "Product Packaging",
+          "difference": "Product Packaging: Turn product references into a structured packaging concept board. In contrast, White Background Product Mockup: Create product, flat-lay, and ghost-mannequin mockups without identity drift."
+        }
+      ]
     },
     {
       "id": "cross-model-video-prompt-adapter",
@@ -1403,7 +1702,24 @@
         "Default layout": "Validated Markdown",
         "Model policy": "Agent-authored planning; no paid media generation or unverified provider call",
         "Downstream use": "$generate-video or another verified Atom selected by Router intent matching"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "cinematic-video-prompt",
+          "displayName": "Cinematic Video Prompt",
+          "difference": "Cinematic Video Prompt: Cinematic or image-to-video motion prompt. In contrast, Cross-model Video Prompt Adapter: Semantic adaptation of an existing video prompt."
+        },
+        {
+          "id": "narrative-video-prompt",
+          "displayName": "Narrative Video Prompt",
+          "difference": "Narrative Video Prompt: Structured prompt for one narrative video shot. In contrast, Cross-model Video Prompt Adapter: Semantic adaptation of an existing video prompt."
+        },
+        {
+          "id": "short-audiovisual-prompt",
+          "displayName": "Short Audiovisual Prompt",
+          "difference": "Short Audiovisual Prompt: Compact single-shot audiovisual video prompt. In contrast, Cross-model Video Prompt Adapter: Semantic adaptation of an existing video prompt."
+        }
+      ]
     },
     {
       "id": "data-driven-ad-creative-video",
@@ -1542,7 +1858,24 @@
         "Default layout": "Concise Markdown or JSON with stable beat/scene IDs",
         "Model policy": "Agent-authored; no paid media generation",
         "Downstream use": "Prose drafting, short drama, comics, film storyboards, and adaptation"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "plan-comic-storyboard",
+          "displayName": "Plan Comic Storyboard",
+          "difference": "Plan Comic Storyboard: Convert a story into a validated page-by-page comic production manifest. In contrast, Develop Story: Build or repair a story foundation before medium-specific production."
+        },
+        {
+          "id": "render-comic-page",
+          "displayName": "Render Comic Page",
+          "difference": "Render Comic Page: Render one storyboarded comic page with character, style, panel, and dialogue continuity. In contrast, Develop Story: Build or repair a story foundation before medium-specific production."
+        },
+        {
+          "id": "plan-film-storyboard",
+          "displayName": "Plan Film Storyboard",
+          "difference": "Plan Film Storyboard: Turn narrative material into timed atomic film shots with continuity and generation handoffs. In contrast, Develop Story: Build or repair a story foundation before medium-specific production."
+        }
+      ]
     },
     {
       "id": "digital-product-promo-generator",
@@ -1577,7 +1910,14 @@
         "Default layout": "User-requested format",
         "Model policy": "Existing verified native Atoms only",
         "Downstream use": "Review, assembly, or publication after user approval"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "brand-promo-video-generator",
+          "displayName": "Brand Promo Video Generator",
+          "difference": "Brand Promo Video Generator: Produce one authenticity-checked promotional short for a brand, app, website, shop, service, or launch. In contrast, Digital Product Promo Generator: Produce one authentic digital-product promo plan and video with explicit inputs, boundaries, and acceptance checks."
+        }
+      ]
     },
     {
       "id": "dodge-game-video-generator",
@@ -1647,7 +1987,24 @@
         "Default layout": "User-requested format",
         "Model policy": "Existing verified native Atoms only",
         "Downstream use": "Review, assembly, or publication after user approval"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "brand-stream-mg",
+          "displayName": "Brand Stream MG",
+          "difference": "Brand Stream MG: Produce one logo-led neon brand motion with explicit inputs, boundaries, and acceptance checks. In contrast, Dot Matrix Brand Wordmark Motion: Produce one exact brand wordmark dot-matrix motion with explicit inputs, boundaries, and acceptance checks."
+        },
+        {
+          "id": "make-video-intro",
+          "displayName": "Make Video Intro",
+          "difference": "Make Video Intro: Create one short reusable branded intro with exact identity, legible title and a clean transition into program content. In contrast, Dot Matrix Brand Wordmark Motion: Produce one exact brand wordmark dot-matrix motion with explicit inputs, boundaries, and acceptance checks."
+        },
+        {
+          "id": "poster-motion",
+          "displayName": "Poster Motion",
+          "difference": "Poster Motion: Animate an uploaded poster into one readable, full-frame motion poster. In contrast, Dot Matrix Brand Wordmark Motion: Produce one exact brand wordmark dot-matrix motion with explicit inputs, boundaries, and acceptance checks."
+        }
+      ]
     },
     {
       "id": "edit-social-video",
@@ -1681,7 +2038,24 @@
         "Default layout": "User-requested delivery format",
         "Model policy": "Platform-aware social edit",
         "Downstream use": "Reels, Shorts, TikTok and social placements"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "combine-videos",
+          "displayName": "Combine Videos",
+          "difference": "Combine Videos: Combine supplied clips into one ordered video with intentional trims, transitions and audio handling; do not regenerate footage. In contrast, Edit Social Video: Turn supplied footage into one platform-ready social video using current placement rules, a strong opening and evidence-faithful captions."
+        },
+        {
+          "id": "make-beat-synced-video",
+          "displayName": "Make Beat-Synced Video",
+          "difference": "Make Beat-Synced Video: Cut supplied visuals to measured music structure and verify the export. In contrast, Edit Social Video: Turn supplied footage into one platform-ready social video using current placement rules, a strong opening and evidence-faithful captions."
+        },
+        {
+          "id": "make-music-video",
+          "displayName": "Make Music Video",
+          "difference": "Make Music Video: Cut authorized footage to one song through a validated lyric, rhythm, and visual-arc EDL. In contrast, Edit Social Video: Turn supplied footage into one platform-ready social video using current placement rules, a strong opening and evidence-faithful captions."
+        }
+      ]
     },
     {
       "id": "editorial-cutout-explainer",
@@ -1715,7 +2089,19 @@
         "Default layout": "User-requested ratio",
         "Model policy": "Current verified image and catalog-selected video routes",
         "Downstream use": "Knowledge and report explainers"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "make-explainer-video",
+          "displayName": "Make Explainer Video",
+          "difference": "Make Explainer Video: Produce a fact-traceable narrated explainer with timed visual beats, subtitles, and final QC. In contrast, Editorial Cutout Explainer: Plan and create a generic editorial cutout explainer with shallow 2D motion and approved evidence beats."
+        },
+        {
+          "id": "line-doodle-explainer",
+          "displayName": "Line-Doodle Explainer",
+          "difference": "Line-Doodle Explainer: Explain one topic with sparse line figures, narration beats, diagrams, and an approved animated storyboard. In contrast, Editorial Cutout Explainer: Plan and create a generic editorial cutout explainer with shallow 2D motion and approved evidence beats."
+        }
+      ]
     },
     {
       "id": "expand-image",
@@ -1841,7 +2227,19 @@
         "Video output": "No",
         "Model policy": "Text-described replacement uses the best verified WeShop AI Model route; supplied model references prefer GPT Image 2 medium/2K",
         "Downstream use": "Pose variants, fashion photoshoots, lookbooks, product pages, posters, banners, and collages"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "change-pose",
+          "displayName": "Change Pose",
+          "difference": "Change Pose: Change a person’s pose without changing their look. In contrast, Fashion Model Replacement: Replace a fashion model while keeping the outfit intact."
+        },
+        {
+          "id": "virtual-try-on",
+          "displayName": "Virtual Try-On",
+          "difference": "Virtual Try-On: Try on or replace a garment with fidelity checks. In contrast, Fashion Model Replacement: Replace a fashion model while keeping the outfit intact."
+        }
+      ]
     },
     {
       "id": "film-reference-prompt-writer",
@@ -2015,7 +2413,24 @@
         "Default layout": "Preserve source composition; no collage",
         "Model policy": "GPT Image 2 Medium/2K for consistency-sensitive final image editing",
         "Downstream use": "Salon consultation, personal preview, and beauty creative"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "change-bangs",
+          "displayName": "Change Bangs",
+          "difference": "Change Bangs: Preview one fringe style without replacing the full haircut. In contrast, Hair Color Change: Preview one new hair color without changing the person or cut."
+        },
+        {
+          "id": "hairstyle-change",
+          "displayName": "Hairstyle Change",
+          "difference": "Hairstyle Change: Preview one different hairstyle without changing identity. In contrast, Hair Color Change: Preview one new hair color without changing the person or cut."
+        },
+        {
+          "id": "shave-head",
+          "displayName": "Shave Head",
+          "difference": "Shave Head: Preview a natural bald or shaved-head appearance. In contrast, Hair Color Change: Preview one new hair color without changing the person or cut."
+        }
+      ]
     },
     {
       "id": "hairstyle-change",
@@ -2050,7 +2465,24 @@
         "Default layout": "Preserve source composition; no collage",
         "Model policy": "GPT Image 2 Medium/2K for consistency-sensitive final image editing",
         "Downstream use": "Salon consultation and personal hairstyle preview"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "change-bangs",
+          "displayName": "Change Bangs",
+          "difference": "Change Bangs: Preview one fringe style without replacing the full haircut. In contrast, Hairstyle Change: Preview one different hairstyle without changing identity."
+        },
+        {
+          "id": "hair-color-change",
+          "displayName": "Hair Color Change",
+          "difference": "Hair Color Change: Preview one new hair color without changing the person or cut. In contrast, Hairstyle Change: Preview one different hairstyle without changing identity."
+        },
+        {
+          "id": "shave-head",
+          "displayName": "Shave Head",
+          "difference": "Shave Head: Preview a natural bald or shaved-head appearance. In contrast, Hairstyle Change: Preview one different hairstyle without changing identity."
+        }
+      ]
     },
     {
       "id": "handdrawn-live-action-fusion",
@@ -2156,7 +2588,19 @@
         "Default layout": "Authority-defined measured head crop; no collage or print sheet unless requested separately",
         "Model policy": "GPT Image 2 Medium/2K only when alteration is permitted; deterministic measured crop always owns final geometry",
         "Downstream use": "Application preparation subject to issuing-authority review"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "make-wallet-photo",
+          "displayName": "Make Wallet Photo",
+          "difference": "Make Wallet Photo: Prepare one wallet-size print portrait from an authorized photo using a real print dimension, crop and bleed specification. In contrast, ID Photo Format: Research the authority, correct the capture, then crop around the measured head."
+        },
+        {
+          "id": "professional-headshot",
+          "displayName": "Professional Headshot",
+          "difference": "Professional Headshot: Research the channel, then create a properly posed and lit professional portrait. In contrast, ID Photo Format: Research the authority, correct the capture, then crop around the measured head."
+        }
+      ]
     },
     {
       "id": "image-combiner",
@@ -2306,7 +2750,19 @@
         "Default layout": "16:9 unless requested otherwise",
         "Model policy": "Current catalog-selected video route; no standalone audio claim",
         "Downstream use": "Educational and knowledge shorts"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "make-explainer-video",
+          "displayName": "Make Explainer Video",
+          "difference": "Make Explainer Video: Produce a fact-traceable narrated explainer with timed visual beats, subtitles, and final QC. In contrast, Line-Doodle Explainer: Explain one topic with sparse line figures, narration beats, diagrams, and an approved animated storyboard."
+        },
+        {
+          "id": "editorial-cutout-explainer",
+          "displayName": "Editorial Cutout Explainer",
+          "difference": "Editorial Cutout Explainer: Plan and create a generic editorial cutout explainer with shallow 2D motion and approved evidence beats. In contrast, Line-Doodle Explainer: Explain one topic with sparse line figures, narration beats, diagrams, and an approved animated storyboard."
+        }
+      ]
     },
     {
       "id": "lip-product-commercial",
@@ -2411,7 +2867,24 @@
         "Default layout": "Destination ratio without geometric stretching",
         "Model policy": "Local deterministic analysis and editing; no paid generation",
         "Downstream use": "Publication after user review and any platform compliance checks"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "combine-videos",
+          "displayName": "Combine Videos",
+          "difference": "Combine Videos: Combine supplied clips into one ordered video with intentional trims, transitions and audio handling; do not regenerate footage. In contrast, Make Beat-Synced Video: Cut supplied visuals to measured music structure and verify the export."
+        },
+        {
+          "id": "edit-social-video",
+          "displayName": "Edit Social Video",
+          "difference": "Edit Social Video: Turn supplied footage into one platform-ready social video using current placement rules, a strong opening and evidence-faithful captions. In contrast, Make Beat-Synced Video: Cut supplied visuals to measured music structure and verify the export."
+        },
+        {
+          "id": "make-music-video",
+          "displayName": "Make Music Video",
+          "difference": "Make Music Video: Cut authorized footage to one song through a validated lyric, rhythm, and visual-arc EDL. In contrast, Make Beat-Synced Video: Cut supplied visuals to measured music structure and verify the export."
+        }
+      ]
     },
     {
       "id": "make-birthday-video",
@@ -2480,7 +2953,19 @@
         "Default layout": "User-requested ratio and exact duration target",
         "Model policy": "Existing verified image/video routes; audio only when supplied or separately supported and authorized",
         "Downstream use": "Human editorial, factual, rights, and publication review"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "line-doodle-explainer",
+          "displayName": "Line-Doodle Explainer",
+          "difference": "Line-Doodle Explainer: Explain one topic with sparse line figures, narration beats, diagrams, and an approved animated storyboard. In contrast, Make Explainer Video: Produce a fact-traceable narrated explainer with timed visual beats, subtitles, and final QC."
+        },
+        {
+          "id": "editorial-cutout-explainer",
+          "displayName": "Editorial Cutout Explainer",
+          "difference": "Editorial Cutout Explainer: Plan and create a generic editorial cutout explainer with shallow 2D motion and approved evidence beats. In contrast, Make Explainer Video: Produce a fact-traceable narrated explainer with timed visual beats, subtitles, and final QC."
+        }
+      ]
     },
     {
       "id": "make-flowchart",
@@ -2686,7 +3171,24 @@
         "Default layout": "User-requested ratio, duration, resolution, and platform format",
         "Model policy": "Deterministic analysis/editing by default; generated media requires separately invoked Atoms",
         "Downstream use": "Human rights, creative, and publication review"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "combine-videos",
+          "displayName": "Combine Videos",
+          "difference": "Combine Videos: Combine supplied clips into one ordered video with intentional trims, transitions and audio handling; do not regenerate footage. In contrast, Make Music Video: Cut authorized footage to one song through a validated lyric, rhythm, and visual-arc EDL."
+        },
+        {
+          "id": "edit-social-video",
+          "displayName": "Edit Social Video",
+          "difference": "Edit Social Video: Turn supplied footage into one platform-ready social video using current placement rules, a strong opening and evidence-faithful captions. In contrast, Make Music Video: Cut authorized footage to one song through a validated lyric, rhythm, and visual-arc EDL."
+        },
+        {
+          "id": "make-beat-synced-video",
+          "displayName": "Make Beat-Synced Video",
+          "difference": "Make Beat-Synced Video: Cut supplied visuals to measured music structure and verify the export. In contrast, Make Music Video: Cut authorized footage to one song through a validated lyric, rhythm, and visual-arc EDL."
+        }
+      ]
     },
     {
       "id": "make-pet-portrait",
@@ -2789,7 +3291,19 @@
         "Default layout": "User-requested placement ratio; preserve a supplied end card when provided",
         "Model policy": "Kling 3 precise product/frames; Kling Omni complex/motion references; Seedance 2.5 long audiovisual/artistic/performance; Veo source-image synchronous audio; Seedance 2.0 routine; H3 large/natural motion",
         "Downstream use": "Human brand/legal review and manual campaign publishing"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "minimalist-product-ad-generator",
+          "displayName": "Minimalist Product Ad Generator",
+          "difference": "Minimalist Product Ad Generator: Produce a sparse, product-faithful commercial with approved copy and beat-level continuity. In contrast, Make Product Commercial: Produce one truthful, continuity-safe short commercial in which the supplied product drives the action."
+        },
+        {
+          "id": "product-launch-video",
+          "displayName": "Product Launch Video",
+          "difference": "Product Launch Video: Product launch-film plan with hook, reveal, and end-card arc. In contrast, Make Product Commercial: Produce one truthful, continuity-safe short commercial in which the supplied product drives the action."
+        }
+      ]
     },
     {
       "id": "make-selfie",
@@ -2930,7 +3444,24 @@
         "Default layout": "Current platform ratio and safe zones",
         "Model policy": "GPT Image 2 Medium",
         "Downstream use": "Video, podcast, and platform covers"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "ai-banner-design",
+          "displayName": "AI Banner Design",
+          "difference": "AI Banner Design: Research and design channel-ready commercial banners. In contrast, Make Thumbnail: Create a platform-aware cover or thumbnail."
+        },
+        {
+          "id": "poster-design",
+          "displayName": "Poster Design",
+          "difference": "Poster Design: Create distinctive posters across varied art directions. In contrast, Make Thumbnail: Create a platform-aware cover or thumbnail."
+        },
+        {
+          "id": "product-detail-page",
+          "displayName": "Product Detail Page",
+          "difference": "Product Detail Page: Build modular ecommerce detail-page image sets. In contrast, Make Thumbnail: Create a platform-aware cover or thumbnail."
+        }
+      ]
     },
     {
       "id": "make-video-intro",
@@ -2964,7 +3495,24 @@
         "Default layout": "User-requested delivery format",
         "Model policy": "GPT Image 2 Medium/2K for title-safe key art, then Kling 3.0 for precise-frame animation",
         "Downstream use": "Channels, shows and branded series"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "brand-stream-mg",
+          "displayName": "Brand Stream MG",
+          "difference": "Brand Stream MG: Produce one logo-led neon brand motion with explicit inputs, boundaries, and acceptance checks. In contrast, Make Video Intro: Create one short reusable branded intro with exact identity, legible title and a clean transition into program content."
+        },
+        {
+          "id": "dot-matrix-brand-wordmark-motion",
+          "displayName": "Dot Matrix Brand Wordmark Motion",
+          "difference": "Dot Matrix Brand Wordmark Motion: Produce one exact brand wordmark dot-matrix motion with explicit inputs, boundaries, and acceptance checks. In contrast, Make Video Intro: Create one short reusable branded intro with exact identity, legible title and a clean transition into program content."
+        },
+        {
+          "id": "poster-motion",
+          "displayName": "Poster Motion",
+          "difference": "Poster Motion: Animate an uploaded poster into one readable, full-frame motion poster. In contrast, Make Video Intro: Create one short reusable branded intro with exact identity, legible title and a clean transition into program content."
+        }
+      ]
     },
     {
       "id": "make-wallet-photo",
@@ -2998,7 +3546,19 @@
         "Default layout": "User-requested or print-defined format",
         "Model policy": "GPT Image 2 Medium/2K for consistency-sensitive final image editing",
         "Downstream use": "Personal wallet prints"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "id-photo-format",
+          "displayName": "ID Photo Format",
+          "difference": "ID Photo Format: Research the authority, correct the capture, then crop around the measured head. In contrast, Make Wallet Photo: Prepare one wallet-size print portrait from an authorized photo using a real print dimension, crop and bleed specification."
+        },
+        {
+          "id": "professional-headshot",
+          "displayName": "Professional Headshot",
+          "difference": "Professional Headshot: Research the channel, then create a properly posed and lit professional portrait. In contrast, Make Wallet Photo: Prepare one wallet-size print portrait from an authorized photo using a real print dimension, crop and bleed specification."
+        }
+      ]
     },
     {
       "id": "make-wedding-photo",
@@ -3102,7 +3662,19 @@
         "Default layout": "User-requested duration, ratio, copy language, and audio plan",
         "Model policy": "Kling 3 precise product control; Kling Omni complex references; Seedance 2.5 audiovisual/artistic; Veo eligible synchronous audio; Seedance 2.0 routine; H3 justified large motion",
         "Downstream use": "Human brand, claim, product-fidelity, and publication review"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "make-product-commercial",
+          "displayName": "Make Product Commercial",
+          "difference": "Make Product Commercial: Produce one truthful, continuity-safe short commercial in which the supplied product drives the action. In contrast, Minimalist Product Ad Generator: Produce a sparse, product-faithful commercial with approved copy and beat-level continuity."
+        },
+        {
+          "id": "product-launch-video",
+          "displayName": "Product Launch Video",
+          "difference": "Product Launch Video: Product launch-film plan with hook, reveal, and end-card arc. In contrast, Minimalist Product Ad Generator: Produce a sparse, product-faithful commercial with approved copy and beat-level continuity."
+        }
+      ]
     },
     {
       "id": "music-video-subtitle-generator",
@@ -3172,7 +3744,24 @@
         "Default layout": "Validated Markdown",
         "Model policy": "Agent-authored planning; no paid media generation or unverified provider call",
         "Downstream use": "$generate-video or another verified Atom selected by Router intent matching"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "cinematic-video-prompt",
+          "displayName": "Cinematic Video Prompt",
+          "difference": "Cinematic Video Prompt: Cinematic or image-to-video motion prompt. In contrast, Narrative Video Prompt: Structured prompt for one narrative video shot."
+        },
+        {
+          "id": "short-audiovisual-prompt",
+          "displayName": "Short Audiovisual Prompt",
+          "difference": "Short Audiovisual Prompt: Compact single-shot audiovisual video prompt. In contrast, Narrative Video Prompt: Structured prompt for one narrative video shot."
+        },
+        {
+          "id": "cross-model-video-prompt-adapter",
+          "displayName": "Cross-model Video Prompt Adapter",
+          "difference": "Cross-model Video Prompt Adapter: Semantic adaptation of an existing video prompt. In contrast, Narrative Video Prompt: Structured prompt for one narrative video shot."
+        }
+      ]
     },
     {
       "id": "narrative-video-storyboard",
@@ -3410,7 +3999,24 @@
         "Video output": "No",
         "Model policy": "Prefer deterministic composition for clean layouts and `ai-collage-maker` for generative collage treatments",
         "Downstream use": "Social photo collections, editorial layouts, moodboards, memory collages, product stories, and printable photo arrangements"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "compose-lookbook",
+          "displayName": "Compose Lookbook",
+          "difference": "Compose Lookbook: Arrange several outfit photos into one editorial page. In contrast, Photo Collage: Arrange original photos into one intentional collage."
+        },
+        {
+          "id": "create-social-carousel",
+          "displayName": "Create Social Carousel",
+          "difference": "Create Social Carousel: Create a coherent mobile-first social carousel as separately generated ordered pages. In contrast, Photo Collage: Arrange original photos into one intentional collage."
+        },
+        {
+          "id": "create-image-deck",
+          "displayName": "Create Image Deck",
+          "difference": "Create Image Deck: Plan, generate, inspect, and package a consistent image-first deck. In contrast, Photo Collage: Arrange original photos into one intentional collage."
+        }
+      ]
     },
     {
       "id": "plan-comic-storyboard",
@@ -3445,7 +4051,24 @@
         "Default layout": "Validated Markdown or JSON following the bundled schema",
         "Model policy": "Agent-authored planning; no paid image generation",
         "Downstream use": "Character reference creation and independent comic-page rendering"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "develop-story",
+          "displayName": "Develop Story",
+          "difference": "Develop Story: Build or repair a story foundation before medium-specific production. In contrast, Plan Comic Storyboard: Convert a story into a validated page-by-page comic production manifest."
+        },
+        {
+          "id": "render-comic-page",
+          "displayName": "Render Comic Page",
+          "difference": "Render Comic Page: Render one storyboarded comic page with character, style, panel, and dialogue continuity. In contrast, Plan Comic Storyboard: Convert a story into a validated page-by-page comic production manifest."
+        },
+        {
+          "id": "plan-film-storyboard",
+          "displayName": "Plan Film Storyboard",
+          "difference": "Plan Film Storyboard: Turn narrative material into timed atomic film shots with continuity and generation handoffs. In contrast, Plan Comic Storyboard: Convert a story into a validated page-by-page comic production manifest."
+        }
+      ]
     },
     {
       "id": "plan-film-storyboard",
@@ -3480,7 +4103,24 @@
         "Default layout": "Validated Markdown or JSON with stable scene/shot IDs",
         "Model policy": "Agent-authored planning; no paid media generation",
         "Downstream use": "Live production, video-generation Atoms, and editing/assembly"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "develop-story",
+          "displayName": "Develop Story",
+          "difference": "Develop Story: Build or repair a story foundation before medium-specific production. In contrast, Plan Film Storyboard: Turn narrative material into timed atomic film shots with continuity and generation handoffs."
+        },
+        {
+          "id": "plan-comic-storyboard",
+          "displayName": "Plan Comic Storyboard",
+          "difference": "Plan Comic Storyboard: Convert a story into a validated page-by-page comic production manifest. In contrast, Plan Film Storyboard: Turn narrative material into timed atomic film shots with continuity and generation handoffs."
+        },
+        {
+          "id": "render-comic-page",
+          "displayName": "Render Comic Page",
+          "difference": "Render Comic Page: Render one storyboarded comic page with character, style, panel, and dialogue continuity. In contrast, Plan Film Storyboard: Turn narrative material into timed atomic film shots with continuity and generation handoffs."
+        }
+      ]
     },
     {
       "id": "poster-design",
@@ -3530,7 +4170,24 @@
         "Video output": "No",
         "Model policy": "Route the best current typography- and composition-capable image model; specialist poster endpoints are optional",
         "Downstream use": "Campaigns, launches, retail offers, event flyers, editorial stories, cultural communication, music, fashion, art, print, and social promotion"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "ai-banner-design",
+          "displayName": "AI Banner Design",
+          "difference": "AI Banner Design: Research and design channel-ready commercial banners. In contrast, Poster Design: Create distinctive posters across varied art directions."
+        },
+        {
+          "id": "make-thumbnail",
+          "displayName": "Make Thumbnail",
+          "difference": "Make Thumbnail: Create a platform-aware cover or thumbnail. In contrast, Poster Design: Create distinctive posters across varied art directions."
+        },
+        {
+          "id": "product-detail-page",
+          "displayName": "Product Detail Page",
+          "difference": "Product Detail Page: Build modular ecommerce detail-page image sets. In contrast, Poster Design: Create distinctive posters across varied art directions."
+        }
+      ]
     },
     {
       "id": "poster-motion",
@@ -3564,7 +4221,24 @@
         "Default layout": "Poster ratio or nearest supported full-frame ratio",
         "Model policy": "Current catalog-selected reference-video route",
         "Downstream use": "Social motion poster"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "brand-stream-mg",
+          "displayName": "Brand Stream MG",
+          "difference": "Brand Stream MG: Produce one logo-led neon brand motion with explicit inputs, boundaries, and acceptance checks. In contrast, Poster Motion: Animate an uploaded poster into one readable, full-frame motion poster."
+        },
+        {
+          "id": "dot-matrix-brand-wordmark-motion",
+          "displayName": "Dot Matrix Brand Wordmark Motion",
+          "difference": "Dot Matrix Brand Wordmark Motion: Produce one exact brand wordmark dot-matrix motion with explicit inputs, boundaries, and acceptance checks. In contrast, Poster Motion: Animate an uploaded poster into one readable, full-frame motion poster."
+        },
+        {
+          "id": "make-video-intro",
+          "displayName": "Make Video Intro",
+          "difference": "Make Video Intro: Create one short reusable branded intro with exact identity, legible title and a clean transition into program content. In contrast, Poster Motion: Animate an uploaded poster into one readable, full-frame motion poster."
+        }
+      ]
     },
     {
       "id": "pov-short-film-generator",
@@ -3748,7 +4422,24 @@
         "Video output": "No; record video opportunities separately without creating them",
         "Model policy": "Call the narrowest installed product/layout Atom or current reference-aware image model, then use deterministic typography and assembly",
         "Downstream use": "Amazon A+ content, marketplace detail images, Shopify/DTC product sections, seller review, localization, and campaign adaptation"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "ai-banner-design",
+          "displayName": "AI Banner Design",
+          "difference": "AI Banner Design: Research and design channel-ready commercial banners. In contrast, Product Detail Page: Build modular ecommerce detail-page image sets."
+        },
+        {
+          "id": "make-thumbnail",
+          "displayName": "Make Thumbnail",
+          "difference": "Make Thumbnail: Create a platform-aware cover or thumbnail. In contrast, Product Detail Page: Build modular ecommerce detail-page image sets."
+        },
+        {
+          "id": "poster-design",
+          "displayName": "Poster Design",
+          "difference": "Poster Design: Create distinctive posters across varied art directions. In contrast, Product Detail Page: Build modular ecommerce detail-page image sets."
+        }
+      ]
     },
     {
       "id": "product-launch-video",
@@ -3783,7 +4474,19 @@
         "Default layout": "Validated Markdown",
         "Model policy": "Agent-authored planning; no paid media generation or unverified provider call",
         "Downstream use": "$make-video-intro or another verified Atom selected by Router intent matching"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "make-product-commercial",
+          "displayName": "Make Product Commercial",
+          "difference": "Make Product Commercial: Produce one truthful, continuity-safe short commercial in which the supplied product drives the action. In contrast, Product Launch Video: Product launch-film plan with hook, reveal, and end-card arc."
+        },
+        {
+          "id": "minimalist-product-ad-generator",
+          "displayName": "Minimalist Product Ad Generator",
+          "difference": "Minimalist Product Ad Generator: Produce a sparse, product-faithful commercial with approved copy and beat-level continuity. In contrast, Product Launch Video: Product launch-film plan with hook, reveal, and end-card arc."
+        }
+      ]
     },
     {
       "id": "product-packaging",
@@ -3824,7 +4527,19 @@
         "Video output": "No",
         "Model policy": "Route the best current layout- and reference-capable image model; specialized packaging endpoints are optional",
         "Downstream use": "Packaging exploration, design reviews, brand direction, and briefing a packaging designer"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "ai-product",
+          "displayName": "AI Product",
+          "difference": "AI Product: Place a real product into a new commercial scene. In contrast, Product Packaging: Turn product references into a structured packaging concept board."
+        },
+        {
+          "id": "create-white-background-product-mockup",
+          "displayName": "White Background Product Mockup",
+          "difference": "White Background Product Mockup: Create product, flat-lay, and ghost-mannequin mockups without identity drift. In contrast, Product Packaging: Turn product references into a structured packaging concept board."
+        }
+      ]
     },
     {
       "id": "professional-headshot",
@@ -3859,7 +4574,19 @@
         "Default layout": "Research-derived crop and safe area; no collage",
         "Model policy": "GPT Image 2 Medium/2K for consistency-sensitive final image editing",
         "Downstream use": "LinkedIn, team pages, company directories, bios, resumes, and press kits"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "id-photo-format",
+          "displayName": "ID Photo Format",
+          "difference": "ID Photo Format: Research the authority, correct the capture, then crop around the measured head. In contrast, Professional Headshot: Research the channel, then create a properly posed and lit professional portrait."
+        },
+        {
+          "id": "make-wallet-photo",
+          "displayName": "Make Wallet Photo",
+          "difference": "Make Wallet Photo: Prepare one wallet-size print portrait from an authorized photo using a real print dimension, crop and bleed specification. In contrast, Professional Headshot: Research the channel, then create a properly posed and lit professional portrait."
+        }
+      ]
     },
     {
       "id": "recolor-object",
@@ -3893,7 +4620,19 @@
         "Default layout": "Source composition",
         "Model policy": "GPT Image 2 Medium/2K for consistency-sensitive final image editing",
         "Downstream use": "Product colorways and previews"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "apply-photo-filter",
+          "displayName": "Apply Photo Filter",
+          "difference": "Apply Photo Filter: Apply one filter without changing scene content. In contrast, Recolor Object: Recolor one object without tinting the whole image."
+        },
+        {
+          "id": "remove-photo-filter",
+          "displayName": "Remove Photo Filter",
+          "difference": "Remove Photo Filter: Remove an artificial grade and restore a natural look. In contrast, Recolor Object: Recolor one object without tinting the whole image."
+        }
+      ]
     },
     {
       "id": "recreate-social-photo",
@@ -4074,7 +4813,19 @@
         "Default layout": "Source composition",
         "Model policy": "GPT Image 2 Medium/2K for consistency-sensitive final image editing",
         "Downstream use": "Photo cleanup and commercial retouching"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "clean-room",
+          "displayName": "Clean Room",
+          "difference": "Clean Room: Remove room clutter without redesigning the space. In contrast, Remove Object: Remove one object and naturally rebuild what was behind it."
+        },
+        {
+          "id": "restyle-room",
+          "displayName": "Restyle Room",
+          "difference": "Restyle Room: Restyle a supplied room while preserving architecture, layout constraints and declared keep-items. In contrast, Remove Object: Remove one object and naturally rebuild what was behind it."
+        }
+      ]
     },
     {
       "id": "remove-photo-filter",
@@ -4108,7 +4859,19 @@
         "Default layout": "Source composition",
         "Model policy": "GPT Image 2 Medium/2K for consistency-sensitive final image editing",
         "Downstream use": "Photo correction and asset normalization"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "apply-photo-filter",
+          "displayName": "Apply Photo Filter",
+          "difference": "Apply Photo Filter: Apply one filter without changing scene content. In contrast, Remove Photo Filter: Remove an artificial grade and restore a natural look."
+        },
+        {
+          "id": "recolor-object",
+          "displayName": "Recolor Object",
+          "difference": "Recolor Object: Recolor one object without tinting the whole image. In contrast, Remove Photo Filter: Remove an artificial grade and restore a natural look."
+        }
+      ]
     },
     {
       "id": "remove-video-mark",
@@ -4177,7 +4940,24 @@
         "Default layout": "Storyboard-defined page ratio and reading direction",
         "Model policy": "GPT Image 2 Medium/2K with canonical character references",
         "Downstream use": "Multipage comic assembly, targeted page revision, translation, or deterministic bubble repair"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "develop-story",
+          "displayName": "Develop Story",
+          "difference": "Develop Story: Build or repair a story foundation before medium-specific production. In contrast, Render Comic Page: Render one storyboarded comic page with character, style, panel, and dialogue continuity."
+        },
+        {
+          "id": "plan-comic-storyboard",
+          "displayName": "Plan Comic Storyboard",
+          "difference": "Plan Comic Storyboard: Convert a story into a validated page-by-page comic production manifest. In contrast, Render Comic Page: Render one storyboarded comic page with character, style, panel, and dialogue continuity."
+        },
+        {
+          "id": "plan-film-storyboard",
+          "displayName": "Plan Film Storyboard",
+          "difference": "Plan Film Storyboard: Turn narrative material into timed atomic film shots with continuity and generation handoffs. In contrast, Render Comic Page: Render one storyboarded comic page with character, style, panel, and dialogue continuity."
+        }
+      ]
     },
     {
       "id": "restyle-room",
@@ -4211,7 +4991,19 @@
         "Default layout": "Source-preserving or dimension-defined format",
         "Model policy": "GPT Image 2 Medium/2K for consistency-sensitive source-image editing",
         "Downstream use": "Interior planning previews"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "clean-room",
+          "displayName": "Clean Room",
+          "difference": "Clean Room: Remove room clutter without redesigning the space. In contrast, Restyle Room: Restyle a supplied room while preserving architecture, layout constraints and declared keep-items."
+        },
+        {
+          "id": "remove-object",
+          "displayName": "Remove Object",
+          "difference": "Remove Object: Remove one object and naturally rebuild what was behind it. In contrast, Restyle Room: Restyle a supplied room while preserving architecture, layout constraints and declared keep-items."
+        }
+      ]
     },
     {
       "id": "restyle-video",
@@ -4245,7 +5037,24 @@
         "Default layout": "User-requested delivery format",
         "Model policy": "MiniMax H3 for source-video editing; stop if its current adapter cannot accept the required source instead of inventing another model capability",
         "Downstream use": "Creative video transformations"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "add-video-effect",
+          "displayName": "Add Video Effect",
+          "difference": "Add Video Effect: Add one specified effect to a supplied video at a defined time and region while preserving underlying footage. In contrast, Restyle Video: Transform the visual treatment of a supplied video while retaining timing, motion, subjects and continuity."
+        },
+        {
+          "id": "correct-video-color",
+          "displayName": "Correct Video Color",
+          "difference": "Correct Video Color: Correct white balance, exposure and shot-to-shot consistency without changing content or creative look. In contrast, Restyle Video: Transform the visual treatment of a supplied video while retaining timing, motion, subjects and continuity."
+        },
+        {
+          "id": "upscale-video",
+          "displayName": "Upscale Video",
+          "difference": "Upscale Video: Increase supplied video resolution and clarity while preserving timing, content, grain intent and natural detail. In contrast, Restyle Video: Transform the visual treatment of a supplied video while retaining timing, motion, subjects and continuity."
+        }
+      ]
     },
     {
       "id": "retouch-blemish",
@@ -4279,7 +5088,19 @@
         "Default layout": "Source composition",
         "Model policy": "GPT Image 2 Medium/2K for consistency-sensitive final image editing",
         "Downstream use": "Portrait and profile-photo cleanup"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "apply-makeup",
+          "displayName": "Apply Makeup",
+          "difference": "Apply Makeup: Preview one makeup look without replacing or reshaping the face. In contrast, Retouch Blemish: Remove temporary blemishes without plastic-looking skin."
+        },
+        {
+          "id": "smooth-wrinkles",
+          "displayName": "Smooth Wrinkles",
+          "difference": "Smooth Wrinkles: Reduce chosen skin or clothing wrinkles without flattening structure. In contrast, Retouch Blemish: Remove temporary blemishes without plastic-looking skin."
+        }
+      ]
     },
     {
       "id": "shave-head",
@@ -4314,7 +5135,24 @@
         "Default layout": "Preserve source composition; no collage",
         "Model policy": "GPT Image 2 Medium/2K for consistency-sensitive final image editing",
         "Downstream use": "Grooming consultation and personal preview"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "change-bangs",
+          "displayName": "Change Bangs",
+          "difference": "Change Bangs: Preview one fringe style without replacing the full haircut. In contrast, Shave Head: Preview a natural bald or shaved-head appearance."
+        },
+        {
+          "id": "hairstyle-change",
+          "displayName": "Hairstyle Change",
+          "difference": "Hairstyle Change: Preview one different hairstyle without changing identity. In contrast, Shave Head: Preview a natural bald or shaved-head appearance."
+        },
+        {
+          "id": "hair-color-change",
+          "displayName": "Hair Color Change",
+          "difference": "Hair Color Change: Preview one new hair color without changing the person or cut. In contrast, Shave Head: Preview a natural bald or shaved-head appearance."
+        }
+      ]
     },
     {
       "id": "short-audiovisual-prompt",
@@ -4349,7 +5187,24 @@
         "Default layout": "Validated Markdown",
         "Model policy": "Agent-authored planning; no paid media generation or unverified provider call",
         "Downstream use": "$generate-video or another verified Atom selected by Router intent matching"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "cinematic-video-prompt",
+          "displayName": "Cinematic Video Prompt",
+          "difference": "Cinematic Video Prompt: Cinematic or image-to-video motion prompt. In contrast, Short Audiovisual Prompt: Compact single-shot audiovisual video prompt."
+        },
+        {
+          "id": "narrative-video-prompt",
+          "displayName": "Narrative Video Prompt",
+          "difference": "Narrative Video Prompt: Structured prompt for one narrative video shot. In contrast, Short Audiovisual Prompt: Compact single-shot audiovisual video prompt."
+        },
+        {
+          "id": "cross-model-video-prompt-adapter",
+          "displayName": "Cross-model Video Prompt Adapter",
+          "difference": "Cross-model Video Prompt Adapter: Semantic adaptation of an existing video prompt. In contrast, Short Audiovisual Prompt: Compact single-shot audiovisual video prompt."
+        }
+      ]
     },
     {
       "id": "smooth-wrinkles",
@@ -4383,7 +5238,19 @@
         "Default layout": "Source composition",
         "Model policy": "GPT Image 2 Medium/2K for consistency-sensitive final image editing",
         "Downstream use": "Portrait and apparel retouching"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "apply-makeup",
+          "displayName": "Apply Makeup",
+          "difference": "Apply Makeup: Preview one makeup look without replacing or reshaping the face. In contrast, Smooth Wrinkles: Reduce chosen skin or clothing wrinkles without flattening structure."
+        },
+        {
+          "id": "retouch-blemish",
+          "displayName": "Retouch Blemish",
+          "difference": "Retouch Blemish: Remove temporary blemishes without plastic-looking skin. In contrast, Smooth Wrinkles: Reduce chosen skin or clothing wrinkles without flattening structure."
+        }
+      ]
     },
     {
       "id": "social-knowledge-notes",
@@ -4625,7 +5492,24 @@
         "Default layout": "User-requested delivery format",
         "Model policy": "WeShop AI Video Enhancer",
         "Downstream use": "Archival and delivery enhancement"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "add-video-effect",
+          "displayName": "Add Video Effect",
+          "difference": "Add Video Effect: Add one specified effect to a supplied video at a defined time and region while preserving underlying footage. In contrast, Upscale Video: Increase supplied video resolution and clarity while preserving timing, content, grain intent and natural detail."
+        },
+        {
+          "id": "correct-video-color",
+          "displayName": "Correct Video Color",
+          "difference": "Correct Video Color: Correct white balance, exposure and shot-to-shot consistency without changing content or creative look. In contrast, Upscale Video: Increase supplied video resolution and clarity while preserving timing, content, grain intent and natural detail."
+        },
+        {
+          "id": "restyle-video",
+          "displayName": "Restyle Video",
+          "difference": "Restyle Video: Transform the visual treatment of a supplied video while retaining timing, motion, subjects and continuity. In contrast, Upscale Video: Increase supplied video resolution and clarity while preserving timing, content, grain intent and natural detail."
+        }
+      ]
     },
     {
       "id": "video-model-advisor",
@@ -4744,7 +5628,19 @@
         "Video output": "No",
         "Model policy": "Default to GPT Image 2; fall back by capability to `virtualtryon` or `ai-clothes-changer`; reserve `weshopFlash` for explicit speed/cost priority",
         "Downstream use": "Pose changes, model replacement, photoshoots, lookbooks, product pages, posters, banners, and photo collages"
-      }
+      },
+      "similarSkills": [
+        {
+          "id": "change-pose",
+          "displayName": "Change Pose",
+          "difference": "Change Pose: Change a person’s pose without changing their look. In contrast, Virtual Try-On: Try on or replace a garment with fidelity checks."
+        },
+        {
+          "id": "fashion-model-replacement",
+          "displayName": "Fashion Model Replacement",
+          "difference": "Fashion Model Replacement: Replace a fashion model while keeping the outfit intact. In contrast, Virtual Try-On: Try on or replace a garment with fidelity checks."
+        }
+      ]
     },
     {
       "id": "visualize-floor-plan",

@@ -14,6 +14,7 @@ description: Plan and create one ordered, visually consistent multi-page social 
 - Short description: Create a coherent mobile-first social carousel as separately generated ordered pages.
 - Cover image: /skill-covers/create-social-carousel.png
 
+- Similar skills: compose-lookbook, photo-collage, create-image-deck
 ## What this skill does
 
 - Turns one message into a cover, ordered content beats, and a closing CTA without repeating the same claim.

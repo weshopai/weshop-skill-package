@@ -10,6 +10,7 @@ description: Use for an approval-first knowledge explainer with generic editoria
 - Route label: Evidence-led editorial cutout production
 - Tone: orange
 - Short description: Plan and create a generic editorial cutout explainer with shallow 2D motion and approved evidence beats.
+- Similar skills: make-explainer-video, line-doodle-explainer
 ## What this skill does
 - Builds a thesis, beat plan, and key visual system before paid media.
 - Uses readable evidence and generic cutout grammar without copying any publisher style.

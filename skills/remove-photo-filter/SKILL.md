@@ -11,6 +11,7 @@ description: Neutralize an applied photographic filter or color grade and recove
 - Tone: sky
 - Short description: Remove an artificial grade and restore a natural look.
 - Cover image: /skill-covers/remove-photo-filter.png
+- Similar skills: apply-photo-filter, recolor-object
 ## What this skill does
 - Identifies visible filter symptoms and asks the image model to neutralize them coherently.
 - Preserves people, geometry, objects, text, crop, and genuine scene lighting.

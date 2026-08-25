@@ -13,6 +13,7 @@ description: Use for cinematic or image-to-video motion prompt from approved use
 - Tone: blue
 - Short description: Cinematic or image-to-video motion prompt.
 
+- Similar skills: narrative-video-prompt, short-audiovisual-prompt, cross-model-video-prompt-adapter
 ## What this skill does
 
 - Freezes the request, approved facts, source assets, constraints, and acceptance checks.

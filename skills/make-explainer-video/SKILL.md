@@ -13,6 +13,7 @@ description: Research, script, plan, generate, and assemble one short narrated e
 - Tone: purple
 - Short description: Produce a fact-traceable narrated explainer with timed visual beats, subtitles, and final QC.
 
+- Similar skills: line-doodle-explainer, editorial-cutout-explainer
 ## What this skill does
 
 - Builds a source-backed explanation around one audience question and a clear narrative throughline.

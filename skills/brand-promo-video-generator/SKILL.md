@@ -13,6 +13,7 @@ description: Create one complete short promotional video for a brand, app, websi
 - Tone: purple
 - Short description: Produce one authenticity-checked promotional short for a brand, app, website, shop, service, or launch.
 
+- Similar skills: digital-product-promo-generator
 ## What this skill does
 
 - Builds a source-backed brand truth sheet and identity-asset provenance manifest before creative production.

@@ -13,6 +13,7 @@ description: "Create one authentic digital-product promo plan and video from aut
 - Tone: purple
 - Short description: Produce one authentic digital-product promo plan and video with explicit inputs, boundaries, and acceptance checks.
 
+- Similar skills: brand-promo-video-generator
 ## What this skill does
 
 - Captures the specific requested outcome and authorized asset roles.

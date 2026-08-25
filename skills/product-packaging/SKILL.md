@@ -17,6 +17,7 @@ Turn product and brand references into one coherent packaging concept board. The
 - Short description: Turn product references into a structured packaging concept board.
 - Cover image: /skill-covers/product-packaging.png
 
+- Similar skills: ai-product, create-white-background-product-mockup
 ## What this skill does
 
 - Maps product, logo, color, structure, and style references to explicit roles before generation.

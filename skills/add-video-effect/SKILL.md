@@ -15,6 +15,7 @@ description: Add one specified visual effect to supplied video at a defined time
 
 - Cover image: /skill-covers/add-video-effect.png
 
+- Similar skills: correct-video-color, restyle-video, upscale-video
 ## What this skill does
 
 - Adds a bounded effect such as glow, particles, flare, weather or speed treatment.

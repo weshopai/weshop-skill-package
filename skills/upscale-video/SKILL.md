@@ -15,6 +15,7 @@ description: Increase supplied video resolution and clarity while preserving tim
 
 - Cover image: /skill-covers/upscale-video.png
 
+- Similar skills: add-video-effect, correct-video-color, restyle-video
 ## What this skill does
 
 - Upscales one video to requested resolution with temporal consistency.

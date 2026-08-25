@@ -13,6 +13,7 @@ description: Direct and produce one short product commercial from a locked brief
 - Tone: purple
 - Short description: Produce one truthful, continuity-safe short commercial in which the supplied product drives the action.
 
+- Similar skills: minimalist-product-ad-generator, product-launch-video
 ## What this skill does
 
 - Locks product truth, audience promise, duration, CTA, and claim evidence before creative treatment.

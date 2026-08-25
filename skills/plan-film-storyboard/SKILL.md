@@ -13,6 +13,7 @@ description: Convert a script, scene, synopsis, dialogue draft, or existing film
 - Tone: blue
 - Short description: Turn narrative material into timed atomic film shots with continuity and generation handoffs.
 
+- Similar skills: develop-story, plan-comic-storyboard, render-comic-page
 ## What this skill does
 
 - Freezes source facts and adaptation permission before translating abstract writing into visible or audible evidence.

@@ -13,6 +13,7 @@ description: Use for product launch-film plan with hook, reveal, and end-card ar
 - Tone: blue
 - Short description: Product launch-film plan with hook, reveal, and end-card arc.
 
+- Similar skills: make-product-commercial, minimalist-product-ad-generator
 ## What this skill does
 
 - Freezes the request, approved facts, source assets, constraints, and acceptance checks.

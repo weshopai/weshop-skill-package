@@ -15,6 +15,7 @@ description: Turn supplied footage into one platform-ready social video using cu
 
 - Cover image: /skill-covers/edit-social-video.png
 
+- Similar skills: combine-videos, make-beat-synced-video, make-music-video
 ## What this skill does
 
 - Selects and orders the best moments for a named social placement and runtime.

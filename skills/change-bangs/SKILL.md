@@ -15,6 +15,7 @@ description: Add or change only bangs in one authorized portrait while preservin
 - Short description: Preview one fringe style without replacing the full haircut.
 - Cover image: /skill-covers/change-bangs.png
 
+- Similar skills: hairstyle-change, hair-color-change, shave-head
 ## What this skill does
 
 - Produces one portrait with one requested bangs style.

@@ -14,6 +14,7 @@ description: Prepare one wallet-size print portrait from an authorized photo usi
 - Short description: Prepare one wallet-size print portrait from an authorized photo using a real print dimension, crop and bleed specification.
 - Cover image: /skill-covers/make-wallet-photo.png
 
+- Similar skills: id-photo-format, professional-headshot
 ## What this skill does
 
 - Formats a portrait for a named wallet print size instead of guessing one universal dimension.

@@ -18,6 +18,7 @@ Create one product-detail deliverable as a set of independent modules. Treat a l
 - Short description: Build modular ecommerce detail-page image sets.
 - Cover image: /skill-covers/product-detail-page.jpg
 
+- Similar skills: ai-banner-design, make-thumbnail, poster-design
 ## What this skill does
 
 - Researches the target platform and locale before choosing dimensions, module types, upload form, copy placement, file limits, or synthetic-media requirements.

@@ -13,6 +13,7 @@ description: Develop a story idea, weak premise, outline, or draft into a struct
 - Tone: blue
 - Short description: Build or repair a story foundation before medium-specific production.
 
+- Similar skills: plan-comic-storyboard, render-comic-page, plan-film-storyboard
 ## What this skill does
 
 - Diagnoses whether the current need is foundation, story-relevant world pressure, causal beats, scenes, or structural revision.

@@ -11,6 +11,7 @@ description: Reduce specified skin lines or garment wrinkles in a supplied image
 - Tone: sand
 - Short description: Reduce chosen skin or clothing wrinkles without flattening structure.
 - Cover image: /skill-covers/smooth-wrinkles.png
+- Similar skills: apply-makeup, retouch-blemish
 ## What this skill does
 - Treats skin lines and fabric creases as different AI edits with different protected traits.
 - Reduces distracting wrinkles while retaining realistic texture and form-defining folds.

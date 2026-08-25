@@ -17,6 +17,7 @@ Research the placement before designing. Deliver one banner whose dimensions, sa
 - Short description: Research and design channel-ready commercial banners.
 - Cover image: /skill-covers/ai-banner-design.png
 
+- Similar skills: make-thumbnail, poster-design, product-detail-page
 ## What this skill does
 
 - Resolves the banner's placement, crop behavior, and safe area through live official research when available or a labeled built-in preset when browsing is unavailable.

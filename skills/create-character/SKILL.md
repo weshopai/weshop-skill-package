@@ -14,6 +14,7 @@ description: "Create an original reusable character through a canonical-first wo
 - Short description: Build one canonical identity, then derive seven consistent character assets from it.
 - Cover image: /skill-covers/create-character.png
 
+- Similar skills: casting, create-npc
 ## What this skill does
 
 - Turns a brief or authorized identity reference into one reusable original character.

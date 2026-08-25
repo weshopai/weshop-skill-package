@@ -14,6 +14,7 @@ description: Render one finished comic page from an approved page storyboard, ch
 - Short description: Render one storyboarded comic page with character, style, panel, and dialogue continuity.
 - Cover image: /skill-covers/render-comic-page.png
 
+- Similar skills: develop-story, plan-comic-storyboard, plan-film-storyboard
 ## What this skill does
 
 - Converts one approved page manifest into one intentional multi-panel comic page.

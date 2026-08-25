@@ -13,6 +13,7 @@ description: Turn a story idea, synopsis, or finished script into a production-r
 - Tone: blue
 - Short description: Convert a story into a validated page-by-page comic production manifest.
 
+- Similar skills: develop-story, render-comic-page, plan-film-storyboard
 ## What this skill does
 
 - Expands a thin premise only when requested, then preserves its characters, causal spine, tone, and ending.

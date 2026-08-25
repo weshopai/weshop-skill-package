@@ -15,6 +15,7 @@ description: Preview one authorized person with a natural bald or closely shaved
 - Short description: Preview a natural bald or shaved-head appearance.
 - Cover image: /skill-covers/shave-head.png
 
+- Similar skills: change-bangs, hairstyle-change, hair-color-change
 ## What this skill does
 
 - Produces one bald or shaved-head portrait.

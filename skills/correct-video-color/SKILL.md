@@ -15,6 +15,7 @@ description: Correct white balance, exposure, contrast, and shot-to-shot color c
 
 - Cover image: /skill-covers/correct-video-color.png
 
+- Similar skills: add-video-effect, restyle-video, upscale-video
 ## What this skill does
 
 - Restores plausible neutrals, skin tones, highlight detail and shadow separation over time.

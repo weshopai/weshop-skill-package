@@ -17,6 +17,7 @@ Turn one product brief or reference image into one commercial mockup. Treat name
 - Short description: Create product, flat-lay, and ghost-mannequin mockups without identity drift.
 - Cover image: /skill-covers/create-white-background-product-mockup.png
 
+- Similar skills: ai-product, product-packaging
 ## What this skill does
 
 - Extracts only the mockup mode, product, output, framing, and fidelity constraints that change generation.

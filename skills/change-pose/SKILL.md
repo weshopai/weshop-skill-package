@@ -18,6 +18,7 @@ Create one requested pose or three useful choices from one dressed-person image.
 - Tone: blue
 - Short description: Change a person’s pose without changing their look.
 
+- Similar skills: fashion-model-replacement, virtual-try-on
 ## What this skill does
 
 - Changes only the pose of one already-dressed person.

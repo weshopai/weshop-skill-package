@@ -13,6 +13,7 @@ description: Edit supplied video clips or stills to supplied music using measure
 - Tone: blue
 - Short description: Cut supplied visuals to measured music structure and verify the export.
 
+- Similar skills: combine-videos, edit-social-video, make-music-video
 ## What this skill does
 
 - Measures beats, sections, peaks, and valleys instead of guessing timestamps.

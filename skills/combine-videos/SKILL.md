@@ -15,6 +15,7 @@ description: Combine supplied clips into one ordered video with intentional trim
 
 - Cover image: /skill-covers/combine-videos.png
 
+- Similar skills: edit-social-video, make-beat-synced-video, make-music-video
 ## What this skill does
 
 - Builds one timeline from multiple clips with explicit order and cut points.

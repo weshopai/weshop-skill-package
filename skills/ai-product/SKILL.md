@@ -17,6 +17,7 @@ Create one product-faithful commercial scene from one real product image. Keep t
 - Short description: Place a real product into a new commercial scene.
 - Cover image: /skill-covers/ai-product.png
 
+- Similar skills: create-white-background-product-mockup, product-packaging
 ## What this skill does
 
 - Preserves one supplied product while changing its background, surface, lighting, and commercial context.

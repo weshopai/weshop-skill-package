@@ -14,6 +14,7 @@ description: Design one selected original logo mark or lockup from a brand brief
 - Short description: Design one selected original logo mark or lockup from a brand brief, after concept reduction and application checks.
 - Cover image: /skill-covers/create-logo.png
 
+- Similar skills: create-mascot-logo
 ## What this skill does
 
 - Reduces brand strategy to one ownable symbol, wordmark, monogram or lockup.

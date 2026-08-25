@@ -13,6 +13,7 @@ description: Use for a diagram-first educational short that turns a topic or les
 - Tone: blue
 - Short description: Explain one topic with sparse line figures, narration beats, diagrams, and an approved animated storyboard.
 
+- Similar skills: make-explainer-video, editorial-cutout-explainer
 ## What this skill does
 
 - Extracts one learning outcome and a clear explanatory structure from source material.

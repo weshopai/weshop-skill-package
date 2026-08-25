@@ -15,6 +15,7 @@ description: Replace only the hairstyle in one authorized portrait while preserv
 - Short description: Preview one different hairstyle without changing identity.
 - Cover image: /skill-covers/hairstyle-change.png
 
+- Similar skills: change-bangs, hair-color-change, shave-head
 ## What this skill does
 
 - Produces one portrait with one requested hairstyle.

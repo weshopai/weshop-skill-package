@@ -17,6 +17,7 @@ Turn supplied photos into one designed canvas. Keep original photos as source as
 - Cover image: /skill-covers/photo-collage.png
 - Short description: Arrange original photos into one intentional collage.
 
+- Similar skills: compose-lookbook, create-social-carousel, create-image-deck
 ## What this skill does
 
 - Assigns a role and importance to every supplied photo before choosing a layout.

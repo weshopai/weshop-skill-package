@@ -14,6 +14,7 @@ description: Create one original non-player character image whose occupation, fa
 - Short description: Create one original non-player character image whose occupation, faction and gameplay role are visually legible.
 - Cover image: /skill-covers/create-npc.png
 
+- Similar skills: casting, create-character
 ## What this skill does
 
 - Translates gameplay function, world, faction and personality into one NPC concept.

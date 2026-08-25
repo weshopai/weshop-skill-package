@@ -13,6 +13,7 @@ description: Use for semantic adaptation of an existing video prompt from approv
 - Tone: blue
 - Short description: Semantic adaptation of an existing video prompt.
 
+- Similar skills: cinematic-video-prompt, narrative-video-prompt, short-audiovisual-prompt
 ## What this skill does
 
 - Freezes the request, approved facts, source assets, constraints, and acceptance checks.

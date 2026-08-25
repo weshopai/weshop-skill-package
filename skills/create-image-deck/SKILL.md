@@ -14,6 +14,7 @@ description: Create a consistent image-first presentation deck from supplied con
 - Short description: Plan, generate, inspect, and package a consistent image-first deck.
 - Cover image: /skill-covers/create-image-deck.png
 
+- Similar skills: compose-lookbook, photo-collage, create-social-carousel
 ## What this skill does
 
 - Converts approved content into an ordered slide manifest with one communication job per page.

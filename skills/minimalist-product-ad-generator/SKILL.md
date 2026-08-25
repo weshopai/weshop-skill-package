@@ -13,6 +13,7 @@ description: Produce one minimalist product film from authorized product assets,
 - Tone: purple
 - Short description: Produce a sparse, product-faithful commercial with approved copy and beat-level continuity.
 
+- Similar skills: make-product-commercial, product-launch-video
 ## What this skill does
 
 - Locks product truth, product geometry, copy, CTA, and a minimalist visual direction before generation.

@@ -13,6 +13,7 @@ description: Use for structured prompt for one narrative video shot from approve
 - Tone: blue
 - Short description: Structured prompt for one narrative video shot.
 
+- Similar skills: cinematic-video-prompt, short-audiovisual-prompt, cross-model-video-prompt-adapter
 ## What this skill does
 
 - Freezes the request, approved facts, source assets, constraints, and acceptance checks.

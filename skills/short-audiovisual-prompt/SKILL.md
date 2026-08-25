@@ -13,6 +13,7 @@ description: Use for compact single-shot audiovisual video prompt from approved 
 - Tone: blue
 - Short description: Compact single-shot audiovisual video prompt.
 
+- Similar skills: cinematic-video-prompt, narrative-video-prompt, cross-model-video-prompt-adapter
 ## What this skill does
 
 - Freezes the request, approved facts, source assets, constraints, and acceptance checks.

@@ -15,6 +15,7 @@ description: Create one short reusable branded video intro with exact identity, 
 
 - Cover image: /skill-covers/make-video-intro.png
 
+- Similar skills: brand-stream-mg, dot-matrix-brand-wordmark-motion, poster-motion
 ## What this skill does
 
 - Turns approved logo, name and sonic direction into compact motion identity.

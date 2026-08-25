@@ -15,6 +15,7 @@ description: Transform the overall visual style of supplied video while retainin
 
 - Cover image: /skill-covers/restyle-video.png
 
+- Similar skills: add-video-effect, correct-video-color, upscale-video
 ## What this skill does
 
 - Applies one declared style across moving footage rather than a static color filter.

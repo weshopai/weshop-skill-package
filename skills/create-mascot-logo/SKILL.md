@@ -14,6 +14,7 @@ description: Create a highly simplified square IP mascot logo through three prod
 - Short description: Create a compact, cute mascot mark with controlled silhouette, color, and separately labeled directions.
 - Cover image: /skill-covers/create-mascot-logo.png
 
+- Similar skills: create-logo
 ## What this skill does
 
 - Converts product purpose and personality into three concise mascot directions before generation.

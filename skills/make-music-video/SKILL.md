@@ -15,6 +15,7 @@ description: Analyze one authorized song and supplied or rights-cleared footage,
 - Tone: purple
 - Short description: Cut authorized footage to one song through a validated lyric, rhythm, and visual-arc EDL.
 
+- Similar skills: combine-videos, edit-social-video, make-beat-synced-video
 ## What this skill does
 
 - Maps song sections, dynamics, beats, lyrics, and emotional turns before selecting shots.

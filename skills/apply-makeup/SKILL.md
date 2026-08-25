@@ -15,6 +15,7 @@ description: Apply one makeup look to an authorized portrait while preserving id
 - Short description: Preview one makeup look without replacing or reshaping the face.
 - Cover image: /skill-covers/apply-makeup.png
 
+- Similar skills: retouch-blemish, smooth-wrinkles
 ## What this skill does
 
 - Produces one portrait with one coherent makeup treatment.

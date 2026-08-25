@@ -11,6 +11,7 @@ description: Remove specified clutter from a room photograph with an AI-native c
 - Tone: green
 - Short description: Remove room clutter without redesigning the space.
 - Cover image: /skill-covers/clean-room.png
+- Similar skills: remove-object, restyle-room
 ## What this skill does
 - Removes a declared clutter set as one coherent cleanup result.
 - Reconstructs floors, walls, textiles, and surfaces while preserving architecture and fixed furnishings.

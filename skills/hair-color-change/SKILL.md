@@ -15,6 +15,7 @@ description: Change only the hair color in one authorized portrait while preserv
 - Short description: Preview one new hair color without changing the person or cut.
 - Cover image: /skill-covers/hair-color-change.png
 
+- Similar skills: change-bangs, hairstyle-change, shave-head
 ## What this skill does
 
 - Produces one recolored-hair portrait from one authorized source portrait.

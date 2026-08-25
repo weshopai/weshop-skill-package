@@ -14,6 +14,7 @@ description: Restyle a supplied room while preserving architecture, spatial layo
 - Short description: Restyle a supplied room while preserving architecture, layout constraints and declared keep-items.
 - Cover image: /skill-covers/restyle-room.png
 
+- Similar skills: clean-room, remove-object
 ## What this skill does
 
 - Changes interior style, palette, soft goods and movable furnishings around a real room.

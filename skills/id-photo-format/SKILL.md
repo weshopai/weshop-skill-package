@@ -16,6 +16,7 @@ description: Prepare one authorized portrait for one explicitly named ID-photo o
 
 - Cover image: /skill-covers/id-photo-format.png
 
+- Similar skills: make-wallet-photo, professional-headshot
 ## What this skill does
 
 - Produces one exact ID-photo file for one named authority and document type.

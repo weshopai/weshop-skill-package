@@ -18,6 +18,7 @@ Execute one garment-to-person transformation with a model-plus-Prompt route. Tre
 - Tone: violet
 - Short description: Try on or replace a garment with fidelity checks.
 
+- Similar skills: change-pose, fashion-model-replacement
 ## What this skill does
 
 - Supports scene-aware try-on and person-plus-garment clothes replacement.

@@ -13,6 +13,7 @@ description: "Create one logo-led neon brand motion from authorized inputs. Use 
 - Tone: purple
 - Short description: Produce one logo-led neon brand motion with explicit inputs, boundaries, and acceptance checks.
 
+- Similar skills: dot-matrix-brand-wordmark-motion, make-video-intro, poster-motion
 ## What this skill does
 
 - Captures the specific requested outcome and authorized asset roles.

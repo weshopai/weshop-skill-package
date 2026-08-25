@@ -12,6 +12,8 @@ Turn a communication idea into one poster with a clear focal point, intentional 
 - Display name: Poster Design
 - Category: Layout / composition
 - Status: Ready
+- Featured: yes
+- Cover image: /skill-covers/poster-design.png
 - Route label: Model-routed poster generation
 - Tone: coral
 - Short description: Create distinctive posters across varied art directions.

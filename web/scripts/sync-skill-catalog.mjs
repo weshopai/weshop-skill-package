@@ -16,6 +16,8 @@ const parseSkill = async (slug) => {
   const source = await readFile(path.join(skillsRoot, slug, "SKILL.md"), "utf8");
   const catalog = parseFields(section(source, "Catalog", "What this skill does"));
   if (!catalog["Display name"]) return null;
+  if (catalog.Featured && !["yes", "no"].includes(catalog.Featured)) throw new Error(`${slug}: Featured must be yes or no when provided`);
+  if (catalog["Cover image"] && !catalog["Cover image"].startsWith("/skill-covers/")) throw new Error(`${slug}: Cover image must be served from /skill-covers/`);
   const whatThisSkillDoes = section(source, "What this skill does", "How to use").split("\n").filter((line) => line.startsWith("- ")).map((line) => line.slice(2).trim());
   const howToUseSection = section(source, "How to use", "User-facing output");
   const promptExamples = [...howToUseSection.matchAll(/#### (.+?)\n+```text\n([\s\S]*?)\n```/g)].map((match) => ({ title: match[1].trim(), prompt: match[2].trim() }));

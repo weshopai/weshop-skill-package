@@ -12,6 +12,8 @@ Execute one garment-to-person transformation with a model-plus-Prompt route. Tre
 - Display name: Virtual Try-On
 - Category: Commercial production
 - Status: Ready
+- Featured: yes
+- Cover image: /skill-covers/virtual-try-on.png
 - Route label: GPT Image 2 with capability-matched fallbacks
 - Tone: violet
 - Short description: Try on or replace a garment with fidelity checks.

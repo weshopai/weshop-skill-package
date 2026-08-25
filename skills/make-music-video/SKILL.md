@@ -9,6 +9,8 @@ description: Analyze one authorized song and supplied or rights-cleared footage,
 - Display name: Make Music Video
 - Category: Video and audio
 - Status: Ready
+- Featured: yes
+- Cover image: /skill-covers/make-music-video.png
 - Route label: Music-aware EDL and deterministic render
 - Tone: purple
 - Short description: Cut authorized footage to one song through a validated lyric, rhythm, and visual-arc EDL.

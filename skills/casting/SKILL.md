@@ -1,13 +1,13 @@
 ---
-name: casting-cn
+name: casting
 description: "Create a Chinese screen-role casting package from a six-field role card: one pure-white, face-first casting portrait for approval, then only selected identity-bound full-body, expression-grid, or turnaround assets. Use for short-drama, film, and casting-character roles; unlike `create-character` (relationship 0.84), choose this for actor-style face selection and a confirmation gate, and choose `create-character` for a canonical multi-panel production pack and scenes. Do not use for real-person edits, game-role NPC concepts, or generic character sheets."
 ---
 
-# Casting CN
+# Casting
 
 ## Catalog
 
-- Display name: Casting CN
+- Display name: Casting
 - Category: Character and brand
 - Status: Ready
 - Route label: GPT Image 2 face-first casting package
@@ -16,7 +16,7 @@ description: "Create a Chinese screen-role casting package from a six-field role
 
 ## What this skill does
 
-- Converts a role card or script description into an original fictional Chinese screen character.
+- Converts a role card or script description into a Chinese screen character.
 - Generates exactly one vertical, pure-white, front-facing casting portrait first.
 - Stops for explicit face approval. Only then creates user-selected full-body, 3×3 expression-grid, and/or turnaround assets.
 - Uses separately controlled high-end CG rendering for 漫剧, 3D漫剧, 3D角色, 三维, CG, or 三渲二 requests.
@@ -25,7 +25,7 @@ description: "Create a Chinese screen-role casting package from a six-field role
 
 Request the six role-card fields when available: person type, build, facial features, skin/hair/makeup, temperament, and intended character type. A script or freeform description is acceptable. Complete only reasonable omissions and state them in one sentence before submission.
 
-This Skill creates original fictional people. Do not reproduce a protected character or edit a real person. References must be authorized. Bind only an accepted public image URL, in supplied order—never invent a URL or asset token. Clothing must not override the requested face, skin, expression, or bone-structure intent.
+Do not reproduce a protected character or edit a real person. References must be authorized. Bind only an accepted public image URL, in supplied order—never invent a URL or asset token. Clothing must not override the requested face, skin, expression, or bone-structure intent.
 
 #### Example
 
@@ -38,7 +38,7 @@ This Skill creates original fictional people. Do not reproduce a protected chara
 - Media type: Approval-gated image casting package
 - Default quantity: One face-setting portrait
 - Optional quantity: One selected full-body, expression grid, and/or turnaround board
-- Content: Original fictional Chinese screen-role character on a pure-white background
+- Content: Chinese screen-role character on a pure-white background
 - Default layout: Vertical 3:4 portrait; selected 3:4 derivatives; 16:9 turnaround board
 - Model policy: GPT Image 2 Medium/2K after current-schema verification
 - Downstream use: Short-drama, film, comic, and story production casting references

@@ -117,4 +117,4 @@ Do not move work into `skills/` until the intake answers all of these:
 - Have unsafe scripts, remote domains, retries, and secret handling been removed?
 - Does a fuzzy semantic routing test contain at least three natural-language requests that select this candidate and three ambiguous requests that select named installed neighbors?
 
-Run `npm run skills:intake -- validate <slug>`. This is an autonomous completeness check; it does not request or require human approval. Record the lifecycle decision in the intake and summarize resulting package changes in `handoff.md`.
+Run `npm run skills:intake -- validate <slug>`. This is an autonomous completeness check; it does not request or require human approval. Before promotion, record the required cross-client catalog fields (display name, category, description, cover decision, usage summary, and up to three differentiated neighbors) in the intake. The promoted Skill must then pass `npm --prefix web run catalog:check`, which produces the published `catalog/skills.json`. Record the lifecycle decision in the intake and summarize resulting package changes in `handoff.md`.

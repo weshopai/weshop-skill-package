@@ -4,8 +4,9 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "node scripts/sync-skill-catalog.mjs && vite",
-    "build": "node scripts/sync-skill-catalog.mjs && tsc -b && vite build && node scripts/prepare-sites-worker.mjs",
+    "catalog:check": "node scripts/sync-skill-catalog.mjs && node scripts/check-skill-catalog.mjs",
+    "dev": "npm run catalog:check && vite",
+    "build": "npm run catalog:check && tsc -b && vite build && node scripts/prepare-sites-worker.mjs",
     "preview": "vite preview"
   },
   "dependencies": {

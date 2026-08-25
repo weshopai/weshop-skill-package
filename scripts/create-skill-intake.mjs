@@ -39,6 +39,12 @@ if (command === "validate") {
   const selfCases = cases.filter(([, expected]) => expected === slug).length;
   const neighborCases = cases.filter(([, expected]) => expected !== slug && installed.some((entry) => entry.isDirectory() && entry.name === expected)).length;
   if (selfCases < 3 || neighborCases < 3) errors.push("fuzzy semantic test needs 3 candidate requests and 3 near-neighbor requests that name installed Skills.");
+  const clientCatalog = intake.split("## Cross-client catalog record")[1]?.split("## ")[0] ?? "";
+  for (const field of ["Display name", "Category", "Description", "Cover decision", "How to use summary"]) {
+    if (!new RegExp(`^- ${field}: (?!Not documented|TODO).+`, "m").test(clientCatalog)) errors.push(`cross-client catalog record requires ${field}`);
+  }
+  const relatedRows = [...clientCatalog.matchAll(/^\|\s*`?([a-z0-9-]+)`?\s*\|\s*[^|]+\|\s*[^|]+\|$/gm)].filter(([, related]) => related !== "---");
+  if (relatedRows.length > 3) errors.push("cross-client catalog record may list at most three similar Skills.");
   if (errors.length) throw new Error(`Invalid current intake ${slug}:\n- ${errors.join("\n- ")}`);
   console.log(`Valid current intake: ${slug} (${cases.length} semantic cases).`);
   process.exit(0);
@@ -110,6 +116,19 @@ Before closing the intake, test natural-language wording against the candidate a
 | Not documented | ${slug} | Not documented |
 | Not documented | ${slug} | Not documented |
 | Not documented | related-installed-skill | Not documented |
+
+## Cross-client catalog record
+
+This record becomes the client contract when the Atom is promoted. Use exact Catalog wording where possible. A missing custom cover is valid only when the fallback cover is explicitly selected. List only the most useful related Skills, never more than three, and state the decisive difference.
+
+- Display name: Not documented
+- Category: Not documented
+- Description: Not documented
+- Cover decision: Not documented
+- How to use summary: Not documented
+
+| Similar Skill | Difference from this Atom | Why the client should suggest it |
+| --- | --- | --- |
 | Not documented | related-installed-skill | Not documented |
 | Not documented | related-installed-skill | Not documented |
 

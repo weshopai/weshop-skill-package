@@ -19,6 +19,7 @@ Every publishable Atom defines:
 - one user result and required/optional asset roles;
 - preservation invariants and neighboring Skill exclusions;
 - `Catalog`, `What this skill does`, `How to use`, and at least one Prompt example;
+- a complete client catalog record: display name, category, short description, and an optional `/skill-covers/` image. The build normalizes these into the published `catalog/skills.json`; missing cover art receives the package fallback cover;
 - the verified WeShop Agent/model and native OpenAPI fields;
 - Prompt construction, defaults, output quantity and media contract;
 - observable acceptance, stopping conditions, and error-responsive retries;
@@ -37,7 +38,7 @@ When the harness has no native WeShop tool, execution uses only the official `we
 Only complete Atoms belong under `skills/<slug>/`. Then:
 
 1. Add the slug to the correct README inventory category and update displayed counts.
-2. Build the website; its catalog is generated from the Skill sections.
+2. Run `npm --prefix web run catalog:check`; it generates and validates the published `catalog/skills.json` consumed by Canvas and other clients, as well as the website copy. Never hand-edit either generated catalog.
 3. Validate the Skill and full repository using [the quality gates](README.md#quality-gates).
 4. For a new execution route, perform an authorized representative run or keep the route visibly unverified.
 5. Record decisions, validation, artifacts, and pending work in `handoff.md`.

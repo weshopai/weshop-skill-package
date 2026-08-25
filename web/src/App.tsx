@@ -1,18 +1,11 @@
 import { useMemo, useState } from "react";
 import { ArrowRight, Check, ChevronDown, Copy, Paperclip, Search, Sparkles, Terminal, WandSparkles, X, Zap } from "lucide-react";
-import skillDetails from "./generated/skill-details.json";
+import skillCatalog from "./generated/skill-catalog.json";
 
-type Detail = (typeof skillDetails)[keyof typeof skillDetails];
-type Skill = { id: keyof typeof skillDetails; name: string; description: string; category: string; route: string; tone: string; featured: boolean; cover?: string; detail: Detail };
-
-const skills: Skill[] = Object.entries(skillDetails).map(([id, detail]) => ({
-  id: id as keyof typeof skillDetails,
-  name: detail.catalog["Display name"], description: detail.catalog["Short description"],
-  category: detail.catalog.Category, route: detail.catalog["Route label"], tone: detail.catalog.Tone,
-  featured: (detail.catalog as Record<string, string>).Featured === "yes", cover: (detail.catalog as Record<string, string>)["Cover image"], detail
-})).sort((a, b) => Number(b.featured) - Number(a.featured) || a.name.localeCompare(b.name));
+type Skill = (typeof skillCatalog.skills)[number];
+const skills: Skill[] = [...skillCatalog.skills].sort((a, b) => Number(b.featured) - Number(a.featured) || a.displayName.localeCompare(b.displayName));
 const filters = ["All skills", "Featured", ...new Set(skills.map((skill) => skill.category))];
-const outputField = (detail: Detail, key: string) => (detail.output as Record<string, string>)[key];
+const outputField = (skill: Skill, key: string) => (skill.output as unknown as Record<string, string>)[key];
 
 export default function App() {
   const [filter, setFilter] = useState("All skills");
@@ -21,9 +14,9 @@ export default function App() {
   const [active, setActive] = useState<Skill | null>(null);
   const [installMode, setInstallMode] = useState<"prompt" | "command">("prompt");
   const [copied, setCopied] = useState(false);
-  const visible = useMemo(() => skills.filter((skill) => (filter === "All skills" || (filter === "Featured" ? skill.featured : skill.category === filter)) && `${skill.name} ${skill.description}`.toLowerCase().includes(query.toLowerCase())), [filter, query]);
+  const visible = useMemo(() => skills.filter((skill) => (filter === "All skills" || (filter === "Featured" ? skill.featured : skill.category === filter)) && `${skill.displayName} ${skill.description} ${skill.categoryTags.join(" ")}`.toLowerCase().includes(query.toLowerCase())), [filter, query]);
   const installText = active ? installMode === "prompt"
-    ? `Review and install the ${active.name} skill from https://github.com/Jason12196/weshop-skill-package/tree/main/skills/${active.id}, then tell me when it is ready to use.`
+    ? `Review and install the ${active.displayName} skill from https://github.com/Jason12196/weshop-skill-package/tree/main/skills/${active.id}, then tell me when it is ready to use.`
     : `npx skills add Jason12196/weshop-skill-package --skill ${active.id}` : "";
   const copyInstall = async () => { await navigator.clipboard.writeText(installText); setCopied(true); window.setTimeout(() => setCopied(false), 1800); };
 
@@ -37,15 +30,16 @@ export default function App() {
     <section className="skills-section">
       <div className="skills-head"><div><p className="eyebrow">Skills for WeShop</p><h2>Installable creative workflows.</h2></div><div className="search"><Search size={18} /><input aria-label="搜索技能" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search skills" /></div></div>
       <div className="filter-row">{filters.map((item) => <button key={item} className={filter === item ? "selected" : ""} onClick={() => setFilter(item)}>{item}</button>)}</div>
-      <section className="skill-group atom-group"><div className="skill-group-heading"><div><p className="skill-group-kicker">Atom Skills</p><h3>Standalone creative building blocks</h3></div><span>{visible.length} installable tools</span></div><div className="skill-grid">{visible.map((skill, index) => <article className="skill-card" key={skill.id} onClick={() => setActive(skill)}><div className={`skill-visual ${skill.tone}${skill.cover ? " has-cover" : ""}`}>{skill.cover && <img className="cover-image" src={skill.cover} alt="" />}<span className="cover-number">{String(index + 1).padStart(2, "0")}</span><span className="cover-category">{skill.category}</span>{skill.featured && <span className="featured-tag"><Sparkles size={11} /> Featured</span>}<div className="visual-orbit"><i /><i /><i /></div><div className="cover-info"><span className="cover-status ready">Ready to install</span><h3>{skill.name}</h3><div><span>{skill.route}</span><ArrowRight size={18} /></div></div></div></article>)}</div></section>
+      <section className="skill-group atom-group"><div className="skill-group-heading"><div><p className="skill-group-kicker">Skill catalog</p><h3>Installable creative building blocks</h3></div><span>{visible.length} installable tools</span></div><div className="skill-grid">{visible.map((skill, index) => <article className="skill-card" key={skill.id} onClick={() => setActive(skill)}><div className={`skill-visual ${skill.tone} has-cover`}><img className="cover-image" src={skill.coverImage} alt="" /><span className="cover-number">{String(index + 1).padStart(2, "0")}</span><span className="cover-category">{skill.categoryTags.join(" · ")}</span>{skill.featured && <span className="featured-tag"><Sparkles size={11} /> Featured</span>}<div className="visual-orbit"><i /><i /><i /></div><div className="cover-info"><span className="cover-status ready">Ready to install</span><h3>{skill.displayName}</h3><div><span>{skill.routeLabel}</span><ArrowRight size={18} /></div></div></div></article>)}</div></section>
     </section>
   </main>
   {active && <div className="drawer-backdrop" onClick={() => setActive(null)}><aside className="drawer" onClick={(event) => event.stopPropagation()}>
-    <button className="drawer-close" onClick={() => setActive(null)}><X /></button><p className="eyebrow">{active.category} workflow</p><h2>{active.name} {active.featured && <span className="drawer-featured"><Sparkles size={15} /> Featured</span>}</h2><p className="drawer-desc">{active.description}</p>
-    <div className="route-line"><Zap size={16} /><div><span>Routes through</span><strong>{active.route}</strong></div></div>
+    <button className="drawer-close" onClick={() => setActive(null)}><X /></button><p className="eyebrow">{active.categoryTags.join(" · ")} workflow</p><h2>{active.displayName} {active.featured && <span className="drawer-featured"><Sparkles size={15} /> Featured</span>}</h2><p className="drawer-desc">{active.description}</p>
+    <div className="route-line"><Zap size={16} /><div><span>Routes through</span><strong>{active.routeLabel}</strong></div></div>
     <section className="install-options"><div className="install-title"><div><p>Install options</p><span>The website is a catalog; only the selected Skill is installed.</span></div><WandSparkles size={22} /></div><div className="install-tabs"><button className={installMode === "prompt" ? "active" : ""} onClick={() => setInstallMode("prompt")}>Prompt</button><button className={installMode === "command" ? "active" : ""} onClick={() => setInstallMode("command")}><Terminal size={15} /> Command</button></div><div className="install-box"><span>{installMode === "prompt" ? "Copy this sentence to your AI assistant" : "Run in your terminal"}</span><code>{installText}</code><button className={copied ? "copy-install copied" : "copy-install"} onClick={copyInstall}>{copied ? <Check size={17} /> : <Copy size={17} />}{copied ? "Copied" : "Copy"}</button></div></section>
-    <section className="output-contract"><div className="section-heading"><h3>Output</h3><span>Defined by SKILL.md</span></div><div className="output-grid"><div><span>Media</span><strong>{outputField(active.detail, "Media type")}</strong></div><div><span>Quantity</span><strong>{outputField(active.detail, "Default quantity")}</strong></div><div className="wide"><span>Composition</span><strong>{outputField(active.detail, "Content per image") ?? outputField(active.detail, "Content per video")}</strong></div></div></section>
-    <details className="workflow-details" open><summary>What this skill does</summary><div className="skill-source-content">{active.detail.whatThisSkillDoes.map((item) => <p key={item}>{item}</p>)}</div></details>
-    <section className="prompt-examples"><h3>How to use</h3><p>{active.detail.howToUse}</p><div className="example-list">{active.detail.promptExamples.map((example) => <details key={example.title}><summary>{example.title}</summary><div className="prompt-code"><code>{example.prompt}</code></div></details>)}</div></section>
+    <section className="output-contract"><div className="section-heading"><h3>Output</h3><span>Defined by SKILL.md</span></div><div className="output-grid"><div><span>Media</span><strong>{outputField(active, "Media type")}</strong></div><div><span>Quantity</span><strong>{outputField(active, "Default quantity")}</strong></div><div className="wide"><span>Composition</span><strong>{outputField(active, "Content per image") ?? outputField(active, "Content per video")}</strong></div></div></section>
+    <details className="workflow-details" open><summary>What this skill does</summary><div className="skill-source-content">{active.whatThisSkillDoes.map((item) => <p key={item}>{item}</p>)}</div></details>
+    <section className="prompt-examples"><h3>How to use</h3><p>{active.howToUse.summary}</p><div className="example-list">{active.howToUse.promptExamples.map((example) => <details key={example.title}><summary>{example.title}</summary><div className="prompt-code"><code>{example.prompt}</code></div></details>)}</div></section>
+    {active.similarSkills.length > 0 && <section className="prompt-examples"><h3>Similar skills</h3><div className="skill-source-content">{active.similarSkills.map((skill) => <p key={skill.id}><strong>{skill.displayName}</strong> — {skill.difference}</p>)}</div></section>}
   </aside></div>}</div>;
 }

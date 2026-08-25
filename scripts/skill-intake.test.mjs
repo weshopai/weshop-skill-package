@@ -32,6 +32,18 @@ const intake = `# External Skill intake: ${slug}
 | Make one ordinary video shot | generate-video | No special contract |
 | Animate this image | animate-image | Bounded image motion |
 | Join these accepted clips | combine-videos | Existing clips only |
+
+## Cross-client catalog record
+
+- Display name: Intake Validation Fixture
+- Category: Video and audio
+- Description: Produce the fixture's distinct validated outcome.
+- Cover decision: Use the package fallback cover.
+- How to use summary: Provide the authorized input and desired outcome.
+
+| Similar Skill | Difference from this Atom | Why the client should suggest it |
+| --- | --- | --- |
+| generate-video | Generates a general video shot rather than the fixture's specific output contract. | The user may only need a generic shot. |
 `;
 
 const capabilityMap = `# WeShop capability substitution: ${slug}

@@ -5,6 +5,39 @@ description: Orchestrate a WeShop creative workflow that already needs multiple 
 
 # Multi-step workflow orchestration
 
+## Catalog
+
+- Display name: Multi-step Workflow Orchestration
+- Category: Platform tooling
+- Status: Ready
+- Route label: Dependency-aware multi-Skill planning
+- Tone: ink
+- Short description: Plan and coordinate a creative request that needs multiple Skills, research, or material handoffs.
+
+## What this skill does
+
+- Builds a dependency-aware plan for work that cannot be completed by one Atom.
+- Binds intermediate outputs and applies one final acceptance gate.
+
+## How to use
+
+Use this Skill only after routing identifies multiple dependent operations, research, ambiguity, or material risk.
+
+#### Plan a campaign workflow
+
+```text
+Plan a multi-step workflow to research a product claim, create a product scene, then compose the approved image into a social carousel.
+```
+
+## User-facing output
+
+- Media type: Multi-step route plan
+- Default quantity: 1 dependency-aware plan
+- Content per image: Not applicable
+- Default layout: Structured DAG with inputs, handoffs, and final acceptance
+- Model policy: Each selected Skill owns its model choice
+- Downstream use: Coordinated creative execution
+
 Use this Skill only after the harness-level Router has escalated a request beyond one directly callable Atom. A clear single-Atom request must call that Atom directly.
 
 1. Inspect the Skills currently visible to the harness. Treat each Skill's frontmatter description as its discovery use case; do not rely on a Skill-owned list, operation enum, or remembered package count.

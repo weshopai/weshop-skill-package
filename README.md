@@ -39,7 +39,7 @@ npm install -g weshop-skill-package@latest
 weshop-skills version
 ```
 
-Node.js 22 LTS and npm are required. The npm package is public and does not require a GitHub checkout. Its version always matches the corresponding stable [GitHub Release](https://github.com/weshopai/weshop-skill-pakage/releases).
+Node.js 22 LTS and npm are required. The npm package is public and does not require a GitHub checkout. Its version always matches the corresponding stable [GitHub Release](https://github.com/weshopai/weshop-skill-package/releases).
 
 ### 2. Choose your agent
 
@@ -109,7 +109,7 @@ By default, managed installations are symlinks. Existing symlinked Skills follow
 
 Package updates never scan, modify, upload, or delete user-owned custom Skills. Custom drafts remain under `~/.weshop-skill-package/custom-skills/`, and user-installed custom Skills remain owned by the user.
 
-To follow future releases without running a command, use [GitHub Releases](https://github.com/weshopai/weshop-skill-pakage/releases), subscribe through the repository's **Watch → Custom → Releases** option, or follow the [release Atom feed](https://github.com/weshopai/weshop-skill-pakage/releases.atom).
+To follow future releases without running a command, use [GitHub Releases](https://github.com/weshopai/weshop-skill-package/releases), subscribe through the repository's **Watch → Custom → Releases** option, or follow the [release Atom feed](https://github.com/weshopai/weshop-skill-package/releases.atom).
 
 By default, installation uses symlinks. Add `--copy` if you need an isolated copy:
 
@@ -185,6 +185,10 @@ For compound work, `orchestrate-multi-step-workflow` discovers installed Skills 
 ## Complete Skill inventory 🧩
 
 The `skills/` directory contains 133 creative Atom Skills, one platform-tooling Skill, one Router, and one multi-step orchestration Skill. Categories below are for browsing only and do not participate in hard-coded selection.
+
+### Client catalog contract
+
+Published packages include [`catalog/skills.json`](catalog/skills.json), a versioned, client-neutral catalog generated from the installed `SKILL.md` files. It provides each Skill's cover reference, category and tags, description, usage summary and examples, plus up to three differentiated related Skills. Clients may use it for presentation, but must continue to discover and execute Skills from `SKILL.md`: the catalog is optional so individually copied Skills, older package versions, and third-party/custom directories remain compatible.
 
 | Category | Skills |
 | --- | --- |
@@ -281,7 +285,7 @@ Useful commands:
 
 ## 📄 License
 
-Available under the [MIT License](https://github.com/weshopai/weshop-skill-pakage/blob/main/LICENSE).
+Available under the [MIT License](https://github.com/weshopai/weshop-skill-package/blob/main/LICENSE).
 
 ---
 

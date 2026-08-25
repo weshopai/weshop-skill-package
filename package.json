@@ -4,13 +4,13 @@
   "description": "Content-first WeShop Router, Atom Skills, multi-step workflow orchestration, model catalog, and maintenance tooling.",
   "license": "MIT",
   "author": "WeShop AI",
-  "homepage": "https://github.com/weshopai/weshop-skill-pakage#readme",
+  "homepage": "https://github.com/weshopai/weshop-skill-package#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/weshopai/weshop-skill-pakage.git"
+    "url": "git+https://github.com/weshopai/weshop-skill-package.git"
   },
   "bugs": {
-    "url": "https://github.com/weshopai/weshop-skill-pakage/issues"
+    "url": "https://github.com/weshopai/weshop-skill-package/issues"
   },
   "keywords": [
     "weshop",
@@ -32,6 +32,8 @@
     "!dist/**/*.test.js",
     "!dist/**/*.test.d.ts",
     "skills/",
+    "catalog/skills.json",
+    "schemas/skill-catalog.schema.json",
     "models/catalog.json",
     "scripts/weshop-skills.mjs",
     "scripts/manage-skills.mjs",

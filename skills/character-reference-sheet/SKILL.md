@@ -6,6 +6,30 @@ description: Compatibility entry for older character-sheet requests. Route the c
 
 `create-character` now owns character reference creation and downstream character assets as one consistency-controlled workflow.
 
+## Catalog
+
+- Display name: Character Reference Sheet
+- Category: Platform tooling
+- Status: Ready
+- Route label: Compatibility redirect to Create Character
+- Tone: ink
+- Short description: Redirect legacy character-sheet requests to the canonical character workflow without creating a duplicate run.
+
+## What this skill does
+
+- Preserves compatibility for older character-sheet requests.
+- Redirects execution to Create Character, which owns the canonical sheet and optional expansion.
+
+## How to use
+
+Use this compatibility entry only when an existing integration or prompt explicitly selects `character-reference-sheet`; new requests should select Create Character.
+
+#### Redirect a legacy request
+
+```text
+Use character-reference-sheet for this older integration and preserve the supplied character brief.
+```
+
 When this legacy Skill is selected:
 
 1. Redirect the request to `$create-character` without submitting a generation task here.

@@ -15,9 +15,6 @@ const section = (source, heading, nextHeading) => {
 };
 const firstParagraph = (value) => value.split("\n\n")[0].replace(/\n+/g, " ").trim();
 const tag = (value) => value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
-const ignoredKeywords = new Set(["and", "are", "can", "create", "creative", "final", "from", "for", "image", "into", "media", "new", "one", "only", "original", "real", "reference", "request", "scene", "skill", "that", "the", "this", "use", "using", "video", "with", "workflow"]);
-const keywords = (value) => new Set((value.toLowerCase().match(/[a-z0-9]{3,}/g) ?? []).filter((word) => !ignoredKeywords.has(word)));
-const overlap = (left, right) => [...left].filter((word) => right.has(word)).length;
 const parseSkill = async (slug) => {
   const source = await readFile(path.join(skillsRoot, slug, "SKILL.md"), "utf8");
   const catalog = parseFields(section(source, "Catalog", "What this skill does"));
@@ -30,6 +27,7 @@ const parseSkill = async (slug) => {
   const promptExamples = [...howToUseSection.matchAll(/#### (.+?)\n+```text\n([\s\S]*?)\n```/g)].map((match) => ({ title: match[1].trim(), prompt: match[2].trim() }));
   const output = parseFields(section(source, "User-facing output", "Route"));
   if (!whatThisSkillDoes.length || !howToUseSection || !output["Media type"]) throw new Error(`${slug}: display fields are incomplete`);
+  const similarSkillIds = catalog["Similar skills"]?.split(",").map((id) => id.trim()).filter(Boolean) ?? [];
   return {
     id: slug,
     displayName: catalog["Display name"],
@@ -43,17 +41,21 @@ const parseSkill = async (slug) => {
     whatThisSkillDoes,
     howToUse: { summary: firstParagraph(howToUseSection), promptExamples },
     output,
+    similarSkillIds,
   };
 };
 const directories = (await readdir(skillsRoot, { withFileTypes: true })).filter((entry) => entry.isDirectory()).map((entry) => entry.name).sort();
 const parsed = await Promise.all(directories.map(parseSkill));
-const withSimilarSkills = parsed.map((skill) => {
-  const terms = keywords(`${skill.displayName} ${skill.description}`);
-  const similarSkills = parsed.filter((candidate) => candidate.id !== skill.id).map((candidate) => {
-    const sharedTerms = overlap(terms, keywords(`${candidate.displayName} ${candidate.description}`));
-    return { candidate, score: sharedTerms + (candidate.category === skill.category ? 0.25 : 0), sharedTerms };
-  }).filter(({ sharedTerms }) => sharedTerms > 0).sort((a, b) => b.score - a.score || a.candidate.displayName.localeCompare(b.candidate.displayName)).slice(0, 3)
-    .map(({ candidate }) => ({ id: candidate.id, displayName: candidate.displayName, difference: `${candidate.displayName}: ${candidate.description} In contrast, ${skill.displayName}: ${skill.description}` }));
+const skillsById = new Map(parsed.map((skill) => [skill.id, skill]));
+const withSimilarSkills = parsed.map(({ similarSkillIds, ...skill }) => {
+  if (!similarSkillIds.length) return skill;
+  if (similarSkillIds.length > 3) throw new Error(`${skill.id}: Catalog Similar skills may contain at most three IDs`);
+  const similarSkills = similarSkillIds.map((id) => {
+    const candidate = skillsById.get(id);
+    if (!candidate || id === skill.id) throw new Error(`${skill.id}: Catalog Similar skills contains invalid ID ${id}`);
+    return { id, displayName: candidate.displayName, difference: `${candidate.displayName}: ${candidate.description} In contrast, ${skill.displayName}: ${skill.description}` };
+  });
+  if (new Set(similarSkillIds).size !== similarSkillIds.length) throw new Error(`${skill.id}: Catalog Similar skills contains duplicate IDs`);
   return { ...skill, similarSkills };
 });
 const outputDir = path.join(root, "web/src/generated");

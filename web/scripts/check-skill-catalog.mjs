@@ -12,8 +12,10 @@ for (const skill of catalog.skills) {
   for (const field of ["id", "displayName", "description", "category", "coverImage", "routeLabel", "tone"]) if (typeof skill[field] !== "string" || !skill[field]) throw new Error(`${skill.id}: missing ${field}`);
   if (!Array.isArray(skill.categoryTags) || !skill.categoryTags.length) throw new Error(`${skill.id}: missing categoryTags`);
   if (!skill.howToUse?.summary || !Array.isArray(skill.howToUse.promptExamples)) throw new Error(`${skill.id}: invalid howToUse`);
-  if (!Array.isArray(skill.similarSkills) || skill.similarSkills.length > 3) throw new Error(`${skill.id}: similarSkills must contain at most three entries`);
-  if (skill.similarSkills.some((similar) => similar.id === skill.id || !ids.has(similar.id) || !similar.difference)) throw new Error(`${skill.id}: invalid similar Skill`);
+  if (skill.similarSkills !== undefined) {
+    if (!Array.isArray(skill.similarSkills) || skill.similarSkills.length > 3) throw new Error(`${skill.id}: similarSkills must contain at most three entries`);
+    if (skill.similarSkills.some((similar) => similar.id === skill.id || !ids.has(similar.id) || !similar.difference)) throw new Error(`${skill.id}: invalid similar Skill`);
+  }
   await access(path.join(root, "web/public", skill.coverImage));
 }
 console.log(`Validated normalized catalog for ${catalog.skills.length} Skills.`);

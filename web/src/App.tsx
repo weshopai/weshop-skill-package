@@ -2,7 +2,8 @@ import { useMemo, useState } from "react";
 import { ArrowRight, Check, ChevronDown, Copy, Paperclip, Search, Sparkles, Terminal, WandSparkles, X, Zap } from "lucide-react";
 import skillCatalog from "./generated/skill-catalog.json";
 
-type Skill = (typeof skillCatalog.skills)[number];
+type SimilarSkill = { id: string; displayName: string; difference: string };
+type Skill = Omit<(typeof skillCatalog.skills)[number], "similarSkills"> & { similarSkills?: SimilarSkill[] };
 const skills: Skill[] = [...skillCatalog.skills].sort((a, b) => Number(b.featured) - Number(a.featured) || a.displayName.localeCompare(b.displayName));
 const filters = ["All skills", "Featured", ...new Set(skills.map((skill) => skill.category))];
 const outputField = (skill: Skill, key: string) => (skill.output as unknown as Record<string, string>)[key];
@@ -15,6 +16,7 @@ export default function App() {
   const [installMode, setInstallMode] = useState<"prompt" | "command">("prompt");
   const [copied, setCopied] = useState(false);
   const visible = useMemo(() => skills.filter((skill) => (filter === "All skills" || (filter === "Featured" ? skill.featured : skill.category === filter)) && `${skill.displayName} ${skill.description} ${skill.categoryTags.join(" ")}`.toLowerCase().includes(query.toLowerCase())), [filter, query]);
+  const activeSimilarSkills = active?.similarSkills ?? [];
   const installText = active ? installMode === "prompt"
     ? `Review and install the ${active.displayName} skill from https://github.com/Jason12196/weshop-skill-package/tree/main/skills/${active.id}, then tell me when it is ready to use.`
     : `npx skills add Jason12196/weshop-skill-package --skill ${active.id}` : "";
@@ -40,6 +42,6 @@ export default function App() {
     <section className="output-contract"><div className="section-heading"><h3>Output</h3><span>Defined by SKILL.md</span></div><div className="output-grid"><div><span>Media</span><strong>{outputField(active, "Media type")}</strong></div><div><span>Quantity</span><strong>{outputField(active, "Default quantity")}</strong></div><div className="wide"><span>Composition</span><strong>{outputField(active, "Content per image") ?? outputField(active, "Content per video")}</strong></div></div></section>
     <details className="workflow-details" open><summary>What this skill does</summary><div className="skill-source-content">{active.whatThisSkillDoes.map((item) => <p key={item}>{item}</p>)}</div></details>
     <section className="prompt-examples"><h3>How to use</h3><p>{active.howToUse.summary}</p><div className="example-list">{active.howToUse.promptExamples.map((example) => <details key={example.title}><summary>{example.title}</summary><div className="prompt-code"><code>{example.prompt}</code></div></details>)}</div></section>
-    {active.similarSkills.length > 0 && <section className="prompt-examples"><h3>Similar skills</h3><div className="skill-source-content">{active.similarSkills.map((skill) => <p key={skill.id}><strong>{skill.displayName}</strong> — {skill.difference}</p>)}</div></section>}
+    {activeSimilarSkills.length > 0 && <section className="prompt-examples"><h3>Similar skills</h3><div className="skill-source-content">{activeSimilarSkills.map((skill) => <p key={skill.id}><strong>{skill.displayName}</strong> — {skill.difference}</p>)}</div></section>}
   </aside></div>}</div>;
 }

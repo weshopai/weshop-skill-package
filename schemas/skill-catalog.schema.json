@@ -14,7 +14,7 @@
     "skill": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "displayName", "description", "category", "categoryTags", "coverImage", "routeLabel", "tone", "featured", "whatThisSkillDoes", "howToUse", "output", "similarSkills"],
+      "required": ["id", "displayName", "description", "category", "categoryTags", "coverImage", "routeLabel", "tone", "featured", "whatThisSkillDoes", "howToUse", "output"],
       "properties": {
         "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
         "displayName": { "type": "string", "minLength": 1 },

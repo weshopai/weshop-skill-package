@@ -4,7 +4,7 @@ taskId: ABIHLO-u86405184-m8ca483
 taskTag: ABIHLO
 mode: task
 title: 为精选 Skills 添加独立封面
-status: active
+status: completed
 actor: Jason12196
 githubUserId: 86405184
 machine: 8ca483
@@ -12,7 +12,10 @@ agent: Codex GPT-5.6
 sessionId: 01a03777-e2a6-74c0-bf6f-66584ac9e674
 branch: codex/release-casting-v0-3-26
 createdAt: 2026-08-25T06:09:36Z
-updatedAt: 2026-08-25T06:09:48Z
+updatedAt: 2026-08-25T06:10:41Z
+completedAt: 2026-08-25T06:10:41Z
+commits:
+  - c180884
 ---
 
 ## Summary

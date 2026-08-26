@@ -7,6 +7,7 @@ description: Convert a script, scene, synopsis, dialogue draft, or existing film
 ## Catalog
 
 - Display name: Plan Film Storyboard
+- Text category: yes
 - Category: Narrative and comics
 - Status: Ready
 - Route label: Agent-authored shootable shot manifest

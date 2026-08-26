@@ -7,6 +7,7 @@ description: "Create one observable film-reference prompt brief from authorized 
 ## Catalog
 
 - Display name: Film Reference Prompt Writer
+- Text category: yes
 - Category: Video
 - Status: Ready
 - Route label: Independent outcome contract

@@ -7,6 +7,7 @@ description: Use for diagnosis and revised prompt after a known defective result
 ## Catalog
 
 - Display name: Video Prompt Failure Diagnosis
+- Text category: yes
 - Category: Media workflows
 - Status: Planning route only
 - Route label: Agent-authored structured brief

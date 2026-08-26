@@ -832,7 +832,8 @@
       "description": "Cinematic or image-to-video motion prompt.",
       "category": "Media workflows",
       "categoryTags": [
-        "media-workflows"
+        "media-workflows",
+        "text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -1675,7 +1676,8 @@
       "description": "Semantic adaptation of an existing video prompt.",
       "category": "Media workflows",
       "categoryTags": [
-        "media-workflows"
+        "media-workflows",
+        "text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -1727,7 +1729,8 @@
       "description": "Controlled ad-video variants from approved tabular data.",
       "category": "Media workflows",
       "categoryTags": [
-        "media-workflows"
+        "media-workflows",
+        "text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -1831,7 +1834,8 @@
       "description": "Build or repair a story foundation before medium-specific production.",
       "category": "Narrative and comics",
       "categoryTags": [
-        "narrative-and-comics"
+        "narrative-and-comics",
+        "text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored story development package",
@@ -2247,7 +2251,8 @@
       "description": "Produce one observable film-reference prompt brief with explicit inputs, boundaries, and acceptance checks.",
       "category": "Video",
       "categoryTags": [
-        "video"
+        "video",
+        "text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Independent outcome contract",
@@ -2351,7 +2356,8 @@
       "description": "Produce one structured reference-aware video execution brief with explicit inputs, boundaries, and acceptance checks.",
       "category": "Video",
       "categoryTags": [
-        "video"
+        "video",
+        "text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Independent outcome contract",
@@ -2525,7 +2531,8 @@
       "description": "Silent hand-drawn story-video plan and render brief.",
       "category": "Media workflows",
       "categoryTags": [
-        "media-workflows"
+        "media-workflows",
+        "text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -2653,7 +2660,8 @@
       "description": "Editable redraw of supplied legal diagrams without changing asserted facts.",
       "category": "Media workflows",
       "categoryTags": [
-        "media-workflows"
+        "media-workflows",
+        "text"
       ],
       "coverImage": "/skill-covers/legal-diagram-redraw.png",
       "routeLabel": "Agent-authored structured brief",
@@ -2688,7 +2696,8 @@
       "description": "Traceable chronology from user-supplied evidence.",
       "category": "Media workflows",
       "categoryTags": [
-        "media-workflows"
+        "media-workflows",
+        "text"
       ],
       "coverImage": "/skill-covers/legal-evidence-timeline.png",
       "routeLabel": "Agent-authored structured brief",
@@ -3266,7 +3275,8 @@
       "categoryTags": [
         "video-and-audio"
       ],
-      "coverImage": "/skill-covers/default-skill.svg",
+      "coverImage": "/skill-covers/make-product-commercial.jpg",
+      "coverMotion": "/skill-covers/make-product-commercial-preview.mp4",
       "routeLabel": "Product-safe multi-shot video composition",
       "tone": "purple",
       "featured": false,
@@ -3717,7 +3727,8 @@
       "description": "Structured prompt for one narrative video shot.",
       "category": "Media workflows",
       "categoryTags": [
-        "media-workflows"
+        "media-workflows",
+        "text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -3769,7 +3780,8 @@
       "description": "Multi-shot narrative video storyboard.",
       "category": "Media workflows",
       "categoryTags": [
-        "media-workflows"
+        "media-workflows",
+        "text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -3804,7 +3816,8 @@
       "description": "Plan and coordinate a creative request that needs multiple Skills, research, or material handoffs.",
       "category": "Platform tooling",
       "categoryTags": [
-        "platform-tooling"
+        "platform-tooling",
+        "text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Dependency-aware multi-Skill planning",
@@ -4024,7 +4037,8 @@
       "description": "Convert a story into a validated page-by-page comic production manifest.",
       "category": "Narrative and comics",
       "categoryTags": [
-        "narrative-and-comics"
+        "narrative-and-comics",
+        "text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured storyboard",
@@ -4076,7 +4090,8 @@
       "description": "Turn narrative material into timed atomic film shots with continuity and generation handoffs.",
       "category": "Narrative and comics",
       "categoryTags": [
-        "narrative-and-comics"
+        "narrative-and-comics",
+        "text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored shootable shot manifest",
@@ -4447,7 +4462,8 @@
       "description": "Product launch-film plan with hook, reveal, and end-card arc.",
       "category": "Media workflows",
       "categoryTags": [
-        "media-workflows"
+        "media-workflows",
+        "text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -5160,7 +5176,8 @@
       "description": "Compact single-shot audiovisual video prompt.",
       "category": "Media workflows",
       "categoryTags": [
-        "media-workflows"
+        "media-workflows",
+        "text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -5258,7 +5275,8 @@
       "description": "Fact-checked multi-page social knowledge-note plan.",
       "category": "Media workflows",
       "categoryTags": [
-        "media-workflows"
+        "media-workflows",
+        "text"
       ],
       "coverImage": "/skill-covers/social-knowledge-notes.png",
       "routeLabel": "Agent-authored structured brief",
@@ -5328,7 +5346,8 @@
       "description": "Interactive self-contained HTML technical explanation.",
       "category": "Media workflows",
       "categoryTags": [
-        "media-workflows"
+        "media-workflows",
+        "text"
       ],
       "coverImage": "/skill-covers/technical-visual-explainer.png",
       "routeLabel": "Agent-authored structured brief",
@@ -5363,7 +5382,8 @@
       "description": "Attributed animated testimonial-video plan.",
       "category": "Media workflows",
       "categoryTags": [
-        "media-workflows"
+        "media-workflows",
+        "text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -5517,7 +5537,8 @@
       "description": "Evidence-bounded recommendation among verified video routes.",
       "category": "Media workflows",
       "categoryTags": [
-        "media-workflows"
+        "media-workflows",
+        "text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -5552,7 +5573,8 @@
       "description": "Diagnosis and revised prompt after a known defective result.",
       "category": "Media workflows",
       "categoryTags": [
-        "media-workflows"
+        "media-workflows",
+        "text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -5716,7 +5738,8 @@
       "description": "Turn a story into a validated short-drama bible, episode arc, continuity ledger, and scripts.",
       "category": "Narrative and comics",
       "categoryTags": [
-        "narrative-and-comics"
+        "narrative-and-comics",
+        "text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored serialized drama package",
@@ -5751,7 +5774,8 @@
       "description": "Write three platform-native hooks that the content can honestly pay off.",
       "category": "Narrative and comics",
       "categoryTags": [
-        "narrative-and-comics"
+        "narrative-and-comics",
+        "text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored hook variants",

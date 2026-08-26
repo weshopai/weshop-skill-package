@@ -7,6 +7,7 @@ description: Use for attributed animated testimonial-video plan from approved us
 ## Catalog
 
 - Display name: Testimonial Quote Video
+- Text category: yes
 - Category: Media workflows
 - Status: Planning route only
 - Route label: Agent-authored structured brief

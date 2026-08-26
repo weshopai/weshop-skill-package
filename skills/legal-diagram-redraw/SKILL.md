@@ -7,6 +7,7 @@ description: Use for editable redraw of supplied legal diagrams without changing
 ## Catalog
 
 - Display name: Legal Diagram Redraw
+- Text category: yes
 - Category: Media workflows
 - Status: Planning route only
 - Route label: Agent-authored structured brief

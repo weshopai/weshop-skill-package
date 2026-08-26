@@ -7,6 +7,7 @@ description: Use for structured prompt for one narrative video shot from approve
 ## Catalog
 
 - Display name: Narrative Video Prompt
+- Text category: yes
 - Category: Media workflows
 - Status: Planning route only
 - Route label: Agent-authored structured brief

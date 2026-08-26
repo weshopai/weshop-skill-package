@@ -22,6 +22,7 @@ const parseSkill = async (slug) => {
   for (const field of requiredCatalogFields) if (!catalog[field]) throw new Error(`${slug}: Catalog requires ${field}`);
   if (catalog.Featured && !["yes", "no"].includes(catalog.Featured)) throw new Error(`${slug}: Featured must be yes or no when provided`);
   if (catalog["Cover image"] && !catalog["Cover image"].startsWith("/skill-covers/")) throw new Error(`${slug}: Cover image must be served from /skill-covers/`);
+  if (catalog["Cover motion"] && !catalog["Cover motion"].startsWith("/skill-covers/")) throw new Error(`${slug}: Cover motion must be served from /skill-covers/`);
   const whatThisSkillDoes = section(source, "What this skill does", "How to use").split("\n").filter((line) => line.startsWith("- ")).map((line) => line.slice(2).trim());
   const howToUseSection = section(source, "How to use", "User-facing output");
   const promptExamples = [...howToUseSection.matchAll(/#### (.+?)\n+```text\n([\s\S]*?)\n```/g)].map((match) => ({ title: match[1].trim(), prompt: match[2].trim() }));
@@ -33,8 +34,9 @@ const parseSkill = async (slug) => {
     displayName: catalog["Display name"],
     description: catalog["Short description"],
     category: catalog.Category,
-    categoryTags: [tag(catalog.Category)],
+    categoryTags: [tag(catalog.Category), ...(catalog["Text category"] === "yes" ? ["text"] : [])],
     coverImage: catalog["Cover image"] || fallbackCover,
+    ...(catalog["Cover motion"] ? { coverMotion: catalog["Cover motion"] } : {}),
     routeLabel: catalog["Route label"] || "Skill workflow",
     tone: catalog.Tone || "ink",
     featured: catalog.Featured === "yes",

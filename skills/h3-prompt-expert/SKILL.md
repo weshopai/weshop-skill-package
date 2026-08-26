@@ -7,6 +7,7 @@ description: "Create one structured reference-aware video execution brief from a
 ## Catalog
 
 - Display name: Video Prompt Expert
+- Text category: yes
 - Category: Video
 - Status: Ready
 - Route label: Independent outcome contract

@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { ArrowRight, Check, ChevronDown, Copy, Paperclip, Search, Sparkles, Terminal, WandSparkles, X, Zap } from "lucide-react";
 import skillCatalog from "./generated/skill-catalog.json";
 
@@ -7,6 +7,37 @@ type Skill = Omit<(typeof skillCatalog.skills)[number], "similarSkills"> & { sim
 const skills: Skill[] = [...skillCatalog.skills].sort((a, b) => Number(b.featured) - Number(a.featured) || a.displayName.localeCompare(b.displayName));
 const filters = ["All skills", "Featured", ...new Set(skills.map((skill) => skill.category))];
 const outputField = (skill: Skill, key: string) => (skill.output as unknown as Record<string, string>)[key];
+
+function CoverMedia({ skill }: { skill: Skill }) {
+  const host = useRef<HTMLDivElement>(null);
+  const [inView, setInView] = useState(false);
+  const [engaged, setEngaged] = useState(false);
+  const [motionReady, setMotionReady] = useState(false);
+  const [reducedMotion, setReducedMotion] = useState(false);
+  const shouldAttachMotion = Boolean(skill.coverMotion && inView && engaged && !reducedMotion);
+
+  useEffect(() => {
+    const query = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const update = () => setReducedMotion(query.matches);
+    update();
+    query.addEventListener("change", update);
+    return () => query.removeEventListener("change", update);
+  }, []);
+
+  useEffect(() => {
+    if (!host.current || !skill.coverMotion) return;
+    const observer = new IntersectionObserver(([entry]) => setInView(entry.isIntersecting), { rootMargin: "160px 0px" });
+    observer.observe(host.current);
+    return () => observer.disconnect();
+  }, [skill.coverMotion]);
+
+  useEffect(() => setMotionReady(false), [shouldAttachMotion]);
+
+  return <div ref={host} className="cover-media" onMouseEnter={() => setEngaged(true)} onMouseLeave={() => setEngaged(false)} onFocus={() => setEngaged(true)} onBlur={() => setEngaged(false)}>
+    <img className="cover-image" src={skill.coverImage} loading="lazy" alt="" />
+    {shouldAttachMotion && <video className={motionReady ? "cover-motion is-ready" : "cover-motion"} src={skill.coverMotion} muted loop playsInline autoPlay preload="none" aria-hidden="true" onCanPlay={() => setMotionReady(true)} onError={() => setMotionReady(false)} />}
+  </div>;
+}
 
 export default function App() {
   const [filter, setFilter] = useState("All skills");
@@ -32,7 +63,7 @@ export default function App() {
     <section className="skills-section">
       <div className="skills-head"><div><p className="eyebrow">Skills for WeShop</p><h2>Installable creative workflows.</h2></div><div className="search"><Search size={18} /><input aria-label="搜索技能" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search skills" /></div></div>
       <div className="filter-row">{filters.map((item) => <button key={item} className={filter === item ? "selected" : ""} onClick={() => setFilter(item)}>{item}</button>)}</div>
-      <section className="skill-group atom-group"><div className="skill-group-heading"><div><p className="skill-group-kicker">Skill catalog</p><h3>Installable creative building blocks</h3></div><span>{visible.length} installable tools</span></div><div className="skill-grid">{visible.map((skill, index) => <article className="skill-card" key={skill.id} onClick={() => setActive(skill)}><div className={`skill-visual ${skill.tone} has-cover`}><img className="cover-image" src={skill.coverImage} alt="" /><span className="cover-number">{String(index + 1).padStart(2, "0")}</span><span className="cover-category">{skill.categoryTags.join(" · ")}</span>{skill.featured && <span className="featured-tag"><Sparkles size={11} /> Featured</span>}<div className="visual-orbit"><i /><i /><i /></div><div className="cover-info"><span className="cover-status ready">Ready to install</span><h3>{skill.displayName}</h3><div><span>{skill.routeLabel}</span><ArrowRight size={18} /></div></div></div></article>)}</div></section>
+      <section className="skill-group atom-group"><div className="skill-group-heading"><div><p className="skill-group-kicker">Skill catalog</p><h3>Installable creative building blocks</h3></div><span>{visible.length} installable tools</span></div><div className="skill-grid">{visible.map((skill, index) => <article className="skill-card" key={skill.id} onClick={() => setActive(skill)} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); setActive(skill); } }} role="button" tabIndex={0}><div className={`skill-visual ${skill.tone} has-cover`}><CoverMedia skill={skill} /><span className="cover-number">{String(index + 1).padStart(2, "0")}</span><span className="cover-category">{skill.categoryTags.join(" · ")}</span>{skill.featured && <span className="featured-tag"><Sparkles size={11} /> Featured</span>}<div className="visual-orbit"><i /><i /><i /></div><div className="cover-info"><span className="cover-status ready">Ready to install</span><h3>{skill.displayName}</h3><div><span>{skill.routeLabel}</span><ArrowRight size={18} /></div></div></div></article>)}</div></section>
     </section>
   </main>
   {active && <div className="drawer-backdrop" onClick={() => setActive(null)}><aside className="drawer" onClick={(event) => event.stopPropagation()}>

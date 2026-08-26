@@ -7,6 +7,7 @@ description: Turn a story idea, synopsis, or finished script into a production-r
 ## Catalog
 
 - Display name: Plan Comic Storyboard
+- Text category: yes
 - Category: Narrative and comics
 - Status: Ready
 - Route label: Agent-authored structured storyboard

@@ -7,6 +7,7 @@ description: Write three distinct, truthful opening-hook variants for one short-
 ## Catalog
 
 - Display name: Write Short Video Hooks
+- Text category: yes
 - Category: Narrative and comics
 - Status: Ready
 - Route label: Agent-authored hook variants

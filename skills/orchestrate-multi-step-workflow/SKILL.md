@@ -8,6 +8,7 @@ description: Orchestrate a WeShop creative workflow that already needs multiple 
 ## Catalog
 
 - Display name: Multi-step Workflow Orchestration
+- Text category: yes
 - Category: Platform tooling
 - Status: Ready
 - Route label: Dependency-aware multi-Skill planning

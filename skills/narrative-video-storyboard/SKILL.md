@@ -7,6 +7,7 @@ description: Use for multi-shot narrative video storyboard from approved user fa
 ## Catalog
 
 - Display name: Narrative Video Storyboard
+- Text category: yes
 - Category: Media workflows
 - Status: Planning route only
 - Route label: Agent-authored structured brief

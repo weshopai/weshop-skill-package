@@ -7,6 +7,7 @@ description: Use for traceable chronology from user-supplied evidence from appro
 ## Catalog
 
 - Display name: Legal Evidence Timeline
+- Text category: yes
 - Category: Media workflows
 - Status: Planning route only
 - Route label: Agent-authored structured brief

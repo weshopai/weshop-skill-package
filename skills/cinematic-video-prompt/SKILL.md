@@ -7,6 +7,7 @@ description: Use for cinematic or image-to-video motion prompt from approved use
 ## Catalog
 
 - Display name: Cinematic Video Prompt
+- Text category: yes
 - Category: Media workflows
 - Status: Planning route only
 - Route label: Agent-authored structured brief

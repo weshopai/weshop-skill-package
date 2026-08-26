@@ -7,6 +7,7 @@ description: Use for interactive self-contained html technical explanation from 
 ## Catalog
 
 - Display name: Technical Visual Explainer
+- Text category: yes
 - Category: Media workflows
 - Status: Planning route only
 - Route label: Agent-authored structured brief

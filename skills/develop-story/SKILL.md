@@ -7,6 +7,7 @@ description: Develop a story idea, weak premise, outline, or draft into a struct
 ## Catalog
 
 - Display name: Develop Story
+- Text category: yes
 - Category: Narrative and comics
 - Status: Ready
 - Route label: Agent-authored story development package

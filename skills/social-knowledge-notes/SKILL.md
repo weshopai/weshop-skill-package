@@ -7,6 +7,7 @@ description: Use for fact-checked multi-page social knowledge-note plan from app
 ## Catalog
 
 - Display name: Social Knowledge Notes
+- Text category: yes
 - Category: Media workflows
 - Status: Planning route only
 - Route label: Agent-authored structured brief

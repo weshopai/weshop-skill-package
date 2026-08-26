@@ -15,6 +15,12 @@ const section = (source, heading, nextHeading) => {
 };
 const firstParagraph = (value) => value.split("\n\n")[0].replace(/\n+/g, " ").trim();
 const tag = (value) => value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+const normalizedCategory = (value) => ({
+  "Video": "Video and audio",
+  "Layout / composition": "Layout and design",
+  "Commercial image": "Commercial production",
+  "Social and memory": "Social and layout",
+}[value] ?? value);
 const parseSkill = async (slug) => {
   const source = await readFile(path.join(skillsRoot, slug, "SKILL.md"), "utf8");
   const catalog = parseFields(section(source, "Catalog", "What this skill does"));
@@ -29,12 +35,15 @@ const parseSkill = async (slug) => {
   const output = parseFields(section(source, "User-facing output", "Route"));
   if (!whatThisSkillDoes.length || !howToUseSection || !output["Media type"]) throw new Error(`${slug}: display fields are incomplete`);
   const similarSkillIds = catalog["Similar skills"]?.split(",").map((id) => id.trim()).filter(Boolean) ?? [];
+  const sourceCategory = normalizedCategory(catalog.Category);
+  const isTextCategory = catalog["Text category"] === "yes";
+  const category = isTextCategory ? "Text" : sourceCategory;
   return {
     id: slug,
     displayName: catalog["Display name"],
     description: catalog["Short description"],
-    category: catalog["Text category"] === "yes" ? "Text" : catalog.Category,
-    categoryTags: [tag(catalog.Category), ...(catalog["Text category"] === "yes" ? ["text"] : [])],
+    category,
+    categoryTags: [...new Set([tag(category), ...(isTextCategory ? [tag(sourceCategory)] : [])])],
     coverImage: catalog["Cover image"] || fallbackCover,
     ...(catalog["Cover motion"] ? { coverMotion: catalog["Cover motion"] } : {}),
     routeLabel: catalog["Route label"] || "Skill workflow",

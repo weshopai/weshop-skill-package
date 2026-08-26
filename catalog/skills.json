@@ -195,9 +195,9 @@
       "id": "ai-banner-design",
       "displayName": "AI Banner Design",
       "description": "Research and design channel-ready commercial banners.",
-      "category": "Layout / composition",
+      "category": "Layout and design",
       "categoryTags": [
-        "layout-composition"
+        "layout-and-design"
       ],
       "coverImage": "/skill-covers/ai-banner-design.png",
       "routeLabel": "Research plus GPT Image 2 banner production",
@@ -442,9 +442,9 @@
       "id": "backrooms-dreamcore",
       "displayName": "Backrooms Dreamcore",
       "description": "Turn one authorized reference into a restrained, photoreal liminal-space dossier and optional media.",
-      "category": "Video",
+      "category": "Video and audio",
       "categoryTags": [
-        "video"
+        "video-and-audio"
       ],
       "coverImage": "/skill-covers/backrooms-dreamcore.png",
       "routeLabel": "Personalized Level-0 space dossier and visual route",
@@ -519,9 +519,9 @@
       "id": "brand-stream-mg",
       "displayName": "Brand Stream MG",
       "description": "Produce one logo-led neon brand motion with explicit inputs, boundaries, and acceptance checks.",
-      "category": "Video",
+      "category": "Video and audio",
       "categoryTags": [
-        "video"
+        "video-and-audio"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Independent outcome contract",
@@ -761,9 +761,9 @@
       "id": "character-toy-grid-motion",
       "displayName": "Character Toy Grid Motion",
       "description": "Turn one character image into a vertical designer-toy six-panel poster and an animated grid reveal.",
-      "category": "Video",
+      "category": "Video and audio",
       "categoryTags": [
-        "video"
+        "video-and-audio"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Identity-locked six-panel toy poster and motion",
@@ -796,9 +796,9 @@
       "id": "children-english-story-episode",
       "displayName": "Children’s English Story Episode",
       "description": "Plan an original children’s English story episode with reusable character and scene anchors.",
-      "category": "Video",
+      "category": "Video and audio",
       "categoryTags": [
-        "video"
+        "video-and-audio"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Original recurring-character learning episode",
@@ -832,8 +832,8 @@
       "description": "Cinematic or image-to-video motion prompt.",
       "category": "Text",
       "categoryTags": [
-        "media-workflows",
-        "text"
+        "text",
+        "media-workflows"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -929,9 +929,9 @@
       "id": "co-op-game-intro-generator",
       "displayName": "Co-op Game Intro Generator",
       "description": "Produce one two-player game menu and opening animation with explicit inputs, boundaries, and acceptance checks.",
-      "category": "Video",
+      "category": "Video and audio",
       "categoryTags": [
-        "video"
+        "video-and-audio"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Independent outcome contract",
@@ -1609,9 +1609,9 @@
       "id": "create-white-background-product-mockup",
       "displayName": "White Background Product Mockup",
       "description": "Create product, flat-lay, and ghost-mannequin mockups without identity drift.",
-      "category": "Commercial image",
+      "category": "Commercial production",
       "categoryTags": [
-        "commercial-image"
+        "commercial-production"
       ],
       "coverImage": "/skill-covers/create-white-background-product-mockup.png",
       "routeLabel": "Model-routed product mockups",
@@ -1676,8 +1676,8 @@
       "description": "Semantic adaptation of an existing video prompt.",
       "category": "Text",
       "categoryTags": [
-        "media-workflows",
-        "text"
+        "text",
+        "media-workflows"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -1729,8 +1729,8 @@
       "description": "Controlled ad-video variants from approved tabular data.",
       "category": "Text",
       "categoryTags": [
-        "media-workflows",
-        "text"
+        "text",
+        "media-workflows"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -1763,9 +1763,9 @@
       "id": "decorative-print-short",
       "displayName": "Decorative Print Short",
       "description": "Produce an elegant flat-print short with paired wide and close shots.",
-      "category": "Video",
+      "category": "Video and audio",
       "categoryTags": [
-        "video"
+        "video-and-audio"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Decorative print paired-shot production",
@@ -1797,9 +1797,9 @@
       "id": "detail-page-skill-course",
       "displayName": "Skill Course Detail Page",
       "description": "Produce one skill-teaching course conversion page plan with explicit inputs, boundaries, and acceptance checks.",
-      "category": "Video",
+      "category": "Video and audio",
       "categoryTags": [
-        "video"
+        "video-and-audio"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Independent outcome contract",
@@ -1834,8 +1834,8 @@
       "description": "Build or repair a story foundation before medium-specific production.",
       "category": "Text",
       "categoryTags": [
-        "narrative-and-comics",
-        "text"
+        "text",
+        "narrative-and-comics"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored story development package",
@@ -1885,9 +1885,9 @@
       "id": "digital-product-promo-generator",
       "displayName": "Digital Product Promo Generator",
       "description": "Produce one authentic digital-product promo plan and video with explicit inputs, boundaries, and acceptance checks.",
-      "category": "Video",
+      "category": "Video and audio",
       "categoryTags": [
-        "video"
+        "video-and-audio"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Independent outcome contract",
@@ -1927,9 +1927,9 @@
       "id": "dodge-game-video-generator",
       "displayName": "Dodge Game Video Generator",
       "description": "Produce one character-led dodge-game reaction short with explicit inputs, boundaries, and acceptance checks.",
-      "category": "Video",
+      "category": "Video and audio",
       "categoryTags": [
-        "video"
+        "video-and-audio"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Independent outcome contract",
@@ -1962,9 +1962,9 @@
       "id": "dot-matrix-brand-wordmark-motion",
       "displayName": "Dot Matrix Brand Wordmark Motion",
       "description": "Produce one exact brand wordmark dot-matrix motion with explicit inputs, boundaries, and acceptance checks.",
-      "category": "Video",
+      "category": "Video and audio",
       "categoryTags": [
-        "video"
+        "video-and-audio"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Independent outcome contract",
@@ -2065,9 +2065,9 @@
       "id": "editorial-cutout-explainer",
       "displayName": "Editorial Cutout Explainer",
       "description": "Plan and create a generic editorial cutout explainer with shallow 2D motion and approved evidence beats.",
-      "category": "Video",
+      "category": "Video and audio",
       "categoryTags": [
-        "video"
+        "video-and-audio"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Evidence-led editorial cutout production",
@@ -2251,8 +2251,8 @@
       "description": "Produce one observable film-reference prompt brief with explicit inputs, boundaries, and acceptance checks.",
       "category": "Text",
       "categoryTags": [
-        "video",
-        "text"
+        "text",
+        "video-and-audio"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Independent outcome contract",
@@ -2356,8 +2356,8 @@
       "description": "Produce one structured reference-aware video execution brief with explicit inputs, boundaries, and acceptance checks.",
       "category": "Text",
       "categoryTags": [
-        "video",
-        "text"
+        "text",
+        "video-and-audio"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Independent outcome contract",
@@ -2494,9 +2494,9 @@
       "id": "handdrawn-live-action-fusion",
       "displayName": "Handdrawn Live-Action Fusion",
       "description": "Create one warm, rough hand-drawn entity that touches reality, morphs continuously, and escapes through a connected space.",
-      "category": "Video",
+      "category": "Video and audio",
       "categoryTags": [
-        "video"
+        "video-and-audio"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Contact-led live-action drawing fusion",
@@ -2531,8 +2531,8 @@
       "description": "Silent hand-drawn story-video plan and render brief.",
       "category": "Text",
       "categoryTags": [
-        "media-workflows",
-        "text"
+        "text",
+        "media-workflows"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -2613,9 +2613,9 @@
       "id": "image-combiner",
       "displayName": "Image Combiner",
       "description": "Merge multiple images into one coherent scene.",
-      "category": "Layout / composition",
+      "category": "Layout and design",
       "categoryTags": [
-        "layout-composition"
+        "layout-and-design"
       ],
       "coverImage": "/skill-covers/image-combiner.jpg",
       "routeLabel": "Multi-reference image composition",
@@ -2660,8 +2660,8 @@
       "description": "Editable redraw of supplied legal diagrams without changing asserted facts.",
       "category": "Text",
       "categoryTags": [
-        "media-workflows",
-        "text"
+        "text",
+        "media-workflows"
       ],
       "coverImage": "/skill-covers/legal-diagram-redraw.png",
       "routeLabel": "Agent-authored structured brief",
@@ -2696,8 +2696,8 @@
       "description": "Traceable chronology from user-supplied evidence.",
       "category": "Text",
       "categoryTags": [
-        "media-workflows",
-        "text"
+        "text",
+        "media-workflows"
       ],
       "coverImage": "/skill-covers/legal-evidence-timeline.png",
       "routeLabel": "Agent-authored structured brief",
@@ -2730,9 +2730,9 @@
       "id": "line-doodle-explainer",
       "displayName": "Line-Doodle Explainer",
       "description": "Explain one topic with sparse line figures, narration beats, diagrams, and an approved animated storyboard.",
-      "category": "Video",
+      "category": "Video and audio",
       "categoryTags": [
-        "video"
+        "video-and-audio"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Diagram-first line-doodle teaching production",
@@ -2777,9 +2777,9 @@
       "id": "lip-product-commercial",
       "displayName": "Lip Product Commercial",
       "description": "Plan and produce an anchor-locked lip-product commercial with application, texture, shade, and packshot evidence.",
-      "category": "Video",
+      "category": "Video and audio",
       "categoryTags": [
-        "video"
+        "video-and-audio"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Lip-color proof commercial production",
@@ -2812,9 +2812,9 @@
       "id": "live-sketch-motion",
       "displayName": "Live Sketch Motion",
       "description": "Animate a real scene while a visible marker progressively redraws one moving subject as a lively colored-pencil sketch.",
-      "category": "Video",
+      "category": "Video and audio",
       "categoryTags": [
-        "video"
+        "video-and-audio"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Marker-synchronized live-to-sketch conversion",
@@ -2847,9 +2847,9 @@
       "id": "make-beat-synced-video",
       "displayName": "Make Beat-Synced Video",
       "description": "Cut supplied visuals to measured music structure and verify the export.",
-      "category": "Video",
+      "category": "Video and audio",
       "categoryTags": [
-        "video"
+        "video-and-audio"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Deterministic beat-aware edit",
@@ -2899,9 +2899,9 @@
       "id": "make-birthday-video",
       "displayName": "Make Birthday Video",
       "description": "Create one complete birthday memory video from authorized media, exact messages and licensed or original audio.",
-      "category": "Social and memory",
+      "category": "Social and layout",
       "categoryTags": [
-        "social-and-memory"
+        "social-and-layout"
       ],
       "coverImage": "/skill-covers/make-birthday-video.png",
       "routeLabel": "Memory-led birthday video assembly",
@@ -3014,9 +3014,9 @@
       "id": "make-holiday-card",
       "displayName": "Make Holiday Card",
       "description": "Create one personalized holiday card from authorized photos and exact greeting copy while preserving identities and print-safe layout.",
-      "category": "Social and memory",
+      "category": "Social and layout",
       "categoryTags": [
-        "social-and-memory"
+        "social-and-layout"
       ],
       "coverImage": "/skill-covers/make-holiday-card.png",
       "routeLabel": "GPT Image 2 exact-copy card design",
@@ -3082,9 +3082,9 @@
       "id": "make-kinetic-typography",
       "displayName": "Make Kinetic Typography",
       "description": "Turn approved copy into one readable, verified typography animation.",
-      "category": "Video",
+      "category": "Video and audio",
       "categoryTags": [
-        "video"
+        "video-and-audio"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Accessible animated typography",
@@ -3117,9 +3117,9 @@
       "id": "make-mugshot-photo",
       "displayName": "Make Mugshot Photo",
       "description": "Create one clearly fictional or novelty mugshot-style portrait that cannot be mistaken for an official booking record.",
-      "category": "Social and memory",
+      "category": "Social and layout",
       "categoryTags": [
-        "social-and-memory"
+        "social-and-layout"
       ],
       "coverImage": "/skill-covers/make-mugshot-photo.png",
       "routeLabel": "GPT Image 2 novelty mugshot-style portrait",
@@ -3528,9 +3528,9 @@
       "id": "make-wallet-photo",
       "displayName": "Make Wallet Photo",
       "description": "Prepare one wallet-size print portrait from an authorized photo using a real print dimension, crop and bleed specification.",
-      "category": "Social and memory",
+      "category": "Social and layout",
       "categoryTags": [
-        "social-and-memory"
+        "social-and-layout"
       ],
       "coverImage": "/skill-covers/make-wallet-photo.png",
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
@@ -3574,9 +3574,9 @@
       "id": "make-wedding-photo",
       "displayName": "Make Wedding Photo",
       "description": "Create one wedding-style portrait of consenting adults from authorized references while preserving both identities and avoiding false-event claims.",
-      "category": "Social and memory",
+      "category": "Social and layout",
       "categoryTags": [
-        "social-and-memory"
+        "social-and-layout"
       ],
       "coverImage": "/skill-covers/make-wedding-photo.png",
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
@@ -3608,9 +3608,9 @@
       "id": "micro-expression-performance",
       "displayName": "Micro-Expression Performance",
       "description": "Direct a restrained emotional performance without changing the existing character, scene, dialogue, or camera intention.",
-      "category": "Video",
+      "category": "Video and audio",
       "categoryTags": [
-        "video"
+        "video-and-audio"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Character acting-layer direction",
@@ -3727,8 +3727,8 @@
       "description": "Structured prompt for one narrative video shot.",
       "category": "Text",
       "categoryTags": [
-        "media-workflows",
-        "text"
+        "text",
+        "media-workflows"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -3780,8 +3780,8 @@
       "description": "Multi-shot narrative video storyboard.",
       "category": "Text",
       "categoryTags": [
-        "media-workflows",
-        "text"
+        "text",
+        "media-workflows"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -3816,8 +3816,8 @@
       "description": "Plan and coordinate a creative request that needs multiple Skills, research, or material handoffs.",
       "category": "Text",
       "categoryTags": [
-        "platform-tooling",
-        "text"
+        "text",
+        "platform-tooling"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Dependency-aware multi-Skill planning",
@@ -3898,9 +3898,9 @@
       "id": "paper-collage-explainer-generator",
       "displayName": "Paper Collage Explainer Generator",
       "description": "Turn an idea into an approved halftone paper-collage plan, tactile clips, and optional assembly.",
-      "category": "Video",
+      "category": "Video and audio",
       "categoryTags": [
-        "video"
+        "video-and-audio"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Approved cut-paper visual-metaphor production",
@@ -3933,9 +3933,9 @@
       "id": "papercraft-stop-motion-explainer",
       "displayName": "Papercraft Stop-Motion Explainer",
       "description": "Turn a topic into an approved paper-diorama explainer with tactile stills, stop-motion shots, and optional assembly.",
-      "category": "Video",
+      "category": "Video and audio",
       "categoryTags": [
-        "video"
+        "video-and-audio"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Layered physical-paper education production",
@@ -3968,9 +3968,9 @@
       "id": "photo-collage",
       "displayName": "Photo Collage",
       "description": "Arrange original photos into one intentional collage.",
-      "category": "Layout / composition",
+      "category": "Layout and design",
       "categoryTags": [
-        "layout-composition"
+        "layout-and-design"
       ],
       "coverImage": "/skill-covers/photo-collage.png",
       "routeLabel": "Source-faithful collage composition",
@@ -4037,8 +4037,8 @@
       "description": "Convert a story into a validated page-by-page comic production manifest.",
       "category": "Text",
       "categoryTags": [
-        "narrative-and-comics",
-        "text"
+        "text",
+        "narrative-and-comics"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured storyboard",
@@ -4090,8 +4090,8 @@
       "description": "Turn narrative material into timed atomic film shots with continuity and generation handoffs.",
       "category": "Text",
       "categoryTags": [
-        "narrative-and-comics",
-        "text"
+        "text",
+        "narrative-and-comics"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored shootable shot manifest",
@@ -4141,9 +4141,9 @@
       "id": "poster-design",
       "displayName": "Poster Design",
       "description": "Create distinctive posters across varied art directions.",
-      "category": "Layout / composition",
+      "category": "Layout and design",
       "categoryTags": [
-        "layout-composition"
+        "layout-and-design"
       ],
       "coverImage": "/skill-covers/poster-design.png",
       "routeLabel": "Model-routed poster generation",
@@ -4208,9 +4208,9 @@
       "id": "poster-motion",
       "displayName": "Poster Motion",
       "description": "Animate an uploaded poster into one readable, full-frame motion poster.",
-      "category": "Video",
+      "category": "Video and audio",
       "categoryTags": [
-        "video"
+        "video-and-audio"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Final-lock-frame poster animation",
@@ -4362,9 +4362,9 @@
       "id": "primitive-folk-cgi-restyle",
       "displayName": "Primitive Folk CGI Restyle",
       "description": "Restyle a source image into readable but deliberately crude early-3D imagery, with optional awkward motion continuation.",
-      "category": "Video",
+      "category": "Video and audio",
       "categoryTags": [
-        "video"
+        "video-and-audio"
       ],
       "coverImage": "/skill-covers/primitive-folk-cgi-restyle.png",
       "routeLabel": "Broad-anchor-preserving primitive-3D reconstruction",
@@ -4397,9 +4397,9 @@
       "id": "product-detail-page",
       "displayName": "Product Detail Page",
       "description": "Build modular ecommerce detail-page image sets.",
-      "category": "Layout / composition",
+      "category": "Layout and design",
       "categoryTags": [
-        "layout-composition"
+        "layout-and-design"
       ],
       "coverImage": "/skill-covers/product-detail-page.jpg",
       "routeLabel": "Researched modular PDP production",
@@ -4462,8 +4462,8 @@
       "description": "Product launch-film plan with hook, reveal, and end-card arc.",
       "category": "Text",
       "categoryTags": [
-        "media-workflows",
-        "text"
+        "text",
+        "media-workflows"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -4508,9 +4508,9 @@
       "id": "product-packaging",
       "displayName": "Product Packaging",
       "description": "Turn product references into a structured packaging concept board.",
-      "category": "Commercial image",
+      "category": "Commercial production",
       "categoryTags": [
-        "commercial-image"
+        "commercial-production"
       ],
       "coverImage": "/skill-covers/product-packaging.png",
       "routeLabel": "Model-routed packaging concept",
@@ -5176,8 +5176,8 @@
       "description": "Compact single-shot audiovisual video prompt.",
       "category": "Text",
       "categoryTags": [
-        "media-workflows",
-        "text"
+        "text",
+        "media-workflows"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -5275,8 +5275,8 @@
       "description": "Fact-checked multi-page social knowledge-note plan.",
       "category": "Text",
       "categoryTags": [
-        "media-workflows",
-        "text"
+        "text",
+        "media-workflows"
       ],
       "coverImage": "/skill-covers/social-knowledge-notes.png",
       "routeLabel": "Agent-authored structured brief",
@@ -5346,8 +5346,8 @@
       "description": "Interactive self-contained HTML technical explanation.",
       "category": "Text",
       "categoryTags": [
-        "media-workflows",
-        "text"
+        "text",
+        "media-workflows"
       ],
       "coverImage": "/skill-covers/technical-visual-explainer.png",
       "routeLabel": "Agent-authored structured brief",
@@ -5382,8 +5382,8 @@
       "description": "Attributed animated testimonial-video plan.",
       "category": "Text",
       "categoryTags": [
-        "media-workflows",
-        "text"
+        "text",
+        "media-workflows"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -5416,9 +5416,9 @@
       "id": "transcript-broll-plan",
       "displayName": "Transcript B-Roll Plan",
       "description": "Turn narration into a reviewable A-roll, evidence, and B-roll plan before generating approved shots.",
-      "category": "Video",
+      "category": "Video and audio",
       "categoryTags": [
-        "video"
+        "video-and-audio"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Transcript-led B-roll planning",
@@ -5537,8 +5537,8 @@
       "description": "Evidence-bounded recommendation among verified video routes.",
       "category": "Text",
       "categoryTags": [
-        "media-workflows",
-        "text"
+        "text",
+        "media-workflows"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -5573,8 +5573,8 @@
       "description": "Diagnosis and revised prompt after a known defective result.",
       "category": "Text",
       "categoryTags": [
-        "media-workflows",
-        "text"
+        "text",
+        "media-workflows"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -5738,8 +5738,8 @@
       "description": "Turn a story into a validated short-drama bible, episode arc, continuity ledger, and scripts.",
       "category": "Text",
       "categoryTags": [
-        "narrative-and-comics",
-        "text"
+        "text",
+        "narrative-and-comics"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored serialized drama package",
@@ -5774,8 +5774,8 @@
       "description": "Write three platform-native hooks that the content can honestly pay off.",
       "category": "Text",
       "categoryTags": [
-        "narrative-and-comics",
-        "text"
+        "text",
+        "narrative-and-comics"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored hook variants",

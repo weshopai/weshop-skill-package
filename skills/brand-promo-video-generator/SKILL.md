@@ -12,6 +12,8 @@ description: Create one complete short promotional video for a brand, app, websi
 - Route label: Verified-brand multi-beat campaign video
 - Tone: purple
 - Short description: Produce one authenticity-checked promotional short for a brand, app, website, shop, service, or launch.
+- Cover image: /skill-covers/brand-promo-video-generator.png
+- Cover motion: /skill-covers/brand-promo-video-generator.mp4
 
 - Similar skills: digital-product-promo-generator
 ## What this skill does

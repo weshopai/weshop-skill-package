@@ -12,6 +12,8 @@ description: Use for a lip-color commercial with model, packaging, shade, finish
 - Route label: Lip-color proof commercial production
 - Tone: pink
 - Short description: Plan and produce an anchor-locked lip-product commercial with application, texture, shade, and packshot evidence.
+- Cover image: /skill-covers/lip-product-commercial.png
+- Cover motion: /skill-covers/lip-product-commercial.mp4
 
 ## What this skill does
 

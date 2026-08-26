@@ -12,6 +12,8 @@ description: "Create one exact brand wordmark dot-matrix motion from authorized 
 - Route label: Independent outcome contract
 - Tone: purple
 - Short description: Produce one exact brand wordmark dot-matrix motion with explicit inputs, boundaries, and acceptance checks.
+- Cover image: /skill-covers/dot-matrix-brand-wordmark-motion.png
+- Cover motion: /skill-covers/dot-matrix-brand-wordmark-motion.mp4
 
 - Similar skills: brand-stream-mg, make-video-intro, poster-motion
 ## What this skill does

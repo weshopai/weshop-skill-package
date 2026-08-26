@@ -12,6 +12,8 @@ description: Create one continuous scene-first FPV flythrough of an authorized a
 - Route label: Continuous spatial FPV composition
 - Tone: purple
 - Short description: Produce one route-planned FPV flythrough with continuous spatial motion and landmark coverage.
+- Cover image: /skill-covers/fpv-tour-video-generator.png
+- Cover motion: /skill-covers/fpv-tour-video-generator.mp4
 
 ## What this skill does
 

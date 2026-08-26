@@ -12,6 +12,8 @@ description: Use for one live-action short where a rough hand-drawn entity visib
 - Route label: Contact-led live-action drawing fusion
 - Tone: orange
 - Short description: Create one warm, rough hand-drawn entity that touches reality, morphs continuously, and escapes through a connected space.
+- Cover image: /skill-covers/handdrawn-live-action-fusion.png
+- Cover motion: /skill-covers/handdrawn-live-action-fusion.mp4
 
 ## What this skill does
 

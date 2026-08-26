@@ -12,6 +12,8 @@ description: "Plan and produce one editorial paper-collage explainer from a conc
 - Route label: Approved cut-paper visual-metaphor production
 - Tone: orange
 - Short description: Turn an idea into an approved halftone paper-collage plan, tactile clips, and optional assembly.
+- Cover image: /skill-covers/paper-collage-explainer-generator.png
+- Cover motion: /skill-covers/paper-collage-explainer-generator.mp4
 
 ## What this skill does
 

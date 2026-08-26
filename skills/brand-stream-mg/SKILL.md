@@ -12,6 +12,8 @@ description: "Create one logo-led neon brand motion from authorized inputs. Use 
 - Route label: Independent outcome contract
 - Tone: purple
 - Short description: Produce one logo-led neon brand motion with explicit inputs, boundaries, and acceptance checks.
+- Cover image: /skill-covers/brand-stream-mg.png
+- Cover motion: /skill-covers/brand-stream-mg.mp4
 
 - Similar skills: dot-matrix-brand-wordmark-motion, make-video-intro, poster-motion
 ## What this skill does

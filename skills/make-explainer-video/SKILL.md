@@ -12,6 +12,8 @@ description: Research, script, plan, generate, and assemble one short narrated e
 - Route label: Source-backed beat-to-video composition
 - Tone: purple
 - Short description: Produce a fact-traceable narrated explainer with timed visual beats, subtitles, and final QC.
+- Cover image: /skill-covers/make-explainer-video.png
+- Cover motion: /skill-covers/make-explainer-video.mp4
 
 - Similar skills: line-doodle-explainer, editorial-cutout-explainer
 ## What this skill does

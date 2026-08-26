@@ -13,6 +13,8 @@ description: Use for controlled ad-video variants from approved tabular data fro
 - Route label: Agent-authored structured brief
 - Tone: blue
 - Short description: Controlled ad-video variants from approved tabular data.
+- Cover image: /skill-covers/data-driven-ad-creative-video.png
+- Cover motion: /skill-covers/data-driven-ad-creative-video.mp4
 
 ## What this skill does
 

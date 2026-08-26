@@ -12,6 +12,8 @@ description: Use for a knowledge explainer built as a layered physical-paper wor
 - Route label: Layered physical-paper education production
 - Tone: orange
 - Short description: Turn a topic into an approved paper-diorama explainer with tactile stills, stop-motion shots, and optional assembly.
+- Cover image: /skill-covers/papercraft-stop-motion-explainer.png
+- Cover motion: /skill-covers/papercraft-stop-motion-explainer.mp4
 
 ## What this skill does
 

@@ -12,6 +12,8 @@ description: Create one subtitle-first music aesthetic video from an authorized 
 - Route label: Lyric-locked visual MV composition
 - Tone: purple
 - Short description: Produce a music-led visual video with exact timed subtitles and audio-continuity QC.
+- Cover image: /skill-covers/music-video-subtitle-generator.png
+- Cover motion: /skill-covers/music-video-subtitle-generator.mp4
 
 ## What this skill does
 

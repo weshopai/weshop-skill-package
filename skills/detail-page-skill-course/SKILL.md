@@ -8,6 +8,7 @@ description: "Create one skill-teaching course conversion page plan from authori
 
 - Display name: Skill Course Detail Page
 - Category: Video
+- Text category: yes
 - Status: Ready
 - Route label: Independent outcome contract
 - Tone: purple

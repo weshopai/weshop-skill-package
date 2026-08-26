@@ -2,11 +2,11 @@
 name: product-launch-video
 description: Use for product launch-film plan with hook, reveal, and end-card arc from approved user facts and assets; unlike $make-video-intro (relationship 0.67), choose this when the stated specialized output and preservation contract are required; choose $make-video-intro for its generic final-media contract.
 ---
-# Product Launch Video
+# Product Launch Video Plan
 
 ## Catalog
 
-- Display name: Product Launch Video
+- Display name: Product Launch Video Plan
 - Text category: yes
 - Category: Media workflows
 - Status: Planning route only

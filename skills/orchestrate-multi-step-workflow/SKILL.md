@@ -8,6 +8,7 @@ description: Orchestrate a WeShop creative workflow that already needs multiple 
 ## Catalog
 
 - Display name: Multi-step Workflow Orchestration
+- Visibility: system
 - Text category: yes
 - Category: Platform tooling
 - Status: Ready

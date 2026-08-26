@@ -26,6 +26,7 @@ const parseSkill = async (slug) => {
   const catalog = parseFields(section(source, "Catalog", "What this skill does"));
   const requiredCatalogFields = ["Display name", "Category", "Short description"];
   for (const field of requiredCatalogFields) if (!catalog[field]) throw new Error(`${slug}: Catalog requires ${field}`);
+  if (catalog.Visibility && !["public", "system"].includes(catalog.Visibility)) throw new Error(`${slug}: Visibility must be public or system when provided`);
   if (catalog.Featured && !["yes", "no"].includes(catalog.Featured)) throw new Error(`${slug}: Featured must be yes or no when provided`);
   if (catalog["Cover image"] && !catalog["Cover image"].startsWith("/skill-covers/")) throw new Error(`${slug}: Cover image must be served from /skill-covers/`);
   if (catalog["Cover motion"] && (!catalog["Cover motion"].startsWith("/skill-covers/") || !/\.(mp4|webm)$/i.test(catalog["Cover motion"]))) throw new Error(`${slug}: Cover motion must be an MP4 or WebM served from /skill-covers/`);
@@ -35,6 +36,7 @@ const parseSkill = async (slug) => {
   const output = parseFields(section(source, "User-facing output", "Route"));
   if (!whatThisSkillDoes.length || !howToUseSection || !output["Media type"]) throw new Error(`${slug}: display fields are incomplete`);
   const similarSkillIds = catalog["Similar skills"]?.split(",").map((id) => id.trim()).filter(Boolean) ?? [];
+  if (catalog.Visibility === "system") return null;
   const sourceCategory = normalizedCategory(catalog.Category);
   const isTextCategory = catalog["Text category"] === "yes";
   const category = isTextCategory ? "Text" : sourceCategory;
@@ -56,7 +58,7 @@ const parseSkill = async (slug) => {
   };
 };
 const directories = (await readdir(skillsRoot, { withFileTypes: true })).filter((entry) => entry.isDirectory()).map((entry) => entry.name).sort();
-const parsed = await Promise.all(directories.map(parseSkill));
+const parsed = (await Promise.all(directories.map(parseSkill))).filter(Boolean);
 const skillsById = new Map(parsed.map((skill) => [skill.id, skill]));
 const withSimilarSkills = parsed.map(({ similarSkillIds, ...skill }) => {
   if (!similarSkillIds.length) return skill;

@@ -8,6 +8,7 @@ description: Route any WeShop creative request. Use it to infer the complete int
 ## Catalog
 
 - Display name: WeShop Router
+- Visibility: system
 - Category: Platform tooling
 - Status: Ready
 - Route label: Intent-aware Skill routing

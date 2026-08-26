@@ -732,9 +732,9 @@
       "id": "character-reference-sheet",
       "displayName": "Character Reference Sheet",
       "description": "Redirect legacy character-sheet requests to the canonical character workflow without creating a duplicate run.",
-      "category": "Platform tooling",
+      "category": "Character and brand",
       "categoryTags": [
-        "platform-tooling"
+        "character-and-brand"
       ],
       "coverImage": "/skill-covers/character-reference-sheet.png",
       "routeLabel": "Compatibility redirect to Create Character",
@@ -1307,9 +1307,9 @@
       "id": "create-custom-skill",
       "displayName": "Create Custom Skill",
       "description": "Turn a reusable workflow into a checked, user-owned local Agent Skill.",
-      "category": "Platform tooling",
+      "category": "Text",
       "categoryTags": [
-        "platform-tooling"
+        "text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Isolated user-owned Skill authoring",
@@ -1733,10 +1733,9 @@
       "id": "data-driven-ad-creative-video",
       "displayName": "Data-driven Ad Creative Video",
       "description": "Controlled ad-video variants from approved tabular data.",
-      "category": "Text",
+      "category": "Video and audio",
       "categoryTags": [
-        "text",
-        "media-workflows"
+        "video-and-audio"
       ],
       "coverImage": "/skill-covers/data-driven-ad-creative-video.png",
       "coverMotion": "/skill-covers/data-driven-ad-creative-video.mp4",
@@ -1805,8 +1804,9 @@
       "id": "detail-page-skill-course",
       "displayName": "Skill Course Detail Page",
       "description": "Produce one skill-teaching course conversion page plan with explicit inputs, boundaries, and acceptance checks.",
-      "category": "Video and audio",
+      "category": "Text",
       "categoryTags": [
+        "text",
         "video-and-audio"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
@@ -1884,8 +1884,8 @@
         },
         {
           "id": "plan-film-storyboard",
-          "displayName": "Plan Film Storyboard",
-          "difference": "Plan Film Storyboard: Turn narrative material into timed atomic film shots with continuity and generation handoffs. In contrast, Develop Story: Build or repair a story foundation before medium-specific production."
+          "displayName": "Generate Film Storyboard",
+          "difference": "Generate Film Storyboard: Generate reviewable film storyboard frames from narrative material with continuity locks. In contrast, Develop Story: Build or repair a story foundation before medium-specific production."
         }
       ]
     },
@@ -3327,8 +3327,8 @@
         },
         {
           "id": "product-launch-video",
-          "displayName": "Product Launch Video",
-          "difference": "Product Launch Video: Product launch-film plan with hook, reveal, and end-card arc. In contrast, Make Product Commercial: Produce one truthful, continuity-safe short commercial in which the supplied product drives the action."
+          "displayName": "Product Launch Video Plan",
+          "difference": "Product Launch Video Plan: Product launch-film plan with hook, reveal, and end-card arc. In contrast, Make Product Commercial: Produce one truthful, continuity-safe short commercial in which the supplied product drives the action."
         }
       ]
     },
@@ -3698,8 +3698,8 @@
         },
         {
           "id": "product-launch-video",
-          "displayName": "Product Launch Video",
-          "difference": "Product Launch Video: Product launch-film plan with hook, reveal, and end-card arc. In contrast, Minimalist Product Ad Generator: Produce a sparse, product-faithful commercial with approved copy and beat-level continuity."
+          "displayName": "Product Launch Video Plan",
+          "difference": "Product Launch Video Plan: Product launch-film plan with hook, reveal, and end-card arc. In contrast, Minimalist Product Ad Generator: Produce a sparse, product-faithful commercial with approved copy and beat-level continuity."
         }
       ]
     },
@@ -3826,45 +3826,6 @@
         "Default layout": "Validated Markdown",
         "Model policy": "Agent-authored planning; no paid media generation or unverified provider call",
         "Downstream use": "$plan-film-storyboard or another verified Atom selected by Router intent matching"
-      }
-    },
-    {
-      "id": "orchestrate-multi-step-workflow",
-      "displayName": "Multi-step Workflow Orchestration",
-      "description": "Plan and coordinate a creative request that needs multiple Skills, research, or material handoffs.",
-      "category": "Text",
-      "categoryTags": [
-        "text",
-        "platform-tooling"
-      ],
-      "coverImage": "/skill-covers/default-skill.svg",
-      "routeLabel": "Dependency-aware multi-Skill planning",
-      "tone": "ink",
-      "featured": false,
-      "whatThisSkillDoes": [
-        "Builds a dependency-aware plan for work that cannot be completed by one Atom.",
-        "Binds intermediate outputs and applies one final acceptance gate."
-      ],
-      "howToUse": {
-        "summary": "Use this Skill only after routing identifies multiple dependent operations, research, ambiguity, or material risk.",
-        "promptExamples": [
-          {
-            "title": "Plan a campaign workflow",
-            "prompt": "Plan a multi-step workflow to research a product claim, create a product scene, then compose the approved image into a social carousel."
-          }
-        ]
-      },
-      "output": {
-        "Media type": "Multi-step route plan",
-        "Default quantity": "1 dependency-aware plan",
-        "Content per image": "Not applicable",
-        "Default layout": "Structured DAG with inputs, handoffs, and final acceptance",
-        "Model policy": "Each selected Skill owns its model choice",
-        "Downstream use": "Coordinated creative execution",
-        "Every `gpt-image` / GPT Image 2 call defaults to `quality": "\"medium\"` and `imageSize: \"2K\"`. Use another quality or resolution only when the user explicitly requests it; cost or speed preference alone must not silently reduce this default.",
-        "Route `$animate-image` directly to `kling` v1.0 with `modelName": "Kling_3_0`, one source image, one result, 5 seconds, and audio off by default.",
-        "For `$make-mugshot-photo`, route directly to `gpt-image` v1.0 / GPT Image 2 Medium at 2K with one 3": "4 result. Do not call `mugshot-creator` or another Tools-class wrapper; the Atom owns the fictional-label and non-evidence safeguards.",
-        "For video, route large-amplitude motion to MiniMax H3; up to four image references or a motion-reference video to Kling V3 Omni; precise first/last-frame or product control to Kling V3; long multimodal, audio-visual, artistic, or talking-performance work to Seedance 2.5; source-image shots requiring premium synchronous dialogue/SFX in 16": "9 or 9:16 to Veo 3.1; routine image-led work to Seedance 2.0; and lightweight validation to Seedance Mini only when cataloged."
       }
     },
     {
@@ -4099,61 +4060,60 @@
         },
         {
           "id": "plan-film-storyboard",
-          "displayName": "Plan Film Storyboard",
-          "difference": "Plan Film Storyboard: Turn narrative material into timed atomic film shots with continuity and generation handoffs. In contrast, Plan Comic Storyboard: Convert a story into a validated page-by-page comic production manifest."
+          "displayName": "Generate Film Storyboard",
+          "difference": "Generate Film Storyboard: Generate reviewable film storyboard frames from narrative material with continuity locks. In contrast, Plan Comic Storyboard: Convert a story into a validated page-by-page comic production manifest."
         }
       ]
     },
     {
       "id": "plan-film-storyboard",
-      "displayName": "Plan Film Storyboard",
-      "description": "Turn narrative material into timed atomic film shots with continuity and generation handoffs.",
-      "category": "Text",
+      "displayName": "Generate Film Storyboard",
+      "description": "Generate reviewable film storyboard frames from narrative material with continuity locks.",
+      "category": "Layout and design",
       "categoryTags": [
-        "text",
-        "narrative-and-comics"
+        "layout-and-design"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
-      "routeLabel": "Agent-authored shootable shot manifest",
-      "tone": "blue",
+      "routeLabel": "GPT Image 2 continuity-safe storyboard frames",
+      "tone": "purple",
       "featured": false,
       "whatThisSkillDoes": [
-        "Freezes source facts and adaptation permission before translating abstract writing into visible or audible evidence.",
-        "Plans actor blocking, props, screen direction, camera, sound, duration, and coverage as atomic shots.",
-        "Produces a validated shot manifest and downstream task brief without claiming unexecuted footage is production-approved."
+        "Freezes source facts and adaptation permission before translating narrative material into visible storyboard frames.",
+        "Plans blocking, props, screen direction, camera, and continuity as atomic shots, then generates the approved frames.",
+        "Returns inspected storyboard images, a shot manifest, and execution receipts without claiming final-video approval."
       ],
       "howToUse": {
-        "summary": "Provide the source, live/AI/hybrid production mode, duration, ratio, language, fixed facts, cast/assets, and allowed change level: faithful, visual, pacing, or explicitly scoped story changes.",
+        "summary": "Provide the source, requested frame count, ratio, live/AI/hybrid production mode, language, fixed facts, cast/assets, visual direction, and allowed change level: faithful, visual, pacing, or explicitly scoped story changes.",
         "promptExamples": [
           {
             "title": "Example",
-            "prompt": "Turn episode 1 into a 75-second 9:16 AI-video storyboard. Stay faithful to the plot, externalize internal thoughts through behavior and sound, and keep each generated shot under six seconds."
+            "prompt": "Generate four 16:9 storyboard frames for episode 1. Stay faithful to the plot, externalize internal thoughts through behavior and composition, keep the character and wardrobe consistent, and provide the shot manifest with each generated frame."
           }
         ]
       },
       "output": {
-        "Media type": "Structured film storyboard manifest",
-        "Default quantity": "One manifest containing the required atomic shots",
-        "Content per artifact": "Facts, permissions, scenes, timed shots, blocking, camera, sound, continuity, coverage, risks, and downstream briefs",
-        "Default layout": "Validated Markdown or JSON with stable scene/shot IDs",
-        "Model policy": "Agent-authored planning; no paid media generation",
+        "Media type": "Film storyboard frame image set plus shot manifest and execution receipts",
+        "Default quantity": "4 frames unless the user requests another count",
+        "Content per artifact": "One continuity-safe key frame with its source facts, shot intent, camera, composition, and preservation locks",
+        "Default layout": "User-requested supported ratio with stable scene/shot IDs",
+        "Model policy": "GPT Image 2 Medium/2K with authorized reference assets",
         "Downstream use": "Live production, video-generation Atoms, and editing/assembly"
       },
       "similarSkills": [
         {
           "id": "develop-story",
           "displayName": "Develop Story",
-          "difference": "Develop Story: Build or repair a story foundation before medium-specific production. In contrast, Plan Film Storyboard: Turn narrative material into timed atomic film shots with continuity and generation handoffs."
+          "difference": "Develop Story: Build or repair a story foundation before medium-specific production. In contrast, Generate Film Storyboard: Generate reviewable film storyboard frames from narrative material with continuity locks."
         },
         {
           "id": "plan-comic-storyboard",
           "displayName": "Plan Comic Storyboard",
-          "difference": "Plan Comic Storyboard: Convert a story into a validated page-by-page comic production manifest. In contrast, Plan Film Storyboard: Turn narrative material into timed atomic film shots with continuity and generation handoffs."
+          "difference": "Plan Comic Storyboard: Convert a story into a validated page-by-page comic production manifest. In contrast, Generate Film Storyboard: Generate reviewable film storyboard frames from narrative material with continuity locks."
         },
         {
           "id": "render-comic-page",
           "displayName": "Render Comic Page",
-          "difference": "Render Comic Page: Render one storyboarded comic page with character, style, panel, and dialogue continuity. In contrast, Plan Film Storyboard: Turn narrative material into timed atomic film shots with continuity and generation handoffs."
+          "difference": "Render Comic Page: Render one storyboarded comic page with character, style, panel, and dialogue continuity. In contrast, Generate Film Storyboard: Generate reviewable film storyboard frames from narrative material with continuity locks."
         }
       ]
     },
@@ -4480,7 +4440,7 @@
     },
     {
       "id": "product-launch-video",
-      "displayName": "Product Launch Video",
+      "displayName": "Product Launch Video Plan",
       "description": "Product launch-film plan with hook, reveal, and end-card arc.",
       "category": "Text",
       "categoryTags": [
@@ -4517,12 +4477,12 @@
         {
           "id": "make-product-commercial",
           "displayName": "Make Product Commercial",
-          "difference": "Make Product Commercial: Produce one truthful, continuity-safe short commercial in which the supplied product drives the action. In contrast, Product Launch Video: Product launch-film plan with hook, reveal, and end-card arc."
+          "difference": "Make Product Commercial: Produce one truthful, continuity-safe short commercial in which the supplied product drives the action. In contrast, Product Launch Video Plan: Product launch-film plan with hook, reveal, and end-card arc."
         },
         {
           "id": "minimalist-product-ad-generator",
           "displayName": "Minimalist Product Ad Generator",
-          "difference": "Minimalist Product Ad Generator: Produce a sparse, product-faithful commercial with approved copy and beat-level continuity. In contrast, Product Launch Video: Product launch-film plan with hook, reveal, and end-card arc."
+          "difference": "Minimalist Product Ad Generator: Produce a sparse, product-faithful commercial with approved copy and beat-level continuity. In contrast, Product Launch Video Plan: Product launch-film plan with hook, reveal, and end-card arc."
         }
       ]
     },
@@ -4992,8 +4952,8 @@
         },
         {
           "id": "plan-film-storyboard",
-          "displayName": "Plan Film Storyboard",
-          "difference": "Plan Film Storyboard: Turn narrative material into timed atomic film shots with continuity and generation handoffs. In contrast, Render Comic Page: Render one storyboarded comic page with character, style, panel, and dialogue continuity."
+          "displayName": "Generate Film Storyboard",
+          "difference": "Generate Film Storyboard: Generate reviewable film storyboard frames from narrative material with continuity locks. In contrast, Render Comic Page: Render one storyboarded comic page with character, style, panel, and dialogue continuity."
         }
       ]
     },
@@ -5439,8 +5399,9 @@
       "id": "transcript-broll-plan",
       "displayName": "Transcript B-Roll Plan",
       "description": "Turn narration into a reviewable A-roll, evidence, and B-roll plan before generating approved shots.",
-      "category": "Video and audio",
+      "category": "Text",
       "categoryTags": [
+        "text",
         "video-and-audio"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
@@ -5719,40 +5680,6 @@
         "Default layout": "Source-preserving or dimension-defined format",
         "Model policy": "GPT Image 2 plan visualization",
         "Downstream use": "Early space planning"
-      }
-    },
-    {
-      "id": "weshop-router",
-      "displayName": "WeShop Router",
-      "description": "Select the best matching WeShop Skill for one clear operation or escalate a genuinely multi-step request.",
-      "category": "Platform tooling",
-      "categoryTags": [
-        "platform-tooling"
-      ],
-      "coverImage": "/skill-covers/default-skill.svg",
-      "routeLabel": "Intent-aware Skill routing",
-      "tone": "ink",
-      "featured": false,
-      "whatThisSkillDoes": [
-        "Interprets the complete creative intent instead of keyword matching.",
-        "Selects the highest-scoring appropriate Atom or escalates only when a multi-step plan is needed."
-      ],
-      "howToUse": {
-        "summary": "Use this package-level router when the user needs the correct Skill selected from an open-ended WeShop request.",
-        "promptExamples": [
-          {
-            "title": "Route a creative request",
-            "prompt": "Route this request to the best available WeShop Skill: turn this product image into a clean commercial scene while preserving the exact product."
-          }
-        ]
-      },
-      "output": {
-        "Media type": "Route decision",
-        "Default quantity": "1 selected Skill or one escalation decision",
-        "Content per image": "Not applicable",
-        "Default layout": "Structured intent and routing record",
-        "Model policy": "The selected Skill owns model choice",
-        "Downstream use": "Starting point for creative execution"
       }
     },
     {

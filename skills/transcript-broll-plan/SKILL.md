@@ -6,6 +6,7 @@ description: Use for a transcript, voiceover, or talking-head script that must b
 ## Catalog
 - Display name: Transcript B-Roll Plan
 - Category: Video
+- Text category: yes
 - Status: Ready
 - Route label: Transcript-led B-roll planning
 - Tone: blue

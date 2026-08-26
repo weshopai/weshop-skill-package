@@ -12,6 +12,7 @@ description: Generate a reviewable film-storyboard frame set from a script, scen
 - Route label: GPT Image 2 continuity-safe storyboard frames
 - Tone: purple
 - Short description: Generate reviewable film storyboard frames from narrative material with continuity locks.
+- Cover image: /skill-covers/generate-film-storyboard.png
 
 - Similar skills: develop-story, plan-comic-storyboard, render-comic-page
 ## What this skill does

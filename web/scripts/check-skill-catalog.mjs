@@ -17,5 +17,9 @@ for (const skill of catalog.skills) {
     if (skill.similarSkills.some((similar) => similar.id === skill.id || !ids.has(similar.id) || !similar.difference)) throw new Error(`${skill.id}: invalid similar Skill`);
   }
   await access(path.join(root, "web/public", skill.coverImage));
+  if (skill.coverMotion !== undefined) {
+    if (typeof skill.coverMotion !== "string" || !/^\/skill-covers\/.*\.(mp4|webm)$/i.test(skill.coverMotion)) throw new Error(`${skill.id}: coverMotion must be an MP4 or WebM served from /skill-covers/`);
+    await access(path.join(root, "web/public", skill.coverMotion));
+  }
 }
 console.log(`Validated normalized catalog for ${catalog.skills.length} Skills.`);

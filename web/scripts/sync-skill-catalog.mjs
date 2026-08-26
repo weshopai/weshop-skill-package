@@ -28,7 +28,7 @@ const parseSkill = async (slug) => {
   for (const field of requiredCatalogFields) if (!catalog[field]) throw new Error(`${slug}: Catalog requires ${field}`);
   if (catalog.Featured && !["yes", "no"].includes(catalog.Featured)) throw new Error(`${slug}: Featured must be yes or no when provided`);
   if (catalog["Cover image"] && !catalog["Cover image"].startsWith("/skill-covers/")) throw new Error(`${slug}: Cover image must be served from /skill-covers/`);
-  if (catalog["Cover motion"] && !catalog["Cover motion"].startsWith("/skill-covers/")) throw new Error(`${slug}: Cover motion must be served from /skill-covers/`);
+  if (catalog["Cover motion"] && (!catalog["Cover motion"].startsWith("/skill-covers/") || !/\.(mp4|webm)$/i.test(catalog["Cover motion"]))) throw new Error(`${slug}: Cover motion must be an MP4 or WebM served from /skill-covers/`);
   const whatThisSkillDoes = section(source, "What this skill does", "How to use").split("\n").filter((line) => line.startsWith("- ")).map((line) => line.slice(2).trim());
   const howToUseSection = section(source, "How to use", "User-facing output");
   const promptExamples = [...howToUseSection.matchAll(/#### (.+?)\n+```text\n([\s\S]*?)\n```/g)].map((match) => ({ title: match[1].trim(), prompt: match[2].trim() }));

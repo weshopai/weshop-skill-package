@@ -33,7 +33,7 @@ const parseSkill = async (slug) => {
     id: slug,
     displayName: catalog["Display name"],
     description: catalog["Short description"],
-    category: catalog.Category,
+    category: catalog["Text category"] === "yes" ? "Text" : catalog.Category,
     categoryTags: [tag(catalog.Category), ...(catalog["Text category"] === "yes" ? ["text"] : [])],
     coverImage: catalog["Cover image"] || fallbackCover,
     ...(catalog["Cover motion"] ? { coverMotion: catalog["Cover motion"] } : {}),

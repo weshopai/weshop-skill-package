@@ -830,7 +830,7 @@
       "id": "cinematic-video-prompt",
       "displayName": "Cinematic Video Prompt",
       "description": "Cinematic or image-to-video motion prompt.",
-      "category": "Media workflows",
+      "category": "Text",
       "categoryTags": [
         "media-workflows",
         "text"
@@ -1674,7 +1674,7 @@
       "id": "cross-model-video-prompt-adapter",
       "displayName": "Cross-model Video Prompt Adapter",
       "description": "Semantic adaptation of an existing video prompt.",
-      "category": "Media workflows",
+      "category": "Text",
       "categoryTags": [
         "media-workflows",
         "text"
@@ -1727,7 +1727,7 @@
       "id": "data-driven-ad-creative-video",
       "displayName": "Data-driven Ad Creative Video",
       "description": "Controlled ad-video variants from approved tabular data.",
-      "category": "Media workflows",
+      "category": "Text",
       "categoryTags": [
         "media-workflows",
         "text"
@@ -1832,7 +1832,7 @@
       "id": "develop-story",
       "displayName": "Develop Story",
       "description": "Build or repair a story foundation before medium-specific production.",
-      "category": "Narrative and comics",
+      "category": "Text",
       "categoryTags": [
         "narrative-and-comics",
         "text"
@@ -2249,7 +2249,7 @@
       "id": "film-reference-prompt-writer",
       "displayName": "Film Reference Prompt Writer",
       "description": "Produce one observable film-reference prompt brief with explicit inputs, boundaries, and acceptance checks.",
-      "category": "Video",
+      "category": "Text",
       "categoryTags": [
         "video",
         "text"
@@ -2354,7 +2354,7 @@
       "id": "h3-prompt-expert",
       "displayName": "Video Prompt Expert",
       "description": "Produce one structured reference-aware video execution brief with explicit inputs, boundaries, and acceptance checks.",
-      "category": "Video",
+      "category": "Text",
       "categoryTags": [
         "video",
         "text"
@@ -2529,7 +2529,7 @@
       "id": "handdrawn-story-video",
       "displayName": "Hand-drawn Story Video",
       "description": "Silent hand-drawn story-video plan and render brief.",
-      "category": "Media workflows",
+      "category": "Text",
       "categoryTags": [
         "media-workflows",
         "text"
@@ -2658,7 +2658,7 @@
       "id": "legal-diagram-redraw",
       "displayName": "Legal Diagram Redraw",
       "description": "Editable redraw of supplied legal diagrams without changing asserted facts.",
-      "category": "Media workflows",
+      "category": "Text",
       "categoryTags": [
         "media-workflows",
         "text"
@@ -2694,7 +2694,7 @@
       "id": "legal-evidence-timeline",
       "displayName": "Legal Evidence Timeline",
       "description": "Traceable chronology from user-supplied evidence.",
-      "category": "Media workflows",
+      "category": "Text",
       "categoryTags": [
         "media-workflows",
         "text"
@@ -3725,7 +3725,7 @@
       "id": "narrative-video-prompt",
       "displayName": "Narrative Video Prompt",
       "description": "Structured prompt for one narrative video shot.",
-      "category": "Media workflows",
+      "category": "Text",
       "categoryTags": [
         "media-workflows",
         "text"
@@ -3778,7 +3778,7 @@
       "id": "narrative-video-storyboard",
       "displayName": "Narrative Video Storyboard",
       "description": "Multi-shot narrative video storyboard.",
-      "category": "Media workflows",
+      "category": "Text",
       "categoryTags": [
         "media-workflows",
         "text"
@@ -3814,7 +3814,7 @@
       "id": "orchestrate-multi-step-workflow",
       "displayName": "Multi-step Workflow Orchestration",
       "description": "Plan and coordinate a creative request that needs multiple Skills, research, or material handoffs.",
-      "category": "Platform tooling",
+      "category": "Text",
       "categoryTags": [
         "platform-tooling",
         "text"
@@ -4035,7 +4035,7 @@
       "id": "plan-comic-storyboard",
       "displayName": "Plan Comic Storyboard",
       "description": "Convert a story into a validated page-by-page comic production manifest.",
-      "category": "Narrative and comics",
+      "category": "Text",
       "categoryTags": [
         "narrative-and-comics",
         "text"
@@ -4088,7 +4088,7 @@
       "id": "plan-film-storyboard",
       "displayName": "Plan Film Storyboard",
       "description": "Turn narrative material into timed atomic film shots with continuity and generation handoffs.",
-      "category": "Narrative and comics",
+      "category": "Text",
       "categoryTags": [
         "narrative-and-comics",
         "text"
@@ -4460,7 +4460,7 @@
       "id": "product-launch-video",
       "displayName": "Product Launch Video",
       "description": "Product launch-film plan with hook, reveal, and end-card arc.",
-      "category": "Media workflows",
+      "category": "Text",
       "categoryTags": [
         "media-workflows",
         "text"
@@ -5174,7 +5174,7 @@
       "id": "short-audiovisual-prompt",
       "displayName": "Short Audiovisual Prompt",
       "description": "Compact single-shot audiovisual video prompt.",
-      "category": "Media workflows",
+      "category": "Text",
       "categoryTags": [
         "media-workflows",
         "text"
@@ -5273,7 +5273,7 @@
       "id": "social-knowledge-notes",
       "displayName": "Social Knowledge Notes",
       "description": "Fact-checked multi-page social knowledge-note plan.",
-      "category": "Media workflows",
+      "category": "Text",
       "categoryTags": [
         "media-workflows",
         "text"
@@ -5344,7 +5344,7 @@
       "id": "technical-visual-explainer",
       "displayName": "Technical Visual Explainer",
       "description": "Interactive self-contained HTML technical explanation.",
-      "category": "Media workflows",
+      "category": "Text",
       "categoryTags": [
         "media-workflows",
         "text"
@@ -5380,7 +5380,7 @@
       "id": "testimonial-quote-video",
       "displayName": "Testimonial Quote Video",
       "description": "Attributed animated testimonial-video plan.",
-      "category": "Media workflows",
+      "category": "Text",
       "categoryTags": [
         "media-workflows",
         "text"
@@ -5535,7 +5535,7 @@
       "id": "video-model-advisor",
       "displayName": "Video Model Advisor",
       "description": "Evidence-bounded recommendation among verified video routes.",
-      "category": "Media workflows",
+      "category": "Text",
       "categoryTags": [
         "media-workflows",
         "text"
@@ -5571,7 +5571,7 @@
       "id": "video-prompt-failure-diagnosis",
       "displayName": "Video Prompt Failure Diagnosis",
       "description": "Diagnosis and revised prompt after a known defective result.",
-      "category": "Media workflows",
+      "category": "Text",
       "categoryTags": [
         "media-workflows",
         "text"
@@ -5736,7 +5736,7 @@
       "id": "write-short-drama-series",
       "displayName": "Write Short Drama Series",
       "description": "Turn a story into a validated short-drama bible, episode arc, continuity ledger, and scripts.",
-      "category": "Narrative and comics",
+      "category": "Text",
       "categoryTags": [
         "narrative-and-comics",
         "text"
@@ -5772,7 +5772,7 @@
       "id": "write-short-video-hooks",
       "displayName": "Write Short Video Hooks",
       "description": "Write three platform-native hooks that the content can honestly pay off.",
-      "category": "Narrative and comics",
+      "category": "Text",
       "categoryTags": [
         "narrative-and-comics",
         "text"

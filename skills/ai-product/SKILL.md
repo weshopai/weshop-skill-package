@@ -10,7 +10,7 @@ Create one product-faithful commercial scene from one real product image. Keep t
 ## Catalog
 
 - Display name: AI Product
-- Category: Commercial production
+- Categories: Commercial Production
 - Status: Ready
 - Route label: WeShop AI Product or GPT Image 2
 - Tone: sage

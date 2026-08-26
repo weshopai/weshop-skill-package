@@ -7,7 +7,7 @@ description: Create one complete immersive first-person short film from a locked
 ## Catalog
 
 - Display name: POV Short Film Generator
-- Category: Video and audio
+- Categories: Film, Video
 - Status: Ready
 - Route label: Subjective narrative film composition
 - Tone: purple

@@ -10,7 +10,7 @@ Produce one dressed-model image. Define the Skill by the replacement job and pre
 ## Catalog
 
 - Display name: Fashion Model Replacement
-- Category: Commercial production
+- Categories: Fashion, Commercial Production
 - Status: Ready
 - Route label: WeShop AI Model or GPT Image 2
 - Tone: coral

@@ -5,7 +5,7 @@ description: Detect, transcribe, translate, remove, and replace text inside a su
 # Translate Image Text
 ## Catalog
 - Display name: Translate Image Text
-- Category: Social and layout
+- Categories: Social Media, Utility
 - Status: Ready
 - Route label: GPT Image 2 native visual translation
 - Tone: teal

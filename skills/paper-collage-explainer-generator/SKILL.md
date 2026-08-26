@@ -7,7 +7,7 @@ description: "Plan and produce one editorial paper-collage explainer from a conc
 ## Catalog
 
 - Display name: Paper Collage Explainer Generator
-- Category: Video
+- Categories: Video
 - Status: Ready
 - Route label: Approved cut-paper visual-metaphor production
 - Tone: orange

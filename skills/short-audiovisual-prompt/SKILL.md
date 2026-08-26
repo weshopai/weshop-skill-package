@@ -8,7 +8,7 @@ description: Use for compact single-shot audiovisual video prompt from approved 
 
 - Display name: Short Audiovisual Prompt
 - Text category: yes
-- Category: Media workflows
+- Categories: Text, Film, Video
 - Status: Planning route only
 - Route label: Agent-authored structured brief
 - Tone: blue

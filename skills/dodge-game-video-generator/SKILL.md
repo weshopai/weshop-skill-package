@@ -7,7 +7,7 @@ description: "Create one character-led dodge-game reaction short from authorized
 ## Catalog
 
 - Display name: Dodge Game Video Generator
-- Category: Video
+- Categories: Video
 - Status: Ready
 - Route label: Independent outcome contract
 - Tone: purple

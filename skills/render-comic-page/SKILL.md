@@ -7,7 +7,7 @@ description: Render one finished comic page from an approved page storyboard, ch
 ## Catalog
 
 - Display name: Render Comic Page
-- Category: Narrative and comics
+- Categories: Comic
 - Status: Ready
 - Route label: GPT Image 2 reference-aware comic page
 - Tone: purple

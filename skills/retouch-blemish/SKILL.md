@@ -5,7 +5,7 @@ description: Remove named temporary skin blemishes from an authorized portrait w
 # Retouch Blemish
 ## Catalog
 - Display name: Retouch Blemish
-- Category: Image repair
+- Categories: Utility
 - Status: Ready
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: rose

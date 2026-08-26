@@ -7,7 +7,7 @@ description: Restyle a supplied room while preserving architecture, spatial layo
 ## Catalog
 
 - Display name: Restyle Room
-- Category: Space and diagrams
+- Categories: Layout & Design
 - Status: Ready
 - Route label: GPT Image 2 room restyling
 - Tone: orange

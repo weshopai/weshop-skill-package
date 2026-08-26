@@ -8,7 +8,7 @@ description: Change only both iris colors in one authorized portrait while prese
 ## Catalog
 
 - Display name: Eye Color Change
-- Category: Person appearance
+- Categories: Portrait
 - Status: Ready
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: rose

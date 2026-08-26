@@ -7,7 +7,7 @@ description: Use for an uploaded character transformed into an identity-preserve
 ## Catalog
 
 - Display name: Character Toy Grid Motion
-- Category: Video
+- Categories: Character, Video
 - Status: Ready
 - Route label: Identity-locked six-panel toy poster and motion
 - Tone: purple

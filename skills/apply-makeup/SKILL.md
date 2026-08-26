@@ -8,7 +8,7 @@ description: Apply one makeup look to an authorized portrait while preserving id
 ## Catalog
 
 - Display name: Apply Makeup
-- Category: Person appearance
+- Categories: Portrait, Fashion
 - Status: Ready
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: rose

@@ -7,7 +7,7 @@ description: Create one original non-player character image whose occupation, fa
 ## Catalog
 
 - Display name: Create NPC
-- Category: Character and brand
+- Categories: Character
 - Status: Ready
 - Route label: GPT Image 2 game-character concept
 - Tone: violet

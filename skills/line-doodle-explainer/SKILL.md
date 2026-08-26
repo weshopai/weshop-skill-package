@@ -7,7 +7,7 @@ description: Use for a diagram-first educational short that turns a topic or les
 ## Catalog
 
 - Display name: Line-Doodle Explainer
-- Category: Video
+- Categories: Video
 - Status: Ready
 - Route label: Diagram-first line-doodle teaching production
 - Tone: blue

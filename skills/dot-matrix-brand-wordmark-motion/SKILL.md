@@ -7,7 +7,7 @@ description: "Create one exact brand wordmark dot-matrix motion from authorized 
 ## Catalog
 
 - Display name: Dot Matrix Brand Wordmark Motion
-- Category: Video
+- Categories: Commercial Production, Video
 - Status: Ready
 - Route label: Independent outcome contract
 - Tone: purple

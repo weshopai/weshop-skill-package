@@ -8,7 +8,7 @@ description: Use for interactive self-contained html technical explanation from 
 
 - Display name: Technical Visual Explainer
 - Text category: yes
-- Category: Media workflows
+- Categories: Text, Layout & Design
 - Status: Planning route only
 - Route label: Agent-authored structured brief
 - Tone: blue

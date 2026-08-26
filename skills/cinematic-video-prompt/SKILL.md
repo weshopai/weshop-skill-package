@@ -8,7 +8,7 @@ description: Use for cinematic or image-to-video motion prompt from approved use
 
 - Display name: Cinematic Video Prompt
 - Text category: yes
-- Category: Media workflows
+- Categories: Text, Film, Video
 - Status: Planning route only
 - Route label: Agent-authored structured brief
 - Tone: blue

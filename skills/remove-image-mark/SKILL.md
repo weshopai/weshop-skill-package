@@ -5,7 +5,7 @@ description: Remove a visible user-requested watermark, logo overlay, stamp, dat
 # Remove Image Mark
 ## Catalog
 - Display name: Remove Image Mark
-- Category: Image repair
+- Categories: Utility
 - Status: Ready
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: red

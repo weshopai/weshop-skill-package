@@ -7,7 +7,7 @@ description: Use for a real photo, video, or approved realistic preview where a 
 ## Catalog
 
 - Display name: Live Sketch Motion
-- Category: Video
+- Categories: Video
 - Status: Ready
 - Route label: Marker-synchronized live-to-sketch conversion
 - Tone: blue

@@ -7,7 +7,7 @@ description: Create one complete birthday memory video from authorized photos or
 ## Catalog
 
 - Display name: Make Birthday Video
-- Category: Social and memory
+- Categories: Social Media, Video
 - Status: Ready
 - Route label: Memory-led birthday video assembly
 - Tone: yellow

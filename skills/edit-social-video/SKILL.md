@@ -7,7 +7,7 @@ description: Turn supplied footage into one platform-ready social video using cu
 ## Catalog
 
 - Display name: Edit Social Video
-- Category: Video and audio
+- Categories: Social Media, Video
 - Status: Ready
 - Route label: Platform-aware social edit
 - Tone: red

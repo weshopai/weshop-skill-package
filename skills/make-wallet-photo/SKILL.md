@@ -7,7 +7,7 @@ description: Prepare one wallet-size print portrait from an authorized photo usi
 ## Catalog
 
 - Display name: Make Wallet Photo
-- Category: Social and memory
+- Categories: Portrait
 - Status: Ready
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: blue

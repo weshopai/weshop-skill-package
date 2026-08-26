@@ -8,7 +8,7 @@ description: Turn one authorized everyday person photo into one realistic solo s
 ## Catalog
 
 - Display name: Make Selfie
-- Category: Person appearance
+- Categories: Portrait
 - Status: Ready
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: rose

@@ -7,7 +7,7 @@ description: Create one complete podcast video from approved audio or script wit
 ## Catalog
 
 - Display name: Make Podcast Video
-- Category: Video and audio
+- Categories: Video
 - Status: Ready
 - Route label: Podcast scene and audio-led video assembly
 - Tone: navy

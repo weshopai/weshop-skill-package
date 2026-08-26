@@ -10,7 +10,7 @@ Turn product and brand references into one coherent packaging concept board. The
 ## Catalog
 
 - Display name: Product Packaging
-- Category: Commercial image
+- Categories: Commercial Production, Layout & Design
 - Status: Ready
 - Route label: Model-routed packaging concept
 - Tone: lilac

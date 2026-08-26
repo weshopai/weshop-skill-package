@@ -8,7 +8,7 @@ description: Develop a story idea, weak premise, outline, or draft into a struct
 
 - Display name: Develop Story
 - Text category: yes
-- Category: Narrative and comics
+- Categories: Text, Film
 - Status: Ready
 - Route label: Agent-authored story development package
 - Tone: blue

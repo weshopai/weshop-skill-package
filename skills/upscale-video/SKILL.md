@@ -7,7 +7,7 @@ description: Increase supplied video resolution and clarity while preserving tim
 ## Catalog
 
 - Display name: Upscale Video
-- Category: Video and audio
+- Categories: Video
 - Status: Ready
 - Route label: WeShop AI Video Enhancer
 - Tone: green

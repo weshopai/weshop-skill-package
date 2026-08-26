@@ -5,7 +5,7 @@ description: Use for one supplied poster animated as a single continuous motion 
 # Poster Motion
 ## Catalog
 - Display name: Poster Motion
-- Category: Video
+- Categories: Layout & Design, Video
 - Status: Ready
 - Route label: Final-lock-frame poster animation
 - Tone: purple

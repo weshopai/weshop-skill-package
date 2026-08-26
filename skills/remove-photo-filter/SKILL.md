@@ -5,7 +5,7 @@ description: Neutralize an applied photographic filter or color grade and recove
 # Remove Photo Filter
 ## Catalog
 - Display name: Remove Photo Filter
-- Category: Image repair
+- Categories: Utility
 - Status: Ready
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: sky

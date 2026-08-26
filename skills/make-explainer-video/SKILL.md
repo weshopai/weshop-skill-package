@@ -7,7 +7,7 @@ description: Research, script, plan, generate, and assemble one short narrated e
 ## Catalog
 
 - Display name: Make Explainer Video
-- Category: Video and audio
+- Categories: Video
 - Status: Ready
 - Route label: Source-backed beat-to-video composition
 - Tone: purple

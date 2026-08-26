@@ -7,7 +7,7 @@ description: Create one continuous scene-first FPV flythrough of an authorized a
 ## Catalog
 
 - Display name: FPV Tour Video Generator
-- Category: Video and audio
+- Categories: Video
 - Status: Ready
 - Route label: Continuous spatial FPV composition
 - Tone: purple

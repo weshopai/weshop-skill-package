@@ -7,7 +7,7 @@ description: Direct and produce one short product commercial from a locked brief
 ## Catalog
 
 - Display name: Make Product Commercial
-- Category: Video and audio
+- Categories: Commercial Production, Video
 - Status: Ready
 - Route label: Product-safe multi-shot video composition
 - Tone: purple

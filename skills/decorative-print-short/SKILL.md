@@ -5,7 +5,7 @@ description: Use for a decorative print-illustration short with fine closed line
 # Decorative Print Short
 ## Catalog
 - Display name: Decorative Print Short
-- Category: Video
+- Categories: Video
 - Status: Ready
 - Route label: Decorative print paired-shot production
 - Tone: orange

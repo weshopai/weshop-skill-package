@@ -10,7 +10,7 @@ description: Orchestrate a WeShop creative workflow that already needs multiple 
 - Display name: Multi-step Workflow Orchestration
 - Visibility: system
 - Text category: yes
-- Category: Platform tooling
+- Categories: Utility
 - Status: Ready
 - Route label: Dependency-aware multi-Skill planning
 - Tone: ink

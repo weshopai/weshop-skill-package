@@ -9,7 +9,7 @@ description: Route any WeShop creative request. Use it to infer the complete int
 
 - Display name: WeShop Router
 - Visibility: system
-- Category: Platform tooling
+- Categories: Utility
 - Status: Ready
 - Route label: Intent-aware Skill routing
 - Tone: ink

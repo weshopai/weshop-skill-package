@@ -10,7 +10,7 @@ Create one requested pose or three useful choices from one dressed-person image.
 ## Catalog
 
 - Display name: Change Pose
-- Category: Commercial production
+- Categories: Portrait, Commercial Production
 - Status: Ready
 - Featured: yes
 - Cover image: /skill-covers/change-pose.png

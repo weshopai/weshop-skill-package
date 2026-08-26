@@ -10,7 +10,7 @@ Turn a communication idea into one poster with a clear focal point, intentional 
 ## Catalog
 
 - Display name: Poster Design
-- Category: Layout / composition
+- Categories: Layout & Design
 - Status: Ready
 - Featured: yes
 - Cover image: /skill-covers/poster-design.png

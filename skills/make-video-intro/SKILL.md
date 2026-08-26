@@ -7,7 +7,7 @@ description: Create one short reusable branded video intro with exact identity, 
 ## Catalog
 
 - Display name: Make Video Intro
-- Category: Video and audio
+- Categories: Video
 - Status: Ready
 - Route label: GPT Image 2 plus video generation
 - Tone: amber

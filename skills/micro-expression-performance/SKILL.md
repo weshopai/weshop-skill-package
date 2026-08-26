@@ -7,7 +7,7 @@ description: Use for a short character-performance shot where gaze, brows, mouth
 ## Catalog
 
 - Display name: Micro-Expression Performance
-- Category: Video
+- Categories: Portrait, Video
 - Status: Ready
 - Route label: Character acting-layer direction
 - Tone: purple

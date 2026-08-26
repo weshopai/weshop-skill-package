@@ -5,7 +5,7 @@ description: Change only a named object or PNG element to a target color while p
 # Recolor Object
 ## Catalog
 - Display name: Recolor Object
-- Category: Social and layout
+- Categories: Utility
 - Status: Ready
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: violet

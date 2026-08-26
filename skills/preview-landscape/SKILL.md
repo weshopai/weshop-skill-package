@@ -7,7 +7,7 @@ description: Preview a landscape redesign on a supplied yard or outdoor site whi
 ## Catalog
 
 - Display name: Preview Landscape
-- Category: Space and diagrams
+- Categories: Layout & Design
 - Status: Ready
 - Route label: GPT Image 2 landscape editing
 - Tone: green

@@ -7,7 +7,7 @@ description: Combine supplied clips into one ordered video with intentional trim
 ## Catalog
 
 - Display name: Combine Videos
-- Category: Video and audio
+- Categories: Video
 - Status: Ready
 - Route label: Deterministic timeline assembly
 - Tone: blue

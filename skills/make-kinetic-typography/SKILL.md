@@ -7,7 +7,7 @@ description: Create one polished, accessible kinetic-typography animation from s
 ## Catalog
 
 - Display name: Make Kinetic Typography
-- Category: Video
+- Categories: Video
 - Status: Ready
 - Route label: Accessible animated typography
 - Tone: blue

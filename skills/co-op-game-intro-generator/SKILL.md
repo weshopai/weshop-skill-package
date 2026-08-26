@@ -7,7 +7,7 @@ description: "Create one two-player game menu and opening animation from authori
 ## Catalog
 
 - Display name: Co-op Game Intro Generator
-- Category: Video
+- Categories: Video
 - Status: Ready
 - Route label: Independent outcome contract
 - Tone: purple

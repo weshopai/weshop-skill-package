@@ -5,7 +5,7 @@ description: Add plausible, context-aware color to a black-and-white or grayscal
 # Colorize Image
 ## Catalog
 - Display name: Colorize Image
-- Category: Image repair
+- Categories: Utility
 - Status: Ready
 - Route label: GPT Image 2 contextual colorization
 - Tone: gold

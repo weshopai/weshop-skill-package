@@ -7,7 +7,7 @@ description: Use for a supplied image reconstructed as intentionally awkward, pr
 ## Catalog
 
 - Display name: Primitive Folk CGI Restyle
-- Category: Video
+- Categories: Video
 - Status: Ready
 - Route label: Broad-anchor-preserving primitive-3D reconstruction
 - Tone: green

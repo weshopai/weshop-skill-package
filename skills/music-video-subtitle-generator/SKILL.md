@@ -7,7 +7,7 @@ description: Create one subtitle-first music aesthetic video from an authorized 
 ## Catalog
 
 - Display name: Music Video Subtitle Generator
-- Category: Video and audio
+- Categories: Film, Video
 - Status: Ready
 - Route label: Lyric-locked visual MV composition
 - Tone: purple

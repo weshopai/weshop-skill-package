@@ -7,7 +7,7 @@ description: Create a highly simplified square IP mascot logo through three prod
 ## Catalog
 
 - Display name: Create Mascot Logo
-- Category: Character and brand
+- Categories: Character, Commercial Production
 - Status: Ready
 - Route label: GPT Image 2 mascot-logo generation
 - Tone: purple

@@ -7,7 +7,7 @@ description: Create one accurate readable flowchart from an explicit process mod
 ## Catalog
 
 - Display name: Make Flowchart
-- Category: Space and diagrams
+- Categories: Layout & Design, Utility
 - Status: Ready
 - Route label: GPT Image 2 flowchart rendering
 - Tone: blue

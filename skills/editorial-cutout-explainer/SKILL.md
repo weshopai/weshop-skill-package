@@ -5,7 +5,7 @@ description: Use for an approval-first knowledge explainer with generic editoria
 # Editorial Cutout Explainer
 ## Catalog
 - Display name: Editorial Cutout Explainer
-- Category: Video
+- Categories: Video
 - Status: Ready
 - Route label: Evidence-led editorial cutout production
 - Tone: orange

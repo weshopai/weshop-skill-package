@@ -5,7 +5,7 @@ description: Research current requirements of a named platform and placement, th
 # Make Thumbnail
 ## Catalog
 - Display name: Make Thumbnail
-- Category: Social and layout
+- Categories: Social Media, Layout & Design
 - Status: Ready
 - Route label: Platform research plus GPT Image 2
 - Tone: amber

@@ -7,7 +7,7 @@ description: Create a consistent image-first presentation deck from supplied con
 ## Catalog
 
 - Display name: Create Image Deck
-- Category: Layout and design
+- Categories: Layout & Design
 - Status: Ready
 - Route label: Image-first presentation production
 - Tone: blue

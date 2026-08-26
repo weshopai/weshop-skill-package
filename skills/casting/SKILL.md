@@ -8,7 +8,7 @@ description: "Create a Chinese screen-role casting package from a six-field role
 ## Catalog
 
 - Display name: Casting
-- Category: Character and brand
+- Categories: Character
 - Status: Ready
 - Featured: yes
 - Cover image: /skill-covers/casting.png

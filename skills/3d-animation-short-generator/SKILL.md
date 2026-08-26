@@ -7,7 +7,7 @@ description: Create one complete story-driven stylized 3D animated short from pr
 ## Catalog
 
 - Display name: 3D Animation Short Generator
-- Category: Video and audio
+- Categories: Video
 - Status: Ready
 - Route label: Story-to-finished stylized animation composition
 - Tone: purple

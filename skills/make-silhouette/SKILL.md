@@ -5,7 +5,7 @@ description: Convert one named subject into a clean solid silhouette while prese
 # Make Silhouette
 ## Catalog
 - Display name: Make Silhouette
-- Category: Social and layout
+- Categories: Social Media, Portrait
 - Status: Ready
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: slate

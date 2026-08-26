@@ -7,7 +7,7 @@ description: Use for one live-action short where a rough hand-drawn entity visib
 ## Catalog
 
 - Display name: Handdrawn Live-Action Fusion
-- Category: Video
+- Categories: Video
 - Status: Ready
 - Route label: Contact-led live-action drawing fusion
 - Tone: orange

@@ -7,7 +7,7 @@ description: Create one personalized holiday greeting card from authorized photo
 ## Catalog
 
 - Display name: Make Holiday Card
-- Category: Social and memory
+- Categories: Social Media, Layout & Design
 - Status: Ready
 - Route label: GPT Image 2 exact-copy card design
 - Tone: red

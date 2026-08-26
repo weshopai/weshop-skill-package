@@ -5,7 +5,7 @@ description: Apply one controlled photographic color-and-texture treatment while
 # Apply Photo Filter
 ## Catalog
 - Display name: Apply Photo Filter
-- Category: Social and layout
+- Categories: Social Media, Portrait
 - Status: Ready
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: orange

@@ -10,7 +10,7 @@ Execute one garment-to-person transformation with a model-plus-Prompt route. Tre
 ## Catalog
 
 - Display name: Virtual Try-On
-- Category: Commercial production
+- Categories: Fashion, Commercial Production
 - Status: Ready
 - Featured: yes
 - Cover image: /skill-covers/virtual-try-on.png

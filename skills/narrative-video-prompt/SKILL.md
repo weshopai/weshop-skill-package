@@ -8,7 +8,7 @@ description: Use for structured prompt for one narrative video shot from approve
 
 - Display name: Narrative Video Prompt
 - Text category: yes
-- Category: Media workflows
+- Categories: Text, Film, Video
 - Status: Planning route only
 - Route label: Agent-authored structured brief
 - Tone: blue

@@ -7,7 +7,7 @@ description: Create one complete short promotional video for a brand, app, websi
 ## Catalog
 
 - Display name: Brand Promo Video Generator
-- Category: Video and audio
+- Categories: Commercial Production, Video
 - Status: Ready
 - Route label: Verified-brand multi-beat campaign video
 - Tone: purple

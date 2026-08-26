@@ -5,7 +5,7 @@ description: Reduce specified skin lines or garment wrinkles in a supplied image
 # Smooth Wrinkles
 ## Catalog
 - Display name: Smooth Wrinkles
-- Category: Image repair
+- Categories: Utility
 - Status: Ready
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: sand

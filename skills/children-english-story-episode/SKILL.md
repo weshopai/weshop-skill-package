@@ -5,7 +5,7 @@ description: Use for an original, child-safe English-learning story episode with
 # Children’s English Story Episode
 ## Catalog
 - Display name: Children’s English Story Episode
-- Category: Video
+- Categories: Film, Video
 - Status: Ready
 - Route label: Original recurring-character learning episode
 - Tone: green

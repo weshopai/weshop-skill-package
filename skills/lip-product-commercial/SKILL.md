@@ -7,7 +7,7 @@ description: Use for a lip-color commercial with model, packaging, shade, finish
 ## Catalog
 
 - Display name: Lip Product Commercial
-- Category: Video
+- Categories: Commercial Production, Video
 - Status: Ready
 - Route label: Lip-color proof commercial production
 - Tone: pink

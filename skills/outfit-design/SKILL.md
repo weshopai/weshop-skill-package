@@ -11,7 +11,7 @@ Create one finished image of the supplied person wearing an intentionally new ou
 
 - Display name: Outfit Design
 - Kind: Atom
-- Category: Fashion workflow
+- Categories: Fashion, Layout & Design
 - Status: Ready
 - Route label: Outfit Generator with GPT Image 2 reference-aware route
 - Tone: violet

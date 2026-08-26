@@ -5,9 +5,9 @@
       "id": "3d-animation-short-generator",
       "displayName": "3D Animation Short Generator",
       "description": "Produce one coherent multi-shot stylized 3D animated short from story lock through final-film QC.",
-      "category": "Video and audio",
+      "category": "Video",
       "categoryTags": [
-        "video-and-audio"
+        "Video"
       ],
       "coverImage": "/skill-covers/3d-animation-short-generator.png",
       "coverMotion": "/skill-covers/3d-animation-short-generator.mp4",
@@ -41,9 +41,9 @@
       "id": "add-braces",
       "displayName": "Add Braces",
       "description": "Preview one braces style on clearly visible teeth.",
-      "category": "Person appearance",
+      "category": "Portrait",
       "categoryTags": [
-        "person-appearance"
+        "Portrait"
       ],
       "coverImage": "/skill-covers/add-braces.png",
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
@@ -76,9 +76,10 @@
       "id": "add-speech-bubble",
       "displayName": "Add Speech Bubble",
       "description": "Add exact dialogue bubbles at the right subjects.",
-      "category": "Social and layout",
+      "category": "Social Media",
       "categoryTags": [
-        "social-and-layout"
+        "Social Media",
+        "Layout & Design"
       ],
       "coverImage": "/skill-covers/add-speech-bubble.png",
       "routeLabel": "GPT Image 2 overlay",
@@ -110,9 +111,10 @@
       "id": "add-tattoo",
       "displayName": "Add Tattoo",
       "description": "Preview one tattoo with realistic placement on visible skin.",
-      "category": "Person appearance",
+      "category": "Portrait",
       "categoryTags": [
-        "person-appearance"
+        "Portrait",
+        "Fashion"
       ],
       "coverImage": "/skill-covers/add-tattoo.png",
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
@@ -145,9 +147,9 @@
       "id": "add-video-effect",
       "displayName": "Add Video Effect",
       "description": "Add one specified effect to a supplied video at a defined time and region while preserving underlying footage.",
-      "category": "Video and audio",
+      "category": "Video",
       "categoryTags": [
-        "video-and-audio"
+        "Video"
       ],
       "coverImage": "/skill-covers/add-video-effect.png",
       "routeLabel": "MiniMax H3 localized video edit",
@@ -196,9 +198,10 @@
       "id": "ai-banner-design",
       "displayName": "AI Banner Design",
       "description": "Research and design channel-ready commercial banners.",
-      "category": "Layout and design",
+      "category": "Commercial Production",
       "categoryTags": [
-        "layout-and-design"
+        "Commercial Production",
+        "Layout & Design"
       ],
       "coverImage": "/skill-covers/ai-banner-design.png",
       "routeLabel": "Research plus GPT Image 2 banner production",
@@ -259,9 +262,9 @@
       "id": "ai-product",
       "displayName": "AI Product",
       "description": "Place a real product into a new commercial scene.",
-      "category": "Commercial production",
+      "category": "Commercial Production",
       "categoryTags": [
-        "commercial-production"
+        "Commercial Production"
       ],
       "coverImage": "/skill-covers/ai-product.png",
       "routeLabel": "WeShop AI Product or GPT Image 2",
@@ -316,9 +319,9 @@
       "id": "animate-image",
       "displayName": "Animate Image",
       "description": "Animate one supplied still with bounded subject and camera motion while preserving identity and composition.",
-      "category": "Video and audio",
+      "category": "Video",
       "categoryTags": [
-        "video-and-audio"
+        "Video"
       ],
       "coverImage": "/skill-covers/animate-image.png",
       "routeLabel": "Kling 3.0 image-to-video",
@@ -350,9 +353,10 @@
       "id": "apply-makeup",
       "displayName": "Apply Makeup",
       "description": "Preview one makeup look without replacing or reshaping the face.",
-      "category": "Person appearance",
+      "category": "Portrait",
       "categoryTags": [
-        "person-appearance"
+        "Portrait",
+        "Fashion"
       ],
       "coverImage": "/skill-covers/apply-makeup.png",
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
@@ -397,9 +401,10 @@
       "id": "apply-photo-filter",
       "displayName": "Apply Photo Filter",
       "description": "Apply one filter without changing scene content.",
-      "category": "Social and layout",
+      "category": "Social Media",
       "categoryTags": [
-        "social-and-layout"
+        "Social Media",
+        "Portrait"
       ],
       "coverImage": "/skill-covers/apply-photo-filter.png",
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
@@ -443,9 +448,9 @@
       "id": "backrooms-dreamcore",
       "displayName": "Backrooms Dreamcore",
       "description": "Turn one authorized reference into a restrained, photoreal liminal-space dossier and optional media.",
-      "category": "Video and audio",
+      "category": "Video",
       "categoryTags": [
-        "video-and-audio"
+        "Video"
       ],
       "coverImage": "/skill-covers/backrooms-dreamcore.png",
       "routeLabel": "Personalized Level-0 space dossier and visual route",
@@ -478,9 +483,10 @@
       "id": "brand-promo-video-generator",
       "displayName": "Brand Promo Video Generator",
       "description": "Produce one authenticity-checked promotional short for a brand, app, website, shop, service, or launch.",
-      "category": "Video and audio",
+      "category": "Commercial Production",
       "categoryTags": [
-        "video-and-audio"
+        "Commercial Production",
+        "Video"
       ],
       "coverImage": "/skill-covers/brand-promo-video-generator.png",
       "coverMotion": "/skill-covers/brand-promo-video-generator.mp4",
@@ -521,9 +527,10 @@
       "id": "brand-stream-mg",
       "displayName": "Brand Stream MG",
       "description": "Produce one logo-led neon brand motion with explicit inputs, boundaries, and acceptance checks.",
-      "category": "Video and audio",
+      "category": "Commercial Production",
       "categoryTags": [
-        "video-and-audio"
+        "Commercial Production",
+        "Video"
       ],
       "coverImage": "/skill-covers/brand-stream-mg.png",
       "coverMotion": "/skill-covers/brand-stream-mg.mp4",
@@ -574,9 +581,9 @@
       "id": "casting",
       "displayName": "Casting",
       "description": "Select and approve a screen-ready Chinese character face before deriving optional studio assets.",
-      "category": "Character and brand",
+      "category": "Character",
       "categoryTags": [
-        "character-and-brand"
+        "Character"
       ],
       "coverImage": "/skill-covers/casting.png",
       "routeLabel": "GPT Image 2 face-first casting package",
@@ -623,9 +630,10 @@
       "id": "change-bangs",
       "displayName": "Change Bangs",
       "description": "Preview one fringe style without replacing the full haircut.",
-      "category": "Person appearance",
+      "category": "Portrait",
       "categoryTags": [
-        "person-appearance"
+        "Portrait",
+        "Fashion"
       ],
       "coverImage": "/skill-covers/change-bangs.png",
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
@@ -675,9 +683,10 @@
       "id": "change-pose",
       "displayName": "Change Pose",
       "description": "Change a person’s pose without changing their look.",
-      "category": "Commercial production",
+      "category": "Portrait",
       "categoryTags": [
-        "commercial-production"
+        "Portrait",
+        "Commercial Production"
       ],
       "coverImage": "/skill-covers/change-pose.png",
       "routeLabel": "WeShop AI Pose pro or GPT Image 2",
@@ -732,9 +741,9 @@
       "id": "character-reference-sheet",
       "displayName": "Character Reference Sheet",
       "description": "Redirect legacy character-sheet requests to the canonical character workflow without creating a duplicate run.",
-      "category": "Character and brand",
+      "category": "Character",
       "categoryTags": [
-        "character-and-brand"
+        "Character"
       ],
       "coverImage": "/skill-covers/character-reference-sheet.png",
       "routeLabel": "Compatibility redirect to Create Character",
@@ -764,9 +773,10 @@
       "id": "character-toy-grid-motion",
       "displayName": "Character Toy Grid Motion",
       "description": "Turn one character image into a vertical designer-toy six-panel poster and an animated grid reveal.",
-      "category": "Video and audio",
+      "category": "Character",
       "categoryTags": [
-        "video-and-audio"
+        "Character",
+        "Video"
       ],
       "coverImage": "/skill-covers/character-toy-grid-motion.png",
       "coverMotion": "/skill-covers/character-toy-grid-motion.mp4",
@@ -800,9 +810,10 @@
       "id": "children-english-story-episode",
       "displayName": "Children’s English Story Episode",
       "description": "Plan an original children’s English story episode with reusable character and scene anchors.",
-      "category": "Video and audio",
+      "category": "Film",
       "categoryTags": [
-        "video-and-audio"
+        "Film",
+        "Video"
       ],
       "coverImage": "/skill-covers/children-english-story-episode.png",
       "coverMotion": "/skill-covers/children-english-story-episode.mp4",
@@ -837,8 +848,9 @@
       "description": "Cinematic or image-to-video motion prompt.",
       "category": "Text",
       "categoryTags": [
-        "text",
-        "media-workflows"
+        "Text",
+        "Film",
+        "Video"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -888,9 +900,9 @@
       "id": "clean-room",
       "displayName": "Clean Room",
       "description": "Remove room clutter without redesigning the space.",
-      "category": "Image repair",
+      "category": "Utility",
       "categoryTags": [
-        "image-repair"
+        "Utility"
       ],
       "coverImage": "/skill-covers/clean-room.png",
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
@@ -934,9 +946,9 @@
       "id": "co-op-game-intro-generator",
       "displayName": "Co-op Game Intro Generator",
       "description": "Produce one two-player game menu and opening animation with explicit inputs, boundaries, and acceptance checks.",
-      "category": "Video and audio",
+      "category": "Video",
       "categoryTags": [
-        "video-and-audio"
+        "Video"
       ],
       "coverImage": "/skill-covers/co-op-game-intro-generator.png",
       "coverMotion": "/skill-covers/co-op-game-intro-generator.mp4",
@@ -970,9 +982,9 @@
       "id": "colorize-image",
       "displayName": "Colorize Image",
       "description": "Add plausible color while preserving the original photograph.",
-      "category": "Image repair",
+      "category": "Utility",
       "categoryTags": [
-        "image-repair"
+        "Utility"
       ],
       "coverImage": "/skill-covers/colorize-image.png",
       "routeLabel": "GPT Image 2 contextual colorization",
@@ -1004,9 +1016,9 @@
       "id": "combine-videos",
       "displayName": "Combine Videos",
       "description": "Combine supplied clips into one ordered video with intentional trims, transitions and audio handling; do not regenerate footage.",
-      "category": "Video and audio",
+      "category": "Video",
       "categoryTags": [
-        "video-and-audio"
+        "Video"
       ],
       "coverImage": "/skill-covers/combine-videos.png",
       "routeLabel": "Deterministic timeline assembly",
@@ -1055,9 +1067,10 @@
       "id": "compose-lookbook",
       "displayName": "Compose Lookbook",
       "description": "Arrange several outfit photos into one editorial page.",
-      "category": "Social and layout",
+      "category": "Fashion",
       "categoryTags": [
-        "social-and-layout"
+        "Fashion",
+        "Social Media"
       ],
       "coverImage": "/skill-covers/compose-lookbook.png",
       "routeLabel": "GPT Image 2 editorial layout",
@@ -1106,9 +1119,9 @@
       "id": "correct-video-color",
       "displayName": "Correct Video Color",
       "description": "Correct white balance, exposure and shot-to-shot consistency without changing content or creative look.",
-      "category": "Video and audio",
+      "category": "Video",
       "categoryTags": [
-        "video-and-audio"
+        "Video"
       ],
       "coverImage": "/skill-covers/correct-video-color.png",
       "routeLabel": "Measured deterministic grade; MiniMax H3 only when temporal rewriting is required",
@@ -1157,9 +1170,9 @@
       "id": "create-animal",
       "displayName": "Create Animal",
       "description": "Generate one specified real or original animal in an anatomically and ecologically coherent scene.",
-      "category": "Character and brand",
+      "category": "Character",
       "categoryTags": [
-        "character-and-brand"
+        "Character"
       ],
       "coverImage": "/skill-covers/create-animal.png",
       "routeLabel": "Z-Image photorealistic animal generation",
@@ -1191,9 +1204,9 @@
       "id": "create-avatar",
       "displayName": "Create Avatar",
       "description": "Create one small-size-readable profile avatar from an authorized portrait or fictional brief.",
-      "category": "Character and brand",
+      "category": "Character",
       "categoryTags": [
-        "character-and-brand"
+        "Character"
       ],
       "coverImage": "/skill-covers/create-avatar.png",
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
@@ -1225,9 +1238,10 @@
       "id": "create-cad",
       "displayName": "Create CAD",
       "description": "Create and validate one parametric CAD part, returning STEP as the primary artifact rather than a render-only image.",
-      "category": "Space and diagrams",
+      "category": "Layout & Design",
       "categoryTags": [
-        "space-and-diagrams"
+        "Layout & Design",
+        "Utility"
       ],
       "coverImage": "/skill-covers/create-cad.png",
       "routeLabel": "STEP-first parametric CAD workflow",
@@ -1259,9 +1273,9 @@
       "id": "create-character",
       "displayName": "Create Character",
       "description": "Build one canonical identity, then derive seven consistent character assets from it.",
-      "category": "Character and brand",
+      "category": "Character",
       "categoryTags": [
-        "character-and-brand"
+        "Character"
       ],
       "coverImage": "/skill-covers/create-character.png",
       "routeLabel": "Eight-run GPT Image 2 character production pack",
@@ -1309,7 +1323,7 @@
       "description": "Turn a reusable workflow into a checked, user-owned local Agent Skill.",
       "category": "Text",
       "categoryTags": [
-        "text"
+        "Text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Isolated user-owned Skill authoring",
@@ -1348,9 +1362,9 @@
       "id": "create-flag",
       "displayName": "Create Flag",
       "description": "Design one original symbolically coherent flag that remains recognizable at distance and in flat form.",
-      "category": "Character and brand",
+      "category": "Character",
       "categoryTags": [
-        "character-and-brand"
+        "Character"
       ],
       "coverImage": "/skill-covers/create-flag.png",
       "routeLabel": "GPT Image 2 flag generation",
@@ -1382,9 +1396,9 @@
       "id": "create-image-deck",
       "displayName": "Create Image Deck",
       "description": "Plan, generate, inspect, and package a consistent image-first deck.",
-      "category": "Layout and design",
+      "category": "Layout & Design",
       "categoryTags": [
-        "layout-and-design"
+        "Layout & Design"
       ],
       "coverImage": "/skill-covers/create-image-deck.png",
       "routeLabel": "Image-first presentation production",
@@ -1434,9 +1448,9 @@
       "id": "create-logo",
       "displayName": "Create Logo",
       "description": "Design one selected original logo mark or lockup from a brand brief, after concept reduction and application checks.",
-      "category": "Character and brand",
+      "category": "Commercial Production",
       "categoryTags": [
-        "character-and-brand"
+        "Commercial Production"
       ],
       "coverImage": "/skill-covers/create-logo.png",
       "routeLabel": "GPT Image 2 logo generation",
@@ -1475,9 +1489,10 @@
       "id": "create-mascot-logo",
       "displayName": "Create Mascot Logo",
       "description": "Create a compact, cute mascot mark with controlled silhouette, color, and separately labeled directions.",
-      "category": "Character and brand",
+      "category": "Character",
       "categoryTags": [
-        "character-and-brand"
+        "Character",
+        "Commercial Production"
       ],
       "coverImage": "/skill-covers/create-mascot-logo.png",
       "routeLabel": "GPT Image 2 mascot-logo generation",
@@ -1517,9 +1532,9 @@
       "id": "create-npc",
       "displayName": "Create NPC",
       "description": "Create one original non-player character image whose occupation, faction and gameplay role are visually legible.",
-      "category": "Character and brand",
+      "category": "Character",
       "categoryTags": [
-        "character-and-brand"
+        "Character"
       ],
       "coverImage": "/skill-covers/create-npc.png",
       "routeLabel": "GPT Image 2 game-character concept",
@@ -1563,9 +1578,10 @@
       "id": "create-social-carousel",
       "displayName": "Create Social Carousel",
       "description": "Create a coherent mobile-first social carousel as separately generated ordered pages.",
-      "category": "Social and layout",
+      "category": "Social Media",
       "categoryTags": [
-        "social-and-layout"
+        "Social Media",
+        "Layout & Design"
       ],
       "coverImage": "/skill-covers/create-social-carousel.png",
       "routeLabel": "GPT Image 2 ordered carousel",
@@ -1615,9 +1631,10 @@
       "id": "create-white-background-product-mockup",
       "displayName": "White Background Product Mockup",
       "description": "Create product, flat-lay, and ghost-mannequin mockups without identity drift.",
-      "category": "Commercial production",
+      "category": "Commercial Production",
       "categoryTags": [
-        "commercial-production"
+        "Commercial Production",
+        "Layout & Design"
       ],
       "coverImage": "/skill-covers/create-white-background-product-mockup.png",
       "routeLabel": "Model-routed product mockups",
@@ -1682,8 +1699,8 @@
       "description": "Semantic adaptation of an existing video prompt.",
       "category": "Text",
       "categoryTags": [
-        "text",
-        "media-workflows"
+        "Text",
+        "Video"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -1733,9 +1750,10 @@
       "id": "data-driven-ad-creative-video",
       "displayName": "Data-driven Ad Creative Video",
       "description": "Controlled ad-video variants from approved tabular data.",
-      "category": "Video and audio",
+      "category": "Commercial Production",
       "categoryTags": [
-        "video-and-audio"
+        "Commercial Production",
+        "Video"
       ],
       "coverImage": "/skill-covers/data-driven-ad-creative-video.png",
       "coverMotion": "/skill-covers/data-driven-ad-creative-video.mp4",
@@ -1769,9 +1787,9 @@
       "id": "decorative-print-short",
       "displayName": "Decorative Print Short",
       "description": "Produce an elegant flat-print short with paired wide and close shots.",
-      "category": "Video and audio",
+      "category": "Video",
       "categoryTags": [
-        "video-and-audio"
+        "Video"
       ],
       "coverImage": "/skill-covers/decorative-print-short.png",
       "coverMotion": "/skill-covers/decorative-print-short.mp4",
@@ -1806,8 +1824,8 @@
       "description": "Produce one skill-teaching course conversion page plan with explicit inputs, boundaries, and acceptance checks.",
       "category": "Text",
       "categoryTags": [
-        "text",
-        "video-and-audio"
+        "Text",
+        "Layout & Design"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Independent outcome contract",
@@ -1842,8 +1860,8 @@
       "description": "Build or repair a story foundation before medium-specific production.",
       "category": "Text",
       "categoryTags": [
-        "text",
-        "narrative-and-comics"
+        "Text",
+        "Film"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored story development package",
@@ -1893,9 +1911,10 @@
       "id": "digital-product-promo-generator",
       "displayName": "Digital Product Promo Generator",
       "description": "Produce one authentic digital-product promo plan and video with explicit inputs, boundaries, and acceptance checks.",
-      "category": "Video and audio",
+      "category": "Commercial Production",
       "categoryTags": [
-        "video-and-audio"
+        "Commercial Production",
+        "Video"
       ],
       "coverImage": "/skill-covers/digital-product-promo-generator.png",
       "coverMotion": "/skill-covers/digital-product-promo-generator.mp4",
@@ -1936,9 +1955,9 @@
       "id": "dodge-game-video-generator",
       "displayName": "Dodge Game Video Generator",
       "description": "Produce one character-led dodge-game reaction short with explicit inputs, boundaries, and acceptance checks.",
-      "category": "Video and audio",
+      "category": "Video",
       "categoryTags": [
-        "video-and-audio"
+        "Video"
       ],
       "coverImage": "/skill-covers/dodge-game-video-generator.png",
       "coverMotion": "/skill-covers/dodge-game-video-generator.mp4",
@@ -1972,9 +1991,10 @@
       "id": "dot-matrix-brand-wordmark-motion",
       "displayName": "Dot Matrix Brand Wordmark Motion",
       "description": "Produce one exact brand wordmark dot-matrix motion with explicit inputs, boundaries, and acceptance checks.",
-      "category": "Video and audio",
+      "category": "Commercial Production",
       "categoryTags": [
-        "video-and-audio"
+        "Commercial Production",
+        "Video"
       ],
       "coverImage": "/skill-covers/dot-matrix-brand-wordmark-motion.png",
       "coverMotion": "/skill-covers/dot-matrix-brand-wordmark-motion.mp4",
@@ -2025,9 +2045,10 @@
       "id": "edit-social-video",
       "displayName": "Edit Social Video",
       "description": "Turn supplied footage into one platform-ready social video using current placement rules, a strong opening and evidence-faithful captions.",
-      "category": "Video and audio",
+      "category": "Social Media",
       "categoryTags": [
-        "video-and-audio"
+        "Social Media",
+        "Video"
       ],
       "coverImage": "/skill-covers/edit-social-video.png",
       "routeLabel": "Platform-aware social edit",
@@ -2076,9 +2097,9 @@
       "id": "editorial-cutout-explainer",
       "displayName": "Editorial Cutout Explainer",
       "description": "Plan and create a generic editorial cutout explainer with shallow 2D motion and approved evidence beats.",
-      "category": "Video and audio",
+      "category": "Video",
       "categoryTags": [
-        "video-and-audio"
+        "Video"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Evidence-led editorial cutout production",
@@ -2122,9 +2143,9 @@
       "id": "expand-image",
       "displayName": "Expand Image",
       "description": "Extend an image to a new ratio without stretching it.",
-      "category": "Image utility",
+      "category": "Utility",
       "categoryTags": [
-        "image-utility"
+        "Utility"
       ],
       "coverImage": "/skill-covers/expand-image.png",
       "routeLabel": "GPT Image 2 preservation-first outpainting with Expand Image fallback",
@@ -2168,9 +2189,9 @@
       "id": "eye-color-change",
       "displayName": "Eye Color Change",
       "description": "Preview one natural iris color without changing the eyes.",
-      "category": "Person appearance",
+      "category": "Portrait",
       "categoryTags": [
-        "person-appearance"
+        "Portrait"
       ],
       "coverImage": "/skill-covers/eye-color-change.png",
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
@@ -2203,9 +2224,10 @@
       "id": "fashion-model-replacement",
       "displayName": "Fashion Model Replacement",
       "description": "Replace a fashion model while keeping the outfit intact.",
-      "category": "Commercial production",
+      "category": "Fashion",
       "categoryTags": [
-        "commercial-production"
+        "Fashion",
+        "Commercial Production"
       ],
       "coverImage": "/skill-covers/fashion-model-replacement.jpg",
       "routeLabel": "WeShop AI Model or GPT Image 2",
@@ -2262,8 +2284,8 @@
       "description": "Produce one observable film-reference prompt brief with explicit inputs, boundaries, and acceptance checks.",
       "category": "Text",
       "categoryTags": [
-        "text",
-        "video-and-audio"
+        "Text",
+        "Film"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Independent outcome contract",
@@ -2296,9 +2318,9 @@
       "id": "fpv-tour-video-generator",
       "displayName": "FPV Tour Video Generator",
       "description": "Produce one route-planned FPV flythrough with continuous spatial motion and landmark coverage.",
-      "category": "Video and audio",
+      "category": "Video",
       "categoryTags": [
-        "video-and-audio"
+        "Video"
       ],
       "coverImage": "/skill-covers/fpv-tour-video-generator.png",
       "coverMotion": "/skill-covers/fpv-tour-video-generator.mp4",
@@ -2332,9 +2354,9 @@
       "id": "generate-video",
       "displayName": "Generate Video",
       "description": "Generate one coherent video from a shot brief using a deliberately selected current model and one observable action.",
-      "category": "Video and audio",
+      "category": "Video",
       "categoryTags": [
-        "video-and-audio"
+        "Video"
       ],
       "coverImage": "/skill-covers/generate-video.png",
       "routeLabel": "Guide-routed cataloged video model",
@@ -2368,8 +2390,8 @@
       "description": "Produce one structured reference-aware video execution brief with explicit inputs, boundaries, and acceptance checks.",
       "category": "Text",
       "categoryTags": [
-        "text",
-        "video-and-audio"
+        "Text",
+        "Video"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Independent outcome contract",
@@ -2402,9 +2424,10 @@
       "id": "hair-color-change",
       "displayName": "Hair Color Change",
       "description": "Preview one new hair color without changing the person or cut.",
-      "category": "Person appearance",
+      "category": "Portrait",
       "categoryTags": [
-        "person-appearance"
+        "Portrait",
+        "Fashion"
       ],
       "coverImage": "/skill-covers/hair-color-change.png",
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
@@ -2454,9 +2477,10 @@
       "id": "hairstyle-change",
       "displayName": "Hairstyle Change",
       "description": "Preview one different hairstyle without changing identity.",
-      "category": "Person appearance",
+      "category": "Portrait",
       "categoryTags": [
-        "person-appearance"
+        "Portrait",
+        "Fashion"
       ],
       "coverImage": "/skill-covers/hairstyle-change.png",
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
@@ -2506,9 +2530,9 @@
       "id": "handdrawn-live-action-fusion",
       "displayName": "Handdrawn Live-Action Fusion",
       "description": "Create one warm, rough hand-drawn entity that touches reality, morphs continuously, and escapes through a connected space.",
-      "category": "Video and audio",
+      "category": "Video",
       "categoryTags": [
-        "video-and-audio"
+        "Video"
       ],
       "coverImage": "/skill-covers/handdrawn-live-action-fusion.png",
       "coverMotion": "/skill-covers/handdrawn-live-action-fusion.mp4",
@@ -2544,8 +2568,9 @@
       "description": "Silent hand-drawn story-video plan and render brief.",
       "category": "Text",
       "categoryTags": [
-        "text",
-        "media-workflows"
+        "Text",
+        "Film",
+        "Video"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -2578,9 +2603,9 @@
       "id": "id-photo-format",
       "displayName": "ID Photo Format",
       "description": "Research the authority, correct the capture, then crop around the measured head.",
-      "category": "Portrait production",
+      "category": "Portrait",
       "categoryTags": [
-        "portrait-production"
+        "Portrait"
       ],
       "coverImage": "/skill-covers/id-photo-format.png",
       "routeLabel": "Official-rule research plus WeShop and measured crop",
@@ -2626,9 +2651,9 @@
       "id": "image-combiner",
       "displayName": "Image Combiner",
       "description": "Merge multiple images into one coherent scene.",
-      "category": "Layout and design",
+      "category": "Layout & Design",
       "categoryTags": [
-        "layout-and-design"
+        "Layout & Design"
       ],
       "coverImage": "/skill-covers/image-combiner.jpg",
       "routeLabel": "Multi-reference image composition",
@@ -2673,8 +2698,8 @@
       "description": "Editable redraw of supplied legal diagrams without changing asserted facts.",
       "category": "Text",
       "categoryTags": [
-        "text",
-        "media-workflows"
+        "Text",
+        "Video"
       ],
       "coverImage": "/skill-covers/legal-diagram-redraw.png",
       "routeLabel": "Agent-authored structured brief",
@@ -2709,8 +2734,8 @@
       "description": "Traceable chronology from user-supplied evidence.",
       "category": "Text",
       "categoryTags": [
-        "text",
-        "media-workflows"
+        "Text",
+        "Video"
       ],
       "coverImage": "/skill-covers/legal-evidence-timeline.png",
       "routeLabel": "Agent-authored structured brief",
@@ -2743,9 +2768,9 @@
       "id": "line-doodle-explainer",
       "displayName": "Line-Doodle Explainer",
       "description": "Explain one topic with sparse line figures, narration beats, diagrams, and an approved animated storyboard.",
-      "category": "Video and audio",
+      "category": "Video",
       "categoryTags": [
-        "video-and-audio"
+        "Video"
       ],
       "coverImage": "/skill-covers/line-doodle-explainer.png",
       "coverMotion": "/skill-covers/line-doodle-explainer.mp4",
@@ -2791,9 +2816,10 @@
       "id": "lip-product-commercial",
       "displayName": "Lip Product Commercial",
       "description": "Plan and produce an anchor-locked lip-product commercial with application, texture, shade, and packshot evidence.",
-      "category": "Video and audio",
+      "category": "Commercial Production",
       "categoryTags": [
-        "video-and-audio"
+        "Commercial Production",
+        "Video"
       ],
       "coverImage": "/skill-covers/lip-product-commercial.png",
       "coverMotion": "/skill-covers/lip-product-commercial.mp4",
@@ -2827,9 +2853,9 @@
       "id": "live-sketch-motion",
       "displayName": "Live Sketch Motion",
       "description": "Animate a real scene while a visible marker progressively redraws one moving subject as a lively colored-pencil sketch.",
-      "category": "Video and audio",
+      "category": "Video",
       "categoryTags": [
-        "video-and-audio"
+        "Video"
       ],
       "coverImage": "/skill-covers/live-sketch-motion.png",
       "coverMotion": "/skill-covers/live-sketch-motion.mp4",
@@ -2863,9 +2889,9 @@
       "id": "make-beat-synced-video",
       "displayName": "Make Beat-Synced Video",
       "description": "Cut supplied visuals to measured music structure and verify the export.",
-      "category": "Video and audio",
+      "category": "Video",
       "categoryTags": [
-        "video-and-audio"
+        "Video"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Deterministic beat-aware edit",
@@ -2915,9 +2941,10 @@
       "id": "make-birthday-video",
       "displayName": "Make Birthday Video",
       "description": "Create one complete birthday memory video from authorized media, exact messages and licensed or original audio.",
-      "category": "Social and layout",
+      "category": "Social Media",
       "categoryTags": [
-        "social-and-layout"
+        "Social Media",
+        "Video"
       ],
       "coverImage": "/skill-covers/make-birthday-video.png",
       "routeLabel": "Memory-led birthday video assembly",
@@ -2949,9 +2976,9 @@
       "id": "make-explainer-video",
       "displayName": "Make Explainer Video",
       "description": "Produce a fact-traceable narrated explainer with timed visual beats, subtitles, and final QC.",
-      "category": "Video and audio",
+      "category": "Video",
       "categoryTags": [
-        "video-and-audio"
+        "Video"
       ],
       "coverImage": "/skill-covers/make-explainer-video.png",
       "coverMotion": "/skill-covers/make-explainer-video.mp4",
@@ -2997,9 +3024,10 @@
       "id": "make-flowchart",
       "displayName": "Make Flowchart",
       "description": "Create one accurate readable flowchart from an explicit process model with verified nodes, decisions and connections.",
-      "category": "Space and diagrams",
+      "category": "Layout & Design",
       "categoryTags": [
-        "space-and-diagrams"
+        "Layout & Design",
+        "Utility"
       ],
       "coverImage": "/skill-covers/make-flowchart.png",
       "routeLabel": "GPT Image 2 flowchart rendering",
@@ -3031,9 +3059,10 @@
       "id": "make-holiday-card",
       "displayName": "Make Holiday Card",
       "description": "Create one personalized holiday card from authorized photos and exact greeting copy while preserving identities and print-safe layout.",
-      "category": "Social and layout",
+      "category": "Social Media",
       "categoryTags": [
-        "social-and-layout"
+        "Social Media",
+        "Layout & Design"
       ],
       "coverImage": "/skill-covers/make-holiday-card.png",
       "routeLabel": "GPT Image 2 exact-copy card design",
@@ -3065,9 +3094,10 @@
       "id": "make-infographic",
       "displayName": "Make Infographic",
       "description": "Research, write, and visualize a sourced infographic.",
-      "category": "Social and layout",
+      "category": "Social Media",
       "categoryTags": [
-        "social-and-layout"
+        "Social Media",
+        "Layout & Design"
       ],
       "coverImage": "/skill-covers/make-infographic.png",
       "routeLabel": "Research plus GPT Image 2",
@@ -3099,9 +3129,9 @@
       "id": "make-kinetic-typography",
       "displayName": "Make Kinetic Typography",
       "description": "Turn approved copy into one readable, verified typography animation.",
-      "category": "Video and audio",
+      "category": "Video",
       "categoryTags": [
-        "video-and-audio"
+        "Video"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Accessible animated typography",
@@ -3134,9 +3164,9 @@
       "id": "make-mugshot-photo",
       "displayName": "Make Mugshot Photo",
       "description": "Create one clearly fictional or novelty mugshot-style portrait that cannot be mistaken for an official booking record.",
-      "category": "Social and layout",
+      "category": "Portrait",
       "categoryTags": [
-        "social-and-layout"
+        "Portrait"
       ],
       "coverImage": "/skill-covers/make-mugshot-photo.png",
       "routeLabel": "GPT Image 2 novelty mugshot-style portrait",
@@ -3168,9 +3198,10 @@
       "id": "make-music-video",
       "displayName": "Make Music Video",
       "description": "Cut authorized footage to one song through a validated lyric, rhythm, and visual-arc EDL.",
-      "category": "Video and audio",
+      "category": "Film",
       "categoryTags": [
-        "video-and-audio"
+        "Film",
+        "Video"
       ],
       "coverImage": "/skill-covers/make-music-video.png",
       "routeLabel": "Music-aware EDL and deterministic render",
@@ -3220,9 +3251,10 @@
       "id": "make-pet-portrait",
       "displayName": "Make Pet Portrait",
       "description": "Create one stylized or photographic portrait of a supplied pet while preserving distinctive markings and proportions.",
-      "category": "Character and brand",
+      "category": "Character",
       "categoryTags": [
-        "character-and-brand"
+        "Character",
+        "Portrait"
       ],
       "coverImage": "/skill-covers/make-pet-portrait.png",
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
@@ -3254,9 +3286,9 @@
       "id": "make-podcast-video",
       "displayName": "Make Podcast Video",
       "description": "Create one complete podcast video from approved audio or script with speaker-aware visuals and synchronized program audio.",
-      "category": "Video and audio",
+      "category": "Video",
       "categoryTags": [
-        "video-and-audio"
+        "Video"
       ],
       "coverImage": "/skill-covers/make-podcast-video.png",
       "routeLabel": "Podcast scene and audio-led video assembly",
@@ -3288,9 +3320,10 @@
       "id": "make-product-commercial",
       "displayName": "Make Product Commercial",
       "description": "Produce one truthful, continuity-safe short commercial in which the supplied product drives the action.",
-      "category": "Video and audio",
+      "category": "Commercial Production",
       "categoryTags": [
-        "video-and-audio"
+        "Commercial Production",
+        "Video"
       ],
       "coverImage": "/skill-covers/make-product-commercial.jpg",
       "coverMotion": "/skill-covers/make-product-commercial-preview.mp4",
@@ -3336,9 +3369,9 @@
       "id": "make-selfie",
       "displayName": "Make Selfie",
       "description": "Turn one or two everyday photos into one realistic selfie.",
-      "category": "Person appearance",
+      "category": "Portrait",
       "categoryTags": [
-        "person-appearance"
+        "Portrait"
       ],
       "coverImage": "/skill-covers/make-selfie.png",
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
@@ -3375,9 +3408,10 @@
       "id": "make-silhouette",
       "displayName": "Make Silhouette",
       "description": "Turn a subject into a recognizable silhouette.",
-      "category": "Social and layout",
+      "category": "Social Media",
       "categoryTags": [
-        "social-and-layout"
+        "Social Media",
+        "Portrait"
       ],
       "coverImage": "/skill-covers/make-silhouette.png",
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
@@ -3409,9 +3443,10 @@
       "id": "make-talking-video",
       "displayName": "Make Talking Video",
       "description": "Create one talking-person video from an authorized or fictional portrait and approved script with synchronized speech.",
-      "category": "Video and audio",
+      "category": "Portrait",
       "categoryTags": [
-        "video-and-audio"
+        "Portrait",
+        "Video"
       ],
       "coverImage": "/skill-covers/make-talking-video.png",
       "routeLabel": "Consent-safe talking-video generation",
@@ -3443,9 +3478,10 @@
       "id": "make-thumbnail",
       "displayName": "Make Thumbnail",
       "description": "Create a platform-aware cover or thumbnail.",
-      "category": "Social and layout",
+      "category": "Social Media",
       "categoryTags": [
-        "social-and-layout"
+        "Social Media",
+        "Layout & Design"
       ],
       "coverImage": "/skill-covers/make-thumbnail.png",
       "routeLabel": "Platform research plus GPT Image 2",
@@ -3494,9 +3530,9 @@
       "id": "make-video-intro",
       "displayName": "Make Video Intro",
       "description": "Create one short reusable branded intro with exact identity, legible title and a clean transition into program content.",
-      "category": "Video and audio",
+      "category": "Video",
       "categoryTags": [
-        "video-and-audio"
+        "Video"
       ],
       "coverImage": "/skill-covers/make-video-intro.png",
       "routeLabel": "GPT Image 2 plus video generation",
@@ -3545,9 +3581,9 @@
       "id": "make-wallet-photo",
       "displayName": "Make Wallet Photo",
       "description": "Prepare one wallet-size print portrait from an authorized photo using a real print dimension, crop and bleed specification.",
-      "category": "Social and layout",
+      "category": "Portrait",
       "categoryTags": [
-        "social-and-layout"
+        "Portrait"
       ],
       "coverImage": "/skill-covers/make-wallet-photo.png",
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
@@ -3591,9 +3627,10 @@
       "id": "make-wedding-photo",
       "displayName": "Make Wedding Photo",
       "description": "Create one wedding-style portrait of consenting adults from authorized references while preserving both identities and avoiding false-event claims.",
-      "category": "Social and layout",
+      "category": "Portrait",
       "categoryTags": [
-        "social-and-layout"
+        "Portrait",
+        "Social Media"
       ],
       "coverImage": "/skill-covers/make-wedding-photo.png",
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
@@ -3625,9 +3662,10 @@
       "id": "micro-expression-performance",
       "displayName": "Micro-Expression Performance",
       "description": "Direct a restrained emotional performance without changing the existing character, scene, dialogue, or camera intention.",
-      "category": "Video and audio",
+      "category": "Portrait",
       "categoryTags": [
-        "video-and-audio"
+        "Portrait",
+        "Video"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Character acting-layer direction",
@@ -3660,9 +3698,10 @@
       "id": "minimalist-product-ad-generator",
       "displayName": "Minimalist Product Ad Generator",
       "description": "Produce a sparse, product-faithful commercial with approved copy and beat-level continuity.",
-      "category": "Video and audio",
+      "category": "Commercial Production",
       "categoryTags": [
-        "video-and-audio"
+        "Commercial Production",
+        "Video"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Product-faithful minimalist film",
@@ -3707,9 +3746,10 @@
       "id": "music-video-subtitle-generator",
       "displayName": "Music Video Subtitle Generator",
       "description": "Produce a music-led visual video with exact timed subtitles and audio-continuity QC.",
-      "category": "Video and audio",
+      "category": "Film",
       "categoryTags": [
-        "video-and-audio"
+        "Film",
+        "Video"
       ],
       "coverImage": "/skill-covers/music-video-subtitle-generator.png",
       "coverMotion": "/skill-covers/music-video-subtitle-generator.mp4",
@@ -3745,8 +3785,9 @@
       "description": "Structured prompt for one narrative video shot.",
       "category": "Text",
       "categoryTags": [
-        "text",
-        "media-workflows"
+        "Text",
+        "Film",
+        "Video"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -3798,8 +3839,9 @@
       "description": "Multi-shot narrative video storyboard.",
       "category": "Text",
       "categoryTags": [
-        "text",
-        "media-workflows"
+        "Text",
+        "Film",
+        "Video"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -3832,9 +3874,10 @@
       "id": "outfit-design",
       "displayName": "Outfit Design",
       "description": "Invent or redesign a coordinated outfit.",
-      "category": "Fashion workflow",
+      "category": "Fashion",
       "categoryTags": [
-        "fashion-workflow"
+        "Fashion",
+        "Layout & Design"
       ],
       "coverImage": "/skill-covers/outfit-design.png",
       "routeLabel": "Outfit Generator with GPT Image 2 reference-aware route",
@@ -3877,9 +3920,9 @@
       "id": "paper-collage-explainer-generator",
       "displayName": "Paper Collage Explainer Generator",
       "description": "Turn an idea into an approved halftone paper-collage plan, tactile clips, and optional assembly.",
-      "category": "Video and audio",
+      "category": "Video",
       "categoryTags": [
-        "video-and-audio"
+        "Video"
       ],
       "coverImage": "/skill-covers/paper-collage-explainer-generator.png",
       "coverMotion": "/skill-covers/paper-collage-explainer-generator.mp4",
@@ -3913,9 +3956,9 @@
       "id": "papercraft-stop-motion-explainer",
       "displayName": "Papercraft Stop-Motion Explainer",
       "description": "Turn a topic into an approved paper-diorama explainer with tactile stills, stop-motion shots, and optional assembly.",
-      "category": "Video and audio",
+      "category": "Video",
       "categoryTags": [
-        "video-and-audio"
+        "Video"
       ],
       "coverImage": "/skill-covers/papercraft-stop-motion-explainer.png",
       "coverMotion": "/skill-covers/papercraft-stop-motion-explainer.mp4",
@@ -3949,9 +3992,9 @@
       "id": "photo-collage",
       "displayName": "Photo Collage",
       "description": "Arrange original photos into one intentional collage.",
-      "category": "Layout and design",
+      "category": "Layout & Design",
       "categoryTags": [
-        "layout-and-design"
+        "Layout & Design"
       ],
       "coverImage": "/skill-covers/photo-collage.png",
       "routeLabel": "Source-faithful collage composition",
@@ -4018,8 +4061,8 @@
       "description": "Convert a story into a validated page-by-page comic production manifest.",
       "category": "Text",
       "categoryTags": [
-        "text",
-        "narrative-and-comics"
+        "Text",
+        "Comic"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured storyboard",
@@ -4069,9 +4112,10 @@
       "id": "plan-film-storyboard",
       "displayName": "Generate Film Storyboard",
       "description": "Generate reviewable film storyboard frames from narrative material with continuity locks.",
-      "category": "Layout and design",
+      "category": "Film",
       "categoryTags": [
-        "layout-and-design"
+        "Film",
+        "Layout & Design"
       ],
       "coverImage": "/skill-covers/generate-film-storyboard.png",
       "routeLabel": "GPT Image 2 continuity-safe storyboard frames",
@@ -4121,9 +4165,9 @@
       "id": "poster-design",
       "displayName": "Poster Design",
       "description": "Create distinctive posters across varied art directions.",
-      "category": "Layout and design",
+      "category": "Layout & Design",
       "categoryTags": [
-        "layout-and-design"
+        "Layout & Design"
       ],
       "coverImage": "/skill-covers/poster-design.png",
       "routeLabel": "Model-routed poster generation",
@@ -4188,9 +4232,10 @@
       "id": "poster-motion",
       "displayName": "Poster Motion",
       "description": "Animate an uploaded poster into one readable, full-frame motion poster.",
-      "category": "Video and audio",
+      "category": "Layout & Design",
       "categoryTags": [
-        "video-and-audio"
+        "Layout & Design",
+        "Video"
       ],
       "coverImage": "/skill-covers/poster-motion.png",
       "coverMotion": "/skill-covers/poster-motion.mp4",
@@ -4240,9 +4285,10 @@
       "id": "pov-short-film-generator",
       "displayName": "POV Short Film Generator",
       "description": "Produce a coherent first-person narrative short with POV-specific continuity and final-film QC.",
-      "category": "Video and audio",
+      "category": "Film",
       "categoryTags": [
-        "video-and-audio"
+        "Film",
+        "Video"
       ],
       "coverImage": "/skill-covers/pov-short-film-generator.png",
       "coverMotion": "/skill-covers/pov-short-film-generator.mp4",
@@ -4276,9 +4322,9 @@
       "id": "preview-landscape",
       "displayName": "Preview Landscape",
       "description": "Redesign a supplied yard while preserving site geometry, access, hardscape and declared plants.",
-      "category": "Space and diagrams",
+      "category": "Layout & Design",
       "categoryTags": [
-        "space-and-diagrams"
+        "Layout & Design"
       ],
       "coverImage": "/skill-covers/preview-landscape.png",
       "routeLabel": "GPT Image 2 landscape editing",
@@ -4310,9 +4356,9 @@
       "id": "preview-paint",
       "displayName": "Preview Paint",
       "description": "Preview one specified wall or architectural surface in an exact paint color without redesigning the room.",
-      "category": "Space and diagrams",
+      "category": "Layout & Design",
       "categoryTags": [
-        "space-and-diagrams"
+        "Layout & Design"
       ],
       "coverImage": "/skill-covers/preview-paint.png",
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
@@ -4344,9 +4390,9 @@
       "id": "primitive-folk-cgi-restyle",
       "displayName": "Primitive Folk CGI Restyle",
       "description": "Restyle a source image into readable but deliberately crude early-3D imagery, with optional awkward motion continuation.",
-      "category": "Video and audio",
+      "category": "Video",
       "categoryTags": [
-        "video-and-audio"
+        "Video"
       ],
       "coverImage": "/skill-covers/primitive-folk-cgi-restyle.png",
       "routeLabel": "Broad-anchor-preserving primitive-3D reconstruction",
@@ -4379,9 +4425,10 @@
       "id": "product-detail-page",
       "displayName": "Product Detail Page",
       "description": "Build modular ecommerce detail-page image sets.",
-      "category": "Layout and design",
+      "category": "Commercial Production",
       "categoryTags": [
-        "layout-and-design"
+        "Commercial Production",
+        "Layout & Design"
       ],
       "coverImage": "/skill-covers/product-detail-page.jpg",
       "routeLabel": "Researched modular PDP production",
@@ -4444,8 +4491,9 @@
       "description": "Product launch-film plan with hook, reveal, and end-card arc.",
       "category": "Text",
       "categoryTags": [
-        "text",
-        "media-workflows"
+        "Text",
+        "Commercial Production",
+        "Video"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -4490,9 +4538,10 @@
       "id": "product-packaging",
       "displayName": "Product Packaging",
       "description": "Turn product references into a structured packaging concept board.",
-      "category": "Commercial production",
+      "category": "Commercial Production",
       "categoryTags": [
-        "commercial-production"
+        "Commercial Production",
+        "Layout & Design"
       ],
       "coverImage": "/skill-covers/product-packaging.png",
       "routeLabel": "Model-routed packaging concept",
@@ -4543,9 +4592,9 @@
       "id": "professional-headshot",
       "displayName": "Professional Headshot",
       "description": "Research the channel, then create a properly posed and lit professional portrait.",
-      "category": "Portrait production",
+      "category": "Portrait",
       "categoryTags": [
-        "portrait-production"
+        "Portrait"
       ],
       "coverImage": "/skill-covers/professional-headshot.png",
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
@@ -4590,9 +4639,9 @@
       "id": "recolor-object",
       "displayName": "Recolor Object",
       "description": "Recolor one object without tinting the whole image.",
-      "category": "Social and layout",
+      "category": "Utility",
       "categoryTags": [
-        "social-and-layout"
+        "Utility"
       ],
       "coverImage": "/skill-covers/recolor-object.png",
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
@@ -4636,9 +4685,10 @@
       "id": "recreate-social-photo",
       "displayName": "Recreate Social Photo",
       "description": "Turn an everyday photo into a reference-led social photo.",
-      "category": "Social and layout",
+      "category": "Social Media",
       "categoryTags": [
-        "social-and-layout"
+        "Social Media",
+        "Portrait"
       ],
       "coverImage": "/skill-covers/recreate-social-photo.png",
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
@@ -4670,9 +4720,9 @@
       "id": "remove-background",
       "displayName": "Remove Background",
       "description": "Create a clean transparent PNG cutout.",
-      "category": "Image utility",
+      "category": "Utility",
       "categoryTags": [
-        "image-utility"
+        "Utility"
       ],
       "coverImage": "/skill-covers/remove-background.png",
       "routeLabel": "WeShop RemoveBG with alpha-edge QA",
@@ -4715,9 +4765,9 @@
       "id": "remove-glasses",
       "displayName": "Remove Glasses",
       "description": "Remove glasses and naturally restore the eye area.",
-      "category": "Image repair",
+      "category": "Utility",
       "categoryTags": [
-        "image-repair"
+        "Utility"
       ],
       "coverImage": "/skill-covers/remove-glasses.png",
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
@@ -4749,9 +4799,9 @@
       "id": "remove-image-mark",
       "displayName": "Remove Image Mark",
       "description": "Remove an ordinary visible mark and rebuild the covered image.",
-      "category": "Image repair",
+      "category": "Utility",
       "categoryTags": [
-        "image-repair"
+        "Utility"
       ],
       "coverImage": "/skill-covers/remove-image-mark.png",
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
@@ -4783,9 +4833,9 @@
       "id": "remove-object",
       "displayName": "Remove Object",
       "description": "Remove one object and naturally rebuild what was behind it.",
-      "category": "Image repair",
+      "category": "Utility",
       "categoryTags": [
-        "image-repair"
+        "Utility"
       ],
       "coverImage": "/skill-covers/remove-object.png",
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
@@ -4829,9 +4879,9 @@
       "id": "remove-photo-filter",
       "displayName": "Remove Photo Filter",
       "description": "Remove an artificial grade and restore a natural look.",
-      "category": "Image repair",
+      "category": "Utility",
       "categoryTags": [
-        "image-repair"
+        "Utility"
       ],
       "coverImage": "/skill-covers/remove-photo-filter.png",
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
@@ -4875,9 +4925,9 @@
       "id": "remove-video-mark",
       "displayName": "Remove Video Mark",
       "description": "Remove an ordinary user-authorized overlay or annotation while preserving motion and reconstructing the covered region consistently.",
-      "category": "Video and audio",
+      "category": "Video",
       "categoryTags": [
-        "video-and-audio"
+        "Video"
       ],
       "coverImage": "/skill-covers/remove-video-mark.png",
       "routeLabel": "WeShop authorized video mark removal",
@@ -4909,9 +4959,9 @@
       "id": "render-comic-page",
       "displayName": "Render Comic Page",
       "description": "Render one storyboarded comic page with character, style, panel, and dialogue continuity.",
-      "category": "Narrative and comics",
+      "category": "Comic",
       "categoryTags": [
-        "narrative-and-comics"
+        "Comic"
       ],
       "coverImage": "/skill-covers/render-comic-page.png",
       "routeLabel": "GPT Image 2 reference-aware comic page",
@@ -4961,9 +5011,9 @@
       "id": "restyle-room",
       "displayName": "Restyle Room",
       "description": "Restyle a supplied room while preserving architecture, layout constraints and declared keep-items.",
-      "category": "Space and diagrams",
+      "category": "Layout & Design",
       "categoryTags": [
-        "space-and-diagrams"
+        "Layout & Design"
       ],
       "coverImage": "/skill-covers/restyle-room.png",
       "routeLabel": "GPT Image 2 room restyling",
@@ -5007,9 +5057,9 @@
       "id": "restyle-video",
       "displayName": "Restyle Video",
       "description": "Transform the visual treatment of a supplied video while retaining timing, motion, subjects and continuity.",
-      "category": "Video and audio",
+      "category": "Video",
       "categoryTags": [
-        "video-and-audio"
+        "Video"
       ],
       "coverImage": "/skill-covers/restyle-video.png",
       "routeLabel": "MiniMax H3 source-video restyling",
@@ -5058,9 +5108,9 @@
       "id": "retouch-blemish",
       "displayName": "Retouch Blemish",
       "description": "Remove temporary blemishes without plastic-looking skin.",
-      "category": "Image repair",
+      "category": "Utility",
       "categoryTags": [
-        "image-repair"
+        "Utility"
       ],
       "coverImage": "/skill-covers/retouch-blemish.png",
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
@@ -5104,9 +5154,10 @@
       "id": "shave-head",
       "displayName": "Shave Head",
       "description": "Preview a natural bald or shaved-head appearance.",
-      "category": "Person appearance",
+      "category": "Portrait",
       "categoryTags": [
-        "person-appearance"
+        "Portrait",
+        "Fashion"
       ],
       "coverImage": "/skill-covers/shave-head.png",
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
@@ -5158,8 +5209,9 @@
       "description": "Compact single-shot audiovisual video prompt.",
       "category": "Text",
       "categoryTags": [
-        "text",
-        "media-workflows"
+        "Text",
+        "Film",
+        "Video"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -5209,9 +5261,9 @@
       "id": "smooth-wrinkles",
       "displayName": "Smooth Wrinkles",
       "description": "Reduce chosen skin or clothing wrinkles without flattening structure.",
-      "category": "Image repair",
+      "category": "Utility",
       "categoryTags": [
-        "image-repair"
+        "Utility"
       ],
       "coverImage": "/skill-covers/smooth-wrinkles.png",
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
@@ -5257,8 +5309,8 @@
       "description": "Fact-checked multi-page social knowledge-note plan.",
       "category": "Text",
       "categoryTags": [
-        "text",
-        "media-workflows"
+        "Text",
+        "Social Media"
       ],
       "coverImage": "/skill-covers/social-knowledge-notes.png",
       "routeLabel": "Agent-authored structured brief",
@@ -5291,9 +5343,10 @@
       "id": "suspense-title-sequence-generator",
       "displayName": "Suspense Title Sequence Generator",
       "description": "Produce a suspense pop-art film title sequence with exact supplied credits and graphic-motion QC.",
-      "category": "Video and audio",
+      "category": "Film",
       "categoryTags": [
-        "video-and-audio"
+        "Film",
+        "Video"
       ],
       "coverImage": "/skill-covers/suspense-title-sequence-generator.png",
       "coverMotion": "/skill-covers/suspense-title-sequence-generator.mp4",
@@ -5329,8 +5382,8 @@
       "description": "Interactive self-contained HTML technical explanation.",
       "category": "Text",
       "categoryTags": [
-        "text",
-        "media-workflows"
+        "Text",
+        "Layout & Design"
       ],
       "coverImage": "/skill-covers/technical-visual-explainer.png",
       "routeLabel": "Agent-authored structured brief",
@@ -5365,8 +5418,9 @@
       "description": "Attributed animated testimonial-video plan.",
       "category": "Text",
       "categoryTags": [
-        "text",
-        "media-workflows"
+        "Text",
+        "Social Media",
+        "Video"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -5401,8 +5455,9 @@
       "description": "Turn narration into a reviewable A-roll, evidence, and B-roll plan before generating approved shots.",
       "category": "Text",
       "categoryTags": [
-        "text",
-        "video-and-audio"
+        "Text",
+        "Film",
+        "Video"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Transcript-led B-roll planning",
@@ -5434,9 +5489,10 @@
       "id": "translate-image-text",
       "displayName": "Translate Image Text",
       "description": "Translate image text and keep the original layout.",
-      "category": "Social and layout",
+      "category": "Social Media",
       "categoryTags": [
-        "social-and-layout"
+        "Social Media",
+        "Utility"
       ],
       "coverImage": "/skill-covers/translate-image-text.png",
       "routeLabel": "GPT Image 2 native visual translation",
@@ -5468,9 +5524,9 @@
       "id": "upscale-video",
       "displayName": "Upscale Video",
       "description": "Increase supplied video resolution and clarity while preserving timing, content, grain intent and natural detail.",
-      "category": "Video and audio",
+      "category": "Video",
       "categoryTags": [
-        "video-and-audio"
+        "Video"
       ],
       "coverImage": "/skill-covers/upscale-video.png",
       "routeLabel": "WeShop AI Video Enhancer",
@@ -5521,8 +5577,8 @@
       "description": "Evidence-bounded recommendation among verified video routes.",
       "category": "Text",
       "categoryTags": [
-        "text",
-        "media-workflows"
+        "Text",
+        "Video"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -5557,8 +5613,8 @@
       "description": "Diagnosis and revised prompt after a known defective result.",
       "category": "Text",
       "categoryTags": [
-        "text",
-        "media-workflows"
+        "Text",
+        "Video"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -5591,9 +5647,10 @@
       "id": "virtual-try-on",
       "displayName": "Virtual Try-On",
       "description": "Try on or replace a garment with fidelity checks.",
-      "category": "Commercial production",
+      "category": "Fashion",
       "categoryTags": [
-        "commercial-production"
+        "Fashion",
+        "Commercial Production"
       ],
       "coverImage": "/skill-covers/virtual-try-on.png",
       "routeLabel": "GPT Image 2 with capability-matched fallbacks",
@@ -5652,9 +5709,10 @@
       "id": "visualize-floor-plan",
       "displayName": "Visualize Floor Plan",
       "description": "Turn a supplied floor plan or dimensioned brief into one readable visualization without changing topology.",
-      "category": "Space and diagrams",
+      "category": "Layout & Design",
       "categoryTags": [
-        "space-and-diagrams"
+        "Layout & Design",
+        "Utility"
       ],
       "coverImage": "/skill-covers/visualize-floor-plan.png",
       "routeLabel": "GPT Image 2 plan visualization",
@@ -5688,8 +5746,8 @@
       "description": "Turn a story into a validated short-drama bible, episode arc, continuity ledger, and scripts.",
       "category": "Text",
       "categoryTags": [
-        "text",
-        "narrative-and-comics"
+        "Text",
+        "Film"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored serialized drama package",
@@ -5724,8 +5782,9 @@
       "description": "Write three platform-native hooks that the content can honestly pay off.",
       "category": "Text",
       "categoryTags": [
-        "text",
-        "narrative-and-comics"
+        "Text",
+        "Social Media",
+        "Video"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored hook variants",

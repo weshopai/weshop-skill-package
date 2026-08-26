@@ -7,7 +7,7 @@ description: Generate one specified real species or original animal creature in 
 ## Catalog
 
 - Display name: Create Animal
-- Category: Character and brand
+- Categories: Character
 - Status: Ready
 - Route label: Z-Image photorealistic animal generation
 - Tone: green

@@ -11,7 +11,7 @@ Extract one foreground subject without regenerating it. Treat transparency and e
 
 - Display name: Remove Background
 - Kind: Atom
-- Category: Image utility
+- Categories: Utility
 - Status: Ready
 - Featured: yes
 - Cover image: /skill-covers/remove-background.png

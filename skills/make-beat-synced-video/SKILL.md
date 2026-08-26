@@ -7,7 +7,7 @@ description: Edit supplied video clips or stills to supplied music using measure
 ## Catalog
 
 - Display name: Make Beat-Synced Video
-- Category: Video
+- Categories: Video
 - Status: Ready
 - Route label: Deterministic beat-aware edit
 - Tone: blue

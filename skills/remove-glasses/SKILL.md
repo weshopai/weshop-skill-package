@@ -5,7 +5,7 @@ description: Remove eyeglasses from an authorized portrait and reconstruct natur
 # Remove Glasses
 ## Catalog
 - Display name: Remove Glasses
-- Category: Image repair
+- Categories: Utility
 - Status: Ready
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: blue

@@ -5,7 +5,7 @@ description: Arrange several supplied outfit photographs into one intentional lo
 # Compose Lookbook
 ## Catalog
 - Display name: Compose Lookbook
-- Category: Social and layout
+- Categories: Fashion, Social Media
 - Status: Ready
 - Route label: GPT Image 2 editorial layout
 - Tone: plum

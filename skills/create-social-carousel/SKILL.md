@@ -7,7 +7,7 @@ description: Plan and create one ordered, visually consistent multi-page social 
 ## Catalog
 
 - Display name: Create Social Carousel
-- Category: Social and layout
+- Categories: Social Media, Layout & Design
 - Status: Ready
 - Route label: GPT Image 2 ordered carousel
 - Tone: amber

@@ -7,7 +7,7 @@ description: Produce one minimalist product film from authorized product assets,
 ## Catalog
 
 - Display name: Minimalist Product Ad Generator
-- Category: Video and audio
+- Categories: Commercial Production, Video
 - Status: Ready
 - Route label: Product-faithful minimalist film
 - Tone: purple

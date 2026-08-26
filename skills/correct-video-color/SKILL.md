@@ -7,7 +7,7 @@ description: Correct white balance, exposure, contrast, and shot-to-shot color c
 ## Catalog
 
 - Display name: Correct Video Color
-- Category: Video and audio
+- Categories: Video
 - Status: Ready
 - Route label: Measured deterministic grade; MiniMax H3 only when temporal rewriting is required
 - Tone: orange

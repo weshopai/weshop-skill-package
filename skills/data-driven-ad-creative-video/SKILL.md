@@ -7,7 +7,7 @@ description: Use for controlled ad-video variants from approved tabular data fro
 ## Catalog
 
 - Display name: Data-driven Ad Creative Video
-- Category: Video and audio
+- Categories: Commercial Production, Video
 - Status: Planning route only
 - Route label: Agent-authored structured brief
 - Tone: blue

@@ -7,7 +7,7 @@ description: Transform the overall visual style of supplied video while retainin
 ## Catalog
 
 - Display name: Restyle Video
-- Category: Video and audio
+- Categories: Video
 - Status: Ready
 - Route label: MiniMax H3 source-video restyling
 - Tone: violet

@@ -5,7 +5,7 @@ description: Remove one named unwanted object from a supplied image and reconstr
 # Remove Object
 ## Catalog
 - Display name: Remove Object
-- Category: Image repair
+- Categories: Utility
 - Status: Ready
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: red

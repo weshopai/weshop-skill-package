@@ -7,7 +7,7 @@ description: "Create one authentic digital-product promo plan and video from aut
 ## Catalog
 
 - Display name: Digital Product Promo Generator
-- Category: Video
+- Categories: Commercial Production, Video
 - Status: Ready
 - Route label: Independent outcome contract
 - Tone: purple

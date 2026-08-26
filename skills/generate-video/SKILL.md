@@ -7,7 +7,7 @@ description: Generate one coherent video from a text or multimodal shot brief us
 ## Catalog
 
 - Display name: Generate Video
-- Category: Video and audio
+- Categories: Video
 - Status: Ready
 - Route label: Guide-routed cataloged video model
 - Tone: purple

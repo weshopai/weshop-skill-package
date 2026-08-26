@@ -7,7 +7,7 @@ description: Create one talking-person video from an authorized or fictional por
 ## Catalog
 
 - Display name: Make Talking Video
-- Category: Video and audio
+- Categories: Portrait, Video
 - Status: Ready
 - Route label: Consent-safe talking-video generation
 - Tone: purple

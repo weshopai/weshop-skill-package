@@ -7,7 +7,7 @@ description: "Create one logo-led neon brand motion from authorized inputs. Use 
 ## Catalog
 
 - Display name: Brand Stream MG
-- Category: Video
+- Categories: Commercial Production, Video
 - Status: Ready
 - Route label: Independent outcome contract
 - Tone: purple

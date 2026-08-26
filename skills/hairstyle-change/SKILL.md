@@ -8,7 +8,7 @@ description: Replace only the hairstyle in one authorized portrait while preserv
 ## Catalog
 
 - Display name: Hairstyle Change
-- Category: Person appearance
+- Categories: Portrait, Fashion
 - Status: Ready
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: rose

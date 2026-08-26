@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const skillsRoot = path.join(root, "skills");
 const fallbackCover = "/skill-covers/default-skill.svg";
+const categoryNames = ["Video", "Text", "Fashion", "Layout & Design", "Commercial Production", "Character", "Utility", "Portrait", "Film", "Comic", "Social Media"];
 const parseFields = (body) => Object.fromEntries(body.split("\n").filter((line) => line.startsWith("- ") && line.includes(":"))
   .map((line) => { const separator = line.indexOf(":"); return [line.slice(2, separator).trim(), line.slice(separator + 1).trim()]; }));
 const section = (source, heading, nextHeading) => {
@@ -14,18 +15,15 @@ const section = (source, heading, nextHeading) => {
   return source.slice(start + heading.length + 4, end < 0 ? source.length : end).trim();
 };
 const firstParagraph = (value) => value.split("\n\n")[0].replace(/\n+/g, " ").trim();
-const tag = (value) => value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
-const normalizedCategory = (value) => ({
-  "Video": "Video and audio",
-  "Layout / composition": "Layout and design",
-  "Commercial image": "Commercial production",
-  "Social and memory": "Social and layout",
-}[value] ?? value);
 const parseSkill = async (slug) => {
   const source = await readFile(path.join(skillsRoot, slug, "SKILL.md"), "utf8");
   const catalog = parseFields(section(source, "Catalog", "What this skill does"));
-  const requiredCatalogFields = ["Display name", "Category", "Short description"];
+  const requiredCatalogFields = ["Display name", "Short description"];
   for (const field of requiredCatalogFields) if (!catalog[field]) throw new Error(`${slug}: Catalog requires ${field}`);
+  const categoryField = catalog.Categories ?? catalog.Category;
+  if (!categoryField) throw new Error(`${slug}: Catalog requires Categories`);
+  const categories = [...new Set(categoryField.split(",").map((value) => value.trim()).filter(Boolean))];
+  if (!categories.length || categories.length > 3 || categories.some((value) => !categoryNames.includes(value))) throw new Error(`${slug}: Categories must contain one to three approved category names`);
   if (catalog.Visibility && !["public", "system"].includes(catalog.Visibility)) throw new Error(`${slug}: Visibility must be public or system when provided`);
   if (catalog.Featured && !["yes", "no"].includes(catalog.Featured)) throw new Error(`${slug}: Featured must be yes or no when provided`);
   if (catalog["Cover image"] && !catalog["Cover image"].startsWith("/skill-covers/")) throw new Error(`${slug}: Cover image must be served from /skill-covers/`);
@@ -37,15 +35,14 @@ const parseSkill = async (slug) => {
   if (!whatThisSkillDoes.length || !howToUseSection || !output["Media type"]) throw new Error(`${slug}: display fields are incomplete`);
   const similarSkillIds = catalog["Similar skills"]?.split(",").map((id) => id.trim()).filter(Boolean) ?? [];
   if (catalog.Visibility === "system") return null;
-  const sourceCategory = normalizedCategory(catalog.Category);
-  const isTextCategory = catalog["Text category"] === "yes";
-  const category = isTextCategory ? "Text" : sourceCategory;
+  if (catalog["Text category"] === "yes" && !categories.includes("Text")) throw new Error(`${slug}: Text category Skills must include Text in Categories`);
+  const category = categories[0];
   return {
     id: slug,
     displayName: catalog["Display name"],
     description: catalog["Short description"],
     category,
-    categoryTags: [...new Set([tag(category), ...(isTextCategory ? [tag(sourceCategory)] : [])])],
+    categoryTags: categories,
     coverImage: catalog["Cover image"] || fallbackCover,
     ...(catalog["Cover motion"] ? { coverMotion: catalog["Cover motion"] } : {}),
     routeLabel: catalog["Route label"] || "Skill workflow",

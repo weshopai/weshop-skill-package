@@ -7,7 +7,7 @@ description: Generate a reviewable film-storyboard frame set from a script, scen
 ## Catalog
 
 - Display name: Generate Film Storyboard
-- Category: Layout and design
+- Categories: Film, Layout & Design
 - Status: Ready
 - Route label: GPT Image 2 continuity-safe storyboard frames
 - Tone: purple

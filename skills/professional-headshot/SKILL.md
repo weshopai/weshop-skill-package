@@ -8,7 +8,7 @@ description: Turn one authorized portrait into one researched, identity-faithful
 ## Catalog
 
 - Display name: Professional Headshot
-- Category: Portrait production
+- Categories: Portrait
 - Status: Ready
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: rose

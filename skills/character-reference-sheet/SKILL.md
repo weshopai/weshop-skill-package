@@ -9,7 +9,7 @@ description: Compatibility entry for older character-sheet requests. Route the c
 ## Catalog
 
 - Display name: Character Reference Sheet
-- Category: Character and brand
+- Categories: Character
 - Status: Ready
 - Route label: Compatibility redirect to Create Character
 - Tone: ink

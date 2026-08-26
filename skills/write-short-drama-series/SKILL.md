@@ -8,7 +8,7 @@ description: Develop a premise, novel, synopsis, or source story into a producti
 
 - Display name: Write Short Drama Series
 - Text category: yes
-- Category: Narrative and comics
+- Categories: Text, Film
 - Status: Ready
 - Route label: Agent-authored serialized drama package
 - Tone: blue

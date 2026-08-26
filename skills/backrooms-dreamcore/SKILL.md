@@ -7,7 +7,7 @@ description: Create one personalized Backrooms Level-0/dreamcore space dossier a
 ## Catalog
 
 - Display name: Backrooms Dreamcore
-- Category: Video
+- Categories: Video
 - Status: Ready
 - Route label: Personalized Level-0 space dossier and visual route
 - Tone: lime

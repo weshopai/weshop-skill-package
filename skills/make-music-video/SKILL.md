@@ -7,7 +7,7 @@ description: Analyze one authorized song and supplied or rights-cleared footage,
 ## Catalog
 
 - Display name: Make Music Video
-- Category: Video and audio
+- Categories: Film, Video
 - Status: Ready
 - Featured: yes
 - Cover image: /skill-covers/make-music-video.png

@@ -10,7 +10,7 @@ Turn supplied photos into one designed canvas. Keep original photos as source as
 ## Catalog
 
 - Display name: Photo Collage
-- Category: Layout / composition
+- Categories: Layout & Design
 - Status: Ready
 - Route label: Source-faithful collage composition
 - Tone: cyan

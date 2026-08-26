@@ -7,7 +7,7 @@ description: Create one stylized or photographic portrait of a supplied pet whil
 ## Catalog
 
 - Display name: Make Pet Portrait
-- Category: Character and brand
+- Categories: Character, Portrait
 - Status: Ready
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: amber

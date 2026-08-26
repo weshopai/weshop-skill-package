@@ -7,7 +7,7 @@ description: Create and validate one dimensioned parametric CAD part, returning 
 ## Catalog
 
 - Display name: Create CAD
-- Category: Space and diagrams
+- Categories: Layout & Design, Utility
 - Status: Ready
 - Route label: STEP-first parametric CAD workflow
 - Tone: slate

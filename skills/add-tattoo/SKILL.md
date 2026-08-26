@@ -8,7 +8,7 @@ description: Place one specified tattoo design on visible skin in an authorized 
 ## Catalog
 
 - Display name: Add Tattoo
-- Category: Person appearance
+- Categories: Portrait, Fashion
 - Status: Ready
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: rose

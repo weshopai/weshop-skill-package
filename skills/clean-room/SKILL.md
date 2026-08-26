@@ -5,7 +5,7 @@ description: Remove specified clutter from a room photograph with an AI-native c
 # Clean Room
 ## Catalog
 - Display name: Clean Room
-- Category: Image repair
+- Categories: Utility
 - Status: Ready
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: green

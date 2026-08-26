@@ -7,7 +7,7 @@ description: Remove an ordinary user-authorized overlay, logo, timestamp, or ann
 ## Catalog
 
 - Display name: Remove Video Mark
-- Category: Video and audio
+- Categories: Video
 - Status: Ready
 - Route label: WeShop authorized video mark removal
 - Tone: slate

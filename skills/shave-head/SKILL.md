@@ -8,7 +8,7 @@ description: Preview one authorized person with a natural bald or closely shaved
 ## Catalog
 
 - Display name: Shave Head
-- Category: Person appearance
+- Categories: Portrait, Fashion
 - Status: Ready
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: rose

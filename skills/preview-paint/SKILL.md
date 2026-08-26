@@ -7,7 +7,7 @@ description: Preview one specified wall or architectural surface in an exact pai
 ## Catalog
 
 - Display name: Preview Paint
-- Category: Space and diagrams
+- Categories: Layout & Design
 - Status: Ready
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: yellow

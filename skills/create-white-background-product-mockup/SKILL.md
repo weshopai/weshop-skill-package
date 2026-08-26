@@ -10,7 +10,7 @@ Turn one product brief or reference image into one commercial mockup. Treat name
 ## Catalog
 
 - Display name: White Background Product Mockup
-- Category: Commercial image
+- Categories: Commercial Production, Layout & Design
 - Status: Ready
 - Route label: Model-routed product mockups
 - Tone: peach

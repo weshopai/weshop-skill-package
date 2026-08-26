@@ -7,7 +7,7 @@ description: "Create an original reusable character through a canonical-first wo
 ## Catalog
 
 - Display name: Create Character
-- Category: Character and brand
+- Categories: Character
 - Status: Ready
 - Route label: Eight-run GPT Image 2 character production pack
 - Tone: purple

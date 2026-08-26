@@ -8,7 +8,7 @@ description: Use for evidence-bounded recommendation among verified video routes
 
 - Display name: Video Model Advisor
 - Text category: yes
-- Category: Media workflows
+- Categories: Text, Video
 - Status: Planning route only
 - Route label: Agent-authored structured brief
 - Tone: blue

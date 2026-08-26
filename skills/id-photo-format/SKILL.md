@@ -8,7 +8,7 @@ description: Prepare one authorized portrait for one explicitly named ID-photo o
 ## Catalog
 
 - Display name: ID Photo Format
-- Category: Portrait production
+- Categories: Portrait
 - Status: Ready
 - Route label: Official-rule research plus WeShop and measured crop
 - Tone: rose

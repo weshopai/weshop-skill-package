@@ -7,7 +7,7 @@ description: Create one small-size-readable profile avatar from an authorized po
 ## Catalog
 
 - Display name: Create Avatar
-- Category: Character and brand
+- Categories: Character
 - Status: Ready
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: blue

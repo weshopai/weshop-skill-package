@@ -7,7 +7,7 @@ description: Design one selected original logo mark or lockup from a brand brief
 ## Catalog
 
 - Display name: Create Logo
-- Category: Character and brand
+- Categories: Commercial Production
 - Status: Ready
 - Route label: GPT Image 2 logo generation
 - Tone: red

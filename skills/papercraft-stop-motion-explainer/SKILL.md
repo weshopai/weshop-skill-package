@@ -7,7 +7,7 @@ description: Use for a knowledge explainer built as a layered physical-paper wor
 ## Catalog
 
 - Display name: Papercraft Stop-Motion Explainer
-- Category: Video
+- Categories: Video
 - Status: Ready
 - Route label: Layered physical-paper education production
 - Tone: orange

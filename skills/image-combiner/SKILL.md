@@ -10,7 +10,7 @@ Create one unified image from multiple sources. Treat the capability as a multi-
 ## Catalog
 
 - Display name: Image Combiner
-- Category: Layout / composition
+- Categories: Layout & Design
 - Status: Ready
 - Route label: Multi-reference image composition
 - Tone: cyan

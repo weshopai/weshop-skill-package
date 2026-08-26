@@ -8,7 +8,7 @@ description: Use for diagnosis and revised prompt after a known defective result
 
 - Display name: Video Prompt Failure Diagnosis
 - Text category: yes
-- Category: Media workflows
+- Categories: Text, Video
 - Status: Planning route only
 - Route label: Agent-authored structured brief
 - Tone: blue

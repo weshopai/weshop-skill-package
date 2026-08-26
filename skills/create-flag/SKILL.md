@@ -7,7 +7,7 @@ description: Design one original symbolically coherent flag that remains recogni
 ## Catalog
 
 - Display name: Create Flag
-- Category: Character and brand
+- Categories: Character
 - Status: Ready
 - Route label: GPT Image 2 flag generation
 - Tone: blue

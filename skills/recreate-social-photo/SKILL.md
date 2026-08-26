@@ -5,7 +5,7 @@ description: Recreate the composition, camera feel, lighting, color treatment, a
 # Recreate Social Photo
 ## Catalog
 - Display name: Recreate Social Photo
-- Category: Social and layout
+- Categories: Social Media, Portrait
 - Status: Ready
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: rose

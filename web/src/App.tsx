@@ -5,7 +5,8 @@ import skillCatalog from "./generated/skill-catalog.json";
 type SimilarSkill = { id: string; displayName: string; difference: string };
 type Skill = Omit<(typeof skillCatalog.skills)[number], "similarSkills"> & { similarSkills?: SimilarSkill[] };
 const skills: Skill[] = [...skillCatalog.skills].sort((a, b) => Number(b.featured) - Number(a.featured) || a.displayName.localeCompare(b.displayName));
-const filters = ["All skills", "Featured", ...new Set(skills.map((skill) => skill.category))];
+const categoryOrder = ["Video", "Text", "Fashion", "Layout & Design", "Commercial Production", "Character", "Utility", "Portrait", "Film", "Comic", "Social Media"];
+const filters = ["All skills", "Featured", ...categoryOrder.filter((category) => skills.some((skill) => skill.categoryTags.includes(category)))];
 const outputField = (skill: Skill, key: string) => (skill.output as unknown as Record<string, string>)[key];
 
 function CoverMedia({ skill }: { skill: Skill }) {
@@ -46,7 +47,7 @@ export default function App() {
   const [active, setActive] = useState<Skill | null>(null);
   const [installMode, setInstallMode] = useState<"prompt" | "command">("prompt");
   const [copied, setCopied] = useState(false);
-  const visible = useMemo(() => skills.filter((skill) => (filter === "All skills" || (filter === "Featured" ? skill.featured : skill.category === filter)) && `${skill.displayName} ${skill.description} ${skill.categoryTags.join(" ")}`.toLowerCase().includes(query.toLowerCase())), [filter, query]);
+  const visible = useMemo(() => skills.filter((skill) => (filter === "All skills" || (filter === "Featured" ? skill.featured : skill.categoryTags.includes(filter))) && `${skill.displayName} ${skill.description} ${skill.categoryTags.join(" ")}`.toLowerCase().includes(query.toLowerCase())), [filter, query]);
   const activeSimilarSkills = active?.similarSkills ?? [];
   const installText = active ? installMode === "prompt"
     ? `Review and install the ${active.displayName} skill from https://github.com/Jason12196/weshop-skill-package/tree/main/skills/${active.id}, then tell me when it is ready to use.`

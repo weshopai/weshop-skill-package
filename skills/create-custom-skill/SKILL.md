@@ -7,7 +7,7 @@ description: "Create, revise, check, and locally install one user-owned Agent Sk
 ## Catalog
 
 - Display name: Create Custom Skill
-- Category: Text
+- Categories: Text
 - Text category: yes
 - Status: Ready
 - Route label: Isolated user-owned Skill authoring

@@ -7,7 +7,7 @@ description: Animate one supplied still into a short video with bounded subject 
 ## Catalog
 
 - Display name: Animate Image
-- Category: Video and audio
+- Categories: Video
 - Status: Ready
 - Route label: Kling 3.0 image-to-video
 - Tone: cyan

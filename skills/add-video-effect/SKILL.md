@@ -7,7 +7,7 @@ description: Add one specified visual effect to supplied video at a defined time
 ## Catalog
 
 - Display name: Add Video Effect
-- Category: Video and audio
+- Categories: Video
 - Status: Ready
 - Route label: MiniMax H3 localized video edit
 - Tone: pink

@@ -3,6 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
+const categoryNames = new Set(["Video", "Text", "Fashion", "Layout & Design", "Commercial Production", "Character", "Utility", "Portrait", "Film", "Comic", "Social Media"]);
 const catalog = JSON.parse(await readFile(path.join(root, "web/src/generated/skill-catalog.json"), "utf8"));
 const publishedCatalog = await readFile(path.join(root, "catalog/skills.json"), "utf8");
 if (publishedCatalog !== `${JSON.stringify(catalog, null, 2)}\n`) throw new Error("Published catalog/skills.json is not synchronized with the client catalog");
@@ -10,7 +11,7 @@ if (catalog.schemaVersion !== "1.0.0" || !Array.isArray(catalog.skills) || !cata
 const ids = new Set(catalog.skills.map((skill) => skill.id));
 for (const skill of catalog.skills) {
   for (const field of ["id", "displayName", "description", "category", "coverImage", "routeLabel", "tone"]) if (typeof skill[field] !== "string" || !skill[field]) throw new Error(`${skill.id}: missing ${field}`);
-  if (!Array.isArray(skill.categoryTags) || !skill.categoryTags.length) throw new Error(`${skill.id}: missing categoryTags`);
+  if (!Array.isArray(skill.categoryTags) || !skill.categoryTags.length || skill.categoryTags.length > 3 || skill.categoryTags.some((category) => !categoryNames.has(category)) || new Set(skill.categoryTags).size !== skill.categoryTags.length || skill.category !== skill.categoryTags[0]) throw new Error(`${skill.id}: invalid categoryTags`);
   if (!skill.howToUse?.summary || !Array.isArray(skill.howToUse.promptExamples)) throw new Error(`${skill.id}: invalid howToUse`);
   if (skill.similarSkills !== undefined) {
     if (!Array.isArray(skill.similarSkills) || skill.similarSkills.length > 3) throw new Error(`${skill.id}: similarSkills must contain at most three entries`);

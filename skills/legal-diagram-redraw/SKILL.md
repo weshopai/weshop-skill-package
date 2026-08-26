@@ -8,7 +8,7 @@ description: Use for editable redraw of supplied legal diagrams without changing
 
 - Display name: Legal Diagram Redraw
 - Text category: yes
-- Category: Media workflows
+- Categories: Text, Video
 - Status: Planning route only
 - Route label: Agent-authored structured brief
 - Tone: blue

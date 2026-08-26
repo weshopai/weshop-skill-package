@@ -11,7 +11,7 @@ Turn one accepted image into a larger canvas without stretching it. Treat the or
 
 - Display name: Expand Image
 - Kind: Atom
-- Category: Image utility
+- Categories: Utility
 - Status: Ready
 - Route label: GPT Image 2 preservation-first outpainting with Expand Image fallback
 - Tone: sky

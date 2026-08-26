@@ -5,7 +5,7 @@ description: Add position-accurate speech or thought bubbles with exact text to 
 # Add Speech Bubble
 ## Catalog
 - Display name: Add Speech Bubble
-- Category: Social and layout
+- Categories: Social Media, Layout & Design
 - Status: Ready
 - Route label: GPT Image 2 overlay
 - Tone: blue

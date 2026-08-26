@@ -10,7 +10,7 @@ Research the placement before designing. Deliver one banner whose dimensions, sa
 ## Catalog
 
 - Display name: AI Banner Design
-- Category: Layout / composition
+- Categories: Commercial Production, Layout & Design
 - Status: Ready
 - Route label: Research plus GPT Image 2 banner production
 - Tone: lime

@@ -7,7 +7,7 @@ description: Create one wedding-style portrait of consenting adults from authori
 ## Catalog
 
 - Display name: Make Wedding Photo
-- Category: Social and memory
+- Categories: Portrait, Social Media
 - Status: Ready
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: rose

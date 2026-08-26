@@ -11,7 +11,7 @@ Create one product-detail deliverable as a set of independent modules. Treat a l
 
 - Kind: Atom
 - Display name: Product Detail Page
-- Category: Layout / composition
+- Categories: Commercial Production, Layout & Design
 - Status: Ready
 - Route label: Researched modular PDP production
 - Tone: teal

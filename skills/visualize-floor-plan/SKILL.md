@@ -7,7 +7,7 @@ description: Turn a supplied floor plan or dimensioned spatial brief into one re
 ## Catalog
 
 - Display name: Visualize Floor Plan
-- Category: Space and diagrams
+- Categories: Layout & Design, Utility
 - Status: Ready
 - Route label: GPT Image 2 plan visualization
 - Tone: cyan

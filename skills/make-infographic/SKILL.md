@@ -5,7 +5,7 @@ description: Research or verify factual inputs, write a concise source-backed br
 # Make Infographic
 ## Catalog
 - Display name: Make Infographic
-- Category: Social and layout
+- Categories: Social Media, Layout & Design
 - Status: Ready
 - Route label: Research plus GPT Image 2
 - Tone: cyan

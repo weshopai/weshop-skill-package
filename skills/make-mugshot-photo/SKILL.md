@@ -7,7 +7,7 @@ description: Create one clearly fictional or novelty mugshot-style portrait that
 ## Catalog
 
 - Display name: Make Mugshot Photo
-- Category: Social and memory
+- Categories: Portrait
 - Status: Ready
 - Route label: GPT Image 2 novelty mugshot-style portrait
 - Tone: gray

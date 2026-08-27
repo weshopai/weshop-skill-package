@@ -14,6 +14,7 @@ description: Use for traceable chronology from user-supplied evidence from appro
 - Tone: blue
 - Short description: Traceable chronology from user-supplied evidence.
 - Cover image: /skill-covers/legal-evidence-timeline.png
+- Source images: /skill-covers/sources/legal-evidence-timeline-source.png
 
 ## What this skill does
 

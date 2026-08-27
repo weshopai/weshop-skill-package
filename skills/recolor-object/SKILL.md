@@ -11,6 +11,7 @@ description: Change only a named object or PNG element to a target color while p
 - Tone: violet
 - Short description: Recolor one object without tinting the whole image.
 - Cover image: /skill-covers/recolor-object.png
+- Source images: /skill-covers/sources/recolor-object-source.png
 - Similar skills: apply-photo-filter, remove-photo-filter
 ## What this skill does
 - Identifies one target region and changes hue/chroma without flattening material.

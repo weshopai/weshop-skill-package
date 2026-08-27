@@ -14,6 +14,7 @@ description: Preview one authorized person with a natural bald or closely shaved
 - Tone: rose
 - Short description: Preview a natural bald or shaved-head appearance.
 - Cover image: /skill-covers/shave-head.png
+- Source images: /skill-covers/sources/shave-head-source.png
 
 - Similar skills: change-bangs, hairstyle-change, hair-color-change
 ## What this skill does

@@ -14,6 +14,7 @@ description: Place one specified tattoo design on visible skin in an authorized 
 - Tone: rose
 - Short description: Preview one tattoo with realistic placement on visible skin.
 - Cover image: /skill-covers/add-tattoo.png
+- Source images: /skill-covers/sources/add-tattoo-source.png
 
 ## What this skill does
 

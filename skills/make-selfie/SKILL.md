@@ -14,6 +14,7 @@ description: Turn one authorized everyday person photo into one realistic solo s
 - Tone: rose
 - Short description: Turn one or two everyday photos into one realistic selfie.
 - Cover image: /skill-covers/make-selfie.png
+- Source images: /skill-covers/sources/make-selfie-source.png
 
 ## What this skill does
 

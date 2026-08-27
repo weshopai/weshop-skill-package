@@ -14,6 +14,7 @@ description: Use for interactive self-contained html technical explanation from 
 - Tone: blue
 - Short description: Interactive self-contained HTML technical explanation.
 - Cover image: /skill-covers/technical-visual-explainer.png
+- Source images: /skill-covers/sources/technical-visual-explainer-source.png
 
 ## What this skill does
 

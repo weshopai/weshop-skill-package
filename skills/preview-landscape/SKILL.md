@@ -13,6 +13,7 @@ description: Preview a landscape redesign on a supplied yard or outdoor site whi
 - Tone: green
 - Short description: Redesign a supplied yard while preserving site geometry, access, hardscape and declared plants.
 - Cover image: /skill-covers/preview-landscape.png
+- Source images: /skill-covers/sources/preview-landscape-source.png
 
 ## What this skill does
 

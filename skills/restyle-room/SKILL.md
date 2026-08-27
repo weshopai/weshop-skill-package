@@ -13,6 +13,7 @@ description: Restyle a supplied room while preserving architecture, spatial layo
 - Tone: orange
 - Short description: Restyle a supplied room while preserving architecture, layout constraints and declared keep-items.
 - Cover image: /skill-covers/restyle-room.png
+- Source images: /skill-covers/sources/restyle-room-source.png
 
 - Similar skills: clean-room, remove-object
 ## What this skill does

@@ -11,6 +11,7 @@ description: Add plausible, context-aware color to a black-and-white or grayscal
 - Tone: gold
 - Short description: Add plausible color while preserving the original photograph.
 - Cover image: /skill-covers/colorize-image.png
+- Source images: /skill-covers/sources/colorize-image-source.png
 ## What this skill does
 - Uses whole-image context to infer coherent skin, fabric, object, and environment colors.
 - Distinguishes documented color references from plausible creative inference.

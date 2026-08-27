@@ -14,6 +14,7 @@ description: Use for fact-checked multi-page social knowledge-note plan from app
 - Tone: blue
 - Short description: Fact-checked multi-page social knowledge-note plan.
 - Cover image: /skill-covers/social-knowledge-notes.png
+- Source images: /skill-covers/sources/social-knowledge-notes-source.png
 
 ## What this skill does
 

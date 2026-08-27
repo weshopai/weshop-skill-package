@@ -11,6 +11,7 @@ description: Remove a visible user-requested watermark, logo overlay, stamp, dat
 - Tone: red
 - Short description: Remove an ordinary visible mark and rebuild the covered image.
 - Cover image: /skill-covers/remove-image-mark.png
+- Source images: /skill-covers/sources/remove-image-mark-source.png
 ## What this skill does
 - Removes named overlay text, logos, stamps, dates, or annotations by understanding their visual context.
 - Reconstructs covered background while leaving unrelated pixels and composition stable.

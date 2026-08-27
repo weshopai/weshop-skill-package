@@ -13,6 +13,7 @@ description: Render one finished comic page from an approved page storyboard, ch
 - Tone: purple
 - Short description: Render one storyboarded comic page with character, style, panel, and dialogue continuity.
 - Cover image: /skill-covers/render-comic-page.png
+- Source images: /skill-covers/sources/render-comic-page-source.png
 
 - Similar skills: develop-story, plan-comic-storyboard, plan-film-storyboard
 ## What this skill does

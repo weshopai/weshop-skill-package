@@ -14,6 +14,7 @@ description: Change only both iris colors in one authorized portrait while prese
 - Tone: rose
 - Short description: Preview one natural iris color without changing the eyes.
 - Cover image: /skill-covers/eye-color-change.png
+- Source images: /skill-covers/sources/eye-color-change-source.png
 
 ## What this skill does
 

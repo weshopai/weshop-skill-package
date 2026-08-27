@@ -13,6 +13,7 @@ description: Preview one specified wall or architectural surface in an exact pai
 - Tone: yellow
 - Short description: Preview one specified wall or architectural surface in an exact paint color without redesigning the room.
 - Cover image: /skill-covers/preview-paint.png
+- Source images: /skill-covers/sources/preview-paint-source.png
 
 ## What this skill does
 

@@ -15,6 +15,7 @@ description: Prepare one authorized portrait for one explicitly named ID-photo o
 - Short description: Research the authority, correct the capture, then crop around the measured head.
 
 - Cover image: /skill-covers/id-photo-format.png
+- Source images: /skill-covers/sources/id-photo-format-source.png
 
 - Similar skills: make-wallet-photo, professional-headshot
 ## What this skill does

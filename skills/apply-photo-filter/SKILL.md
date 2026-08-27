@@ -11,6 +11,7 @@ description: Apply one controlled photographic color-and-texture treatment while
 - Tone: orange
 - Short description: Apply one filter without changing scene content.
 - Cover image: /skill-covers/apply-photo-filter.png
+- Source images: /skill-covers/sources/apply-photo-filter-source.png
 - Similar skills: remove-photo-filter, recolor-object
 ## What this skill does
 - Changes palette, tone curve, saturation, grain, bloom, and vignette as one treatment.

@@ -11,6 +11,7 @@ description: Recreate the composition, camera feel, lighting, color treatment, a
 - Tone: rose
 - Short description: Turn an everyday photo into a reference-led social photo.
 - Cover image: /skill-covers/recreate-social-photo.png
+- Source images: /skill-covers/sources/recreate-social-photo-source.png
 ## What this skill does
 - Maps source identity and reference visual grammar separately.
 - Recreates framing, pose energy, lens feel, light, grade, texture, and mood without copying reference identity.

@@ -46,6 +46,9 @@
         "Portrait"
       ],
       "coverImage": "/skill-covers/add-braces.png",
+      "sourceImages": [
+        "/skill-covers/sources/add-braces-source.png"
+      ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "rose",
       "featured": false,
@@ -82,6 +85,9 @@
         "Layout & Design"
       ],
       "coverImage": "/skill-covers/add-speech-bubble.png",
+      "sourceImages": [
+        "/skill-covers/sources/add-speech-bubble-source.png"
+      ],
       "routeLabel": "GPT Image 2 overlay",
       "tone": "blue",
       "featured": false,
@@ -117,6 +123,9 @@
         "Fashion"
       ],
       "coverImage": "/skill-covers/add-tattoo.png",
+      "sourceImages": [
+        "/skill-covers/sources/add-tattoo-source.png"
+      ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "rose",
       "featured": false,
@@ -267,6 +276,9 @@
         "Commercial Production"
       ],
       "coverImage": "/skill-covers/ai-product.png",
+      "sourceImages": [
+        "/skill-covers/sources/ai-product-source.png"
+      ],
       "routeLabel": "WeShop AI Product or GPT Image 2",
       "tone": "sage",
       "featured": false,
@@ -359,6 +371,9 @@
         "Fashion"
       ],
       "coverImage": "/skill-covers/apply-makeup.png",
+      "sourceImages": [
+        "/skill-covers/sources/apply-makeup-source.png"
+      ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "rose",
       "featured": false,
@@ -407,6 +422,9 @@
         "Portrait"
       ],
       "coverImage": "/skill-covers/apply-photo-filter.png",
+      "sourceImages": [
+        "/skill-covers/sources/apply-photo-filter-source.png"
+      ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "orange",
       "featured": false,
@@ -636,6 +654,9 @@
         "Fashion"
       ],
       "coverImage": "/skill-covers/change-bangs.png",
+      "sourceImages": [
+        "/skill-covers/sources/change-bangs-source.png"
+      ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "rose",
       "featured": false,
@@ -746,6 +767,9 @@
         "Character"
       ],
       "coverImage": "/skill-covers/character-reference-sheet.png",
+      "sourceImages": [
+        "/skill-covers/sources/character-reference-sheet-source.png"
+      ],
       "routeLabel": "Compatibility redirect to Create Character",
       "tone": "ink",
       "featured": false,
@@ -905,6 +929,9 @@
         "Utility"
       ],
       "coverImage": "/skill-covers/clean-room.png",
+      "sourceImages": [
+        "/skill-covers/sources/clean-room-source.png"
+      ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "green",
       "featured": false,
@@ -987,6 +1014,9 @@
         "Utility"
       ],
       "coverImage": "/skill-covers/colorize-image.png",
+      "sourceImages": [
+        "/skill-covers/sources/colorize-image-source.png"
+      ],
       "routeLabel": "GPT Image 2 contextual colorization",
       "tone": "gold",
       "featured": false,
@@ -2148,6 +2178,9 @@
         "Utility"
       ],
       "coverImage": "/skill-covers/expand-image.png",
+      "sourceImages": [
+        "/skill-covers/sources/expand-image-source.png"
+      ],
       "routeLabel": "GPT Image 2 preservation-first outpainting with Expand Image fallback",
       "tone": "sky",
       "featured": false,
@@ -2194,6 +2227,9 @@
         "Portrait"
       ],
       "coverImage": "/skill-covers/eye-color-change.png",
+      "sourceImages": [
+        "/skill-covers/sources/eye-color-change-source.png"
+      ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "rose",
       "featured": false,
@@ -2430,6 +2466,9 @@
         "Fashion"
       ],
       "coverImage": "/skill-covers/hair-color-change.png",
+      "sourceImages": [
+        "/skill-covers/sources/hair-color-change-source.png"
+      ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "rose",
       "featured": false,
@@ -2483,6 +2522,9 @@
         "Fashion"
       ],
       "coverImage": "/skill-covers/hairstyle-change.png",
+      "sourceImages": [
+        "/skill-covers/sources/hairstyle-change-source.png"
+      ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "rose",
       "featured": false,
@@ -2608,6 +2650,9 @@
         "Portrait"
       ],
       "coverImage": "/skill-covers/id-photo-format.png",
+      "sourceImages": [
+        "/skill-covers/sources/id-photo-format-source.png"
+      ],
       "routeLabel": "Official-rule research plus WeShop and measured crop",
       "tone": "rose",
       "featured": false,
@@ -2702,6 +2747,9 @@
         "Video"
       ],
       "coverImage": "/skill-covers/legal-diagram-redraw.png",
+      "sourceImages": [
+        "/skill-covers/sources/legal-diagram-redraw-source.png"
+      ],
       "routeLabel": "Agent-authored structured brief",
       "tone": "blue",
       "featured": false,
@@ -2738,6 +2786,9 @@
         "Video"
       ],
       "coverImage": "/skill-covers/legal-evidence-timeline.png",
+      "sourceImages": [
+        "/skill-covers/sources/legal-evidence-timeline-source.png"
+      ],
       "routeLabel": "Agent-authored structured brief",
       "tone": "blue",
       "featured": false,
@@ -3169,6 +3220,9 @@
         "Portrait"
       ],
       "coverImage": "/skill-covers/make-mugshot-photo.png",
+      "sourceImages": [
+        "/skill-covers/sources/make-mugshot-photo-source.png"
+      ],
       "routeLabel": "GPT Image 2 novelty mugshot-style portrait",
       "tone": "gray",
       "featured": false,
@@ -3257,6 +3311,9 @@
         "Portrait"
       ],
       "coverImage": "/skill-covers/make-pet-portrait.png",
+      "sourceImages": [
+        "/skill-covers/sources/make-pet-portrait-source.png"
+      ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "amber",
       "featured": false,
@@ -3374,6 +3431,9 @@
         "Portrait"
       ],
       "coverImage": "/skill-covers/make-selfie.png",
+      "sourceImages": [
+        "/skill-covers/sources/make-selfie-source.png"
+      ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "rose",
       "featured": false,
@@ -3414,6 +3474,9 @@
         "Portrait"
       ],
       "coverImage": "/skill-covers/make-silhouette.png",
+      "sourceImages": [
+        "/skill-covers/sources/make-silhouette-source.png"
+      ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "slate",
       "featured": false,
@@ -3586,6 +3649,9 @@
         "Portrait"
       ],
       "coverImage": "/skill-covers/make-wallet-photo.png",
+      "sourceImages": [
+        "/skill-covers/sources/make-wallet-photo-source.png"
+      ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "blue",
       "featured": false,
@@ -3880,6 +3946,9 @@
         "Layout & Design"
       ],
       "coverImage": "/skill-covers/outfit-design.png",
+      "sourceImages": [
+        "/skill-covers/sources/outfit-design-source.png"
+      ],
       "routeLabel": "Outfit Generator with GPT Image 2 reference-aware route",
       "tone": "violet",
       "featured": false,
@@ -3997,6 +4066,10 @@
         "Layout & Design"
       ],
       "coverImage": "/skill-covers/photo-collage.png",
+      "sourceImages": [
+        "/skill-covers/sources/photo-collage-a.png",
+        "/skill-covers/sources/photo-collage-b.png"
+      ],
       "routeLabel": "Source-faithful collage composition",
       "tone": "cyan",
       "featured": false,
@@ -4327,6 +4400,9 @@
         "Layout & Design"
       ],
       "coverImage": "/skill-covers/preview-landscape.png",
+      "sourceImages": [
+        "/skill-covers/sources/preview-landscape-source.png"
+      ],
       "routeLabel": "GPT Image 2 landscape editing",
       "tone": "green",
       "featured": false,
@@ -4361,6 +4437,9 @@
         "Layout & Design"
       ],
       "coverImage": "/skill-covers/preview-paint.png",
+      "sourceImages": [
+        "/skill-covers/sources/preview-paint-source.png"
+      ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "yellow",
       "featured": false,
@@ -4597,6 +4676,9 @@
         "Portrait"
       ],
       "coverImage": "/skill-covers/professional-headshot.png",
+      "sourceImages": [
+        "/skill-covers/sources/professional-headshot-source.png"
+      ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "rose",
       "featured": false,
@@ -4644,6 +4726,9 @@
         "Utility"
       ],
       "coverImage": "/skill-covers/recolor-object.png",
+      "sourceImages": [
+        "/skill-covers/sources/recolor-object-source.png"
+      ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "violet",
       "featured": false,
@@ -4691,6 +4776,9 @@
         "Portrait"
       ],
       "coverImage": "/skill-covers/recreate-social-photo.png",
+      "sourceImages": [
+        "/skill-covers/sources/recreate-social-photo-source.png"
+      ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "rose",
       "featured": false,
@@ -4770,6 +4858,9 @@
         "Utility"
       ],
       "coverImage": "/skill-covers/remove-glasses.png",
+      "sourceImages": [
+        "/skill-covers/sources/remove-glasses-source-verified.png"
+      ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "blue",
       "featured": false,
@@ -4804,6 +4895,9 @@
         "Utility"
       ],
       "coverImage": "/skill-covers/remove-image-mark.png",
+      "sourceImages": [
+        "/skill-covers/sources/remove-image-mark-source.png"
+      ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "red",
       "featured": false,
@@ -4838,6 +4932,9 @@
         "Utility"
       ],
       "coverImage": "/skill-covers/remove-object.png",
+      "sourceImages": [
+        "/skill-covers/sources/remove-object-source.png"
+      ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "red",
       "featured": false,
@@ -4884,6 +4981,9 @@
         "Utility"
       ],
       "coverImage": "/skill-covers/remove-photo-filter.png",
+      "sourceImages": [
+        "/skill-covers/sources/remove-photo-filter-source.png"
+      ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "sky",
       "featured": false,
@@ -4964,6 +5064,9 @@
         "Comic"
       ],
       "coverImage": "/skill-covers/render-comic-page.png",
+      "sourceImages": [
+        "/skill-covers/sources/render-comic-page-source.png"
+      ],
       "routeLabel": "GPT Image 2 reference-aware comic page",
       "tone": "purple",
       "featured": false,
@@ -5016,6 +5119,9 @@
         "Layout & Design"
       ],
       "coverImage": "/skill-covers/restyle-room.png",
+      "sourceImages": [
+        "/skill-covers/sources/restyle-room-source.png"
+      ],
       "routeLabel": "GPT Image 2 room restyling",
       "tone": "orange",
       "featured": false,
@@ -5113,6 +5219,9 @@
         "Utility"
       ],
       "coverImage": "/skill-covers/retouch-blemish.png",
+      "sourceImages": [
+        "/skill-covers/sources/retouch-blemish-source.png"
+      ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "rose",
       "featured": false,
@@ -5160,6 +5269,9 @@
         "Fashion"
       ],
       "coverImage": "/skill-covers/shave-head.png",
+      "sourceImages": [
+        "/skill-covers/sources/shave-head-source.png"
+      ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "rose",
       "featured": false,
@@ -5266,6 +5378,9 @@
         "Utility"
       ],
       "coverImage": "/skill-covers/smooth-wrinkles.png",
+      "sourceImages": [
+        "/skill-covers/sources/smooth-wrinkles-source.png"
+      ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "sand",
       "featured": false,
@@ -5313,6 +5428,9 @@
         "Social Media"
       ],
       "coverImage": "/skill-covers/social-knowledge-notes.png",
+      "sourceImages": [
+        "/skill-covers/sources/social-knowledge-notes-source.png"
+      ],
       "routeLabel": "Agent-authored structured brief",
       "tone": "blue",
       "featured": false,
@@ -5386,6 +5504,9 @@
         "Layout & Design"
       ],
       "coverImage": "/skill-covers/technical-visual-explainer.png",
+      "sourceImages": [
+        "/skill-covers/sources/technical-visual-explainer-source.png"
+      ],
       "routeLabel": "Agent-authored structured brief",
       "tone": "blue",
       "featured": false,

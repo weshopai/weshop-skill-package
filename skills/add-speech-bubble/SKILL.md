@@ -11,6 +11,7 @@ description: Add position-accurate speech or thought bubbles with exact text to 
 - Tone: blue
 - Short description: Add exact dialogue bubbles at the right subjects.
 - Cover image: /skill-covers/add-speech-bubble.png
+- Source images: /skill-covers/sources/add-speech-bubble-source.png
 ## What this skill does
 - Adds oval, cloud, rectangle, starburst, caption, or text-only bubbles.
 - Binds each text string, body, and tail endpoint to a declared speaker.

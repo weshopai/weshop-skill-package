@@ -13,6 +13,7 @@ description: Create one clearly fictional or novelty mugshot-style portrait that
 - Tone: gray
 - Short description: Create one clearly fictional or novelty mugshot-style portrait that cannot be mistaken for an official booking record.
 - Cover image: /skill-covers/make-mugshot-photo.png
+- Source images: /skill-covers/sources/make-mugshot-photo-source.png
 
 ## What this skill does
 

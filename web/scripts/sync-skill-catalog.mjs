@@ -28,6 +28,8 @@ const parseSkill = async (slug) => {
   if (catalog.Featured && !["yes", "no"].includes(catalog.Featured)) throw new Error(`${slug}: Featured must be yes or no when provided`);
   if (catalog["Cover image"] && !catalog["Cover image"].startsWith("/skill-covers/")) throw new Error(`${slug}: Cover image must be served from /skill-covers/`);
   if (catalog["Cover motion"] && (!catalog["Cover motion"].startsWith("/skill-covers/") || !/\.(mp4|webm)$/i.test(catalog["Cover motion"]))) throw new Error(`${slug}: Cover motion must be an MP4 or WebM served from /skill-covers/`);
+  const sourceImages = catalog["Source images"]?.split(",").map((value) => value.trim()).filter(Boolean) ?? [];
+  if (sourceImages.some((value) => !value.startsWith("/skill-covers/sources/") || !/\.(png|jpe?g|webp|gif|avif)$/i.test(value))) throw new Error(`${slug}: Source images must be image files served from /skill-covers/sources/`);
   const whatThisSkillDoes = section(source, "What this skill does", "How to use").split("\n").filter((line) => line.startsWith("- ")).map((line) => line.slice(2).trim());
   const howToUseSection = section(source, "How to use", "User-facing output");
   const promptExamples = [...howToUseSection.matchAll(/#### (.+?)\n+```text\n([\s\S]*?)\n```/g)].map((match) => ({ title: match[1].trim(), prompt: match[2].trim() }));
@@ -45,6 +47,7 @@ const parseSkill = async (slug) => {
     categoryTags: categories,
     coverImage: catalog["Cover image"] || fallbackCover,
     ...(catalog["Cover motion"] ? { coverMotion: catalog["Cover motion"] } : {}),
+    ...(sourceImages.length ? { sourceImages } : {}),
     routeLabel: catalog["Route label"] || "Skill workflow",
     tone: catalog.Tone || "ink",
     featured: catalog.Featured === "yes",

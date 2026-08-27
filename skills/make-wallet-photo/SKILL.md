@@ -13,6 +13,7 @@ description: Prepare one wallet-size print portrait from an authorized photo usi
 - Tone: blue
 - Short description: Prepare one wallet-size print portrait from an authorized photo using a real print dimension, crop and bleed specification.
 - Cover image: /skill-covers/make-wallet-photo.png
+- Source images: /skill-covers/sources/make-wallet-photo-source.png
 
 - Similar skills: id-photo-format, professional-headshot
 ## What this skill does

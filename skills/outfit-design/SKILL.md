@@ -17,6 +17,7 @@ Create one finished image of the supplied person wearing an intentionally new ou
 - Tone: violet
 - Short description: Invent or redesign a coordinated outfit.
 - Cover image: /skill-covers/outfit-design.png
+- Source images: /skill-covers/sources/outfit-design-source.png
 
 ## What this skill does
 

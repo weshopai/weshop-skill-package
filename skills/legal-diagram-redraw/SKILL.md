@@ -14,6 +14,7 @@ description: Use for editable redraw of supplied legal diagrams without changing
 - Tone: blue
 - Short description: Editable redraw of supplied legal diagrams without changing asserted facts.
 - Cover image: /skill-covers/legal-diagram-redraw.png
+- Source images: /skill-covers/sources/legal-diagram-redraw-source.png
 
 ## What this skill does
 

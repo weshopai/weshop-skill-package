@@ -14,6 +14,7 @@ description: Turn one authorized portrait into one researched, identity-faithful
 - Tone: rose
 - Short description: Research the channel, then create a properly posed and lit professional portrait.
 - Cover image: /skill-covers/professional-headshot.png
+- Source images: /skill-covers/sources/professional-headshot-source.png
 
 - Similar skills: id-photo-format, make-wallet-photo
 ## What this skill does

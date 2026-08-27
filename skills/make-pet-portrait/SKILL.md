@@ -13,6 +13,7 @@ description: Create one stylized or photographic portrait of a supplied pet whil
 - Tone: amber
 - Short description: Create one stylized or photographic portrait of a supplied pet while preserving distinctive markings and proportions.
 - Cover image: /skill-covers/make-pet-portrait.png
+- Source images: /skill-covers/sources/make-pet-portrait-source.png
 
 ## What this skill does
 

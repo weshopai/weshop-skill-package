@@ -15,6 +15,7 @@ description: Compatibility entry for older character-sheet requests. Route the c
 - Tone: ink
 - Short description: Redirect legacy character-sheet requests to the canonical character workflow without creating a duplicate run.
 - Cover image: /skill-covers/character-reference-sheet.png
+- Source images: /skill-covers/sources/character-reference-sheet-source.png
 
 ## What this skill does
 

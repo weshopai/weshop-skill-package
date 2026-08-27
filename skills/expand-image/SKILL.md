@@ -17,6 +17,7 @@ Turn one accepted image into a larger canvas without stretching it. Treat the or
 - Tone: sky
 - Short description: Extend an image to a new ratio without stretching it.
 - Cover image: /skill-covers/expand-image.png
+- Source images: /skill-covers/sources/expand-image-source.png
 
 ## What this skill does
 

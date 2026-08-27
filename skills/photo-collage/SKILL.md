@@ -15,6 +15,7 @@ Turn supplied photos into one designed canvas. Keep original photos as source as
 - Route label: Source-faithful collage composition
 - Tone: cyan
 - Cover image: /skill-covers/photo-collage.png
+- Source images: /skill-covers/sources/photo-collage-a.png, /skill-covers/sources/photo-collage-b.png
 - Short description: Arrange original photos into one intentional collage.
 
 - Similar skills: compose-lookbook, create-social-carousel, create-image-deck

@@ -14,6 +14,7 @@ description: Add one realistic braces treatment to the visible teeth of an autho
 - Tone: rose
 - Short description: Preview one braces style on clearly visible teeth.
 - Cover image: /skill-covers/add-braces.png
+- Source images: /skill-covers/sources/add-braces-source.png
 
 ## What this skill does
 

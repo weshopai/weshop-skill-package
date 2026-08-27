@@ -13,7 +13,8 @@ description: Create one wedding-style portrait of consenting adults from authori
 - Tone: rose
 - Short description: Create one wedding-style portrait of consenting adults from authorized references while preserving both identities and avoiding false-event claims.
 
-- Cover image: /skill-covers/make-wedding-photo.png
+- Cover image: /skill-covers/make-wedding-photo-v2.png
+- Source images: /skill-covers/sources/make-wedding-photo-v2-source-1.png, /skill-covers/sources/make-wedding-photo-v2-source-2.png
 
 ## What this skill does
 

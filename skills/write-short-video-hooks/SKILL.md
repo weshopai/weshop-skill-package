@@ -8,7 +8,7 @@ description: Write three distinct, truthful opening-hook variants for one short-
 
 - Display name: Write Short Video Hooks
 - Text category: yes
-- Categories: Text, Social Media, Video
+- Categories: Text
 - Status: Ready
 - Route label: Agent-authored hook variants
 - Tone: blue

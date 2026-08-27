@@ -14,6 +14,7 @@ description: Create one complete birthday memory video from authorized photos or
 - Short description: Create one complete birthday memory video from authorized media, exact messages and licensed or original audio.
 
 - Cover image: /skill-covers/make-birthday-video.png
+- Cover motion: /skill-covers/make-birthday-video.mp4
 
 ## What this skill does
 

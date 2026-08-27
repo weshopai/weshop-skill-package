@@ -8,7 +8,7 @@ description: Use for product launch-film plan with hook, reveal, and end-card ar
 
 - Display name: Product Launch Video Plan
 - Text category: yes
-- Categories: Text, Commercial Production, Video
+- Categories: Text
 - Status: Planning route only
 - Route label: Agent-authored structured brief
 - Tone: blue

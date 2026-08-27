@@ -14,6 +14,7 @@ description: Add one specified visual effect to supplied video at a defined time
 - Short description: Add one specified effect to a supplied video at a defined time and region while preserving underlying footage.
 
 - Cover image: /skill-covers/add-video-effect.png
+- Cover motion: /skill-covers/add-video-effect.mp4
 
 - Similar skills: correct-video-color, restyle-video, upscale-video
 ## What this skill does

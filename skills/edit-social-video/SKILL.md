@@ -14,6 +14,7 @@ description: Turn supplied footage into one platform-ready social video using cu
 - Short description: Turn supplied footage into one platform-ready social video using current placement rules, a strong opening and evidence-faithful captions.
 
 - Cover image: /skill-covers/edit-social-video.png
+- Cover motion: /skill-covers/edit-social-video.mp4
 
 - Similar skills: combine-videos, make-beat-synced-video, make-music-video
 ## What this skill does

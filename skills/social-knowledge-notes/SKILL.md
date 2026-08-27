@@ -8,7 +8,7 @@ description: Use for fact-checked multi-page social knowledge-note plan from app
 
 - Display name: Social Knowledge Notes
 - Text category: yes
-- Categories: Text, Social Media
+- Categories: Text
 - Status: Planning route only
 - Route label: Agent-authored structured brief
 - Tone: blue

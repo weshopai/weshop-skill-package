@@ -14,6 +14,7 @@ description: Animate one supplied still into a short video with bounded subject 
 - Short description: Animate one supplied still with bounded subject and camera motion while preserving identity and composition.
 
 - Cover image: /skill-covers/animate-image.png
+- Cover motion: /skill-covers/animate-image.mp4
 
 ## What this skill does
 

@@ -14,6 +14,7 @@ description: Create one short reusable branded video intro with exact identity, 
 - Short description: Create one short reusable branded intro with exact identity, legible title and a clean transition into program content.
 
 - Cover image: /skill-covers/make-video-intro.png
+- Cover motion: /skill-covers/make-video-intro.mp4
 
 - Similar skills: brand-stream-mg, dot-matrix-brand-wordmark-motion, poster-motion
 ## What this skill does

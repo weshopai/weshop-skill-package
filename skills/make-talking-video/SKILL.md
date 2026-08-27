@@ -14,6 +14,7 @@ description: Create one talking-person video from an authorized or fictional por
 - Short description: Create one talking-person video from an authorized or fictional portrait and approved script with synchronized speech.
 
 - Cover image: /skill-covers/make-talking-video.png
+- Cover motion: /skill-covers/make-talking-video.mp4
 
 ## What this skill does
 

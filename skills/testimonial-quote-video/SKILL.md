@@ -8,7 +8,7 @@ description: Use for attributed animated testimonial-video plan from approved us
 
 - Display name: Testimonial Quote Video
 - Text category: yes
-- Categories: Text, Social Media, Video
+- Categories: Text
 - Status: Planning route only
 - Route label: Agent-authored structured brief
 - Tone: blue

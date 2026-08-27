@@ -8,7 +8,7 @@ description: Use for silent hand-drawn story-video plan and render brief from ap
 
 - Display name: Hand-drawn Story Video
 - Text category: yes
-- Categories: Text, Film, Video
+- Categories: Text
 - Status: Planning route only
 - Route label: Agent-authored structured brief
 - Tone: blue

@@ -161,6 +161,7 @@
         "Video"
       ],
       "coverImage": "/skill-covers/add-video-effect.png",
+      "coverMotion": "/skill-covers/add-video-effect.mp4",
       "routeLabel": "MiniMax H3 localized video edit",
       "tone": "pink",
       "featured": false,
@@ -336,6 +337,7 @@
         "Video"
       ],
       "coverImage": "/skill-covers/animate-image.png",
+      "coverMotion": "/skill-covers/animate-image.mp4",
       "routeLabel": "Kling 3.0 image-to-video",
       "tone": "cyan",
       "featured": false,
@@ -709,7 +711,7 @@
         "Portrait",
         "Commercial Production"
       ],
-      "coverImage": "/skill-covers/change-pose.png",
+      "coverImage": "/skill-covers/change-pose-v2.png",
       "sourceImages": [
         "/skill-covers/sources/change-pose-source.png"
       ],
@@ -875,9 +877,7 @@
       "description": "Cinematic or image-to-video motion prompt.",
       "category": "Text",
       "categoryTags": [
-        "Text",
-        "Film",
-        "Video"
+        "Text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -1054,6 +1054,7 @@
         "Video"
       ],
       "coverImage": "/skill-covers/combine-videos.png",
+      "coverMotion": "/skill-covers/combine-videos.mp4",
       "routeLabel": "Deterministic timeline assembly",
       "tone": "blue",
       "featured": false,
@@ -1157,6 +1158,7 @@
         "Video"
       ],
       "coverImage": "/skill-covers/correct-video-color.png",
+      "coverMotion": "/skill-covers/correct-video-color.mp4",
       "routeLabel": "Measured deterministic grade; MiniMax H3 only when temporal rewriting is required",
       "tone": "orange",
       "featured": false,
@@ -1732,8 +1734,7 @@
       "description": "Semantic adaptation of an existing video prompt.",
       "category": "Text",
       "categoryTags": [
-        "Text",
-        "Video"
+        "Text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -1857,8 +1858,7 @@
       "description": "Produce one skill-teaching course conversion page plan with explicit inputs, boundaries, and acceptance checks.",
       "category": "Text",
       "categoryTags": [
-        "Text",
-        "Layout & Design"
+        "Text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Independent outcome contract",
@@ -1893,8 +1893,7 @@
       "description": "Build or repair a story foundation before medium-specific production.",
       "category": "Text",
       "categoryTags": [
-        "Text",
-        "Film"
+        "Text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored story development package",
@@ -2084,6 +2083,7 @@
         "Video"
       ],
       "coverImage": "/skill-covers/edit-social-video.png",
+      "coverMotion": "/skill-covers/edit-social-video.mp4",
       "routeLabel": "Platform-aware social edit",
       "tone": "red",
       "featured": false,
@@ -2323,8 +2323,7 @@
       "description": "Produce one observable film-reference prompt brief with explicit inputs, boundaries, and acceptance checks.",
       "category": "Text",
       "categoryTags": [
-        "Text",
-        "Film"
+        "Text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Independent outcome contract",
@@ -2398,6 +2397,7 @@
         "Video"
       ],
       "coverImage": "/skill-covers/generate-video.png",
+      "coverMotion": "/skill-covers/generate-video.mp4",
       "routeLabel": "Guide-routed cataloged video model",
       "tone": "purple",
       "featured": false,
@@ -2429,8 +2429,7 @@
       "description": "Produce one structured reference-aware video execution brief with explicit inputs, boundaries, and acceptance checks.",
       "category": "Text",
       "categoryTags": [
-        "Text",
-        "Video"
+        "Text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Independent outcome contract",
@@ -2613,9 +2612,7 @@
       "description": "Silent hand-drawn story-video plan and render brief.",
       "category": "Text",
       "categoryTags": [
-        "Text",
-        "Film",
-        "Video"
+        "Text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -2652,9 +2649,9 @@
       "categoryTags": [
         "Portrait"
       ],
-      "coverImage": "/skill-covers/id-photo-format.png",
+      "coverImage": "/skill-covers/id-photo-format-v2.png",
       "sourceImages": [
-        "/skill-covers/sources/id-photo-format-source.png"
+        "/skill-covers/sources/id-photo-format-v2-source.png"
       ],
       "routeLabel": "Official-rule research plus WeShop and measured crop",
       "tone": "rose",
@@ -2746,8 +2743,7 @@
       "description": "Editable redraw of supplied legal diagrams without changing asserted facts.",
       "category": "Text",
       "categoryTags": [
-        "Text",
-        "Video"
+        "Text"
       ],
       "coverImage": "/skill-covers/legal-diagram-redraw.png",
       "sourceImages": [
@@ -2785,8 +2781,7 @@
       "description": "Traceable chronology from user-supplied evidence.",
       "category": "Text",
       "categoryTags": [
-        "Text",
-        "Video"
+        "Text"
       ],
       "coverImage": "/skill-covers/legal-evidence-timeline.png",
       "sourceImages": [
@@ -3001,6 +2996,7 @@
         "Video"
       ],
       "coverImage": "/skill-covers/make-birthday-video.png",
+      "coverMotion": "/skill-covers/make-birthday-video.mp4",
       "routeLabel": "Memory-led birthday video assembly",
       "tone": "yellow",
       "featured": false,
@@ -3351,6 +3347,7 @@
         "Video"
       ],
       "coverImage": "/skill-covers/make-podcast-video.png",
+      "coverMotion": "/skill-covers/make-podcast-video.mp4",
       "routeLabel": "Podcast scene and audio-led video assembly",
       "tone": "navy",
       "featured": false,
@@ -3515,6 +3512,7 @@
         "Video"
       ],
       "coverImage": "/skill-covers/make-talking-video.png",
+      "coverMotion": "/skill-covers/make-talking-video.mp4",
       "routeLabel": "Consent-safe talking-video generation",
       "tone": "purple",
       "featured": false,
@@ -3601,6 +3599,7 @@
         "Video"
       ],
       "coverImage": "/skill-covers/make-video-intro.png",
+      "coverMotion": "/skill-covers/make-video-intro.mp4",
       "routeLabel": "GPT Image 2 plus video generation",
       "tone": "amber",
       "featured": false,
@@ -3701,7 +3700,11 @@
         "Portrait",
         "Social Media"
       ],
-      "coverImage": "/skill-covers/make-wedding-photo.png",
+      "coverImage": "/skill-covers/make-wedding-photo-v2.png",
+      "sourceImages": [
+        "/skill-covers/sources/make-wedding-photo-v2-source-1.png",
+        "/skill-covers/sources/make-wedding-photo-v2-source-2.png"
+      ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "rose",
       "featured": false,
@@ -3736,7 +3739,8 @@
         "Portrait",
         "Video"
       ],
-      "coverImage": "/skill-covers/default-skill.svg",
+      "coverImage": "/skill-covers/micro-expression-performance.png",
+      "coverMotion": "/skill-covers/micro-expression-performance.mp4",
       "routeLabel": "Character acting-layer direction",
       "tone": "purple",
       "featured": false,
@@ -3854,9 +3858,7 @@
       "description": "Structured prompt for one narrative video shot.",
       "category": "Text",
       "categoryTags": [
-        "Text",
-        "Film",
-        "Video"
+        "Text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -3908,9 +3910,7 @@
       "description": "Multi-shot narrative video storyboard.",
       "category": "Text",
       "categoryTags": [
-        "Text",
-        "Film",
-        "Video"
+        "Text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -4137,8 +4137,7 @@
       "description": "Convert a story into a validated page-by-page comic production manifest.",
       "category": "Text",
       "categoryTags": [
-        "Text",
-        "Comic"
+        "Text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured storyboard",
@@ -4245,7 +4244,7 @@
       "categoryTags": [
         "Layout & Design"
       ],
-      "coverImage": "/skill-covers/poster-design.png",
+      "coverImage": "/skill-covers/poster-design-v2.png",
       "routeLabel": "Model-routed poster generation",
       "tone": "coral",
       "featured": true,
@@ -4573,9 +4572,7 @@
       "description": "Product launch-film plan with hook, reveal, and end-card arc.",
       "category": "Text",
       "categoryTags": [
-        "Text",
-        "Commercial Production",
-        "Video"
+        "Text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -4778,9 +4775,10 @@
         "Social Media",
         "Portrait"
       ],
-      "coverImage": "/skill-covers/recreate-social-photo.png",
+      "coverImage": "/skill-covers/recreate-social-photo-v2.png",
       "sourceImages": [
-        "/skill-covers/sources/recreate-social-photo-source.png"
+        "/skill-covers/sources/recreate-social-photo-v2-source.png",
+        "/skill-covers/sources/recreate-social-photo-v2-reference.png"
       ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "rose",
@@ -4815,7 +4813,7 @@
       "categoryTags": [
         "Utility"
       ],
-      "coverImage": "/skill-covers/remove-background.png",
+      "coverImage": "/skill-covers/remove-background-v2.png",
       "sourceImages": [
         "/skill-covers/sources/remove-background-source.png"
       ],
@@ -5036,6 +5034,7 @@
         "Video"
       ],
       "coverImage": "/skill-covers/remove-video-mark.png",
+      "coverMotion": "/skill-covers/remove-video-mark.mp4",
       "routeLabel": "WeShop authorized video mark removal",
       "tone": "slate",
       "featured": false,
@@ -5174,6 +5173,7 @@
         "Video"
       ],
       "coverImage": "/skill-covers/restyle-video.png",
+      "coverMotion": "/skill-covers/restyle-video.mp4",
       "routeLabel": "MiniMax H3 source-video restyling",
       "tone": "violet",
       "featured": false,
@@ -5327,9 +5327,7 @@
       "description": "Compact single-shot audiovisual video prompt.",
       "category": "Text",
       "categoryTags": [
-        "Text",
-        "Film",
-        "Video"
+        "Text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -5430,8 +5428,7 @@
       "description": "Fact-checked multi-page social knowledge-note plan.",
       "category": "Text",
       "categoryTags": [
-        "Text",
-        "Social Media"
+        "Text"
       ],
       "coverImage": "/skill-covers/social-knowledge-notes.png",
       "sourceImages": [
@@ -5506,8 +5503,7 @@
       "description": "Interactive self-contained HTML technical explanation.",
       "category": "Text",
       "categoryTags": [
-        "Text",
-        "Layout & Design"
+        "Text"
       ],
       "coverImage": "/skill-covers/technical-visual-explainer.png",
       "sourceImages": [
@@ -5545,9 +5541,7 @@
       "description": "Attributed animated testimonial-video plan.",
       "category": "Text",
       "categoryTags": [
-        "Text",
-        "Social Media",
-        "Video"
+        "Text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -5582,9 +5576,7 @@
       "description": "Turn narration into a reviewable A-roll, evidence, and B-roll plan before generating approved shots.",
       "category": "Text",
       "categoryTags": [
-        "Text",
-        "Film",
-        "Video"
+        "Text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Transcript-led B-roll planning",
@@ -5621,7 +5613,10 @@
         "Social Media",
         "Utility"
       ],
-      "coverImage": "/skill-covers/translate-image-text.png",
+      "coverImage": "/skill-covers/translate-image-text-v2.jpg",
+      "sourceImages": [
+        "/skill-covers/sources/translate-image-text-v2-source.jpg"
+      ],
       "routeLabel": "GPT Image 2 native visual translation",
       "tone": "teal",
       "featured": false,
@@ -5656,6 +5651,7 @@
         "Video"
       ],
       "coverImage": "/skill-covers/upscale-video.png",
+      "coverMotion": "/skill-covers/upscale-video.mp4",
       "routeLabel": "WeShop AI Video Enhancer",
       "tone": "green",
       "featured": false,
@@ -5704,8 +5700,7 @@
       "description": "Evidence-bounded recommendation among verified video routes.",
       "category": "Text",
       "categoryTags": [
-        "Text",
-        "Video"
+        "Text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -5740,8 +5735,7 @@
       "description": "Diagnosis and revised prompt after a known defective result.",
       "category": "Text",
       "categoryTags": [
-        "Text",
-        "Video"
+        "Text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored structured brief",
@@ -5779,7 +5773,7 @@
         "Fashion",
         "Commercial Production"
       ],
-      "coverImage": "/skill-covers/virtual-try-on.png",
+      "coverImage": "/skill-covers/virtual-try-on-v2.png",
       "sourceImages": [
         "/skill-covers/sources/virtual-try-on-garment-source.png",
         "/skill-covers/sources/virtual-try-on-model-source.webp"
@@ -5877,8 +5871,7 @@
       "description": "Turn a story into a validated short-drama bible, episode arc, continuity ledger, and scripts.",
       "category": "Text",
       "categoryTags": [
-        "Text",
-        "Film"
+        "Text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored serialized drama package",
@@ -5913,9 +5906,7 @@
       "description": "Write three platform-native hooks that the content can honestly pay off.",
       "category": "Text",
       "categoryTags": [
-        "Text",
-        "Social Media",
-        "Video"
+        "Text"
       ],
       "coverImage": "/skill-covers/default-skill.svg",
       "routeLabel": "Agent-authored hook variants",

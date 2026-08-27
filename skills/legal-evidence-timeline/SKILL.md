@@ -8,7 +8,7 @@ description: Use for traceable chronology from user-supplied evidence from appro
 
 - Display name: Legal Evidence Timeline
 - Text category: yes
-- Categories: Text, Video
+- Categories: Text
 - Status: Planning route only
 - Route label: Agent-authored structured brief
 - Tone: blue

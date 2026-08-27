@@ -8,7 +8,7 @@ description: Turn a story idea, synopsis, or finished script into a production-r
 
 - Display name: Plan Comic Storyboard
 - Text category: yes
-- Categories: Text, Comic
+- Categories: Text
 - Status: Ready
 - Route label: Agent-authored structured storyboard
 - Tone: blue

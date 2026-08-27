@@ -8,7 +8,7 @@ description: Use for semantic adaptation of an existing video prompt from approv
 
 - Display name: Cross-model Video Prompt Adapter
 - Text category: yes
-- Categories: Text, Video
+- Categories: Text
 - Status: Planning route only
 - Route label: Agent-authored structured brief
 - Tone: blue

@@ -13,7 +13,7 @@ Execute one garment-to-person transformation with a model-plus-Prompt route. Tre
 - Categories: Fashion, Commercial Production
 - Status: Ready
 - Featured: yes
-- Cover image: /skill-covers/virtual-try-on.png
+- Cover image: /skill-covers/virtual-try-on-v2.png
 - Source images: /skill-covers/sources/virtual-try-on-garment-source.png, /skill-covers/sources/virtual-try-on-model-source.webp
 - Route label: GPT Image 2 with capability-matched fallbacks
 - Tone: violet

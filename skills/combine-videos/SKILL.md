@@ -14,6 +14,7 @@ description: Combine supplied clips into one ordered video with intentional trim
 - Short description: Combine supplied clips into one ordered video with intentional trims, transitions and audio handling; do not regenerate footage.
 
 - Cover image: /skill-covers/combine-videos.png
+- Cover motion: /skill-covers/combine-videos.mp4
 
 - Similar skills: edit-social-video, make-beat-synced-video, make-music-video
 ## What this skill does

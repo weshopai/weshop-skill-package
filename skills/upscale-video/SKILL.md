@@ -14,6 +14,7 @@ description: Increase supplied video resolution and clarity while preserving tim
 - Short description: Increase supplied video resolution and clarity while preserving timing, content, grain intent and natural detail.
 
 - Cover image: /skill-covers/upscale-video.png
+- Cover motion: /skill-covers/upscale-video.mp4
 
 - Similar skills: add-video-effect, correct-video-color, restyle-video
 ## What this skill does

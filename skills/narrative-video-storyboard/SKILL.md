@@ -8,7 +8,7 @@ description: Use for multi-shot narrative video storyboard from approved user fa
 
 - Display name: Narrative Video Storyboard
 - Text category: yes
-- Categories: Text, Film, Video
+- Categories: Text
 - Status: Planning route only
 - Route label: Agent-authored structured brief
 - Tone: blue

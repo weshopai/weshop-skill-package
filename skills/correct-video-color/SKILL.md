@@ -14,6 +14,7 @@ description: Correct white balance, exposure, contrast, and shot-to-shot color c
 - Short description: Correct white balance, exposure and shot-to-shot consistency without changing content or creative look.
 
 - Cover image: /skill-covers/correct-video-color.png
+- Cover motion: /skill-covers/correct-video-color.mp4
 
 - Similar skills: add-video-effect, restyle-video, upscale-video
 ## What this skill does

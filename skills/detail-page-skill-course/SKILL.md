@@ -7,7 +7,7 @@ description: "Create one skill-teaching course conversion page plan from authori
 ## Catalog
 
 - Display name: Skill Course Detail Page
-- Categories: Text, Layout & Design
+- Categories: Text
 - Text category: yes
 - Status: Ready
 - Route label: Independent outcome contract

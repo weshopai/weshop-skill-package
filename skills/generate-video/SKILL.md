@@ -14,6 +14,7 @@ description: Generate one coherent video from a text or multimodal shot brief us
 - Short description: Generate one coherent video from a shot brief using a deliberately selected current model and one observable action.
 
 - Cover image: /skill-covers/generate-video.png
+- Cover motion: /skill-covers/generate-video.mp4
 
 ## What this skill does
 

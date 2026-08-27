@@ -9,7 +9,7 @@ description: Analyze one authorized song and supplied or rights-cleared footage,
 - Display name: Make Music Video
 - Categories: Film, Video
 - Status: Ready
-- Featured: yes
+- Featured: no
 - Cover image: /skill-covers/make-music-video.png
 - Route label: Music-aware EDL and deterministic render
 - Tone: purple

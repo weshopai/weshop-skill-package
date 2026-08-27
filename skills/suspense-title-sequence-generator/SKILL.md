@@ -9,6 +9,7 @@ description: Create one suspense pop-art film title sequence from supplied title
 - Display name: Suspense Title Sequence Generator
 - Categories: Film, Video
 - Status: Ready
+- Featured: yes
 - Route label: Six-anchor graphic title composition
 - Tone: purple
 - Short description: Produce a suspense pop-art film title sequence with exact supplied credits and graphic-motion QC.

@@ -13,7 +13,7 @@
       "coverMotion": "/skill-covers/3d-animation-short-generator.mp4",
       "routeLabel": "Story-to-finished stylized animation composition",
       "tone": "purple",
-      "featured": false,
+      "featured": true,
       "whatThisSkillDoes": [
         "Locks one original story, visual system, audio mode, character identities, environments, props, and continuity before paid generation.",
         "Converts the approved story into atomic timed shots, generates only required references and clips, and carries accepted states across the sequence.",
@@ -710,6 +710,9 @@
         "Commercial Production"
       ],
       "coverImage": "/skill-covers/change-pose.png",
+      "sourceImages": [
+        "/skill-covers/sources/change-pose-source.png"
+      ],
       "routeLabel": "WeShop AI Pose pro or GPT Image 2",
       "tone": "blue",
       "featured": true,
@@ -3260,7 +3263,7 @@
       "coverImage": "/skill-covers/make-music-video.png",
       "routeLabel": "Music-aware EDL and deterministic render",
       "tone": "purple",
-      "featured": true,
+      "featured": false,
       "whatThisSkillDoes": [
         "Maps song sections, dynamics, beats, lyrics, and emotional turns before selecting shots.",
         "Builds an edit decision list with source in/out points, cut rationale, continuity, repetition, and rights metadata.",
@@ -4367,7 +4370,7 @@
       "coverMotion": "/skill-covers/pov-short-film-generator.mp4",
       "routeLabel": "Subjective narrative film composition",
       "tone": "purple",
-      "featured": false,
+      "featured": true,
       "whatThisSkillDoes": [
         "Converts a premise into a locked first-person viewpoint contract instead of a third-person camera plan.",
         "Builds and generates atomic subjective actions with visual, sound, and continuity anchors.",
@@ -4813,6 +4816,9 @@
         "Utility"
       ],
       "coverImage": "/skill-covers/remove-background.png",
+      "sourceImages": [
+        "/skill-covers/sources/remove-background-source.png"
+      ],
       "routeLabel": "WeShop RemoveBG with alpha-edge QA",
       "tone": "mint",
       "featured": true,
@@ -5470,7 +5476,7 @@
       "coverMotion": "/skill-covers/suspense-title-sequence-generator.mp4",
       "routeLabel": "Six-anchor graphic title composition",
       "tone": "purple",
-      "featured": false,
+      "featured": true,
       "whatThisSkillDoes": [
         "Locks title, credits, film cues, reference roles, and a six-keyframe structure before paid generation.",
         "Produces graphic keyframes as approved visual anchors, then animates a coherent title package around them.",
@@ -5774,6 +5780,10 @@
         "Commercial Production"
       ],
       "coverImage": "/skill-covers/virtual-try-on.png",
+      "sourceImages": [
+        "/skill-covers/sources/virtual-try-on-garment-source.png",
+        "/skill-covers/sources/virtual-try-on-model-source.webp"
+      ],
       "routeLabel": "GPT Image 2 with capability-matched fallbacks",
       "tone": "violet",
       "featured": true,

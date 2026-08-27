@@ -15,16 +15,15 @@ const required = [
   "skills/create-custom-skill/SKILL.md",
   "skills/create-custom-skill/scripts/check-custom-skill.mjs",
   "models/catalog.json",
-  "web/public/skill-covers/default-skill.svg"
+  "runtime/skill-covers/default-skill.webp"
 ];
 for (const file of required) {
   if (!paths.includes(file)) throw new Error(`npm package is missing required runtime file: ${file}`);
 }
 const forbiddenPrefixes = ["intake/", "docs/", "src/", ".github/", "output/"];
 const forbiddenNames = new Set(["handoff.md", "CONTRIBUTING.md"]);
-const allowedRuntimePrefix = "web/public/skill-covers/";
 const forbidden = paths.filter((file) => (
-  (file.startsWith("web/") && !file.startsWith(allowedRuntimePrefix))
+  file.startsWith("web/")
   || forbiddenPrefixes.some((prefix) => file.startsWith(prefix))
   || forbiddenNames.has(file)
   || /(?:^|\/)\S+\.test\.(?:js|d\.ts|mjs)$/.test(file)

@@ -4,6 +4,7 @@ dist/
 .DS_Store
 .playwright-cli/
 output/
+runtime/
 pnpm-lock.yaml
 *.tsbuildinfo
 web/dist/

@@ -12,8 +12,7 @@ description: Create one personalized holiday greeting card from authorized photo
 - Route label: GPT Image 2 exact-copy card design
 - Tone: red
 - Short description: Create one personalized holiday card from authorized photos and exact greeting copy while preserving identities and print-safe layout.
-- Cover image: /skill-covers/make-holiday-card.png
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/make-holiday-card.png
 ## What this skill does
 
 - Combines a selected holiday, authorized subjects, exact message and intentional card layout.

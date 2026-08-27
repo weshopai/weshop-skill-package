@@ -10,7 +10,7 @@ description: Research current requirements of a named platform and placement, th
 - Route label: Platform research plus GPT Image 2
 - Tone: amber
 - Short description: Create a platform-aware cover or thumbnail.
-- Cover image: /skill-covers/make-thumbnail.png
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/make-thumbnail.png
 - Similar skills: ai-banner-design, poster-design, product-detail-page
 ## What this skill does
 - Checks current official size, ratio, file, and safe-area rules before design.

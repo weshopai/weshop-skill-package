@@ -10,9 +10,8 @@ description: Detect, transcribe, translate, remove, and replace text inside a su
 - Route label: GPT Image 2 native visual translation
 - Tone: teal
 - Short description: Translate image text and keep the original layout.
-- Cover image: /skill-covers/translate-image-text-v2.jpg
-- Source images: /skill-covers/sources/translate-image-text-v2-source.jpg
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/translate-image-text.jpg
+- Source images: https://ai-image.weshop.com/desktop/sourceImage/translate-image-text.jpg
 ## What this skill does
 - Uses GPT Image 2 to understand text, context, layout, and style directly from the image.
 - Replaces source text only after linguistic review, then checks every rendered block.

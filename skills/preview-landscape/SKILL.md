@@ -12,9 +12,8 @@ description: Preview a landscape redesign on a supplied yard or outdoor site whi
 - Route label: GPT Image 2 landscape editing
 - Tone: green
 - Short description: Redesign a supplied yard while preserving site geometry, access, hardscape and declared plants.
-- Cover image: /skill-covers/preview-landscape.png
-- Source images: /skill-covers/sources/preview-landscape-source.png
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/preview-landscape.png
+- Source images: https://ai-image.weshop.com/desktop/sourceImage/preview-landscape.png
 ## What this skill does
 
 - Adds a coherent planting, material and outdoor-use concept to a real site.

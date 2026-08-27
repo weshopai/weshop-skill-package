@@ -19,7 +19,7 @@ Every publishable Atom defines:
 - one user result and required/optional asset roles;
 - preservation invariants and neighboring Skill exclusions;
 - `Catalog`, `What this skill does`, `How to use`, and at least one Prompt example;
-- a complete client catalog record: display name, category, short description, and an optional `/skill-covers/` image. The build normalizes these into the published `catalog/skills.json`; missing cover art receives the package fallback cover;
+- a complete client catalog record: display name, category, short description, and optional media URLs under the controlled `https://ai-image.weshop.com/desktop/coverImage`, `sourceImage`, and `coverVideo` directories. Use the exact Skill ID as the filename; ordered multi-source images add `-1`, `-2`, and so on. The build normalizes these into the published `catalog/skills.json`; missing cover art receives that Skill's remote SVG fallback;
 - the verified WeShop Agent/model and native OpenAPI fields;
 - Prompt construction, defaults, output quantity and media contract;
 - observable acceptance, stopping conditions, and error-responsive retries;

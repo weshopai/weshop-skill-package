@@ -10,8 +10,8 @@ description: Remove named temporary skin blemishes from an authorized portrait w
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: rose
 - Short description: Remove temporary blemishes without plastic-looking skin.
-- Cover image: /skill-covers/retouch-blemish.png
-- Source images: /skill-covers/sources/retouch-blemish-source.png
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/retouch-blemish.png
+- Source images: https://ai-image.weshop.com/desktop/sourceImage/retouch-blemish.png
 - Similar skills: apply-makeup, smooth-wrinkles
 ## What this skill does
 - Removes only specified temporary spots, redness, or small imperfections.

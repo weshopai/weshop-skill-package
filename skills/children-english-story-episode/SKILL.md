@@ -10,8 +10,8 @@ description: Use for an original, child-safe English-learning story episode with
 - Route label: Original recurring-character learning episode
 - Tone: green
 - Short description: Plan an original children’s English story episode with reusable character and scene anchors.
-- Cover image: /skill-covers/children-english-story-episode.png
-- Cover motion: /skill-covers/children-english-story-episode.mp4
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/children-english-story-episode.png
+- Cover motion: https://ai-image.weshop.com/desktop/coverVideo/children-english-story-episode.mp4
 ## What this skill does
 - Turns an original chapter and target expression into child-safe story beats and natural repetition.
 - Plans reusable character, scene, and scale references before shot keyframes.

@@ -13,8 +13,7 @@ description: Turn a supplied floor plan or dimensioned spatial brief into one re
 - Tone: cyan
 - Short description: Turn a supplied floor plan or dimensioned brief into one readable visualization without changing topology.
 
-- Cover image: /skill-covers/visualize-floor-plan.png
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/visualize-floor-plan.png
 ## What this skill does
 
 - Transforms a plan into a cleaned, furnished or axonometric plan visualization.

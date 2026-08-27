@@ -12,8 +12,7 @@ description: "Create an original reusable character through a canonical-first wo
 - Route label: Eight-run GPT Image 2 character production pack
 - Tone: purple
 - Short description: Build one canonical identity, then derive seven consistent character assets from it.
-- Cover image: /skill-covers/create-character.png
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/create-character.png
 - Similar skills: casting, create-npc
 ## What this skill does
 

@@ -13,9 +13,8 @@ description: Use for fact-checked multi-page social knowledge-note plan from app
 - Route label: Agent-authored structured brief
 - Tone: blue
 - Short description: Fact-checked multi-page social knowledge-note plan.
-- Cover image: /skill-covers/social-knowledge-notes.png
-- Source images: /skill-covers/sources/social-knowledge-notes-source.png
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/social-knowledge-notes.png
+- Source images: https://ai-image.weshop.com/desktop/sourceImage/social-knowledge-notes.png
 ## What this skill does
 
 - Freezes the request, approved facts, source assets, constraints, and acceptance checks.

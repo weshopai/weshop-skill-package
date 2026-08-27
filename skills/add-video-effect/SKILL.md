@@ -13,9 +13,8 @@ description: Add one specified visual effect to supplied video at a defined time
 - Tone: pink
 - Short description: Add one specified effect to a supplied video at a defined time and region while preserving underlying footage.
 
-- Cover image: /skill-covers/add-video-effect.png
-- Cover motion: /skill-covers/add-video-effect.mp4
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/add-video-effect.png
+- Cover motion: https://ai-image.weshop.com/desktop/coverVideo/add-video-effect.mp4
 - Similar skills: correct-video-color, restyle-video, upscale-video
 ## What this skill does
 

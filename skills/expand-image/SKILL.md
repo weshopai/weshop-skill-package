@@ -16,9 +16,8 @@ Turn one accepted image into a larger canvas without stretching it. Treat the or
 - Route label: GPT Image 2 preservation-first outpainting with Expand Image fallback
 - Tone: sky
 - Short description: Extend an image to a new ratio without stretching it.
-- Cover image: /skill-covers/expand-image.png
-- Source images: /skill-covers/sources/expand-image-source.png
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/expand-image.png
+- Source images: https://ai-image.weshop.com/desktop/sourceImage/expand-image.png
 ## What this skill does
 
 - Converts an existing image to a requested ratio or pixel canvas by adding generated surroundings.

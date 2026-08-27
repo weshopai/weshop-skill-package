@@ -10,8 +10,7 @@ description: Arrange several supplied outfit photographs into one intentional lo
 - Route label: GPT Image 2 editorial layout
 - Tone: plum
 - Short description: Arrange several outfit photos into one editorial page.
-- Cover image: /skill-covers/compose-lookbook.png
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/compose-lookbook.png
 - Similar skills: photo-collage, create-social-carousel, create-image-deck
 ## What this skill does
 - Places multiple supplied looks into one ordered editorial page.

@@ -1,9 +1,10 @@
-import { access, readFile } from "node:fs/promises";
+import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const categoryNames = new Set(["Video", "Text", "Fashion", "Layout & Design", "Commercial Production", "Character", "Utility", "Portrait", "Film", "Comic", "Social Media"]);
+const mediaBase = "https://ai-image.weshop.com/desktop";
 const catalog = JSON.parse(await readFile(path.join(root, "web/src/generated/skill-catalog.json"), "utf8"));
 const publishedCatalog = await readFile(path.join(root, "catalog/skills.json"), "utf8");
 if (publishedCatalog !== `${JSON.stringify(catalog, null, 2)}\n`) throw new Error("Published catalog/skills.json is not synchronized with the client catalog");
@@ -17,10 +18,16 @@ for (const skill of catalog.skills) {
     if (!Array.isArray(skill.similarSkills) || skill.similarSkills.length > 3) throw new Error(`${skill.id}: similarSkills must contain at most three entries`);
     if (skill.similarSkills.some((similar) => similar.id === skill.id || !ids.has(similar.id) || !similar.difference)) throw new Error(`${skill.id}: invalid similar Skill`);
   }
-  await access(path.join(root, "web/public", skill.coverImage));
+  if (!new RegExp(`^${mediaBase}/coverImage/${skill.id}\\.(?:png|jpe?g|webp|gif|avif|svg)$`, "i").test(skill.coverImage)) throw new Error(`${skill.id}: invalid remote coverImage`);
   if (skill.coverMotion !== undefined) {
-    if (typeof skill.coverMotion !== "string" || !/^\/skill-covers\/.*\.(mp4|webm)$/i.test(skill.coverMotion)) throw new Error(`${skill.id}: coverMotion must be an MP4 or WebM served from /skill-covers/`);
-    await access(path.join(root, "web/public", skill.coverMotion));
+    if (typeof skill.coverMotion !== "string" || !new RegExp(`^${mediaBase}/coverVideo/${skill.id}\\.(?:mp4|webm)$`, "i").test(skill.coverMotion)) throw new Error(`${skill.id}: invalid remote coverMotion`);
+  }
+  if (skill.sourceImages !== undefined) {
+    if (!Array.isArray(skill.sourceImages) || !skill.sourceImages.length) throw new Error(`${skill.id}: invalid sourceImages`);
+    skill.sourceImages.forEach((source, index) => {
+      const suffix = skill.sourceImages.length > 1 ? `-${index + 1}` : "";
+      if (!new RegExp(`^${mediaBase}/sourceImage/${skill.id}${suffix}\\.(?:png|jpe?g|webp|gif|avif)$`, "i").test(source)) throw new Error(`${skill.id}: invalid remote source image ${index + 1}`);
+    });
   }
 }
 console.log(`Validated normalized catalog for ${catalog.skills.length} Skills.`);

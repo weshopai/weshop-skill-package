@@ -13,9 +13,8 @@ description: Create one complete podcast video from approved audio or script wit
 - Tone: navy
 - Short description: Create one complete podcast video from approved audio or script with speaker-aware visuals and synchronized program audio.
 
-- Cover image: /skill-covers/make-podcast-video.png
-- Cover motion: /skill-covers/make-podcast-video.mp4
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/make-podcast-video.png
+- Cover motion: https://ai-image.weshop.com/desktop/coverVideo/make-podcast-video.mp4
 ## What this skill does
 
 - Builds a finished podcast video instead of returning loose talking clips.

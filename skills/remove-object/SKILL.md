@@ -10,8 +10,8 @@ description: Remove one named unwanted object from a supplied image and reconstr
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: red
 - Short description: Remove one object and naturally rebuild what was behind it.
-- Cover image: /skill-covers/remove-object.png
-- Source images: /skill-covers/sources/remove-object-source.png
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/remove-object.png
+- Source images: https://ai-image.weshop.com/desktop/sourceImage/remove-object.png
 - Similar skills: clean-room, restyle-room
 ## What this skill does
 - Lets the image model identify one target from language and infer the hidden background in context.

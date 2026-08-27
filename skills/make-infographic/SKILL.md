@@ -10,7 +10,7 @@ description: Research or verify factual inputs, write a concise source-backed br
 - Route label: Research plus GPT Image 2
 - Tone: cyan
 - Short description: Research, write, and visualize a sourced infographic.
-- Cover image: /skill-covers/make-infographic.png
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/make-infographic.png
 ## What this skill does
 - Produces a factual content brief before image generation.
 - Organizes one message, five to seven evidence points, labels, units, and a source line.

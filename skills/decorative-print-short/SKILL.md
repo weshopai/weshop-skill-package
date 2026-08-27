@@ -10,8 +10,8 @@ description: Use for a decorative print-illustration short with fine closed line
 - Route label: Decorative print paired-shot production
 - Tone: orange
 - Short description: Produce an elegant flat-print short with paired wide and close shots.
-- Cover image: /skill-covers/decorative-print-short.png
-- Cover motion: /skill-covers/decorative-print-short.mp4
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/decorative-print-short.png
+- Cover motion: https://ai-image.weshop.com/desktop/coverVideo/decorative-print-short.mp4
 ## What this skill does
 - Plans generic decorative print art direction without copying protected designs.
 - Creates key art and paired wide/close action shots with optional native SFX.

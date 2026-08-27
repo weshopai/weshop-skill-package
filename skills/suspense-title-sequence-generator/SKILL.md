@@ -13,9 +13,8 @@ description: Create one suspense pop-art film title sequence from supplied title
 - Route label: Six-anchor graphic title composition
 - Tone: purple
 - Short description: Produce a suspense pop-art film title sequence with exact supplied credits and graphic-motion QC.
-- Cover image: /skill-covers/suspense-title-sequence-generator.png
-- Cover motion: /skill-covers/suspense-title-sequence-generator.mp4
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/suspense-title-sequence-generator.png
+- Cover motion: https://ai-image.weshop.com/desktop/coverVideo/suspense-title-sequence-generator.mp4
 ## What this skill does
 
 - Locks title, credits, film cues, reference roles, and a six-keyframe structure before paid generation.

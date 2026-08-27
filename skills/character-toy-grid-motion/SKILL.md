@@ -12,9 +12,8 @@ description: Use for an uploaded character transformed into an identity-preserve
 - Route label: Identity-locked six-panel toy poster and motion
 - Tone: purple
 - Short description: Turn one character image into a vertical designer-toy six-panel poster and an animated grid reveal.
-- Cover image: /skill-covers/character-toy-grid-motion.png
-- Cover motion: /skill-covers/character-toy-grid-motion.mp4
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/character-toy-grid-motion.png
+- Cover motion: https://ai-image.weshop.com/desktop/coverVideo/character-toy-grid-motion.mp4
 ## What this skill does
 
 - Extracts visible character identity, coverage state, props, and color anchors from one supplied image.

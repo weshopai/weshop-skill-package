@@ -12,9 +12,8 @@ description: Prepare one wallet-size print portrait from an authorized photo usi
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: blue
 - Short description: Prepare one wallet-size print portrait from an authorized photo using a real print dimension, crop and bleed specification.
-- Cover image: /skill-covers/make-wallet-photo.png
-- Source images: /skill-covers/sources/make-wallet-photo-source.png
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/make-wallet-photo.png
+- Source images: https://ai-image.weshop.com/desktop/sourceImage/make-wallet-photo.png
 - Similar skills: id-photo-format, professional-headshot
 ## What this skill does
 

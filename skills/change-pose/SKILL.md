@@ -13,8 +13,8 @@ Create one requested pose or three useful choices from one dressed-person image.
 - Categories: Portrait, Commercial Production
 - Status: Ready
 - Featured: yes
-- Cover image: /skill-covers/change-pose-v2.png
-- Source images: /skill-covers/sources/change-pose-source.png
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/change-pose.png
+- Source images: https://ai-image.weshop.com/desktop/sourceImage/change-pose.png
 - Route label: WeShop AI Pose pro or GPT Image 2
 - Tone: blue
 - Short description: Change a person’s pose without changing their look.

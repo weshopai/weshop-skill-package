@@ -15,8 +15,7 @@ Turn product and brand references into one coherent packaging concept board. The
 - Route label: Model-routed packaging concept
 - Tone: lilac
 - Short description: Turn product references into a structured packaging concept board.
-- Cover image: /skill-covers/product-packaging.png
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/product-packaging.png
 - Similar skills: ai-product, create-white-background-product-mockup
 ## What this skill does
 

@@ -14,8 +14,8 @@ Extract one foreground subject without regenerating it. Treat transparency and e
 - Categories: Utility
 - Status: Ready
 - Featured: yes
-- Cover image: /skill-covers/remove-background-v2.png
-- Source images: /skill-covers/sources/remove-background-source.png
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/remove-background.png
+- Source images: https://ai-image.weshop.com/desktop/sourceImage/remove-background.png
 - Route label: WeShop RemoveBG with alpha-edge QA
 - Tone: mint
 - Short description: Create a clean transparent PNG cutout.

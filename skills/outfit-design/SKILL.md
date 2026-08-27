@@ -16,9 +16,8 @@ Create one finished image of the supplied person wearing an intentionally new ou
 - Route label: Outfit Generator with GPT Image 2 reference-aware route
 - Tone: violet
 - Short description: Invent or redesign a coordinated outfit.
-- Cover image: /skill-covers/outfit-design.png
-- Source images: /skill-covers/sources/outfit-design-source.png
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/outfit-design.png
+- Source images: https://ai-image.weshop.com/desktop/sourceImage/outfit-design.png
 ## What this skill does
 
 - Designs a complete new look or changes named clothing/accessory slots on one person.

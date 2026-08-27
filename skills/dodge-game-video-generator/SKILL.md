@@ -12,9 +12,8 @@ description: "Create one character-led dodge-game reaction short from authorized
 - Route label: Independent outcome contract
 - Tone: purple
 - Short description: Produce one character-led dodge-game reaction short with explicit inputs, boundaries, and acceptance checks.
-- Cover image: /skill-covers/dodge-game-video-generator.png
-- Cover motion: /skill-covers/dodge-game-video-generator.mp4
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/dodge-game-video-generator.png
+- Cover motion: https://ai-image.weshop.com/desktop/coverVideo/dodge-game-video-generator.mp4
 ## What this skill does
 
 - Captures the specific requested outcome and authorized asset roles.

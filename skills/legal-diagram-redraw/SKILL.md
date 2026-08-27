@@ -13,9 +13,8 @@ description: Use for editable redraw of supplied legal diagrams without changing
 - Route label: Agent-authored structured brief
 - Tone: blue
 - Short description: Editable redraw of supplied legal diagrams without changing asserted facts.
-- Cover image: /skill-covers/legal-diagram-redraw.png
-- Source images: /skill-covers/sources/legal-diagram-redraw-source.png
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/legal-diagram-redraw.png
+- Source images: https://ai-image.weshop.com/desktop/sourceImage/legal-diagram-redraw.png
 ## What this skill does
 
 - Freezes the request, approved facts, source assets, constraints, and acceptance checks.

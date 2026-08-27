@@ -12,9 +12,8 @@ description: "Create one authentic digital-product promo plan and video from aut
 - Route label: Independent outcome contract
 - Tone: purple
 - Short description: Produce one authentic digital-product promo plan and video with explicit inputs, boundaries, and acceptance checks.
-- Cover image: /skill-covers/digital-product-promo-generator.png
-- Cover motion: /skill-covers/digital-product-promo-generator.mp4
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/digital-product-promo-generator.png
+- Cover motion: https://ai-image.weshop.com/desktop/coverVideo/digital-product-promo-generator.mp4
 - Similar skills: brand-promo-video-generator
 ## What this skill does
 

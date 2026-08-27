@@ -13,8 +13,7 @@ description: Create and validate one dimensioned parametric CAD part, returning 
 - Tone: slate
 - Short description: Create and validate one parametric CAD part, returning STEP as the primary artifact rather than a render-only image.
 
-- Cover image: /skill-covers/create-cad.png
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/create-cad.png
 ## What this skill does
 
 - Builds dimension-driven part geometry and exports a real STEP model with reproducible source.

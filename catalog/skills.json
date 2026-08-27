@@ -9,8 +9,8 @@
       "categoryTags": [
         "Video"
       ],
-      "coverImage": "/skill-covers/3d-animation-short-generator.png",
-      "coverMotion": "/skill-covers/3d-animation-short-generator.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/3d-animation-short-generator.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/3d-animation-short-generator.mp4",
       "routeLabel": "Story-to-finished stylized animation composition",
       "tone": "purple",
       "featured": true,
@@ -45,9 +45,9 @@
       "categoryTags": [
         "Portrait"
       ],
-      "coverImage": "/skill-covers/add-braces.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/add-braces.png",
       "sourceImages": [
-        "/skill-covers/sources/add-braces-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/add-braces.png"
       ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "rose",
@@ -84,9 +84,9 @@
         "Social Media",
         "Layout & Design"
       ],
-      "coverImage": "/skill-covers/add-speech-bubble.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/add-speech-bubble.png",
       "sourceImages": [
-        "/skill-covers/sources/add-speech-bubble-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/add-speech-bubble.png"
       ],
       "routeLabel": "GPT Image 2 overlay",
       "tone": "blue",
@@ -122,9 +122,9 @@
         "Portrait",
         "Fashion"
       ],
-      "coverImage": "/skill-covers/add-tattoo.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/add-tattoo.png",
       "sourceImages": [
-        "/skill-covers/sources/add-tattoo-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/add-tattoo.png"
       ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "rose",
@@ -160,8 +160,8 @@
       "categoryTags": [
         "Video"
       ],
-      "coverImage": "/skill-covers/add-video-effect.png",
-      "coverMotion": "/skill-covers/add-video-effect.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/add-video-effect.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/add-video-effect.mp4",
       "routeLabel": "MiniMax H3 localized video edit",
       "tone": "pink",
       "featured": false,
@@ -213,7 +213,7 @@
         "Commercial Production",
         "Layout & Design"
       ],
-      "coverImage": "/skill-covers/ai-banner-design.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/ai-banner-design.png",
       "routeLabel": "Research plus GPT Image 2 banner production",
       "tone": "lime",
       "featured": false,
@@ -276,9 +276,9 @@
       "categoryTags": [
         "Commercial Production"
       ],
-      "coverImage": "/skill-covers/ai-product.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/ai-product.png",
       "sourceImages": [
-        "/skill-covers/sources/ai-product-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/ai-product.png"
       ],
       "routeLabel": "WeShop AI Product or GPT Image 2",
       "tone": "sage",
@@ -336,8 +336,8 @@
       "categoryTags": [
         "Video"
       ],
-      "coverImage": "/skill-covers/animate-image.png",
-      "coverMotion": "/skill-covers/animate-image.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/animate-image.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/animate-image.mp4",
       "routeLabel": "Kling 3.0 image-to-video",
       "tone": "cyan",
       "featured": false,
@@ -372,9 +372,9 @@
         "Portrait",
         "Fashion"
       ],
-      "coverImage": "/skill-covers/apply-makeup.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/apply-makeup.png",
       "sourceImages": [
-        "/skill-covers/sources/apply-makeup-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/apply-makeup.png"
       ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "rose",
@@ -423,9 +423,9 @@
         "Social Media",
         "Portrait"
       ],
-      "coverImage": "/skill-covers/apply-photo-filter.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/apply-photo-filter.png",
       "sourceImages": [
-        "/skill-covers/sources/apply-photo-filter-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/apply-photo-filter.png"
       ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "orange",
@@ -472,7 +472,7 @@
       "categoryTags": [
         "Video"
       ],
-      "coverImage": "/skill-covers/backrooms-dreamcore.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/backrooms-dreamcore.png",
       "routeLabel": "Personalized Level-0 space dossier and visual route",
       "tone": "lime",
       "featured": false,
@@ -508,8 +508,8 @@
         "Commercial Production",
         "Video"
       ],
-      "coverImage": "/skill-covers/brand-promo-video-generator.png",
-      "coverMotion": "/skill-covers/brand-promo-video-generator.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/brand-promo-video-generator.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/brand-promo-video-generator.mp4",
       "routeLabel": "Verified-brand multi-beat campaign video",
       "tone": "purple",
       "featured": false,
@@ -552,8 +552,8 @@
         "Commercial Production",
         "Video"
       ],
-      "coverImage": "/skill-covers/brand-stream-mg.png",
-      "coverMotion": "/skill-covers/brand-stream-mg.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/brand-stream-mg.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/brand-stream-mg.mp4",
       "routeLabel": "Independent outcome contract",
       "tone": "purple",
       "featured": false,
@@ -605,7 +605,7 @@
       "categoryTags": [
         "Character"
       ],
-      "coverImage": "/skill-covers/casting.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/casting.png",
       "routeLabel": "GPT Image 2 face-first casting package",
       "tone": "violet",
       "featured": true,
@@ -655,9 +655,9 @@
         "Portrait",
         "Fashion"
       ],
-      "coverImage": "/skill-covers/change-bangs.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/change-bangs.png",
       "sourceImages": [
-        "/skill-covers/sources/change-bangs-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/change-bangs.png"
       ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "rose",
@@ -711,9 +711,9 @@
         "Portrait",
         "Commercial Production"
       ],
-      "coverImage": "/skill-covers/change-pose-v2.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/change-pose.png",
       "sourceImages": [
-        "/skill-covers/sources/change-pose-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/change-pose.png"
       ],
       "routeLabel": "WeShop AI Pose pro or GPT Image 2",
       "tone": "blue",
@@ -771,9 +771,9 @@
       "categoryTags": [
         "Character"
       ],
-      "coverImage": "/skill-covers/character-reference-sheet.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/character-reference-sheet.png",
       "sourceImages": [
-        "/skill-covers/sources/character-reference-sheet-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/character-reference-sheet.png"
       ],
       "routeLabel": "Compatibility redirect to Create Character",
       "tone": "ink",
@@ -807,8 +807,8 @@
         "Character",
         "Video"
       ],
-      "coverImage": "/skill-covers/character-toy-grid-motion.png",
-      "coverMotion": "/skill-covers/character-toy-grid-motion.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/character-toy-grid-motion.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/character-toy-grid-motion.mp4",
       "routeLabel": "Identity-locked six-panel toy poster and motion",
       "tone": "purple",
       "featured": false,
@@ -844,8 +844,8 @@
         "Film",
         "Video"
       ],
-      "coverImage": "/skill-covers/children-english-story-episode.png",
-      "coverMotion": "/skill-covers/children-english-story-episode.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/children-english-story-episode.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/children-english-story-episode.mp4",
       "routeLabel": "Original recurring-character learning episode",
       "tone": "green",
       "featured": false,
@@ -879,7 +879,7 @@
       "categoryTags": [
         "Text"
       ],
-      "coverImage": "/skill-covers/default-skill.svg",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/cinematic-video-prompt.svg",
       "routeLabel": "Agent-authored structured brief",
       "tone": "blue",
       "featured": false,
@@ -931,9 +931,9 @@
       "categoryTags": [
         "Utility"
       ],
-      "coverImage": "/skill-covers/clean-room.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/clean-room.png",
       "sourceImages": [
-        "/skill-covers/sources/clean-room-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/clean-room.png"
       ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "green",
@@ -980,8 +980,8 @@
       "categoryTags": [
         "Video"
       ],
-      "coverImage": "/skill-covers/co-op-game-intro-generator.png",
-      "coverMotion": "/skill-covers/co-op-game-intro-generator.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/co-op-game-intro-generator.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/co-op-game-intro-generator.mp4",
       "routeLabel": "Independent outcome contract",
       "tone": "purple",
       "featured": false,
@@ -1016,9 +1016,9 @@
       "categoryTags": [
         "Utility"
       ],
-      "coverImage": "/skill-covers/colorize-image.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/colorize-image.png",
       "sourceImages": [
-        "/skill-covers/sources/colorize-image-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/colorize-image.png"
       ],
       "routeLabel": "GPT Image 2 contextual colorization",
       "tone": "gold",
@@ -1053,8 +1053,8 @@
       "categoryTags": [
         "Video"
       ],
-      "coverImage": "/skill-covers/combine-videos.png",
-      "coverMotion": "/skill-covers/combine-videos.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/combine-videos.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/combine-videos.mp4",
       "routeLabel": "Deterministic timeline assembly",
       "tone": "blue",
       "featured": false,
@@ -1106,7 +1106,7 @@
         "Fashion",
         "Social Media"
       ],
-      "coverImage": "/skill-covers/compose-lookbook.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/compose-lookbook.png",
       "routeLabel": "GPT Image 2 editorial layout",
       "tone": "plum",
       "featured": false,
@@ -1157,8 +1157,8 @@
       "categoryTags": [
         "Video"
       ],
-      "coverImage": "/skill-covers/correct-video-color.png",
-      "coverMotion": "/skill-covers/correct-video-color.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/correct-video-color.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/correct-video-color.mp4",
       "routeLabel": "Measured deterministic grade; MiniMax H3 only when temporal rewriting is required",
       "tone": "orange",
       "featured": false,
@@ -1209,7 +1209,7 @@
       "categoryTags": [
         "Character"
       ],
-      "coverImage": "/skill-covers/create-animal.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/create-animal.png",
       "routeLabel": "Z-Image photorealistic animal generation",
       "tone": "green",
       "featured": false,
@@ -1243,7 +1243,7 @@
       "categoryTags": [
         "Character"
       ],
-      "coverImage": "/skill-covers/create-avatar.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/create-avatar.png",
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "blue",
       "featured": false,
@@ -1278,7 +1278,7 @@
         "Layout & Design",
         "Utility"
       ],
-      "coverImage": "/skill-covers/create-cad.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/create-cad.png",
       "routeLabel": "STEP-first parametric CAD workflow",
       "tone": "slate",
       "featured": false,
@@ -1312,7 +1312,7 @@
       "categoryTags": [
         "Character"
       ],
-      "coverImage": "/skill-covers/create-character.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/create-character.png",
       "routeLabel": "Eight-run GPT Image 2 character production pack",
       "tone": "purple",
       "featured": false,
@@ -1360,7 +1360,7 @@
       "categoryTags": [
         "Text"
       ],
-      "coverImage": "/skill-covers/default-skill.svg",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/create-custom-skill.svg",
       "routeLabel": "Isolated user-owned Skill authoring",
       "tone": "purple",
       "featured": false,
@@ -1401,7 +1401,7 @@
       "categoryTags": [
         "Character"
       ],
-      "coverImage": "/skill-covers/create-flag.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/create-flag.png",
       "routeLabel": "GPT Image 2 flag generation",
       "tone": "blue",
       "featured": false,
@@ -1435,7 +1435,7 @@
       "categoryTags": [
         "Layout & Design"
       ],
-      "coverImage": "/skill-covers/create-image-deck.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/create-image-deck.png",
       "routeLabel": "Image-first presentation production",
       "tone": "blue",
       "featured": false,
@@ -1487,7 +1487,7 @@
       "categoryTags": [
         "Commercial Production"
       ],
-      "coverImage": "/skill-covers/create-logo.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/create-logo.png",
       "routeLabel": "GPT Image 2 logo generation",
       "tone": "red",
       "featured": false,
@@ -1529,7 +1529,7 @@
         "Character",
         "Commercial Production"
       ],
-      "coverImage": "/skill-covers/create-mascot-logo.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/create-mascot-logo.png",
       "routeLabel": "GPT Image 2 mascot-logo generation",
       "tone": "purple",
       "featured": false,
@@ -1571,7 +1571,7 @@
       "categoryTags": [
         "Character"
       ],
-      "coverImage": "/skill-covers/create-npc.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/create-npc.png",
       "routeLabel": "GPT Image 2 game-character concept",
       "tone": "violet",
       "featured": false,
@@ -1618,7 +1618,7 @@
         "Social Media",
         "Layout & Design"
       ],
-      "coverImage": "/skill-covers/create-social-carousel.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/create-social-carousel.png",
       "routeLabel": "GPT Image 2 ordered carousel",
       "tone": "amber",
       "featured": false,
@@ -1671,7 +1671,7 @@
         "Commercial Production",
         "Layout & Design"
       ],
-      "coverImage": "/skill-covers/create-white-background-product-mockup.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/create-white-background-product-mockup.png",
       "routeLabel": "Model-routed product mockups",
       "tone": "peach",
       "featured": false,
@@ -1736,7 +1736,7 @@
       "categoryTags": [
         "Text"
       ],
-      "coverImage": "/skill-covers/default-skill.svg",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/cross-model-video-prompt-adapter.svg",
       "routeLabel": "Agent-authored structured brief",
       "tone": "blue",
       "featured": false,
@@ -1789,8 +1789,8 @@
         "Commercial Production",
         "Video"
       ],
-      "coverImage": "/skill-covers/data-driven-ad-creative-video.png",
-      "coverMotion": "/skill-covers/data-driven-ad-creative-video.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/data-driven-ad-creative-video.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/data-driven-ad-creative-video.mp4",
       "routeLabel": "Agent-authored structured brief",
       "tone": "blue",
       "featured": false,
@@ -1825,8 +1825,8 @@
       "categoryTags": [
         "Video"
       ],
-      "coverImage": "/skill-covers/decorative-print-short.png",
-      "coverMotion": "/skill-covers/decorative-print-short.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/decorative-print-short.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/decorative-print-short.mp4",
       "routeLabel": "Decorative print paired-shot production",
       "tone": "orange",
       "featured": false,
@@ -1860,7 +1860,7 @@
       "categoryTags": [
         "Text"
       ],
-      "coverImage": "/skill-covers/default-skill.svg",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/detail-page-skill-course.svg",
       "routeLabel": "Independent outcome contract",
       "tone": "purple",
       "featured": false,
@@ -1895,7 +1895,7 @@
       "categoryTags": [
         "Text"
       ],
-      "coverImage": "/skill-covers/default-skill.svg",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/develop-story.svg",
       "routeLabel": "Agent-authored story development package",
       "tone": "blue",
       "featured": false,
@@ -1948,8 +1948,8 @@
         "Commercial Production",
         "Video"
       ],
-      "coverImage": "/skill-covers/digital-product-promo-generator.png",
-      "coverMotion": "/skill-covers/digital-product-promo-generator.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/digital-product-promo-generator.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/digital-product-promo-generator.mp4",
       "routeLabel": "Independent outcome contract",
       "tone": "purple",
       "featured": false,
@@ -1991,8 +1991,8 @@
       "categoryTags": [
         "Video"
       ],
-      "coverImage": "/skill-covers/dodge-game-video-generator.png",
-      "coverMotion": "/skill-covers/dodge-game-video-generator.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/dodge-game-video-generator.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/dodge-game-video-generator.mp4",
       "routeLabel": "Independent outcome contract",
       "tone": "purple",
       "featured": false,
@@ -2028,8 +2028,8 @@
         "Commercial Production",
         "Video"
       ],
-      "coverImage": "/skill-covers/dot-matrix-brand-wordmark-motion.png",
-      "coverMotion": "/skill-covers/dot-matrix-brand-wordmark-motion.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/dot-matrix-brand-wordmark-motion.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/dot-matrix-brand-wordmark-motion.mp4",
       "routeLabel": "Independent outcome contract",
       "tone": "purple",
       "featured": false,
@@ -2082,8 +2082,8 @@
         "Social Media",
         "Video"
       ],
-      "coverImage": "/skill-covers/edit-social-video.png",
-      "coverMotion": "/skill-covers/edit-social-video.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/edit-social-video.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/edit-social-video.mp4",
       "routeLabel": "Platform-aware social edit",
       "tone": "red",
       "featured": false,
@@ -2134,7 +2134,7 @@
       "categoryTags": [
         "Video"
       ],
-      "coverImage": "/skill-covers/default-skill.svg",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/editorial-cutout-explainer.svg",
       "routeLabel": "Evidence-led editorial cutout production",
       "tone": "orange",
       "featured": false,
@@ -2180,9 +2180,9 @@
       "categoryTags": [
         "Utility"
       ],
-      "coverImage": "/skill-covers/expand-image.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/expand-image.png",
       "sourceImages": [
-        "/skill-covers/sources/expand-image-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/expand-image.png"
       ],
       "routeLabel": "GPT Image 2 preservation-first outpainting with Expand Image fallback",
       "tone": "sky",
@@ -2229,9 +2229,9 @@
       "categoryTags": [
         "Portrait"
       ],
-      "coverImage": "/skill-covers/eye-color-change.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/eye-color-change.png",
       "sourceImages": [
-        "/skill-covers/sources/eye-color-change-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/eye-color-change.png"
       ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "rose",
@@ -2268,7 +2268,7 @@
         "Fashion",
         "Commercial Production"
       ],
-      "coverImage": "/skill-covers/fashion-model-replacement.jpg",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/fashion-model-replacement.jpg",
       "routeLabel": "WeShop AI Model or GPT Image 2",
       "tone": "coral",
       "featured": false,
@@ -2325,7 +2325,7 @@
       "categoryTags": [
         "Text"
       ],
-      "coverImage": "/skill-covers/default-skill.svg",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/film-reference-prompt-writer.svg",
       "routeLabel": "Independent outcome contract",
       "tone": "purple",
       "featured": false,
@@ -2360,8 +2360,8 @@
       "categoryTags": [
         "Video"
       ],
-      "coverImage": "/skill-covers/fpv-tour-video-generator.png",
-      "coverMotion": "/skill-covers/fpv-tour-video-generator.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/fpv-tour-video-generator.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/fpv-tour-video-generator.mp4",
       "routeLabel": "Continuous spatial FPV composition",
       "tone": "purple",
       "featured": false,
@@ -2396,8 +2396,8 @@
       "categoryTags": [
         "Video"
       ],
-      "coverImage": "/skill-covers/generate-video.png",
-      "coverMotion": "/skill-covers/generate-video.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/generate-video.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/generate-video.mp4",
       "routeLabel": "Guide-routed cataloged video model",
       "tone": "purple",
       "featured": false,
@@ -2431,7 +2431,7 @@
       "categoryTags": [
         "Text"
       ],
-      "coverImage": "/skill-covers/default-skill.svg",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/h3-prompt-expert.svg",
       "routeLabel": "Independent outcome contract",
       "tone": "purple",
       "featured": false,
@@ -2467,9 +2467,9 @@
         "Portrait",
         "Fashion"
       ],
-      "coverImage": "/skill-covers/hair-color-change.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/hair-color-change.png",
       "sourceImages": [
-        "/skill-covers/sources/hair-color-change-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/hair-color-change.png"
       ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "rose",
@@ -2523,9 +2523,9 @@
         "Portrait",
         "Fashion"
       ],
-      "coverImage": "/skill-covers/hairstyle-change.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/hairstyle-change.png",
       "sourceImages": [
-        "/skill-covers/sources/hairstyle-change-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/hairstyle-change.png"
       ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "rose",
@@ -2578,8 +2578,8 @@
       "categoryTags": [
         "Video"
       ],
-      "coverImage": "/skill-covers/handdrawn-live-action-fusion.png",
-      "coverMotion": "/skill-covers/handdrawn-live-action-fusion.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/handdrawn-live-action-fusion.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/handdrawn-live-action-fusion.mp4",
       "routeLabel": "Contact-led live-action drawing fusion",
       "tone": "orange",
       "featured": false,
@@ -2614,7 +2614,7 @@
       "categoryTags": [
         "Text"
       ],
-      "coverImage": "/skill-covers/default-skill.svg",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/handdrawn-story-video.svg",
       "routeLabel": "Agent-authored structured brief",
       "tone": "blue",
       "featured": false,
@@ -2649,9 +2649,9 @@
       "categoryTags": [
         "Portrait"
       ],
-      "coverImage": "/skill-covers/id-photo-format-v2.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/id-photo-format.png",
       "sourceImages": [
-        "/skill-covers/sources/id-photo-format-v2-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/id-photo-format.png"
       ],
       "routeLabel": "Official-rule research plus WeShop and measured crop",
       "tone": "rose",
@@ -2700,7 +2700,7 @@
       "categoryTags": [
         "Layout & Design"
       ],
-      "coverImage": "/skill-covers/image-combiner.jpg",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/image-combiner.jpg",
       "routeLabel": "Multi-reference image composition",
       "tone": "cyan",
       "featured": false,
@@ -2745,9 +2745,9 @@
       "categoryTags": [
         "Text"
       ],
-      "coverImage": "/skill-covers/legal-diagram-redraw.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/legal-diagram-redraw.png",
       "sourceImages": [
-        "/skill-covers/sources/legal-diagram-redraw-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/legal-diagram-redraw.png"
       ],
       "routeLabel": "Agent-authored structured brief",
       "tone": "blue",
@@ -2783,9 +2783,9 @@
       "categoryTags": [
         "Text"
       ],
-      "coverImage": "/skill-covers/legal-evidence-timeline.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/legal-evidence-timeline.png",
       "sourceImages": [
-        "/skill-covers/sources/legal-evidence-timeline-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/legal-evidence-timeline.png"
       ],
       "routeLabel": "Agent-authored structured brief",
       "tone": "blue",
@@ -2821,8 +2821,8 @@
       "categoryTags": [
         "Video"
       ],
-      "coverImage": "/skill-covers/line-doodle-explainer.png",
-      "coverMotion": "/skill-covers/line-doodle-explainer.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/line-doodle-explainer.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/line-doodle-explainer.mp4",
       "routeLabel": "Diagram-first line-doodle teaching production",
       "tone": "blue",
       "featured": false,
@@ -2870,8 +2870,8 @@
         "Commercial Production",
         "Video"
       ],
-      "coverImage": "/skill-covers/lip-product-commercial.png",
-      "coverMotion": "/skill-covers/lip-product-commercial.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/lip-product-commercial.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/lip-product-commercial.mp4",
       "routeLabel": "Lip-color proof commercial production",
       "tone": "pink",
       "featured": false,
@@ -2906,8 +2906,8 @@
       "categoryTags": [
         "Video"
       ],
-      "coverImage": "/skill-covers/live-sketch-motion.png",
-      "coverMotion": "/skill-covers/live-sketch-motion.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/live-sketch-motion.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/live-sketch-motion.mp4",
       "routeLabel": "Marker-synchronized live-to-sketch conversion",
       "tone": "blue",
       "featured": false,
@@ -2942,7 +2942,7 @@
       "categoryTags": [
         "Video"
       ],
-      "coverImage": "/skill-covers/default-skill.svg",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/make-beat-synced-video.svg",
       "routeLabel": "Deterministic beat-aware edit",
       "tone": "blue",
       "featured": false,
@@ -2995,8 +2995,8 @@
         "Social Media",
         "Video"
       ],
-      "coverImage": "/skill-covers/make-birthday-video.png",
-      "coverMotion": "/skill-covers/make-birthday-video.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/make-birthday-video.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/make-birthday-video.mp4",
       "routeLabel": "Memory-led birthday video assembly",
       "tone": "yellow",
       "featured": false,
@@ -3030,8 +3030,8 @@
       "categoryTags": [
         "Video"
       ],
-      "coverImage": "/skill-covers/make-explainer-video.png",
-      "coverMotion": "/skill-covers/make-explainer-video.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/make-explainer-video.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/make-explainer-video.mp4",
       "routeLabel": "Source-backed beat-to-video composition",
       "tone": "purple",
       "featured": false,
@@ -3079,7 +3079,7 @@
         "Layout & Design",
         "Utility"
       ],
-      "coverImage": "/skill-covers/make-flowchart.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/make-flowchart.png",
       "routeLabel": "GPT Image 2 flowchart rendering",
       "tone": "blue",
       "featured": false,
@@ -3114,7 +3114,7 @@
         "Social Media",
         "Layout & Design"
       ],
-      "coverImage": "/skill-covers/make-holiday-card.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/make-holiday-card.png",
       "routeLabel": "GPT Image 2 exact-copy card design",
       "tone": "red",
       "featured": false,
@@ -3149,7 +3149,7 @@
         "Social Media",
         "Layout & Design"
       ],
-      "coverImage": "/skill-covers/make-infographic.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/make-infographic.png",
       "routeLabel": "Research plus GPT Image 2",
       "tone": "cyan",
       "featured": false,
@@ -3183,7 +3183,7 @@
       "categoryTags": [
         "Video"
       ],
-      "coverImage": "/skill-covers/default-skill.svg",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/make-kinetic-typography.svg",
       "routeLabel": "Accessible animated typography",
       "tone": "blue",
       "featured": false,
@@ -3218,9 +3218,9 @@
       "categoryTags": [
         "Portrait"
       ],
-      "coverImage": "/skill-covers/make-mugshot-photo.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/make-mugshot-photo.png",
       "sourceImages": [
-        "/skill-covers/sources/make-mugshot-photo-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/make-mugshot-photo.png"
       ],
       "routeLabel": "GPT Image 2 novelty mugshot-style portrait",
       "tone": "gray",
@@ -3256,7 +3256,7 @@
         "Film",
         "Video"
       ],
-      "coverImage": "/skill-covers/make-music-video.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/make-music-video.png",
       "routeLabel": "Music-aware EDL and deterministic render",
       "tone": "purple",
       "featured": false,
@@ -3309,9 +3309,9 @@
         "Character",
         "Portrait"
       ],
-      "coverImage": "/skill-covers/make-pet-portrait.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/make-pet-portrait.png",
       "sourceImages": [
-        "/skill-covers/sources/make-pet-portrait-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/make-pet-portrait.png"
       ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "amber",
@@ -3346,8 +3346,8 @@
       "categoryTags": [
         "Video"
       ],
-      "coverImage": "/skill-covers/make-podcast-video.png",
-      "coverMotion": "/skill-covers/make-podcast-video.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/make-podcast-video.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/make-podcast-video.mp4",
       "routeLabel": "Podcast scene and audio-led video assembly",
       "tone": "navy",
       "featured": false,
@@ -3382,8 +3382,8 @@
         "Commercial Production",
         "Video"
       ],
-      "coverImage": "/skill-covers/make-product-commercial.jpg",
-      "coverMotion": "/skill-covers/make-product-commercial-preview.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/make-product-commercial.jpg",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/make-product-commercial.mp4",
       "routeLabel": "Product-safe multi-shot video composition",
       "tone": "purple",
       "featured": false,
@@ -3430,9 +3430,9 @@
       "categoryTags": [
         "Portrait"
       ],
-      "coverImage": "/skill-covers/make-selfie.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/make-selfie.png",
       "sourceImages": [
-        "/skill-covers/sources/make-selfie-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/make-selfie.png"
       ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "rose",
@@ -3473,9 +3473,9 @@
         "Social Media",
         "Portrait"
       ],
-      "coverImage": "/skill-covers/make-silhouette.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/make-silhouette.png",
       "sourceImages": [
-        "/skill-covers/sources/make-silhouette-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/make-silhouette.png"
       ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "slate",
@@ -3511,8 +3511,8 @@
         "Portrait",
         "Video"
       ],
-      "coverImage": "/skill-covers/make-talking-video.png",
-      "coverMotion": "/skill-covers/make-talking-video.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/make-talking-video.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/make-talking-video.mp4",
       "routeLabel": "Consent-safe talking-video generation",
       "tone": "purple",
       "featured": false,
@@ -3547,7 +3547,7 @@
         "Social Media",
         "Layout & Design"
       ],
-      "coverImage": "/skill-covers/make-thumbnail.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/make-thumbnail.png",
       "routeLabel": "Platform research plus GPT Image 2",
       "tone": "amber",
       "featured": false,
@@ -3598,8 +3598,8 @@
       "categoryTags": [
         "Video"
       ],
-      "coverImage": "/skill-covers/make-video-intro.png",
-      "coverMotion": "/skill-covers/make-video-intro.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/make-video-intro.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/make-video-intro.mp4",
       "routeLabel": "GPT Image 2 plus video generation",
       "tone": "amber",
       "featured": false,
@@ -3650,9 +3650,9 @@
       "categoryTags": [
         "Portrait"
       ],
-      "coverImage": "/skill-covers/make-wallet-photo.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/make-wallet-photo.png",
       "sourceImages": [
-        "/skill-covers/sources/make-wallet-photo-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/make-wallet-photo.png"
       ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "blue",
@@ -3700,10 +3700,10 @@
         "Portrait",
         "Social Media"
       ],
-      "coverImage": "/skill-covers/make-wedding-photo-v2.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/make-wedding-photo.png",
       "sourceImages": [
-        "/skill-covers/sources/make-wedding-photo-v2-source-1.png",
-        "/skill-covers/sources/make-wedding-photo-v2-source-2.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/make-wedding-photo-1.png",
+        "https://ai-image.weshop.com/desktop/sourceImage/make-wedding-photo-2.png"
       ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "rose",
@@ -3739,8 +3739,8 @@
         "Portrait",
         "Video"
       ],
-      "coverImage": "/skill-covers/micro-expression-performance.png",
-      "coverMotion": "/skill-covers/micro-expression-performance.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/micro-expression-performance.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/micro-expression-performance.mp4",
       "routeLabel": "Character acting-layer direction",
       "tone": "purple",
       "featured": false,
@@ -3776,7 +3776,7 @@
         "Commercial Production",
         "Video"
       ],
-      "coverImage": "/skill-covers/default-skill.svg",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/minimalist-product-ad-generator.svg",
       "routeLabel": "Product-faithful minimalist film",
       "tone": "purple",
       "featured": false,
@@ -3824,8 +3824,8 @@
         "Film",
         "Video"
       ],
-      "coverImage": "/skill-covers/music-video-subtitle-generator.png",
-      "coverMotion": "/skill-covers/music-video-subtitle-generator.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/music-video-subtitle-generator.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/music-video-subtitle-generator.mp4",
       "routeLabel": "Lyric-locked visual MV composition",
       "tone": "purple",
       "featured": false,
@@ -3860,7 +3860,7 @@
       "categoryTags": [
         "Text"
       ],
-      "coverImage": "/skill-covers/default-skill.svg",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/narrative-video-prompt.svg",
       "routeLabel": "Agent-authored structured brief",
       "tone": "blue",
       "featured": false,
@@ -3912,7 +3912,7 @@
       "categoryTags": [
         "Text"
       ],
-      "coverImage": "/skill-covers/default-skill.svg",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/narrative-video-storyboard.svg",
       "routeLabel": "Agent-authored structured brief",
       "tone": "blue",
       "featured": false,
@@ -3948,9 +3948,9 @@
         "Fashion",
         "Layout & Design"
       ],
-      "coverImage": "/skill-covers/outfit-design.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/outfit-design.png",
       "sourceImages": [
-        "/skill-covers/sources/outfit-design-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/outfit-design.png"
       ],
       "routeLabel": "Outfit Generator with GPT Image 2 reference-aware route",
       "tone": "violet",
@@ -3996,8 +3996,8 @@
       "categoryTags": [
         "Video"
       ],
-      "coverImage": "/skill-covers/paper-collage-explainer-generator.png",
-      "coverMotion": "/skill-covers/paper-collage-explainer-generator.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/paper-collage-explainer-generator.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/paper-collage-explainer-generator.mp4",
       "routeLabel": "Approved cut-paper visual-metaphor production",
       "tone": "orange",
       "featured": false,
@@ -4032,8 +4032,8 @@
       "categoryTags": [
         "Video"
       ],
-      "coverImage": "/skill-covers/papercraft-stop-motion-explainer.png",
-      "coverMotion": "/skill-covers/papercraft-stop-motion-explainer.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/papercraft-stop-motion-explainer.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/papercraft-stop-motion-explainer.mp4",
       "routeLabel": "Layered physical-paper education production",
       "tone": "orange",
       "featured": false,
@@ -4068,10 +4068,10 @@
       "categoryTags": [
         "Layout & Design"
       ],
-      "coverImage": "/skill-covers/photo-collage.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/photo-collage.png",
       "sourceImages": [
-        "/skill-covers/sources/photo-collage-a.png",
-        "/skill-covers/sources/photo-collage-b.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/photo-collage-1.png",
+        "https://ai-image.weshop.com/desktop/sourceImage/photo-collage-2.png"
       ],
       "routeLabel": "Source-faithful collage composition",
       "tone": "cyan",
@@ -4139,7 +4139,7 @@
       "categoryTags": [
         "Text"
       ],
-      "coverImage": "/skill-covers/default-skill.svg",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/plan-comic-storyboard.svg",
       "routeLabel": "Agent-authored structured storyboard",
       "tone": "blue",
       "featured": false,
@@ -4192,7 +4192,7 @@
         "Film",
         "Layout & Design"
       ],
-      "coverImage": "/skill-covers/generate-film-storyboard.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/plan-film-storyboard.png",
       "routeLabel": "GPT Image 2 continuity-safe storyboard frames",
       "tone": "purple",
       "featured": false,
@@ -4244,7 +4244,7 @@
       "categoryTags": [
         "Layout & Design"
       ],
-      "coverImage": "/skill-covers/poster-design-v2.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/poster-design.png",
       "routeLabel": "Model-routed poster generation",
       "tone": "coral",
       "featured": true,
@@ -4312,8 +4312,8 @@
         "Layout & Design",
         "Video"
       ],
-      "coverImage": "/skill-covers/poster-motion.png",
-      "coverMotion": "/skill-covers/poster-motion.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/poster-motion.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/poster-motion.mp4",
       "routeLabel": "Final-lock-frame poster animation",
       "tone": "purple",
       "featured": false,
@@ -4365,8 +4365,8 @@
         "Film",
         "Video"
       ],
-      "coverImage": "/skill-covers/pov-short-film-generator.png",
-      "coverMotion": "/skill-covers/pov-short-film-generator.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/pov-short-film-generator.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/pov-short-film-generator.mp4",
       "routeLabel": "Subjective narrative film composition",
       "tone": "purple",
       "featured": true,
@@ -4401,9 +4401,9 @@
       "categoryTags": [
         "Layout & Design"
       ],
-      "coverImage": "/skill-covers/preview-landscape.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/preview-landscape.png",
       "sourceImages": [
-        "/skill-covers/sources/preview-landscape-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/preview-landscape.png"
       ],
       "routeLabel": "GPT Image 2 landscape editing",
       "tone": "green",
@@ -4438,9 +4438,9 @@
       "categoryTags": [
         "Layout & Design"
       ],
-      "coverImage": "/skill-covers/preview-paint.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/preview-paint.png",
       "sourceImages": [
-        "/skill-covers/sources/preview-paint-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/preview-paint.png"
       ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "yellow",
@@ -4475,7 +4475,7 @@
       "categoryTags": [
         "Video"
       ],
-      "coverImage": "/skill-covers/primitive-folk-cgi-restyle.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/primitive-folk-cgi-restyle.png",
       "routeLabel": "Broad-anchor-preserving primitive-3D reconstruction",
       "tone": "green",
       "featured": false,
@@ -4511,7 +4511,7 @@
         "Commercial Production",
         "Layout & Design"
       ],
-      "coverImage": "/skill-covers/product-detail-page.jpg",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/product-detail-page.jpg",
       "routeLabel": "Researched modular PDP production",
       "tone": "teal",
       "featured": false,
@@ -4574,7 +4574,7 @@
       "categoryTags": [
         "Text"
       ],
-      "coverImage": "/skill-covers/default-skill.svg",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/product-launch-video.svg",
       "routeLabel": "Agent-authored structured brief",
       "tone": "blue",
       "featured": false,
@@ -4622,7 +4622,7 @@
         "Commercial Production",
         "Layout & Design"
       ],
-      "coverImage": "/skill-covers/product-packaging.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/product-packaging.png",
       "routeLabel": "Model-routed packaging concept",
       "tone": "lilac",
       "featured": false,
@@ -4675,9 +4675,9 @@
       "categoryTags": [
         "Portrait"
       ],
-      "coverImage": "/skill-covers/professional-headshot.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/professional-headshot.png",
       "sourceImages": [
-        "/skill-covers/sources/professional-headshot-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/professional-headshot.png"
       ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "rose",
@@ -4725,9 +4725,9 @@
       "categoryTags": [
         "Utility"
       ],
-      "coverImage": "/skill-covers/recolor-object.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/recolor-object.png",
       "sourceImages": [
-        "/skill-covers/sources/recolor-object-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/recolor-object.png"
       ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "violet",
@@ -4775,10 +4775,10 @@
         "Social Media",
         "Portrait"
       ],
-      "coverImage": "/skill-covers/recreate-social-photo-v2.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/recreate-social-photo.png",
       "sourceImages": [
-        "/skill-covers/sources/recreate-social-photo-v2-source.png",
-        "/skill-covers/sources/recreate-social-photo-v2-reference.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/recreate-social-photo-1.png",
+        "https://ai-image.weshop.com/desktop/sourceImage/recreate-social-photo-2.png"
       ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "rose",
@@ -4813,9 +4813,9 @@
       "categoryTags": [
         "Utility"
       ],
-      "coverImage": "/skill-covers/remove-background-v2.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/remove-background.png",
       "sourceImages": [
-        "/skill-covers/sources/remove-background-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/remove-background.png"
       ],
       "routeLabel": "WeShop RemoveBG with alpha-edge QA",
       "tone": "mint",
@@ -4861,9 +4861,9 @@
       "categoryTags": [
         "Utility"
       ],
-      "coverImage": "/skill-covers/remove-glasses.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/remove-glasses.png",
       "sourceImages": [
-        "/skill-covers/sources/remove-glasses-source-verified.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/remove-glasses.png"
       ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "blue",
@@ -4898,9 +4898,9 @@
       "categoryTags": [
         "Utility"
       ],
-      "coverImage": "/skill-covers/remove-image-mark.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/remove-image-mark.png",
       "sourceImages": [
-        "/skill-covers/sources/remove-image-mark-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/remove-image-mark.png"
       ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "red",
@@ -4935,9 +4935,9 @@
       "categoryTags": [
         "Utility"
       ],
-      "coverImage": "/skill-covers/remove-object.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/remove-object.png",
       "sourceImages": [
-        "/skill-covers/sources/remove-object-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/remove-object.png"
       ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "red",
@@ -4984,9 +4984,9 @@
       "categoryTags": [
         "Utility"
       ],
-      "coverImage": "/skill-covers/remove-photo-filter.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/remove-photo-filter.png",
       "sourceImages": [
-        "/skill-covers/sources/remove-photo-filter-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/remove-photo-filter.png"
       ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "sky",
@@ -5033,8 +5033,8 @@
       "categoryTags": [
         "Video"
       ],
-      "coverImage": "/skill-covers/remove-video-mark.png",
-      "coverMotion": "/skill-covers/remove-video-mark.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/remove-video-mark.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/remove-video-mark.mp4",
       "routeLabel": "WeShop authorized video mark removal",
       "tone": "slate",
       "featured": false,
@@ -5068,9 +5068,9 @@
       "categoryTags": [
         "Comic"
       ],
-      "coverImage": "/skill-covers/render-comic-page.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/render-comic-page.png",
       "sourceImages": [
-        "/skill-covers/sources/render-comic-page-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/render-comic-page.png"
       ],
       "routeLabel": "GPT Image 2 reference-aware comic page",
       "tone": "purple",
@@ -5123,9 +5123,9 @@
       "categoryTags": [
         "Layout & Design"
       ],
-      "coverImage": "/skill-covers/restyle-room.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/restyle-room.png",
       "sourceImages": [
-        "/skill-covers/sources/restyle-room-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/restyle-room.png"
       ],
       "routeLabel": "GPT Image 2 room restyling",
       "tone": "orange",
@@ -5172,8 +5172,8 @@
       "categoryTags": [
         "Video"
       ],
-      "coverImage": "/skill-covers/restyle-video.png",
-      "coverMotion": "/skill-covers/restyle-video.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/restyle-video.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/restyle-video.mp4",
       "routeLabel": "MiniMax H3 source-video restyling",
       "tone": "violet",
       "featured": false,
@@ -5224,9 +5224,9 @@
       "categoryTags": [
         "Utility"
       ],
-      "coverImage": "/skill-covers/retouch-blemish.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/retouch-blemish.png",
       "sourceImages": [
-        "/skill-covers/sources/retouch-blemish-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/retouch-blemish.png"
       ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "rose",
@@ -5274,9 +5274,9 @@
         "Portrait",
         "Fashion"
       ],
-      "coverImage": "/skill-covers/shave-head.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/shave-head.png",
       "sourceImages": [
-        "/skill-covers/sources/shave-head-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/shave-head.png"
       ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "rose",
@@ -5329,7 +5329,7 @@
       "categoryTags": [
         "Text"
       ],
-      "coverImage": "/skill-covers/default-skill.svg",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/short-audiovisual-prompt.svg",
       "routeLabel": "Agent-authored structured brief",
       "tone": "blue",
       "featured": false,
@@ -5381,9 +5381,9 @@
       "categoryTags": [
         "Utility"
       ],
-      "coverImage": "/skill-covers/smooth-wrinkles.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/smooth-wrinkles.png",
       "sourceImages": [
-        "/skill-covers/sources/smooth-wrinkles-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/smooth-wrinkles.png"
       ],
       "routeLabel": "GPT Image 2 consistency-sensitive edit",
       "tone": "sand",
@@ -5430,9 +5430,9 @@
       "categoryTags": [
         "Text"
       ],
-      "coverImage": "/skill-covers/social-knowledge-notes.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/social-knowledge-notes.png",
       "sourceImages": [
-        "/skill-covers/sources/social-knowledge-notes-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/social-knowledge-notes.png"
       ],
       "routeLabel": "Agent-authored structured brief",
       "tone": "blue",
@@ -5469,8 +5469,8 @@
         "Film",
         "Video"
       ],
-      "coverImage": "/skill-covers/suspense-title-sequence-generator.png",
-      "coverMotion": "/skill-covers/suspense-title-sequence-generator.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/suspense-title-sequence-generator.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/suspense-title-sequence-generator.mp4",
       "routeLabel": "Six-anchor graphic title composition",
       "tone": "purple",
       "featured": true,
@@ -5505,9 +5505,9 @@
       "categoryTags": [
         "Text"
       ],
-      "coverImage": "/skill-covers/technical-visual-explainer.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/technical-visual-explainer.png",
       "sourceImages": [
-        "/skill-covers/sources/technical-visual-explainer-source.png"
+        "https://ai-image.weshop.com/desktop/sourceImage/technical-visual-explainer.png"
       ],
       "routeLabel": "Agent-authored structured brief",
       "tone": "blue",
@@ -5543,7 +5543,7 @@
       "categoryTags": [
         "Text"
       ],
-      "coverImage": "/skill-covers/default-skill.svg",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/testimonial-quote-video.svg",
       "routeLabel": "Agent-authored structured brief",
       "tone": "blue",
       "featured": false,
@@ -5578,7 +5578,7 @@
       "categoryTags": [
         "Text"
       ],
-      "coverImage": "/skill-covers/default-skill.svg",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/transcript-broll-plan.svg",
       "routeLabel": "Transcript-led B-roll planning",
       "tone": "blue",
       "featured": false,
@@ -5613,9 +5613,9 @@
         "Social Media",
         "Utility"
       ],
-      "coverImage": "/skill-covers/translate-image-text-v2.jpg",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/translate-image-text.jpg",
       "sourceImages": [
-        "/skill-covers/sources/translate-image-text-v2-source.jpg"
+        "https://ai-image.weshop.com/desktop/sourceImage/translate-image-text.jpg"
       ],
       "routeLabel": "GPT Image 2 native visual translation",
       "tone": "teal",
@@ -5650,8 +5650,8 @@
       "categoryTags": [
         "Video"
       ],
-      "coverImage": "/skill-covers/upscale-video.png",
-      "coverMotion": "/skill-covers/upscale-video.mp4",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/upscale-video.png",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/upscale-video.mp4",
       "routeLabel": "WeShop AI Video Enhancer",
       "tone": "green",
       "featured": false,
@@ -5702,7 +5702,7 @@
       "categoryTags": [
         "Text"
       ],
-      "coverImage": "/skill-covers/default-skill.svg",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/video-model-advisor.svg",
       "routeLabel": "Agent-authored structured brief",
       "tone": "blue",
       "featured": false,
@@ -5737,7 +5737,7 @@
       "categoryTags": [
         "Text"
       ],
-      "coverImage": "/skill-covers/default-skill.svg",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/video-prompt-failure-diagnosis.svg",
       "routeLabel": "Agent-authored structured brief",
       "tone": "blue",
       "featured": false,
@@ -5773,10 +5773,10 @@
         "Fashion",
         "Commercial Production"
       ],
-      "coverImage": "/skill-covers/virtual-try-on-v2.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/virtual-try-on.png",
       "sourceImages": [
-        "/skill-covers/sources/virtual-try-on-garment-source.png",
-        "/skill-covers/sources/virtual-try-on-model-source.webp"
+        "https://ai-image.weshop.com/desktop/sourceImage/virtual-try-on-1.png",
+        "https://ai-image.weshop.com/desktop/sourceImage/virtual-try-on-2.webp"
       ],
       "routeLabel": "GPT Image 2 with capability-matched fallbacks",
       "tone": "violet",
@@ -5839,7 +5839,7 @@
         "Layout & Design",
         "Utility"
       ],
-      "coverImage": "/skill-covers/visualize-floor-plan.png",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/visualize-floor-plan.png",
       "routeLabel": "GPT Image 2 plan visualization",
       "tone": "cyan",
       "featured": false,
@@ -5873,7 +5873,7 @@
       "categoryTags": [
         "Text"
       ],
-      "coverImage": "/skill-covers/default-skill.svg",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/write-short-drama-series.svg",
       "routeLabel": "Agent-authored serialized drama package",
       "tone": "blue",
       "featured": false,
@@ -5908,7 +5908,7 @@
       "categoryTags": [
         "Text"
       ],
-      "coverImage": "/skill-covers/default-skill.svg",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/write-short-video-hooks.svg",
       "routeLabel": "Agent-authored hook variants",
       "tone": "blue",
       "featured": false,

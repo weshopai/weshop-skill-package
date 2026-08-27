@@ -13,9 +13,8 @@ description: Create one complete story-driven stylized 3D animated short from pr
 - Route label: Story-to-finished stylized animation composition
 - Tone: purple
 - Short description: Produce one coherent multi-shot stylized 3D animated short from story lock through final-film QC.
-- Cover image: /skill-covers/3d-animation-short-generator.png
-- Cover motion: /skill-covers/3d-animation-short-generator.mp4
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/3d-animation-short-generator.png
+- Cover motion: https://ai-image.weshop.com/desktop/coverVideo/3d-animation-short-generator.mp4
 ## What this skill does
 
 - Locks one original story, visual system, audio mode, character identities, environments, props, and continuity before paid generation.

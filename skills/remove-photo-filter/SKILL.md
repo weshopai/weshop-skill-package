@@ -10,8 +10,8 @@ description: Neutralize an applied photographic filter or color grade and recove
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: sky
 - Short description: Remove an artificial grade and restore a natural look.
-- Cover image: /skill-covers/remove-photo-filter.png
-- Source images: /skill-covers/sources/remove-photo-filter-source.png
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/remove-photo-filter.png
+- Source images: https://ai-image.weshop.com/desktop/sourceImage/remove-photo-filter.png
 - Similar skills: apply-photo-filter, recolor-object
 ## What this skill does
 - Identifies visible filter symptoms and asks the image model to neutralize them coherently.

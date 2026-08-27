@@ -13,9 +13,8 @@ description: Use for traceable chronology from user-supplied evidence from appro
 - Route label: Agent-authored structured brief
 - Tone: blue
 - Short description: Traceable chronology from user-supplied evidence.
-- Cover image: /skill-covers/legal-evidence-timeline.png
-- Source images: /skill-covers/sources/legal-evidence-timeline-source.png
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/legal-evidence-timeline.png
+- Source images: https://ai-image.weshop.com/desktop/sourceImage/legal-evidence-timeline.png
 ## What this skill does
 
 - Freezes the request, approved facts, source assets, constraints, and acceptance checks.

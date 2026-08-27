@@ -13,9 +13,8 @@ description: Place one specified tattoo design on visible skin in an authorized 
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: rose
 - Short description: Preview one tattoo with realistic placement on visible skin.
-- Cover image: /skill-covers/add-tattoo.png
-- Source images: /skill-covers/sources/add-tattoo-source.png
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/add-tattoo.png
+- Source images: https://ai-image.weshop.com/desktop/sourceImage/add-tattoo.png
 ## What this skill does
 
 - Produces one image with one tattoo design at one specified body location.

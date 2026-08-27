@@ -12,8 +12,7 @@ description: Create one original non-player character image whose occupation, fa
 - Route label: GPT Image 2 game-character concept
 - Tone: violet
 - Short description: Create one original non-player character image whose occupation, faction and gameplay role are visually legible.
-- Cover image: /skill-covers/create-npc.png
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/create-npc.png
 - Similar skills: casting, create-character
 ## What this skill does
 

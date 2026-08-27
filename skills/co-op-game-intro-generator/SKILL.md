@@ -12,9 +12,8 @@ description: "Create one two-player game menu and opening animation from authori
 - Route label: Independent outcome contract
 - Tone: purple
 - Short description: Produce one two-player game menu and opening animation with explicit inputs, boundaries, and acceptance checks.
-- Cover image: /skill-covers/co-op-game-intro-generator.png
-- Cover motion: /skill-covers/co-op-game-intro-generator.mp4
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/co-op-game-intro-generator.png
+- Cover motion: https://ai-image.weshop.com/desktop/coverVideo/co-op-game-intro-generator.mp4
 ## What this skill does
 
 - Captures the specific requested outcome and authorized asset roles.

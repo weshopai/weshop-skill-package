@@ -13,9 +13,8 @@ description: Turn one authorized portrait into one researched, identity-faithful
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: rose
 - Short description: Research the channel, then create a properly posed and lit professional portrait.
-- Cover image: /skill-covers/professional-headshot.png
-- Source images: /skill-covers/sources/professional-headshot-source.png
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/professional-headshot.png
+- Source images: https://ai-image.weshop.com/desktop/sourceImage/professional-headshot.png
 - Similar skills: id-photo-format, make-wallet-photo
 ## What this skill does
 

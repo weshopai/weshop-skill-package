@@ -12,9 +12,8 @@ description: Use for a real photo, video, or approved realistic preview where a 
 - Route label: Marker-synchronized live-to-sketch conversion
 - Tone: blue
 - Short description: Animate a real scene while a visible marker progressively redraws one moving subject as a lively colored-pencil sketch.
-- Cover image: /skill-covers/live-sketch-motion.png
-- Cover motion: /skill-covers/live-sketch-motion.mp4
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/live-sketch-motion.png
+- Cover motion: https://ai-image.weshop.com/desktop/coverVideo/live-sketch-motion.mp4
 ## What this skill does
 
 - Preserves source composition, identity, support surfaces, and plausible background micro-motion.

@@ -13,9 +13,8 @@ description: Create one complete birthday memory video from authorized photos or
 - Tone: yellow
 - Short description: Create one complete birthday memory video from authorized media, exact messages and licensed or original audio.
 
-- Cover image: /skill-covers/make-birthday-video.png
-- Cover motion: /skill-covers/make-birthday-video.mp4
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/make-birthday-video.png
+- Cover motion: https://ai-image.weshop.com/desktop/coverVideo/make-birthday-video.mp4
 ## What this skill does
 
 - Builds a chronological or thematic birthday story from supplied photos and clips.

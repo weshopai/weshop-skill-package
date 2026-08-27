@@ -10,8 +10,8 @@ description: Remove eyeglasses from an authorized portrait and reconstruct natur
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: blue
 - Short description: Remove glasses and naturally restore the eye area.
-- Cover image: /skill-covers/remove-glasses.png
-- Source images: /skill-covers/sources/remove-glasses-source-verified.png
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/remove-glasses.png
+- Source images: https://ai-image.weshop.com/desktop/sourceImage/remove-glasses.png
 ## What this skill does
 - Removes frames, lenses, nose pads, temple arms, glare, lens tint, refraction, and frame shadows.
 - Reconstructs occluded face regions without changing identity or expression.

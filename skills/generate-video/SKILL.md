@@ -13,9 +13,8 @@ description: Generate one coherent video from a text or multimodal shot brief us
 - Tone: purple
 - Short description: Generate one coherent video from a shot brief using a deliberately selected current model and one observable action.
 
-- Cover image: /skill-covers/generate-video.png
-- Cover motion: /skill-covers/generate-video.mp4
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/generate-video.png
+- Cover motion: https://ai-image.weshop.com/desktop/coverVideo/generate-video.mp4
 ## What this skill does
 
 - Turns text into one shot with explicit subject, action, environment, camera, duration and sound.

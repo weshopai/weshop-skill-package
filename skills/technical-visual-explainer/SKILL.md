@@ -13,9 +13,8 @@ description: Use for interactive self-contained html technical explanation from 
 - Route label: Agent-authored structured brief
 - Tone: blue
 - Short description: Interactive self-contained HTML technical explanation.
-- Cover image: /skill-covers/technical-visual-explainer.png
-- Source images: /skill-covers/sources/technical-visual-explainer-source.png
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/technical-visual-explainer.png
+- Source images: https://ai-image.weshop.com/desktop/sourceImage/technical-visual-explainer.png
 ## What this skill does
 
 - Freezes the request, approved facts, source assets, constraints, and acceptance checks.

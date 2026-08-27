@@ -13,9 +13,8 @@ description: Correct white balance, exposure, contrast, and shot-to-shot color c
 - Tone: orange
 - Short description: Correct white balance, exposure and shot-to-shot consistency without changing content or creative look.
 
-- Cover image: /skill-covers/correct-video-color.png
-- Cover motion: /skill-covers/correct-video-color.mp4
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/correct-video-color.png
+- Cover motion: https://ai-image.weshop.com/desktop/coverVideo/correct-video-color.mp4
 - Similar skills: add-video-effect, restyle-video, upscale-video
 ## What this skill does
 

@@ -12,8 +12,7 @@ description: Design one original symbolically coherent flag that remains recogni
 - Route label: GPT Image 2 flag generation
 - Tone: blue
 - Short description: Design one original symbolically coherent flag that remains recognizable at distance and in flat form.
-- Cover image: /skill-covers/create-flag.png
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/create-flag.png
 ## What this skill does
 
 - Translates place, organization or fictional faction values into simple flag geometry and colors.

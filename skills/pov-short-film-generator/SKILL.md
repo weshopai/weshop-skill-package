@@ -13,9 +13,8 @@ description: Create one complete immersive first-person short film from a locked
 - Route label: Subjective narrative film composition
 - Tone: purple
 - Short description: Produce a coherent first-person narrative short with POV-specific continuity and final-film QC.
-- Cover image: /skill-covers/pov-short-film-generator.png
-- Cover motion: /skill-covers/pov-short-film-generator.mp4
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/pov-short-film-generator.png
+- Cover motion: https://ai-image.weshop.com/desktop/coverVideo/pov-short-film-generator.mp4
 ## What this skill does
 
 - Converts a premise into a locked first-person viewpoint contract instead of a third-person camera plan.

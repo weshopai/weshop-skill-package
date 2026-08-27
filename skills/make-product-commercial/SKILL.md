@@ -12,9 +12,8 @@ description: Direct and produce one short product commercial from a locked brief
 - Route label: Product-safe multi-shot video composition
 - Tone: purple
 - Short description: Produce one truthful, continuity-safe short commercial in which the supplied product drives the action.
-- Cover image: /skill-covers/make-product-commercial.jpg
-- Cover motion: /skill-covers/make-product-commercial-preview.mp4
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/make-product-commercial.jpg
+- Cover motion: https://ai-image.weshop.com/desktop/coverVideo/make-product-commercial.mp4
 - Similar skills: minimalist-product-ad-generator, product-launch-video
 ## What this skill does
 

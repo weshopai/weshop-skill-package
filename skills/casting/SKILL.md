@@ -11,7 +11,7 @@ description: "Create a Chinese screen-role casting package from a six-field role
 - Categories: Character
 - Status: Ready
 - Featured: yes
-- Cover image: /skill-covers/casting.png
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/casting.png
 - Route label: GPT Image 2 face-first casting package
 - Tone: violet
 - Short description: Select and approve a screen-ready Chinese character face before deriving optional studio assets.

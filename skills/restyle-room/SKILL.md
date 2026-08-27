@@ -12,9 +12,8 @@ description: Restyle a supplied room while preserving architecture, spatial layo
 - Route label: GPT Image 2 room restyling
 - Tone: orange
 - Short description: Restyle a supplied room while preserving architecture, layout constraints and declared keep-items.
-- Cover image: /skill-covers/restyle-room.png
-- Source images: /skill-covers/sources/restyle-room-source.png
-
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/restyle-room.png
+- Source images: https://ai-image.weshop.com/desktop/sourceImage/restyle-room.png
 - Similar skills: clean-room, remove-object
 ## What this skill does
 

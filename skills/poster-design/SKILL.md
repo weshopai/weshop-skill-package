@@ -13,7 +13,7 @@ Turn a communication idea into one poster with a clear focal point, intentional 
 - Categories: Layout & Design
 - Status: Ready
 - Featured: yes
-- Cover image: /skill-covers/poster-design-v2.png
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/poster-design.png
 - Route label: Model-routed poster generation
 - Tone: coral
 - Short description: Create distinctive posters across varied art directions.

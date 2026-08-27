@@ -60,7 +60,7 @@ When a platform-specific model such as Soul is unavailable, route to a package w
 
 Apply this section to every image, video, audio, and other non-idempotent create-run call. It overrides any Atom wording that could otherwise cause a blind retry.
 
-1. Before submitting each planned atomic run, create and atomically persist one stable `operationKey` in a durable Router/harness ledger—not only conversational memory—with its variation index, agent/model, normalized parameters, asset identifiers, and submission time. Use one key per intended run and keep the same key across recovery attempts or harness/model handoffs. Send the key to the provider only when its tool schema explicitly supports a correlation or idempotency field.
+1. Follow the execution harness's declared durable-operation contract. When a managed native tool says its Runtime owns the ledger, call that tool directly: do not create or read a Router-owned ledger file, do not synthesize an `operationKey`, and do not add an unsupported correlation argument. When an unmanaged harness explicitly exposes durable-operation storage, let that harness retain one stable identity per intended run. Conversation memory is never a ledger.
 2. A non-empty `executionId` is the only normal acceptance receipt. Once it exists, poll that exact run. A status-poll timeout means poll the same ID again; it never permits another create-run call.
 3. If the create-run tool returns a transport error, timeout, tool failure, closed stream, empty or malformed response, apparent success without an `executionId`, or any response whose receipt cannot be parsed, set:
 
@@ -69,14 +69,14 @@ Apply this section to every image, video, audio, and other non-idempotent create
    ```
 
    `outcome-unknown` is not `failed`. Do not call create/run again, switch models or Atoms, or revise the Prompt to create a replacement.
-4. Reconcile with read-only capabilities exposed by the harness: look up the durable receipt by `operationKey`; query a known `taskId`; inspect a narrowly scoped recent-task record; or consume the original callback. If the original run is found, recover its `executionId`, then poll and deliver that run.
+4. Reconcile only with read-only capabilities exposed by the harness: inspect its pending-execution or durable receipt state, use an exposed `operationKey` or `taskId`, or consume the original callback. If the original run is found, recover its `executionId`, then poll and deliver that run. Never manufacture a second identity for recovery.
 5. Empty `material_search`, an empty Canvas, no local file, a delayed callback, or one `not found` response is never proof that no run exists. Generation, download, material ingestion, and Canvas publication are separate stages.
 6. If recovery is unavailable or inconclusive, stop and report that submission state is unknown. Do not create another run merely to complete the user request.
-7. Automatic resubmission is allowed only when an authoritative server/tool recovery response returns `confirmedAbsent: true` for that same `operationKey` or `taskId`. A generic “try again,” a changed Prompt, a changed model, one `not found`, or an empty list is not proof. A user may override only after being told that the original may still complete and explicitly accepting duplicate output and cost risk.
+7. Automatic resubmission is allowed only when an authoritative server/tool recovery response returns `confirmedAbsent: true` for the same Runtime-owned submission identity. A generic “try again,” a changed Prompt, a changed model, one `not found`, or an empty list is not proof. A user may override only after being told that the original may still complete and explicitly accepting duplicate output and cost risk.
 8. After a run succeeds, retry only the failed downstream stage—status retrieval, download, material ingestion, or Canvas publication—using the existing `executionId` and media URL. Never regenerate because publication is empty or failed.
-9. For batches and named variations, keep one `operationKey` per planned slot. An unknown receipt freezes only that slot; it does not increase the planned run count.
+9. For batches and named variations, require one Runtime-tracked submission identity per planned slot. An unknown receipt freezes only that slot; it does not increase the planned run count.
 
-When the tool can return structured state, preserve at least `submissionState`, `operationKey`, `taskId` when available, `executionId`, `retryAllowed`, `confirmedAbsent`, and `nextAction`. Tool wrappers must reject a second create call that reuses a key whose state is `accepted` or `outcome-unknown`.
+When the tool returns structured state, preserve at least `submissionState`, `operationKey` or `taskId` when exposed, `executionId`, `retryAllowed`, `confirmedAbsent`, and `nextAction`. The Runtime or harness must reject a duplicate create call whose tracked state is `accepted` or `outcome-unknown`; the Skill does not implement that guard with local files.
 
 ## High-tier video terminal-failure policy
 
@@ -84,7 +84,7 @@ This section applies only after a high-tier video run such as Kling 3.0 or Seeda
 
 1. Poll an accepted run to a terminal state. Long processing time is not a failure; report progress when available and keep the original model active.
 2. Record the terminal error (`code`, `message`, `retryable`), agent and model version, submitted parameters, prompt revision, execution ID, elapsed time, and refund status.
-3. Only after that known run reaches a terminal failure may a retry be considered. A permitted retry is a new intended run: give it a new `operationKey` and record `parentOperationKey` as the failed run's key. Never reuse an accepted key or submit an identical retry. Create a materially revised prompt or request based on the terminal error:
+3. Only after that known run reaches a terminal failure may a retry be considered. A permitted retry is a new intended run: let the Runtime allocate a new identity and link it to the failed run when that capability is exposed. Never reuse an accepted identity or submit an identical retry. Create a materially revised prompt or request based on the terminal error:
    - moderation or sensitive-content errors: remove, neutralize, or replace the sensitive wording while preserving the intended safe action;
    - prompt/parameter validation errors: correct the schema and reduce the prompt to one action, one camera instruction, one environment behavior, and essential continuity constraints;
    - an overloaded, timeout, or retryable terminal service error attached to the known `executionId`: retry once with a simplified atomic prompt and the same model; preserve the source image and required invariants. A create-call timeout is `outcome-unknown`, and a status-poll timeout continues polling the same ID;

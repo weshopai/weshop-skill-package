@@ -39,7 +39,7 @@ Create a complete character pack for Lin, a tired 24-year-old night courier with
 
 ## Two-phase workflow
 
-Plan up to eight atomic image tasks. Persist one stable `operationKey` per submitted task and use `batchCount: 1` for every submission. Do not treat the seven derived tasks as authorized merely because they are listed in the workflow.
+Plan up to eight atomic image tasks. Require one Runtime-tracked submission identity per task and use `batchCount: 1` for every submission. Use an `operationKey` only when exposed by the harness; do not create a character-workflow ledger. Do not treat the seven derived tasks as authorized merely because they are listed in the workflow.
 
 1. **Canonical character design sheet — the only default submission.** Read [references/canonical-sheet-prompt.md](references/canonical-sheet-prompt.md), compile its contract with the user's brief and authorized references, and create one polished multi-panel identity sheet. This output may become the canonical identity reference for tasks 2–8.
 2. **Full-body front view.** Neutral full-body front view with the complete canonical wardrobe and proportions visible.
@@ -71,7 +71,7 @@ If the user confirms, extract exactly one reusable public image URL from the acc
 
 Use both documented GPT Image reference locations so the native WeShop tool and official CLI adapter preserve the binding. If `canonicalImageUrl` is missing, non-public, or malformed, do not merely stop and do not regenerate task 1. Recover the accepted task-1 result:
 
-1. Read the durable task-1 ledger entry by its existing `operationKey` and recover its `executionId`.
+1. Read task 1 from the Runtime or harness's durable execution state and recover its existing `executionId`. Use an exposed `operationKey` only as a lookup identity; never reconstruct it from conversation text.
 2. Poll or query that exact `executionId` again and require its recorded terminal status to be Success.
 3. Extract the first valid public image URL from `data.executions[*].result[*].image`; if the harness stored a normalized task-1 result or callback, reconcile it against the same execution ID and use that URL.
 4. Persist the recovered URL back onto the task-1 record as `canonicalImageUrl`, then rebuild all seven payloads.
@@ -79,9 +79,9 @@ Use both documented GPT Image reference locations so the native WeShop tool and 
 
 A missing Canvas item, missing local download, empty material search, or delayed publication is not a missing generation result; recover from the accepted WeShop execution first. If the exact task-1 execution is terminal Success but repeated read-only reconciliation still returns no valid image URL, report a blocked reference-recovery state and keep tasks 2–8 unsubmitted. Never create another task-1 run merely to obtain the URL.
 
-If either reference field is absent from a prepared derived request, repair that payload from the persisted `canonicalImageUrl` and rerun the complete seven-request preflight. Once all seven payloads pass, persist all seven distinct operation keys before the first create call, then submit tasks 2–8 as one parallel wave of seven independent create-run calls. Do not await an execution receipt, status, or result from one slot before submitting another slot. Collect all seven create receipts after the wave has been launched, then poll the accepted execution IDs independently. Use the native harness's concurrent call facility or launch seven independent official `weshop` CLI processes with equivalent all-settled behavior.
+If either reference field is absent from a prepared derived request, repair that payload from the persisted `canonicalImageUrl` and rerun the complete seven-request preflight. Once all seven payloads pass, require the Runtime or harness to prepare seven distinct tracked submissions, then submit tasks 2–8 as one parallel wave of seven independent create-run calls. Do not await an execution receipt, status, or result from one slot before submitting another slot. Collect all seven create receipts after the wave has been launched, then poll the accepted execution IDs independently. Use the native harness's concurrent call facility or launch seven independent official `weshop` CLI processes with equivalent all-settled behavior.
 
-This parallel wave is mandatory for an approved expansion. It is not `batchCount: 7`: each task keeps its own Prompt, `operationKey`, `executionId`, and `batchCount: 1`. A failure or unknown outcome in one slot does not cancel, duplicate, or serialize the other already-planned slots. Only when scene 2 explicitly depends on scene 1's newly generated visible state may that one scene task be held for a second wave; record that dependency instead of silently serializing the whole expansion.
+This parallel wave is mandatory for an approved expansion. It is not `batchCount: 7`: each task keeps its own Prompt, Runtime-tracked submission identity, `executionId`, and `batchCount: 1`. A failure or unknown outcome in one slot does not cancel, duplicate, or serialize the other already-planned slots. Only when scene 2 explicitly depends on scene 1's newly generated visible state may that one scene task be held for a second wave; record that dependency instead of silently serializing the whole expansion.
 
 ## Route and execution
 
@@ -90,8 +90,8 @@ Use `gpt-image` v1.0 / GPT Image 2 for all eight tasks with one complete `textDe
 - Default the canonical sheet and lighting study to a layout-capable ratio selected for readable panels; default the front, back, close-up, final-look portrait, and scene images to `3:4` unless the user requests another supported ratio.
 - Do not route any task to Midjourney merely because the user requests manga, anime, comic, concept-art, or another artistic style. Midjourney's four-image response violates the one-result-per-task contract.
 - Require a non-empty `executionId` for every accepted submission and poll that exact run to terminal state. The task-1 receipt never authorizes tasks 2–8.
-- For an approved expansion, use submission mode `parallel-wave`, concurrency `7`, and `awaitBetweenSubmissions: false`; prepare every payload and durable key before launching the wave.
-- An unknown create outcome freezes only that task. Reconcile its existing `operationKey`; never submit a replacement blindly.
+- For an approved expansion, use submission mode `parallel-wave`, concurrency `7`, and `awaitBetweenSubmissions: false`; prepare every payload and Runtime-tracked submission slot before launching the wave.
+- An unknown create outcome freezes only that task. Reconcile its existing Runtime-owned identity; never submit a replacement blindly.
 - A known terminal or visual failure may replace only the failed slot with a new linked operation key and a materially revised request. Never regenerate accepted slots or increase the eight-task plan.
 
 ## Acceptance

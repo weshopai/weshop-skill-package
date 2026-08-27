@@ -50,7 +50,7 @@ Create six simple mascot-logo candidates for a calm privacy app: use a friendly 
 
 Use `gpt-image` v1.0 / GPT Image 2 with `quality: "medium"`, `imageSize: "2K"`, `aspectRatio: "1:1"`, and `batchCount: 1` for every candidate. Compile one complete semantic `textDescription` from the accepted direction and visual contract. Do not invent a negative-prompt parameter.
 
-Run candidates independently. Persist a unique stable `operationKey` before each submission, require a non-empty `executionId`, and poll every accepted run to terminal state. Do not create a contact sheet or ask one generation to contain several candidates.
+Run candidates independently. Require one Runtime-tracked submission identity per candidate and a non-empty `executionId`, then poll every accepted run to terminal state. Use an `operationKey` only when exposed by the harness; do not create a logo-workflow ledger. Do not create a contact sheet or ask one generation to contain several candidates.
 
 Inspect each returned asset for the declared shape, subject count, crop, paired-feature, text, and background invariants. Preserve and report every terminal result, including a result that misses an aesthetic invariant; do not silently filter it. Retry only when the user requests a replacement or a terminal run fails. A replacement uses a new linked operation key and a prompt revised for the observed failure; never blindly resubmit an identical request.
 

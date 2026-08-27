@@ -40,7 +40,7 @@ Render page 3 from this approved storyboard as a 3:4 Chinese webcomic page. Use 
 
 Use `gpt-image` v1.0 / GPT Image 2 with every required reference in `images`, one `textDescription`, `quality: "medium"`, `imageSize: "2K"`, the requested supported `aspectRatio`, and `batchCount: 1`. Do not use Midjourney or Z-Image because page rendering is reference- and layout-sensitive.
 
-Persist one stable `operationKey` for the page before submission, require a non-empty `executionId`, and poll that run to terminal state. Each page is an independent planned slot. A failed or unknown page never increases the planned page count and never causes accepted pages to regenerate.
+Require one Runtime-tracked submission identity for the page and a non-empty `executionId`, then poll that run to terminal state. Use an `operationKey` only when exposed by the harness; do not create a page-owned ledger. Each page is an independent planned slot. A failed or unknown page never increases the planned page count and never causes accepted pages to regenerate.
 
 Render different pages sequentially when the later page depends on the previous page's visible state or style. Independent page generation is allowed only when the storyboard and canonical references fully define continuity; do not parallelize merely for speed.
 

@@ -71,7 +71,7 @@ const intake = `# User custom Skill intake: ${slug}
 - Origin: User-authored from a new brief, current conversation, or user-owned workflow
 - Created date: ${new Date().toISOString().slice(0, 10)}
 - Draft owner: User
-- Intended harness and install target: Pending user choice
+- Intended harness and install target: Pending
 - Official package promotion requested: No
 
 ## Intent contract
@@ -109,9 +109,9 @@ Similarity never requires fusion. Complete one row for every plausible installed
 - Mechanical check command: \`weshop-skills custom check ${target}\`
 - Local semantic self-check: Pending
 - Blocking findings resolved: Pending
-- User approved installation: No
+- Local installation authorization: Granted by the user's create, save, import, or upload request; pending successful checks
 - Installed target: Not installed
-- Official upload requested: No; maintainer intake and independent review are deferred until requested
+- Official package contribution requested: No; maintainer intake and independent review are deferred until explicitly requested
 `;
 
 await mkdir(draftRoot, { recursive: true });

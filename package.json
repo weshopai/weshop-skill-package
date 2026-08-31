@@ -1,6 +1,6 @@
 {
   "name": "weshop-skill-package",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Content-first WeShop Router, Atom Skills, multi-step workflow orchestration, model catalog, and maintenance tooling.",
   "license": "MIT",
   "author": "WeShop AI",
@@ -37,6 +37,7 @@
     "models/catalog.json",
     "scripts/weshop-skills.mjs",
     "scripts/manage-skills.mjs",
+    "scripts/upload-skill-media.mjs",
     "scripts/create-custom-skill-draft.mjs",
     "scripts/check-api-key.mjs",
     "model-selection-policy.md",
@@ -64,6 +65,7 @@
     "test:auth-contract": "node --test scripts/auth-contract.test.mjs",
     "models:validate": "node scripts/validate-model-catalog.mjs",
     "models:routing-validate": "node scripts/validate-model-routing.mjs",
+    "media:upload": "node scripts/upload-skill-media.mjs",
     "api-key:check": "node scripts/check-api-key.mjs",
     "prepare": "npm run build",
     "skills:manage": "node scripts/manage-skills.mjs",
@@ -81,5 +83,8 @@
     "@types/node": "^22.15.3",
     "sharp": "^0.34.3",
     "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "cos-nodejs-sdk-v5": "^3.0.0"
   }
 }

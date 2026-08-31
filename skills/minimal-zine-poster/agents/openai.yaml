@@ -1,0 +1,4 @@
+interface:
+  display_name: "Minimal Zine Poster"
+  short_description: "Create sparse aged-paper editorial posters"
+  default_prompt: "Use $minimal-zine-poster to turn this idea into a sparse aged-paper editorial poster."

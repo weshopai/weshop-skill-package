@@ -1420,8 +1420,8 @@
         "Creates one custom `SKILL.md` from a new requirement, a completed conversation workflow, or a requested revision.",
         "Keeps unfinished work outside every Agent's auto-discovered Skill directory so a partial draft cannot trigger accidentally.",
         "Distinguishes related installed Skills with relationship scores and explicit two-way boundaries rather than merging similar outcomes.",
-        "Checks the completed draft itself and can install it locally after showing the destination and receiving explicit user confirmation.",
-        "Keeps official package submission separate; maintainer intake and independent review begin only when the user asks to upload or contribute the Skill."
+        "Checks the completed draft itself and installs it locally after validation when the user's create, save, import, or upload request already authorizes local installation.",
+        "Keeps official package submission separate; maintainer intake and independent review begin only when the user asks to contribute or publish the Skill to the official package."
       ],
       "howToUse": {
         "summary": "Provide the reusable outcome or existing Skill, representative requests, inputs, deliverable, constraints, common corrections, and target Agent when known. Existing conversation evidence should be reused before asking questions already answered.",
@@ -1440,9 +1440,9 @@
         "Media type": "User-owned Agent Skill draft",
         "Default quantity": "One isolated Skill directory plus one user-custom intake record",
         "Content per artifact": "`SKILL.md`, only necessary resources, trigger tests, walkthrough evidence, and local check evidence",
-        "Default layout": "Agent Skills-compatible folder outside runtime discovery until approval",
+        "Default layout": "Agent Skills-compatible folder outside runtime discovery until the intake and local check pass",
         "Model policy": "Agent-authored platform tooling; no paid media generation",
-        "Downstream use": "User-approved local installation or separate maintainer intake for an official-package proposal"
+        "Downstream use": "Request-authorized local installation or separate maintainer intake for an official-package proposal"
       }
     },
     {
@@ -3818,6 +3818,58 @@
         "Model policy": "Current catalog-selected performance-capable video route",
         "Downstream use": "Character scenes and drama shots"
       }
+    },
+    {
+      "id": "minimal-zine-poster",
+      "displayName": "Minimal Zine Poster",
+      "description": "Create sparse editorial posters with aged paper, radical negative space, and one vivid accent.",
+      "category": "Layout & Design",
+      "categoryTags": [
+        "Layout & Design"
+      ],
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/minimal-zine-poster.png",
+      "routeLabel": "GPT Image 2 minimal-zine poster",
+      "tone": "coral",
+      "featured": false,
+      "whatThisSkillDoes": [
+        "Reduces a theme, sentence, article, or idea to one imageable relation and one small focal event.",
+        "Turns a photo into an edit target, supporting insert, or style reference with explicit preservation.",
+        "Learns fixed and variable rules from references without copying wording, identity, branding, or exact composition.",
+        "Produces one sparse vertical raster poster, or a reusable prompt and style system when requested."
+      ],
+      "howToUse": {
+        "summary": "Provide a theme, short text, article or substantive excerpt, photo, or references. Optionally specify exact short copy, ratio, accent color, and what a source photo must preserve.",
+        "promptExamples": [
+          {
+            "title": "Create from an article",
+            "prompt": "把这篇文章提炼成一个视觉隐喻，做成留白很多、旧纸质感的极简独立杂志海报。"
+          },
+          {
+            "title": "Transform a supplied photo",
+            "prompt": "用这张人物照片做一张 minimal zine poster，保留人物身份和服装，只改变裁切、排版与纸张质感。"
+          }
+        ]
+      },
+      "output": {
+        "Media type": "One raster poster plus final Prompt and compact recipe; or explicit reference-analysis / prompt-only output",
+        "Default quantity": "1 image",
+        "Default layout": "Supported portrait ratio, normally 3:4, with 70–90% negative space",
+        "Preservation": "High or medium invariants for edit targets; visual grammar only for references",
+        "Model policy": "GPT Image 2 Medium/2K, one image per operation, one issue-specific retry maximum",
+        "Downstream use": "Editorial covers, cultural posters, article hero images, personal art prints, and visual-system exploration"
+      },
+      "similarSkills": [
+        {
+          "id": "poster-design",
+          "displayName": "Poster Design",
+          "difference": "Poster Design: Create distinctive posters across varied art directions. In contrast, Minimal Zine Poster: Create sparse editorial posters with aged paper, radical negative space, and one vivid accent."
+        },
+        {
+          "id": "article-handdrawn-illustrations",
+          "displayName": "Article Hand-drawn Illustrations",
+          "difference": "Article Hand-drawn Illustrations: Turn an article's key ideas into sparse, memorable hand-drawn body illustrations. In contrast, Minimal Zine Poster: Create sparse editorial posters with aged paper, radical negative space, and one vivid accent."
+        }
+      ]
     },
     {
       "id": "minimalist-product-ad-generator",

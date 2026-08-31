@@ -17,7 +17,10 @@ test("creates an isolated custom draft that cannot pass its local check unfinish
     const initialized = run(initializer, ["weekly-campaign-directions", "--root", draftRoot]);
     assert.equal(initialized.status, 0, initialized.stderr);
     const target = path.join(draftRoot, "weekly-campaign-directions");
-    assert.match(await readFile(path.join(target, "intake.md"), "utf8"), /Origin: User-authored/);
+    const intake = await readFile(path.join(target, "intake.md"), "utf8");
+    assert.match(intake, /Origin: User-authored/);
+    assert.match(intake, /Local installation authorization: Granted by the user's create, save, import, or upload request/);
+    assert.doesNotMatch(intake, /User approved installation: No/);
     const checked = run(checker, [target]);
     assert.equal(checked.status, 1, checked.stderr);
     const report = JSON.parse(checked.stdout);

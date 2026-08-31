@@ -154,13 +154,13 @@ You can also invoke a Skill directly, for example `$remove-background`, `$virtua
 
 ### Create your own Skill
 
-Ask for a reusable user-owned Skill in plain language. `$create-custom-skill` owns the complete local lifecycle: it creates or revises an isolated draft, checks structure and routing boundaries, and shows the install destination before requesting confirmation. Independent review begins only if you later ask to upload or contribute the Skill to the official package.
+Ask for a reusable user-owned Skill in plain language. `$create-custom-skill` owns the complete local lifecycle: it creates or revises an isolated draft, checks structure and routing boundaries, and installs it locally after validation. The create, save, import, or upload request itself authorizes that local installation; only conflicts or higher-risk side effects stop for separate permission. Independent review begins only if you later ask to contribute the Skill to the official package.
 
 ```text
-Save the workflow we just completed as my own reusable Skill. Keep it local, compare it with similar installed Skills, review it, and show me the install target before copying anything.
+Save the workflow we just completed as my own reusable Skill. Keep it local, compare it with similar installed Skills, run intake and validation, then install it into my local Skill directory.
 ```
 
-Drafts default to `~/.weshop-skill-package/custom-skills/` and are not visible to the Agent until reviewed and approved. They remain user-owned and are not overwritten by package updates. Deterministic scaffolding and mechanical review are also available:
+Drafts default to `~/.weshop-skill-package/custom-skills/` and are not visible to the Agent until intake and validation pass. They remain user-owned and are not overwritten by package updates. Deterministic scaffolding and mechanical review are also available:
 
 ```bash
 weshop-skills custom init my-custom-skill
@@ -184,7 +184,7 @@ For compound work, `orchestrate-multi-step-workflow` discovers installed Skills 
 
 ## Complete Skill inventory 🧩
 
-The `skills/` directory contains 133 creative Atom Skills, one platform-tooling Skill, one Router, and one multi-step orchestration Skill. Categories below are for browsing only and do not participate in hard-coded selection.
+The `skills/` directory contains 134 creative Atom Skills, one platform-tooling Skill, one Router, and one multi-step orchestration Skill. Categories below are for browsing only and do not participate in hard-coded selection.
 
 ### Client catalog contract
 
@@ -196,7 +196,7 @@ Published packages include [`catalog/skills.json`](catalog/skills.json), a versi
 | Multi-step orchestration | `orchestrate-multi-step-workflow` |
 | User authoring | `create-custom-skill` |
 | Commercial products and apparel | `ai-product`, `change-pose`, `create-white-background-product-mockup`, `fashion-model-replacement`, `outfit-design`, `product-packaging`, `virtual-try-on` |
-| Layout and marketing | `ai-banner-design`, `add-speech-bubble`, `apply-photo-filter`, `article-handdrawn-illustrations`, `compose-lookbook`, `create-image-deck`, `create-social-carousel`, `image-combiner`, `legal-diagram-redraw`, `legal-evidence-timeline`, `make-infographic`, `make-silhouette`, `make-thumbnail`, `photo-collage`, `poster-design`, `product-detail-page`, `recolor-object`, `recreate-social-photo`, `social-knowledge-notes`, `technical-visual-explainer`, `translate-image-text` |
+| Layout and marketing | `ai-banner-design`, `add-speech-bubble`, `apply-photo-filter`, `article-handdrawn-illustrations`, `compose-lookbook`, `create-image-deck`, `create-social-carousel`, `image-combiner`, `legal-diagram-redraw`, `legal-evidence-timeline`, `make-infographic`, `make-silhouette`, `make-thumbnail`, `minimal-zine-poster`, `photo-collage`, `poster-design`, `product-detail-page`, `recolor-object`, `recreate-social-photo`, `social-knowledge-notes`, `technical-visual-explainer`, `translate-image-text` |
 | Personal appearance | `add-braces`, `add-tattoo`, `apply-makeup`, `change-bangs`, `eye-color-change`, `hair-color-change`, `hairstyle-change`, `make-selfie`, `shave-head` |
 | Portrait production | `id-photo-format`, `professional-headshot` |
 | Image repair and utilities | `clean-room`, `colorize-image`, `expand-image`, `remove-background`, `remove-glasses`, `remove-image-mark`, `remove-object`, `remove-photo-filter`, `retouch-blemish`, `smooth-wrinkles` |
@@ -270,6 +270,7 @@ Useful commands:
 | `npm run maintainers:validate` | Validate maintainer documentation |
 | `npm run web:build` | Build the generated visual Skill catalog |
 | `npm run skills:intake -- ...` | Start a provenance-safe external Skill intake |
+| `npm run media:upload -- ...` | Upload and verify a Skill cover, source image, or cover video in the reviewed Tencent COS prefix |
 | `npm run skills:custom:init -- ...` | Start an isolated user-owned custom Skill draft |
 | `npm run skills:custom:check -- ...` | Run mechanical local checks on a custom Skill |
 | `npm run skills:auto-update -- ...` | Install or inspect the Release-based background updater |

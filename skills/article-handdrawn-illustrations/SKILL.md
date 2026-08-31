@@ -12,6 +12,7 @@ description: Turn a supplied article or one explicit idea into sparse hand-drawn
 - Route label: GPT Image 2 article-body illustrations
 - Tone: orange
 - Short description: Turn an article's key ideas into sparse, memorable hand-drawn body illustrations.
+- Cover image: https://ai-image.weshop.com/desktop/coverImage/article-handdrawn-illustrations.png
 - Similar skills: make-infographic, create-social-carousel, create-image-deck
 
 ## What this skill does

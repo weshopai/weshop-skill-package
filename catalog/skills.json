@@ -465,6 +465,58 @@
       ]
     },
     {
+      "id": "article-handdrawn-illustrations",
+      "displayName": "Article Hand-drawn Illustrations",
+      "description": "Turn an article's key ideas into sparse, memorable hand-drawn body illustrations.",
+      "category": "Layout & Design",
+      "categoryTags": [
+        "Layout & Design"
+      ],
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/article-handdrawn-illustrations.svg",
+      "routeLabel": "GPT Image 2 article-body illustrations",
+      "tone": "orange",
+      "featured": false,
+      "whatThisSkillDoes": [
+        "Reads an article and selects only the passages where an illustration materially improves understanding.",
+        "Converts each selected idea into a fresh low-tech physical metaphor instead of a formal diagram or slide.",
+        "Generates separate, inspectable images in a coherent white-background hand-drawn system."
+      ],
+      "howToUse": {
+        "summary": "For best results, provide the complete article or substantive body text rather than only a title. Also state the audience, desired quantity, language, ratio, any exact short labels, authorized references, and whether you want a shot list only or final images. A single explicit idea is sufficient when you only need one image.",
+        "promptExamples": [
+          {
+            "title": "Example",
+            "prompt": "下面是完整文章。请挑出最值得配图的 4 个认知锚点，先给 shot list，再生成 4 张 16:9 白底手绘正文插图。每张只讲一个观点，中文标注尽量少。"
+          }
+        ]
+      },
+      "output": {
+        "Media type": "Ordered shot list and separately generated article-body images",
+        "Default quantity": "4–6 for a substantive article; 1–3 for short text or one explicit idea",
+        "Content per image": "One cognitive anchor, one fresh physical metaphor, and one indispensable character action",
+        "Default layout": "16:9 with a pure white background and substantial whitespace",
+        "Model policy": "GPT Image 2 Medium/2K, one image per operation, bounded issue-specific replacement",
+        "Downstream use": "Chinese articles, blogs, Notion documents, methods, workflow writing, and educational body content"
+      },
+      "similarSkills": [
+        {
+          "id": "make-infographic",
+          "displayName": "Make Infographic",
+          "difference": "Make Infographic: Research, write, and visualize a sourced infographic. In contrast, Article Hand-drawn Illustrations: Turn an article's key ideas into sparse, memorable hand-drawn body illustrations."
+        },
+        {
+          "id": "create-social-carousel",
+          "displayName": "Create Social Carousel",
+          "difference": "Create Social Carousel: Create a coherent mobile-first social carousel as separately generated ordered pages. In contrast, Article Hand-drawn Illustrations: Turn an article's key ideas into sparse, memorable hand-drawn body illustrations."
+        },
+        {
+          "id": "create-image-deck",
+          "displayName": "Create Image Deck",
+          "difference": "Create Image Deck: Plan, generate, inspect, and package a consistent image-first deck. In contrast, Article Hand-drawn Illustrations: Turn an article's key ideas into sparse, memorable hand-drawn body illustrations."
+        }
+      ]
+    },
+    {
       "id": "backrooms-dreamcore",
       "displayName": "Backrooms Dreamcore",
       "description": "Turn one authorized reference into a restrained, photoreal liminal-space dossier and optional media.",

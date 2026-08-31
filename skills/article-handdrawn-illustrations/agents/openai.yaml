@@ -1,0 +1,4 @@
+interface:
+  display_name: "Article Hand-drawn Illustrations"
+  short_description: "Create sparse hand-drawn images from an article"
+  default_prompt: "Use $article-handdrawn-illustrations to read this article, propose the strongest illustration points, and create separate hand-drawn body images."

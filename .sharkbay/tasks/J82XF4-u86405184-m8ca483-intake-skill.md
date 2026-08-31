@@ -4,7 +4,7 @@ taskId: J82XF4-u86405184-m8ca483
 taskTag: J82XF4
 mode: task
 title: Intake 文章手绘正文插图 Skill
-status: active
+status: completed
 actor: Jason12196
 githubUserId: 86405184
 machine: 8ca483
@@ -12,7 +12,10 @@ agent: Codex GPT-5.6
 sessionId: 01a05649-44f4-7fb3-ad1b-ffc559efb857
 branch: main
 createdAt: 2026-08-31T05:49:55Z
-updatedAt: 2026-08-31T05:50:04Z
+updatedAt: 2026-08-31T05:52:11Z
+completedAt: 2026-08-31T05:52:11Z
+commits:
+  - ec4793f
 ---
 
 ## Summary
@@ -51,3 +54,4 @@ updatedAt: 2026-08-31T05:50:04Z
 
 - Created locally; SharkBay owns synchronization to team context.
 - 用户将自行制作正式封面；本次保留 Package fallback cover。
+- 功能提交 `ec4793f` 已成功推送到 `origin/main`。

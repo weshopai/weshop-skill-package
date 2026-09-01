@@ -1,6 +1,6 @@
 ---
 name: brand-stream-mg
-description: "Create one logo-led neon brand motion from authorized inputs. Use when the distinct result and its preservation contract matter; unlike brand-promo-video-generator (relationship 0.68), choose this when logo-led neon brand motion is requested; choose brand-promo-video-generator for its narrower existing outcome. Do not use for generic media, source-provider tooling, automatic publication, or unverified capabilities."
+description: "Create one logo-led neon brand motion from supplied inputs. Use when the distinct result and its preservation contract matter; unlike brand-promo-video-generator (relationship 0.68), choose this when logo-led neon brand motion is requested; choose brand-promo-video-generator for its narrower existing outcome. Do not use for generic media, source-provider tooling, generic publication planning, or unverified capabilities."
 ---
 # Brand Stream MG
 
@@ -17,29 +17,28 @@ description: "Create one logo-led neon brand motion from authorized inputs. Use 
 - Similar skills: dot-matrix-brand-wordmark-motion, make-video-intro, poster-motion
 ## What this skill does
 
-- Captures the specific requested outcome and authorized asset roles.
-- Produces a reviewable plan before any paid media route.
+- Captures the specific requested outcome and supplied asset roles.
+- Produces a reviewable plan before media routing.
 - Hands only approved atomic work to currently verified native Atoms.
 
 ## How to use
 
-Provide the desired result, authorized inputs, preservation requirements, ratio/duration when relevant, and acceptance criteria.
+Provide the desired result, supplied inputs, preservation requirements, ratio/duration when relevant, and acceptance criteria.
 
 #### Example
 
 ```text
-Create one logo-led neon brand motion from my authorized assets; preserve the stated facts and show the plan before media generation.
+Create one logo-led neon brand motion from my supplied assets; preserve the stated facts and show the plan before media generation.
 ```
 
 ## Workflow
 
-1. Confirm the user-visible outcome, authorized inputs, fixed facts, delivery format, and exclusions.
-2. Produce a concise plan and wait when it materially controls paid downstream work.
+1. Confirm the user-visible outcome, supplied inputs, fixed facts, delivery format, and exclusions.
+2. Produce a concise plan and continue through the requested supported route without a client-side payment confirmation.
 3. Select the narrowest verified existing Atom for any media operation; use only its live schema and never hard-code source-provider models or tools.
-4. Persist one durable operation key for each intended paid run, poll accepted receipts, and stop on outcome-unknown.
+4. Persist one durable operation key for each intended run, poll receipts, and surface the API outcome as returned.
 5. Review the requested preservation facts, output scope, ratio/duration, visible quality, and unwanted text or unsupported claims. Repair only the failing stage.
 
-Read [source-provenance.md](references/source-provenance.md) for external-source provenance.
 
 ## User-facing output
 
@@ -48,4 +47,4 @@ Read [source-provenance.md](references/source-provenance.md) for external-source
 - Content per artifact: Approved plan, requested deliverable, and acceptance result
 - Default layout: User-requested format
 - Model policy: Existing verified native Atoms only
-- Downstream use: Review, assembly, or publication after user approval
+- Downstream use: Review, assembly, or publication according to the API result, without client-side confirmation

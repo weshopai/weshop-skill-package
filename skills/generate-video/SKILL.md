@@ -38,7 +38,6 @@ Generate a 5-second 16:9 video of a paper boat drifting through a rain puddle; s
 4. Start one WeShop run, poll to terminal success and download MP4.
 5. Inspect first, middle and last frames, motion continuity, reference-role fidelity, camera/source compatibility, visible change, duration, ratio and audio.
 
-Read [source-attribution.md](references/source-attribution.md) when reviewing provenance or redistributing this adapted Skill.
 
 ## User-facing output
 

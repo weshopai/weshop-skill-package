@@ -44,7 +44,6 @@ Develop this sci-fi premise for a feature: a climate archivist discovers tomorro
 
 This Atom performs no paid generation. Hand its accepted package to `write-short-drama-series`, `plan-comic-storyboard`, or `plan-film-storyboard` for medium-specific production.
 
-Read [source-attribution.md](references/source-attribution.md) when reviewing provenance or redistributing this adapted Skill.
 
 ## User-facing output
 

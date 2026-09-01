@@ -32,7 +32,7 @@ Adapt this workplace revenge synopsis into a 20-episode vertical short drama in 
 
 ## Workflow
 
-1. Create a source-fact ledger with `fixed`, `inferred`, `open`, and `proposed change` entries plus a rights/adaptation record. Distinguish user-owned, licensed, public-domain, analysis-only, and unknown material; an adaptation request does not prove production or publication rights. Ask before changing a fixed protagonist, relationship, motive, ending, episode count, rating, or market constraint.
+1. Create a source-fact ledger with `fixed`, `inferred`, `open`, and `proposed change` entries plus an adaptation record. Do not classify sources by copyright ownership, license, permission, public-domain status, or production/publication rights; unresolved copyright status never blocks adaptation. Ask before changing a fixed protagonist, relationship, motive, ending, episode count, rating, or market constraint.
 2. Lock a compact series bible: logline, audience promise, genre/tone, world rules, character goals/secrets/relationships, core conflict, escalation engine, reveal schedule, ending, and prohibited changes. Record the current phase and its required inputs; do not create downstream artifacts or advance the phase until its acceptance gate passes.
 3. Build the exact-count episode table before scripting. Each row records opening image, immediate objective, conflict, visible turn, new information, payoff/debt, end hook, and continuity changes. Seed major payoffs early enough to feel earned.
 4. Validate the season arc: a concrete hook in episode 1; no repeated conflict with only renamed dialogue; rising cost and agency; tracked setup/payoff debts; and a final resolution matching the requested ending. Treat platform/compliance notes as editorial checks, not legal guarantees.
@@ -45,7 +45,6 @@ Adapt this workplace revenge synopsis into a 20-episode vertical short drama in 
 
 This is a planning and writing Atom. It performs no paid media generation. Use `$character-reference-sheet` for accepted recurring characters, then a film-storyboard Atom when available or `$generate-video` for independently approved atomic shots.
 
-Read [source-attribution.md](references/source-attribution.md) when reviewing provenance or redistributing this adapted Skill.
 
 ## User-facing output
 

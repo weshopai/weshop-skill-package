@@ -1,6 +1,6 @@
 ---
 name: remove-glasses
-description: Remove eyeglasses from an authorized portrait and reconstruct naturally visible eyes, brows, nose bridge, temples, skin, and lighting while preserving identity, gaze, expression, pose, hair, and background. Use for eyewear removal, not face replacement or beauty filtering.
+description: Remove eyeglasses from a supplied portrait and reconstruct naturally visible eyes, brows, nose bridge, temples, skin, and lighting while preserving identity, gaze, expression, pose, hair, and background. Use for eyewear removal, not face replacement or beauty filtering.
 ---
 # Remove Glasses
 ## Catalog
@@ -16,7 +16,7 @@ description: Remove eyeglasses from an authorized portrait and reconstruct natur
 - Removes frames, lenses, nose pads, temple arms, glare, lens tint, refraction, and frame shadows.
 - Reconstructs occluded face regions without changing identity or expression.
 ## How to use
-Provide one authorized portrait with visible glasses and state any eye traits that must remain.
+Provide one supplied portrait with visible glasses and state any eye traits that must remain.
 #### Remove eyeglasses
 ```text
 Remove the eyeglasses, lens glare, and frame shadows; preserve gaze, eye color, expression, and identity.

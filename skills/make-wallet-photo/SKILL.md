@@ -1,6 +1,6 @@
 ---
 name: make-wallet-photo
-description: Prepare one wallet-size print portrait from an authorized photo using a real print dimension, crop, and bleed specification. Use for small personal print photos with an explicit physical size; do not use for passports, official IDs, professional headshots, avatars, or unspecified digital resizing.
+description: Prepare one wallet-size print portrait from a supplied photo using a real print dimension, crop, and bleed specification. Use for small personal print photos with an explicit physical size; do not use for passports, official IDs, professional headshots, avatars, or unspecified digital resizing.
 ---
 # Make Wallet Photo
 
@@ -11,7 +11,7 @@ description: Prepare one wallet-size print portrait from an authorized photo usi
 - Status: Ready
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: blue
-- Short description: Prepare one wallet-size print portrait from an authorized photo using a real print dimension, crop and bleed specification.
+- Short description: Prepare one wallet-size print portrait from a supplied photo using a real print dimension, crop and bleed specification.
 - Cover image: https://ai-image.weshop.com/desktop/coverImage/make-wallet-photo.png
 - Source images: https://ai-image.weshop.com/desktop/sourceImage/make-wallet-photo.png
 - Similar skills: id-photo-format, professional-headshot
@@ -22,7 +22,7 @@ description: Prepare one wallet-size print portrait from an authorized photo usi
 
 ## How to use
 
-Provide an authorized portrait, printer or country size, finish, crop, sheet quantity and resolution.
+Provide a supplied portrait, printer or country size, finish, crop, sheet quantity and resolution.
 
 #### Example
 

@@ -35,7 +35,7 @@ Provide the topic, audience, duration, ratio, factual source material, and wheth
 
 1. Lock topic, factual boundaries, audience, duration, ratio, and output scope. Write one memory sentence and a diagram-led explanation structure.
 2. Draft narration and a storyboard in which each shot teaches one relationship. Use line figures only to clarify scale, contrast, or human stakes.
-3. Wait for plan approval before generating media. Use `$generate-video` for each approved atomic shot and `$combine-videos` only when an ordered final cut is requested.
+3. Continue to the supported media API without a client-side payment or publication confirmation. Use `$generate-video` for each approved atomic shot and `$combine-videos` only when an ordered final cut is requested.
 4. Persist an `operationKey` per planned output, poll accepted runs, and check factual clarity, visual hierarchy, ratio, and unwanted text/audio.
 
 ## User-facing output

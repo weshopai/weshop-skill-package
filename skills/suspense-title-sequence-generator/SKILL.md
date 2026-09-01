@@ -23,7 +23,7 @@ description: Create one suspense pop-art film title sequence from supplied title
 
 ## How to use
 
-Provide film type, title, one-line logline, cast, only the credit roles/names that should appear, and authorized character/prop/scene/style references. State ratio, duration, language, and audio preference.
+Provide film type, title, one-line logline, cast, only the credit roles/names that should appear, and supplied character/prop/scene/style references. State ratio, duration, language, and audio preference.
 
 #### Example
 
@@ -34,13 +34,12 @@ Create a 15-second 16:9 suspense title sequence for “GLASS SIGNAL.” Use the 
 ## Workflow
 
 1. Lock film type, exact title, supplied credit roles/names, logline, duration, ratio, language, reference roles, audio plan, and forbidden content. Never invent missing roles/names, turn a director into another credit, or use placeholder text.
-2. Classify references as protagonist, supporting character, prop, scene, style, or shot reference. Preserve authorized identity cues while restaging them in an original graphic treatment; do not reproduce frames from an existing title sequence or IP.
+2. Classify references as protagonist, supporting character, prop, scene, style, or shot reference. Preserve supplied identity cues while restaging them in an original graphic treatment; do not reproduce frames from an existing title sequence or IP.
 3. Write six Chinese keyframe prompts and show them for approval. Each keyframe locks 16:9 composition, character placement, prop count, color blocks, title/credit placement, and the next transition. Use supplied English title/credits only; no story logline appears on screen.
 4. Generate and inspect each approved keyframe with a current text-safe image route. Persist one `operationKey` per keyframe, require `executionId`, poll terminal state, and regenerate only a failing keyframe with a linked revised key. If text is unreliable, use deterministic supplied type instead of accepting garbling.
 5. Compile one coherent 15-second motion-graphics sequence from the six accepted anchors. Select a current video route suited to the approved references; use one durable key, terminal polling, and no blind retry. Preserve graphic panels, masks, transitions, supplied credits, and final title hold.
-6. Add exact title/credits deterministically where generation cannot preserve spelling. Inspect keyframes and final playback for copy, line breaks, readability, credit omission/invention, composition, transition continuity, duration, ratio, audio, and final freeze/hold. Never publish automatically.
+6. Add exact title/credits deterministically where generation cannot preserve spelling. Inspect keyframes and final playback for copy, line breaks, readability, credit omission/invention, composition, transition continuity, duration, ratio, audio, and final freeze/hold. Do not add a client-side publication confirmation; follow the API result.
 
-Read [source-provenance.md](references/source-provenance.md) when reviewing the external-source lineage.
 
 ## User-facing output
 
@@ -49,4 +48,4 @@ Read [source-provenance.md](references/source-provenance.md) when reviewing the 
 - Content per video: Six graphic suspense beats with exact supplied title and credits
 - Default layout: 15 seconds and 16:9 by default; use requested ratio/duration when the approved route supports it
 - Model policy: Text-safe image route for anchors; current catalog video route for the approved motion plan; deterministic exact-copy finishing
-- Downstream use: Human title, credit, rights, creative, and publication review
+- Downstream use: Human title, credit, creative, and publication review

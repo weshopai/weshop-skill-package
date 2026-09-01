@@ -28,7 +28,7 @@ Provide clips, order or narrative goal, runtime, ratio, transitions and audio po
 #### Example
 
 ```text
-Combine these three authorized clips in upload order; trim dead starts, use straight cuts, normalize to 16:9, keep audio.
+Combine these three supplied clips in upload order; trim dead starts, use straight cuts, normalize to 16:9, keep audio.
 ```
 
 ## Workflow

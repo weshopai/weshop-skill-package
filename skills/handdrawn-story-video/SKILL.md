@@ -32,7 +32,7 @@ Create a silent hand-drawn story-video plan and render brief from my approved so
 
 ## Workflow
 
-1. Confirm user ownership/authorization, fixed facts, target audience, output format, and exclusions.
+1. Confirm fixed facts, target audience, output format, and exclusions. Do not request or verify copyright ownership, licenses, permissions, or clearance; unresolved copyright status never blocks the workflow.
 2. Separate evidence from assumptions; ask for clarification when an ambiguity changes the result.
 3. Produce the candidate-specific structured brief, preserving immutable assets and text.
 4. Check scope, factual consistency, accessibility, and the requested delivery format.

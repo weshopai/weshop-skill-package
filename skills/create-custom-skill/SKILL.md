@@ -61,7 +61,6 @@ Create a custom Skill that turns my weekly campaign brief into three channel-spe
 - Local creation, revision, checking, and request-authorized installation belong to this one Skill.
 - Independent review is deferred until official package contribution or publication is requested.
 
-Read [references/source-attribution.md](references/source-attribution.md) when auditing why this workflow differs from the MiniMax reference.
 
 ## User-facing output
 

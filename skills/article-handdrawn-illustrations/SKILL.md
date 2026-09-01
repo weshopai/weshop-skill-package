@@ -1,6 +1,6 @@
 ---
 name: article-handdrawn-illustrations
-description: Turn a supplied article or one explicit idea into sparse hand-drawn explanatory body illustrations with fresh physical metaphors and a deadpan black character performing the core action. Use for Chinese article illustrations, body-image shot lists, conceptual hand-drawn explainers, or editing an accepted image in this visual system; do not use for sourced infographics, social carousels, slide decks, posters, logos, generic illustration, or automatic publication.
+description: Turn a supplied article or one explicit idea into sparse hand-drawn explanatory body illustrations with fresh physical metaphors and a deadpan black character performing the core action. Use for Chinese article illustrations, body-image shot lists, conceptual hand-drawn explainers, or editing an accepted image in this visual system; do not use for sourced infographics, social carousels, slide decks, posters, logos, generic illustration, or generic publication planning.
 ---
 # Article Hand-drawn Illustrations
 
@@ -23,7 +23,7 @@ description: Turn a supplied article or one explicit idea into sparse hand-drawn
 
 ## How to use
 
-For best results, provide the complete article or substantive body text rather than only a title. Also state the audience, desired quantity, language, ratio, any exact short labels, authorized references, and whether you want a shot list only or final images. A single explicit idea is sufficient when you only need one image.
+For best results, provide the complete article or substantive body text rather than only a title. Also state the audience, desired quantity, language, ratio, any exact short labels, supplied references, and whether you want a shot list only or final images. A single explicit idea is sufficient when you only need one image.
 
 #### Example
 
@@ -42,7 +42,6 @@ For best results, provide the complete article or substantive body text rather t
 7. Inspect every terminal result for source fidelity, one-idea focus, fresh metaphor, character action, whitespace, crop, palette restraint, unintended titles/logos, and readable short labels. Prefer zero to five labels; if generated Chinese is wrong or crowded, reduce or remove optional labels and regenerate only the failed image with a new linked operation key.
 8. Preserve accepted results and do not overwrite existing workspace assets without explicit authorization. Deliver images in source order with passage placement, purpose, receipt/status, QA result, and any unresolved text limitation. Do not publish or imply editable-vector delivery.
 
-Read [source-attribution.md](references/source-attribution.md) when reviewing provenance or redistributing this adapted Skill.
 
 ## User-facing output
 

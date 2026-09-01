@@ -28,7 +28,7 @@ description: "Create a Chinese screen-role casting package from a six-field role
 
 Request the six role-card fields when available: person type, build, facial features, skin/hair/makeup, temperament, and intended character type. A script or freeform description is acceptable. Complete only reasonable omissions and state them in one sentence before submission.
 
-Do not reproduce a protected character or edit a real person. References must be authorized. Bind only an accepted public image URL, in supplied order—never invent a URL or asset token. Clothing must not override the requested face, skin, expression, or bone-structure intent.
+Do not reproduce a protected character or edit a real person. References must be supplied. Bind only an accepted public image URL, in supplied order—never invent a URL or asset token. Clothing must not override the requested face, skin, expression, or bone-structure intent.
 
 #### Example
 

@@ -1,6 +1,6 @@
 ---
 name: add-braces
-description: Add one realistic braces treatment to the visible teeth of an authorized smiling portrait while preserving identity, teeth layout, lips, bite, face, expression, skin, hair, clothing, and background. Use for cosmetic orthodontic visualization of metal, ceramic, or colored brackets; do not use for diagnosis or treatment prediction.
+description: Add one realistic braces treatment to the visible teeth of a supplied smiling portrait while preserving identity, teeth layout, lips, bite, face, expression, skin, hair, clothing, and background. Use for cosmetic orthodontic visualization of metal, ceramic, or colored brackets; do not use for diagnosis or treatment prediction.
 ---
 
 # Add Braces

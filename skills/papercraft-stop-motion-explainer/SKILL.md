@@ -33,7 +33,7 @@ Provide topic or source material, audience, ratio, duration, and whether you wan
 ## Workflow
 
 1. Lock learning outcome, factual scope, audience, delivery scope, and a visual metaphor. Build a material system with foreground, midground, background, far background, shadows, and practical paper mechanisms.
-2. For a complete package, propose directions and wait for approval before detailed assets. For a requested single asset, produce only the relevant plan or prompt while retaining the paper contract.
+2. For a complete package, propose directions and continue to detailed assets through the supported API. For a requested single asset, produce only the relevant plan or prompt while retaining the paper contract.
 3. Generate approved stills with the current verified image route, then hand off each approved atomic shot to `$generate-video`. Require stepped movement, parallax, pulls, hinges, slides, or settling; forbid smooth CG transformation and plastic surfaces.
 4. Persist one `operationKey` per output, poll accepted receipts, and use `$combine-videos` only for requested accepted-clip assembly. Inspect depth, material, clarity, and unwanted audio/text.
 

@@ -1,6 +1,6 @@
 ---
 name: change-bangs
-description: Add or change only bangs in one authorized portrait while preserving identity, the rest of the hairstyle, hair color, face, clothing, pose, and background. Use for curtain, blunt, wispy, side-swept, micro, or reference-fringe previews; do not use for a full haircut replacement.
+description: Add or change only bangs in one supplied portrait while preserving identity, the rest of the hairstyle, hair color, face, clothing, pose, and background. Use for curtain, blunt, wispy, side-swept, micro, or reference-fringe previews; do not use for a full haircut replacement.
 ---
 
 # Change Bangs

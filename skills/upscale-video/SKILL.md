@@ -28,7 +28,7 @@ Provide video, target resolution, priority regions, denoise and sharpening limit
 #### Example
 
 ```text
-Upscale this authorized 720p clip to 4K; mild denoise only; preserve faces, film grain and exact duration.
+Upscale this supplied 720p clip to 4K; mild denoise only; preserve faces, film grain and exact duration.
 ```
 
 ## Workflow

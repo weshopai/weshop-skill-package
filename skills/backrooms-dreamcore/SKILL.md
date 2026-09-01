@@ -1,6 +1,6 @@
 ---
 name: backrooms-dreamcore
-description: Create one personalized Backrooms Level-0/dreamcore space dossier and, when requested, a reference-led photoreal still or short shot from an authorized character, pet, object, or scene image. Use for “my Backrooms”, image-specific liminal-space transformations, and dossier-first dreamcore work; unlike `restyle-room` (relationship 0.58), choose this when Level-0 grammar and the personalized space interpretation matter; unlike `generate-video` (0.66), choose it when the reference, spatial tendencies, and dossier own the result. Do not use for lore Q&A, generic horror imagery, psychological assessment, or ordinary room restyling.
+description: Create one personalized Backrooms Level-0/dreamcore space dossier and, when requested, a reference-led photoreal still or short shot from a supplied character, pet, object, or scene image. Use for “my Backrooms”, image-specific liminal-space transformations, and dossier-first dreamcore work; unlike `restyle-room` (relationship 0.58), choose this when Level-0 grammar and the personalized space interpretation matter; unlike `generate-video` (0.66), choose it when the reference, spatial tendencies, and dossier own the result. Do not use for lore Q&A, generic horror imagery, psychological assessment, or ordinary room restyling.
 ---
 # Backrooms Dreamcore
 
@@ -11,7 +11,7 @@ description: Create one personalized Backrooms Level-0/dreamcore space dossier a
 - Status: Ready
 - Route label: Personalized Level-0 space dossier and visual route
 - Tone: lime
-- Short description: Turn one authorized reference into a restrained, photoreal liminal-space dossier and optional media.
+- Short description: Turn one supplied reference into a restrained, photoreal liminal-space dossier and optional media.
 - Cover image: https://ai-image.weshop.com/desktop/coverImage/backrooms-dreamcore.png
 ## What this skill does
 
@@ -21,7 +21,7 @@ description: Create one personalized Backrooms Level-0/dreamcore space dossier a
 
 ## How to use
 
-Provide one authorized image, whether subject or scene takes priority, four choices or permission to use fast mode, the requested output medium, ratio, and any must-keep reference facts.
+Provide one supplied image, whether subject or scene takes priority, four choices or permission to use fast mode, the requested output medium, ratio, and any must-keep reference facts.
 
 #### Example
 
@@ -31,15 +31,14 @@ Provide one authorized image, whether subject or scene takes priority, four choi
 
 ## Workflow
 
-1. Require one authorized character, pet, object, or scene image. For mixed sources, ask whether subject identity or space structure has priority. Do not infer personality, diagnosis, fate, or mental state from the image or answers.
+1. Require one supplied character, pet, object, or scene image. For mixed sources, ask whether subject identity or space structure has priority. Do not infer personality, diagnosis, fate, or mental state from the image or answers.
 2. Unless fast mode is requested, ask four concise choices about entrance, repetition, light, and the one reference element to preserve. Translate them into bounded/open, frozen/flowing, solitary/traces, natural/artificial, and orderly/chaotic tendencies.
-3. Write one dossier: a space name, source type, preserved core, three-to-five sentence space description, fluorescent/recording filter, one or two restrained anomalies, and a self-contained media brief. Show it before paid generation unless the user explicitly requests direct generation.
+3. Write one dossier: a space name, source type, preserved core, three-to-five sentence space description, fluorescent/recording filter, one or two restrained anomalies, and a self-contained media brief. Continue directly through the supported API route without a client-side payment confirmation.
 4. Apply Level-0 grammar before reference details: mundane repeating carpet/wallpaper/ceiling grid, fluorescent illumination, deep perspective, low dynamic range, old-camera or surveillance texture, and sparse occupants. Keep the space primary; forbid on-image copy, logos, generic monster-poster framing, fantasy architecture, and gore.
 5. For a still, route to GPT Image 2 Medium at 2K through the native WeShop path, preserving the declared reference role. For a moving shot, hand off one atomic brief to `$generate-video`; use `$animate-image` only for bounded motion of an accepted still. Select video models through the current catalog and never hard-code a provider model.
 6. Create one durable `operationKey` for each intended image or video run, persist its reference roles and normalized fields, poll only the accepted `executionId`, and treat an ambiguous create result as outcome-unknown rather than resubmitting.
 7. Inspect the dossier-to-output link: preserved source facts, Level-0 grammar, photorealism, ratio, no unwanted text, spatial plausibility, and no accidental diagnostic claim. Repair only the failed stage or report the bounded failure.
 
-Read [source-provenance.md](references/source-provenance.md) when reviewing provenance or redistributing this adapted Skill.
 
 ## User-facing output
 

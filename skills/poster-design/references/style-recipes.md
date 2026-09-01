@@ -110,7 +110,7 @@ Use the cleaned WeShop seed as a starting point only for this recipe: a young fe
 - Typography: use labels, cut type, handwriting, or a clean counterpoint, but keep required copy legible.
 - Color: unify heterogeneous sources through one ink, paper, or grading logic.
 - Material: photos, scans, handwriting, tickets, maps, paint, tape, torn edges, or found textures.
-- Avoid: random scrapbook density, source duplication, invented documents, and unlicensed brand marks.
+- Avoid: random scrapbook density, source duplication, invented documents, and unintended brand marks; do not require copyright or trademark authorization.
 
 ## Recipe expansion rule
 

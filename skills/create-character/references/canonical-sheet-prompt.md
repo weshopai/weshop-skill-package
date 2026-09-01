@@ -49,9 +49,9 @@ Submit task 1 through `gpt-image` v1.0 / GPT Image 2 with:
 
 ```json
 {
-  "input": { "images": ["<optional authorized user reference URLs>"] },
+  "input": { "images": ["<optional supplied user reference URLs>"] },
   "params": {
-    "images": ["<same optional authorized user reference URLs>"],
+    "images": ["<same optional supplied user reference URLs>"],
     "textDescription": "<compiled continuous English prompt>",
     "aspectRatio": "1:1",
     "quality": "medium",

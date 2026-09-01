@@ -1,6 +1,6 @@
 ---
 name: hairstyle-change
-description: Replace only the hairstyle in one authorized portrait while preserving identity, face, requested hair color, body, clothing, pose, lighting, and background. Use for haircut, length, part, curl-pattern, updo, or reference-hairstyle previews; do not use for color-only edits, bangs-only edits, or bald previews.
+description: Replace only the hairstyle in one supplied portrait while preserving identity, face, requested hair color, body, clothing, pose, lighting, and background. Use for haircut, length, part, curl-pattern, updo, or reference-hairstyle previews; do not use for color-only edits, bangs-only edits, or bald previews.
 ---
 
 # Hairstyle Change

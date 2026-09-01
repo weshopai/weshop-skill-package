@@ -1,6 +1,6 @@
 ---
 name: retouch-blemish
-description: Remove named temporary skin blemishes from an authorized portrait while preserving identity, pores, skin texture, age, facial structure, marks not requested for removal, lighting, and background. Use for restrained portrait retouching, not beauty filtering or face reshaping.
+description: Remove named temporary skin blemishes from a supplied portrait while preserving identity, pores, skin texture, age, facial structure, marks not requested for removal, lighting, and background. Use for restrained portrait retouching, not beauty filtering or face reshaping.
 ---
 # Retouch Blemish
 ## Catalog
@@ -17,7 +17,7 @@ description: Remove named temporary skin blemishes from an authorized portrait w
 - Removes only specified temporary spots, redness, or small imperfections.
 - Preserves identity, pores, natural tonal variation, freckles, moles, and age unless explicitly targeted.
 ## How to use
-Provide an authorized portrait and specify which temporary blemishes to remove and which marks to keep.
+Provide a supplied portrait and specify which temporary blemishes to remove and which marks to keep.
 #### Retouch one portrait
 ```text
 Remove the temporary forehead and chin blemishes; keep freckles, pores, mole, face shape, and lighting.

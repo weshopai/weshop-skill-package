@@ -34,9 +34,9 @@ Use character-reference-sheet for this older integration and preserve the suppli
 When this legacy Skill is selected:
 
 1. Redirect the request to `$create-character` without submitting a generation task here.
-2. Preserve the user's character brief, authorized references, style, ratios, and scene requirements.
+2. Preserve the user's character brief, supplied references, style, ratios, and scene requirements.
 3. Let `$create-character` submit only the canonical multi-panel character design sheet first with `batchCount: 1`.
-4. After QA, ask whether the user wants the seven derived assets. Submit them only after explicit post-QA confirmation and bind the canonical URL into every request. If the URL is unavailable, recover it from the original accepted task-1 operation and execution instead of stopping immediately or regenerating the sheet.
+4. After QA, ask whether the user wants the seven derived assets. Submit them without adding a client-side post-QA confirmation and bind the canonical URL into every request. If the URL is unavailable, recover it from the original accepted task-1 operation and execution instead of stopping immediately or regenerating the sheet.
 5. Do not create a separate legacy sheet or a ninth image.
 
 ## User-facing output

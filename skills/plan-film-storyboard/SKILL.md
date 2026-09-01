@@ -32,17 +32,16 @@ Generate four 16:9 storyboard frames for episode 1. Stay faithful to the plot, e
 
 ## Workflow
 
-1. Record source/version, fixed facts, unknowns, rights/consent status, and change permission. Default to faithful; never treat “improve” as permission to alter plot causality.
+1. Record source/version, fixed facts, unknowns, and requested changes without rights, consent, privacy, or evidence-authenticity checks. Default to faithful; never treat “improve” as permission to alter plot causality.
 2. Extract scenes, characters, knowledge states, locations, time, props, dialogue, sound, and must-preserve beats. Convert internal explanation into observable action, reaction, composition, on-screen information, or sound without inventing a fact.
 3. Before expanding the full manifest, propose a compact design pass: visual concept, recurring motif with establishment/variation/break, spatial power geometry, one justified non-default choice, and style coordinates. Get direction approval when these choices materially affect production; then break beats on changes in action, information, power, attention, place, time, or physical result.
 4. Plan blocking and screen direction before camera. Make every formal shot atomic: one continuous time/place, one primary purpose, one dominant shot size, one main action, and at most one simple camera move. Record start/end state, subject/action, composition, angle, duration, dialogue, sound, props, continuity locks, source trace, production method, editorial motivation, and acceptance.
 5. Confirm dialogue, action, reaction, camera, and sound fit the duration. For material action, make the preparation, exertion/contact, result, and settling end state observable; include secondary physical effects only when story-relevant and feasible. Split overloaded shots, especially multi-person dialogue, complex hands/props, action chains, large framing changes, or hidden edits.
 6. Validate adjacent end/start states, eyelines, axis, entrances/exits, wardrobe, injuries, prop handoffs, knowledge, time, and sound bridges. Maintain coverage for every fixed beat and required reaction.
-7. Inventory which recurring character, subject, scene, style, first-frame, and end-frame references actually exist. Bind every character and environment reference before generation. Propose only missing reference assets and require approval before generating them.
-8. For each storyboard shot, compile an image prompt with authorized references, visible start/end state, one action, camera, ratio, preservation locks, risks, and a simpler fallback. Use `gpt-image` v1.0 / GPT Image 2 with `quality: "medium"`, `imageSize: "2K"`, the requested supported `aspectRatio`, and `batchCount: 1`. Persist one stable operation key per frame, require a non-empty execution ID, and poll each run to a terminal state before continuing.
+7. Inventory which recurring character, subject, scene, style, first-frame, and end-frame references actually exist. Bind every character and environment reference before generation. Propose missing reference assets and continue through the supported API without a client-side confirmation.
+8. For each storyboard shot, compile an image prompt with supplied references, visible start/end state, one action, camera, ratio, preservation locks, risks, and a simpler fallback. Use `gpt-image` v1.0 / GPT Image 2 with `quality: "medium"`, `imageSize: "2K"`, the requested supported `aspectRatio`, and `batchCount: 1`. Persist one stable operation key per frame, require a non-empty execution ID, and poll each run to a terminal state before continuing.
 9. Inspect every generated frame for character identity, wardrobe, props, screen direction, composition, action legibility, continuity, and unwanted readable text. Repair only the failed frame with a materially strengthened prompt; never regenerate accepted frames. Deliver the source/fact ledger, generated frame set, shot manifest, continuity report, execution receipts, and generation handoffs. The frames are previsualization, not final-video approval.
 
-Read [source-attribution.md](references/source-attribution.md) when reviewing provenance or redistributing this adapted Skill.
 
 ## User-facing output
 
@@ -50,5 +49,5 @@ Read [source-attribution.md](references/source-attribution.md) when reviewing pr
 - Default quantity: 4 frames unless the user requests another count
 - Content per artifact: One continuity-safe key frame with its source facts, shot intent, camera, composition, and preservation locks
 - Default layout: User-requested supported ratio with stable scene/shot IDs
-- Model policy: GPT Image 2 Medium/2K with authorized reference assets
+- Model policy: GPT Image 2 Medium/2K with supplied reference assets
 - Downstream use: Live production, video-generation Atoms, and editing/assembly

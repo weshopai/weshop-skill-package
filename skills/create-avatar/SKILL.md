@@ -1,6 +1,6 @@
 ---
 name: create-avatar
-description: Create one small-size-readable profile avatar from an authorized portrait or fictional brief. Use for account icons, community profiles, and compact identity marks; do not use for professional headshots, full character sheets, ID photos, or full-body character artwork.
+description: Create one small-size-readable profile avatar from a supplied portrait or fictional brief. Use for account icons, community profiles, and compact identity marks; do not use for professional headshots, full character sheets, ID photos, or full-body character artwork.
 ---
 # Create Avatar
 
@@ -11,21 +11,21 @@ description: Create one small-size-readable profile avatar from an authorized po
 - Status: Ready
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: blue
-- Short description: Create one small-size-readable profile avatar from an authorized portrait or fictional brief.
+- Short description: Create one small-size-readable profile avatar from a supplied portrait or fictional brief.
 - Cover image: https://ai-image.weshop.com/desktop/coverImage/create-avatar.png
 ## What this skill does
 
 - Creates a centered profile image whose face or defining symbol remains readable at icon size.
-- Preserves authorized subject traits without treating avatar style as a generic filter.
+- Preserves supplied subject traits without treating avatar style as a generic filter.
 
 ## How to use
 
-Provide an authorized portrait or fictional description, intended platform, crop and one chosen style.
+Provide a supplied portrait or fictional description, intended platform, crop and one chosen style.
 
 #### Example
 
 ```text
-Turn this authorized portrait into a clean 1:1 flat editorial avatar; preserve face shape, hair and glasses; simple coral background.
+Turn this supplied portrait into a clean 1:1 flat editorial avatar; preserve face shape, hair and glasses; simple coral background.
 ```
 
 ## Workflow

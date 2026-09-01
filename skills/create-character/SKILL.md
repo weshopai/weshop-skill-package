@@ -16,14 +16,14 @@ description: "Create an original reusable character through a canonical-first wo
 - Similar skills: casting, create-npc
 ## What this skill does
 
-- Turns a brief or authorized identity reference into one reusable original character.
+- Turns a brief or supplied identity reference into one reusable original character.
 - Establishes the character with one canonical multi-panel design sheet before any derived image is submitted.
 - Produces one canonical identity asset by default, then offers seven identity-bound production assets as an optional confirmed expansion.
 - Replaces the former standalone `character-reference-sheet` generation workflow.
 
 ## How to use
 
-Provide the role, species, apparent age, world, body and face anchors, hair, wardrobe construction, palette, signature features or props, personality, visual style, and any authorized references. Provide two scene briefs when their content matters; otherwise derive two distinct story-relevant environments from the character's world.
+Provide the role, species, apparent age, world, body and face anchors, hair, wardrobe construction, palette, signature features or props, personality, visual style, and any supplied references. Provide two scene briefs when their content matters; otherwise derive two distinct story-relevant environments from the character's world.
 
 #### Example
 
@@ -35,14 +35,14 @@ Create a complete character pack for Lin, a tired 24-year-old night courier with
 
 1. Resolve an original character brief. Reject exact copying of a protected character; references may guide declared traits without reproducing a protected identity or design.
 2. Lock the canonical invariants before generation: face and apparent age, hair, body proportions, wardrobe construction and materials, palette, distinctive marks, and signature props.
-3. If the user supplies an authorized identity reference, use it to establish the first canonical sheet. Never inherit an unrelated reference background, action, layout, or pose.
+3. If the user supplies a supplied identity reference, use it to establish the first canonical sheet. Never inherit an unrelated reference background, action, layout, or pose.
 4. Keep the same character and default wardrobe across all eight assets. Change only the task-owned property such as viewpoint, crop, lighting, portrait treatment, or scene.
 
 ## Two-phase workflow
 
 Plan up to eight atomic image tasks. Persist one stable `operationKey` per submitted task and use `batchCount: 1` for every submission. Do not treat the seven derived tasks as authorized merely because they are listed in the workflow.
 
-1. **Canonical character design sheet — the only default submission.** Read [references/canonical-sheet-prompt.md](references/canonical-sheet-prompt.md), compile its contract with the user's brief and authorized references, and create one polished multi-panel identity sheet. This output may become the canonical identity reference for tasks 2–8.
+1. **Canonical character design sheet — the only default submission.** Read [references/canonical-sheet-prompt.md](references/canonical-sheet-prompt.md), compile its contract with the user's brief and supplied references, and create one polished multi-panel identity sheet. This output may become the canonical identity reference for tasks 2–8.
 2. **Full-body front view.** Neutral full-body front view with the complete canonical wardrobe and proportions visible.
 3. **Full-body rear view.** Genuine full-body back view showing the canonical hair, garment construction, accessories, and silhouette from behind.
 4. **Head close-up.** Head-and-shoulders identity close-up with a readable canonical face, apparent age, hairline, and distinctive marks.

@@ -40,7 +40,6 @@ Create a seven-page Xiaohongshu carousel for first-time renters about avoiding d
 6. Inspect native size and a small phone preview. Check page number/order, exact requested copy, mobile legibility, safe zones, crop, subject/brand preservation, shared visual system, and a non-repetitive swipe narrative.
 7. Preserve all terminal results. Retry only a failed or rejected page using a new linked operation key and a prompt changed for its observed defect. If generated lettering remains wrong, repair that page through a suitable deterministic text/layout step or report the limitation; do not regenerate accepted pages.
 
-Read [source-attribution.md](references/source-attribution.md) when reviewing provenance or redistributing this adapted Skill.
 
 ## User-facing output
 

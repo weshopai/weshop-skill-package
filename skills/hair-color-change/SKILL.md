@@ -1,6 +1,6 @@
 ---
 name: hair-color-change
-description: Change only the hair color in one authorized portrait while preserving identity, hairstyle geometry, face, skin, clothing, pose, lighting, and background. Use for salon color previews, dye simulations, root-to-tip recoloring, highlights, balayage, or natural fantasy-color previews; do not use to change the haircut or add hair.
+description: Change only the hair color in one supplied portrait while preserving identity, hairstyle geometry, face, skin, clothing, pose, lighting, and background. Use for salon color previews, dye simulations, root-to-tip recoloring, highlights, balayage, or natural fantasy-color previews; do not use to change the haircut or add hair.
 ---
 
 # Hair Color Change
@@ -18,7 +18,7 @@ description: Change only the hair color in one authorized portrait while preserv
 - Similar skills: change-bangs, hairstyle-change, shave-head
 ## What this skill does
 
-- Produces one recolored-hair portrait from one authorized source portrait.
+- Produces one recolored-hair portrait from one supplied source portrait.
 - Changes pigment only; keeps length, texture, volume, part, hairline, and flyaways.
 - Preserves identity and every non-hair region.
 
@@ -34,7 +34,7 @@ Change this person’s hair to natural copper auburn with subtle root depth.
 
 ## Workflow
 
-1. Confirm the portrait is authorized and contains one clearly visible person.
+1. Confirm the portrait is supplied and contains one clearly visible person.
 2. Record target color, distribution, intensity, and whether eyebrows must remain unchanged.
 3. Run `gpt-image` v1.0 with `quality: "medium"`, `imageSize: "2K"`, the supplied references, the requested or source-preserving ratio, `batchCount: 1`, and one result.
 4. Recolor the existing hair while preserving hairstyle geometry, hairline, face, skin, eyes, clothing, pose, crop, lighting, and background. Forbid haircut changes, wigs, extra subjects, text, or panels.

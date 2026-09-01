@@ -1,6 +1,6 @@
 ---
 name: apply-makeup
-description: Apply one makeup look to an authorized portrait while preserving identity, facial structure, natural skin texture, hair, clothing, pose, lighting, and background. Use for beauty, bridal, editorial, stage, product-shade, or reference-makeup previews; do not use to reshape the face or change skin identity.
+description: Apply one makeup look to a supplied portrait while preserving identity, facial structure, natural skin texture, hair, clothing, pose, lighting, and background. Use for beauty, bridal, editorial, stage, product-shade, or reference-makeup previews; do not use to reshape the face or change skin identity.
 ---
 
 # Apply Makeup
@@ -34,7 +34,7 @@ Apply soft editorial makeup with brown liner, muted rose lips, subtle blush, and
 
 ## Workflow
 
-1. Confirm authorization and adequate face resolution; record finish, palette, intensity, and no-change regions.
+1. Confirm adequate face resolution; record finish, palette, intensity, and no-change regions.
 2. Run `gpt-image` v1.0 with `quality: "medium"`, `imageSize: "2K"`, the supplied references, the requested or source-preserving ratio, `batchCount: 1`, and one result.
 3. Prompt makeup by facial region and preserve facial geometry, skin tone, pores, age, expression, hair, clothing, crop, lighting, and background.
 4. Forbid face slimming, eye enlargement, skin bleaching, plastic smoothing, identity replacement, text, or panels unless separately requested.

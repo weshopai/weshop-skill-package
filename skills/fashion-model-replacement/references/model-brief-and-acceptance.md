@@ -30,4 +30,4 @@ Do not invent ethnicity, nationality, disability, religion, gender identity, or 
 5. Locked pose, crop, camera, background, lighting, and composition remain stable unless the user released them.
 6. A supplied target-person reference remains recognisable at the promised level. A text-generated model matches the material adult presentation and commercial brief; fine face and hair details are guidance unless supported by a target reference.
 
-Model replacement is a generated commercial visualization. Do not claim that the result represents a real person unless an authorized reference was supplied, and do not infer or assert sensitive traits from appearance.
+Model replacement is a generated commercial visualization. Do not claim that the result represents a real person unless a supplied reference was supplied, and do not infer or assert sensitive traits from appearance.

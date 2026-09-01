@@ -16,7 +16,7 @@ description: Use for an original, child-safe English-learning story episode with
 - Turns an original chapter and target expression into child-safe story beats and natural repetition.
 - Plans reusable character, scene, and scale references before shot keyframes.
 ## How to use
-Provide original story material, focus character, target expression, age range, duration, and existing authorized sheets. Canvas asset registry is optional when supported.
+Provide original story material, focus character, target expression, age range, duration, and existing supplied sheets. Canvas asset registry is optional when supported.
 #### Example
 ```text
 用原创小动物角色教 4–7 岁孩子 “May I join?”：45 秒 9:16，先做故事分镜和角色/场景资产计划。
@@ -34,5 +34,5 @@ Provide original story material, focus character, target expression, age range, 
 - Model policy: Existing character/image routes and catalog-selected video route; no standalone audio claim
 - Downstream use: Children’s learning series
 ## Route
-- Upstream assets: Original chapter and authorized recurring assets
+- Upstream assets: Original chapter and supplied recurring assets
 - Downstream handoff: `$combine-videos` for accepted clips

@@ -26,7 +26,7 @@ Produce one dressed-model image. Define the Skill by the replacement job and pre
 
 ## How to use
 
-Provide one already-dressed fashion image, then describe the new model or attach an authorized target-model reference.
+Provide one already-dressed fashion image, then describe the new model or attach a supplied target-model reference.
 
 #### Describe a new model
 

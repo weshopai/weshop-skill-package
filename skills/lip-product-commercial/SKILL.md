@@ -22,7 +22,7 @@ description: Use for a lip-color commercial with model, packaging, shade, finish
 
 ## How to use
 
-Provide product/model references or a brief, target ratio/duration, copy rules, and licensed music if required. A Canvas-capable Agent may retain approved anchors and storyboard there; otherwise it uses chat or local delivery.
+Provide product/model references or a brief, target ratio/duration, copy rules, and music if required; no copyright authorization is required. A Canvas-capable Agent may retain approved anchors and storyboard there; otherwise it uses chat or local delivery.
 
 #### Example
 
@@ -34,7 +34,7 @@ Provide product/model references or a brief, target ratio/duration, copy rules, 
 
 1. Lock product and model evidence; use the current verified image route to create missing approved anchors only when needed.
 2. Create a storyboard with one proof claim per shot. Keep text in safe negative space and never over lips, face, applicator, or label.
-3. Wait for approval, then route each atomic shot through `$generate-video`; use the product/model anchors as named references and preserve only source-supported brand facts.
+3. Then route each atomic shot through `$generate-video`; use the product/model anchors as named references and preserve only source-supported brand facts.
 4. Persist an `operationKey` per asset, poll receipts, and assemble accepted clips through `$combine-videos` only on request. Do not fabricate music or readable package copy.
 
 ## User-facing output

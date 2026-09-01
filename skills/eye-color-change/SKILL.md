@@ -1,6 +1,6 @@
 ---
 name: eye-color-change
-description: Change only both iris colors in one authorized portrait while preserving identity, pupil size, sclera, catchlights, eyelids, gaze, facial structure, skin, hair, clothing, lighting, and background. Use for natural contact-lens or eye-color previews; do not use for eye-shape changes or medical simulation.
+description: Change only both iris colors in one supplied portrait while preserving identity, pupil size, sclera, catchlights, eyelids, gaze, facial structure, skin, hair, clothing, lighting, and background. Use for natural contact-lens or eye-color previews; do not use for eye-shape changes or medical simulation.
 ---
 
 # Eye Color Change

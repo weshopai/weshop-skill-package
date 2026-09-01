@@ -55,7 +55,6 @@ Run candidates independently. Persist a unique stable `operationKey` before each
 
 Inspect each returned asset for the declared shape, subject count, crop, paired-feature, text, and background invariants. Preserve and report every terminal result, including a result that misses an aesthetic invariant; do not silently filter it. Retry only when the user requests a replacement or a terminal run fails. A replacement uses a new linked operation key and a prompt revised for the observed failure; never blindly resubmit an identical request.
 
-Read [source-attribution.md](references/source-attribution.md) when reviewing provenance or redistributing this adapted Skill.
 
 ## User-facing output
 

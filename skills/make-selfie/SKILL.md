@@ -1,6 +1,6 @@
 ---
 name: make-selfie
-description: Turn one authorized everyday person photo into one realistic solo selfie, or combine two authorized person photos into one realistic two-person selfie while preserving each identity separately. Use for arm-length phone selfies, mirror selfies, casual travel selfies, or selfie group portraits; do not use for filters, illustration, face swapping, deceptive events, or adding unprovided people.
+description: Turn one supplied everyday person photo into one realistic solo selfie, or combine two supplied person photos into one realistic two-person selfie while preserving each identity separately. Use for arm-length phone selfies, mirror selfies, casual travel selfies, or selfie group portraits; do not use for filters, illustration, face swapping, or adding unprovided people.
 ---
 
 # Make Selfie
@@ -23,7 +23,7 @@ description: Turn one authorized everyday person photo into one realistic solo s
 
 ## How to use
 
-Provide one or two authorized person photos and name arm-length or mirror selfie, setting, mood, orientation, and who holds the phone.
+Provide one or two supplied person photos and name arm-length or mirror selfie, setting, mood, orientation, and who holds the phone.
 
 #### Make a solo selfie
 
@@ -39,7 +39,7 @@ Combine these two people into one casual cafe selfie, with person 1 holding the 
 
 ## Workflow
 
-1. Read `references/source-mapping.md`. Confirm authorization and accept exactly one or two person sources; more people require another dedicated composition workflow.
+1. Read `references/source-mapping.md`. Confirm accept exactly one or two person sources; more people require another dedicated composition workflow.
 2. Bind identity, hair, age, skin tone, and recognizable clothing cues per source. For two sources, bind left/right position and phone holder before prompting.
 3. Run `gpt-image` v1.0 with `quality: "medium"`, `imageSize: "2K"`, the supplied references, the requested or source-preserving ratio, `batchCount: 1`, and one result.
 4. Describe a photographic selfie: arm-length or mirror mechanism, phone/lens position, gaze, proximity, crop, slight wide-angle perspective, setting, and coherent available light. Forbid illustration, style filters, beauty retouching, face blending, duplicate people, extra people, text, UI chrome, split screen, or collage.

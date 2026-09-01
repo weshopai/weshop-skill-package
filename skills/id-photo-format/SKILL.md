@@ -1,6 +1,6 @@
 ---
 name: id-photo-format
-description: Prepare one authorized portrait for one explicitly named ID-photo or passport-photo specification using current issuing-authority research, neutral capture correction, measured crown-to-chin cropping, exact dimensions, background, format, and DPI. Use for passport, visa, license, school, application, or print preparation; never assume universal ear, crop, lighting, or AI-edit rules and never fabricate identity.
+description: Prepare one supplied portrait for one explicitly named ID-photo or passport-photo specification using current issuing-authority research, neutral capture correction, measured crown-to-chin cropping, exact dimensions, background, format, and DPI. Use for passport, visa, license, school, application, or print preparation; never assume universal ear, crop, lighting, or AI-edit rules and never fabricate identity.
 ---
 
 # ID Photo Format
@@ -39,7 +39,7 @@ Prepare this portrait for the named passport application. Find the current offic
 1. Read `references/authority-research.md` and browse the current issuing authority's official source. Record every required field and whether AI or digital alteration is allowed. If prohibited, stop before generation and provide capture/crop guidance only.
 2. Inspect the source. Reject blur, insufficient resolution, severe pose, covered eyes/facial edges, clipped head, or lighting that cannot be corrected without reconstructing identity.
 3. Build a neutral capture contract: full-front head, level gaze, required expression, both facial edges visible, ears visible only when the official rule requires them, natural skin tone, uniform exposure, and no face or background shadow.
-4. Use GPT Image 2 Medium/2K only for an authorized non-submission preview or where the authority permits the required correction. Never beautify, reshape, invent facial details, or imply official acceptance.
+4. Use GPT Image 2 Medium/2K only for a non-submission preview or where the authority permits the required correction. Never beautify, reshape, invent facial details, or imply official acceptance.
 5. Measure the crown-to-chin box and run `scripts/format_id_photo.py` with official head-height and top-margin ratios. The script owns final scaling, crop, dimensions, background fill, and DPI.
 6. Re-open the file and verify pixels, DPI, head ratio, top margin, centering, facial-edge/ear rule, shoulders, background color, exposure, shadow, expression, and identity against the recorded source.
 

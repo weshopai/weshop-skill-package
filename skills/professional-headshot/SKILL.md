@@ -1,6 +1,6 @@
 ---
 name: professional-headshot
-description: Turn one authorized portrait into one researched, identity-faithful professional headshot with channel-appropriate background, seated or standing posture, shoulder line, lighting, wardrobe, expression, crop, and safe area. Use for LinkedIn, company directories, speaker bios, resumes, press profiles, executive portraits, or team pages; research current channel and profession conventions before generation.
+description: Turn one supplied portrait into one researched, identity-faithful professional headshot with channel-appropriate background, seated or standing posture, shoulder line, lighting, wardrobe, expression, crop, and safe area. Use for LinkedIn, company directories, speaker bios, resumes, press profiles, executive portraits, or team pages; research current channel and profession conventions before generation.
 ---
 
 # Professional Headshot

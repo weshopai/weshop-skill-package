@@ -1,6 +1,6 @@
 ---
 name: recreate-social-photo
-description: Recreate the composition, camera feel, lighting, color treatment, and mood of a supplied social-photo reference with an authorized everyday source photo while preserving source identity. Use for reference-led casual social photos, not generic studio shoots or filter-only edits.
+description: Recreate the composition, camera feel, lighting, color treatment, and mood of a supplied social-photo reference with a supplied everyday source photo while preserving source identity. Use for reference-led casual social photos, not generic studio shoots or filter-only edits.
 ---
 # Recreate Social Photo
 ## Catalog
@@ -16,7 +16,7 @@ description: Recreate the composition, camera feel, lighting, color treatment, a
 - Maps source identity and reference visual grammar separately.
 - Recreates framing, pose energy, lens feel, light, grade, texture, and mood without copying reference identity.
 ## How to use
-Provide one authorized person photo and one visual reference; state protected traits.
+Provide one supplied person photo and one visual reference; state protected traits.
 #### Recreate a social photo
 ```text
 Use my portrait as the person and image 2 only for composition, light, color, and mood.

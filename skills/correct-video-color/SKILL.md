@@ -40,7 +40,6 @@ Correct the mixed green fluorescent and daylight cast; keep skin natural and pre
 5. Use MiniMax H3 only when the defect varies within shots or requires temporal video rewriting that deterministic grading cannot solve. Give correction-only instructions and do not regenerate frames independently.
 6. Export to the requested color space/codec without overwriting the source. Re-measure and visually inspect representative frames plus the full timeline for neutrals, protected colors, clipping, banding, skin, flicker, shot matching, gamut/transfer tags, audio preservation, and playback.
 
-Read [source-attribution.md](references/source-attribution.md) when reviewing provenance or redistributing this adapted Skill.
 
 ## User-facing output
 

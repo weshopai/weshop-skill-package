@@ -16,7 +16,7 @@ description: Use for a decorative print-illustration short with fine closed line
 - Plans generic decorative print art direction without copying protected designs.
 - Creates key art and paired wide/close action shots with optional native SFX.
 ## How to use
-Provide theme, ratio, duration, authorized references, and any requested audio. Canvas plan storage is used only when supported.
+Provide theme, ratio, duration, supplied references, and any requested audio. Canvas plan storage is used only when supported.
 #### Example
 ```text
 做一支 16:9 装饰印刷风茶席短片：每个场景先全景再手部近景，只要茶水与瓷器轻响。
@@ -34,5 +34,5 @@ Provide theme, ratio, duration, authorized references, and any requested audio. 
 - Model policy: Current image and catalog-selected video routes; no standalone audio claim
 - Downstream use: Decorative creative advertising
 ## Route
-- Upstream assets: Theme and optional authorized reference
+- Upstream assets: Theme and optional supplied reference
 - Downstream handoff: `$combine-videos` for accepted clips

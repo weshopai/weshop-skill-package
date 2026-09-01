@@ -1,6 +1,6 @@
 ---
 name: shave-head
-description: Preview one authorized person with a natural bald or closely shaved scalp while preserving identity, face, age, head shape, skin tone, facial hair, clothing, pose, lighting, and background. Use for clean-shaven head, buzz cut, or hair-loss appearance previews; do not use for medical prediction.
+description: Preview one supplied person with a natural bald or closely shaved scalp while preserving identity, face, age, head shape, skin tone, facial hair, clothing, pose, lighting, and background. Use for clean-shaven head, buzz cut, or hair-loss appearance previews; do not use for medical prediction.
 ---
 
 # Shave Head
@@ -34,7 +34,7 @@ Show this person with a clean naturally shaved scalp while keeping their beard u
 
 ## Workflow
 
-1. Confirm authorization and one visible head; note hats, hands, or other occlusions.
+1. Confirm one visible head; note hats, hands, or other occlusions.
 2. Record scalp finish, stubble amount, and facial-hair lock.
 3. Run `gpt-image` v1.0 with `quality: "medium"`, `imageSize: "2K"`, the supplied references, the requested or source-preserving ratio, `batchCount: 1`, and one result.
 4. Remove only scalp hair; preserve skull proportions, face, brows, lashes, facial hair, skin tone, age, pose, clothing, lighting, crop, and background.

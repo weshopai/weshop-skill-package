@@ -40,7 +40,6 @@ Write three hooks for a 30-second LinkedIn video explaining why small teams shou
 
 This Atom performs no paid generation. Hand the selected hook to the relevant script, commercial, explainer, or social-video workflow.
 
-Read [source-attribution.md](references/source-attribution.md) when reviewing provenance or redistributing this adapted Skill.
 
 ## User-facing output
 

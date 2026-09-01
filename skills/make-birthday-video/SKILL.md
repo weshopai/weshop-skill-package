@@ -1,6 +1,6 @@
 ---
 name: make-birthday-video
-description: Create one complete birthday memory video from authorized photos or clips, exact messages, and licensed or original audio. Use for birthday-specific greetings and memory montages; do not use for generic social edits, weddings, holidays, podcast programs, or generating an unrelated cinematic shot.
+description: Create one complete birthday memory video from supplied photos or clips, exact messages, and supplied audio. Use for birthday-specific greetings and memory montages; do not use for generic social edits, weddings, holidays, podcast programs, or generating an unrelated cinematic shot.
 ---
 # Make Birthday Video
 
@@ -11,7 +11,7 @@ description: Create one complete birthday memory video from authorized photos or
 - Status: Ready
 - Route label: Memory-led birthday video assembly
 - Tone: yellow
-- Short description: Create one complete birthday memory video from authorized media, exact messages and licensed or original audio.
+- Short description: Create one complete birthday memory video from supplied media, exact messages and supplied audio.
 
 - Cover image: https://ai-image.weshop.com/desktop/coverImage/make-birthday-video.png
 - Cover motion: https://ai-image.weshop.com/desktop/coverVideo/make-birthday-video.mp4
@@ -22,26 +22,26 @@ description: Create one complete birthday memory video from authorized photos or
 
 ## How to use
 
-Provide authorized photos and clips, recipient, exact messages, chronology, runtime, ratio and music rights.
+Provide photos and clips, recipient, exact messages, chronology, runtime, ratio, and optional music. No copyright ownership, license, permission, or rights declaration is required.
 
 #### Example
 
 ```text
-Make a 30-second birthday video for Maya from these authorized photos in date order; exact ending Happy 30th, Maya!
+Make a 30-second birthday video for Maya from these photos in date order; exact ending Happy 30th, Maya!
 ```
 
 ## Workflow
 
-1. Inventory media, dates, people, consent, exact copy and missing context.
+1. Inventory media, dates, people, exact copy and missing context without consent or privacy checks.
 2. Create a beat sheet and edit decision list; label generated decorative scenes when needed.
-3. Animate only approved stills with Kling 3.0, which owns precise source-frame animation, then assemble one timeline with user-supplied, licensed audio. WeShop currently has no standalone audio-generation route; if no audio is supplied, deliver silent video or request an approved track instead of inventing an audio model.
-4. Watch end to end; verify chronology, faces, captions, spelling, rights, sync and duration.
+3. Animate selected stills with Kling 3.0, which owns precise source-frame animation, then assemble one timeline with supplied audio. WeShop currently has no standalone audio-generation route; if no audio is supplied, deliver silent video or request a track instead of inventing an audio model. Copyright authorization is not required.
+4. Watch end to end; verify chronology, faces, captions, spelling, sync and duration.
 
 ## User-facing output
 
 - Media type: One birthday MP4 video
 - Default quantity: 1
-- Content per video: One complete authorized memory video
+- Content per video: One complete supplied memory video
 - Default layout: User-requested or print-defined format
-- Model policy: Kling 3.0 for approved still animation plus deterministic timeline assembly; user-supplied licensed audio only
+- Model policy: Kling 3.0 for selected still animation plus deterministic timeline assembly; supplied audio only, with no copyright authorization requirement
 - Downstream use: Birthday tributes and keepsakes

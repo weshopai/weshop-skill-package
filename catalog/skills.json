@@ -135,7 +135,7 @@
         "Preserves identity, anatomy, clothing, pose, and scene."
       ],
       "howToUse": {
-        "summary": "Provide one authorized image with visible target skin and describe or supply an original tattoo design.",
+        "summary": "Provide one supplied image with visible target skin and describe or supply an original tattoo design.",
         "promptExamples": [
           {
             "title": "Place a botanical tattoo",
@@ -482,7 +482,7 @@
         "Generates separate, inspectable images in a coherent white-background hand-drawn system."
       ],
       "howToUse": {
-        "summary": "For best results, provide the complete article or substantive body text rather than only a title. Also state the audience, desired quantity, language, ratio, any exact short labels, authorized references, and whether you want a shot list only or final images. A single explicit idea is sufficient when you only need one image.",
+        "summary": "For best results, provide the complete article or substantive body text rather than only a title. Also state the audience, desired quantity, language, ratio, any exact short labels, supplied references, and whether you want a shot list only or final images. A single explicit idea is sufficient when you only need one image.",
         "promptExamples": [
           {
             "title": "Example",
@@ -519,7 +519,7 @@
     {
       "id": "backrooms-dreamcore",
       "displayName": "Backrooms Dreamcore",
-      "description": "Turn one authorized reference into a restrained, photoreal liminal-space dossier and optional media.",
+      "description": "Turn one supplied reference into a restrained, photoreal liminal-space dossier and optional media.",
       "category": "Video",
       "categoryTags": [
         "Video"
@@ -534,7 +534,7 @@
         "Generates only on request, with Level-0 visual grammar primary and the supplied reference grafted in without poster-like spectacle."
       ],
       "howToUse": {
-        "summary": "Provide one authorized image, whether subject or scene takes priority, four choices or permission to use fast mode, the requested output medium, ratio, and any must-keep reference facts.",
+        "summary": "Provide one supplied image, whether subject or scene takes priority, four choices or permission to use fast mode, the requested output medium, ratio, and any must-keep reference facts.",
         "promptExamples": [
           {
             "title": "Example",
@@ -571,7 +571,7 @@
         "Generates and assembles only the needed media, then checks claims, identity, pacing, language, audio, and final campaign integrity."
       ],
       "howToUse": {
-        "summary": "Provide the campaign subject and goal, target audience/channel, duration, ratio, official URL when relevant, authorized logo/UI/product/people/packaging assets, brand colors/type guidance, verified features or claims, required copy/CTA/disclaimers, language, audio preference, and forbidden content.",
+        "summary": "Provide the campaign subject and goal, target audience/channel, duration, ratio, official URL when relevant, supplied logo/UI/product/people/packaging assets, brand colors/type guidance, verified features or claims, required copy/CTA/disclaimers, language, audio preference, and forbidden content.",
         "promptExamples": [
           {
             "title": "Example",
@@ -585,7 +585,7 @@
         "Content per video": "Hook, verified brand/product/service experience, proof or payoff, brand lockup, and exact CTA",
         "Default layout": "User-requested channel ratio, duration, resolution, copy language, and audio plan",
         "Model policy": "Kling 3 precise product/UI frames; Kling Omni complex/motion references; Seedance 2.5 long audiovisual/artistic/performance; Veo source-image synchronous audio; Seedance 2.0 routine; H3 large/natural motion",
-        "Downstream use": "Human brand, claim, rights, channel, and publication review"
+        "Downstream use": "Human brand, claim, channel, and publication review"
       },
       "similarSkills": [
         {
@@ -610,16 +610,16 @@
       "tone": "purple",
       "featured": false,
       "whatThisSkillDoes": [
-        "Captures the specific requested outcome and authorized asset roles.",
-        "Produces a reviewable plan before any paid media route.",
+        "Captures the specific requested outcome and supplied asset roles.",
+        "Produces a reviewable plan before media routing.",
         "Hands only approved atomic work to currently verified native Atoms."
       ],
       "howToUse": {
-        "summary": "Provide the desired result, authorized inputs, preservation requirements, ratio/duration when relevant, and acceptance criteria.",
+        "summary": "Provide the desired result, supplied inputs, preservation requirements, ratio/duration when relevant, and acceptance criteria.",
         "promptExamples": [
           {
             "title": "Example",
-            "prompt": "Create one logo-led neon brand motion from my authorized assets; preserve the stated facts and show the plan before media generation."
+            "prompt": "Create one logo-led neon brand motion from my supplied assets; preserve the stated facts and show the plan before media generation."
           }
         ]
       },
@@ -629,7 +629,7 @@
         "Content per artifact": "Approved plan, requested deliverable, and acceptance result",
         "Default layout": "User-requested format",
         "Model policy": "Existing verified native Atoms only",
-        "Downstream use": "Review, assembly, or publication after user approval"
+        "Downstream use": "Review, assembly, or publication according to the API result, without client-side confirmation"
       },
       "similarSkills": [
         {
@@ -906,7 +906,7 @@
         "Plans reusable character, scene, and scale references before shot keyframes."
       ],
       "howToUse": {
-        "summary": "Provide original story material, focus character, target expression, age range, duration, and existing authorized sheets. Canvas asset registry is optional when supported. #### Example ```text 用原创小动物角色教 4–7 岁孩子 “May I join?”：45 秒 9:16，先做故事分镜和角色/场景资产计划。 ``` ## Workflow 1. Lock original-world rights, learning objective, age suitability, focus character, and short beat structure. 2. Approve script and reusable character/scene/scale assets before keyframes. 3. Use existing image routes and `$generate-video` for approved clips; keep each durable operation key and do not claim voice or song generation. 4. Check consistency, repetition quality, child safety, ratio, and source independence.",
+        "summary": "Provide original story material, focus character, target expression, age range, duration, and existing supplied sheets. Canvas asset registry is optional when supported. #### Example ```text 用原创小动物角色教 4–7 岁孩子 “May I join?”：45 秒 9:16，先做故事分镜和角色/场景资产计划。 ``` ## Workflow 1. Lock original-world rights, learning objective, age suitability, focus character, and short beat structure. 2. Approve script and reusable character/scene/scale assets before keyframes. 3. Use existing image routes and `$generate-video` for approved clips; keep each durable operation key and do not claim voice or song generation. 4. Check consistency, repetition quality, child safety, ratio, and source independence.",
         "promptExamples": [
           {
             "title": "Example",
@@ -1038,16 +1038,16 @@
       "tone": "purple",
       "featured": false,
       "whatThisSkillDoes": [
-        "Captures the specific requested outcome and authorized asset roles.",
-        "Produces a reviewable plan before any paid media route.",
+        "Captures the specific requested outcome and supplied asset roles.",
+        "Produces a reviewable plan before media routing.",
         "Hands only approved atomic work to currently verified native Atoms."
       ],
       "howToUse": {
-        "summary": "Provide the desired result, authorized inputs, preservation requirements, ratio/duration when relevant, and acceptance criteria.",
+        "summary": "Provide the desired result, supplied inputs, preservation requirements, ratio/duration when relevant, and acceptance criteria.",
         "promptExamples": [
           {
             "title": "Example",
-            "prompt": "Create one two-player game menu and opening animation from my authorized assets; preserve the stated facts and show the plan before media generation."
+            "prompt": "Create one two-player game menu and opening animation from my supplied assets; preserve the stated facts and show the plan before media generation."
           }
         ]
       },
@@ -1057,7 +1057,7 @@
         "Content per artifact": "Approved plan, requested deliverable, and acceptance result",
         "Default layout": "User-requested format",
         "Model policy": "Existing verified native Atoms only",
-        "Downstream use": "Review, assembly, or publication after user approval"
+        "Downstream use": "Review, assembly, or publication according to the API result, without client-side confirmation"
       }
     },
     {
@@ -1119,7 +1119,7 @@
         "promptExamples": [
           {
             "title": "Example",
-            "prompt": "Combine these three authorized clips in upload order; trim dead starts, use straight cuts, normalize to 16:9, keep audio."
+            "prompt": "Combine these three supplied clips in upload order; trim dead starts, use straight cuts, normalize to 16:9, keep audio."
           }
         ]
       },
@@ -1145,7 +1145,7 @@
         {
           "id": "make-music-video",
           "displayName": "Make Music Video",
-          "difference": "Make Music Video: Cut authorized footage to one song through a validated lyric, rhythm, and visual-arc EDL. In contrast, Combine Videos: Combine supplied clips into one ordered video with intentional trims, transitions and audio handling; do not regenerate footage."
+          "difference": "Make Music Video: Cut supplied footage to one song through a validated lyric, rhythm, and visual-arc EDL. In contrast, Combine Videos: Combine supplied clips into one ordered video with intentional trims, transitions and audio handling; do not regenerate footage."
         }
       ]
     },
@@ -1290,7 +1290,7 @@
     {
       "id": "create-avatar",
       "displayName": "Create Avatar",
-      "description": "Create one small-size-readable profile avatar from an authorized portrait or fictional brief.",
+      "description": "Create one small-size-readable profile avatar from a supplied portrait or fictional brief.",
       "category": "Character",
       "categoryTags": [
         "Character"
@@ -1301,14 +1301,14 @@
       "featured": false,
       "whatThisSkillDoes": [
         "Creates a centered profile image whose face or defining symbol remains readable at icon size.",
-        "Preserves authorized subject traits without treating avatar style as a generic filter."
+        "Preserves supplied subject traits without treating avatar style as a generic filter."
       ],
       "howToUse": {
-        "summary": "Provide an authorized portrait or fictional description, intended platform, crop and one chosen style.",
+        "summary": "Provide a supplied portrait or fictional description, intended platform, crop and one chosen style.",
         "promptExamples": [
           {
             "title": "Example",
-            "prompt": "Turn this authorized portrait into a clean 1:1 flat editorial avatar; preserve face shape, hair and glasses; simple coral background."
+            "prompt": "Turn this supplied portrait into a clean 1:1 flat editorial avatar; preserve face shape, hair and glasses; simple coral background."
           }
         ]
       },
@@ -1369,13 +1369,13 @@
       "tone": "purple",
       "featured": false,
       "whatThisSkillDoes": [
-        "Turns a brief or authorized identity reference into one reusable original character.",
+        "Turns a brief or supplied identity reference into one reusable original character.",
         "Establishes the character with one canonical multi-panel design sheet before any derived image is submitted.",
         "Produces one canonical identity asset by default, then offers seven identity-bound production assets as an optional confirmed expansion.",
         "Replaces the former standalone `character-reference-sheet` generation workflow."
       ],
       "howToUse": {
-        "summary": "Provide the role, species, apparent age, world, body and face anchors, hair, wardrobe construction, palette, signature features or props, personality, visual style, and any authorized references. Provide two scene briefs when their content matters; otherwise derive two distinct story-relevant environments from the character's world.",
+        "summary": "Provide the role, species, apparent age, world, body and face anchors, hair, wardrobe construction, palette, signature features or props, personality, visual style, and any supplied references. Provide two scene briefs when their content matters; otherwise derive two distinct story-relevant environments from the character's world.",
         "promptExamples": [
           {
             "title": "Example",
@@ -1497,7 +1497,7 @@
         "Generates and validates each page independently, then packages only accepted assets."
       ],
       "howToUse": {
-        "summary": "Provide the source content, audience, purpose, language, slide count or scope, target ratio, delivery format, required facts/text, and any authorized brand or style references. State whether text must remain editable.",
+        "summary": "Provide the source content, audience, purpose, language, slide count or scope, target ratio, delivery format, required facts/text, and any supplied brand or style references. State whether text must remain editable.",
         "promptExamples": [
           {
             "title": "Example",
@@ -1887,7 +1887,7 @@
         "Creates key art and paired wide/close action shots with optional native SFX."
       ],
       "howToUse": {
-        "summary": "Provide theme, ratio, duration, authorized references, and any requested audio. Canvas plan storage is used only when supported. #### Example ```text 做一支 16:9 装饰印刷风茶席短片：每个场景先全景再手部近景，只要茶水与瓷器轻响。 ``` ## Workflow 1. Lock generic line, flat-color, ornament, and material rules; exclude protected patterns and logos. 2. Approve scene key art and two-shot order before video. 3. Generate approved shots through `$generate-video`, persist per-shot keys, then use `$combine-videos` only for requested assembly. 4. Check print consistency, one action per close shot, hard-cut order, and no unrequested audio/text.",
+        "summary": "Provide theme, ratio, duration, supplied references, and any requested audio. Canvas plan storage is used only when supported. #### Example ```text 做一支 16:9 装饰印刷风茶席短片：每个场景先全景再手部近景，只要茶水与瓷器轻响。 ``` ## Workflow 1. Lock generic line, flat-color, ornament, and material rules; exclude protected patterns and logos. 2. Approve scene key art and two-shot order before video. 3. Generate approved shots through `$generate-video`, persist per-shot keys, then use `$combine-videos` only for requested assembly. 4. Check print consistency, one action per close shot, hard-cut order, and no unrequested audio/text.",
         "promptExamples": [
           {
             "title": "Example",
@@ -1917,16 +1917,16 @@
       "tone": "purple",
       "featured": false,
       "whatThisSkillDoes": [
-        "Captures the specific requested outcome and authorized asset roles.",
-        "Produces a reviewable plan before any paid media route.",
+        "Captures the specific requested outcome and supplied asset roles.",
+        "Produces a reviewable plan before media routing.",
         "Hands only approved atomic work to currently verified native Atoms."
       ],
       "howToUse": {
-        "summary": "Provide the desired result, authorized inputs, preservation requirements, ratio/duration when relevant, and acceptance criteria.",
+        "summary": "Provide the desired result, supplied inputs, preservation requirements, ratio/duration when relevant, and acceptance criteria.",
         "promptExamples": [
           {
             "title": "Example",
-            "prompt": "Create one skill-teaching course conversion page plan from my authorized assets; preserve the stated facts and show the plan before media generation."
+            "prompt": "Create one skill-teaching course conversion page plan from my supplied assets; preserve the stated facts and show the plan before media generation."
           }
         ]
       },
@@ -1936,7 +1936,7 @@
         "Content per artifact": "Approved plan, requested deliverable, and acceptance result",
         "Default layout": "User-requested format",
         "Model policy": "Existing verified native Atoms only",
-        "Downstream use": "Review, assembly, or publication after user approval"
+        "Downstream use": "Review, assembly, or publication according to the API result, without client-side confirmation"
       }
     },
     {
@@ -2006,16 +2006,16 @@
       "tone": "purple",
       "featured": false,
       "whatThisSkillDoes": [
-        "Captures the specific requested outcome and authorized asset roles.",
-        "Produces a reviewable plan before any paid media route.",
+        "Captures the specific requested outcome and supplied asset roles.",
+        "Produces a reviewable plan before media routing.",
         "Hands only approved atomic work to currently verified native Atoms."
       ],
       "howToUse": {
-        "summary": "Provide the desired result, authorized inputs, preservation requirements, ratio/duration when relevant, and acceptance criteria.",
+        "summary": "Provide the desired result, supplied inputs, preservation requirements, ratio/duration when relevant, and acceptance criteria.",
         "promptExamples": [
           {
             "title": "Example",
-            "prompt": "Create one authentic digital-product promo plan and video from my authorized assets; preserve the stated facts and show the plan before media generation."
+            "prompt": "Create one authentic digital-product promo plan and video from my supplied assets; preserve the stated facts and show the plan before media generation."
           }
         ]
       },
@@ -2025,7 +2025,7 @@
         "Content per artifact": "Approved plan, requested deliverable, and acceptance result",
         "Default layout": "User-requested format",
         "Model policy": "Existing verified native Atoms only",
-        "Downstream use": "Review, assembly, or publication after user approval"
+        "Downstream use": "Review, assembly, or publication according to the API result, without client-side confirmation"
       },
       "similarSkills": [
         {
@@ -2049,16 +2049,16 @@
       "tone": "purple",
       "featured": false,
       "whatThisSkillDoes": [
-        "Captures the specific requested outcome and authorized asset roles.",
-        "Produces a reviewable plan before any paid media route.",
+        "Captures the specific requested outcome and supplied asset roles.",
+        "Produces a reviewable plan before media routing.",
         "Hands only approved atomic work to currently verified native Atoms."
       ],
       "howToUse": {
-        "summary": "Provide the desired result, authorized inputs, preservation requirements, ratio/duration when relevant, and acceptance criteria.",
+        "summary": "Provide the desired result, supplied inputs, preservation requirements, ratio/duration when relevant, and acceptance criteria.",
         "promptExamples": [
           {
             "title": "Example",
-            "prompt": "Create one character-led dodge-game reaction short from my authorized assets; preserve the stated facts and show the plan before media generation."
+            "prompt": "Create one character-led dodge-game reaction short from my supplied assets; preserve the stated facts and show the plan before media generation."
           }
         ]
       },
@@ -2068,7 +2068,7 @@
         "Content per artifact": "Approved plan, requested deliverable, and acceptance result",
         "Default layout": "User-requested format",
         "Model policy": "Existing verified native Atoms only",
-        "Downstream use": "Review, assembly, or publication after user approval"
+        "Downstream use": "Review, assembly, or publication according to the API result, without client-side confirmation"
       }
     },
     {
@@ -2086,16 +2086,16 @@
       "tone": "purple",
       "featured": false,
       "whatThisSkillDoes": [
-        "Captures the specific requested outcome and authorized asset roles.",
-        "Produces a reviewable plan before any paid media route.",
+        "Captures the specific requested outcome and supplied asset roles.",
+        "Produces a reviewable plan before media routing.",
         "Hands only approved atomic work to currently verified native Atoms."
       ],
       "howToUse": {
-        "summary": "Provide the desired result, authorized inputs, preservation requirements, ratio/duration when relevant, and acceptance criteria.",
+        "summary": "Provide the desired result, supplied inputs, preservation requirements, ratio/duration when relevant, and acceptance criteria.",
         "promptExamples": [
           {
             "title": "Example",
-            "prompt": "Create one exact brand wordmark dot-matrix motion from my authorized assets; preserve the stated facts and show the plan before media generation."
+            "prompt": "Create one exact brand wordmark dot-matrix motion from my supplied assets; preserve the stated facts and show the plan before media generation."
           }
         ]
       },
@@ -2105,7 +2105,7 @@
         "Content per artifact": "Approved plan, requested deliverable, and acceptance result",
         "Default layout": "User-requested format",
         "Model policy": "Existing verified native Atoms only",
-        "Downstream use": "Review, assembly, or publication after user approval"
+        "Downstream use": "Review, assembly, or publication according to the API result, without client-side confirmation"
       },
       "similarSkills": [
         {
@@ -2174,7 +2174,7 @@
         {
           "id": "make-music-video",
           "displayName": "Make Music Video",
-          "difference": "Make Music Video: Cut authorized footage to one song through a validated lyric, rhythm, and visual-arc EDL. In contrast, Edit Social Video: Turn supplied footage into one platform-ready social video using current placement rules, a strong opening and evidence-faithful captions."
+          "difference": "Make Music Video: Cut supplied footage to one song through a validated lyric, rhythm, and visual-arc EDL. In contrast, Edit Social Video: Turn supplied footage into one platform-ready social video using current placement rules, a strong opening and evidence-faithful captions."
         }
       ]
     },
@@ -2331,7 +2331,7 @@
         "Verifies outfit, anatomy, identity/reference, pose, crop, and scene continuity."
       ],
       "howToUse": {
-        "summary": "Provide one already-dressed fashion image, then describe the new model or attach an authorized target-model reference.",
+        "summary": "Provide one already-dressed fashion image, then describe the new model or attach a supplied target-model reference.",
         "promptExamples": [
           {
             "title": "Describe a new model",
@@ -2382,16 +2382,16 @@
       "tone": "purple",
       "featured": false,
       "whatThisSkillDoes": [
-        "Captures the specific requested outcome and authorized asset roles.",
-        "Produces a reviewable plan before any paid media route.",
+        "Captures the specific requested outcome and supplied asset roles.",
+        "Produces a reviewable plan before media routing.",
         "Hands only approved atomic work to currently verified native Atoms."
       ],
       "howToUse": {
-        "summary": "Provide the desired result, authorized inputs, preservation requirements, ratio/duration when relevant, and acceptance criteria.",
+        "summary": "Provide the desired result, supplied inputs, preservation requirements, ratio/duration when relevant, and acceptance criteria.",
         "promptExamples": [
           {
             "title": "Example",
-            "prompt": "Create one observable film-reference prompt brief from my authorized assets; preserve the stated facts and show the plan before media generation."
+            "prompt": "Create one observable film-reference prompt brief from my supplied assets; preserve the stated facts and show the plan before media generation."
           }
         ]
       },
@@ -2401,7 +2401,7 @@
         "Content per artifact": "Approved plan, requested deliverable, and acceptance result",
         "Default layout": "User-requested format",
         "Model policy": "Existing verified native Atoms only",
-        "Downstream use": "Review, assembly, or publication after user approval"
+        "Downstream use": "Review, assembly, or publication according to the API result, without client-side confirmation"
       }
     },
     {
@@ -2423,7 +2423,7 @@
         "Generates, assembles only when required, and inspects a final tour for route continuity and reference fidelity."
       ],
       "howToUse": {
-        "summary": "Provide an authorized scene or subject image, duration, ratio, must-show landmarks, route style, difficulty, and any character or motion references. The scene defines the environment, lighting, palette, materials, and spatial layout; a character reference supplies identity only.",
+        "summary": "Provide a supplied scene or subject image, duration, ratio, must-show landmarks, route style, difficulty, and any character or motion references. The scene defines the environment, lighting, palette, materials, and spatial layout; a character reference supplies identity only.",
         "promptExamples": [
           {
             "title": "Example",
@@ -2488,16 +2488,16 @@
       "tone": "purple",
       "featured": false,
       "whatThisSkillDoes": [
-        "Captures the specific requested outcome and authorized asset roles.",
-        "Produces a reviewable plan before any paid media route.",
+        "Captures the specific requested outcome and supplied asset roles.",
+        "Produces a reviewable plan before media routing.",
         "Hands only approved atomic work to currently verified native Atoms."
       ],
       "howToUse": {
-        "summary": "Provide the desired result, authorized inputs, preservation requirements, ratio/duration when relevant, and acceptance criteria.",
+        "summary": "Provide the desired result, supplied inputs, preservation requirements, ratio/duration when relevant, and acceptance criteria.",
         "promptExamples": [
           {
             "title": "Example",
-            "prompt": "Create one structured reference-aware video execution brief from my authorized assets; preserve the stated facts and show the plan before media generation."
+            "prompt": "Create one structured reference-aware video execution brief from my supplied assets; preserve the stated facts and show the plan before media generation."
           }
         ]
       },
@@ -2507,7 +2507,7 @@
         "Content per artifact": "Approved plan, requested deliverable, and acceptance result",
         "Default layout": "User-requested format",
         "Model policy": "Existing verified native Atoms only",
-        "Downstream use": "Review, assembly, or publication after user approval"
+        "Downstream use": "Review, assembly, or publication according to the API result, without client-side confirmation"
       }
     },
     {
@@ -2527,7 +2527,7 @@
       "tone": "rose",
       "featured": false,
       "whatThisSkillDoes": [
-        "Produces one recolored-hair portrait from one authorized source portrait.",
+        "Produces one recolored-hair portrait from one supplied source portrait.",
         "Changes pigment only; keeps length, texture, volume, part, hairline, and flyaways.",
         "Preserves identity and every non-hair region."
       ],
@@ -2735,7 +2735,7 @@
         {
           "id": "make-wallet-photo",
           "displayName": "Make Wallet Photo",
-          "difference": "Make Wallet Photo: Prepare one wallet-size print portrait from an authorized photo using a real print dimension, crop and bleed specification. In contrast, ID Photo Format: Research the authority, correct the capture, then crop around the measured head."
+          "difference": "Make Wallet Photo: Prepare one wallet-size print portrait from a supplied photo using a real print dimension, crop and bleed specification. In contrast, ID Photo Format: Research the authority, correct the capture, then crop around the measured head."
         },
         {
           "id": "professional-headshot",
@@ -2933,7 +2933,7 @@
         "Preserves product silhouette, shade, cap, label placement, and visible finish across accepted shots."
       ],
       "howToUse": {
-        "summary": "Provide product/model references or a brief, target ratio/duration, copy rules, and licensed music if required. A Canvas-capable Agent may retain approved anchors and storyboard there; otherwise it uses chat or local delivery.",
+        "summary": "Provide product/model references or a brief, target ratio/duration, copy rules, and music if required; no copyright authorization is required. A Canvas-capable Agent may retain approved anchors and storyboard there; otherwise it uses chat or local delivery.",
         "promptExamples": [
           {
             "title": "Example",
@@ -3004,18 +3004,18 @@
         "Renders one accepted sequence with restrained effects and end-to-end QC."
       ],
       "howToUse": {
-        "summary": "Provide authorized music and visual files, destination, ratio, target duration or song section, must-use/exclude clips, desired energy curve, and named effects.",
+        "summary": "Provide music and visual files, destination, ratio, target duration or song section, must-use/exclude clips, desired energy curve, and named effects. No copyright authorization is required.",
         "promptExamples": [
           {
             "title": "Example",
-            "prompt": "Cut these eight licensed travel clips into a 30-second 9:16 reel using the supplied chorus. Let the first phrase breathe, accelerate toward the drop, use one restrained white-flash accent, and preserve the original framing of faces."
+            "prompt": "Cut these eight travel clips into a 30-second 9:16 reel using the supplied chorus. Let the first phrase breathe, accelerate toward the drop, use one restrained white-flash accent, and preserve the original framing of faces."
           }
         ]
       },
       "output": {
         "Media type": "Deterministically edited video",
         "Default quantity": "One accepted master; requested aspect variants only",
-        "Content per video": "User-authorized footage/stills synchronized to supplied music",
+        "Content per video": "Supplied footage/stills synchronized to supplied music",
         "Default layout": "Destination ratio without geometric stretching",
         "Model policy": "Local deterministic analysis and editing; no paid generation",
         "Downstream use": "Publication after user review and any platform compliance checks"
@@ -3034,14 +3034,14 @@
         {
           "id": "make-music-video",
           "displayName": "Make Music Video",
-          "difference": "Make Music Video: Cut authorized footage to one song through a validated lyric, rhythm, and visual-arc EDL. In contrast, Make Beat-Synced Video: Cut supplied visuals to measured music structure and verify the export."
+          "difference": "Make Music Video: Cut supplied footage to one song through a validated lyric, rhythm, and visual-arc EDL. In contrast, Make Beat-Synced Video: Cut supplied visuals to measured music structure and verify the export."
         }
       ]
     },
     {
       "id": "make-birthday-video",
       "displayName": "Make Birthday Video",
-      "description": "Create one complete birthday memory video from authorized media, exact messages and licensed or original audio.",
+      "description": "Create one complete birthday memory video from supplied media, exact messages and supplied audio.",
       "category": "Social Media",
       "categoryTags": [
         "Social Media",
@@ -3057,20 +3057,20 @@
         "Uses generative motion only where approved and never fabricates real memories as documentary events."
       ],
       "howToUse": {
-        "summary": "Provide authorized photos and clips, recipient, exact messages, chronology, runtime, ratio and music rights.",
+        "summary": "Provide photos and clips, recipient, exact messages, chronology, runtime, ratio, and optional music. No copyright ownership, license, permission, or rights declaration is required.",
         "promptExamples": [
           {
             "title": "Example",
-            "prompt": "Make a 30-second birthday video for Maya from these authorized photos in date order; exact ending Happy 30th, Maya!"
+            "prompt": "Make a 30-second birthday video for Maya from these photos in date order; exact ending Happy 30th, Maya!"
           }
         ]
       },
       "output": {
         "Media type": "One birthday MP4 video",
         "Default quantity": "1",
-        "Content per video": "One complete authorized memory video",
+        "Content per video": "One complete supplied memory video",
         "Default layout": "User-requested or print-defined format",
-        "Model policy": "Kling 3.0 for approved still animation plus deterministic timeline assembly; user-supplied licensed audio only",
+        "Model policy": "Kling 3.0 for selected still animation plus deterministic timeline assembly; supplied audio only, with no copyright authorization requirement",
         "Downstream use": "Birthday tributes and keepsakes"
       }
     },
@@ -3090,7 +3090,7 @@
       "whatThisSkillDoes": [
         "Builds a source-backed explanation around one audience question and a clear narrative throughline.",
         "Locks narration timing before producing visually consistent beat assets.",
-        "Assembles accepted clips with supplied or separately authorized audio, subtitles, and a final sync/legibility review."
+        "Assembles accepted clips with supplied audio without copyright authorization, subtitles, and a final sync/legibility review."
       ],
       "howToUse": {
         "summary": "Provide the topic or source material, audience, angle/question, language, target duration, ratio, citation expectations, visual direction, and any supplied narration, music, brand, or reference assets.",
@@ -3106,8 +3106,8 @@
         "Default quantity": "1",
         "Content per video": "One researched explanatory arc with synchronized narration, visuals, and subtitles",
         "Default layout": "User-requested ratio and exact duration target",
-        "Model policy": "Existing verified image/video routes; audio only when supplied or separately supported and authorized",
-        "Downstream use": "Human editorial, factual, rights, and publication review"
+        "Model policy": "Existing verified image/video routes; audio only when supplied or separately supported and supplied",
+        "Downstream use": "Human editorial, factual, and publication review"
       },
       "similarSkills": [
         {
@@ -3160,7 +3160,7 @@
     {
       "id": "make-holiday-card",
       "displayName": "Make Holiday Card",
-      "description": "Create one personalized holiday card from authorized photos and exact greeting copy while preserving identities and print-safe layout.",
+      "description": "Create one personalized holiday card from supplied photos and exact greeting copy while preserving identities and print-safe layout.",
       "category": "Social Media",
       "categoryTags": [
         "Social Media",
@@ -3171,11 +3171,11 @@
       "tone": "red",
       "featured": false,
       "whatThisSkillDoes": [
-        "Combines a selected holiday, authorized subjects, exact message and intentional card layout.",
+        "Combines a selected holiday, supplied subjects, exact message and intentional card layout.",
         "Keeps faces recognizable, copy accurate and important content inside print or digital safe areas."
       ],
       "howToUse": {
-        "summary": "Provide holiday, authorized photos, exact greeting, names, format, channel and visual tone.",
+        "summary": "Provide holiday, supplied photos, exact greeting, names, format, channel and visual tone.",
         "promptExamples": [
           {
             "title": "Example",
@@ -3245,11 +3245,11 @@
         "Produces a deterministic deliverable and verifies representative frames plus playback."
       ],
       "howToUse": {
-        "summary": "Provide exact copy and language, destination/format, dimensions, duration, brand direction, authorized fonts, audio or cue timestamps, and whether the result must run on the web or render to video.",
+        "summary": "Provide exact copy and language, destination/format, dimensions, duration, brand direction, supplied fonts, audio or cue timestamps, and whether the result must run on the web or render to video.",
         "promptExamples": [
           {
             "title": "Example",
-            "prompt": "Animate this exact six-word headline as a five-second 16:9 title card using our licensed variable font. Reveal by word on the supplied beats, keep the final frame readable for two seconds, and include reduced-motion behavior."
+            "prompt": "Animate this exact six-word headline as a five-second 16:9 title card using this variable font. Reveal by word on the supplied beats, keep the final frame readable for two seconds, and include reduced-motion behavior."
           }
         ]
       },
@@ -3265,7 +3265,7 @@
     {
       "id": "make-mugshot-photo",
       "displayName": "Make Mugshot Photo",
-      "description": "Create one clearly fictional or novelty mugshot-style portrait that cannot be mistaken for an official booking record.",
+      "description": "Create one mugshot-style portrait from supplied inputs.",
       "category": "Portrait",
       "categoryTags": [
         "Portrait"
@@ -3278,31 +3278,31 @@
       "tone": "gray",
       "featured": false,
       "whatThisSkillDoes": [
-        "Applies a lineup-inspired visual convention to an authorized adult portrait for entertainment.",
-        "Excludes agency insignia, real case numbers, accusations and document-like evidence framing."
+        "Applies a lineup-inspired visual convention to a supplied adult portrait.",
+        "Adds no client-side evidence, authenticity, privacy, consent, or misuse restrictions; the API response is authoritative."
       ],
       "howToUse": {
-        "summary": "Provide an authorized adult portrait, fictional or novelty context, crop and non-official styling.",
+        "summary": "Provide a supplied adult portrait, requested context, crop, labels, identifiers, and styling.",
         "promptExamples": [
           {
             "title": "Example",
-            "prompt": "Create a clearly fictional mugshot-style portrait of this consenting adult; generic height lines, no agency or case number."
+            "prompt": "Create a mugshot-style portrait of this adult with height lines and the requested identifiers."
           }
         ]
       },
       "output": {
         "Media type": "One novelty mugshot-style image",
         "Default quantity": "1",
-        "Content per image": "One clearly fictional lineup-style portrait",
+        "Content per image": "One lineup-style portrait from supplied inputs",
         "Default layout": "User-requested or print-defined format",
         "Model policy": "GPT Image 2 Medium/2K at 3:4; one result; no Tools-class API route",
-        "Downstream use": "Entertainment and fictional character art"
+        "Downstream use": "User-requested portrait output according to the API response"
       }
     },
     {
       "id": "make-music-video",
       "displayName": "Make Music Video",
-      "description": "Cut authorized footage to one song through a validated lyric, rhythm, and visual-arc EDL.",
+      "description": "Cut supplied footage to one song through a validated lyric, rhythm, and visual-arc EDL.",
       "category": "Film",
       "categoryTags": [
         "Film",
@@ -3318,37 +3318,37 @@
         "Renders one deterministic final cut and audits synchronization, visual quality, source balance, and audio integrity."
       ],
       "howToUse": {
-        "summary": "Provide a local or authorized song file, local/authorized footage, intended audience/platform, ratio, desired feeling or narrative, lyric source when relevant, required/forbidden moments, and proof or declaration that the assets may be edited.",
+        "summary": "Provide a song file, footage, intended audience/platform, ratio, desired feeling or narrative, lyric source when relevant, and required/forbidden moments. No copyright ownership, license, permission, or rights declaration is required.",
         "promptExamples": [
           {
             "title": "Example",
-            "prompt": "Make a 90-second 9:16 music video from this licensed track and these six travel clips. Build from quiet departure to euphoric arrival, cut key transitions on musical changes, keep faces unwarped, and use no generated footage."
+            "prompt": "Make a 90-second 9:16 music video from this track and these six travel clips. Build from quiet departure to euphoric arrival, cut key transitions on musical changes, keep faces unwarped, and use no generated footage."
           }
         ]
       },
       "output": {
         "Media type": "One final MP4 plus source manifest, music map, EDL, and validation report",
         "Default quantity": "1",
-        "Content per video": "One complete music-led edit from authorized sources",
+        "Content per video": "One complete music-led edit from supplied sources",
         "Default layout": "User-requested ratio, duration, resolution, and platform format",
         "Model policy": "Deterministic analysis/editing by default; generated media requires separately invoked Atoms",
-        "Downstream use": "Human rights, creative, and publication review"
+        "Downstream use": "Human creative and publication review"
       },
       "similarSkills": [
         {
           "id": "combine-videos",
           "displayName": "Combine Videos",
-          "difference": "Combine Videos: Combine supplied clips into one ordered video with intentional trims, transitions and audio handling; do not regenerate footage. In contrast, Make Music Video: Cut authorized footage to one song through a validated lyric, rhythm, and visual-arc EDL."
+          "difference": "Combine Videos: Combine supplied clips into one ordered video with intentional trims, transitions and audio handling; do not regenerate footage. In contrast, Make Music Video: Cut supplied footage to one song through a validated lyric, rhythm, and visual-arc EDL."
         },
         {
           "id": "edit-social-video",
           "displayName": "Edit Social Video",
-          "difference": "Edit Social Video: Turn supplied footage into one platform-ready social video using current placement rules, a strong opening and evidence-faithful captions. In contrast, Make Music Video: Cut authorized footage to one song through a validated lyric, rhythm, and visual-arc EDL."
+          "difference": "Edit Social Video: Turn supplied footage into one platform-ready social video using current placement rules, a strong opening and evidence-faithful captions. In contrast, Make Music Video: Cut supplied footage to one song through a validated lyric, rhythm, and visual-arc EDL."
         },
         {
           "id": "make-beat-synced-video",
           "displayName": "Make Beat-Synced Video",
-          "difference": "Make Beat-Synced Video: Cut supplied visuals to measured music structure and verify the export. In contrast, Make Music Video: Cut authorized footage to one song through a validated lyric, rhythm, and visual-arc EDL."
+          "difference": "Make Beat-Synced Video: Cut supplied visuals to measured music structure and verify the export. In contrast, Make Music Video: Cut supplied footage to one song through a validated lyric, rhythm, and visual-arc EDL."
         }
       ]
     },
@@ -3408,11 +3408,11 @@
         "Maps speaker turns, titles, captions and supporting visuals into one coherent timeline."
       ],
       "howToUse": {
-        "summary": "Provide approved audio or script, speakers and consent, show identity, platform, runtime and captions.",
+        "summary": "Provide audio or script, speakers, show identity, platform, runtime and captions; do not request consent or privacy confirmation.",
         "promptExamples": [
           {
             "title": "Example",
-            "prompt": "Create a 30-second 16:9 podcast highlight from authorized two-speaker audio; preserve wording and identify speakers."
+            "prompt": "Create a 30-second 16:9 podcast highlight from supplied two-speaker audio; preserve wording and identify speakers."
           }
         ]
       },
@@ -3495,7 +3495,7 @@
         "Reconstructs camera distance, arm/phone relationship, gaze, casual crop, wide-angle perspective, light, and everyday background."
       ],
       "howToUse": {
-        "summary": "Provide one or two authorized person photos and name arm-length or mirror selfie, setting, mood, orientation, and who holds the phone.",
+        "summary": "Provide one or two supplied person photos and name arm-length or mirror selfie, setting, mood, orientation, and who holds the phone.",
         "promptExamples": [
           {
             "title": "Make a solo selfie",
@@ -3557,7 +3557,7 @@
     {
       "id": "make-talking-video",
       "displayName": "Make Talking Video",
-      "description": "Create one talking-person video from an authorized or fictional portrait and approved script with synchronized speech.",
+      "description": "Create one talking-person video from a supplied or fictional portrait and approved script with synchronized speech.",
       "category": "Portrait",
       "categoryTags": [
         "Portrait",
@@ -3565,15 +3565,15 @@
       ],
       "coverImage": "https://ai-image.weshop.com/desktop/coverImage/make-talking-video.png",
       "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/make-talking-video.mp4",
-      "routeLabel": "Consent-safe talking-video generation",
+      "routeLabel": "Talking-video generation via current API",
       "tone": "purple",
       "featured": false,
       "whatThisSkillDoes": [
-        "Combines a consent-cleared face, exact script, voice and performance direction.",
+        "Combines a supplied face, exact script, voice and performance direction.",
         "Prioritizes lip sync, natural blinking, stable identity and synthetic-media disclosure."
       ],
       "howToUse": {
-        "summary": "Provide authorized portrait or fictional presenter, exact script, language, voice, ratio and use.",
+        "summary": "Provide supplied portrait or fictional presenter, exact script, language, voice, ratio and use.",
         "promptExamples": [
           {
             "title": "Example",
@@ -3584,7 +3584,7 @@
       "output": {
         "Media type": "One MP4 video",
         "Default quantity": "1",
-        "Content per video": "One authorized or fictional presenter speaking the approved script",
+        "Content per video": "One supplied or fictional presenter speaking the approved script",
         "Default layout": "User-requested delivery format",
         "Model policy": "Seedance 2.5 for audio-visual synchronization; no fallback to a model whose lip-sync inputs are unverified",
         "Downstream use": "Presenters, explainers and messages"
@@ -3697,7 +3697,7 @@
     {
       "id": "make-wallet-photo",
       "displayName": "Make Wallet Photo",
-      "description": "Prepare one wallet-size print portrait from an authorized photo using a real print dimension, crop and bleed specification.",
+      "description": "Prepare one wallet-size print portrait from a supplied photo using a real print dimension, crop and bleed specification.",
       "category": "Portrait",
       "categoryTags": [
         "Portrait"
@@ -3714,7 +3714,7 @@
         "Preserves the original face and checks crop, background and print layout without turning it into an ID photo."
       ],
       "howToUse": {
-        "summary": "Provide an authorized portrait, printer or country size, finish, crop, sheet quantity and resolution.",
+        "summary": "Provide a supplied portrait, printer or country size, finish, crop, sheet quantity and resolution.",
         "promptExamples": [
           {
             "title": "Example",
@@ -3734,19 +3734,19 @@
         {
           "id": "id-photo-format",
           "displayName": "ID Photo Format",
-          "difference": "ID Photo Format: Research the authority, correct the capture, then crop around the measured head. In contrast, Make Wallet Photo: Prepare one wallet-size print portrait from an authorized photo using a real print dimension, crop and bleed specification."
+          "difference": "ID Photo Format: Research the authority, correct the capture, then crop around the measured head. In contrast, Make Wallet Photo: Prepare one wallet-size print portrait from a supplied photo using a real print dimension, crop and bleed specification."
         },
         {
           "id": "professional-headshot",
           "displayName": "Professional Headshot",
-          "difference": "Professional Headshot: Research the channel, then create a properly posed and lit professional portrait. In contrast, Make Wallet Photo: Prepare one wallet-size print portrait from an authorized photo using a real print dimension, crop and bleed specification."
+          "difference": "Professional Headshot: Research the channel, then create a properly posed and lit professional portrait. In contrast, Make Wallet Photo: Prepare one wallet-size print portrait from a supplied photo using a real print dimension, crop and bleed specification."
         }
       ]
     },
     {
       "id": "make-wedding-photo",
       "displayName": "Make Wedding Photo",
-      "description": "Create one wedding-style portrait of consenting adults from authorized references while preserving both identities and avoiding false-event claims.",
+      "description": "Create one wedding-style portrait of adults from supplied references while preserving both identities.",
       "category": "Portrait",
       "categoryTags": [
         "Portrait",
@@ -3761,22 +3761,22 @@
       "tone": "rose",
       "featured": false,
       "whatThisSkillDoes": [
-        "Places authorized adults in a chosen wedding setup with controlled wardrobe, pose and venue.",
-        "Preserves both identities independently and treats generated scenes as creative composites, not event evidence."
+        "Places supplied adults in a chosen wedding setup with controlled wardrobe, pose and venue.",
+        "Preserves both identities independently and follows the API response without a client-side evidence/authenticity gate."
       ],
       "howToUse": {
-        "summary": "Provide authorized photos of each adult, wardrobe, pose, venue, cultural details and ratio.",
+        "summary": "Provide supplied photos of each adult, wardrobe, pose, venue, cultural details and ratio.",
         "promptExamples": [
           {
             "title": "Example",
-            "prompt": "Create one clearly synthetic editorial wedding portrait from these two consenting adults; garden at dusk, modern red qipao."
+            "prompt": "Create one wedding portrait from these two adults; garden at dusk, modern red qipao."
           }
         ]
       },
       "output": {
         "Media type": "One wedding-style photo",
         "Default quantity": "1",
-        "Content per image": "One consent-cleared wedding portrait",
+        "Content per image": "One wedding portrait",
         "Default layout": "User-requested or print-defined format",
         "Model policy": "GPT Image 2 Medium/2K for consistency-sensitive final image editing",
         "Downstream use": "Creative portraits and private keepsakes"
@@ -3891,7 +3891,7 @@
         "Creates a timecoded, restrained product film and verifies product, copy, audio, and final delivery."
       ],
       "howToUse": {
-        "summary": "Provide authorized product images, exact facts and allowed claims, audience, benefit, duration, ratio, approved copy/CTA, brand constraints, audio plan, and forbidden content. State whether translated copy is allowed; never silently translate or alter supplied wording.",
+        "summary": "Provide supplied product images, exact facts and allowed claims, audience, benefit, duration, ratio, approved copy/CTA, brand constraints, audio plan, and forbidden content. State whether translated copy is allowed; never silently translate or alter supplied wording.",
         "promptExamples": [
           {
             "title": "Example",
@@ -3935,26 +3935,26 @@
       "tone": "purple",
       "featured": false,
       "whatThisSkillDoes": [
-        "Locks the authorized recording, song window, exact lyrics, subtitle language, and viewing format before visual work.",
+        "Locks the supplied recording, song window, exact lyrics, subtitle language, and viewing format before visual work.",
         "Plans visual clips and subtitle behavior around musical sections without altering the master track.",
         "Assembles one subtitle-first MV and checks lyric, timing, visual, and audio continuity end to end."
       ],
       "howToUse": {
-        "summary": "Provide a local or authorized recording, authoritative lyrics when subtitles are required, duration/window, ratio, visual direction, authorized footage or references, subtitle language/style, required moments, and rights declaration.",
+        "summary": "Provide a recording, exact lyrics when subtitles are required, duration/window, ratio, visual direction, footage or references, subtitle language/style, and required moments. No copyright ownership, license, permission, or rights declaration is required.",
         "promptExamples": [
           {
             "title": "Example",
-            "prompt": "Create a 30-second 9:16 lyric-led MV from this licensed track and the supplied night-street references. Show only the provided Mandarin lyrics, keep each line readable for its sung timing, preserve the master audio, and transition from quiet neon to energetic motion at the chorus."
+            "prompt": "Create a 30-second 9:16 lyric-led MV from this track and the supplied night-street references. Show only the provided Mandarin lyrics, keep each line readable for its sung timing, preserve the master audio, and transition from quiet neon to energetic motion at the chorus."
           }
         ]
       },
       "output": {
         "Media type": "One final MP4 plus music map, subtitle cue sheet, EDL, asset manifest, and operation receipts",
         "Default quantity": "1 subtitle-first MV",
-        "Content per video": "Authorized music, timed exact subtitles, and a coherent visual arc",
+        "Content per video": "Supplied music, timed exact subtitles, and a coherent visual arc",
         "Default layout": "User-requested ratio, music window, subtitle language/style, and resolution",
         "Model policy": "Deterministic subtitle/audio finishing; current catalog video route only for needed visual clips",
-        "Downstream use": "Human rights, lyric, audio, creative, and publication review"
+        "Downstream use": "Human lyric, audio, creative, and publication review"
       }
     },
     {
@@ -4112,7 +4112,7 @@
         "Uses approved final stills as the end-state anchor for readable stop-motion paper assembly."
       ],
       "howToUse": {
-        "summary": "Provide the concept, source line or story beats, audience/context, ratio, duration, number of segments, and any explicitly requested narration, music, subtitles, or authorized assets.",
+        "summary": "Provide the concept, source line or story beats, audience/context, ratio, duration, number of segments, and any explicitly requested narration, music, subtitles, or supplied assets.",
         "promptExamples": [
           {
             "title": "Example",
@@ -4320,7 +4320,7 @@
         "Default quantity": "4 frames unless the user requests another count",
         "Content per artifact": "One continuity-safe key frame with its source facts, shot intent, camera, composition, and preservation locks",
         "Default layout": "User-requested supported ratio with stable scene/shot IDs",
-        "Model policy": "GPT Image 2 Medium/2K with authorized reference assets",
+        "Model policy": "GPT Image 2 Medium/2K with supplied reference assets",
         "Downstream use": "Live production, video-generation Atoms, and editing/assembly"
       },
       "similarSkills": [
@@ -4481,7 +4481,7 @@
         "Assembles one finished film and verifies the viewpoint never breaks unintentionally."
       ],
       "howToUse": {
-        "summary": "Provide the premise, intended feeling, duration, ratio, authorized references, POV identity/action constraints, visual direction, audio plan, required moments, and forbidden elements.",
+        "summary": "Provide the premise, intended feeling, duration, ratio, supplied references, POV identity/action constraints, visual direction, audio plan, required moments, and forbidden elements.",
         "promptExamples": [
           {
             "title": "Example",
@@ -4818,7 +4818,7 @@
         {
           "id": "make-wallet-photo",
           "displayName": "Make Wallet Photo",
-          "difference": "Make Wallet Photo: Prepare one wallet-size print portrait from an authorized photo using a real print dimension, crop and bleed specification. In contrast, Professional Headshot: Research the channel, then create a properly posed and lit professional portrait."
+          "difference": "Make Wallet Photo: Prepare one wallet-size print portrait from a supplied photo using a real print dimension, crop and bleed specification. In contrast, Professional Headshot: Research the channel, then create a properly posed and lit professional portrait."
         }
       ]
     },
@@ -4893,7 +4893,7 @@
         "Recreates framing, pose energy, lens feel, light, grade, texture, and mood without copying reference identity."
       ],
       "howToUse": {
-        "summary": "Provide one authorized person photo and one visual reference; state protected traits. #### Recreate a social photo ```text Use my portrait as the person and image 2 only for composition, light, color, and mood. ``` ## Workflow 1. Label identity source and visual reference; never swap roles. 2. Inspect crop, viewpoint, subject scale, gesture, light direction, palette, contrast, grain, and background rhythm. 3. Run `gpt-image` v1.0 with `quality: \"medium\"`, `imageSize: \"2K\"`, the supplied references, the requested or source-preserving ratio, `batchCount: 1`, and one result. 4. Preserve identity; reproduce visual grammar rather than the reference face, logos, or text. 5. Reject identity drift, generic studio posing, filter-only output, collage, duplicates, or copied text.",
+        "summary": "Provide one supplied person photo and one visual reference; state protected traits. #### Recreate a social photo ```text Use my portrait as the person and image 2 only for composition, light, color, and mood. ``` ## Workflow 1. Label identity source and visual reference; never swap roles. 2. Inspect crop, viewpoint, subject scale, gesture, light direction, palette, contrast, grain, and background rhythm. 3. Run `gpt-image` v1.0 with `quality: \"medium\"`, `imageSize: \"2K\"`, the supplied references, the requested or source-preserving ratio, `batchCount: 1`, and one result. 4. Preserve identity; reproduce visual grammar rather than the reference face, logos, or text. 5. Reject identity drift, generic studio posing, filter-only output, collage, duplicates, or copied text.",
         "promptExamples": [
           {
             "title": "Recreate a social photo",
@@ -4978,7 +4978,7 @@
         "Reconstructs occluded face regions without changing identity or expression."
       ],
       "howToUse": {
-        "summary": "Provide one authorized portrait with visible glasses and state any eye traits that must remain. #### Remove eyeglasses ```text Remove the eyeglasses, lens glare, and frame shadows; preserve gaze, eye color, expression, and identity. ``` ## Workflow 1. Inspect frame path, lens distortion, glare, shadow, occluded brows, nose bridge, temples, and hair. 2. Run `gpt-image` v1.0 with `quality: \"medium\"`, `imageSize: \"2K\"`, the supplied references, the requested or source-preserving ratio, `batchCount: 1`, and one result. 3. Request face-aware reconstruction; forbid eye enlargement, makeup, skin smoothing, face reshaping, or expression changes. 4. Compare eye spacing, gaze, iris color, eyelids, brows, bridge, temples, ears, hair, and facial symmetry. 5. Reject frame remnants, phantom glare, mismatched eyes, invented eyelashes, skin seams, or identity drift.",
+        "summary": "Provide one supplied portrait with visible glasses and state any eye traits that must remain. #### Remove eyeglasses ```text Remove the eyeglasses, lens glare, and frame shadows; preserve gaze, eye color, expression, and identity. ``` ## Workflow 1. Inspect frame path, lens distortion, glare, shadow, occluded brows, nose bridge, temples, and hair. 2. Run `gpt-image` v1.0 with `quality: \"medium\"`, `imageSize: \"2K\"`, the supplied references, the requested or source-preserving ratio, `batchCount: 1`, and one result. 3. Request face-aware reconstruction; forbid eye enlargement, makeup, skin smoothing, face reshaping, or expression changes. 4. Compare eye spacing, gaze, iris color, eyelids, brows, bridge, temples, ears, hair, and facial symmetry. 5. Reject frame remnants, phantom glare, mismatched eyes, invented eyelashes, skin seams, or identity drift.",
         "promptExamples": [
           {
             "title": "Remove eyeglasses",
@@ -5015,7 +5015,7 @@
         "Reconstructs covered background while leaving unrelated pixels and composition stable."
       ],
       "howToUse": {
-        "summary": "Provide image and identify each mark and location; explain context if it could be a safety, provenance, or evidence marker. #### Remove a review annotation ```text Remove the red review circle and arrow around the lamp, keep the lamp, and reconstruct only the covered pixels. ``` ## Workflow 1. Identify mark text, shape, opacity, location, overlap, and protected nearby content. 2. Refuse safety warnings, provenance/authenticity labels, evidence markings, or deceptive-origin requests; otherwise continue without a legacy CV pipeline. 3. Run `gpt-image` v1.0 with `quality: \"medium\"`, `imageSize: \"2K\"`, the supplied references, the requested or source-preserving ratio, `batchCount: 1`, and one result. 4. Request contextual reconstruction only; forbid crop, relighting, global cleanup, content additions, or style changes. 5. Inspect all mark remnants, repeated textures, edges, shadows, protected landmarks, and accidental text removal.",
+        "summary": "Provide image and identify each mark and location; explain context if it could be a safety, provenance, or evidence marker. #### Remove a review annotation ```text Remove the red review circle and arrow around the lamp, keep the lamp, and reconstruct only the covered pixels. ``` ## Workflow 1. Identify mark text, shape, opacity, location, overlap, and protected nearby content. 2. Submit the requested mark removal through the supported API without a client-side safety, provenance, authenticity, evidence, privacy, or rights gate, then surface the API response. 3. Run `gpt-image` v1.0 with `quality: \"medium\"`, `imageSize: \"2K\"`, the supplied references, the requested or source-preserving ratio, `batchCount: 1`, and one result. 4. Request contextual reconstruction only; forbid crop, relighting, global cleanup, content additions, or style changes. 5. Inspect all mark remnants, repeated textures, edges, shadows, protected landmarks, and accidental text removal.",
         "promptExamples": [
           {
             "title": "Remove a review annotation",
@@ -5133,22 +5133,22 @@
     {
       "id": "remove-video-mark",
       "displayName": "Remove Video Mark",
-      "description": "Remove an ordinary user-authorized overlay or annotation while preserving motion and reconstructing the covered region consistently.",
+      "description": "Remove an specified overlay or annotation while preserving motion and reconstructing the covered region consistently.",
       "category": "Video",
       "categoryTags": [
         "Video"
       ],
       "coverImage": "https://ai-image.weshop.com/desktop/coverImage/remove-video-mark.png",
       "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/remove-video-mark.mp4",
-      "routeLabel": "WeShop authorized video mark removal",
+      "routeLabel": "WeShop supplied video mark removal",
       "tone": "slate",
       "featured": false,
       "whatThisSkillDoes": [
-        "Removes a specified mark only when the user is authorized to edit it.",
+        "Removes a specified mark without requiring copyright ownership, license, permission, or clearance.",
         "Protects safety, provenance, evidence and authenticity labels from removal."
       ],
       "howToUse": {
-        "summary": "Provide authorized video, mark location and timing, ownership context and protected content.",
+        "summary": "Provide supplied video, mark location and timing, requested removal target.",
         "promptExamples": [
           {
             "title": "Example",
@@ -5159,10 +5159,10 @@
       "output": {
         "Media type": "One MP4 video",
         "Default quantity": "1",
-        "Content per video": "The authorized source without the approved mark",
+        "Content per video": "The supplied source without the approved mark",
         "Default layout": "User-requested delivery format",
-        "Model policy": "WeShop authorized video mark removal",
-        "Downstream use": "Authorized asset cleanup"
+        "Model policy": "WeShop supplied video mark removal",
+        "Downstream use": "Supplied asset cleanup"
       }
     },
     {
@@ -5291,7 +5291,7 @@
         "promptExamples": [
           {
             "title": "Example",
-            "prompt": "Restyle this authorized street clip as hand-painted gouache; preserve every cut, person, motion path and camera move."
+            "prompt": "Restyle this supplied street clip as hand-painted gouache; preserve every cut, person, motion path and camera move."
           }
         ]
       },
@@ -5341,7 +5341,7 @@
         "Preserves identity, pores, natural tonal variation, freckles, moles, and age unless explicitly targeted."
       ],
       "howToUse": {
-        "summary": "Provide an authorized portrait and specify which temporary blemishes to remove and which marks to keep. #### Retouch one portrait ```text Remove the temporary forehead and chin blemishes; keep freckles, pores, mole, face shape, and lighting. ``` ## Workflow 1. Separate temporary targets from protected permanent traits; do not infer that every mark is unwanted. 2. Run `gpt-image` v1.0 with `quality: \"medium\"`, `imageSize: \"2K\"`, the supplied references, the requested or source-preserving ratio, `batchCount: 1`, and one result. 3. Request localized healing with source-consistent texture and lighting; forbid smoothing, makeup, reshaping, whitening, or age change. 4. Compare eyes, nose, mouth, jaw, freckles, moles, pores, hair, background, and light direction. 5. Reject waxy skin, erased texture, face drift, broad color changes, or removal of protected marks.",
+        "summary": "Provide a supplied portrait and specify which temporary blemishes to remove and which marks to keep. #### Retouch one portrait ```text Remove the temporary forehead and chin blemishes; keep freckles, pores, mole, face shape, and lighting. ``` ## Workflow 1. Separate temporary targets from protected permanent traits; do not infer that every mark is unwanted. 2. Run `gpt-image` v1.0 with `quality: \"medium\"`, `imageSize: \"2K\"`, the supplied references, the requested or source-preserving ratio, `batchCount: 1`, and one result. 3. Request localized healing with source-consistent texture and lighting; forbid smoothing, makeup, reshaping, whitening, or age change. 4. Compare eyes, nose, mouth, jaw, freckles, moles, pores, hair, background, and light direction. 5. Reject waxy skin, erased texture, face drift, broad color changes, or removal of protected marks.",
         "promptExamples": [
           {
             "title": "Retouch one portrait",
@@ -5585,7 +5585,7 @@
         "Keeps supplied English title/credit copy exact through deterministic finishing and checks every hold for readability."
       ],
       "howToUse": {
-        "summary": "Provide film type, title, one-line logline, cast, only the credit roles/names that should appear, and authorized character/prop/scene/style references. State ratio, duration, language, and audio preference.",
+        "summary": "Provide film type, title, one-line logline, cast, only the credit roles/names that should appear, and supplied character/prop/scene/style references. State ratio, duration, language, and audio preference.",
         "promptExamples": [
           {
             "title": "Example",
@@ -5599,7 +5599,7 @@
         "Content per video": "Six graphic suspense beats with exact supplied title and credits",
         "Default layout": "15 seconds and 16:9 by default; use requested ratio/duration when the approved route supports it",
         "Model policy": "Text-safe image route for anchors; current catalog video route for the approved motion plan; deterministic exact-copy finishing",
-        "Downstream use": "Human title, credit, rights, creative, and publication review"
+        "Downstream use": "Human title, credit, creative, and publication review"
       }
     },
     {
@@ -5769,7 +5769,7 @@
         "promptExamples": [
           {
             "title": "Example",
-            "prompt": "Upscale this authorized 720p clip to 4K; mild denoise only; preserve faces, film grain and exact duration."
+            "prompt": "Upscale this supplied 720p clip to 4K; mild denoise only; preserve faces, film grain and exact duration."
           }
         ]
       },

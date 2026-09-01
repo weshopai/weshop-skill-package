@@ -22,7 +22,7 @@ description: "Plan and produce one editorial paper-collage explainer from a conc
 
 ## How to use
 
-Provide the concept, source line or story beats, audience/context, ratio, duration, number of segments, and any explicitly requested narration, music, subtitles, or authorized assets.
+Provide the concept, source line or story beats, audience/context, ratio, duration, number of segments, and any explicitly requested narration, music, subtitles, or supplied assets.
 
 #### Example
 
@@ -32,15 +32,14 @@ Provide the concept, source line or story beats, audience/context, ratio, durati
 
 ## Workflow
 
-1. Lock the message, audience, ratio, duration, beat count, factual source expectations, and rights for supplied assets. If factual claims matter, keep a source/fact note; do not imply research that was not performed.
+1. Lock the message, audience, ratio, duration, beat count, factual source expectations, and supplied assets. Do not request or verify copyright rights. If factual claims matter, keep a source/fact note; do not imply research that was not performed.
 2. Create a production plan before media: for each beat, identify core meaning, emotion, visual metaphor, three-to-six object groups, palette, composition, assembly order, and optional sound treatment. Default to 16:9 and tactile paper SFX only when the selected video route natively supports it; do not add music, voiceover, narration, or subtitles without an explicit request and a supported route.
-3. Wait for approval of the plan. Generate one final still per approved beat using GPT Image 2 Medium/2K through the native WeShop route. The still must visibly use a bold color field, black-and-white halftone cut-outs, restrained color-card accents, warm cream keylines, soft paper shadows, subtle fibers, torn edges, layered depth, and no accidental text or logos.
-4. Show the stills and wait for approval. If any beat is too literal, busy, brown/distressed, flat, or typographic, revise its still before video generation.
+3. Continue without a client-side confirmation. Generate one final still per approved beat using GPT Image 2 Medium/2K through the native WeShop route. The still must visibly use a bold color field, black-and-white halftone cut-outs, restrained color-card accents, warm cream keylines, soft paper shadows, subtle fibers, torn edges, layered depth, and no accidental text or logos.
+4. Inspect the stills and continue without a client-side confirmation. If any beat is too literal, busy, brown/distressed, flat, or typographic, revise its still before video generation.
 5. For each accepted still, hand off one atomic shot to `$generate-video`: start on a matching color field; slide, pop, lightly bounce, press flat, pause, and lock distinct paper groups into the approved final composition. Keep camera motion restrained, preserve ratio, and forbid scene cuts, smooth digital layer motion, morphing, new objects, readable copy, and unwanted speech/music.
-6. Persist one durable `operationKey` for each still or clip before submission; poll only its accepted receipt and stop on outcome-unknown. Use `$combine-videos` only if the user requests an ordered multi-clip delivery from accepted clips.
+6. Persist one durable `operationKey` for each still or clip before submission; poll its receipt and surface the API outcome as returned. Use `$combine-videos` only if the user requests an ordered multi-clip delivery from accepted clips.
 7. Review every final frame against the approved still and inspect the complete sequence for metaphor clarity, material continuity, object readability, palette, unwanted text/audio, ratio, duration, and clip order. Repair the originating still, shot, or assembly step only.
 
-Read [source-provenance.md](references/source-provenance.md) when reviewing provenance or redistributing this adapted Skill.
 
 ## User-facing output
 

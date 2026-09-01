@@ -28,7 +28,7 @@ Provide a video, one target style, preservation priorities, protected text or lo
 #### Example
 
 ```text
-Restyle this authorized street clip as hand-painted gouache; preserve every cut, person, motion path and camera move.
+Restyle this supplied street clip as hand-painted gouache; preserve every cut, person, motion path and camera move.
 ```
 
 ## Workflow

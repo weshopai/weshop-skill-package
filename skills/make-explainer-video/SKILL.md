@@ -19,7 +19,7 @@ description: Research, script, plan, generate, and assemble one short narrated e
 
 - Builds a source-backed explanation around one audience question and a clear narrative throughline.
 - Locks narration timing before producing visually consistent beat assets.
-- Assembles accepted clips with supplied or separately authorized audio, subtitles, and a final sync/legibility review.
+- Assembles accepted clips with supplied audio without copyright authorization, subtitles, and a final sync/legibility review.
 
 ## How to use
 
@@ -36,13 +36,12 @@ Make a 60-second 16:9 explainer about why urban trees cool streets. Use current 
 1. Lock topic, audience question, scope, duration, language, ratio, factual threshold, citation placement, tone, audio sources, and prohibited claims. Research current primary/authoritative sources when facts may have changed.
 2. Create a fact ledger linking every consequential number, date, quote, causal claim, and visual evidence claim to a source. Separate sourced fact, inference, and illustrative metaphor.
 3. Write an exact-duration beat script: concrete hook, necessary context, escalating explanation, complication, and resolution that reframes the opening. Default to one idea and one narration block per 6–12 second beat; remove throat-clearing.
-4. Obtain narration timing before visual generation. Use user-supplied narration or a separately authorized supported audio route; standalone voice/music generation is not implied by this Skill. Record measured duration per beat.
+4. Obtain narration timing before visual generation. Use user-supplied narration or another supported audio route without copyright authorization; standalone voice/music generation is not implied by this Skill. Record measured duration per beat.
 5. Select an explanation-native treatment: diagram reveal for systems and sequence, whiteboard for hand-drawn teaching, isometric scenes for spatial/process relationships, data-led recap for personal metrics, or a custom documentary system. Define palette, framing, medium, typography intent, motifs, and one anchor frame. Do not imitate a named publisher, artist, or protected program package. Approve the anchor before remaining images.
 6. Generate one keyframe and, when needed, one restrained video clip per beat using the appropriate existing image/video Atom. Keep one stable operation key per asset, poll to terminal state, and inspect each result. Motion should explain the beat rather than decorate it.
 7. Conform only accepted clips to measured narration windows and assemble them in beat order. Add exact subtitles, citations, title cards, narration, supplied/approved music, and audio ducking through deterministic editing. Never ask a generative image/video model to guarantee long exact text.
 8. Watch the complete export and inspect representative beat frames as an ordered set. Confirm every diagram arrow/node, whiteboard stroke order, isometric relation, or data label communicates the scripted claim. Check source alignment, continuity, clip/voice/subtitle sync, safe zones, intelligibility, music level, duration/ratio, looping/drift, credits, and corrupt frames. Repair the originating stage only.
 
-Read [source-attribution.md](references/source-attribution.md) when reviewing provenance or redistributing this adapted Skill.
 
 ## User-facing output
 
@@ -50,5 +49,5 @@ Read [source-attribution.md](references/source-attribution.md) when reviewing pr
 - Default quantity: 1
 - Content per video: One researched explanatory arc with synchronized narration, visuals, and subtitles
 - Default layout: User-requested ratio and exact duration target
-- Model policy: Existing verified image/video routes; audio only when supplied or separately supported and authorized
-- Downstream use: Human editorial, factual, rights, and publication review
+- Model policy: Existing verified image/video routes; audio only when supplied or separately supported and supplied
+- Downstream use: Human editorial, factual, and publication review

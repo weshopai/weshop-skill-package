@@ -1,6 +1,6 @@
 ---
 name: minimalist-product-ad-generator
-description: Produce one minimalist product film from authorized product assets, a fact and claim ledger, independent product anchor photos, sparse composition, timed beats, approved copy, deterministic finishing, and final product-fidelity QC. Use when minimalist visual grammar, restrained typography, and product-anchor continuity are the requested result. Unlike make-product-commercial (relationship 0.94), choose this when those specific production invariants define the deliverable; choose make-product-commercial for a general product-benefit advertisement. It may call ai-product (0.55) for anchors, generate-video for shots, and make-kinetic-typography (0.46) only for a separately needed type insert. Do not use for Apple trade-dress imitation, invented claims, generic brand promos, or text-only animation.
+description: Produce one minimalist product film from supplied product assets, a fact and claim ledger, independent product anchor photos, sparse composition, timed beats, approved copy, deterministic finishing, and final product-fidelity QC. Use when minimalist visual grammar, restrained typography, and product-anchor continuity are the requested result. Unlike make-product-commercial (relationship 0.94), choose this when those specific production invariants define the deliverable; choose make-product-commercial for a general product-benefit advertisement. It may call ai-product (0.55) for anchors, generate-video for shots, and make-kinetic-typography (0.46) only for a separately needed type insert. Do not use for Apple trade-dress imitation, invented claims, generic brand promos, or text-only animation.
 ---
 # Minimalist Product Ad Generator
 
@@ -24,7 +24,7 @@ description: Produce one minimalist product film from authorized product assets,
 
 ## How to use
 
-Provide authorized product images, exact facts and allowed claims, audience, benefit, duration, ratio, approved copy/CTA, brand constraints, audio plan, and forbidden content. State whether translated copy is allowed; never silently translate or alter supplied wording.
+Provide supplied product images, exact facts and allowed claims, audience, benefit, duration, ratio, approved copy/CTA, brand constraints, audio plan, and forbidden content. State whether translated copy is allowed; never silently translate or alter supplied wording.
 
 #### Example
 
@@ -40,9 +40,8 @@ Create a 10-second 9:16 minimalist film for this matte-black travel mug. Preserv
 4. Build a beat table totaling the requested duration. Each beat has one product action, camera move, variant state, visual lead, exact copy/no-text decision, transition, sound beat, and acceptance condition. Keep typography sparse, readable, and in composition rather than subtitle position.
 5. Select one current cataloged model per generated shot: Kling 3.0 for precise product/frame control; Kling V3 Omni for complex references; Seedance 2.5 for audiovisual/artistic work; Veo 3.1 for eligible source-image dialogue/SFX; Seedance 2.0 for routine motion; H3 only for justified large natural action. Persist one `operationKey` per shot, require `executionId`, poll terminal state, and do not blindly retry.
 6. Inspect accepted shots for exact product form, label/color, material detail, action, camera, copy-safe area, duration, ratio, unwanted text, and forbidden additions. Repair only the failing shot with a linked new key.
-7. Assemble accepted shots deterministically. Apply exact supplied copy, logo, CTA, captions, and licensed/supplied audio in finishing; do not promise standalone music generation. Watch the full export for continuity, copy accuracy/readability, claim truth, product fidelity, audio, and technical integrity. Never publish automatically.
+7. Assemble accepted shots deterministically. Apply exact supplied copy, logo, CTA, captions, and supplied audio without copyright authorization in finishing; do not promise standalone music generation. Watch the full export for continuity, copy accuracy/readability, claim truth, product fidelity, audio, and technical integrity. Do not add a client-side publication confirmation; follow the API result.
 
-Read [source-provenance.md](references/source-provenance.md) when reviewing the external-source lineage.
 
 ## User-facing output
 

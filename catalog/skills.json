@@ -3923,6 +3923,64 @@
       ]
     },
     {
+      "id": "mono-color",
+      "displayName": "Mono Color",
+      "description": "Create one- or two-ink editorial print images with active paper, typographic tension, and controlled halftone texture.",
+      "category": "Layout & Design",
+      "categoryTags": [
+        "Layout & Design"
+      ],
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/mono-color.svg",
+      "routeLabel": "GPT Image 2 one/two-ink editorial print",
+      "tone": "blue",
+      "featured": false,
+      "whatThisSkillDoes": [
+        "Converts a theme, short text, article idea, object, or authorized image into one original raster editorial print artifact.",
+        "Locks one or two ink plates to explicit image, type, rule, or annotation roles while leaving the neutral substrate visibly active.",
+        "Preserves exact supplied short copy and declared subject anchors without copying a reference composition, wording, logo, lettering, or artwork.",
+        "Returns the generated image, final Prompt, and a compact palette/layout/type/process recipe."
+      ],
+      "howToUse": {
+        "summary": "Provide one subject or idea and any exact short copy. Optionally provide an authorized image, output ratio, named ink or pair, contemporary or tactile direction, and the identity or factual details that must remain recognizable.",
+        "promptExamples": [
+          {
+            "title": "Create a two-ink editorial poster",
+            "prompt": "用钴蓝和陶土橙做一张凌晨便利店的双色孔版印刷海报，标题是 “STILL OPEN”。"
+          },
+          {
+            "title": "Transform a supplied photograph",
+            "prompt": "把这张骑行照片做成群青单色编辑封面，保留人物身份和车轮结构，让标题局部压过车轮。"
+          }
+        ]
+      },
+      "output": {
+        "Media type": "One raster editorial print image, final generation Prompt, and compact recipe",
+        "Default quantity": "1 image",
+        "Content per image": "One recognizable subject or visual metaphor, one focal event, one or two assigned ink plates, exact approved short copy, and exposed neutral paper",
+        "Default layout": "3:4 with 25–55% visible substrate unless specified",
+        "Preservation": "Declared identity and factual anchors for edit references; visual grammar only for style references",
+        "Model policy": "GPT Image 2 Medium/2K, one image per operation, one issue-specific retry maximum",
+        "Downstream use": "Editorial covers, cultural posters, article hero images, art prints, event graphics, and visual-system exploration"
+      },
+      "similarSkills": [
+        {
+          "id": "minimal-zine-poster",
+          "displayName": "Minimal Zine Poster",
+          "difference": "Minimal Zine Poster: Create sparse editorial posters with aged paper, radical negative space, and one vivid accent. In contrast, Mono Color: Create one- or two-ink editorial print images with active paper, typographic tension, and controlled halftone texture."
+        },
+        {
+          "id": "poster-design",
+          "displayName": "Poster Design",
+          "difference": "Poster Design: Create distinctive posters across varied art directions. In contrast, Mono Color: Create one- or two-ink editorial print images with active paper, typographic tension, and controlled halftone texture."
+        },
+        {
+          "id": "apply-photo-filter",
+          "displayName": "Apply Photo Filter",
+          "difference": "Apply Photo Filter: Apply one filter without changing scene content. In contrast, Mono Color: Create one- or two-ink editorial print images with active paper, typographic tension, and controlled halftone texture."
+        }
+      ]
+    },
+    {
       "id": "music-video-subtitle-generator",
       "displayName": "Music Video Subtitle Generator",
       "description": "Produce a music-led visual video with exact timed subtitles and audio-continuity QC.",

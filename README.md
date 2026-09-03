@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img alt="135 Atom Skills" src="https://img.shields.io/badge/Atom_Skills-135-7530FE?style=flat-square" />
+  <img alt="136 Atom Skills" src="https://img.shields.io/badge/Atom_Skills-136-7530FE?style=flat-square" />
   <a href="https://www.npmjs.com/package/weshop-skill-package"><img alt="npm version" src="https://img.shields.io/npm/v/weshop-skill-package?style=flat-square&color=CB3837" /></a>
   <a href="https://www.npmjs.com/package/weshop-skill-package"><img alt="npm downloads" src="https://img.shields.io/npm/dm/weshop-skill-package?style=flat-square&color=CB3837" /></a>
   <img alt="Codex" src="https://img.shields.io/badge/Codex-ready-10A37F?style=flat-square" />
@@ -18,7 +18,7 @@
 
 WeShop Skills turns plain-language creative requests into production-ready image, video, product, portrait, layout, and spatial workflows powered by WeShop OpenAPI. Install the complete collection or pick only the Skills you need.
 
-> This repository contains **135 focused Atom Skills + 1 user-authoring Skill + 1 Router + 1 multi-step orchestration Skill (138 Skills total)**. `weshop-router` decides whether to call one Atom directly or escalate to orchestration. Media execution uses a native WeShop harness tool or the official `weshop` CLI, never a package-owned fallback client.
+> This repository contains **136 focused Atom Skills + 1 user-authoring Skill + 1 Router + 1 multi-step orchestration Skill (139 Skills total)**. `weshop-router` decides whether to call one Atom directly or escalate to orchestration. Media execution uses a native WeShop harness tool or the official `weshop` CLI, never a package-owned fallback client.
 
 ## Package boundaries
 
@@ -193,11 +193,11 @@ For compound work, `orchestrate-multi-step-workflow` discovers installed Skills 
 
 ## Complete Skill inventory 🧩
 
-The `skills/` directory contains 135 creative Atom Skills, one platform-tooling Skill, one Router, and one multi-step orchestration Skill—138 Skills in total. Categories below are for browsing only and do not participate in hard-coded selection.
+The `skills/` directory contains 136 creative Atom Skills, one platform-tooling Skill, one Router, and one multi-step orchestration Skill—139 Skills in total. Categories below are for browsing only and do not participate in hard-coded selection.
 
 ### Client catalog contract
 
-Published packages include [`catalog/skills.json`](catalog/skills.json), a versioned, client-neutral catalog generated from the installed `SKILL.md` files. Its 136 public entries cover the 135 Atom Skills and the user-authoring Skill; the two system-only routing Skills are intentionally hidden from the client catalog. It provides each public Skill's cover reference, category and tags, description, usage summary and examples, plus up to three differentiated related Skills. Clients may use it for presentation, but must continue to discover and execute Skills from `SKILL.md`: the catalog is optional so individually copied Skills, older package versions, and third-party/custom directories remain compatible.
+Published packages include [`catalog/skills.json`](catalog/skills.json), a versioned, client-neutral catalog generated from the installed `SKILL.md` files. Its 137 public entries cover the 136 Atom Skills and the user-authoring Skill; the two system-only routing Skills are intentionally hidden from the client catalog. It provides each public Skill's cover reference, category and tags, description, usage summary and examples, plus up to three differentiated related Skills. Clients may use it for presentation, but must continue to discover and execute Skills from `SKILL.md`: the catalog is optional so individually copied Skills, older package versions, and third-party/custom directories remain compatible.
 
 | Category | Skills |
 | --- | --- |
@@ -205,7 +205,7 @@ Published packages include [`catalog/skills.json`](catalog/skills.json), a versi
 | Multi-step orchestration | `orchestrate-multi-step-workflow` |
 | User authoring | `create-custom-skill` |
 | Commercial products and apparel | `ai-product`, `change-pose`, `create-white-background-product-mockup`, `fashion-model-replacement`, `outfit-design`, `product-packaging`, `virtual-try-on` |
-| Layout and marketing | `ai-banner-design`, `add-speech-bubble`, `apply-photo-filter`, `article-handdrawn-illustrations`, `compose-lookbook`, `create-image-deck`, `create-social-carousel`, `image-combiner`, `legal-diagram-redraw`, `legal-evidence-timeline`, `make-infographic`, `make-silhouette`, `make-thumbnail`, `minimal-zine-poster`, `photo-collage`, `poster-design`, `product-detail-page`, `recolor-object`, `recreate-social-photo`, `social-knowledge-notes`, `technical-visual-explainer`, `translate-image-text` |
+| Layout and marketing | `ai-banner-design`, `add-speech-bubble`, `apply-photo-filter`, `article-handdrawn-illustrations`, `compose-lookbook`, `create-image-deck`, `create-social-carousel`, `image-combiner`, `legal-diagram-redraw`, `legal-evidence-timeline`, `make-infographic`, `make-silhouette`, `make-thumbnail`, `minimal-zine-poster`, `mono-color`, `photo-collage`, `poster-design`, `product-detail-page`, `recolor-object`, `recreate-social-photo`, `social-knowledge-notes`, `technical-visual-explainer`, `translate-image-text` |
 | Personal appearance | `add-braces`, `add-tattoo`, `apply-makeup`, `change-bangs`, `eye-color-change`, `hair-color-change`, `hairstyle-change`, `make-selfie`, `shave-head` |
 | Portrait production | `id-photo-format`, `professional-headshot` |
 | Image repair and utilities | `clean-room`, `colorize-image`, `expand-image`, `remove-background`, `remove-glasses`, `remove-image-mark`, `remove-object`, `remove-photo-filter`, `retouch-blemish`, `smooth-wrinkles` |
@@ -274,7 +274,7 @@ Useful commands:
 | `npm run check` | Run TypeScript checks |
 | `npm test` | Test routing, safety policy, installation, and updates |
 | `npm run models:validate` | Validate the model catalog |
-| `npm run models:routing-validate` | Validate model routes across all 135 creative Atom Skills |
+| `npm run models:routing-validate` | Validate model routes across all 136 creative Atom Skills |
 | `npm run docs:validate` | Validate this README and Skill inventory |
 | `npm run maintainers:validate` | Validate maintainer documentation |
 | `npm run web:build` | Build the generated visual Skill catalog |

@@ -12,6 +12,7 @@ description: Edit supplied video clips or stills to supplied music using measure
 - Route label: Deterministic beat-aware edit
 - Tone: blue
 - Short description: Cut supplied visuals to measured music structure and verify the export.
+- Cover motion: https://ai-image.weshop.com/desktop/coverImage/make-beat-synced-video.mp4
 
 - Similar skills: combine-videos, edit-social-video, make-music-video
 ## What this skill does

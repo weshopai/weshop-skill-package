@@ -30,7 +30,7 @@ const parseSkill = async (slug) => {
   if (catalog.Visibility && !["public", "system"].includes(catalog.Visibility)) throw new Error(`${slug}: Visibility must be public or system when provided`);
   if (catalog.Featured && !["yes", "no"].includes(catalog.Featured)) throw new Error(`${slug}: Featured must be yes or no when provided`);
   if (catalog["Cover image"] && (!catalog["Cover image"].startsWith(`${coverImageBase}/${slug}.`) || !/\.(png|jpe?g|webp|gif|avif|svg)$/i.test(catalog["Cover image"]))) throw new Error(`${slug}: Cover image must use its Skill ID under ${coverImageBase}`);
-  if (catalog["Cover motion"] && (!catalog["Cover motion"].startsWith(`${coverVideoBase}/${slug}.`) || !/\.(mp4|webm)$/i.test(catalog["Cover motion"]))) throw new Error(`${slug}: Cover motion must use its Skill ID under ${coverVideoBase}`);
+  if (catalog["Cover motion"] && (![coverVideoBase, coverImageBase].some((base) => catalog["Cover motion"].startsWith(`${base}/${slug}.`)) || !/\.(mp4|webm)$/i.test(catalog["Cover motion"]))) throw new Error(`${slug}: Cover motion must use its Skill ID under ${coverVideoBase} or ${coverImageBase}`);
   const sourceImages = catalog["Source images"]?.split(",").map((value) => value.trim()).filter(Boolean) ?? [];
   if (sourceImages.some((value, index) => {
     const suffix = sourceImages.length > 1 ? `-${index + 1}` : "";

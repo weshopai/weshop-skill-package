@@ -2186,7 +2186,7 @@
       "categoryTags": [
         "Video"
       ],
-      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/editorial-cutout-explainer.svg",
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/editorial-cutout-explainer.png",
       "routeLabel": "Evidence-led editorial cutout production",
       "tone": "orange",
       "featured": false,
@@ -2995,6 +2995,7 @@
         "Video"
       ],
       "coverImage": "https://ai-image.weshop.com/desktop/coverImage/make-beat-synced-video.svg",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverImage/make-beat-synced-video.mp4",
       "routeLabel": "Deterministic beat-aware edit",
       "tone": "blue",
       "featured": false,
@@ -3236,6 +3237,7 @@
         "Video"
       ],
       "coverImage": "https://ai-image.weshop.com/desktop/coverImage/make-kinetic-typography.svg",
+      "coverMotion": "https://ai-image.weshop.com/desktop/coverImage/make-kinetic-typography.mp4",
       "routeLabel": "Accessible animated typography",
       "tone": "blue",
       "featured": false,

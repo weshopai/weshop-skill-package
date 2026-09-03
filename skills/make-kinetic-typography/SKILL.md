@@ -12,6 +12,7 @@ description: Create one polished, accessible kinetic-typography animation from s
 - Route label: Accessible animated typography
 - Tone: blue
 - Short description: Turn approved copy into one readable, verified typography animation.
+- Cover motion: https://ai-image.weshop.com/desktop/coverImage/make-kinetic-typography.mp4
 
 ## What this skill does
 

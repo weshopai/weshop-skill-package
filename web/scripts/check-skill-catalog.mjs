@@ -20,7 +20,7 @@ for (const skill of catalog.skills) {
   }
   if (!new RegExp(`^${mediaBase}/coverImage/${skill.id}\\.(?:png|jpe?g|webp|gif|avif|svg)$`, "i").test(skill.coverImage)) throw new Error(`${skill.id}: invalid remote coverImage`);
   if (skill.coverMotion !== undefined) {
-    if (typeof skill.coverMotion !== "string" || !new RegExp(`^${mediaBase}/coverVideo/${skill.id}\\.(?:mp4|webm)$`, "i").test(skill.coverMotion)) throw new Error(`${skill.id}: invalid remote coverMotion`);
+    if (typeof skill.coverMotion !== "string" || !new RegExp(`^${mediaBase}/cover(?:Video|Image)/${skill.id}\\.(?:mp4|webm)$`, "i").test(skill.coverMotion)) throw new Error(`${skill.id}: invalid remote coverMotion`);
   }
   if (skill.sourceImages !== undefined) {
     if (!Array.isArray(skill.sourceImages) || !skill.sourceImages.length) throw new Error(`${skill.id}: invalid sourceImages`);

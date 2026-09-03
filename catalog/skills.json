@@ -5860,6 +5860,59 @@
       ]
     },
     {
+      "id": "urban-daylight-documentary-grade",
+      "displayName": "Urban Daylight Documentary Grade",
+      "description": "Recover clean urban daylight depth without changing the scene.",
+      "category": "Layout & Design",
+      "categoryTags": [
+        "Layout & Design"
+      ],
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/urban-daylight-documentary-grade.svg",
+      "routeLabel": "GPT Image 2 consistency-sensitive daylight edit",
+      "tone": "sky",
+      "featured": false,
+      "whatThisSkillDoes": [
+        "Corrects one supplied urban daylight photograph using only exposure, contrast, saturation, white balance, local tonal/color separation, restrained sharpness, and an optional extremely subtle vignette.",
+        "Keeps bright areas controlled, shadows deep but detailed, midtones clean, neutral architecture stable, and source colors natural.",
+        "Preserves composition, people, objects, text, geometry, material texture, original light direction, weather, environment, and depth of field."
+      ],
+      "howToUse": {
+        "summary": "Provide one authorized city daylight photograph. Optionally name the desired strength, protected colors or neutral surfaces, and whether a barely visible natural vignette is acceptable.",
+        "promptExamples": [
+          {
+            "title": "Add clean daylight depth",
+            "prompt": "这张城市街拍有点灰蒙蒙。保留人物、建筑、构图、原始光线方向和景深；让天空和白墙明亮但不过曝，阴影压深但保留纹理，中间调干净扎实，受光面微暖、阴影微冷，灰色建筑和地面保持中性。不要HDR、颗粒、光晕或新增光源。"
+          }
+        ]
+      },
+      "output": {
+        "Media type": "One corrected urban daylight photograph",
+        "Default quantity": "1",
+        "Content per image": "Unchanged source scene with controlled highlights, detailed deeper shadows, clean midtones, stable neutral surfaces, and restrained local warm/cool separation",
+        "Default layout": "Source composition and aspect ratio",
+        "Preservation": "Composition, people, identity, objects, text, geometry, textures, original light direction, weather, environment, and depth of field",
+        "Model policy": "GPT Image 2 Medium/2K for consistency-sensitive final image editing; one issue-specific retry maximum",
+        "Downstream use": "Street photography, city travel images, architectural context shots, editorial documentary images, and social publishing"
+      },
+      "similarSkills": [
+        {
+          "id": "apply-photo-filter",
+          "displayName": "Apply Photo Filter",
+          "difference": "Apply Photo Filter: Apply one filter without changing scene content. In contrast, Urban Daylight Documentary Grade: Recover clean urban daylight depth without changing the scene."
+        },
+        {
+          "id": "remove-photo-filter",
+          "displayName": "Remove Photo Filter",
+          "difference": "Remove Photo Filter: Remove an artificial grade and restore a natural look. In contrast, Urban Daylight Documentary Grade: Recover clean urban daylight depth without changing the scene."
+        },
+        {
+          "id": "recolor-object",
+          "displayName": "Recolor Object",
+          "difference": "Recolor Object: Recolor one object without tinting the whole image. In contrast, Urban Daylight Documentary Grade: Recover clean urban daylight depth without changing the scene."
+        }
+      ]
+    },
+    {
       "id": "video-model-advisor",
       "displayName": "Video Model Advisor",
       "description": "Evidence-bounded recommendation among verified video routes.",

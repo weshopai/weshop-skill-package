@@ -35,24 +35,30 @@ test('orchestrator and CLI reference select auth from the host contract', async 
   assert.match(cli, /empty Shell `WESHOP_API_KEY` is expected/);
 });
 
-test('direct and orchestrated wrapper paths load the shared assembly contract', async () => {
-  const [router, orchestrator, officialCli, assembly, packageJson] = await Promise.all([
+test('native Tool wrapper contracts remain owned by the host', async () => {
+  const [router, orchestrator, officialCli, packageJson] = await Promise.all([
     read('skills/weshop-router/SKILL.md'),
     read('skills/orchestrate-multi-step-workflow/SKILL.md'),
     read('skills/orchestrate-multi-step-workflow/references/official-cli.md'),
-    read('tool-call-assembly.md'),
     read('package.json'),
   ]);
 
-  assert.match(router, /\[tool-call assembly reference\]\(\.\.\/\.\.\/tool-call-assembly\.md\)/);
-  assert.match(orchestrator, /\[tool-call assembly reference\]\(\.\.\/\.\.\/tool-call-assembly\.md\)/);
-  assert.match(router, /After any schema or argument-assembly validation error, read it again/);
-  assert.match(orchestrator, /After any schema or argument-assembly validation error, read that reference again/);
-  assert.match(officialCli, /\[tool-call assembly reference\]\(\.\.\/\.\.\/\.\.\/tool-call-assembly\.md\)/);
-  assert.match(assembly, /Every `weshop_cli` call must explicitly include/);
-  assert.match(assembly, /`mode` belongs to the wrapper envelope/);
-  assert.match(assembly, /Do not include `weshop` itself/);
-  assert.match(assembly, /Each `\{\{asset:N\}\}` placeholder must map to exactly one entry/);
-  assert.match(assembly, /Once any response contains a non-empty `executionId`[\s\S]*never submit the create call again/);
-  assert.ok(JSON.parse(packageJson).files.includes('tool-call-assembly.md'));
+  assert.match(router, /host Tool owns its wrapper contract/);
+  assert.match(orchestrator, /follow that Tool's current schema and errors/);
+  assert.match(officialCli, /Wrapper fields are host contracts/);
+  assert.doesNotMatch(`${router}\n${orchestrator}\n${officialCli}`, /tool-call-assembly\.md/);
+  assert.ok(!JSON.parse(packageJson).files.includes('tool-call-assembly.md'));
+});
+
+test('package manifest declares every Desktop runtime resource', async () => {
+  const packageJson = JSON.parse(await read('package.json'));
+  assert.deepEqual(packageJson.weshopDesktop, {
+    schemaVersion: 1,
+    runtimeResources: [
+      'skills',
+      'catalog/skills.json',
+      'shared/model-selection.md',
+      'LICENSE',
+    ],
+  });
 });

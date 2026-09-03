@@ -65,7 +65,7 @@ Ask only when two plausible role assignments would produce different images. Nev
 
 ### 2. Select the model
 
-- Apply the shared [model-selection-policy.md](../../model-selection-policy.md). Prefer GPT Image 2 Medium when product, person, logo, or subject consistency is central; it is also mandatory for readable typography.
+- Apply the shared [model-selection policy](../../shared/model-selection.md). Prefer GPT Image 2 Medium when product, person, logo, or subject consistency is central; it is also mandatory for readable typography.
 - Use `nano-banana-edit` with `nano2` for fast draft divergence, or `nano` (Nano Pro) for faster high-quality convergence/internal review when exact text is absent.
 - Use Seedream only when demanding lighting/material rendering or Asian commercial aesthetics are explicit and the current adapter supports every reference. Reference count alone does not justify it.
 - Use a specialized combiner or mixer endpoint only when its current API contract is verified and materially improves the requested merge. The endpoint is optional, not the Skill identity.

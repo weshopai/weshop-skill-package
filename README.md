@@ -20,6 +20,15 @@ WeShop Skills turns plain-language creative requests into production-ready image
 
 > This repository contains **135 focused Atom Skills + 1 user-authoring Skill + 1 Router + 1 multi-step orchestration Skill (138 Skills total)**. `weshop-router` decides whether to call one Atom directly or escalate to orchestration. Media execution uses a native WeShop harness tool or the official `weshop` CLI, never a package-owned fallback client.
 
+## Package boundaries
+
+- `skills/` contains user-facing creative workflows and routing metadata.
+- `shared/` contains Package-owned guidance shared by several Skills, such as model selection. Skills link to it only when the current task needs that decision.
+- `scripts/weshop-skills.mjs` installs and updates Skill content; it is not the media-generation CLI.
+- A native host Tool or the separately versioned official `weshop` CLI owns execution. Tool schemas, credentials, approval, receipts, retries, and artifact delivery are not duplicated in this Package.
+
+This keeps routine Skill releases independent from the executable CLI and from any host application's release cycle.
+
 ## 🚀 Install with one prompt
 
 Open Codex, Claude Code, or Cursor and paste this:

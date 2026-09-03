@@ -1,6 +1,6 @@
 {
   "name": "weshop-skill-package",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "description": "Content-first WeShop Router, Atom Skills, multi-step workflow orchestration, model catalog, and maintenance tooling.",
   "license": "MIT",
   "author": "WeShop AI",
@@ -24,6 +24,15 @@
     "node": ">=22"
   },
   "type": "module",
+  "weshopDesktop": {
+    "schemaVersion": 1,
+    "runtimeResources": [
+      "skills",
+      "catalog/skills.json",
+      "shared/model-selection.md",
+      "LICENSE"
+    ]
+  },
   "bin": {
     "weshop-skills": "scripts/weshop-skills.mjs"
   },
@@ -40,8 +49,7 @@
     "scripts/upload-skill-media.mjs",
     "scripts/create-custom-skill-draft.mjs",
     "scripts/check-api-key.mjs",
-    "model-selection-policy.md",
-    "tool-call-assembly.md",
+    "shared/model-selection.md",
     "LICENSE"
   ],
   "publishConfig": {

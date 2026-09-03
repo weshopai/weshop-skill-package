@@ -39,7 +39,7 @@ weshop gpt-image --prompt "A clean product photograph"
 
 Use `gpt-image` as the Agent/command ID for the model labeled GPT Image 2. Do not use `gpt-image-2`. The CLI has no `list-agents` command; use `weshop --help` for its command surface and `weshop info <agent>` for one Agent.
 
-If the harness exposes a `weshop_cli` wrapper, always include its required mode. Use `inspect` only for non-mutating `--version`, help, info, and status calls; use `execute` for upload or generation. Wrapper modes are not official CLI arguments. Apply the shared [tool-call assembly reference](../../../tool-call-assembly.md) for the wrapper envelope, tokenization, asset binding, and validation recovery; CLI help remains responsible only for the selected command's argv.
+If the harness exposes a managed native WeShop tool, follow that Tool's current schema and validation errors. Wrapper fields are host contracts, not official CLI arguments, and are intentionally not duplicated by this Package. CLI help remains responsible only for direct standalone command argv.
 
 ## Authentication and submission safety
 

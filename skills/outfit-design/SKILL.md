@@ -73,7 +73,7 @@ Do not infer sensitive personality, occupation, gender identity, ethnicity, or b
 - **Demanding lighting/material rendering or Asian commercial fashion aesthetics:** consider the current Seedream adapter only when it supports every required reference and no readable text is required.
 - **Readable clothing text or multilingual design:** use GPT Image 2 Medium. Render exact supplied copy only; otherwise prohibit invented labels.
 
-Apply the package [model-selection-policy.md](../../model-selection-policy.md). Never run several models merely to compare quality. Choose from the input contract and retry only the failed property.
+Apply the package [model-selection policy](../../shared/model-selection.md). Never run several models merely to compare quality. Choose from the input contract and retry only the failed property.
 
 ### 4. Compile one concise Prompt
 

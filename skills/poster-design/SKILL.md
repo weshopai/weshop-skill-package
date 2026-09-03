@@ -92,7 +92,7 @@ Do not randomly combine incompatible traits. Make the direction serve the messag
 
 ### 3. Select the model
 
-- Apply the shared [model-selection-policy.md](../../model-selection-policy.md). Any readable title, copy, Chinese, or multilingual content routes to GPT Image 2 Medium; do not fall back across models for text accuracy.
+- Apply the shared [model-selection policy](../../shared/model-selection.md). Any readable title, copy, Chinese, or multilingual content routes to GPT Image 2 Medium; do not fall back across models for text accuracy.
 - Keep reference images on the same route when GPT Image can preserve the required product, person, or brand assets.
 - Prefer a reference-aware editing model when the work is primarily a controlled transformation of an existing poster or when reference fidelity demonstrably exceeds GPT Image.
 - Use Midjourney only for pure text-to-image artistic poster exploration with no readable copy or reference assets; receive all four results. Use Z-Image only for text-free photorealistic directions or Chinese cultural elements.

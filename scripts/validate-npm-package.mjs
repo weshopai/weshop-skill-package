@@ -14,6 +14,7 @@ const required = [
   "skills/orchestrate-multi-step-workflow/SKILL.md",
   "skills/create-custom-skill/SKILL.md",
   "skills/create-custom-skill/scripts/check-custom-skill.mjs",
+  "shared/model-selection.md",
   "models/catalog.json",
   "catalog/skills.json"
 ];
@@ -29,4 +30,5 @@ const forbidden = paths.filter((file) => (
   || /(?:^|\/)\S+\.test\.(?:js|d\.ts|mjs)$/.test(file)
 ));
 if (forbidden.length) throw new Error(`npm package contains non-runtime files:\n${forbidden.join("\n")}`);
+if (paths.includes("tool-call-assembly.md")) throw new Error("npm package must not duplicate a host Tool wrapper contract.");
 console.log(`Valid npm package: ${report.name}@${report.version}, ${report.entryCount} files, ${report.size} packed bytes, ${report.unpackedSize} unpacked bytes.`);

@@ -58,7 +58,7 @@ Ask only when a missing packaging format, exact copy, or source role would mater
 
 ### 2. Select the model
 
-- Apply the shared [model-selection-policy.md](../../model-selection-policy.md). Packaging with any readable brand, product, regulatory, or promotional copy routes to GPT Image 2 Medium.
+- Apply the shared [model-selection policy](../../shared/model-selection.md). Packaging with any readable brand, product, regulatory, or promotional copy routes to GPT Image 2 Medium.
 - Use an editing model when the task is primarily a controlled update to supplied packaging artwork rather than a new concept board.
 - Use a specialized packaging agent only if its current API contract is available, verified, and materially better. The Skill must remain executable through a foundation model if that agent disappears.
 - Default a normal packaging concept deliverable to one `3:4`, `2K`, GPT Image 2 Medium result with `batchCount: 1`. Use Low only for an explicitly named structure/layout draft; if text still fails, hand exact copy to deterministic layout rather than switching models.

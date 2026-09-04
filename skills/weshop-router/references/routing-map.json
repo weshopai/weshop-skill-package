@@ -1,0 +1,1880 @@
+{
+  "schemaVersion": "1.0.0",
+  "purpose": "Machine-readable route playbook for compiling a complete creative intent into a direct Atom dispatch, a dependency-aware recipe seed, or one material clarification.",
+  "classificationContract": {
+    "method": "semantic-intent-card",
+    "compareOn": [
+      "final outcome",
+      "supplied asset roles",
+      "preservation constraints",
+      "requested deliverables",
+      "current-fact research need",
+      "material dependencies",
+      "Skill exclusions and promised output"
+    ],
+    "forbiddenMechanisms": [
+      "raw-text-keyword-classification",
+      "closed-operation-enum",
+      "static-category-as-final-dispatch"
+    ],
+    "relationshipMetadataRole": "candidate-discovery-only",
+    "runtimeIntentScoreSource": "request-specific-semantic-comparison",
+    "staticRelationshipScoresAreRuntimeIntentScores": false,
+    "modePolicy": {
+      "direct": "Use one highest-scoring runtime-visible Atom when it owns the complete requested result and has sufficient inputs.",
+      "orchestrate": "Use a recipe seed only for multiple independently accepted outputs, a real artifact dependency, execution-changing research, or a material choice that becomes downstream input.",
+      "clarify": "Ask one focused question only when the answer changes Skill choice, a required input, irreversible or costly work, or the final output contract."
+    }
+  },
+  "loadPolicy": {
+    "always": [
+      "host-contract",
+      "router-decision",
+      "execution-base"
+    ],
+    "taskClasses": "matched-only",
+    "tasks": "matched-only",
+    "recipes": "selected-only",
+    "nodeOwnerDetails": "on-demand",
+    "nodeOwnerDetailExamples": [
+      "model guide",
+      "prompt construction",
+      "music retrieval",
+      "operation-specific acceptance"
+    ],
+    "exclusion": "Node-owner details stay outside this Router map and load only after the owning step and Skill are selected."
+  },
+  "runtimeSemanticFallback": {
+    "enabled": true,
+    "selectionSource": "runtime-fallback",
+    "registrySource": "runtime-visible-skill-descriptions",
+    "strategy": "semantic-intent-scoring",
+    "includeUnknownAndCustomSkills": true,
+    "closedOperationEnum": false,
+    "keywordClassifier": false,
+    "candidateContract": "Score every plausible runtime-visible Skill against the complete intent card and select a maximum score; read the full Skill only for the winner or a genuine tie.",
+    "fallbackContract": "If no indexed task class or preferred Skill covers the request, preserve the inferred inputs, constraints, deliverable, and acceptance contract, then discover and score runtime-visible Skills without inventing an ID."
+  },
+  "layers": [
+    {
+      "id": "host-contract",
+      "label": "Host contract and safety",
+      "identity": "platform-authority",
+      "precedence": 1000,
+      "activation": "always",
+      "loadPolicy": "always",
+      "ruleAuthority": "highest",
+      "scope": "Host interaction schemas, real tool boundaries, write and receipt rules, credentials, untrusted-content handling, and platform safety.",
+      "owns": [
+        "tool availability",
+        "tool request and response schemas",
+        "authentication",
+        "submission receipts and recovery",
+        "canvas publication semantics"
+      ],
+      "cannotOverride": []
+    },
+    {
+      "id": "memory-context",
+      "label": "User and project memory",
+      "identity": "context-data",
+      "precedence": 900,
+      "activation": "when-context-exists",
+      "loadPolicy": "on-demand",
+      "ruleAuthority": "none",
+      "dataOnly": true,
+      "scope": "Cross-project preferences and current-project decisions supplied as context, never as a source of platform rules or proof of current state.",
+      "owns": [
+        "user preferences",
+        "project state",
+        "prior accepted decisions"
+      ],
+      "cannotOverride": [
+        "host-contract"
+      ]
+    },
+    {
+      "id": "router-decision",
+      "label": "Router decision",
+      "identity": "semantic-plan-compiler",
+      "precedence": 850,
+      "activation": "always",
+      "loadPolicy": "always",
+      "ruleAuthority": "route-selection",
+      "scope": "Compiles the complete intent, selects indexed guidance or runtime semantic fallback, and emits only a direct, orchestration, or clarification plan seed.",
+      "owns": [
+        "task-class match",
+        "direct versus orchestration decision",
+        "runtime semantic fallback",
+        "next action"
+      ],
+      "cannotOverride": [
+        "host-contract"
+      ]
+    },
+    {
+      "id": "execution-base",
+      "label": "Execution base",
+      "identity": "shared-execution-contract",
+      "precedence": 800,
+      "activation": "every-execution",
+      "loadPolicy": "always",
+      "ruleAuthority": "shared-runtime",
+      "scope": "Intent compilation, real capability checks, direct versus orchestration decision, artifact handoffs, final acceptance, and failure recovery.",
+      "owns": [
+        "plan seed",
+        "execution waves",
+        "artifact bindings",
+        "final acceptance",
+        "failure state"
+      ],
+      "cannotOverride": [
+        "host-contract"
+      ]
+    },
+    {
+      "id": "creative-atom",
+      "label": "Task-owning creative Atom",
+      "identity": "selected-operation-owner",
+      "precedence": 600,
+      "activation": "selected-task-only",
+      "loadPolicy": "selected-only",
+      "ruleAuthority": "task-owned",
+      "ownership": "one complete operation or deliverable",
+      "scope": "The narrowest Skill owns its input contract, model or agent choice, generation or edit procedure, and technical acceptance.",
+      "owns": [
+        "operation-specific execution",
+        "model choice",
+        "operation acceptance"
+      ],
+      "cannotOverride": [
+        "host-contract",
+        "execution-base"
+      ]
+    },
+    {
+      "id": "orchestration",
+      "label": "Dependency-aware orchestration",
+      "identity": "unique-dag-owner",
+      "precedence": 700,
+      "activation": "multi-output-or-dependency-only",
+      "loadPolicy": "selected-only",
+      "ruleAuthority": "unique-chain-owner",
+      "uniqueOrchestratorSkillId": "orchestrate-multi-step-workflow",
+      "scope": "Owns the DAG, selection at each operation, compact handoffs, execution waves, and one final route acceptance; it is never a direct creative Atom.",
+      "owns": [
+        "recipe instantiation",
+        "DAG ordering",
+        "parallel waves",
+        "cross-Skill handoffs"
+      ],
+      "cannotOverride": [
+        "host-contract",
+        "execution-base",
+        "creative-atom-technical-contract"
+      ]
+    },
+    {
+      "id": "prompt-specialist",
+      "label": "Prompt-only specialist",
+      "identity": "text-deliverable-owner",
+      "precedence": 600,
+      "activation": "prompt-only",
+      "loadPolicy": "selected-only",
+      "ruleAuthority": "deliverable-scoped",
+      "executionAllowed": false,
+      "scope": "Produces or repairs prompt, script, storyboard, or diagnostic text when text itself is the requested result; it does not imply media generation.",
+      "owns": [
+        "prompt text",
+        "story text",
+        "diagnostic guidance"
+      ],
+      "cannotOverride": [
+        "host-contract",
+        "execution-base"
+      ]
+    },
+    {
+      "id": "meta-system",
+      "label": "System-management skill",
+      "identity": "system-lifecycle-owner",
+      "precedence": 500,
+      "activation": "management-only",
+      "loadPolicy": "selected-only",
+      "ruleAuthority": "system-maintenance",
+      "executionAllowed": false,
+      "scope": "Creates, revises, installs, or documents Skills and routing context; it does not produce a creative result unless its own output contract says so.",
+      "owns": [
+        "Skill lifecycle",
+        "local Skill installation",
+        "system notes"
+      ],
+      "cannotOverride": [
+        "host-contract",
+        "execution-base",
+        "creative-atom"
+      ]
+    },
+    {
+      "id": "professional-pack",
+      "label": "Explicit professional overlay",
+      "identity": "optional-domain-overlay",
+      "precedence": 650,
+      "activation": "explicit-selection-or-clear-semantic-match",
+      "loadPolicy": "selected-only",
+      "ruleAuthority": "optional-creative-overlay",
+      "overlayOnly": true,
+      "scope": "An explicitly selected professional package may contribute a creative approach and its own workflow, while the live host, runtime registry, execution base, and selected Atom contracts remain authoritative.",
+      "owns": [
+        "domain creative approach",
+        "package-specific workflow defaults"
+      ],
+      "cannotOverride": [
+        "host-contract",
+        "runtime-skill-registry",
+        "execution-base"
+      ]
+    }
+  ],
+  "taskClasses": [
+    {
+      "id": "single-creative-output",
+      "label": "Single creative output",
+      "loadPolicy": "matched-only",
+      "defaultMode": "direct",
+      "useWhen": "The request ends in one image, video, identity asset, or other independently usable creative result.",
+      "directWhen": "One runtime-visible Atom owns the complete result, all material inputs are present, and no separate upstream artifact or research evidence is required.",
+      "orchestrateWhen": "The result actually depends on a separately accepted source asset, research record, or multiple independently requested outputs.",
+      "commonSkillIds": [
+        "ai-product",
+        "create-logo",
+        "poster-design",
+        "generate-video",
+        "create-animal"
+      ],
+      "recipeIds": []
+    },
+    {
+      "id": "precision-edit",
+      "label": "Precision edit or restoration",
+      "loadPolicy": "matched-only",
+      "defaultMode": "direct",
+      "useWhen": "The user supplies media and asks for a bounded transformation while named content, identity, geometry, copy, or timing must be preserved.",
+      "directWhen": "One edit Atom owns the requested change and the supplied source meets its input contract.",
+      "orchestrateWhen": "The accepted edit must become a distinct input to a later layout, localization set, or post-production operation.",
+      "commonSkillIds": [
+        "remove-background",
+        "remove-object",
+        "recolor-object",
+        "expand-image",
+        "translate-image-text",
+        "retouch-blemish",
+        "correct-video-color"
+      ],
+      "recipeIds": [
+        "visual-localization-set",
+        "cutout-to-layout"
+      ]
+    },
+    {
+      "id": "commerce-fashion",
+      "label": "Commerce and fashion production",
+      "loadPolicy": "matched-only",
+      "defaultMode": "direct",
+      "useWhen": "The primary contract is product, garment, packaging, shopper communication, model styling, or buyer-decision content.",
+      "directWhen": "A product or fashion Atom owns the complete requested asset or coherent set without a separately accepted upstream artifact.",
+      "orchestrateWhen": "Product-faithful source creation feeds a separate page, campaign, channel, or multi-format deliverable.",
+      "commonSkillIds": [
+        "ai-product",
+        "product-detail-page",
+        "product-packaging",
+        "virtual-try-on",
+        "fashion-model-replacement",
+        "compose-lookbook",
+        "make-product-commercial",
+        "create-white-background-product-mockup"
+      ],
+      "recipeIds": [
+        "product-detail-production",
+        "multi-format-campaign",
+        "cutout-to-layout"
+      ]
+    },
+    {
+      "id": "portrait-character",
+      "label": "Portrait and character identity",
+      "loadPolicy": "matched-only",
+      "defaultMode": "direct",
+      "useWhen": "The central invariant is a person, face, character, mascot, avatar, casting identity, or pet identity.",
+      "directWhen": "One identity-owning Atom supplies the requested portrait, canonical sheet, avatar, or character result.",
+      "orchestrateWhen": "A separately accepted canonical identity must be reused across pages, shots, poses, or a narrative sequence.",
+      "commonSkillIds": [
+        "create-character",
+        "create-avatar",
+        "create-npc",
+        "professional-headshot",
+        "casting",
+        "make-pet-portrait"
+      ],
+      "recipeIds": [
+        "comic-production"
+      ]
+    },
+    {
+      "id": "layout-social-series",
+      "label": "Layout, information design, and social series",
+      "loadPolicy": "matched-only",
+      "defaultMode": "direct",
+      "useWhen": "The outcome is a composed page, deck, poster, carousel, infographic, collage, or coordinated social set.",
+      "directWhen": "One layout Atom owns the whole page or coherent series from the supplied content.",
+      "orchestrateWhen": "Research, cutouts, translations, or separately produced hero media must be accepted and bound into later layouts or channel variants.",
+      "commonSkillIds": [
+        "poster-design",
+        "create-social-carousel",
+        "create-image-deck",
+        "make-infographic",
+        "photo-collage",
+        "ai-banner-design"
+      ],
+      "recipeIds": [
+        "multi-format-campaign",
+        "visual-localization-set",
+        "cutout-to-layout",
+        "research-to-deliverable"
+      ]
+    },
+    {
+      "id": "narrative-sequence",
+      "label": "Narrative sequence",
+      "loadPolicy": "matched-only",
+      "defaultMode": "orchestrate",
+      "useWhen": "The requested result has ordered story units whose continuity, identity, timing, or state carries across pages or shots.",
+      "directWhen": "A specialized end-to-end Atom explicitly owns the complete sequence and no separate page, shot, manifest, or approval is requested.",
+      "orchestrateWhen": "A story manifest, canonical identity, shot or page generation, and assembly are distinct artifact responsibilities.",
+      "commonSkillIds": [
+        "develop-story",
+        "plan-comic-storyboard",
+        "render-comic-page",
+        "plan-film-storyboard",
+        "write-short-drama-series",
+        "make-music-video",
+        "handdrawn-story-video"
+      ],
+      "recipeIds": [
+        "comic-production",
+        "multi-shot-video"
+      ]
+    },
+    {
+      "id": "campaign-bundle",
+      "label": "Campaign or multi-deliverable bundle",
+      "loadPolicy": "matched-only",
+      "defaultMode": "orchestrate",
+      "useWhen": "The user expects multiple independently usable channel assets, formats, or media types governed by one shared brief.",
+      "directWhen": "A specialized Atom promises the exact coherent bundle as its single output contract, including all requested variants.",
+      "orchestrateWhen": "Different Atoms own distinct deliverables or an accepted campaign source must feed parallel channel branches.",
+      "commonSkillIds": [
+        "ai-banner-design",
+        "create-social-carousel",
+        "make-product-commercial",
+        "brand-promo-video-generator",
+        "product-detail-page",
+        "create-image-deck"
+      ],
+      "recipeIds": [
+        "product-detail-production",
+        "multi-format-campaign",
+        "multi-shot-video",
+        "visual-localization-set",
+        "research-to-deliverable"
+      ]
+    },
+    {
+      "id": "post-production",
+      "label": "Post-production and finishing",
+      "loadPolicy": "matched-only",
+      "defaultMode": "direct",
+      "useWhen": "Existing media needs assembly, grading, repair, enhancement, mark removal, effects, or platform-ready finishing.",
+      "directWhen": "One finishing Atom owns the complete requested transformation of the supplied media.",
+      "orchestrateWhen": "Several accepted clips or localized assets must be processed in dependency order and delivered as a combined master plus variants.",
+      "commonSkillIds": [
+        "combine-videos",
+        "edit-social-video",
+        "correct-video-color",
+        "remove-video-mark",
+        "upscale-video",
+        "add-video-effect"
+      ],
+      "recipeIds": [
+        "multi-shot-video",
+        "visual-localization-set"
+      ]
+    },
+    {
+      "id": "spatial-technical",
+      "label": "Spatial and technical visualization",
+      "loadPolicy": "matched-only",
+      "defaultMode": "direct",
+      "useWhen": "The output communicates a room, landscape, floor plan, CAD object, process, evidence structure, or other geometry- or fact-sensitive system.",
+      "directWhen": "One specialist Atom owns the complete visual or model and the source measurements or facts are already supplied.",
+      "orchestrateWhen": "Current evidence or source measurements must first be verified and transformed into a separately accepted brief before visualization.",
+      "commonSkillIds": [
+        "restyle-room",
+        "visualize-floor-plan",
+        "preview-landscape",
+        "create-cad",
+        "make-flowchart",
+        "technical-visual-explainer"
+      ],
+      "recipeIds": [
+        "research-to-deliverable"
+      ]
+    },
+    {
+      "id": "prompt-planning-diagnostics",
+      "label": "Prompt, planning, and diagnostics",
+      "loadPolicy": "matched-only",
+      "defaultMode": "direct",
+      "useWhen": "The requested deliverable is text: a prompt, screenplay, storyboard, adaptation, model recommendation, or failure diagnosis rather than generated media.",
+      "directWhen": "One text Atom owns the exact requested document or diagnosis.",
+      "orchestrateWhen": "Current research or multiple separately used planning artifacts have real downstream dependencies; requesting both a prompt and later generation alone does not split an Atom that owns both.",
+      "commonSkillIds": [
+        "cinematic-video-prompt",
+        "cross-model-video-prompt-adapter",
+        "narrative-video-prompt",
+        "video-model-advisor",
+        "video-prompt-failure-diagnosis",
+        "film-reference-prompt-writer"
+      ],
+      "recipeIds": []
+    },
+    {
+      "id": "meta-system",
+      "label": "Skill and system management",
+      "loadPolicy": "matched-only",
+      "defaultMode": "direct",
+      "useWhen": "The user wants to create, revise, install, document, or maintain a Skill or system context rather than produce media.",
+      "directWhen": "One management Skill owns the requested lifecycle result.",
+      "orchestrateWhen": "Only when several management artifacts have actual dependencies; creative recipes must not be selected merely because the request discusses Skills.",
+      "commonSkillIds": [
+        "create-custom-skill",
+        "social-knowledge-notes",
+        "detail-page-skill-course"
+      ],
+      "recipeIds": []
+    }
+  ],
+  "tasks": [
+    {
+      "id": "product-scene",
+      "label": "Product-faithful commercial scene",
+      "loadPolicy": "matched-only",
+      "taskClassId": "commerce-fashion",
+      "useWhen": "A supplied product must appear faithfully in one newly composed commercial environment or hero image.",
+      "requiredInputRoles": [
+        "product-source",
+        "scene-or-campaign-brief"
+      ],
+      "preferredSkillId": "ai-product",
+      "neighborSkillIds": [
+        "create-white-background-product-mockup",
+        "product-detail-page",
+        "minimalist-product-ad-generator"
+      ],
+      "directWhen": "One accepted product scene is the complete result and no separate layout set or channel requirement must consume it.",
+      "escalateWhen": "The accepted scene must feed a separately owned detail page, channel campaign, or researched marketplace deliverable.",
+      "recipeId": "product-detail-production"
+    },
+    {
+      "id": "white-background-product",
+      "label": "White-background product mockup",
+      "loadPolicy": "matched-only",
+      "taskClassId": "commerce-fashion",
+      "useWhen": "A supplied product needs one clean catalog-style white-background presentation with product geometry and labels preserved.",
+      "requiredInputRoles": [
+        "product-source"
+      ],
+      "preferredSkillId": "create-white-background-product-mockup",
+      "neighborSkillIds": [
+        "ai-product",
+        "remove-background",
+        "product-detail-page"
+      ],
+      "directWhen": "The clean white-background asset is the final deliverable.",
+      "escalateWhen": "The mockup is an accepted intermediate that must feed a separate detail-page or multi-format campaign deliverable.",
+      "recipeId": "product-detail-production"
+    },
+    {
+      "id": "product-detail-page-set",
+      "label": "Product detail-page set",
+      "loadPolicy": "matched-only",
+      "taskClassId": "commerce-fashion",
+      "useWhen": "The result is a coherent modular page set that explains product value and supports a shopper decision.",
+      "requiredInputRoles": [
+        "product-imagery",
+        "product-facts",
+        "page-or-channel-brief"
+      ],
+      "preferredSkillId": "product-detail-page",
+      "neighborSkillIds": [
+        "ai-product",
+        "create-image-deck",
+        "product-packaging"
+      ],
+      "directWhen": "Supplied imagery and facts are sufficient and the Atom owns the complete requested page set.",
+      "escalateWhen": "Current platform facts or a separately accepted product source must be created before the page set.",
+      "recipeId": "product-detail-production"
+    },
+    {
+      "id": "product-packaging-design",
+      "label": "Product packaging design",
+      "loadPolicy": "matched-only",
+      "taskClassId": "commerce-fashion",
+      "useWhen": "The requested result is a packaging concept or package-facing design for a supplied product and brand system.",
+      "requiredInputRoles": [
+        "product-and-package-brief",
+        "brand-assets",
+        "required-package-copy"
+      ],
+      "preferredSkillId": "product-packaging",
+      "neighborSkillIds": [
+        "product-detail-page",
+        "create-logo",
+        "ai-product"
+      ],
+      "directWhen": "One packaging result is requested and all required copy and structural constraints are supplied.",
+      "escalateWhen": "Packaging must be coordinated with separately produced identity, product imagery, or campaign formats."
+    },
+    {
+      "id": "virtual-try-on",
+      "label": "Virtual garment try-on",
+      "loadPolicy": "matched-only",
+      "taskClassId": "commerce-fashion",
+      "useWhen": "A specific garment must be placed on a supplied person while both garment and person identity remain central.",
+      "requiredInputRoles": [
+        "person-source",
+        "garment-source"
+      ],
+      "preferredSkillId": "virtual-try-on",
+      "neighborSkillIds": [
+        "fashion-model-replacement",
+        "outfit-design",
+        "compose-lookbook"
+      ],
+      "directWhen": "One try-on result or ordinary batch is the complete output.",
+      "escalateWhen": "Accepted try-on assets must feed separately owned lookbook, carousel, or multi-format campaign outputs. Seed a custom runtime DAG so the try-on owner remains an explicit upstream node."
+    },
+    {
+      "id": "replace-fashion-model",
+      "label": "Fashion model replacement",
+      "loadPolicy": "matched-only",
+      "taskClassId": "commerce-fashion",
+      "useWhen": "A fashion image keeps the garment and composition while replacing the person wearing it.",
+      "requiredInputRoles": [
+        "fashion-source",
+        "replacement-person-reference-or-brief"
+      ],
+      "preferredSkillId": "fashion-model-replacement",
+      "neighborSkillIds": [
+        "virtual-try-on",
+        "change-pose",
+        "professional-headshot"
+      ],
+      "directWhen": "The model replacement itself is the final image result.",
+      "escalateWhen": "The accepted replacement must be reused across a separately composed lookbook or campaign set. Seed a custom runtime DAG so the replacement owner remains an explicit upstream node."
+    },
+    {
+      "id": "change-subject-pose",
+      "label": "Change a subject pose",
+      "loadPolicy": "matched-only",
+      "taskClassId": "precision-edit",
+      "useWhen": "A supplied person or character must keep identity and appearance while adopting a different pose.",
+      "requiredInputRoles": [
+        "subject-source",
+        "target-pose"
+      ],
+      "preferredSkillId": "change-pose",
+      "neighborSkillIds": [
+        "fashion-model-replacement",
+        "virtual-try-on",
+        "create-character"
+      ],
+      "directWhen": "The pose change is the only requested transformation.",
+      "escalateWhen": "Multiple accepted poses become distinct inputs to a narrative, lookbook, or campaign workflow."
+    },
+    {
+      "id": "product-commercial-video",
+      "label": "End-to-end product commercial",
+      "loadPolicy": "matched-only",
+      "taskClassId": "commerce-fashion",
+      "useWhen": "The requested output is one complete commercial video centered on a product and shopper-facing proposition.",
+      "requiredInputRoles": [
+        "product-source",
+        "commercial-brief"
+      ],
+      "preferredSkillId": "make-product-commercial",
+      "neighborSkillIds": [
+        "minimalist-product-ad-generator",
+        "brand-promo-video-generator",
+        "generate-video"
+      ],
+      "directWhen": "The selected end-to-end Atom owns the complete video and no separate shot assets or channel branches are required.",
+      "escalateWhen": "The user requires separately controlled shots, a reusable master plus channel assets, or explicit shot-level handoffs. Reclassify the final outcome as a narrative sequence or campaign bundle before choosing a recipe."
+    },
+    {
+      "id": "logo-design",
+      "label": "Logo design",
+      "loadPolicy": "matched-only",
+      "taskClassId": "single-creative-output",
+      "useWhen": "The complete result is a new logo mark or wordmark for a named identity and brief.",
+      "requiredInputRoles": [
+        "identity-brief",
+        "name-or-required-copy"
+      ],
+      "preferredSkillId": "create-logo",
+      "neighborSkillIds": [
+        "create-mascot-logo",
+        "create-flag",
+        "poster-design"
+      ],
+      "directWhen": "One logo result or ordinary logo variation set is the complete deliverable.",
+      "escalateWhen": "An accepted logo becomes a fixed input to several separately owned campaign formats. Seed a custom runtime DAG so logo creation remains an explicit upstream node."
+    },
+    {
+      "id": "banner-design",
+      "label": "Campaign banner design",
+      "loadPolicy": "matched-only",
+      "taskClassId": "layout-social-series",
+      "useWhen": "The result is a banner with a placement-specific hierarchy, supplied message, and campaign visual direction.",
+      "requiredInputRoles": [
+        "banner-brief",
+        "placement-or-dimensions",
+        "required-copy"
+      ],
+      "preferredSkillId": "ai-banner-design",
+      "neighborSkillIds": [
+        "poster-design",
+        "create-social-carousel",
+        "make-thumbnail"
+      ],
+      "directWhen": "Banner exports are the complete requested result.",
+      "escalateWhen": "The banner is one branch of a campaign that also requires independently usable social, deck, or video outputs.",
+      "recipeId": "multi-format-campaign"
+    },
+    {
+      "id": "poster-design",
+      "label": "Poster design",
+      "loadPolicy": "matched-only",
+      "taskClassId": "layout-social-series",
+      "useWhen": "The outcome is one composed poster whose hierarchy, imagery, and exact copy form the complete result.",
+      "requiredInputRoles": [
+        "poster-brief",
+        "required-copy"
+      ],
+      "preferredSkillId": "poster-design",
+      "neighborSkillIds": [
+        "ai-banner-design",
+        "minimal-zine-poster",
+        "photo-collage"
+      ],
+      "directWhen": "The poster Atom can own the complete composition from the supplied material.",
+      "escalateWhen": "A separately accepted cutout, research brief, or localized asset set must feed the poster.",
+      "recipeId": "cutout-to-layout"
+    },
+    {
+      "id": "social-carousel",
+      "label": "Social carousel",
+      "loadPolicy": "matched-only",
+      "taskClassId": "layout-social-series",
+      "useWhen": "The requested result is a coherent ordered social carousel with a shared narrative and visual system.",
+      "requiredInputRoles": [
+        "carousel-brief",
+        "slide-content",
+        "platform-format"
+      ],
+      "preferredSkillId": "create-social-carousel",
+      "neighborSkillIds": [
+        "create-image-deck",
+        "make-infographic",
+        "ai-banner-design"
+      ],
+      "directWhen": "The carousel is the complete coherent series and all content inputs are supplied.",
+      "escalateWhen": "Research, localized artwork, or separately generated hero media must be accepted before carousel composition.",
+      "recipeId": "multi-format-campaign"
+    },
+    {
+      "id": "image-deck",
+      "label": "Image deck",
+      "loadPolicy": "matched-only",
+      "taskClassId": "layout-social-series",
+      "useWhen": "The final result is a multi-page image deck organized for explanation, presentation, or distribution.",
+      "requiredInputRoles": [
+        "deck-brief",
+        "page-content",
+        "audience-and-format"
+      ],
+      "preferredSkillId": "create-image-deck",
+      "neighborSkillIds": [
+        "create-social-carousel",
+        "make-infographic",
+        "article-handdrawn-illustrations"
+      ],
+      "directWhen": "The supplied evidence and content are sufficient for the deck Atom to own the complete result.",
+      "escalateWhen": "Current facts must be researched and cited before the deck is composed.",
+      "recipeId": "research-to-deliverable"
+    },
+    {
+      "id": "social-thumbnail",
+      "label": "Social or video thumbnail",
+      "loadPolicy": "matched-only",
+      "taskClassId": "layout-social-series",
+      "useWhen": "The complete result is a small-format click-oriented thumbnail for a supplied topic, subject, or source image.",
+      "requiredInputRoles": [
+        "thumbnail-brief",
+        "platform-or-ratio"
+      ],
+      "preferredSkillId": "make-thumbnail",
+      "neighborSkillIds": [
+        "ai-banner-design",
+        "poster-design",
+        "recreate-social-photo"
+      ],
+      "directWhen": "One thumbnail or ordinary variation batch is requested.",
+      "escalateWhen": "The thumbnail is one separately owned branch of a wider campaign system. Use the campaign-bundle class so the requested branch set determines the recipe."
+    },
+    {
+      "id": "infographic",
+      "label": "Information graphic",
+      "loadPolicy": "matched-only",
+      "taskClassId": "layout-social-series",
+      "useWhen": "Facts, comparisons, steps, or quantities must become one readable information-first visual.",
+      "requiredInputRoles": [
+        "content-or-evidence",
+        "audience-and-format"
+      ],
+      "preferredSkillId": "make-infographic",
+      "neighborSkillIds": [
+        "create-image-deck",
+        "make-flowchart",
+        "technical-visual-explainer"
+      ],
+      "directWhen": "The user supplies sufficient authoritative content and one infographic is the final result.",
+      "escalateWhen": "Current external facts materially determine the visual and require a verified evidence record first.",
+      "recipeId": "research-to-deliverable"
+    },
+    {
+      "id": "translate-image-copy",
+      "label": "Translate copy inside artwork",
+      "loadPolicy": "matched-only",
+      "taskClassId": "precision-edit",
+      "useWhen": "Text inside supplied artwork must change language while declared imagery, brand elements, and layout relationships remain preserved.",
+      "requiredInputRoles": [
+        "source-artwork",
+        "target-language-or-locale"
+      ],
+      "preferredSkillId": "translate-image-text",
+      "neighborSkillIds": [
+        "add-speech-bubble",
+        "poster-design",
+        "create-social-carousel"
+      ],
+      "directWhen": "One source image and one target locale form the complete request.",
+      "escalateWhen": "Several sources, locales, or composed channel sets require a shared localization matrix and delivery manifest.",
+      "recipeId": "visual-localization-set"
+    },
+    {
+      "id": "remove-background",
+      "label": "Remove image background",
+      "loadPolicy": "matched-only",
+      "taskClassId": "precision-edit",
+      "useWhen": "A supplied foreground subject or product must be isolated on transparency with its boundary preserved.",
+      "requiredInputRoles": [
+        "foreground-source"
+      ],
+      "preferredSkillId": "remove-background",
+      "neighborSkillIds": [
+        "clean-room",
+        "remove-object",
+        "make-silhouette"
+      ],
+      "directWhen": "The transparent cutout is the final deliverable.",
+      "escalateWhen": "The accepted cutout becomes a distinct input to a poster, banner, carousel, or detail layout.",
+      "recipeId": "cutout-to-layout"
+    },
+    {
+      "id": "expand-image-canvas",
+      "label": "Expand an image canvas",
+      "loadPolicy": "matched-only",
+      "taskClassId": "precision-edit",
+      "useWhen": "An accepted image needs a larger canvas or different aspect ratio while its existing content remains intact.",
+      "requiredInputRoles": [
+        "source-image",
+        "target-aspect-or-dimensions"
+      ],
+      "preferredSkillId": "expand-image",
+      "neighborSkillIds": [
+        "image-combiner",
+        "poster-design",
+        "ai-banner-design"
+      ],
+      "directWhen": "Aspect or canvas expansion is the only failed or requested property.",
+      "escalateWhen": "The expanded image is a separately accepted source for a later independently owned composition."
+    },
+    {
+      "id": "remove-image-object",
+      "label": "Remove an object from an image",
+      "loadPolicy": "matched-only",
+      "taskClassId": "precision-edit",
+      "useWhen": "One named object must be removed from supplied imagery while surrounding content remains coherent.",
+      "requiredInputRoles": [
+        "source-image",
+        "object-to-remove"
+      ],
+      "preferredSkillId": "remove-object",
+      "neighborSkillIds": [
+        "clean-room",
+        "remove-image-mark",
+        "retouch-blemish"
+      ],
+      "directWhen": "Object removal is the complete bounded transformation.",
+      "escalateWhen": "The repaired asset must feed a separately owned composition or multi-asset series."
+    },
+    {
+      "id": "combine-images",
+      "label": "Combine source images",
+      "loadPolicy": "matched-only",
+      "taskClassId": "layout-social-series",
+      "useWhen": "Several supplied images must be merged into one coherent image while their requested roles remain explicit.",
+      "requiredInputRoles": [
+        "source-images",
+        "composition-brief"
+      ],
+      "preferredSkillId": "image-combiner",
+      "neighborSkillIds": [
+        "photo-collage",
+        "create-image-deck",
+        "compose-lookbook"
+      ],
+      "directWhen": "The merged image is the complete requested result.",
+      "escalateWhen": "The merged asset becomes one accepted intermediate for a separately owned layout or campaign branch."
+    },
+    {
+      "id": "create-character-identity",
+      "label": "Create a canonical character",
+      "loadPolicy": "matched-only",
+      "taskClassId": "portrait-character",
+      "useWhen": "A recurring original character needs one canonical design result that can anchor later scenes or pages.",
+      "requiredInputRoles": [
+        "character-brief"
+      ],
+      "preferredSkillId": "create-character",
+      "neighborSkillIds": [
+        "create-avatar",
+        "create-npc",
+        "casting"
+      ],
+      "directWhen": "The canonical character result itself is the complete request.",
+      "escalateWhen": "The accepted identity must feed multiple comic pages or narrative shots.",
+      "recipeId": "comic-production"
+    },
+    {
+      "id": "create-avatar",
+      "label": "Create an avatar",
+      "loadPolicy": "matched-only",
+      "taskClassId": "portrait-character",
+      "useWhen": "The user wants one compact avatar representation rather than a full recurring character production pack.",
+      "requiredInputRoles": [
+        "avatar-brief-or-person-source"
+      ],
+      "preferredSkillId": "create-avatar",
+      "neighborSkillIds": [
+        "create-character",
+        "professional-headshot",
+        "make-selfie"
+      ],
+      "directWhen": "The avatar itself is the complete output.",
+      "escalateWhen": "A canonical recurring identity is required across a narrative or multi-asset system."
+    },
+    {
+      "id": "professional-headshot",
+      "label": "Professional headshot",
+      "loadPolicy": "matched-only",
+      "taskClassId": "portrait-character",
+      "useWhen": "A supplied person needs a polished professional portrait with identity preserved.",
+      "requiredInputRoles": [
+        "person-source",
+        "portrait-brief"
+      ],
+      "preferredSkillId": "professional-headshot",
+      "neighborSkillIds": [
+        "make-selfie",
+        "id-photo-format",
+        "create-avatar"
+      ],
+      "directWhen": "One professional portrait or ordinary variation batch is the complete deliverable.",
+      "escalateWhen": "The accepted portrait must feed a separately composed identity campaign or multi-format set."
+    },
+    {
+      "id": "plan-comic-storyboard",
+      "label": "Plan a comic storyboard",
+      "loadPolicy": "matched-only",
+      "taskClassId": "prompt-planning-diagnostics",
+      "useWhen": "The requested deliverable is a structured comic project manifest with pages, panels, dialogue, style, and continuity decisions.",
+      "requiredInputRoles": [
+        "story-brief",
+        "format-target"
+      ],
+      "preferredSkillId": "plan-comic-storyboard",
+      "neighborSkillIds": [
+        "render-comic-page",
+        "develop-story",
+        "narrative-video-storyboard"
+      ],
+      "directWhen": "The manifest is the final requested output.",
+      "escalateWhen": "The user also requires canonical identities and rendered pages as separately accepted downstream artifacts. Reclassify the final outcome as a narrative sequence before choosing comic-production."
+    },
+    {
+      "id": "render-comic-page",
+      "label": "Render a comic page",
+      "loadPolicy": "matched-only",
+      "taskClassId": "narrative-sequence",
+      "useWhen": "An existing comic manifest and accepted identity assets must become one rendered page.",
+      "requiredInputRoles": [
+        "comic-page-manifest",
+        "canonical-character-assets"
+      ],
+      "preferredSkillId": "render-comic-page",
+      "neighborSkillIds": [
+        "plan-comic-storyboard",
+        "add-speech-bubble",
+        "article-handdrawn-illustrations"
+      ],
+      "directWhen": "One page is requested and all upstream manifest and identity inputs are already accepted.",
+      "escalateWhen": "A story manifest, missing identities, or several continuity-linked pages must first be produced.",
+      "recipeId": "comic-production"
+    },
+    {
+      "id": "plan-film-storyboard",
+      "label": "Plan a film storyboard",
+      "loadPolicy": "matched-only",
+      "taskClassId": "prompt-planning-diagnostics",
+      "useWhen": "The requested text deliverable is an ordered shot manifest with timing, continuity, source roles, and assembly intent.",
+      "requiredInputRoles": [
+        "film-brief-or-script",
+        "format-and-duration"
+      ],
+      "preferredSkillId": "plan-film-storyboard",
+      "neighborSkillIds": [
+        "narrative-video-storyboard",
+        "cinematic-video-prompt",
+        "generate-video"
+      ],
+      "directWhen": "The storyboard or shot manifest itself is the final result.",
+      "escalateWhen": "The user also requires separately generated shots and an assembled video master. Reclassify the final outcome as a narrative sequence before choosing multi-shot-video."
+    },
+    {
+      "id": "single-video-shot",
+      "label": "Generate a single video shot",
+      "loadPolicy": "matched-only",
+      "taskClassId": "single-creative-output",
+      "useWhen": "One self-contained video shot must be generated from text and any supported reference assets.",
+      "requiredInputRoles": [
+        "shot-brief"
+      ],
+      "preferredSkillId": "generate-video",
+      "neighborSkillIds": [
+        "animate-image",
+        "make-product-commercial",
+        "restyle-video"
+      ],
+      "directWhen": "One shot is the complete result and no separate assembly or continuity-linked shot set is requested.",
+      "escalateWhen": "Several shots must share timing or continuity and be assembled into one master. Reclassify the final outcome as a narrative sequence before choosing multi-shot-video."
+    },
+    {
+      "id": "animate-source-image",
+      "label": "Animate a source image",
+      "loadPolicy": "matched-only",
+      "taskClassId": "single-creative-output",
+      "useWhen": "A supplied still image must become one short motion clip while its core subject and composition remain recognizable.",
+      "requiredInputRoles": [
+        "source-image",
+        "motion-brief"
+      ],
+      "preferredSkillId": "animate-image",
+      "neighborSkillIds": [
+        "generate-video",
+        "character-toy-grid-motion",
+        "live-sketch-motion"
+      ],
+      "directWhen": "One animated clip is the complete requested output.",
+      "escalateWhen": "The clip is one continuity-linked shot in a separately assembled multi-shot master. Seed a custom runtime DAG so image animation remains the correct shot owner."
+    },
+    {
+      "id": "combine-video-clips",
+      "label": "Combine video clips",
+      "loadPolicy": "matched-only",
+      "taskClassId": "post-production",
+      "useWhen": "Several supplied or accepted clips must be assembled into one ordered video result.",
+      "requiredInputRoles": [
+        "video-clips",
+        "clip-order-and-transition-brief"
+      ],
+      "preferredSkillId": "combine-videos",
+      "neighborSkillIds": [
+        "edit-social-video",
+        "make-video-intro",
+        "correct-video-color"
+      ],
+      "directWhen": "All clips are supplied and assembly is the only requested operation.",
+      "escalateWhen": "The clips must first be generated from a storyboard or require a separately owned finishing branch.",
+      "recipeId": "multi-shot-video"
+    },
+    {
+      "id": "edit-social-video",
+      "label": "Edit a social video",
+      "loadPolicy": "matched-only",
+      "taskClassId": "post-production",
+      "useWhen": "Supplied footage must become one platform-ready social edit with intentional pacing and format.",
+      "requiredInputRoles": [
+        "source-footage",
+        "platform-and-edit-brief"
+      ],
+      "preferredSkillId": "edit-social-video",
+      "neighborSkillIds": [
+        "combine-videos",
+        "make-beat-synced-video",
+        "make-video-intro"
+      ],
+      "directWhen": "The social edit is the complete result and all source footage exists.",
+      "escalateWhen": "Missing source shots must be generated or the edit is one of several separately delivered campaign formats. Seed a custom runtime DAG so the social edit remains the final owner."
+    },
+    {
+      "id": "restyle-room",
+      "label": "Restyle an existing room",
+      "loadPolicy": "matched-only",
+      "taskClassId": "spatial-technical",
+      "useWhen": "A supplied room image must retain its spatial structure while adopting a new interior style.",
+      "requiredInputRoles": [
+        "room-source",
+        "target-style"
+      ],
+      "preferredSkillId": "restyle-room",
+      "neighborSkillIds": [
+        "preview-paint",
+        "visualize-floor-plan",
+        "preview-landscape"
+      ],
+      "directWhen": "One room restyle is the complete visual result.",
+      "escalateWhen": "Verified measurements, a floor-plan artifact, or a research-backed technical brief must first constrain the restyle. Seed a custom runtime DAG whose final node remains restyle-room."
+    },
+    {
+      "id": "visualize-floor-plan",
+      "label": "Visualize a floor plan",
+      "loadPolicy": "matched-only",
+      "taskClassId": "spatial-technical",
+      "useWhen": "Supplied plan geometry or spatial measurements must become a clear floor-plan visualization.",
+      "requiredInputRoles": [
+        "plan-or-measurements",
+        "visualization-brief"
+      ],
+      "preferredSkillId": "visualize-floor-plan",
+      "neighborSkillIds": [
+        "restyle-room",
+        "create-cad",
+        "make-flowchart"
+      ],
+      "directWhen": "The source geometry is authoritative and one visualization is the final result.",
+      "escalateWhen": "Measurements or current technical requirements must be verified before visualization. Seed a custom runtime DAG whose final node remains visualize-floor-plan."
+    },
+    {
+      "id": "make-flowchart",
+      "label": "Create a flowchart",
+      "loadPolicy": "matched-only",
+      "taskClassId": "spatial-technical",
+      "useWhen": "A supplied process, decision structure, or system relationship must become an accurate flow diagram.",
+      "requiredInputRoles": [
+        "process-or-relationship-data"
+      ],
+      "preferredSkillId": "make-flowchart",
+      "neighborSkillIds": [
+        "technical-visual-explainer",
+        "create-image-deck",
+        "legal-diagram-redraw"
+      ],
+      "directWhen": "The process facts are supplied and one flowchart is the complete result.",
+      "escalateWhen": "Current evidence must be verified before the diagram structure can be fixed. Seed a custom runtime DAG whose final node remains make-flowchart."
+    },
+    {
+      "id": "create-cad-model",
+      "label": "Create a CAD model",
+      "loadPolicy": "matched-only",
+      "taskClassId": "spatial-technical",
+      "useWhen": "Dimensions and geometry must become one machine-readable CAD artifact rather than a purely illustrative image.",
+      "requiredInputRoles": [
+        "dimensions-and-geometry",
+        "cad-output-contract"
+      ],
+      "preferredSkillId": "create-cad",
+      "neighborSkillIds": [
+        "visualize-floor-plan",
+        "make-flowchart",
+        "technical-visual-explainer"
+      ],
+      "directWhen": "The geometry and dimensions are supplied and the CAD artifact is the complete result.",
+      "escalateWhen": "External specifications or measurements must be verified before geometry can be modeled. Seed a custom runtime DAG whose final node remains create-cad."
+    },
+    {
+      "id": "write-cinematic-video-prompt",
+      "label": "Write a cinematic video prompt",
+      "loadPolicy": "matched-only",
+      "taskClassId": "prompt-planning-diagnostics",
+      "useWhen": "The user wants a production-ready prompt for a cinematic shot and does not request media generation.",
+      "requiredInputRoles": [
+        "shot-intent",
+        "available-reference-assets"
+      ],
+      "preferredSkillId": "cinematic-video-prompt",
+      "neighborSkillIds": [
+        "narrative-video-prompt",
+        "short-audiovisual-prompt",
+        "cross-model-video-prompt-adapter"
+      ],
+      "directWhen": "The prompt text is the complete deliverable.",
+      "escalateWhen": "The request requires a separately accepted multi-shot manifest followed by generated and assembled clips. Reclassify the final outcome as a narrative sequence before choosing multi-shot-video."
+    },
+    {
+      "id": "diagnose-video-prompt-failure",
+      "label": "Diagnose a failed video prompt",
+      "loadPolicy": "matched-only",
+      "taskClassId": "prompt-planning-diagnostics",
+      "useWhen": "A known video generation attempt and its prompt or terminal error must be analyzed to produce a targeted correction plan.",
+      "requiredInputRoles": [
+        "submitted-prompt",
+        "known-run-result-or-error"
+      ],
+      "preferredSkillId": "video-prompt-failure-diagnosis",
+      "neighborSkillIds": [
+        "video-model-advisor",
+        "cross-model-video-prompt-adapter",
+        "h3-prompt-expert"
+      ],
+      "directWhen": "The diagnosis and revised prompt guidance are the complete result.",
+      "escalateWhen": "A new execution is separately requested and depends on the accepted diagnosis; preserve the known run state rather than treating diagnosis as permission to resubmit."
+    },
+    {
+      "id": "select-video-model",
+      "label": "Select a video model",
+      "loadPolicy": "matched-only",
+      "taskClassId": "prompt-planning-diagnostics",
+      "useWhen": "The requested deliverable is a reasoned video-model recommendation against a supplied shot and reference-asset contract.",
+      "requiredInputRoles": [
+        "shot-contract",
+        "reference-asset-roles"
+      ],
+      "preferredSkillId": "video-model-advisor",
+      "neighborSkillIds": [
+        "cross-model-video-prompt-adapter",
+        "cinematic-video-prompt",
+        "video-prompt-failure-diagnosis"
+      ],
+      "directWhen": "The recommendation is the complete text deliverable.",
+      "escalateWhen": "The user requests separately planned shots and media execution after model selection. Reclassify the final outcome as a narrative sequence before choosing multi-shot-video."
+    },
+    {
+      "id": "create-custom-skill",
+      "label": "Create or revise a custom Skill",
+      "loadPolicy": "matched-only",
+      "taskClassId": "meta-system",
+      "useWhen": "The requested result is a local Skill lifecycle artifact: creation, revision, validation, or request-authorized installation.",
+      "requiredInputRoles": [
+        "skill-outcome-and-boundary"
+      ],
+      "preferredSkillId": "create-custom-skill",
+      "neighborSkillIds": [
+        "social-knowledge-notes",
+        "detail-page-skill-course",
+        "technical-visual-explainer"
+      ],
+      "directWhen": "One management Skill owns the complete local lifecycle requested by the user.",
+      "escalateWhen": "Only when separately requested management artifacts have a real dependency; do not enter creative orchestration simply because the subject is a Skill."
+    }
+  ],
+  "recipes": [
+    {
+      "id": "product-detail-production",
+      "label": "Verified product scene to detail-page set",
+      "loadPolicy": "selected-only",
+      "taskClassIds": [
+        "commerce-fashion",
+        "campaign-bundle"
+      ],
+      "useWhen": "A product-faithful source asset must be accepted before a separate modular detail-page deliverable is composed; add current channel research only when its evidence is independently required downstream.",
+      "directInsteadWhen": "Call product-detail-page directly when supplied product imagery and content are sufficient and that Atom owns the complete requested set; call ai-product directly when the only result is one product scene.",
+      "requiredInputRoles": [
+        "product-source",
+        "product-facts",
+        "target-channel"
+      ],
+      "steps": [
+        {
+          "id": "verify-channel-requirements",
+          "kind": "research",
+          "objective": "Verify only current channel dimensions, module constraints, and claim rules that materially affect the page set.",
+          "optional": true,
+          "condition": "Current channel facts must be delivered as an independent evidence artifact and reused downstream.",
+          "dependsOn": [],
+          "inputs": {
+            "target-channel": "user.target-channel",
+            "requested-modules": "user.deliverables"
+          },
+          "output": "verified-channel-requirements",
+          "researchScope": "Current primary platform documentation with date and source attached to each execution-changing requirement."
+        },
+        {
+          "id": "create-product-source",
+          "kind": "skill",
+          "objective": "Create the accepted product-faithful hero or scene needed by the detail-page composition.",
+          "dependsOn": [
+            "verify-channel-requirements"
+          ],
+          "inputs": {
+            "product-source": "user.product-source"
+          },
+          "optionalInputs": {
+            "channel-requirements": "verify-channel-requirements.output"
+          },
+          "output": "accepted-product-source",
+          "preferredSkillIds": [
+            "ai-product",
+            "create-white-background-product-mockup"
+          ]
+        },
+        {
+          "id": "compose-detail-page",
+          "kind": "skill",
+          "objective": "Compose the requested modular buyer-decision sequence and exports from accepted facts and imagery.",
+          "dependsOn": [
+            "verify-channel-requirements",
+            "create-product-source"
+          ],
+          "inputs": {
+            "product-source": "create-product-source.output",
+            "product-facts": "user.product-facts"
+          },
+          "optionalInputs": {
+            "channel-requirements": "verify-channel-requirements.output"
+          },
+          "output": "product-detail-page-set",
+          "preferredSkillIds": [
+            "product-detail-page"
+          ]
+        }
+      ],
+      "finalAcceptance": [
+        "Every requested module and export exists at the requested or independently verified channel size.",
+        "Product identity, geometry, labels, and supplied factual claims remain faithful.",
+        "No unverified claim or stale platform requirement appears in the final set."
+      ]
+    },
+    {
+      "id": "multi-format-campaign",
+      "label": "Shared brief to parallel campaign formats",
+      "loadPolicy": "selected-only",
+      "taskClassIds": [
+        "commerce-fashion",
+        "layout-social-series",
+        "campaign-bundle"
+      ],
+      "useWhen": "A shared campaign system must produce at least two independently usable formats or media types whose specialist Atoms can run in parallel after the brief is fixed.",
+      "directInsteadWhen": "Dispatch one specialist Atom directly when only one banner, carousel, deck, or video is requested, or when an end-to-end Atom explicitly owns the exact requested bundle.",
+      "requiredInputRoles": [
+        "campaign-objective",
+        "channel-deliverables"
+      ],
+      "minimumOptionalSteps": 2,
+      "steps": [
+        {
+          "id": "compile-campaign-system",
+          "kind": "deterministic",
+          "objective": "Normalize the fixed message hierarchy, approved facts, visual invariants, CTA, and per-channel deliverables into one shared brief.",
+          "dependsOn": [],
+          "inputs": {
+            "campaign-objective": "user.campaign-objective",
+            "deliverables": "user.channel-deliverables"
+          },
+          "optionalInputs": {
+            "brand-constraints": "user.brand-constraints"
+          },
+          "output": "shared-campaign-brief",
+          "operation": "compile-and-freeze-shared-brief"
+        },
+        {
+          "id": "produce-banner-branch",
+          "kind": "skill",
+          "objective": "Produce the requested banner exports while preserving the shared campaign system.",
+          "dependsOn": [
+            "compile-campaign-system"
+          ],
+          "inputs": {
+            "campaign-brief": "compile-campaign-system.output"
+          },
+          "optionalInputs": {
+            "approved-media": "user.approved-product-or-hero-media"
+          },
+          "output": "campaign-banner-exports",
+          "preferredSkillIds": [
+            "ai-banner-design"
+          ],
+          "condition": "A banner placement is an independently requested deliverable.",
+          "parallelGroup": "channel-production",
+          "optional": true
+        },
+        {
+          "id": "produce-social-branch",
+          "kind": "skill",
+          "objective": "Produce the requested social carousel as a coherent channel-specific sequence.",
+          "dependsOn": [
+            "compile-campaign-system"
+          ],
+          "inputs": {
+            "campaign-brief": "compile-campaign-system.output"
+          },
+          "optionalInputs": {
+            "approved-media": "user.approved-product-or-hero-media"
+          },
+          "output": "campaign-social-carousel",
+          "preferredSkillIds": [
+            "create-social-carousel"
+          ],
+          "condition": "A carousel is an independently requested deliverable.",
+          "parallelGroup": "channel-production",
+          "optional": true
+        },
+        {
+          "id": "produce-video-branch",
+          "kind": "skill",
+          "objective": "Produce the requested campaign video using the shared facts, identity, and CTA.",
+          "dependsOn": [
+            "compile-campaign-system"
+          ],
+          "inputs": {
+            "campaign-brief": "compile-campaign-system.output"
+          },
+          "optionalInputs": {
+            "approved-media": "user.approved-product-or-hero-media"
+          },
+          "output": "campaign-video",
+          "preferredSkillIds": [
+            "make-product-commercial",
+            "brand-promo-video-generator"
+          ],
+          "condition": "A video is an independently requested deliverable.",
+          "parallelGroup": "channel-production",
+          "optional": true
+        },
+        {
+          "id": "build-delivery-manifest",
+          "kind": "deterministic",
+          "objective": "Register produced artifacts, intended placements, dimensions, shared facts, and any deliberately omitted branch.",
+          "dependsOn": [
+            "compile-campaign-system",
+            "produce-banner-branch",
+            "produce-social-branch",
+            "produce-video-branch"
+          ],
+          "inputs": {
+            "campaign-brief": "compile-campaign-system.output"
+          },
+          "optionalInputs": {
+            "banner-artifact": "produce-banner-branch.output",
+            "social-artifact": "produce-social-branch.output",
+            "video-artifact": "produce-video-branch.output"
+          },
+          "output": "campaign-delivery-manifest",
+          "operation": "assemble-artifact-manifest"
+        }
+      ],
+      "finalAcceptance": [
+        "Every requested channel deliverable is present and mapped to its placement.",
+        "Brand identity, approved facts, message hierarchy, and CTA remain consistent across branches.",
+        "Each artifact satisfies its owning Atom's technical output contract."
+      ]
+    },
+    {
+      "id": "comic-production",
+      "label": "Story manifest to consistent comic pages",
+      "loadPolicy": "selected-only",
+      "taskClassIds": [
+        "portrait-character",
+        "narrative-sequence"
+      ],
+      "useWhen": "A story must become multiple ordered comic pages with a validated manifest, reusable canonical identities, and page-to-page continuity.",
+      "directInsteadWhen": "Call plan-comic-storyboard directly when only a manifest is requested; call render-comic-page directly for one page when the manifest and canonical identities are already supplied and accepted.",
+      "requiredInputRoles": [
+        "story-brief",
+        "page-or-format-target"
+      ],
+      "steps": [
+        {
+          "id": "plan-comic-manifest",
+          "kind": "skill",
+          "objective": "Create the validated story, page, panel, dialogue, style, and continuity manifest.",
+          "dependsOn": [],
+          "inputs": {
+            "story-brief": "user.story-brief",
+            "format-target": "user.page-or-format-target"
+          },
+          "optionalInputs": {
+            "style-constraints": "user.style-constraints"
+          },
+          "output": "comic-project-manifest",
+          "preferredSkillIds": [
+            "plan-comic-storyboard"
+          ]
+        },
+        {
+          "id": "create-missing-identities",
+          "kind": "skill",
+          "objective": "Create only missing canonical character sheets required by the manifest before page rendering.",
+          "dependsOn": [
+            "plan-comic-manifest"
+          ],
+          "inputs": {
+            "character-specifications": "plan-comic-manifest.output"
+          },
+          "optionalInputs": {
+            "existing-character-assets": "user.existing-character-assets"
+          },
+          "output": "accepted-canonical-character-sheets",
+          "preferredSkillIds": [
+            "create-character"
+          ],
+          "condition": "The manifest references a recurring identity without an accepted canonical asset.",
+          "includeWhenInputMissing": "existing-character-assets",
+          "repeatFor": "each missing recurring identity",
+          "optional": true
+        },
+        {
+          "id": "resolve-canonical-identities",
+          "kind": "deterministic",
+          "objective": "Resolve supplied and newly accepted canonical identities into the single page-rendering identity set.",
+          "dependsOn": [
+            "plan-comic-manifest",
+            "create-missing-identities"
+          ],
+          "inputs": {
+            "comic-manifest": "plan-comic-manifest.output"
+          },
+          "optionalInputs": {
+            "existing-character-assets": "user.existing-character-assets",
+            "created-character-assets": "create-missing-identities.output"
+          },
+          "output": "resolved-canonical-character-set",
+          "operation": "resolve-available-canonical-identities"
+        },
+        {
+          "id": "render-comic-pages",
+          "kind": "skill",
+          "objective": "Render every requested page from the manifest and accepted canonical identities.",
+          "dependsOn": [
+            "plan-comic-manifest",
+            "resolve-canonical-identities"
+          ],
+          "inputs": {
+            "comic-manifest": "plan-comic-manifest.output",
+            "canonical-identities": "resolve-canonical-identities.output"
+          },
+          "output": "rendered-comic-page-set",
+          "preferredSkillIds": [
+            "render-comic-page"
+          ],
+          "repeatFor": "each requested page in manifest order"
+        },
+        {
+          "id": "repair-dialogue-only",
+          "kind": "skill",
+          "objective": "Repair exact dialogue placement on otherwise accepted page art without regenerating accepted identities or compositions.",
+          "dependsOn": [
+            "render-comic-pages",
+            "plan-comic-manifest"
+          ],
+          "inputs": {
+            "accepted-page-art": "render-comic-pages.output",
+            "exact-dialogue": "plan-comic-manifest.output"
+          },
+          "output": "dialogue-corrected-page-set",
+          "preferredSkillIds": [
+            "add-speech-bubble"
+          ],
+          "condition": "Exact dialogue is the only failed property on otherwise accepted page art.",
+          "repeatFor": "each flagged page",
+          "optional": true
+        }
+      ],
+      "finalAcceptance": [
+        "All requested pages exist in manifest order with correct panels and dialogue.",
+        "Recurring identities, wardrobe, props, locations, and carried state remain continuous where the manifest requires them.",
+        "No accepted page art or canonical identity was regenerated solely to repair dialogue."
+      ]
+    },
+    {
+      "id": "multi-shot-video",
+      "label": "Storyboard to assembled multi-shot video",
+      "loadPolicy": "selected-only",
+      "taskClassIds": [
+        "narrative-sequence",
+        "campaign-bundle",
+        "post-production"
+      ],
+      "useWhen": "The result requires multiple separately generated shots with explicit timing or continuity followed by assembly into one master.",
+      "directInsteadWhen": "Use an end-to-end Atom such as make-music-video, make-product-commercial, pov-short-film-generator, or suspense-title-sequence-generator when it owns the complete requested film and no separate shot assets or approvals are required; call generate-video directly for one shot.",
+      "requiredInputRoles": [
+        "film-brief-or-script",
+        "format-and-duration"
+      ],
+      "steps": [
+        {
+          "id": "plan-shot-manifest",
+          "kind": "skill",
+          "objective": "Create the ordered shot manifest with durations, source roles, continuity invariants, and assembly notes.",
+          "dependsOn": [],
+          "inputs": {
+            "film-brief": "user.film-brief-or-script",
+            "format-and-duration": "user.format-and-duration"
+          },
+          "optionalInputs": {
+            "reference-assets": "user.reference-assets",
+            "continuity-constraints": "user.continuity-constraints"
+          },
+          "output": "validated-shot-manifest",
+          "preferredSkillIds": [
+            "plan-film-storyboard"
+          ]
+        },
+        {
+          "id": "generate-shots",
+          "kind": "skill",
+          "objective": "Generate each shot as an atomic video result from its manifest entry and bound references.",
+          "dependsOn": [
+            "plan-shot-manifest"
+          ],
+          "inputs": {
+            "shot-specification": "plan-shot-manifest.output"
+          },
+          "optionalInputs": {
+            "reference-assets": "user.reference-assets"
+          },
+          "output": "accepted-shot-clips",
+          "preferredSkillIds": [
+            "generate-video"
+          ],
+          "repeatFor": "each shot manifest entry",
+          "parallelGroup": "independent-shot-generation"
+        },
+        {
+          "id": "assemble-master",
+          "kind": "skill",
+          "objective": "Assemble accepted shot clips in manifest order with the specified pacing and transitions.",
+          "dependsOn": [
+            "generate-shots",
+            "plan-shot-manifest"
+          ],
+          "inputs": {
+            "accepted-shot-clips": "generate-shots.output",
+            "assembly-notes": "plan-shot-manifest.output"
+          },
+          "output": "assembled-video-master",
+          "preferredSkillIds": [
+            "combine-videos"
+          ]
+        },
+        {
+          "id": "finish-master-grade",
+          "kind": "skill",
+          "objective": "Apply one coherent finishing grade only when the assembled master requires cross-shot color normalization.",
+          "dependsOn": [
+            "assemble-master"
+          ],
+          "inputs": {
+            "assembled-master": "assemble-master.output"
+          },
+          "optionalInputs": {
+            "grade-target": "user.continuity-constraints"
+          },
+          "output": "finished-video-master",
+          "preferredSkillIds": [
+            "correct-video-color"
+          ],
+          "condition": "Cross-shot color normalization or a named final grade is required.",
+          "optional": true
+        }
+      ],
+      "finalAcceptance": [
+        "The master contains every requested shot once, in the intended order and duration band.",
+        "Declared character, product, environment, motion, and carried-state continuity holds across shot boundaries.",
+        "Resolution, aspect ratio, audio behavior, and delivery format match the requested master contract."
+      ]
+    },
+    {
+      "id": "visual-localization-set",
+      "label": "Source artwork to localized visual set",
+      "loadPolicy": "selected-only",
+      "taskClassIds": [
+        "precision-edit",
+        "layout-social-series",
+        "campaign-bundle",
+        "post-production"
+      ],
+      "useWhen": "Several locales, source assets, or channel formats must preserve one visual system while replacing copy and producing a registered localized set.",
+      "directInsteadWhen": "Call translate-image-text directly for one supplied image and one target language when its layout-preserving output is the complete request.",
+      "requiredInputRoles": [
+        "source-artwork",
+        "target-locales"
+      ],
+      "steps": [
+        {
+          "id": "normalize-localization-matrix",
+          "kind": "deterministic",
+          "objective": "Create the source-copy, locale, format, immutable-element, and overflow-handling matrix before image edits.",
+          "dependsOn": [],
+          "inputs": {
+            "source-artwork": "user.source-artwork",
+            "target-locales": "user.target-locales"
+          },
+          "optionalInputs": {
+            "source-copy": "user.source-copy",
+            "invariants": "user.copy-and-layout-invariants"
+          },
+          "output": "localization-matrix",
+          "operation": "normalize-localization-bindings"
+        },
+        {
+          "id": "render-localized-artwork",
+          "kind": "skill",
+          "objective": "Replace source copy with locale-appropriate text while preserving declared visual and brand invariants.",
+          "dependsOn": [
+            "normalize-localization-matrix"
+          ],
+          "inputs": {
+            "source-artwork": "user.source-artwork",
+            "locale-binding": "normalize-localization-matrix.output"
+          },
+          "output": "localized-artwork-variants",
+          "preferredSkillIds": [
+            "translate-image-text"
+          ],
+          "repeatFor": "each source-artwork and target-locale pair",
+          "parallelGroup": "locale-rendering"
+        },
+        {
+          "id": "compose-localized-series",
+          "kind": "skill",
+          "objective": "Compose localized variants into the requested carousel or deck when a separate series deliverable is required.",
+          "dependsOn": [
+            "render-localized-artwork"
+          ],
+          "inputs": {
+            "localized-artwork": "render-localized-artwork.output"
+          },
+          "optionalInputs": {
+            "series-contract": "user.copy-and-layout-invariants"
+          },
+          "output": "localized-series",
+          "preferredSkillIds": [
+            "create-social-carousel",
+            "create-image-deck"
+          ],
+          "condition": "The requested final output is a composed series rather than independent localized source images.",
+          "repeatFor": "each target locale",
+          "optional": true
+        },
+        {
+          "id": "package-localized-set",
+          "kind": "deterministic",
+          "objective": "Map each final artifact to source, locale, format, dimensions, and copy revision.",
+          "dependsOn": [
+            "render-localized-artwork",
+            "compose-localized-series",
+            "normalize-localization-matrix"
+          ],
+          "inputs": {
+            "localized-artwork": "render-localized-artwork.output",
+            "localization-matrix": "normalize-localization-matrix.output"
+          },
+          "optionalInputs": {
+            "localized-series": "compose-localized-series.output"
+          },
+          "output": "localized-delivery-manifest",
+          "operation": "assemble-localization-manifest"
+        }
+      ],
+      "finalAcceptance": [
+        "Every requested source, locale, and format combination is present and correctly named in the delivery manifest.",
+        "Translated copy is complete, readable, locale-appropriate, and mapped to the intended source string.",
+        "Declared logos, product identity, imagery, hierarchy, and immutable layout elements remain preserved."
+      ]
+    },
+    {
+      "id": "cutout-to-layout",
+      "label": "Accepted cutout to composed layout",
+      "loadPolicy": "selected-only",
+      "taskClassIds": [
+        "precision-edit",
+        "commerce-fashion",
+        "layout-social-series"
+      ],
+      "useWhen": "A transparent subject or product cutout is a separately accepted intermediate artifact that must feed a later poster, banner, carousel, or detail layout.",
+      "directInsteadWhen": "Call remove-background directly when the transparent cutout is the final result; dispatch the final layout Atom directly when it accepts the original source and owns background removal within its complete output contract.",
+      "requiredInputRoles": [
+        "foreground-source",
+        "layout-brief",
+        "target-format"
+      ],
+      "steps": [
+        {
+          "id": "create-transparent-cutout",
+          "kind": "skill",
+          "objective": "Create a clean transparent foreground while preserving the declared subject or product boundary.",
+          "dependsOn": [],
+          "inputs": {
+            "foreground-source": "user.foreground-source"
+          },
+          "optionalInputs": {
+            "preservation-constraints": "user.preservation-constraints"
+          },
+          "output": "accepted-transparent-cutout",
+          "preferredSkillIds": [
+            "remove-background"
+          ]
+        },
+        {
+          "id": "compose-target-layout",
+          "kind": "skill",
+          "objective": "Compose the accepted cutout into the requested layout without altering protected foreground details.",
+          "dependsOn": [
+            "create-transparent-cutout"
+          ],
+          "inputs": {
+            "transparent-cutout": "create-transparent-cutout.output",
+            "layout-brief": "user.layout-brief",
+            "target-format": "user.target-format"
+          },
+          "output": "composed-layout",
+          "preferredSkillIds": [
+            "poster-design",
+            "ai-banner-design",
+            "create-social-carousel",
+            "product-detail-page"
+          ]
+        },
+        {
+          "id": "export-layout-package",
+          "kind": "deterministic",
+          "objective": "Export and register the requested dimensions, file formats, transparency behavior, and source lineage.",
+          "dependsOn": [
+            "compose-target-layout"
+          ],
+          "inputs": {
+            "composed-layout": "compose-target-layout.output",
+            "target-format": "user.target-format"
+          },
+          "output": "layout-delivery-package",
+          "operation": "export-and-register-layout-files"
+        }
+      ],
+      "finalAcceptance": [
+        "The cutout edge is clean and transparent where required, with no missing protected subject detail.",
+        "The final composition matches the requested hierarchy, dimensions, and format.",
+        "The foreground identity, geometry, label copy, and declared colors remain unchanged through composition."
+      ]
+    },
+    {
+      "id": "research-to-deliverable",
+      "label": "Verified evidence to visual deliverable",
+      "loadPolicy": "selected-only",
+      "taskClassIds": [
+        "*"
+      ],
+      "generalizesAcrossTaskClasses": true,
+      "useWhen": "Current external facts materially determine the content or structure of a visual explanation, deck, infographic, technical visual, or evidence-backed campaign asset.",
+      "directInsteadWhen": "Dispatch the owning visual Atom directly when the user supplies an authoritative, sufficient evidence packet and no current-fact verification is needed; perform research alone when no visual deliverable is requested.",
+      "requiredInputRoles": [
+        "research-question",
+        "target-audience",
+        "deliverable-contract"
+      ],
+      "steps": [
+        {
+          "id": "verify-execution-facts",
+          "kind": "research",
+          "objective": "Gather and verify only facts that will appear in or structurally change the requested deliverable.",
+          "dependsOn": [],
+          "inputs": {
+            "research-question": "user.research-question",
+            "deliverable-contract": "user.deliverable-contract"
+          },
+          "optionalInputs": {
+            "source-requirements": "user.source-requirements"
+          },
+          "output": "dated-evidence-record",
+          "researchScope": "Primary or authoritative sources where available, with claim-level citations, dates, unresolved conflicts, and explicit inference labels."
+        },
+        {
+          "id": "compile-evidence-brief",
+          "kind": "deterministic",
+          "objective": "Map verified claims, citations, uncertainty, hierarchy, and prohibited extrapolations into a production brief.",
+          "dependsOn": [
+            "verify-execution-facts"
+          ],
+          "inputs": {
+            "evidence-record": "verify-execution-facts.output",
+            "target-audience": "user.target-audience",
+            "deliverable-contract": "user.deliverable-contract"
+          },
+          "output": "evidence-backed-production-brief",
+          "operation": "compile-claim-to-layout-brief"
+        },
+        {
+          "id": "produce-evidence-deliverable",
+          "kind": "skill",
+          "objective": "Produce the requested evidence-backed visual with the narrowest runtime-visible Skill that owns the output format.",
+          "dependsOn": [
+            "compile-evidence-brief",
+            "verify-execution-facts"
+          ],
+          "inputs": {
+            "production-brief": "compile-evidence-brief.output",
+            "evidence-record": "verify-execution-facts.output"
+          },
+          "output": "evidence-backed-visual-deliverable",
+          "preferredSkillIds": [
+            "make-infographic",
+            "create-image-deck",
+            "technical-visual-explainer",
+            "article-handdrawn-illustrations"
+          ]
+        },
+        {
+          "id": "attach-source-manifest",
+          "kind": "deterministic",
+          "objective": "Attach the final claim-to-source map and record any visual simplification or labeled inference.",
+          "dependsOn": [
+            "produce-evidence-deliverable",
+            "verify-execution-facts"
+          ],
+          "inputs": {
+            "visual-deliverable": "produce-evidence-deliverable.output",
+            "evidence-record": "verify-execution-facts.output"
+          },
+          "output": "deliverable-with-source-manifest",
+          "operation": "bind-claim-source-manifest"
+        }
+      ],
+      "finalAcceptance": [
+        "Every material factual claim maps to a verified source or is clearly labeled as inference.",
+        "The visual structure matches the requested audience, format, and decision goal without distorting the evidence.",
+        "Dates, units, comparisons, citations, and known uncertainty are complete and internally consistent."
+      ]
+    }
+  ]
+}

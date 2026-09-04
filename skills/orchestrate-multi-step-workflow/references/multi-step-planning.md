@@ -2,7 +2,20 @@
 
 Use this reference after the harness-level Router has determined that a request needs several operations, current research, deterministic processing, or clarification. One clear Atom request never enters this workflow.
 
-## Intent card
+## Canonical Router plan seed path
+
+A handoff with `schemaVersion: "1.0.0"` is already classified. Its `signature`, `routeShape`-derived `planning`, selected `recipeId`, materialized optional `steps`, artifact `inputs`, `executionWaves`, and `finalAcceptance` are canonical. Do not re-infer the intent or recreate the DAG.
+
+1. If `nextAction` is `select-workflow-recipe`, compare only the `candidateRecipeIds` hints and instantiate one through the Router plan compiler only when it matches the complete dependency shape. If none fits, take the declared custom runtime-DAG fallback rather than forcing a recipe.
+2. If populated `steps` are present, preserve their IDs, dependencies, bindings, outputs, optional-node decisions, and wave order.
+3. Score the listed `candidateSkillIds` for each Skill node against that node's complete contract. Use current runtime descriptions only when `runtimeDiscoveryRequired` is true, an indexed ID is unavailable, or none owns the full node outcome.
+4. Fill `skillId`, request-specific `candidates`, and `selectionReason`; deterministic and research nodes retain their declared kind.
+5. Expand `repeatFor` mechanically after its source manifest or list is available. Stable child IDs inherit the template node's bindings and dependencies; dependent nodes wait for the complete required fan-out. Recompute waves without changing the recipe.
+6. Run deterministic validation, then execute. If the seed has `nextAction: ask-one-question`, ask only its `question` and emit no nodes.
+
+An `expand-with-orchestrator` seed with no steps is an explicit `runtime-fallback` custom-DAG handoff. Only that path, or a handoff with no valid seed, uses the legacy planning process below.
+
+## Legacy fallback intent card
 
 Infer rather than keyword-match:
 
@@ -24,11 +37,11 @@ Record this before creating execution nodes:
 
 ```yaml
 planning:
-  reason: dependency_chain | ambiguity | research | risk
+  reason: dependency_chain | multi_deliverable | ambiguity | research | risk
   clarification_required: true | false
 ```
 
-This is a multi-step workflow: an executable plan has at least two meaningful nodes. `dependency_chain` requires an actual dependency, not merely multiple user phrases. `research` requires `requires_research: true` and a research node. `risk` covers irreversible, high-cost, or preservation-sensitive execution that needs explicit acceptance and safe submission handling.
+This is a multi-step workflow: an executable plan has at least two meaningful nodes. `dependency_chain` requires an actual dependency, not merely multiple user phrases. `multi_deliverable` covers two or more independently owned outputs that can share one execution wave without inventing a dependency. `research` requires `requires_research: true` and a research node. `risk` covers irreversible, high-cost, or preservation-sensitive execution that needs explicit acceptance and safe submission handling.
 
 When `clarification_required` is true, set the reason to `ambiguity`, ask one material question, and do not emit execution nodes until it is answered. Do not use this workflow as a keyword classifier or a global entry point: an unambiguous single-Atom request proceeds directly to its selected Skill.
 

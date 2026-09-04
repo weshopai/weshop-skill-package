@@ -3,6 +3,7 @@ export * from "./intent.js";
 export * from "./kling.js";
 export * from "./execution.js";
 export * from "./router.js";
+export * from "./router-planner.js";
 export * from "./multi-step-orchestrator.js";
 export * from "./models.js";
 export * from "./model-selection.js";

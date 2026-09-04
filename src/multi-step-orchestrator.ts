@@ -24,6 +24,10 @@ export interface OrchestrationStep {
   output: string;
   selectionReason: string;
   candidates?: SkillIntentMatch[];
+  optional?: boolean;
+  condition?: string;
+  repeatFor?: string;
+  parallelGroup?: string;
 }
 
 export interface SkillIntentMatch {
@@ -33,7 +37,7 @@ export interface SkillIntentMatch {
 }
 
 export interface OrchestrationDecision {
-  reason: "dependency_chain" | "ambiguity" | "research" | "risk";
+  reason: "dependency_chain" | "multi_deliverable" | "ambiguity" | "research" | "risk";
   clarificationRequired: boolean;
 }
 
@@ -48,6 +52,7 @@ export interface OrchestrationProposal {
 
 export interface OrchestrationPlan extends OrchestrationProposal {
   availableSkillCount: number;
+  executionWaves: string[][];
 }
 
 export class OrchestrationPlanError extends Error {}
@@ -65,10 +70,15 @@ export function validateOrchestrationPlan(
   const ids = new Set<string>();
 
   if (!proposal.intent.outcome.trim()) throw new OrchestrationPlanError("The plan needs a concrete final outcome.");
-  if (proposal.intent.confidence < 0 || proposal.intent.confidence > 1) throw new OrchestrationPlanError("Intent confidence must be between 0 and 1.");
+  if (!Number.isFinite(proposal.intent.confidence) || proposal.intent.confidence < 0 || proposal.intent.confidence > 1) {
+    throw new OrchestrationPlanError("Intent confidence must be between 0 and 1.");
+  }
   validateOrchestrationDecision(proposal);
   if (proposal.decision === "clarify" && !proposal.clarification?.trim()) throw new OrchestrationPlanError("A clarification decision requires one material question.");
   if (proposal.decision === "execute" && proposal.steps.length === 0) throw new OrchestrationPlanError("An executable plan needs at least one step.");
+  if (proposal.decision === "execute" && (!proposal.finalAcceptance.length || proposal.finalAcceptance.some((item) => !item.trim()))) {
+    throw new OrchestrationPlanError("An executable plan needs a non-empty final acceptance contract.");
+  }
 
   for (const step of proposal.steps) {
     if (!step.id.trim() || ids.has(step.id)) throw new OrchestrationPlanError(`Plan step IDs must be unique and non-empty: ${step.id}.`);
@@ -76,6 +86,9 @@ export function validateOrchestrationPlan(
     if (!step.objective.trim() || !step.output.trim() || !step.selectionReason.trim()) {
       throw new OrchestrationPlanError(`Plan step ${step.id} needs an objective, output, and selection reason.`);
     }
+    if (step.condition !== undefined && !step.condition.trim()) throw new OrchestrationPlanError(`Plan step ${step.id} has an empty condition.`);
+    if (step.repeatFor !== undefined && !step.repeatFor.trim()) throw new OrchestrationPlanError(`Plan step ${step.id} has an empty repeatFor instruction.`);
+    if (step.parallelGroup !== undefined && !step.parallelGroup.trim()) throw new OrchestrationPlanError(`Plan step ${step.id} has an empty parallelGroup.`);
     if (step.kind === "skill") {
       if (!step.skillId || !registry.has(step.skillId)) throw new OrchestrationPlanError(`Plan step ${step.id} selected unavailable Skill: ${step.skillId ?? "<missing>"}.`);
       validateHighestIntentMatch(step, registry);
@@ -91,14 +104,15 @@ export function validateOrchestrationPlan(
       if (!ids.has(dependency)) throw new OrchestrationPlanError(`Plan step ${step.id} depends on missing step ${dependency}.`);
       if (dependency === step.id) throw new OrchestrationPlanError(`Plan step ${step.id} cannot depend on itself.`);
     }
+    validateInputBindings(step, ids);
   }
-  assertAcyclic(proposal.steps);
+  const executionWaves = buildExecutionWaves(proposal.steps);
 
   if (proposal.intent.requiresResearch && proposal.decision === "execute" && !proposal.steps.some((step) => step.kind === "research")) {
     throw new OrchestrationPlanError("This intent requires research, but the proposed plan has no research step.");
   }
 
-  return { ...proposal, availableSkillCount: availableSkills.length };
+  return { ...proposal, availableSkillCount: availableSkills.length, executionWaves };
 }
 
 function validateOrchestrationDecision(proposal: OrchestrationProposal) {
@@ -114,6 +128,12 @@ function validateOrchestrationDecision(proposal: OrchestrationProposal) {
   if (proposal.decision === "execute" && proposal.steps.length < 2) throw new OrchestrationPlanError("A multi-step plan must execute at least two steps.");
   if (planning.reason === "dependency_chain" && proposal.decision === "execute" && !proposal.steps.some((step) => step.dependsOn.length)) {
     throw new OrchestrationPlanError("A dependency-chain plan needs at least one dependent step.");
+  }
+  if (planning.reason === "multi_deliverable" && proposal.decision === "execute") {
+    if (proposal.steps.length < 2) throw new OrchestrationPlanError("A multi-deliverable plan needs at least two independently owned steps.");
+    if (proposal.steps.some((step) => step.dependsOn.length)) {
+      throw new OrchestrationPlanError("A multi-deliverable plan cannot contain artifact dependencies; use dependency_chain instead.");
+    }
   }
   if (planning.reason === "research" && !proposal.intent.requiresResearch) {
     throw new OrchestrationPlanError("A research-driven plan must mark the intent as requiring research.");
@@ -141,17 +161,41 @@ function validateHighestIntentMatch(step: OrchestrationStep, registry: Map<strin
   }
 }
 
-function assertAcyclic(steps: OrchestrationStep[]) {
-  const dependencies = new Map(steps.map((step) => [step.id, step.dependsOn]));
-  const visiting = new Set<string>();
-  const visited = new Set<string>();
-  const visit = (id: string) => {
-    if (visiting.has(id)) throw new OrchestrationPlanError(`Plan contains a dependency cycle at ${id}.`);
-    if (visited.has(id)) return;
-    visiting.add(id);
-    for (const dependency of dependencies.get(id) ?? []) visit(dependency);
-    visiting.delete(id);
-    visited.add(id);
-  };
-  for (const step of steps) visit(step.id);
+function validateInputBindings(step: OrchestrationStep, ids: Set<string>) {
+  for (const [role, binding] of Object.entries(step.inputs)) {
+    if (!role.trim() || !binding.trim()) throw new OrchestrationPlanError(`Plan step ${step.id} has an empty input role or binding.`);
+    if (/^user\.[A-Za-z0-9_-]+(?:\.[A-Za-z0-9_-]+|\[[0-9]+\])*$/.test(binding)) continue;
+    const match = /^([a-z0-9]+(?:-[a-z0-9]+)*)(?:\.[A-Za-z0-9_-]+|\[[0-9]+\])+$/.exec(binding);
+    if (!match) {
+      throw new OrchestrationPlanError(`Plan step ${step.id} input ${role} must bind as user.role or dependency.artifactPath.`);
+    }
+    const sourceId = match[1];
+    if (!ids.has(sourceId)) throw new OrchestrationPlanError(`Plan step ${step.id} input ${role} has an unknown binding source: ${binding}.`);
+    if (!step.dependsOn.includes(sourceId)) {
+      throw new OrchestrationPlanError(`Plan step ${step.id} input ${role} references ${sourceId} without declaring it as a dependency.`);
+    }
+  }
+}
+
+/** Returns the dependency-safe parallel waves for a validated or proposed DAG. */
+export function buildExecutionWaves(steps: Array<Pick<OrchestrationStep, "id" | "dependsOn">>): string[][] {
+  const pending = new Map(steps.map((step) => [step.id, new Set(step.dependsOn)]));
+  const completed = new Set<string>();
+  const waves: string[][] = [];
+
+  while (pending.size) {
+    const wave = steps
+      .map((step) => step.id)
+      .filter((id) => pending.has(id) && [...(pending.get(id) ?? [])].every((dependency) => completed.has(dependency)));
+    if (!wave.length) {
+      const cycleAt = steps.find((step) => pending.has(step.id))?.id ?? "<unknown>";
+      throw new OrchestrationPlanError(`Plan contains a dependency cycle at ${cycleAt}.`);
+    }
+    waves.push(wave);
+    for (const id of wave) {
+      pending.delete(id);
+      completed.add(id);
+    }
+  }
+  return waves;
 }

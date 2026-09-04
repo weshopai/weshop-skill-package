@@ -38,6 +38,7 @@ test("accepts a model-proposed multi-Skill DAG against the runtime registry", ()
   const plan = validateOrchestrationPlan(proposal(), skills);
   assert.equal(plan.steps.length, 3);
   assert.equal(plan.availableSkillCount, 3);
+  assert.deepEqual(plan.executionWaves, [["research"], ["scene"], ["poster"]]);
 });
 
 test("accepts a newly installed Skill in a multi-step plan without changing an operation enum", () => {
@@ -59,8 +60,8 @@ test("rejects unavailable Skills and invalid dependency graphs", () => {
     intent: { ...proposal().intent, requiresResearch: false },
     planning: { reason: "dependency_chain", clarificationRequired: false },
     steps: [
-      { ...proposal().steps[1], dependsOn: ["poster"] },
-      { ...proposal().steps[2], dependsOn: ["scene"] }
+      { ...proposal().steps[1], dependsOn: ["poster"], inputs: { product: "user.product", poster: "poster.output" } },
+      { ...proposal().steps[2], dependsOn: ["scene"], inputs: { visual: "scene.output" } }
     ]
   });
   assert.throws(() => validateOrchestrationPlan(cyclic, skills), /dependency cycle/);
@@ -89,10 +90,45 @@ test("rejects a selected Skill below the highest request-specific intent match",
 });
 
 test("turns research and material ambiguity into explicit planning decisions", () => {
-  const withoutResearch = proposal().steps.slice(1).map((step, index) => ({ ...step, dependsOn: index === 0 ? [] : step.dependsOn }));
+  const withoutResearch = proposal().steps.slice(1).map((step, index) => ({
+    ...step,
+    dependsOn: index === 0 ? [] : step.dependsOn,
+    inputs: index === 0 ? { product: "user.product" } : step.inputs
+  }));
   assert.throws(() => validateOrchestrationPlan(proposal({ steps: withoutResearch }), skills), /no research step/);
   const clarify = proposal({ planning: { reason: "ambiguity", clarificationRequired: true }, decision: "clarify", clarification: "Which marketplace and locale should the final asset target?", steps: [] });
   assert.equal(validateOrchestrationPlan(clarify, skills).decision, "clarify");
+});
+
+test("rejects broken artifact bindings and an empty final acceptance contract", () => {
+  const undeclaredBinding = proposal({
+    steps: proposal().steps.map((step) => step.id === "poster"
+      ? { ...step, inputs: { visual: "research.output" } }
+      : step)
+  });
+  assert.throws(() => validateOrchestrationPlan(undeclaredBinding, skills), /without declaring it as a dependency/);
+  const emptyUserRole = proposal({
+    steps: proposal().steps.map((step) => step.id === "scene" ? { ...step, inputs: { product: "user." } } : step)
+  });
+  assert.throws(() => validateOrchestrationPlan(emptyUserRole, skills), /must bind as user\.role or dependency\.artifactPath/);
+  const bareDependency = proposal({
+    steps: proposal().steps.map((step) => step.id === "scene" ? { ...step, inputs: { product: "research" } } : step)
+  });
+  assert.throws(() => validateOrchestrationPlan(bareDependency, skills), /must bind as user\.role or dependency\.artifactPath/);
+  assert.throws(() => validateOrchestrationPlan(proposal({ finalAcceptance: [] }), skills), /final acceptance contract/);
+});
+
+test("groups independent branches into the same execution wave", () => {
+  const parallel = proposal({
+    intent: { ...proposal().intent, requiresResearch: false },
+    planning: { reason: "dependency_chain", clarificationRequired: false },
+    steps: [
+      { id: "source", kind: "deterministic", objective: "Prepare the source", dependsOn: [], inputs: { product: "user.product" }, output: "prepared product", selectionReason: "One accepted source feeds two independent layouts." },
+      { id: "scene-a", kind: "skill", skillId: "ai-product", objective: "Create scene A", dependsOn: ["source"], inputs: { product: "source.output" }, output: "scene A", selectionReason: "This Skill owns product-faithful scene placement.", candidates: matches("ai-product") },
+      { id: "scene-b", kind: "skill", skillId: "ai-product", objective: "Create scene B", dependsOn: ["source"], inputs: { product: "source.output" }, output: "scene B", selectionReason: "This Skill owns product-faithful scene placement.", candidates: matches("ai-product") }
+    ]
+  });
+  assert.deepEqual(validateOrchestrationPlan(parallel, skills).executionWaves, [["source"], ["scene-a", "scene-b"]]);
 });
 
 test("rejects an attempted single-step plan", () => {
@@ -102,6 +138,28 @@ test("rejects an attempted single-step plan", () => {
     steps: [{ id: "expand", kind: "skill", skillId: "expand-image", objective: "Extend the supplied image", dependsOn: [], inputs: { image: "user.image" }, output: "expanded image", selectionReason: "This Skill owns ratio extension while preserving accepted content.", candidates: matches("expand-image") }]
   });
   assert.throws(() => validateOrchestrationPlan(falseMulti, skills), /at least two steps/);
+});
+
+test("accepts parallel independent deliverables without mislabeling them as a dependency chain", () => {
+  const independent = proposal({
+    intent: { ...proposal().intent, requiresResearch: false, deliverables: ["scene A", "scene B"] },
+    planning: { reason: "multi_deliverable", clarificationRequired: false },
+    steps: [
+      { id: "scene-a", kind: "skill", skillId: "ai-product", objective: "Create scene A", dependsOn: [], inputs: { product: "user.product" }, output: "scene A", selectionReason: "This Skill owns product-faithful scene placement.", candidates: matches("ai-product") },
+      { id: "scene-b", kind: "skill", skillId: "ai-product", objective: "Create scene B", dependsOn: [], inputs: { product: "user.product" }, output: "scene B", selectionReason: "This Skill owns product-faithful scene placement.", candidates: matches("ai-product") }
+    ]
+  });
+  assert.deepEqual(validateOrchestrationPlan(independent, skills).executionWaves, [["scene-a", "scene-b"]]);
+  assert.throws(() => validateOrchestrationPlan({
+    ...independent,
+    steps: [independent.steps[0], { ...independent.steps[1], dependsOn: ["scene-a"], inputs: { source: "scene-a.output" } }]
+  }, skills), /cannot contain artifact dependencies/);
+});
+
+test("rejects non-finite intent confidence", () => {
+  assert.throws(() => validateOrchestrationPlan(proposal({
+    intent: { ...proposal().intent, confidence: Number.NaN }
+  }), skills), /confidence must be between 0 and 1/);
 });
 
 test("requires planning ambiguity to agree with the clarification decision", () => {
@@ -136,7 +194,7 @@ test("accepts a first-party comic workflow as planning, character, page, and cop
       { id: "hero", kind: "skill", skillId: "create-character", objective: "Create and review the recurring hero anchor", dependsOn: ["storyboard"], inputs: { character: "storyboard.characters.hero" }, output: "accepted canonical hero sheet and optional confirmed expansion", selectionReason: "This Skill owns the reusable identity anchor and its post-QA expansion gate.", candidates: matches("create-character", [["render-comic-page", 0.34]]) },
       { id: "page-1", kind: "skill", skillId: "render-comic-page", objective: "Render page 1", dependsOn: ["storyboard", "hero"], inputs: { page: "storyboard.pages[0]", character: "hero.output" }, output: "accepted page 1", selectionReason: "This Skill owns one finished reference-aware comic page.", candidates: matches("render-comic-page", [["add-speech-bubble", 0.28]]) },
       { id: "page-2", kind: "skill", skillId: "render-comic-page", objective: "Render page 2 with carried state", dependsOn: ["storyboard", "hero", "page-1"], inputs: { page: "storyboard.pages[1]", character: "hero.output", continuity: "page-1.output" }, output: "accepted page 2 artwork", selectionReason: "This Skill owns one page and can bind previous-page continuity.", candidates: matches("render-comic-page", [["add-speech-bubble", 0.28]]) },
-      { id: "page-2-copy", kind: "skill", skillId: "add-speech-bubble", objective: "Repair page 2 exact dialogue only if flagged", dependsOn: ["page-2"], inputs: { artwork: "page-2.output", copy: "storyboard.pages[1].dialogue" }, output: "page 2 with exact dialogue", selectionReason: "This Skill owns bubble placement and exact copy without redrawing accepted artwork.", candidates: matches("add-speech-bubble", [["render-comic-page", 0.57]]) }
+      { id: "page-2-copy", kind: "skill", skillId: "add-speech-bubble", objective: "Repair page 2 exact dialogue only if flagged", dependsOn: ["page-2", "storyboard"], inputs: { artwork: "page-2.output", copy: "storyboard.pages[1].dialogue" }, output: "page 2 with exact dialogue", selectionReason: "This Skill owns bubble placement and exact copy without redrawing accepted artwork.", candidates: matches("add-speech-bubble", [["render-comic-page", 0.57]]) }
     ],
     finalAcceptance: ["Both pages are present in order.", "Hero identity and wardrobe are continuous.", "Approved Chinese dialogue is exact and readable."]
   };

@@ -57,6 +57,8 @@ test('package manifest declares every Desktop runtime resource', async () => {
     runtimeResources: [
       'skills',
       'catalog/skills.json',
+      'schemas/router-plan-request.schema.json',
+      'schemas/router-plan.schema.json',
       'shared/model-selection.md',
       'LICENSE',
     ],

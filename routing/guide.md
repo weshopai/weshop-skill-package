@@ -1,31 +1,18 @@
----
-name: weshop-router
-description: Guide an Agent from an open-ended WeShop request to the right runtime-visible Skill or maintained multi-Skill workflow. Use when the best creative capability or combination is not already obvious; this is an instruction router, not a Tool or executor.
----
+# WeShop Skills routing guide
 
-# WeShop Router
-
-## Catalog
-
-- Display name: WeShop Router
-- Visibility: system
-- Categories: Utility
-- Status: Ready
-- Route label: Skill and workflow guide
-- Tone: ink
-- Short description: Decide which Skill or workflow should own the request.
+This package resource helps an Agent choose the smallest capable Skill or maintained workflow. It is not a Skill, Tool, executor, agent loop, scheduler, permission layer, or user-visible result. The Host exposes this guide from a protected package path; it never appears in Skill discovery and cannot be shadowed by a user or Project Skill.
 
 ## Role
 
-Use this Skill as the top-level guide for the WeShop Skill system. Its job is to understand the requested outcome, select the smallest capable owner, and hand control to that owner without another Router Tool call.
+Use this guide only when the best owner is not already obvious from the runtime Skill registry. Its job is to understand the requested outcome, select the smallest capable owner, and hand control to that owner without another routing pass.
 
-The Router may choose:
+The guide may choose:
 
 - one runtime-visible Skill for a complete single outcome;
 - one maintained workflow when several separately owned results have a real dependency or the user explicitly requests multiple independent deliverables; or
 - one focused clarification when the answer changes the selected Skill, selected workflow, or a required routing input.
 
-The Agent Runtime already owns context, memory, permissions, tools, authentication, execution, receipts, recovery, and publication. The selected Skill owns its working method, model and prompt choices, execution contract, and acceptance checks. The selected workflow owns DAG materialization, artifact handoffs, execution order, and final acceptance. Do not reproduce those responsibilities in the Router.
+The Agent Runtime already owns context, memory, permissions, tools, authentication, execution, receipts, recovery, and publication. The selected Skill owns its working method, model and prompt choices, execution contract, and acceptance checks. The selected workflow owns artifact handoffs, execution order, and final acceptance. Do not reproduce those responsibilities in this guide.
 
 ## Fast route
 
@@ -33,21 +20,22 @@ Follow this sequence once. Reading this file must end routing; do not start a se
 
 1. Identify the final outcome, supplied source roles, preservation constraints, requested deliverables, and whether current external evidence is independently required.
 2. Match the complete intent against the embedded task map below. If one Skill owns the result, read only that Skill and execute it now.
-3. If no exact row matches, compare at most four plausible runtime-visible Skill names and descriptions. Pick the closest complete-outcome owner; do not inspect all Skill bodies.
-4. Select one embedded workflow only for a real cross-owner artifact dependency or independently accepted outputs with different owners, then hand it immediately to `orchestrate-multi-step-workflow`.
+3. If no exact row matches, use the category-grouped runtime index to identify at most four plausible names, then inspect only those entries in [`../catalog/skills.json`](../catalog/skills.json). Pick the closest complete-outcome owner; do not inspect all Skill bodies.
+4. Select one maintained workflow only for a real cross-owner artifact dependency or independently accepted outputs with different owners. Read [`../workflows/catalog.json`](../workflows/catalog.json), then follow [`../workflows/guide.md`](../workflows/guide.md) without returning to routing.
 5. Ask at most one routing question, only when the answer changes the owner or supplies a required input. Otherwise proceed with a reasonable default.
 
 ### Hard stop after routing
 
 After reading this file, the next action must be exactly one of these:
 
+- perform the bounded catalog lookup from step 3, then take one of the terminal actions below;
 - read the selected Skill and execute it;
-- invoke `orchestrate-multi-step-workflow` with the selected workflow and available inputs; or
+- read the selected workflow definition and execute it under the workflow guide; or
 - ask one route-changing clarification.
 
-Do not read `task-routing.md`, `workflow-recipes.md`, `routing-map.json`, catalog source files, model-selection references, neighboring Skill bodies, or CLI help to keep deciding. Those are maintenance or post-selection execution resources. A missing path, denied Tool, unsupported flag, or failed command after selection is execution recovery and must not reopen routing.
+Do not read maintenance references, model-selection files, neighboring Skill bodies, or CLI help to keep deciding. A missing path, denied Tool, unsupported flag, or failed command after selection is execution recovery and must not reopen routing.
 
-Planning budget: one Router read, one selected-owner read, zero confirmation passes. A genuine tie may compare descriptions of at most four candidates without reading their bodies.
+Planning budget: one routing-guide read, one selected-owner read, zero confirmation passes. A genuine tie may compare descriptions of at most four candidates without reading their bodies.
 
 ## Task classes
 
@@ -137,7 +125,7 @@ Choose one Skill directly when all of these are true:
 - it does not require a separately accepted upstream result; and
 - the user has not asked for another independently usable deliverable.
 
-Treat an end-to-end professional Skill as one owner even when it has internal stages. Do not split its private SOP into several Router steps.
+Treat an end-to-end professional Skill as one owner even when it has internal stages. Do not split its private SOP into several workflow steps.
 
 After selection:
 
@@ -146,7 +134,7 @@ After selection:
 3. use Runtime tools and permissions exactly as exposed by the host; and
 4. finish with the selected Skill's user-facing result and acceptance boundary.
 
-Do not keep neighboring Skills loaded after one owner wins. Do not call a second Router, search layer, or compiler to confirm the same decision.
+Do not keep neighboring Skills loaded after one owner wins. Do not call a second routing layer or compiler to confirm the same decision.
 
 ## When to choose a workflow
 
@@ -159,7 +147,7 @@ Use a workflow only when at least one of these is true:
 
 Select the smallest matching maintained workflow:
 
-| Workflow | Select when | Execution seed passed to orchestrator |
+| Workflow | Select when | Execution seed |
 | --- | --- | --- |
 | `product-detail-production` | A separately accepted product-faithful scene must feed a modular detail-page set | freeze product facts → `$ai-product` hero/source scene → `$product-detail-page` modules → delivery manifest |
 | `multi-format-campaign` | One frozen campaign brief must produce at least two independently usable outputs with different owners | freeze shared brief → requested banner/carousel/video branches in parallel → delivery manifest |
@@ -169,7 +157,7 @@ Select the smallest matching maintained workflow:
 | `cutout-to-layout` | A separately delivered transparent master must feed another layout owner | `$remove-background` → selected layout Skill → export package |
 | `research-to-deliverable` | A distinct dated evidence artifact materially controls a later visual | verify facts → freeze evidence brief → selected visual owner → source manifest |
 
-Pass `workflowId`, the execution seed above, available inputs, required preserved invariants, requested outputs, and any missing required input to `orchestrate-multi-step-workflow`. Invoke it immediately; do not read another Router reference first. The orchestrator expands nodes, dependencies, parallel waves, optional branches, artifact bindings, recovery, and final acceptance.
+Find the selected `workflowId` in [`../workflows/catalog.json`](../workflows/catalog.json), bind the available inputs and required preserved invariants, then follow [`../workflows/guide.md`](../workflows/guide.md). Do not read another routing reference first. The workflow definition supplies nodes, dependencies, parallel branches, optional branches, artifact bindings, and final acceptance.
 
 Do not use a workflow merely because a Skill has several internal stages, because the task sounds important, or because more than one Skill is semantically related.
 
@@ -197,7 +185,7 @@ This is guidance for the Agent, not a Tool schema and not a user-facing result. 
 ## Loading policy
 
 - Start with this file only when routing is genuinely needed.
-- Do not load [task-routing.md](references/task-routing.md), [workflow-recipes.md](references/workflow-recipes.md), or [routing-map.json](references/routing-map.json) during ordinary routing. They are maintenance sources for tests, audits, and future map edits only.
+- Search [`../catalog/skills.json`](../catalog/skills.json) only for the bounded candidate comparison described above; do not load the entire catalog or every Skill body.
 - Read the full selected Skill before executing it.
 - Never load every Skill body to make one decision; runtime names and descriptions are the first-pass catalog.
 - After owner selection, model files, CLI documentation, and execution references may be read only when the selected owner explicitly requires them. They cannot change the route unless the owner proves incapable of the promised final outcome.
@@ -207,8 +195,8 @@ This is guidance for the Agent, not a Tool schema and not a user-facing result. 
 Routing is complete when exactly one of these is true:
 
 - one available Skill has been selected and its full instructions are now being followed;
-- one maintained workflow has been selected and handed to the orchestrator; or
+- one maintained workflow has been selected and its definition is now being followed; or
 - one route-changing clarification has been asked.
 
-Do not report the Router itself as the completed creative result.
-Do not remain in Router thinking after this condition is met: begin the selected owner's first executable step in the same Run.
+Do not report this guide itself as the completed creative result.
+Do not remain in routing after this condition is met: begin the selected owner's first executable step in the same Run.

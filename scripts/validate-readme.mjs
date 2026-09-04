@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const readme = await readFile(path.join(root, "README.md"), "utf8");
 const skills = (await readdir(path.join(root, "skills"), { withFileTypes: true }))
-  .filter((entry) => entry.isDirectory() && !["weshop-router", "orchestrate-multi-step-workflow"].includes(entry.name))
+  .filter((entry) => entry.isDirectory())
   .map((entry) => entry.name)
   .sort();
 const platformSkills = new Set(["create-custom-skill"]);
@@ -14,8 +14,7 @@ const atomSkills = skills.filter((name) => !platformSkills.has(name));
 const inventory = readme.split("## Complete Skill inventory")[1]?.split(/^## /m)[0];
 if (!inventory) throw new Error("README is missing the complete Skill inventory section.");
 const listed = [...inventory.matchAll(/`([a-z0-9-]+)`/g)]
-  .map((match) => match[1])
-  .filter((name) => !["weshop-router", "orchestrate-multi-step-workflow"].includes(name));
+  .map((match) => match[1]);
 const uniqueListed = [...new Set(listed)].sort();
 const missing = skills.filter((name) => !uniqueListed.includes(name));
 const extra = uniqueListed.filter((name) => !skills.includes(name));

@@ -1,0 +1,210 @@
+{
+  "schemaVersion": "1.0.0",
+  "workflows": [
+    {
+      "id": "product-detail-production",
+      "description": "Create a separately accepted product-faithful scene, then use it in a modular product detail-page set.",
+      "requiredInputs": ["product-source", "product-facts", "delivery-requirements"],
+      "steps": [
+        {
+          "id": "product-scene",
+          "kind": "skill",
+          "skillId": "ai-product",
+          "dependsOn": [],
+          "inputs": ["product-source", "product-facts"],
+          "output": "accepted-product-scene"
+        },
+        {
+          "id": "detail-page",
+          "kind": "skill",
+          "skillId": "product-detail-page",
+          "dependsOn": ["product-scene"],
+          "inputs": ["product-source", "product-facts", "accepted-product-scene", "delivery-requirements"],
+          "output": "detail-page-set"
+        }
+      ],
+      "finalAcceptance": ["product identity and verified facts are preserved", "requested modules and delivery manifest are complete"]
+    },
+    {
+      "id": "multi-format-campaign",
+      "description": "Produce two or more independently usable campaign formats from one frozen brief.",
+      "requiredInputs": ["campaign-brief", "requested-formats", "delivery-requirements"],
+      "steps": [
+        {
+          "id": "campaign-outputs",
+          "kind": "skill",
+          "skillSelector": "For each requested format, select the narrowest owner of that independently usable campaign output.",
+          "forEach": "requested-formats",
+          "dependsOn": [],
+          "inputs": ["campaign-brief", "current-format", "delivery-requirements"],
+          "output": "campaign-output"
+        }
+      ],
+      "finalAcceptance": ["all outputs use the same frozen message and visual constraints", "each requested format is independently usable"]
+    },
+    {
+      "id": "comic-production",
+      "description": "Turn a story into a validated comic manifest, reusable character identities, and rendered pages.",
+      "requiredInputs": ["story-or-premise", "comic-requirements"],
+      "steps": [
+        {
+          "id": "comic-plan",
+          "kind": "skill",
+          "skillId": "plan-comic-storyboard",
+          "dependsOn": [],
+          "inputs": ["story-or-premise", "comic-requirements"],
+          "output": "comic-manifest"
+        },
+        {
+          "id": "character-sheets",
+          "kind": "skill",
+          "skillId": "create-character",
+          "forEach": "comic-manifest.missing-canonical-characters",
+          "dependsOn": ["comic-plan"],
+          "inputs": ["comic-manifest", "current-character"],
+          "output": "canonical-character-sheet",
+          "optional": true,
+          "when": "comic-manifest identifies a character without an accepted canonical reference"
+        },
+        {
+          "id": "comic-pages",
+          "kind": "skill",
+          "skillId": "render-comic-page",
+          "forEach": "comic-manifest.pages",
+          "dependsOn": ["comic-plan", "character-sheets"],
+          "inputs": ["comic-manifest", "canonical-character-sheets", "current-page"],
+          "output": "rendered-comic-page"
+        },
+        {
+          "id": "dialogue-repair",
+          "kind": "skill",
+          "skillId": "add-speech-bubble",
+          "forEach": "rendered-pages-with-dialogue-defects",
+          "dependsOn": ["comic-pages"],
+          "inputs": ["rendered-comic-page", "approved-dialogue"],
+          "output": "repaired-comic-page",
+          "optional": true,
+          "when": "accepted artwork has only a dialogue or speech-bubble defect"
+        }
+      ],
+      "finalAcceptance": ["page order, character identity, style, and dialogue match the manifest", "every requested page has one accepted final"]
+    },
+    {
+      "id": "multi-shot-video",
+      "description": "Create continuity-linked shots and assemble them when no single finished-outcome Skill owns the requested film.",
+      "requiredInputs": ["story-or-brief", "video-requirements"],
+      "steps": [
+        {
+          "id": "shot-plan",
+          "kind": "skill",
+          "skillId": "plan-film-storyboard",
+          "dependsOn": [],
+          "inputs": ["story-or-brief", "video-requirements"],
+          "output": "shot-manifest"
+        },
+        {
+          "id": "shots",
+          "kind": "skill",
+          "skillId": "generate-video",
+          "forEach": "shot-manifest.shots",
+          "dependsOn": ["shot-plan"],
+          "inputs": ["shot-manifest", "current-shot", "accepted-continuity-references"],
+          "output": "accepted-video-shot"
+        },
+        {
+          "id": "assembly",
+          "kind": "skill",
+          "skillId": "combine-videos",
+          "dependsOn": ["shots"],
+          "inputs": ["shot-manifest", "accepted-video-shots"],
+          "output": "assembled-video"
+        },
+        {
+          "id": "color-normalization",
+          "kind": "skill",
+          "skillId": "correct-video-color",
+          "dependsOn": ["assembly"],
+          "inputs": ["assembled-video", "shot-manifest"],
+          "output": "final-video",
+          "optional": true,
+          "when": "the assembled video has a cross-shot color mismatch"
+        }
+      ],
+      "finalAcceptance": ["all requested shots are present in order", "continuity, timing, sound mode, and delivery format match the approved plan"]
+    },
+    {
+      "id": "visual-localization-set",
+      "description": "Localize several source and locale pairs under one frozen copy and visual-preservation contract.",
+      "requiredInputs": ["source-assets", "locale-matrix", "approved-copy"],
+      "steps": [
+        {
+          "id": "localized-assets",
+          "kind": "skill",
+          "skillId": "translate-image-text",
+          "forEach": "locale-matrix",
+          "dependsOn": [],
+          "inputs": ["current-source-asset", "current-locale", "approved-copy"],
+          "output": "localized-asset"
+        },
+        {
+          "id": "series-composition",
+          "kind": "skill",
+          "skillSelector": "Select create-social-carousel or create-image-deck only when the user requested a separately composed series.",
+          "dependsOn": ["localized-assets"],
+          "inputs": ["localized-assets", "series-requirements"],
+          "output": "localized-series",
+          "optional": true,
+          "when": "the requested deliverable includes a composed carousel or deck"
+        }
+      ],
+      "finalAcceptance": ["approved meaning and named terms are preserved in every locale", "non-text imagery and layout remain within the preservation contract"]
+    },
+    {
+      "id": "cutout-to-layout",
+      "description": "Create a reusable transparent cutout, then feed it into a separately owned layout deliverable.",
+      "requiredInputs": ["source-image", "layout-requirements"],
+      "steps": [
+        {
+          "id": "cutout",
+          "kind": "skill",
+          "skillId": "remove-background",
+          "dependsOn": [],
+          "inputs": ["source-image"],
+          "output": "transparent-master"
+        },
+        {
+          "id": "layout",
+          "kind": "skill",
+          "skillSelector": "Select the narrowest owner of the requested banner, poster, carousel, deck, thumbnail, or other layout.",
+          "dependsOn": ["cutout"],
+          "inputs": ["transparent-master", "layout-requirements"],
+          "output": "layout-deliverable"
+        }
+      ],
+      "finalAcceptance": ["the transparent master remains separately usable", "the requested layout preserves the accepted cutout and content hierarchy"]
+    },
+    {
+      "id": "research-to-deliverable",
+      "description": "Create a dated evidence artifact whose verified facts materially control a later creative deliverable.",
+      "requiredInputs": ["research-question", "deliverable-requirements"],
+      "steps": [
+        {
+          "id": "evidence",
+          "kind": "research",
+          "dependsOn": [],
+          "inputs": ["research-question"],
+          "output": "dated-evidence-brief"
+        },
+        {
+          "id": "deliverable",
+          "kind": "skill",
+          "skillSelector": "Select the narrowest owner of the requested final visual or media deliverable.",
+          "dependsOn": ["evidence"],
+          "inputs": ["dated-evidence-brief", "deliverable-requirements"],
+          "output": "evidence-backed-deliverable"
+        }
+      ],
+      "finalAcceptance": ["unstable claims are traceable to the dated evidence brief", "the final deliverable uses only verified claims within the requested scope"]
+    }
+  ]
+}

@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img alt="136 Atom Skills" src="https://img.shields.io/badge/Atom_Skills-136-7530FE?style=flat-square" />
+  <img alt="138 Skills" src="https://img.shields.io/badge/Skills-138-7530FE?style=flat-square" />
   <a href="https://www.npmjs.com/package/weshop-skill-package"><img alt="npm version" src="https://img.shields.io/npm/v/weshop-skill-package?style=flat-square&color=CB3837" /></a>
   <a href="https://www.npmjs.com/package/weshop-skill-package"><img alt="npm downloads" src="https://img.shields.io/npm/dm/weshop-skill-package?style=flat-square&color=CB3837" /></a>
   <img alt="Codex" src="https://img.shields.io/badge/Codex-ready-10A37F?style=flat-square" />
@@ -18,11 +18,13 @@
 
 WeShop Skills turns plain-language creative requests into production-ready image, video, product, portrait, layout, and spatial workflows powered by WeShop OpenAPI. Install the complete collection or pick only the Skills you need.
 
-> This repository contains **137 focused Atom Skills + 1 user-authoring Skill + 1 Router + 1 multi-step orchestration Skill (140 Skills total)**. `weshop-router` selects a focused Skill shortlist, one maintained workflow, or one route-changing clarification; it does not plan or execute the selected route. Media execution uses a native WeShop harness tool or the official `weshop` CLI, never a package-owned fallback client.
+> This repository contains **137 focused creative Skills + 1 user-authoring Skill**. Higher-level selection lives in the protected [`routing/guide.md`](routing/guide.md) package resource, and maintained compositions live in [`workflows/catalog.json`](workflows/catalog.json). Neither is installed or exposed as a Skill.
 
 ## Package boundaries
 
-- `skills/` contains user-facing creative workflows and routing metadata.
+- `skills/` contains the 138 independently discoverable user-facing and authoring Skills.
+- `routing/` contains protected, host-addressed selection guidance. It is not a Skill, Tool, executor, or second Agent loop.
+- `workflows/` contains maintained cross-Skill dependency definitions and their execution boundary. Workflows are not Skills.
 - `shared/` contains Package-owned guidance shared by several Skills, such as model selection. Skills link to it only when the current task needs that decision.
 - `scripts/weshop-skills.mjs` installs and updates Skill content; it is not the media-generation CLI.
 - A native host Tool or the separately versioned official `weshop` CLI owns execution. Tool schemas, credentials, approval, receipts, retries, and artifact delivery are not duplicated in this Package.
@@ -139,7 +141,7 @@ Never paste the key into chat, source files, frontend code, Git history, URLs, o
 
 ## 💬 Use it
 
-You do not need to memorize Skill names. `$weshop-router` first checks a maintained common-task map, shortlists at most four genuinely adjacent Skills, and sends a clear one-result request straight to its Atom. Long-tail and custom work falls back to the descriptions of Skills actually available at runtime. Only real cross-Skill dependencies or independently valuable deliverables enter a workflow recipe and the multi-step orchestration Skill.
+You do not need to memorize Skill names. Compatible hosts expose a category-grouped registry, use the protected routing guide only when the owner is not obvious, and load the selected Skill on demand. Only real cross-Skill dependencies or independently valuable deliverables enter a maintained workflow definition.
 
 Try prompts like:
 
@@ -189,23 +191,23 @@ weshop-skills custom check ~/.weshop-skill-package/custom-skills/my-custom-skill
 | 🧠 Multi-step orchestration | Parallel or ordered Skills, asset handoff, final QA for compound work |
 | 🛡️ Safe execution | Stable operation keys, duplicate-spend protection, polling, recovery records |
 
-For compound work, `weshop-router` selects the smallest matching workflow and stops. `orchestrate-multi-step-workflow` owns its DAG, artifact bindings, execution waves, runtime Skill choices, and final acceptance. It is not the Router: a clear single-Skill request never enters it.
+For compound work, the Host reads one definition from [`workflows/catalog.json`](workflows/catalog.json), connects accepted outputs to downstream inputs, and lets each selected Skill own its operation. The Host Runtime remains responsible for tools, approval, authentication, receipts, recovery, and publication.
 
-### Router guidance
+### Routing guidance
 
-`weshop-router` is an instruction Skill, not a Tool or plan compiler. When routing is needed, the Agent reads its guide once and selects:
+[`routing/guide.md`](routing/guide.md) is a protected package resource, not a Skill or plan compiler. When routing is needed, the Agent reads it once and selects:
 
 - one complete-outcome Skill;
 - one maintained workflow for real cross-Skill dependencies or independently requested deliverables; or
 - one route-changing clarification.
 
-The maintained [`routing-map.json`](skills/weshop-router/references/routing-map.json) accelerates common work without becoming a keyword classifier or closed operation enum. Human-readable task boundaries and recipe rationale live beside it in [`task-routing.md`](skills/weshop-router/references/task-routing.md) and [`workflow-recipes.md`](skills/weshop-router/references/workflow-recipes.md). Runtime Skill availability remains authoritative.
+Its bounded common-task map accelerates frequent work without becoming a keyword classifier or closed operation enum. [`workflows/catalog.json`](workflows/catalog.json) is the machine-readable authority for the maintained compositions. Runtime Skill availability remains authoritative.
 
-The Router guide considers only outcome, supplied input roles, preservation constraints, requested deliverables, current-evidence needs, and route-changing ambiguity. Host policy, memory, permissions, execution state, receipts, recovery, DAG nodes, execution waves, and final acceptance remain owned by the Agent Runtime or selected target. There is no second Router Tool roundtrip.
+The routing guide considers only outcome, supplied input roles, preservation constraints, requested deliverables, current-evidence needs, and route-changing ambiguity. Host policy, memory, permissions, execution state, receipts, and recovery remain owned by the Agent Runtime. There is no Router Tool roundtrip or second Agent loop.
 
 ## Complete Skill inventory 🧩
 
-The `skills/` directory contains 137 creative Atom Skills, one platform-tooling Skill, one Router, and one multi-step orchestration Skill—140 Skills in total. Categories below are for browsing only. Router planning uses its separate, versioned common-task map as a fast shortlist seed; that map remains open-ended and yields to runtime semantic discovery for unknown or custom Skills.
+The `skills/` directory contains 137 creative Skills and one platform-tooling Skill—138 Skills in total. Routing and workflow resources are deliberately outside this directory, so ordinary Agent Skills discovery cannot expose or shadow them. Categories below are for browsing only.
 
 ### Client catalog contract
 
@@ -213,8 +215,6 @@ Published packages include [`catalog/skills.json`](catalog/skills.json), a versi
 
 | Category | Skills |
 | --- | --- |
-| Router | `weshop-router` |
-| Multi-step orchestration | `orchestrate-multi-step-workflow` |
 | User authoring | `create-custom-skill` |
 | Commercial products and apparel | `ai-product`, `change-pose`, `create-white-background-product-mockup`, `fashion-model-replacement`, `outfit-design`, `product-packaging`, `virtual-try-on` |
 | Layout and marketing | `ai-banner-design`, `add-speech-bubble`, `apply-photo-filter`, `article-handdrawn-illustrations`, `compose-lookbook`, `create-image-deck`, `create-social-carousel`, `image-combiner`, `legal-diagram-redraw`, `legal-evidence-timeline`, `make-infographic`, `make-silhouette`, `make-thumbnail`, `minimal-zine-poster`, `mono-color`, `photo-collage`, `poster-design`, `product-detail-page`, `recolor-object`, `recreate-social-photo`, `social-knowledge-notes`, `technical-visual-explainer`, `translate-image-text`, `urban-daylight-documentary-grade` |
@@ -237,8 +237,6 @@ Install only what you need:
 
 ```bash
 weshop-skills install create-logo --agent codex
-weshop-skills install weshop-router --agent codex
-weshop-skills install orchestrate-multi-step-workflow --agent codex
 ```
 
 ## ⌨️ Official WeShop CLI
@@ -282,12 +280,12 @@ Useful commands:
 
 | Command | Purpose |
 | --- | --- |
-| `npm run build` | Clean and compile the multi-step orchestration validation library |
+| `npm run build` | Clean and compile the compatibility validation library |
 | `npm run check` | Run TypeScript checks |
 | `npm test` | Test routing, safety policy, installation, and updates |
-| `npm run router:validate` | Validate the Router task map, recipe DAGs, and referenced Skills |
 | `npm run models:validate` | Validate the model catalog |
 | `npm run models:routing-validate` | Validate model routes across all 137 creative Atom Skills |
+| `npm run workflows:validate` | Validate workflow owners, dependencies, and routing-guide coverage |
 | `npm run docs:validate` | Validate this README and Skill inventory |
 | `npm run maintainers:validate` | Validate maintainer documentation |
 | `npm run web:build` | Build the generated visual Skill catalog |

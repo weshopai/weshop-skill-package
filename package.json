@@ -1,7 +1,7 @@
 {
   "name": "weshop-skill-package",
-  "version": "0.6.1",
-  "description": "Instruction-led WeShop Skill routing, Atom Skills, multi-step workflow orchestration, model catalog, and maintenance tooling.",
+  "version": "0.7.0",
+  "description": "WeShop creative Skills with protected routing guidance, maintained workflow definitions, model policy, and package tooling.",
   "license": "MIT",
   "author": "WeShop AI",
   "homepage": "https://github.com/weshopai/weshop-skill-package#readme",
@@ -29,6 +29,9 @@
     "runtimeResources": [
       "skills",
       "catalog/skills.json",
+      "routing/guide.md",
+      "workflows/guide.md",
+      "workflows/catalog.json",
       "shared/model-selection.md",
       "LICENSE"
     ]
@@ -43,6 +46,9 @@
     "skills/",
     "catalog/skills.json",
     "schemas/skill-catalog.schema.json",
+    "routing/guide.md",
+    "workflows/guide.md",
+    "workflows/catalog.json",
     "models/catalog.json",
     "scripts/weshop-skills.mjs",
     "scripts/manage-skills.mjs",
@@ -65,8 +71,7 @@
     "clean": "node -e \"require('node:fs').rmSync('dist',{recursive:true,force:true})\"",
     "build": "npm run clean --silent && tsc -p tsconfig.json",
     "check": "tsc --noEmit",
-    "test": "npm run build && node --test dist/**/*.test.js && npm run test:router-map && npm run test:auto-update && npm run test:custom-skills && npm run test:package-cli && npm run test:auth-contract && npm run test:skill-intake",
-    "test:router-map": "node --test scripts/router-map.test.mjs",
+    "test": "npm run build && node --test dist/**/*.test.js && npm run test:auto-update && npm run test:custom-skills && npm run test:package-cli && npm run test:auth-contract && npm run test:skill-intake && npm run workflows:validate",
     "test:auto-update": "node --test scripts/auto-update.test.mjs",
     "test:custom-skills": "node --test scripts/custom-skills.test.mjs",
     "test:skill-intake": "node --test scripts/skill-intake.test.mjs",
@@ -74,7 +79,7 @@
     "test:auth-contract": "node --test scripts/auth-contract.test.mjs",
     "models:validate": "node scripts/validate-model-catalog.mjs",
     "models:routing-validate": "node scripts/validate-model-routing.mjs",
-    "router:validate": "node scripts/validate-router-map.mjs",
+    "workflows:validate": "node scripts/validate-workflow-catalog.mjs",
     "media:upload": "node scripts/upload-skill-media.mjs",
     "api-key:check": "node scripts/check-api-key.mjs",
     "prepare": "npm run build",

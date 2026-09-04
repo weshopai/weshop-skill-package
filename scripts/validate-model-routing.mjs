@@ -22,7 +22,6 @@ for (const entry of await readdir(skillRoot, { withFileTypes: true })) {
     const target = path.resolve(path.dirname(file), match[1]);
     try { await readFile(target, "utf8"); } catch { failures.push(`${entry.name}: shared model policy link does not resolve: ${match[1]}.`); }
   }
-  if (["weshop-router", "orchestrate-multi-step-workflow"].includes(entry.name)) continue;
   if (platformSkills.has(entry.name)) continue;
   checked += 1;
   const production = body;

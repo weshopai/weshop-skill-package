@@ -20,7 +20,7 @@ intake/external-skills/<intake-slug>/
 └── capability-map.md
 ```
 
-An intake is analysis, not an installable Skill. It is excluded from the Router, website, README inventory, and Skill installer. New records use `Mechanism version: 2` and start `active`; set them `inactive` only when the source outcome should no longer be considered. There is no human-approval or `Pending review` stage.
+An intake is analysis, not an installable Skill. It is excluded from the runtime registry, routing guide, website, README inventory, and Skill installer. New records use `Mechanism version: 2` and start `active`; set them `inactive` only when the source outcome should no longer be considered. There is no human-approval or `Pending review` stage.
 
 Records without the version-2 marker are historical archive evidence only. They may use a retired merge-era mechanism and must not be copied as current intake policy.
 
@@ -42,14 +42,14 @@ Inventory behavior before looking for one-to-one model replacements:
 - preservation and quality claims;
 - examples and assets that cannot be reused.
 
-Then create an isolated intake record for every supplied external Skill. Keep every coherent user-visible outcome as its own standalone Atom candidate; do not collapse it into an installed Skill during intake. Router compositions may describe downstream handoffs, but they must not erase the candidate's independent ownership.
+Then create an isolated intake record for every supplied external Skill. Keep every coherent user-visible outcome as its own standalone Atom candidate; do not collapse it into an installed Skill during intake. Maintained workflow candidates may describe downstream handoffs, but they must not erase the candidate's independent ownership.
 
 For a source that actually contains several coherent user-visible outcomes, split it into several candidates rather than merging those outcomes into existing Skills. Reject only behavior WeShop cannot safely support; record the unsupported behavior without deleting the source outcome from the intake.
 
 After the independent candidate record exists, its lifecycle decision may be:
 
 - create a new Atom;
-- compose existing Atoms through the Router;
+- compose existing Atoms through a maintained workflow;
 - retain a deterministic local operation;
 - reject it because WeShop cannot verify the capability or the product value is weak.
 
@@ -65,11 +65,11 @@ For every similar or adjacent installed Skill, record:
 - the conditions that favor the related Skill;
 - whether they can compose or hand off to each other.
 
-Calibrate the static relationship score from the requested outcome, required input roles, preservation contract, output/delivery contract, and exclusions—not shared media type or keywords. Use `0.00–0.24` for incidental adjacency, `0.25–0.49` for a shared component, `0.50–0.74` for a closely related but clearly different outcome, `0.75–0.89` for a strongly adjacent outcome, and `0.90–1.00` only when the two requests are nearly the same absent a named decisive boundary. Record that decisive boundary in the row and in the candidate's Router scoring evidence. This is static discovery metadata, never a merge decision or a runtime selection score.
+Calibrate the static relationship score from the requested outcome, required input roles, preservation contract, output/delivery contract, and exclusions—not shared media type or keywords. Use `0.00–0.24` for incidental adjacency, `0.25–0.49` for a shared component, `0.50–0.74` for a closely related but clearly different outcome, `0.75–0.89` for a strongly adjacent outcome, and `0.90–1.00` only when the two requests are nearly the same absent a named decisive boundary. Record that decisive boundary in the row and in the candidate's routing evidence. This is static discovery metadata, never a merge decision or a runtime selection score.
 
 Put the important distinctions directly in the new Skill's frontmatter `description`. Name the related Skill, include its relationship score, and explain both sides of the boundary in natural language. A useful shape is: `Use for ...; unlike $related-skill (relationship 0.82), choose this when ...; choose $related-skill when ...; the two can compose when ...`. Descriptions are discovery evidence, so include outcome, inputs, preservation scope, deliverable, exclusions, and adjacent relationships without relying on keywords alone.
 
-Never fuse two Skills merely because their relationship score is high. The Router scores current user intent against every plausible candidate and invokes the highest intent-match score.
+Never fuse two Skills merely because their relationship score is high. The Host uses the runtime registry and, only when needed, the protected routing guide to select the closest complete-outcome owner.
 
 ## 5. Replace the AI capability with WeShop
 

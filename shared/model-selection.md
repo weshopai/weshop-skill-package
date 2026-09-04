@@ -1,6 +1,6 @@
 # Shared model selection policy
 
-Source: [WeShop AI Model Selection Guide](https://open.weshop.ai/doc/guides/ai-generation-model-guide), last updated 2026-08-17. This policy is shared by the Router and Atom Skills; individual Skills may narrow it only for a documented capability or verified acceptance reason.
+Source: [WeShop AI Model Selection Guide](https://open.weshop.ai/doc/guides/ai-generation-model-guide), last updated 2026-08-17. This policy is shared by routing guidance, workflow definitions, and Skills; individual Skills may narrow it only for a documented capability or verified acceptance reason.
 
 ## Selection order
 
@@ -48,7 +48,7 @@ Do not silently downgrade when a fallback would lose multi-image reference, prec
 
 ## Execution and fallback boundary
 
-- After model selection, load only the matching prompt guide from `skills/orchestrate-multi-step-workflow/references/model-prompt-routing.md` when prompt shaping is needed.
+- After model selection, follow the selected Skill and the live Tool schema. Workflow resources never override model parameters or prompt fields.
 - The active native tool schema or installed CLI help is authoritative for command names, arguments, enums, input limits, dimensions, duration, and defaults.
 - Never maintain or scan a static exhaustive CLI command inventory inside a Skill. Discover only the already-selected command's current contract.
 - A Skill may recommend a route, but the host owns credentials, approval, paid-operation identity, receipts, retry enforcement, recovery, and artifact delivery.

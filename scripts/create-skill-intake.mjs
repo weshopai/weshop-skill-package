@@ -88,7 +88,7 @@ const intake = `# External Skill intake: ${slug}
 
 - Intake result: Standalone Atom candidate; never merge this source outcome into an existing Skill during intake
 - Proposed standalone Atom: Not documented
-- Router compositions: Not documented
+- Workflow compositions: Not documented
 - Rejected or unsupported behavior: Not documented
 - Lifecycle decision and rationale: Not documented. Keep this record active until explicitly made inactive.
 
@@ -104,7 +104,7 @@ Calibrate the static relationship score from outcome, input roles, preservation,
 
 - Proposed frontmatter distinction: Not documented
 - Highest-risk ambiguity: Not documented
-- Router scoring evidence: Not documented
+- Routing evidence: Not documented
 
 ## Fuzzy semantic routing test
 

@@ -4,13 +4,13 @@ Use this workflow for a first-party capability request or when an external intak
 
 ## 1. Decide the unit
 
-Create one Atom when it owns one clear user result, input contract, execution route, output contract, and acceptance boundary. Similarity to an existing Atom never requires fusion: keep independently named outcomes separate and let runtime intent scoring choose between them. Use the Router to compose several existing results. A recurring composition becomes an Atom only when it has one stable deliverable of its own.
+Create one Atom when it owns one clear user result, input contract, execution route, output contract, and acceptance boundary. Similarity to an existing Atom never requires fusion: keep independently named outcomes separate and let runtime intent matching choose between them. Use a maintained workflow only when several independently owned results have a real artifact dependency or separate acceptance. A recurring composition becomes an Atom only when it has one stable deliverable of its own.
 
 ## 2. Define discovery boundaries
 
-Choose a lowercase kebab-case slug. Write frontmatter `name` and a detailed, discriminating `description` that states the positive use case, inputs, preservation scope, promised deliverable, and adjacent exclusions. For each materially similar Skill, name it, include a `0..1` relationship score, say when this Skill wins, say when the related Skill wins, and state any valid composition/handoff. The relationship score describes adjacency; it is not the invocation score. The runtime Skill list is the registry; do not add a Router operation enum or keyword table.
+Choose a lowercase kebab-case slug. Write frontmatter `name` and a detailed, discriminating `description` that states the positive use case, inputs, preservation scope, promised deliverable, and adjacent exclusions. For each materially similar Skill, name it, include a `0..1` relationship score, say when this Skill wins, say when the related Skill wins, and state any valid composition/handoff. The relationship score describes adjacency; it is not the invocation score. The runtime Skill list is the registry; do not add an operation enum or keyword table.
 
-At invocation time, the Router assigns every plausible candidate an intent-match score from `0..1` using the complete user intent card and these descriptions. The selected Skill must have the highest score; a validator rejects a lower-scoring choice. Ties are allowed only when both candidates truly satisfy the same intent, and the selection reason must explain the tie-break.
+At invocation time, the Host matches the complete user intent against the runtime registry and reads the most specific complete-outcome Skill directly. When ownership or composition is not obvious, the protected routing guide may compare at most four plausible descriptions before making one terminal selection. Ties are allowed only when both candidates truly satisfy the same intent, and the selection reason must explain the tie-break.
 
 ## 3. Build the contract
 

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "purpose": "Machine-readable route playbook for compiling a complete creative intent into a direct Atom dispatch, a dependency-aware recipe seed, or one material clarification.",
+  "purpose": "Machine-readable routing index for selecting one runtime-visible Skill, one maintained workflow, or one material clarification.",
   "classificationContract": {
     "method": "semantic-intent-card",
     "compareOn": [
@@ -21,28 +21,10 @@
     "runtimeIntentScoreSource": "request-specific-semantic-comparison",
     "staticRelationshipScoresAreRuntimeIntentScores": false,
     "modePolicy": {
-      "direct": "Use one highest-scoring runtime-visible Atom when it owns the complete requested result and has sufficient inputs.",
-      "orchestrate": "Use a recipe seed only for multiple independently accepted outputs, a real artifact dependency, execution-changing research, or a material choice that becomes downstream input.",
-      "clarify": "Ask one focused question only when the answer changes Skill choice, a required input, irreversible or costly work, or the final output contract."
+      "direct": "Select one highest-scoring runtime-visible Skill when it owns the complete requested result and has sufficient inputs.",
+      "workflow": "Select one maintained workflow only when the request needs multiple independently accepted outputs or a real cross-Skill artifact dependency.",
+      "clarify": "Ask one focused question only when the answer changes the selected Skill, workflow, or required input."
     }
-  },
-  "loadPolicy": {
-    "always": [
-      "host-contract",
-      "router-decision",
-      "execution-base"
-    ],
-    "taskClasses": "matched-only",
-    "tasks": "matched-only",
-    "recipes": "selected-only",
-    "nodeOwnerDetails": "on-demand",
-    "nodeOwnerDetailExamples": [
-      "model guide",
-      "prompt construction",
-      "music retrieval",
-      "operation-specific acceptance"
-    ],
-    "exclusion": "Node-owner details stay outside this Router map and load only after the owning step and Skill are selected."
   },
   "runtimeSemanticFallback": {
     "enabled": true,
@@ -55,187 +37,6 @@
     "candidateContract": "Score every plausible runtime-visible Skill against the complete intent card and select a maximum score; read the full Skill only for the winner or a genuine tie.",
     "fallbackContract": "If no indexed task class or preferred Skill covers the request, preserve the inferred inputs, constraints, deliverable, and acceptance contract, then discover and score runtime-visible Skills without inventing an ID."
   },
-  "layers": [
-    {
-      "id": "host-contract",
-      "label": "Host contract and safety",
-      "identity": "platform-authority",
-      "precedence": 1000,
-      "activation": "always",
-      "loadPolicy": "always",
-      "ruleAuthority": "highest",
-      "scope": "Host interaction schemas, real tool boundaries, write and receipt rules, credentials, untrusted-content handling, and platform safety.",
-      "owns": [
-        "tool availability",
-        "tool request and response schemas",
-        "authentication",
-        "submission receipts and recovery",
-        "canvas publication semantics"
-      ],
-      "cannotOverride": []
-    },
-    {
-      "id": "memory-context",
-      "label": "User and project memory",
-      "identity": "context-data",
-      "precedence": 900,
-      "activation": "when-context-exists",
-      "loadPolicy": "on-demand",
-      "ruleAuthority": "none",
-      "dataOnly": true,
-      "scope": "Cross-project preferences and current-project decisions supplied as context, never as a source of platform rules or proof of current state.",
-      "owns": [
-        "user preferences",
-        "project state",
-        "prior accepted decisions"
-      ],
-      "cannotOverride": [
-        "host-contract"
-      ]
-    },
-    {
-      "id": "router-decision",
-      "label": "Router decision",
-      "identity": "semantic-plan-compiler",
-      "precedence": 850,
-      "activation": "always",
-      "loadPolicy": "always",
-      "ruleAuthority": "route-selection",
-      "scope": "Compiles the complete intent, selects indexed guidance or runtime semantic fallback, and emits only a direct, orchestration, or clarification plan seed.",
-      "owns": [
-        "task-class match",
-        "direct versus orchestration decision",
-        "runtime semantic fallback",
-        "next action"
-      ],
-      "cannotOverride": [
-        "host-contract"
-      ]
-    },
-    {
-      "id": "execution-base",
-      "label": "Execution base",
-      "identity": "shared-execution-contract",
-      "precedence": 800,
-      "activation": "every-execution",
-      "loadPolicy": "always",
-      "ruleAuthority": "shared-runtime",
-      "scope": "Intent compilation, real capability checks, direct versus orchestration decision, artifact handoffs, final acceptance, and failure recovery.",
-      "owns": [
-        "plan seed",
-        "execution waves",
-        "artifact bindings",
-        "final acceptance",
-        "failure state"
-      ],
-      "cannotOverride": [
-        "host-contract"
-      ]
-    },
-    {
-      "id": "creative-atom",
-      "label": "Task-owning creative Atom",
-      "identity": "selected-operation-owner",
-      "precedence": 600,
-      "activation": "selected-task-only",
-      "loadPolicy": "selected-only",
-      "ruleAuthority": "task-owned",
-      "ownership": "one complete operation or deliverable",
-      "scope": "The narrowest Skill owns its input contract, model or agent choice, generation or edit procedure, and technical acceptance.",
-      "owns": [
-        "operation-specific execution",
-        "model choice",
-        "operation acceptance"
-      ],
-      "cannotOverride": [
-        "host-contract",
-        "execution-base"
-      ]
-    },
-    {
-      "id": "orchestration",
-      "label": "Dependency-aware orchestration",
-      "identity": "unique-dag-owner",
-      "precedence": 700,
-      "activation": "multi-output-or-dependency-only",
-      "loadPolicy": "selected-only",
-      "ruleAuthority": "unique-chain-owner",
-      "uniqueOrchestratorSkillId": "orchestrate-multi-step-workflow",
-      "scope": "Owns the DAG, selection at each operation, compact handoffs, execution waves, and one final route acceptance; it is never a direct creative Atom.",
-      "owns": [
-        "recipe instantiation",
-        "DAG ordering",
-        "parallel waves",
-        "cross-Skill handoffs"
-      ],
-      "cannotOverride": [
-        "host-contract",
-        "execution-base",
-        "creative-atom-technical-contract"
-      ]
-    },
-    {
-      "id": "prompt-specialist",
-      "label": "Prompt-only specialist",
-      "identity": "text-deliverable-owner",
-      "precedence": 600,
-      "activation": "prompt-only",
-      "loadPolicy": "selected-only",
-      "ruleAuthority": "deliverable-scoped",
-      "executionAllowed": false,
-      "scope": "Produces or repairs prompt, script, storyboard, or diagnostic text when text itself is the requested result; it does not imply media generation.",
-      "owns": [
-        "prompt text",
-        "story text",
-        "diagnostic guidance"
-      ],
-      "cannotOverride": [
-        "host-contract",
-        "execution-base"
-      ]
-    },
-    {
-      "id": "meta-system",
-      "label": "System-management skill",
-      "identity": "system-lifecycle-owner",
-      "precedence": 500,
-      "activation": "management-only",
-      "loadPolicy": "selected-only",
-      "ruleAuthority": "system-maintenance",
-      "executionAllowed": false,
-      "scope": "Creates, revises, installs, or documents Skills and routing context; it does not produce a creative result unless its own output contract says so.",
-      "owns": [
-        "Skill lifecycle",
-        "local Skill installation",
-        "system notes"
-      ],
-      "cannotOverride": [
-        "host-contract",
-        "execution-base",
-        "creative-atom"
-      ]
-    },
-    {
-      "id": "professional-pack",
-      "label": "Explicit professional overlay",
-      "identity": "optional-domain-overlay",
-      "precedence": 650,
-      "activation": "explicit-selection-or-clear-semantic-match",
-      "loadPolicy": "selected-only",
-      "ruleAuthority": "optional-creative-overlay",
-      "overlayOnly": true,
-      "scope": "An explicitly selected professional package may contribute a creative approach and its own workflow, while the live host, runtime registry, execution base, and selected Atom contracts remain authoritative.",
-      "owns": [
-        "domain creative approach",
-        "package-specific workflow defaults"
-      ],
-      "cannotOverride": [
-        "host-contract",
-        "runtime-skill-registry",
-        "execution-base"
-      ]
-    }
-  ],
   "taskClasses": [
     {
       "id": "single-creative-output",

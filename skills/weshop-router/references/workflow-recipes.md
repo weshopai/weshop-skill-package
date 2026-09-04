@@ -238,4 +238,4 @@ executionWaves:
 
 ## When no recipe fits
 
-Return an empty orchestration seed with no `recipeId`, `steps: []`, `executionWaves: []`, `selectionSource: runtime-fallback`, and `nextAction: expand-with-orchestrator`. The sole orchestrator then creates only the steps needed for distinct outputs or artifact handoffs and computes waves from actual dependencies. A new recurring pattern may be added here later, but it must not become a new Atom unless one Skill can own one stable final result and acceptance contract.
+Return a routing decision with `selectionSource: runtime-fallback` and no invented `workflowId`. The sole orchestrator may then create only the steps needed for distinct outputs or artifact handoffs and compute waves from actual dependencies. A new recurring pattern may be added here later, but it must not become a new Atom unless one Skill can own one stable final result and acceptance contract.

@@ -18,7 +18,7 @@
 
 WeShop Skills turns plain-language creative requests into production-ready image, video, product, portrait, layout, and spatial workflows powered by WeShop OpenAPI. Install the complete collection or pick only the Skills you need.
 
-> This repository contains **137 focused Atom Skills + 1 user-authoring Skill + 1 Router + 1 multi-step orchestration Skill (140 Skills total)**. `weshop-router` compiles one task signature into a direct Atom call, a reusable workflow recipe, or one material clarification. Media execution uses a native WeShop harness tool or the official `weshop` CLI, never a package-owned fallback client.
+> This repository contains **137 focused Atom Skills + 1 user-authoring Skill + 1 Router + 1 multi-step orchestration Skill (140 Skills total)**. `weshop-router` selects a focused Skill shortlist, one maintained workflow, or one route-changing clarification; it does not plan or execute the selected route. Media execution uses a native WeShop harness tool or the official `weshop` CLI, never a package-owned fallback client.
 
 ## Package boundaries
 
@@ -189,24 +189,22 @@ weshop-skills custom check ~/.weshop-skill-package/custom-skills/my-custom-skill
 | 🧠 Multi-step orchestration | Parallel or ordered Skills, asset handoff, final QA for compound work |
 | 🛡️ Safe execution | Stable operation keys, duplicate-spend protection, polling, recovery records |
 
-For compound work, `weshop-router` selects or seeds the smallest matching recipe, including artifact bindings and dependency-safe execution waves. `orchestrate-multi-step-workflow` then validates runtime Skill choices, connects outputs to downstream inputs, selects verified WeShop models or Agents, and performs one focused acceptance check on the final result. It is not the Router: a clear single-Atom request never enters it.
+For compound work, `weshop-router` selects the smallest matching workflow and stops. `orchestrate-multi-step-workflow` owns its DAG, artifact bindings, execution waves, runtime Skill choices, and final acceptance. It is not the Router: a clear single-Skill request never enters it.
 
 ### Router plan compiler
 
-Hosts can use the exported `prepareRouterPlan(request, availableSkills)` function after extracting one semantic task signature. The structured request conforms to [`schemas/router-plan-request.schema.json`](schemas/router-plan-request.schema.json), and the compact seed conforms to [`schemas/router-plan.schema.json`](schemas/router-plan.schema.json):
+Hosts can use the exported `prepareRouterPlan(request, availableSkills)` function after identifying the requested outcome and supplied input roles. The structured request conforms to [`schemas/router-plan-request.schema.json`](schemas/router-plan-request.schema.json), and the routing decision conforms to [`schemas/router-plan.schema.json`](schemas/router-plan.schema.json):
 
 - an indexed direct route with no more than four adjacent candidates;
-- an instantiated recipe with artifact bindings and parallel execution waves;
+- one selected workflow ID without execution planning;
 - one blocking question with no speculative steps; or
-- a runtime-discovery handoff for an unknown or custom task.
+- a runtime Skill-discovery handoff for an unknown or custom task.
 
 The maintained [`routing-map.json`](skills/weshop-router/references/routing-map.json) accelerates common work without becoming a keyword classifier or closed operation enum. Human-readable task boundaries and recipe rationale live beside it in [`task-routing.md`](skills/weshop-router/references/task-routing.md) and [`workflow-recipes.md`](skills/weshop-router/references/workflow-recipes.md). Runtime Skill availability remains authoritative.
 
-The request records `routeShape` as counts of independently owned operations and deliverables plus whether a cross-Skill artifact dependency exists. It also separates all known `intent.ambiguities` from the smaller `blockingAmbiguities` subset, treats `availableInputRoles` as the authoritative supplied-role list when present, and validates any professional overlay against `availableProfessionalPackIds`. This lets the compiler choose direct, recipe-selection, expanded-recipe, custom-DAG, or clarify mode without repeatedly interpreting the original prose.
+The request contains only routing facts: intent, optional common task or class, supplied input roles, an optional selected workflow, direct-candidate scoring, and routing-blocking ambiguities. Host policy, memory, permissions, execution state, receipts, recovery, professional overlays, DAG nodes, execution waves, and final acceptance remain owned by the Agent Runtime or selected target.
 
-For a populated recipe seed, score only each node's compact candidate list, then call `compileRouterOrchestrationPlan(seed, originalIntent, selections, availableSkills)`. That adapter preserves step IDs, bindings, execution waves, and final acceptance while the existing orchestration validator checks runtime availability and the winning semantic score. A `select-workflow-recipe` seed is intentionally incomplete: instantiate one candidate only if its full dependency shape fits; set `useRuntimeWorkflowFallback: true` on the same request to decline the hints and receive an empty custom-DAG seed. Direct scoring similarly covers the complete indexed shortlist unless `directDecision.usedRuntimeFallback` explicitly records a runtime replacement.
-
-The maintained layer model, state machine, and Tool-to-Skill handoff are summarized in [`router-architecture.md`](skills/weshop-router/references/router-architecture.md).
+For direct routing, score the complete focused shortlist unless `directDecision.usedRuntimeFallback` records a runtime replacement. For workflow routing, pass the selected `workflowId` to the workflow owner; the Router does not instantiate or execute its DAG.
 
 ## Complete Skill inventory 🧩
 

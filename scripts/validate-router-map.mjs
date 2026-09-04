@@ -7,17 +7,6 @@ export const ROUTER_MAP_URL = new URL('../skills/weshop-router/references/routin
 export const SKILL_CATALOG_URL = new URL('../catalog/skills.json', import.meta.url);
 
 const ID_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
-const REQUIRED_LAYER_IDS = [
-  'host-contract',
-  'memory-context',
-  'router-decision',
-  'execution-base',
-  'creative-atom',
-  'orchestration',
-  'prompt-specialist',
-  'meta-system',
-  'professional-pack',
-];
 const REQUIRED_RECIPE_IDS = [
   'product-detail-production',
   'multi-format-campaign',
@@ -141,7 +130,7 @@ function validateClassificationContract(map) {
     fail('Static relationship scores cannot be runtime intent scores.');
   }
   const modePolicy = expectObject(contract.modePolicy, 'classificationContract.modePolicy');
-  for (const mode of ['direct', 'orchestrate', 'clarify']) {
+  for (const mode of ['direct', 'workflow', 'clarify']) {
     expectString(modePolicy[mode], `classificationContract.modePolicy.${mode}`);
   }
 }
@@ -164,105 +153,6 @@ function validateRuntimeFallback(map) {
   }
   expectString(fallback.candidateContract, 'runtimeSemanticFallback.candidateContract');
   expectString(fallback.fallbackContract, 'runtimeSemanticFallback.fallbackContract');
-}
-
-function validateLoadPolicy(map) {
-  const loadPolicy = expectObject(map.loadPolicy, 'loadPolicy');
-  const always = expectStringArray(loadPolicy.always, 'loadPolicy.always', { min: 3 });
-  ensureUniqueStrings(always, 'loadPolicy.always');
-  for (const id of ['host-contract', 'router-decision', 'execution-base']) {
-    if (!always.includes(id)) fail(`loadPolicy.always must include ${id}.`);
-  }
-  if (loadPolicy.taskClasses !== 'matched-only') fail('loadPolicy.taskClasses must be matched-only.');
-  if (loadPolicy.tasks !== 'matched-only') fail('loadPolicy.tasks must be matched-only.');
-  if (loadPolicy.recipes !== 'selected-only') fail('loadPolicy.recipes must be selected-only.');
-  if (loadPolicy.nodeOwnerDetails !== 'on-demand') fail('loadPolicy.nodeOwnerDetails must be on-demand.');
-  expectStringArray(loadPolicy.nodeOwnerDetailExamples, 'loadPolicy.nodeOwnerDetailExamples', { min: 3 });
-  expectString(loadPolicy.exclusion, 'loadPolicy.exclusion');
-}
-
-function validateLayers(map) {
-  const layers = expectArray(map.layers, 'layers', { min: REQUIRED_LAYER_IDS.length });
-  const layerIds = ensureUnique(layers, 'layer', layer => expectId(layer.id, 'layers[].id'));
-  const byId = new Map();
-  layers.forEach((layer, index) => {
-    const location = `layers[${index}]`;
-    expectObject(layer, location);
-    requireFields(layer, ['id', 'label', 'identity', 'precedence', 'activation', 'loadPolicy', 'ruleAuthority', 'scope', 'owns', 'cannotOverride'], location);
-    expectString(layer.label, `${location}.label`);
-    expectString(layer.identity, `${location}.identity`);
-    if (!Number.isFinite(layer.precedence)) fail(`${location}.precedence must be a finite number.`);
-    expectString(layer.activation, `${location}.activation`);
-    if (!['always', 'on-demand', 'selected-only'].includes(layer.loadPolicy)) {
-      fail(`${location}.loadPolicy must be always, on-demand, or selected-only.`);
-    }
-    expectString(layer.ruleAuthority, `${location}.ruleAuthority`);
-    expectString(layer.scope, `${location}.scope`);
-    expectStringArray(layer.owns, `${location}.owns`, { min: 1 });
-    expectStringArray(layer.cannotOverride, `${location}.cannotOverride`);
-    byId.set(layer.id, layer);
-  });
-  for (const id of REQUIRED_LAYER_IDS) {
-    if (!layerIds.has(id)) fail(`Missing required layer: ${id}.`);
-  }
-
-  const host = byId.get('host-contract');
-  if (host.activation !== 'always' || host.loadPolicy !== 'always' || host.ruleAuthority !== 'highest') {
-    fail('host-contract must always load with highest rule authority.');
-  }
-  if (layers.some(layer => layer.id !== host.id && layer.precedence >= host.precedence)) {
-    fail('host-contract must have strictly highest precedence.');
-  }
-
-  const memory = byId.get('memory-context');
-  if (memory.dataOnly !== true || memory.ruleAuthority !== 'none') {
-    fail('memory-context must be data-only and have no rule authority.');
-  }
-
-  const decision = byId.get('router-decision');
-  if (decision.activation !== 'always' || decision.loadPolicy !== 'always') {
-    fail('router-decision must always load.');
-  }
-
-  const execution = byId.get('execution-base');
-  if (execution.activation !== 'every-execution' || execution.loadPolicy !== 'always') {
-    fail('execution-base must load for every execution.');
-  }
-
-  const atom = byId.get('creative-atom');
-  if (atom.ownership !== 'one complete operation or deliverable' || atom.loadPolicy !== 'selected-only') {
-    fail('creative-atom must be the selected owner of one complete operation or deliverable.');
-  }
-
-  const orchestration = byId.get('orchestration');
-  if (orchestration.activation !== 'multi-output-or-dependency-only' || orchestration.loadPolicy !== 'selected-only') {
-    fail('orchestration must be selected only for multi-output or dependency work.');
-  }
-  if (orchestration.uniqueOrchestratorSkillId !== ORCHESTRATOR_SKILL_ID) {
-    fail(`orchestration.uniqueOrchestratorSkillId must be ${ORCHESTRATOR_SKILL_ID}.`);
-  }
-
-  const prompt = byId.get('prompt-specialist');
-  if (prompt.activation !== 'prompt-only' || prompt.executionAllowed !== false) {
-    fail('prompt-specialist must be prompt-only and cannot imply media execution.');
-  }
-
-  const meta = byId.get('meta-system');
-  if (meta.activation !== 'management-only' || meta.executionAllowed !== false) {
-    fail('meta-system must be management-only and cannot imply creative execution.');
-  }
-
-  const professional = byId.get('professional-pack');
-  if (professional.activation !== 'explicit-selection-or-clear-semantic-match' || professional.overlayOnly !== true || professional.loadPolicy !== 'selected-only') {
-    fail('professional-pack must be a selected-only explicit or clearly matched overlay.');
-  }
-  for (const boundary of ['host-contract', 'runtime-skill-registry', 'execution-base']) {
-    if (!professional.cannotOverride.includes(boundary)) {
-      fail(`professional-pack cannotOverride must include ${boundary}.`);
-    }
-  }
-
-  return byId;
 }
 
 function makeSkillRefValidator(catalogIds) {
@@ -559,8 +449,6 @@ export function validateRouterMap(map, catalog) {
 
   validateClassificationContract(map);
   validateRuntimeFallback(map);
-  validateLoadPolicy(map);
-  validateLayers(map);
   const taskClassResult = validateTaskClasses(map, validateSkillRef);
 
   // Recipe IDs are established before task fast paths so an optional task.recipeId
@@ -573,7 +461,6 @@ export function validateRouterMap(map, catalog) {
 
   return {
     schemaVersion: map.schemaVersion,
-    layers: map.layers.length,
     taskClasses: taskClassResult.taskClasses.length,
     tasks: tasks.length,
     recipes: recipeResult.recipes.length,
@@ -612,7 +499,7 @@ if (isDirectRun) {
       catalogPath: process.argv[3],
     });
     console.log(
-      `Valid Router map ${result.schemaVersion}: ${result.layers} layers, ${result.taskClasses} classes, ${result.tasks} task fast paths, ${result.recipes} recipes, ${result.catalogSkills} catalog Skills.`,
+      `Valid Router map ${result.schemaVersion}: ${result.taskClasses} classes, ${result.tasks} task fast paths, ${result.recipes} recipes, ${result.catalogSkills} catalog Skills.`,
     );
   } catch (error) {
     console.error(error instanceof Error ? error.message : String(error));

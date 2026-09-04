@@ -42,17 +42,13 @@ Plan a multi-step workflow to research a product claim, create a product scene, 
 
 Use this Skill only after the harness-level Router has escalated a request beyond one directly callable Atom. A clear single-Atom request must call that Atom directly.
 
-## Router plan seed handoff
+## Router workflow handoff
 
-When the handoff contains a Router plan seed with `schemaVersion: "1.0.0"`, consume it as the canonical plan input. Do not infer the task signature again and do not rebuild its recipe, steps, bindings, execution waves, or final acceptance contract.
+When the Router returns `schemaVersion: "2.0.0"` and `nextAction: invoke-selected-workflow`, treat `workflowId` as a routing choice, not as an execution plan. Load that workflow's definition from the Router package, then this orchestrator owns DAG materialization, optional-node decisions, artifact bindings, Skill selection, execution waves, and final acceptance. Do not ask the Router to perform those steps.
 
-- For `nextAction: select-workflow-recipe`, compare only the `candidateRecipeIds` hints against the complete dependency shape. Instantiate a matching recipe through the Router plan compiler; if none fits the full signature, use the declared custom runtime-DAG fallback instead of forcing a near match.
-- For `nextAction: expand-with-orchestrator` with populated `steps`, preserve the graph. For each Skill node, semantically score only its `candidateSkillIds`; use runtime discovery only when the node says `runtimeDiscoveryRequired` or every indexed candidate is unavailable or fails the full node contract. Fill the selected Skill, request-specific candidates, and `selectionReason`, then validate.
-- Treat an omitted optional node as absent. Treat `repeatFor` as a parameterized fan-out instruction: after its bound manifest or list exists, expand it mechanically into stable child IDs, preserve declared dependencies, and recompute waves. It is not permission to redesign the workflow.
-- For `expand-with-orchestrator` with no steps, the Router has intentionally selected `runtime-fallback`. Seed the smallest custom DAG from the task signature, `routeShape` evidence, and runtime descriptions while retaining any indexed task owner in `candidateSkillIds`.
-- For `ask-one-question`, return only the supplied material question. Do not pre-commit nodes.
+For `nextAction: select-workflow`, choose only among `candidateWorkflowIds` when one matches the complete dependency shape, then call the Router again with that `workflowId`. For `ask-one-question`, return only the supplied routing question and create no nodes.
 
-Only use the legacy planning path below when no valid Router plan seed was supplied.
+Use the planning path below after a workflow is selected or when no valid Router decision was supplied.
 
 1. If there is no valid seed, inspect the Skills currently visible to the harness. Treat each Skill's frontmatter description as its discovery use case; do not rely on a Skill-owned list, operation enum, or remembered package count.
 2. Only on that fallback path, infer an intent card from the user's outcome, assets, constraints, deliverables, research need, confidence, and material ambiguities. Do not repeat this inference when the Router supplied `signature`.

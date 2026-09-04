@@ -1,66 +1,35 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://weshop.ai/schemas/router-plan-request.schema.json",
-  "title": "WeShop Router plan request",
-  "description": "Structured semantic input for prepareRouterPlan. This is not a raw-text keyword classification contract.",
+  "title": "WeShop Router request",
+  "description": "Minimal semantic input for selecting one Skill, one workflow, or one routing clarification. Runtime concerns are intentionally excluded.",
   "type": "object",
-  "required": ["intent", "signature"],
+  "required": [
+    "intent"
+  ],
   "properties": {
-    "intent": { "$ref": "#/$defs/intent" },
-    "taskClassId": {
-      "description": "Optional when taskId is indexed; otherwise omitted values become the open runtime-other class.",
-      "$ref": "#/$defs/openId"
+    "intent": {
+      "$ref": "#/$defs/intent"
     },
     "taskId": {
-      "description": "Exact maintained task fast path when one matches the complete outcome.",
       "$ref": "#/$defs/openId"
     },
-    "signature": { "$ref": "#/$defs/signatureInput" },
+    "taskClassId": {
+      "$ref": "#/$defs/openId"
+    },
     "availableInputRoles": {
-      "description": "Authoritative supplied-role list when present; otherwise intent.assets supplies the roles.",
       "$ref": "#/$defs/roleSet"
     },
-    "recipeId": {
-      "description": "Set only after the dependency shape uniquely matches a recipe.",
+    "workflowId": {
       "$ref": "#/$defs/openId"
     },
-    "useRuntimeWorkflowFallback": {
-      "description": "Explicitly decline indexed recipe hints and request an empty custom-DAG seed.",
-      "type": "boolean"
+    "directDecision": {
+      "$ref": "#/$defs/directDecision"
     },
-    "includeOptionalSteps": {
-      "description": "Recipe step IDs selected from explicit requested output branches or observed repair needs.",
-      "$ref": "#/$defs/idSet"
-    },
-    "assumptions": { "$ref": "#/$defs/stringSet" },
     "blockingAmbiguities": {
-      "description": "Only material ambiguities that change ownership, inputs, dependencies, or output format.",
       "$ref": "#/$defs/stringSet"
-    },
-    "directDecision": { "$ref": "#/$defs/directDecision" },
-    "routeShape": { "$ref": "#/$defs/routeShape" },
-    "memoryAvailable": { "type": "boolean" },
-    "professionalPackId": { "$ref": "#/$defs/openId" },
-    "availableProfessionalPackIds": { "$ref": "#/$defs/idSet" }
-  },
-  "allOf": [
-    {
-      "if": {
-        "properties": {
-          "useRuntimeWorkflowFallback": { "const": true }
-        },
-        "required": ["useRuntimeWorkflowFallback"]
-      },
-      "then": {
-        "not": {
-          "anyOf": [
-            { "required": ["recipeId"] },
-            { "required": ["directDecision"] }
-          ]
-        }
-      }
     }
-  ],
+  },
   "additionalProperties": false,
   "$defs": {
     "openId": {
@@ -70,12 +39,10 @@
     "stringSet": {
       "type": "array",
       "uniqueItems": true,
-      "items": { "type": "string", "minLength": 1 }
-    },
-    "idSet": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": { "$ref": "#/$defs/openId" }
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
     },
     "roleSet": {
       "type": "array",
@@ -98,70 +65,90 @@
         "ambiguities"
       ],
       "properties": {
-        "raw": { "type": "string", "minLength": 1 },
-        "outcome": { "type": "string", "minLength": 1 },
-        "assets": { "$ref": "#/$defs/roleSet" },
-        "constraints": { "$ref": "#/$defs/stringSet" },
-        "deliverables": { "$ref": "#/$defs/stringSet" },
-        "requiresResearch": { "type": "boolean" },
-        "researchMode": { "enum": ["none", "atom-owned", "separate-step"] },
-        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
-        "ambiguities": { "$ref": "#/$defs/stringSet" }
-      },
-      "additionalProperties": false
-    },
-    "signatureInput": {
-      "type": "object",
-      "required": ["action", "media", "domain", "scale", "priority"],
-      "properties": {
-        "action": { "type": "string", "minLength": 1 },
-        "media": {
-          "type": "array",
-          "minItems": 1,
-          "uniqueItems": true,
-          "items": { "type": "string", "minLength": 1 }
+        "raw": {
+          "type": "string",
+          "minLength": 1
         },
-        "domain": { "type": "string", "minLength": 1 },
-        "scale": { "type": "string", "minLength": 1 },
-        "priority": { "type": "string", "minLength": 1 }
-      },
-      "additionalProperties": false
-    },
-    "routeShape": {
-      "description": "Counts Router-owned operations, not stages internal to one outcome Atom.",
-      "type": "object",
-      "required": ["operationCount", "independentDeliverableCount", "hasArtifactDependency"],
-      "properties": {
-        "operationCount": { "type": "integer", "minimum": 1 },
-        "independentDeliverableCount": { "type": "integer", "minimum": 1 },
-        "hasArtifactDependency": { "type": "boolean" }
+        "outcome": {
+          "type": "string",
+          "minLength": 1
+        },
+        "assets": {
+          "$ref": "#/$defs/roleSet"
+        },
+        "constraints": {
+          "$ref": "#/$defs/stringSet"
+        },
+        "deliverables": {
+          "$ref": "#/$defs/stringSet"
+        },
+        "requiresResearch": {
+          "type": "boolean"
+        },
+        "researchMode": {
+          "enum": [
+            "none",
+            "atom-owned",
+            "separate-step"
+          ]
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "ambiguities": {
+          "$ref": "#/$defs/stringSet"
+        }
       },
       "additionalProperties": false
     },
     "intentMatch": {
       "type": "object",
-      "required": ["skillId", "intentMatchScore", "reason"],
+      "required": [
+        "skillId",
+        "intentMatchScore",
+        "reason"
+      ],
       "properties": {
-        "skillId": { "$ref": "#/$defs/openId" },
-        "intentMatchScore": { "type": "number", "minimum": 0, "maximum": 1 },
-        "reason": { "type": "string", "minLength": 1 }
+        "skillId": {
+          "$ref": "#/$defs/openId"
+        },
+        "intentMatchScore": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        }
       },
       "additionalProperties": false
     },
     "directDecision": {
       "type": "object",
-      "required": ["kind", "selectedSkillId", "candidates"],
+      "required": [
+        "kind",
+        "selectedSkillId",
+        "candidates"
+      ],
       "properties": {
-        "kind": { "const": "direct-atom" },
-        "selectedSkillId": { "$ref": "#/$defs/openId" },
+        "kind": {
+          "const": "direct-atom"
+        },
+        "selectedSkillId": {
+          "$ref": "#/$defs/openId"
+        },
         "candidates": {
           "type": "array",
           "minItems": 1,
           "maxItems": 4,
-          "items": { "$ref": "#/$defs/intentMatch" }
+          "items": {
+            "$ref": "#/$defs/intentMatch"
+          }
         },
         "usedRuntimeFallback": {
-          "description": "True only when the indexed shortlist was unavailable or failed the full outcome contract.",
           "type": "boolean"
         }
       },

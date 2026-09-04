@@ -35,7 +35,7 @@ test('orchestrator and CLI reference select auth from the host contract', async 
   assert.match(cli, /empty Shell `WESHOP_API_KEY` is expected/);
 });
 
-test('native Tool wrapper contracts remain owned by the host', async () => {
+test('Router delegates host and execution contracts to Runtime and downstream owners', async () => {
   const [router, orchestrator, officialCli, packageJson] = await Promise.all([
     read('skills/weshop-router/SKILL.md'),
     read('skills/orchestrate-multi-step-workflow/SKILL.md'),
@@ -43,7 +43,10 @@ test('native Tool wrapper contracts remain owned by the host', async () => {
     read('package.json'),
   ]);
 
-  assert.match(router, /host Tool owns its wrapper contract/);
+  assert.match(router, /Agent Runtime already owns context, memory, permissions, tools, authentication, execution, receipts, recovery, and publication/);
+  assert.match(router, /The selected Skill owns its execution method and result contract/);
+  assert.match(router, /The selected workflow owns its DAG, artifact handoffs, execution order, and final acceptance/);
+  assert.doesNotMatch(router, /WESHOP_API_KEY|authorization\/apikey|operationKey|submission receipt/);
   assert.match(orchestrator, /follow that Tool's current schema and errors/);
   assert.match(officialCli, /Wrapper fields are host contracts/);
   assert.doesNotMatch(`${router}\n${orchestrator}\n${officialCli}`, /tool-call-assembly\.md/);

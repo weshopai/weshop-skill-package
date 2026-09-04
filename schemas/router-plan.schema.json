@@ -1,61 +1,38 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://weshop.ai/schemas/router-plan.schema.json",
-  "title": "WeShop Router plan seed",
-  "description": "Extensible output of the semantic Router planner before direct execution, orchestration expansion, or one material clarification.",
+  "title": "WeShop Router decision",
+  "description": "A routing-only decision. The Agent Runtime and selected Skill or workflow own execution, receipts, recovery, and acceptance.",
   "type": "object",
   "required": [
     "schemaVersion",
+    "kind",
     "taskClassId",
-    "signature",
-    "activeLayers",
-    "mode",
     "selectionSource",
-    "candidateRecipeIds",
     "candidateSkillIds",
+    "candidateWorkflowIds",
     "requiredInputs",
     "missingInputs",
-    "assumptions",
-    "steps",
-    "executionWaves",
-    "finalAcceptance",
+    "reason",
     "nextAction",
-    "availableSkillCount",
-    "planning"
+    "availableSkillCount"
   ],
   "properties": {
     "schemaVersion": {
-      "const": "1.0.0"
+      "const": "2.0.0"
+    },
+    "kind": {
+      "enum": [
+        "direct",
+        "workflow",
+        "clarify"
+      ]
     },
     "taskClassId": {
-      "description": "An indexed class or a runtime-derived long-tail class; intentionally not enumerated.",
       "$ref": "#/$defs/openId"
     },
     "taskId": {
-      "description": "The indexed task fast path when one matched.",
       "$ref": "#/$defs/openId"
-    },
-    "signature": {
-      "$ref": "#/$defs/signature"
-    },
-    "activeLayers": {
-      "type": "array",
-      "minItems": 3,
-      "uniqueItems": true,
-      "items": {
-        "$ref": "#/$defs/openId"
-      }
-    },
-    "professionalPackId": {
-      "description": "Present only for an explicitly selected or clearly semantically matched overlay.",
-      "$ref": "#/$defs/openId"
-    },
-    "mode": {
-      "enum": [
-        "direct",
-        "orchestrate",
-        "clarify"
-      ]
     },
     "selectionSource": {
       "enum": [
@@ -63,224 +40,59 @@
         "runtime-fallback"
       ]
     },
-    "recipeId": {
-      "description": "The selected indexed or runtime-composed recipe when orchestration has resolved one.",
-      "$ref": "#/$defs/openId"
-    },
-    "candidateRecipeIds": {
-      "description": "A compact indexed recipe shortlist; IDs remain open for future recipes.",
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "$ref": "#/$defs/openId"
-      }
-    },
     "recommendedSkillId": {
-      "description": "The indexed fast-path recommendation before request-specific candidate scoring.",
       "$ref": "#/$defs/openId"
     },
     "selectedSkillId": {
-      "description": "The maximum-scoring runtime-visible Skill after semantic scoring.",
       "$ref": "#/$defs/openId"
     },
     "candidateSkillIds": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "$ref": "#/$defs/openId"
-      }
+      "$ref": "#/$defs/idSet"
+    },
+    "workflowId": {
+      "$ref": "#/$defs/openId"
+    },
+    "candidateWorkflowIds": {
+      "$ref": "#/$defs/idSet"
     },
     "requiredInputs": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "type": "string",
-        "minLength": 1
-      }
+      "$ref": "#/$defs/stringSet"
     },
     "missingInputs": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "type": "string",
-        "minLength": 1
-      }
+      "$ref": "#/$defs/stringSet"
     },
-    "assumptions": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "type": "string",
-        "minLength": 1
-      }
-    },
-    "steps": {
-      "type": "array",
-      "items": {
-        "$ref": "#/$defs/step"
-      }
-    },
-    "executionWaves": {
-      "description": "Topologically ordered arrays of step IDs. IDs in one wave may execute concurrently.",
-      "type": "array",
-      "items": {
-        "type": "array",
-        "minItems": 1,
-        "uniqueItems": true,
-        "items": {
-          "type": "string",
-          "minLength": 1
-        }
-      }
-    },
-    "finalAcceptance": {
-      "type": "array",
-      "minItems": 1,
-      "items": {
-        "type": "string",
-        "minLength": 1
-      }
+    "reason": {
+      "type": "string",
+      "minLength": 1
     },
     "question": {
-      "description": "The single material question emitted by clarify mode.",
       "type": "string",
       "minLength": 1
     },
     "nextAction": {
       "enum": [
-        "invoke-selected-atom",
-        "score-direct-candidates",
-        "select-workflow-recipe",
-        "expand-with-orchestrator",
+        "score-skill-candidates",
+        "invoke-selected-skill",
+        "select-workflow",
+        "invoke-selected-workflow",
         "ask-one-question"
       ]
     },
     "availableSkillCount": {
       "type": "integer",
       "minimum": 0
-    },
-    "planning": {
-      "$ref": "#/$defs/planning"
     }
   },
   "allOf": [
     {
       "if": {
         "properties": {
-          "mode": {
-            "const": "direct"
-          }
-        },
-        "required": [
-          "mode"
-        ]
-      },
-      "then": {
-        "properties": {
-          "candidateRecipeIds": {
-            "maxItems": 0
-          },
-          "steps": {
-            "minItems": 1,
-            "maxItems": 1
-          },
-          "executionWaves": {
-            "minItems": 1,
-            "maxItems": 1,
-            "items": {
-              "type": "array",
-              "minItems": 1,
-              "maxItems": 1
-            }
-          },
-          "nextAction": {
-            "enum": [
-              "invoke-selected-atom",
-              "score-direct-candidates"
-            ]
-          },
-          "planning": {
-            "properties": {
-              "operationCount": {
-                "const": 1
-              },
-              "independentDeliverableCount": {
-                "const": 1
-              },
-              "hasArtifactDependency": {
-                "const": false
-              }
-            },
-            "not": {
-              "required": [
-                "recipeId"
-              ]
-            }
-          }
-        },
-        "not": {
-          "anyOf": [
-            {
-              "required": [
-                "recipeId"
-              ]
-            },
-            {
-              "required": [
-                "question"
-              ]
-            }
-          ]
-        },
-        "allOf": [
-          {
-            "if": {
-              "properties": {
-                "nextAction": {
-                  "const": "invoke-selected-atom"
-                }
-              },
-              "required": [
-                "nextAction"
-              ]
-            },
-            "then": {
-              "required": [
-                "selectedSkillId"
-              ]
-            }
-          },
-          {
-            "if": {
-              "properties": {
-                "nextAction": {
-                  "const": "score-direct-candidates"
-                }
-              },
-              "required": [
-                "nextAction"
-              ]
-            },
-            "then": {
-              "not": {
-                "required": [
-                  "selectedSkillId"
-                ]
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "if": {
-        "properties": {
-          "mode": {
+          "kind": {
             "const": "clarify"
           }
         },
         "required": [
-          "mode"
+          "kind"
         ]
       },
       "then": {
@@ -288,146 +100,10 @@
           "question"
         ],
         "properties": {
-          "steps": {
-            "maxItems": 0
-          },
-          "executionWaves": {
-            "maxItems": 0
-          },
           "nextAction": {
             "const": "ask-one-question"
           }
-        },
-        "not": {
-          "required": [
-            "selectedSkillId"
-          ]
         }
-      }
-    },
-    {
-      "if": {
-        "properties": {
-          "mode": {
-            "const": "orchestrate"
-          }
-        },
-        "required": [
-          "mode"
-        ]
-      },
-      "then": {
-        "properties": {
-          "nextAction": {
-            "enum": [
-              "select-workflow-recipe",
-              "expand-with-orchestrator"
-            ]
-          },
-          "planning": {
-            "properties": {
-              "operationCount": {
-                "minimum": 2
-              }
-            }
-          }
-        },
-        "not": {
-          "anyOf": [
-            {
-              "required": [
-                "selectedSkillId"
-              ]
-            },
-            {
-              "required": [
-                "question"
-              ]
-            }
-          ]
-        },
-        "allOf": [
-          {
-            "if": {
-              "properties": {
-                "nextAction": {
-                  "const": "select-workflow-recipe"
-                }
-              },
-              "required": [
-                "nextAction"
-              ]
-            },
-            "then": {
-              "properties": {
-                "candidateRecipeIds": {
-                  "minItems": 1
-                },
-                "steps": {
-                  "maxItems": 0
-                },
-                "executionWaves": {
-                  "maxItems": 0
-                }
-              },
-              "not": {
-                "required": [
-                  "recipeId"
-                ]
-              }
-            }
-          },
-          {
-            "if": {
-              "properties": {
-                "nextAction": {
-                  "const": "expand-with-orchestrator"
-                }
-              },
-              "required": [
-                "nextAction"
-              ]
-            },
-            "then": {
-              "oneOf": [
-                {
-                  "required": [
-                    "recipeId"
-                  ],
-                  "properties": {
-                    "steps": {
-                      "minItems": 2
-                    },
-                    "executionWaves": {
-                      "minItems": 1
-                    }
-                  }
-                },
-                {
-                  "properties": {
-                    "selectionSource": {
-                      "const": "runtime-fallback"
-                    },
-                    "candidateRecipeIds": {
-                      "maxItems": 0
-                    },
-                    "steps": {
-                      "maxItems": 0
-                    },
-                    "executionWaves": {
-                      "maxItems": 0
-                    }
-                  },
-                  "not": {
-                    "required": [
-                      "recipeId"
-                    ]
-                  }
-                }
-              ]
-            }
-          }
-        ]
       }
     },
     {
@@ -438,218 +114,53 @@
       },
       "then": {
         "properties": {
-          "mode": {
+          "kind": {
             "const": "direct"
           },
           "nextAction": {
-            "const": "invoke-selected-atom"
+            "const": "invoke-selected-skill"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "workflowId"
+        ]
+      },
+      "then": {
+        "properties": {
+          "kind": {
+            "const": "workflow"
+          },
+          "nextAction": {
+            "const": "invoke-selected-workflow"
           }
         }
       }
     }
   ],
-  "additionalProperties": true,
+  "additionalProperties": false,
   "$defs": {
     "openId": {
       "type": "string",
       "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
     },
-    "signature": {
-      "type": "object",
-      "required": [
-        "outcome",
-        "action",
-        "media",
-        "domain",
-        "scale",
-        "inputRoles",
-        "preservation",
-        "deliverables",
-        "currentFactResearch",
-        "confidence",
-        "ambiguities",
-        "priority"
-      ],
-      "properties": {
-        "outcome": {
-          "type": "string",
-          "minLength": 1
-        },
-        "action": {
-          "type": "string",
-          "minLength": 1
-        },
-        "media": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "type": "string",
-            "minLength": 1
-          }
-        },
-        "domain": {
-          "type": "string",
-          "minLength": 1
-        },
-        "scale": {
-          "type": "string",
-          "minLength": 1
-        },
-        "inputRoles": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "type": "string",
-            "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]*$"
-          }
-        },
-        "preservation": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "type": "string",
-            "minLength": 1
-          }
-        },
-        "deliverables": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "type": "string",
-            "minLength": 1
-          }
-        },
-        "currentFactResearch": {
-          "enum": [
-            "none",
-            "atom-owned",
-            "separate-step"
-          ]
-        },
-        "confidence": {
-          "type": "number",
-          "minimum": 0,
-          "maximum": 1
-        },
-        "ambiguities": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "type": "string",
-            "minLength": 1
-          }
-        },
-        "priority": {
-          "type": "string",
-          "minLength": 1
-        }
-      },
-      "additionalProperties": true
+    "idSet": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/openId"
+      }
     },
-    "step": {
-      "type": "object",
-      "required": [
-        "id",
-        "kind",
-        "objective",
-        "dependsOn",
-        "inputs",
-        "output",
-        "candidateSkillIds"
-      ],
-      "properties": {
-        "id": {
-          "$ref": "#/$defs/openId"
-        },
-        "kind": {
-          "enum": [
-            "skill",
-            "research",
-            "deterministic"
-          ]
-        },
-        "objective": {
-          "type": "string",
-          "minLength": 1
-        },
-        "dependsOn": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "type": "string",
-            "minLength": 1
-          }
-        },
-        "inputs": {
-          "type": "object",
-          "additionalProperties": {
-            "type": "string",
-            "minLength": 1
-          }
-        },
-        "output": {
-          "type": "string",
-          "minLength": 1
-        },
-        "candidateSkillIds": {
-          "type": "array",
-          "uniqueItems": true,
-          "items": {
-            "$ref": "#/$defs/openId"
-          }
-        },
-        "selectedSkillId": {
-          "$ref": "#/$defs/openId"
-        },
-        "optional": {
-          "type": "boolean"
-        },
-        "condition": {
-          "type": "string",
-          "minLength": 1
-        },
-        "repeatFor": {
-          "type": "string",
-          "minLength": 1
-        },
-        "parallelGroup": {
-          "type": "string",
-          "minLength": 1
-        },
-        "runtimeDiscoveryRequired": {
-          "type": "boolean"
-        }
-      },
-      "additionalProperties": true
-    },
-    "planning": {
-      "type": "object",
-      "required": [
-        "taskClassId",
-        "operationCount",
-        "independentDeliverableCount",
-        "hasArtifactDependency"
-      ],
-      "properties": {
-        "taskClassId": {
-          "$ref": "#/$defs/openId"
-        },
-        "operationCount": {
-          "type": "integer",
-          "minimum": 1
-        },
-        "independentDeliverableCount": {
-          "type": "integer",
-          "minimum": 1
-        },
-        "hasArtifactDependency": {
-          "type": "boolean"
-        },
-        "recipeId": {
-          "$ref": "#/$defs/openId"
-        }
-      },
-      "additionalProperties": true
+    "stringSet": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
     }
   }
 }

@@ -34,7 +34,6 @@ test('canonical Router map validates against the current Skill catalog', async (
   const result = await loadAndValidateRouterMap();
   assert.deepEqual(result, {
     schemaVersion: '1.0.0',
-    layers: 9,
     taskClasses: 11,
     tasks: 38,
     recipes: 7,
@@ -42,57 +41,33 @@ test('canonical Router map validates against the current Skill catalog', async (
   });
 });
 
-test('plan schema matches the RouterPlanSeed API and leaves long-tail IDs open', () => {
+test('routing schemas exclude Agent Runtime responsibilities', () => {
   const required = new Set(planSchema.required);
   for (const field of [
     'schemaVersion',
+    'kind',
     'taskClassId',
-    'signature',
-    'activeLayers',
-    'mode',
     'selectionSource',
-    'candidateRecipeIds',
     'candidateSkillIds',
+    'candidateWorkflowIds',
     'requiredInputs',
     'missingInputs',
-    'assumptions',
-    'steps',
-    'executionWaves',
-    'finalAcceptance',
+    'reason',
     'nextAction',
     'availableSkillCount',
-    'planning',
   ]) {
-    assert.ok(required.has(field), `missing required RouterPlanSeed field ${field}`);
+    assert.ok(required.has(field), `missing required Router decision field ${field}`);
   }
-  for (const optionalField of ['taskId', 'professionalPackId', 'recipeId', 'recommendedSkillId', 'selectedSkillId', 'question']) {
-    assert.ok(!required.has(optionalField), `${optionalField} must remain optional`);
+  for (const removed of ['activeLayers', 'steps', 'executionWaves', 'finalAcceptance', 'planning', 'professionalPackId']) {
+    assert.equal(planSchema.properties[removed], undefined, `${removed} belongs outside Router output`);
   }
-  assert.equal(planSchema.properties.taskClassId.enum, undefined);
-  assert.equal(planSchema.properties.recommendedSkillId.enum, undefined);
-  assert.equal(planSchema.properties.requiredInputs.items.type, 'string');
-  assert.equal(planSchema.properties.executionWaves.items.type, 'array');
-  assert.equal(planSchema.properties.executionWaves.items.items.type, 'string');
-  assert.equal(planSchema.properties.activeLayers.minItems, 3);
-  assert.ok(planSchema.$defs.signature.required.includes('confidence'));
-  assert.equal(planSchema.allOf.length, 4);
-});
-
-test('request schema captures the semantic facts needed for one-pass route compilation', () => {
-  assert.deepEqual(requestSchema.required, ['intent', 'signature']);
+  assert.equal(planSchema.properties.schemaVersion.const, '2.0.0');
+  assert.deepEqual(requestSchema.required, ['intent']);
   assert.equal(requestSchema.additionalProperties, false);
-  assert.equal(requestSchema.properties.taskClassId.description.includes('Optional'), true);
-  assert.equal(requestSchema.properties.routeShape.$ref, '#/$defs/routeShape');
-  assert.equal(requestSchema.properties.useRuntimeWorkflowFallback.type, 'boolean');
-  assert.deepEqual(requestSchema.$defs.routeShape.required, [
-    'operationCount',
-    'independentDeliverableCount',
-    'hasArtifactDependency',
-  ]);
-  assert.equal(requestSchema.properties.blockingAmbiguities.description.includes('Only material ambiguities'), true);
-  assert.equal(requestSchema.properties.availableProfessionalPackIds.$ref, '#/$defs/idSet');
+  for (const removed of ['signature', 'routeShape', 'memoryAvailable', 'professionalPackId', 'availableProfessionalPackIds']) {
+    assert.equal(requestSchema.properties[removed], undefined, `${removed} belongs outside Router input`);
+  }
   assert.equal(requestSchema.$defs.directDecision.properties.candidates.maxItems, 4);
-  assert.equal(requestSchema.$defs.directDecision.properties.usedRuntimeFallback.type, 'boolean');
   assert.equal(requestSchema.$defs.intent.properties.assets.$ref, '#/$defs/roleSet');
 });
 
@@ -254,23 +229,6 @@ test('requires final route acceptance for every recipe', () => {
     map.recipes[0].finalAcceptance = [];
   });
   expectInvalid(fixture, /finalAcceptance must contain at least 1 item/);
-});
-
-test('preserves layer precedence and professional overlay boundaries', async t => {
-  await t.test('host is strictly highest precedence', () => {
-    const fixture = brokenMap(map => {
-      map.layers.find(layer => layer.id === 'execution-base').precedence = 1000;
-    });
-    expectInvalid(fixture, /host-contract must have strictly highest precedence/);
-  });
-
-  await t.test('professional overlay cannot override runtime registry', () => {
-    const fixture = brokenMap(map => {
-      const layer = map.layers.find(candidate => candidate.id === 'professional-pack');
-      layer.cannotOverride = layer.cannotOverride.filter(boundary => boundary !== 'runtime-skill-registry');
-    });
-    expectInvalid(fixture, /cannotOverride must include runtime-skill-registry/);
-  });
 });
 
 test('requires runtime semantic fallback and rejects static scores as intent scores', async t => {

@@ -191,20 +191,17 @@ weshop-skills custom check ~/.weshop-skill-package/custom-skills/my-custom-skill
 
 For compound work, `weshop-router` selects the smallest matching workflow and stops. `orchestrate-multi-step-workflow` owns its DAG, artifact bindings, execution waves, runtime Skill choices, and final acceptance. It is not the Router: a clear single-Skill request never enters it.
 
-### Router plan compiler
+### Router guidance
 
-Hosts can use the exported `prepareRouterPlan(request, availableSkills)` function after identifying the requested outcome and supplied input roles. The structured request conforms to [`schemas/router-plan-request.schema.json`](schemas/router-plan-request.schema.json), and the routing decision conforms to [`schemas/router-plan.schema.json`](schemas/router-plan.schema.json):
+`weshop-router` is an instruction Skill, not a Tool or plan compiler. When routing is needed, the Agent reads its guide once and selects:
 
-- an indexed direct route with no more than four adjacent candidates;
-- one selected workflow ID without execution planning;
-- one blocking question with no speculative steps; or
-- a runtime Skill-discovery handoff for an unknown or custom task.
+- one complete-outcome Skill;
+- one maintained workflow for real cross-Skill dependencies or independently requested deliverables; or
+- one route-changing clarification.
 
 The maintained [`routing-map.json`](skills/weshop-router/references/routing-map.json) accelerates common work without becoming a keyword classifier or closed operation enum. Human-readable task boundaries and recipe rationale live beside it in [`task-routing.md`](skills/weshop-router/references/task-routing.md) and [`workflow-recipes.md`](skills/weshop-router/references/workflow-recipes.md). Runtime Skill availability remains authoritative.
 
-The request contains only routing facts: intent, optional common task or class, supplied input roles, an optional selected workflow, direct-candidate scoring, and routing-blocking ambiguities. Host policy, memory, permissions, execution state, receipts, recovery, professional overlays, DAG nodes, execution waves, and final acceptance remain owned by the Agent Runtime or selected target.
-
-For direct routing, score the complete focused shortlist unless `directDecision.usedRuntimeFallback` records a runtime replacement. For workflow routing, pass the selected `workflowId` to the workflow owner; the Router does not instantiate or execute its DAG.
+The Router guide considers only outcome, supplied input roles, preservation constraints, requested deliverables, current-evidence needs, and route-changing ambiguity. Host policy, memory, permissions, execution state, receipts, recovery, DAG nodes, execution waves, and final acceptance remain owned by the Agent Runtime or selected target. There is no second Router Tool roundtrip.
 
 ## Complete Skill inventory 🧩
 

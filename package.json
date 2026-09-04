@@ -1,7 +1,7 @@
 {
   "name": "weshop-skill-package",
-  "version": "0.5.0",
-  "description": "Selection-only WeShop Router, Atom Skills, multi-step workflow orchestration, model catalog, and maintenance tooling.",
+  "version": "0.6.0",
+  "description": "Instruction-led WeShop Skill routing, Atom Skills, multi-step workflow orchestration, model catalog, and maintenance tooling.",
   "license": "MIT",
   "author": "WeShop AI",
   "homepage": "https://github.com/weshopai/weshop-skill-package#readme",
@@ -29,8 +29,6 @@
     "runtimeResources": [
       "skills",
       "catalog/skills.json",
-      "schemas/router-plan-request.schema.json",
-      "schemas/router-plan.schema.json",
       "shared/model-selection.md",
       "LICENSE"
     ]
@@ -45,8 +43,6 @@
     "skills/",
     "catalog/skills.json",
     "schemas/skill-catalog.schema.json",
-    "schemas/router-plan-request.schema.json",
-    "schemas/router-plan.schema.json",
     "models/catalog.json",
     "scripts/weshop-skills.mjs",
     "scripts/manage-skills.mjs",

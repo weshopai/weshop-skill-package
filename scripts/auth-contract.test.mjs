@@ -44,8 +44,8 @@ test('Router delegates host and execution contracts to Runtime and downstream ow
   ]);
 
   assert.match(router, /Agent Runtime already owns context, memory, permissions, tools, authentication, execution, receipts, recovery, and publication/);
-  assert.match(router, /The selected Skill owns its execution method and result contract/);
-  assert.match(router, /The selected workflow owns its DAG, artifact handoffs, execution order, and final acceptance/);
+  assert.match(router, /The selected Skill owns its working method, model and prompt choices, execution contract, and acceptance checks/);
+  assert.match(router, /The selected workflow owns DAG materialization, artifact handoffs, execution order, and final acceptance/);
   assert.doesNotMatch(router, /WESHOP_API_KEY|authorization\/apikey|operationKey|submission receipt/);
   assert.match(orchestrator, /follow that Tool's current schema and errors/);
   assert.match(officialCli, /Wrapper fields are host contracts/);
@@ -60,8 +60,6 @@ test('package manifest declares every Desktop runtime resource', async () => {
     runtimeResources: [
       'skills',
       'catalog/skills.json',
-      'schemas/router-plan-request.schema.json',
-      'schemas/router-plan.schema.json',
       'shared/model-selection.md',
       'LICENSE',
     ],

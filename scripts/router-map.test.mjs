@@ -10,11 +10,9 @@ import {
   validateRouterMap,
 } from './validate-router-map.mjs';
 
-const [routingMap, catalog, requestSchema, planSchema] = await Promise.all([
+const [routingMap, catalog] = await Promise.all([
   readFile(ROUTER_MAP_URL, 'utf8').then(JSON.parse),
   readFile(SKILL_CATALOG_URL, 'utf8').then(JSON.parse),
-  readFile(new URL('../schemas/router-plan-request.schema.json', import.meta.url), 'utf8').then(JSON.parse),
-  readFile(new URL('../schemas/router-plan.schema.json', import.meta.url), 'utf8').then(JSON.parse),
 ]);
 
 const brokenMap = mutate => {
@@ -39,36 +37,6 @@ test('canonical Router map validates against the current Skill catalog', async (
     recipes: 7,
     catalogSkills: catalog.skills.length,
   });
-});
-
-test('routing schemas exclude Agent Runtime responsibilities', () => {
-  const required = new Set(planSchema.required);
-  for (const field of [
-    'schemaVersion',
-    'kind',
-    'taskClassId',
-    'selectionSource',
-    'candidateSkillIds',
-    'candidateWorkflowIds',
-    'requiredInputs',
-    'missingInputs',
-    'reason',
-    'nextAction',
-    'availableSkillCount',
-  ]) {
-    assert.ok(required.has(field), `missing required Router decision field ${field}`);
-  }
-  for (const removed of ['activeLayers', 'steps', 'executionWaves', 'finalAcceptance', 'planning', 'professionalPackId']) {
-    assert.equal(planSchema.properties[removed], undefined, `${removed} belongs outside Router output`);
-  }
-  assert.equal(planSchema.properties.schemaVersion.const, '2.0.0');
-  assert.deepEqual(requestSchema.required, ['intent']);
-  assert.equal(requestSchema.additionalProperties, false);
-  for (const removed of ['signature', 'routeShape', 'memoryAvailable', 'professionalPackId', 'availableProfessionalPackIds']) {
-    assert.equal(requestSchema.properties[removed], undefined, `${removed} belongs outside Router input`);
-  }
-  assert.equal(requestSchema.$defs.directDecision.properties.candidates.maxItems, 4);
-  assert.equal(requestSchema.$defs.intent.properties.assets.$ref, '#/$defs/roleSet');
 });
 
 test('rejects duplicate task IDs', () => {

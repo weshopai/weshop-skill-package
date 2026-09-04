@@ -53,6 +53,29 @@ test('Router delegates host and execution contracts to Runtime and downstream ow
   assert.ok(!JSON.parse(packageJson).files.includes('tool-call-assembly.md'));
 });
 
+test('Router is a one-read decision surface with complete fast paths', async () => {
+  const router = await read('skills/weshop-router/SKILL.md');
+  const commonRows = router.match(/^\| \d+ \|/gm) ?? [];
+  const workflows = [
+    'product-detail-production',
+    'multi-format-campaign',
+    'comic-production',
+    'multi-shot-video',
+    'visual-localization-set',
+    'cutout-to-layout',
+    'research-to-deliverable',
+  ];
+
+  assert.equal(commonRows.length, 38);
+  for (const workflow of workflows) assert.ok(router.includes(`| \`${workflow}\` |`));
+  assert.match(router, /Reading this file must end routing/);
+  assert.match(router, /Planning budget: one Router read, one selected-owner read, zero confirmation passes/);
+  assert.match(router, /More than one file does not by itself mean Workflow/);
+  assert.match(router, /invoke `orchestrate-multi-step-workflow` with the selected workflow and available inputs/);
+  assert.match(router, /Do not load \[task-routing\.md\].*during ordinary routing/s);
+  assert.doesNotMatch(router, /read the matching entry in \[workflow-recipes\.md\]/);
+});
+
 test('package manifest declares every Desktop runtime resource', async () => {
   const packageJson = JSON.parse(await read('package.json'));
   assert.deepEqual(packageJson.weshopDesktop, {

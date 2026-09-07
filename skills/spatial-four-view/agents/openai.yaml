@@ -1,0 +1,4 @@
+interface:
+  display_name: "Spatial Four Views"
+  short_description: "Create four consistent views with Nano Banana 2 or GPT Image 2"
+  default_prompt: "Use $spatial-four-view to create overhead, eye-level, reverse, and lateral views from my scene references while preserving the layout and objects."

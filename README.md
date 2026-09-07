@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img alt="138 Skills" src="https://img.shields.io/badge/Skills-138-7530FE?style=flat-square" />
+  <img alt="139 Skills" src="https://img.shields.io/badge/Skills-139-7530FE?style=flat-square" />
   <a href="https://www.npmjs.com/package/weshop-skill-package"><img alt="npm version" src="https://img.shields.io/npm/v/weshop-skill-package?style=flat-square&color=CB3837" /></a>
   <a href="https://www.npmjs.com/package/weshop-skill-package"><img alt="npm downloads" src="https://img.shields.io/npm/dm/weshop-skill-package?style=flat-square&color=CB3837" /></a>
   <img alt="Codex" src="https://img.shields.io/badge/Codex-ready-10A37F?style=flat-square" />
@@ -18,11 +18,11 @@
 
 WeShop Skills turns plain-language creative requests into production-ready image, video, product, portrait, layout, and spatial workflows powered by WeShop OpenAPI. Install the complete collection or pick only the Skills you need.
 
-> This repository contains **137 focused creative Skills + 1 user-authoring Skill**. Higher-level selection lives in the protected [`routing/guide.md`](routing/guide.md) package resource, and maintained compositions live in [`workflows/catalog.json`](workflows/catalog.json). Neither is installed or exposed as a Skill.
+> This repository contains **138 focused creative Skills + 1 user-authoring Skill**. Higher-level selection lives in the protected [`routing/guide.md`](routing/guide.md) package resource, and maintained compositions live in [`workflows/catalog.json`](workflows/catalog.json). Neither is installed or exposed as a Skill.
 
 ## Package boundaries
 
-- `skills/` contains the 138 independently discoverable user-facing and authoring Skills.
+- `skills/` contains the 139 independently discoverable user-facing and authoring Skills.
 - `routing/` contains protected, host-addressed selection guidance. It is not a Skill, Tool, executor, or second Agent loop.
 - `workflows/` contains maintained cross-Skill dependency definitions and their execution boundary. Workflows are not Skills.
 - `shared/` contains Package-owned guidance shared by several Skills, such as model selection. Skills link to it only when the current task needs that decision.
@@ -207,11 +207,11 @@ The routing guide considers only outcome, supplied input roles, preservation con
 
 ## Complete Skill inventory 🧩
 
-The `skills/` directory contains 137 creative Skills and one platform-tooling Skill—138 Skills in total. Routing and workflow resources are deliberately outside this directory, so ordinary Agent Skills discovery cannot expose or shadow them. Categories below are for browsing only.
+The `skills/` directory contains 138 creative Skills and one platform-tooling Skill—139 Skills in total. Routing and workflow resources are deliberately outside this directory, so ordinary Agent Skills discovery cannot expose or shadow them. Categories below are for browsing only.
 
 ### Client catalog contract
 
-Published packages include [`catalog/skills.json`](catalog/skills.json), a versioned, client-neutral catalog generated from the installed `SKILL.md` files. Its 138 public entries cover the 137 Atom Skills and the user-authoring Skill; the two system-only routing Skills are intentionally hidden from the client catalog. It provides each public Skill's cover reference, category and tags, description, usage summary and examples, plus up to three differentiated related Skills. Clients may use it for presentation, but must continue to discover and execute Skills from `SKILL.md`: the catalog is optional so individually copied Skills, older package versions, and third-party/custom directories remain compatible.
+Published packages include [`catalog/skills.json`](catalog/skills.json), a versioned, client-neutral catalog generated from the installed `SKILL.md` files. Its 139 public entries cover the 138 Atom Skills and the user-authoring Skill; the two system-only routing Skills are intentionally hidden from the client catalog. It provides each public Skill's cover reference, category and tags, description, usage summary and examples, plus up to three differentiated related Skills. Clients may use it for presentation, but must continue to discover and execute Skills from `SKILL.md`: the catalog is optional so individually copied Skills, older package versions, and third-party/custom directories remain compatible.
 
 | Category | Skills |
 | --- | --- |
@@ -223,7 +223,7 @@ Published packages include [`catalog/skills.json`](catalog/skills.json), a versi
 | Image repair and utilities | `clean-room`, `colorize-image`, `expand-image`, `remove-background`, `remove-glasses`, `remove-image-mark`, `remove-object`, `remove-photo-filter`, `retouch-blemish`, `smooth-wrinkles` |
 | Characters, animals, and brands | `casting`, `character-reference-sheet`, `create-animal`, `create-avatar`, `create-character`, `create-flag`, `create-logo`, `create-mascot-logo`, `create-npc`, `make-pet-portrait` |
 | Narrative and comics | `develop-story`, `narrative-video-storyboard`, `plan-comic-storyboard`, `plan-film-storyboard`, `render-comic-page`, `write-short-drama-series`, `write-short-video-hooks` |
-| Spaces, diagrams, and CAD | `create-cad`, `make-flowchart`, `preview-landscape`, `preview-paint`, `restyle-room`, `visualize-floor-plan` |
+| Spaces, diagrams, and CAD | `create-cad`, `make-flowchart`, `preview-landscape`, `preview-paint`, `restyle-room`, `spatial-four-view`, `visualize-floor-plan` |
 | Video | `3d-animation-short-generator`, `add-video-effect`, `animate-image`, `backrooms-dreamcore`, `brand-promo-video-generator`, `brand-stream-mg`, `cinematic-video-prompt`, `character-toy-grid-motion`, `children-english-story-episode`, `co-op-game-intro-generator`, `combine-videos`, `correct-video-color`, `cross-model-video-prompt-adapter`, `data-driven-ad-creative-video`, `decorative-print-short`, `detail-page-skill-course`, `digital-product-promo-generator`, `dodge-game-video-generator`, `dot-matrix-brand-wordmark-motion`, `editorial-cutout-explainer`, `edit-social-video`, `film-reference-prompt-writer`, `fpv-tour-video-generator`, `generate-video`, `h3-prompt-expert`, `handdrawn-live-action-fusion`, `handdrawn-story-video`, `line-doodle-explainer`, `lip-product-commercial`, `live-sketch-motion`, `make-beat-synced-video`, `make-explainer-video`, `make-kinetic-typography`, `make-music-video`, `make-podcast-video`, `make-product-commercial`, `make-talking-video`, `make-video-intro`, `micro-expression-performance`, `minimalist-product-ad-generator`, `music-video-subtitle-generator`, `narrative-video-prompt`, `paper-collage-explainer-generator`, `papercraft-stop-motion-explainer`, `poster-motion`, `pov-short-film-generator`, `primitive-folk-cgi-restyle`, `product-launch-video`, `remove-video-mark`, `restyle-video`, `short-audiovisual-prompt`, `suspense-title-sequence-generator`, `testimonial-quote-video`, `transcript-broll-plan`, `upscale-video`, `video-model-advisor`, `video-prompt-failure-diagnosis` |
 | Social and commemorative | `make-birthday-video`, `make-holiday-card`, `make-mugshot-photo`, `make-wallet-photo`, `make-wedding-photo` |
 
@@ -284,7 +284,7 @@ Useful commands:
 | `npm run check` | Run TypeScript checks |
 | `npm test` | Test routing, safety policy, installation, and updates |
 | `npm run models:validate` | Validate the model catalog |
-| `npm run models:routing-validate` | Validate model routes across all 137 creative Atom Skills |
+| `npm run models:routing-validate` | Validate model routes across all 138 creative Atom Skills |
 | `npm run workflows:validate` | Validate workflow owners, dependencies, and routing-guide coverage |
 | `npm run docs:validate` | Validate this README and Skill inventory |
 | `npm run maintainers:validate` | Validate maintainer documentation |

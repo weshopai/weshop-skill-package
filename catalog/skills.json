@@ -5626,6 +5626,50 @@
       }
     },
     {
+      "id": "spatial-four-view",
+      "displayName": "Spatial Four Views",
+      "description": "Generate overhead, eye-level, reverse, and lateral views while preserving the same space.",
+      "category": "Layout & Design",
+      "categoryTags": [
+        "Layout & Design"
+      ],
+      "coverImage": "https://ai-image.weshop.com/desktop/coverImage/spatial-four-view.svg",
+      "routeLabel": "Reference-led spatial four-view",
+      "tone": "orange",
+      "featured": false,
+      "whatThisSkillDoes": [
+        "Deliver one four-panel reference sheet of the same space. Camera position and direction change; the environment stays fixed. Suitable for interior presentation, film blocking references, and game environments. A single photograph cannot establish the true geometry of unseen areas."
+      ],
+      "howToUse": {
+        "summary": "Provide at least one actual scene reference. Optional inputs include additional views of that space, a floor plan, an accepted overhead anchor, a separate camera guide, protected objects, dimensions, output ratio, resolution, and model preference. If only an article, example prompt, or branding graphic is supplied, request a scene image instead of inventing the user's room from the example. For prompt-only requests, deliver text without generation.",
+        "promptExamples": []
+      },
+      "output": {
+        "Media type": "Spatial four-view reference sheet",
+        "Default quantity": "1 image containing 4 panels",
+        "Default layout": "2x2; TL overhead, TR eye-level, BL reverse, BR lateral",
+        "Model policy": "Prefer Nano Banana 2 by default; support GPT Image 2 Medium/2K and other capability-verified models; explicit user selection takes priority; default whole-sheet resolution 2K",
+        "Downstream use": "Spatial presentation and camera references; no automatic video generation"
+      },
+      "similarSkills": [
+        {
+          "id": "visualize-floor-plan",
+          "displayName": "Visualize Floor Plan",
+          "difference": "Visualize Floor Plan: Turn a supplied floor plan or dimensioned brief into one readable visualization without changing topology. In contrast, Spatial Four Views: Generate overhead, eye-level, reverse, and lateral views while preserving the same space."
+        },
+        {
+          "id": "restyle-room",
+          "displayName": "Restyle Room",
+          "difference": "Restyle Room: Restyle a supplied room while preserving architecture, layout constraints and declared keep-items. In contrast, Spatial Four Views: Generate overhead, eye-level, reverse, and lateral views while preserving the same space."
+        },
+        {
+          "id": "photo-collage",
+          "displayName": "Photo Collage",
+          "difference": "Photo Collage: Arrange original photos into one intentional collage. In contrast, Spatial Four Views: Generate overhead, eye-level, reverse, and lateral views while preserving the same space."
+        }
+      ]
+    },
+    {
       "id": "suspense-title-sequence-generator",
       "displayName": "Suspense Title Sequence Generator",
       "description": "Produce a suspense pop-art film title sequence with exact supplied credits and graphic-motion QC.",

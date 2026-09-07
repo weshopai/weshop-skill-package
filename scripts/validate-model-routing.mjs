@@ -31,7 +31,8 @@ for (const entry of await readdir(skillRoot, { withFileTypes: true })) {
   }
   if (/Nano Banana|nano-banana-edit/i.test(production)) {
     const constrained = /draft divergence|草稿分叉/i.test(production) && /internal (?:convergence|review)|内部(?:收敛|评审|审阅)/i.test(production);
-    if (!constrained) failures.push(`${entry.name}: Nano use is not limited to explicit draft divergence and internal convergence/review.`);
+    const spatialFourViewException = entry.name === "spatial-four-view" && /`nano2`/.test(production) && !/--model\s+(?:nano1|nano)(?:\s|`)/.test(production);
+    if (!constrained && !spatialFourViewException) failures.push(`${entry.name}: Nano use is not limited to explicit draft divergence and internal convergence/review.`);
   }
   if (/Sora 2|sora-2/i.test(production)) failures.push(`${entry.name}: offline Sora 2 appears in production instructions.`);
   for (const match of production.matchAll(/`(gpt-image|nano-banana-edit|seedream|seedream-lite|qwen-image-edit|midjourney|z-image|firered-image-edit|grok-imagine|seedance-2-5|minimax-h3|seedance|seedance-mini|kling-v3-omni|kling|happyhorse|sora-2|wan-ai|grok-imagine-video|hailuo-ai|vidu-ai|veo-ai)`/gi)) {

@@ -20,6 +20,7 @@ Source: [WeShop AI Model Selection Guide](https://open.weshop.ai/doc/guides/ai-g
 - Pure photorealistic text-to-image or Chinese cultural elements without readable text: Z-Image.
 - Demanding lighting/material rendering or Asian fashion/e-commerce aesthetics: consider Seedream 5 Pro. Use it only when one of those conditions exists, and never for readable text.
 - Seedream 5 Lite is an explicit route for 3K output, more than ten references, or optional web-search enrichment; it is not a silent cost fallback.
+- `spatial-four-view` is an explicit user-requested exception: prefer Nano Banana 2 (`nano2`) by default for its same-space four-view deliverable without locking the model. GPT Image 2 Medium/2K is also a supported direct route; honor explicit user selection and verify capabilities for other models. Both CLI schemas are verified; spatial fidelity remains unverified until a representative run is accepted. This does not change other Skills' defaults.
 - Nano 2 is for fast draft divergence. Nano Pro is for faster high-quality convergence or internal review. Neither owns readable text.
 - Any source/reference image, mask, product/person consistency requirement, or editing operation excludes Midjourney and Z-Image.
 - Every GPT Image 2 route defaults to Medium at 2K, including drafts and validation. Change quality or resolution only when the user explicitly requests another tier.

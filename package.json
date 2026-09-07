@@ -1,6 +1,6 @@
 {
   "name": "weshop-skill-package",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "WeShop creative Skills with protected routing guidance, maintained workflow definitions, model policy, and package tooling.",
   "license": "MIT",
   "author": "WeShop AI",

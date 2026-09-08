@@ -40,6 +40,16 @@
         "zh-CN": {
           "displayName": "3D 动画短片"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/3d-animation-short-generator.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/3d-animation-short-generator.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/3d-animation-short-generator.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/3d-animation-short-generator.mp4"
+        }
       }
     },
     {
@@ -82,6 +92,20 @@
       "locales": {
         "zh-CN": {
           "displayName": "添加牙套"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/add-braces.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/add-braces.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/add-braces.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/add-braces.png"
+          ]
         }
       }
     },
@@ -126,6 +150,20 @@
         "zh-CN": {
           "displayName": "添加对话气泡"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/add-speech-bubble.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/add-speech-bubble.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/add-speech-bubble.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/add-speech-bubble.png"
+          ]
+        }
       }
     },
     {
@@ -169,6 +207,20 @@
       "locales": {
         "zh-CN": {
           "displayName": "添加纹身"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/add-tattoo.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/add-tattoo.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/add-tattoo.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/add-tattoo.png"
+          ]
         }
       }
     },
@@ -226,6 +278,16 @@
       "locales": {
         "zh-CN": {
           "displayName": "添加视频特效"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/add-video-effect.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/add-video-effect.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/add-video-effect.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/add-video-effect.mp4"
         }
       }
     },
@@ -296,6 +358,14 @@
         "zh-CN": {
           "displayName": "AI 横幅设计"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/ai-banner-design.png"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/ai-banner-design.png"
+        }
       }
     },
     {
@@ -361,6 +431,20 @@
         "zh-CN": {
           "displayName": "AI 商品场景"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/ai-product.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/ai-product.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/ai-product.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/ai-product.png"
+          ]
+        }
       }
     },
     {
@@ -400,6 +484,16 @@
       "locales": {
         "zh-CN": {
           "displayName": "图片转动画"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/animate-image.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/animate-image.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/animate-image.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/animate-image.mp4"
         }
       }
     },
@@ -457,6 +551,20 @@
         "zh-CN": {
           "displayName": "试妆"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/apply-makeup.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/apply-makeup.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/apply-makeup.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/apply-makeup.png"
+          ]
+        }
       }
     },
     {
@@ -512,6 +620,20 @@
         "zh-CN": {
           "displayName": "应用照片滤镜"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/apply-photo-filter.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/apply-photo-filter.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/apply-photo-filter.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/apply-photo-filter.png"
+          ]
+        }
       }
     },
     {
@@ -564,7 +686,15 @@
           "displayName": "Create Image Deck",
           "difference": "Create Image Deck: Plan, generate, inspect, and package a consistent image-first deck. In contrast, Article Hand-drawn Illustrations: Turn an article's key ideas into sparse, memorable hand-drawn body illustrations."
         }
-      ]
+      ],
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/article-handdrawn-illustrations.png"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/article-handdrawn-illustrations.png"
+        }
+      }
     },
     {
       "id": "backrooms-dreamcore",
@@ -599,6 +729,14 @@
         "Default layout": "User-requested ratio; source ratio for optional media when unspecified",
         "Model policy": "GPT Image 2 Medium/2K for stills; existing current video route for one requested shot",
         "Downstream use": "Approved atmospheric stills, inserts, or a dedicated video workflow"
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/backrooms-dreamcore.png"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/backrooms-dreamcore.png"
+        }
       }
     },
     {
@@ -647,6 +785,16 @@
       "locales": {
         "zh-CN": {
           "displayName": "品牌宣传视频"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/brand-promo-video-generator.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/brand-promo-video-generator.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/brand-promo-video-generator.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/brand-promo-video-generator.mp4"
         }
       }
     },
@@ -702,7 +850,17 @@
           "displayName": "Poster Motion",
           "difference": "Poster Motion: Animate an uploaded poster into one readable, full-frame motion poster. In contrast, Brand Stream MG: Produce one logo-led neon brand motion with explicit inputs, boundaries, and acceptance checks."
         }
-      ]
+      ],
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/brand-stream-mg.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/brand-stream-mg.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/brand-stream-mg.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/brand-stream-mg.mp4"
+        }
+      }
     },
     {
       "id": "casting",
@@ -751,7 +909,15 @@
           "displayName": "Create NPC",
           "difference": "Create NPC: Create one original non-player character image whose occupation, faction and gameplay role are visually legible. In contrast, Casting: Select and approve a screen-ready Chinese character face before deriving optional studio assets."
         }
-      ]
+      ],
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/casting.png"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/casting.png"
+        }
+      }
     },
     {
       "id": "change-bangs",
@@ -811,6 +977,20 @@
       "locales": {
         "zh-CN": {
           "displayName": "更换刘海"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/change-bangs.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/change-bangs.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/change-bangs.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/change-bangs.png"
+          ]
         }
       }
     },
@@ -878,6 +1058,20 @@
         "zh-CN": {
           "displayName": "更换姿势"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/change-pose.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/change-pose.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/change-pose.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/change-pose.png"
+          ]
+        }
       }
     },
     {
@@ -918,6 +1112,20 @@
         "zh-CN": {
           "displayName": "角色参考设定表"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/character-reference-sheet.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/character-reference-sheet.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/character-reference-sheet.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/character-reference-sheet.png"
+          ]
+        }
       }
     },
     {
@@ -955,6 +1163,16 @@
         "Default layout": "9:16",
         "Model policy": "Current verified image route plus catalog-selected video route",
         "Downstream use": "Character campaign and social presentation"
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/character-toy-grid-motion.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/character-toy-grid-motion.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/character-toy-grid-motion.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/character-toy-grid-motion.mp4"
+        }
       }
     },
     {
@@ -991,6 +1209,16 @@
         "Default layout": "9:16 unless requested otherwise",
         "Model policy": "Existing character/image routes and catalog-selected video route; no standalone audio claim",
         "Downstream use": "Children’s learning series"
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/children-english-story-episode.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/children-english-story-episode.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/children-english-story-episode.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/children-english-story-episode.mp4"
+        }
       }
     },
     {
@@ -1043,7 +1271,15 @@
           "displayName": "Cross-model Video Prompt Adapter",
           "difference": "Cross-model Video Prompt Adapter: Semantic adaptation of an existing video prompt. In contrast, Cinematic Video Prompt: Cinematic or image-to-video motion prompt."
         }
-      ]
+      ],
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/cinematic-video-prompt.svg"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/cinematic-video-prompt.svg"
+        }
+      }
     },
     {
       "id": "clean-room",
@@ -1097,6 +1333,20 @@
         "zh-CN": {
           "displayName": "清理房间杂物"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/clean-room.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/clean-room.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/clean-room.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/clean-room.png"
+          ]
+        }
       }
     },
     {
@@ -1133,6 +1383,16 @@
         "Default layout": "User-requested format",
         "Model policy": "Existing verified native Atoms only",
         "Downstream use": "Review, assembly, or publication according to the API result, without client-side confirmation"
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/co-op-game-intro-generator.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/co-op-game-intro-generator.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/co-op-game-intro-generator.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/co-op-game-intro-generator.mp4"
+        }
       }
     },
     {
@@ -1174,6 +1434,20 @@
       "locales": {
         "zh-CN": {
           "displayName": "黑白照片上色"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/colorize-image.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/colorize-image.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/colorize-image.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/colorize-image.png"
+          ]
         }
       }
     },
@@ -1232,6 +1506,16 @@
         "zh-CN": {
           "displayName": "合并视频"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/combine-videos.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/combine-videos.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/combine-videos.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/combine-videos.mp4"
+        }
       }
     },
     {
@@ -1288,6 +1572,14 @@
       "locales": {
         "zh-CN": {
           "displayName": "编排 Lookbook"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/compose-lookbook.png"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/compose-lookbook.png"
         }
       }
     },
@@ -1346,6 +1638,16 @@
         "zh-CN": {
           "displayName": "视频校色"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/correct-video-color.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/correct-video-color.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/correct-video-color.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/correct-video-color.mp4"
+        }
       }
     },
     {
@@ -1384,6 +1686,14 @@
       "locales": {
         "zh-CN": {
           "displayName": "创作动物"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/create-animal.png"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/create-animal.png"
         }
       }
     },
@@ -1424,6 +1734,14 @@
         "zh-CN": {
           "displayName": "创建头像"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/create-avatar.png"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/create-avatar.png"
+        }
       }
     },
     {
@@ -1463,6 +1781,14 @@
       "locales": {
         "zh-CN": {
           "displayName": "创建 CAD 模型"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/create-cad.png"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/create-cad.png"
         }
       }
     },
@@ -1517,6 +1843,14 @@
         "zh-CN": {
           "displayName": "创建角色"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/create-character.png"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/create-character.png"
+        }
       }
     },
     {
@@ -1558,6 +1892,14 @@
         "Default layout": "Agent Skills-compatible folder outside runtime discovery until the intake and local check pass",
         "Model policy": "Agent-authored platform tooling; no paid media generation",
         "Downstream use": "Request-authorized local installation or separate maintainer intake for an official-package proposal"
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/create-custom-skill.svg"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/create-custom-skill.svg"
+        }
       }
     },
     {
@@ -1596,6 +1938,14 @@
       "locales": {
         "zh-CN": {
           "displayName": "设计旗帜"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/create-flag.png"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/create-flag.png"
         }
       }
     },
@@ -1654,6 +2004,14 @@
         "zh-CN": {
           "displayName": "创建图片演示文稿"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/create-image-deck.png"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/create-image-deck.png"
+        }
       }
     },
     {
@@ -1699,6 +2057,14 @@
       "locales": {
         "zh-CN": {
           "displayName": "设计 Logo"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/create-logo.png"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/create-logo.png"
         }
       }
     },
@@ -1747,6 +2113,14 @@
       "locales": {
         "zh-CN": {
           "displayName": "设计吉祥物 Logo"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/create-mascot-logo.png"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/create-mascot-logo.png"
         }
       }
     },
@@ -1798,6 +2172,14 @@
       "locales": {
         "zh-CN": {
           "displayName": "创建 NPC"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/create-npc.png"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/create-npc.png"
         }
       }
     },
@@ -1856,6 +2238,14 @@
       "locales": {
         "zh-CN": {
           "displayName": "创建社交媒体轮播图"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/create-social-carousel.png"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/create-social-carousel.png"
         }
       }
     },
@@ -1928,6 +2318,14 @@
         "zh-CN": {
           "displayName": "白底商品主图"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/create-white-background-product-mockup.png"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/create-white-background-product-mockup.png"
+        }
       }
     },
     {
@@ -1980,7 +2378,15 @@
           "displayName": "Short Audiovisual Prompt",
           "difference": "Short Audiovisual Prompt: Compact single-shot audiovisual video prompt. In contrast, Cross-model Video Prompt Adapter: Semantic adaptation of an existing video prompt."
         }
-      ]
+      ],
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/cross-model-video-prompt-adapter.svg"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/cross-model-video-prompt-adapter.svg"
+        }
+      }
     },
     {
       "id": "data-driven-ad-creative-video",
@@ -2017,6 +2423,16 @@
         "Default layout": "Validated Markdown",
         "Model policy": "Agent-authored planning; no paid media generation or unverified provider call",
         "Downstream use": "$generate-video or another verified Atom selected by Router intent matching"
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/data-driven-ad-creative-video.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/data-driven-ad-creative-video.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/data-driven-ad-creative-video.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/data-driven-ad-creative-video.mp4"
+        }
       }
     },
     {
@@ -2052,6 +2468,16 @@
         "Default layout": "User-requested ratio",
         "Model policy": "Current image and catalog-selected video routes; no standalone audio claim",
         "Downstream use": "Decorative creative advertising"
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/decorative-print-short.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/decorative-print-short.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/decorative-print-short.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/decorative-print-short.mp4"
+        }
       }
     },
     {
@@ -2087,6 +2513,14 @@
         "Default layout": "User-requested format",
         "Model policy": "Existing verified native Atoms only",
         "Downstream use": "Review, assembly, or publication according to the API result, without client-side confirmation"
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/detail-page-skill-course.svg"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/detail-page-skill-course.svg"
+        }
       }
     },
     {
@@ -2144,6 +2578,14 @@
         "zh-CN": {
           "displayName": "开发故事"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/develop-story.svg"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/develop-story.svg"
+        }
       }
     },
     {
@@ -2188,7 +2630,17 @@
           "displayName": "Brand Promo Video Generator",
           "difference": "Brand Promo Video Generator: Produce one authenticity-checked promotional short for a brand, app, website, shop, service, or launch. In contrast, Digital Product Promo Generator: Produce one authentic digital-product promo plan and video with explicit inputs, boundaries, and acceptance checks."
         }
-      ]
+      ],
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/digital-product-promo-generator.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/digital-product-promo-generator.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/digital-product-promo-generator.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/digital-product-promo-generator.mp4"
+        }
+      }
     },
     {
       "id": "dodge-game-video-generator",
@@ -2224,6 +2676,16 @@
         "Default layout": "User-requested format",
         "Model policy": "Existing verified native Atoms only",
         "Downstream use": "Review, assembly, or publication according to the API result, without client-side confirmation"
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/dodge-game-video-generator.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/dodge-game-video-generator.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/dodge-game-video-generator.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/dodge-game-video-generator.mp4"
+        }
       }
     },
     {
@@ -2278,7 +2740,17 @@
           "displayName": "Poster Motion",
           "difference": "Poster Motion: Animate an uploaded poster into one readable, full-frame motion poster. In contrast, Dot Matrix Brand Wordmark Motion: Produce one exact brand wordmark dot-matrix motion with explicit inputs, boundaries, and acceptance checks."
         }
-      ]
+      ],
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/dot-matrix-brand-wordmark-motion.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/dot-matrix-brand-wordmark-motion.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/dot-matrix-brand-wordmark-motion.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/dot-matrix-brand-wordmark-motion.mp4"
+        }
+      }
     },
     {
       "id": "edit-social-video",
@@ -2336,6 +2808,16 @@
         "zh-CN": {
           "displayName": "剪辑社交视频"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/edit-social-video.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/edit-social-video.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/edit-social-video.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/edit-social-video.mp4"
+        }
       }
     },
     {
@@ -2383,7 +2865,17 @@
           "displayName": "Line-Doodle Explainer",
           "difference": "Line-Doodle Explainer: Explain one topic with sparse line figures, narration beats, diagrams, and an approved animated storyboard. In contrast, Editorial Cutout Explainer: Plan and create a generic editorial cutout explainer with shallow 2D motion and approved evidence beats."
         }
-      ]
+      ],
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/editorial-cutout-explainer.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/editorial-cutout-explainer.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/editorial-cutout-explainer.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/editorial-cutout-explainer.mp4"
+        }
+      }
     },
     {
       "id": "expand-image",
@@ -2437,6 +2929,20 @@
         "zh-CN": {
           "displayName": "扩展图片"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/expand-image.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/expand-image.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/expand-image.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/expand-image.png"
+          ]
+        }
       }
     },
     {
@@ -2479,6 +2985,20 @@
       "locales": {
         "zh-CN": {
           "displayName": "更换眼睛颜色"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/eye-color-change.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/eye-color-change.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/eye-color-change.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/eye-color-change.png"
+          ]
         }
       }
     },
@@ -2543,6 +3063,14 @@
         "zh-CN": {
           "displayName": "替换时尚模特"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/fashion-model-replacement.jpg"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/fashion-model-replacement.jpg"
+        }
       }
     },
     {
@@ -2578,6 +3106,14 @@
         "Default layout": "User-requested format",
         "Model policy": "Existing verified native Atoms only",
         "Downstream use": "Review, assembly, or publication according to the API result, without client-side confirmation"
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/film-reference-prompt-writer.svg"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/film-reference-prompt-writer.svg"
+        }
       }
     },
     {
@@ -2614,6 +3150,16 @@
         "Default layout": "User-requested duration, ratio, route style, and audio plan",
         "Model policy": "Kling Omni complex references; Kling 3 precise frames; Seedance 2.5 audiovisual/artistic; Seedance 2.0 routine; H3 justified large motion",
         "Downstream use": "Human creative, spatial-fidelity, and publication review"
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/fpv-tour-video-generator.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/fpv-tour-video-generator.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/fpv-tour-video-generator.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/fpv-tour-video-generator.mp4"
+        }
       }
     },
     {
@@ -2654,6 +3200,16 @@
         "zh-CN": {
           "displayName": "生成视频"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/generate-video.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/generate-video.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/generate-video.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/generate-video.mp4"
+        }
       }
     },
     {
@@ -2689,6 +3245,14 @@
         "Default layout": "User-requested format",
         "Model policy": "Existing verified native Atoms only",
         "Downstream use": "Review, assembly, or publication according to the API result, without client-side confirmation"
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/h3-prompt-expert.svg"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/h3-prompt-expert.svg"
+        }
       }
     },
     {
@@ -2749,6 +3313,20 @@
       "locales": {
         "zh-CN": {
           "displayName": "更换发色"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/hair-color-change.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/hair-color-change.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/hair-color-change.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/hair-color-change.png"
+          ]
         }
       }
     },
@@ -2811,6 +3389,20 @@
         "zh-CN": {
           "displayName": "更换发型"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/hairstyle-change.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/hairstyle-change.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/hairstyle-change.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/hairstyle-change.png"
+          ]
+        }
       }
     },
     {
@@ -2847,6 +3439,16 @@
         "Default layout": "16:9 unless requested otherwise",
         "Model policy": "Current catalog-selected video route; no fixed provider",
         "Downstream use": "Standalone creative short"
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/handdrawn-live-action-fusion.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/handdrawn-live-action-fusion.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/handdrawn-live-action-fusion.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/handdrawn-live-action-fusion.mp4"
+        }
       }
     },
     {
@@ -2882,6 +3484,14 @@
         "Default layout": "Validated Markdown",
         "Model policy": "Agent-authored planning; no paid media generation or unverified provider call",
         "Downstream use": "$make-podcast-video or another verified Atom selected by Router intent matching"
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/handdrawn-story-video.svg"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/handdrawn-story-video.svg"
+        }
       }
     },
     {
@@ -2938,6 +3548,20 @@
         "zh-CN": {
           "displayName": "证件照格式化"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/id-photo-format.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/id-photo-format.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/id-photo-format.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/id-photo-format.png"
+          ]
+        }
       }
     },
     {
@@ -2988,6 +3612,14 @@
         "zh-CN": {
           "displayName": "图片合成"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/image-combiner.jpg"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/image-combiner.jpg"
+        }
       }
     },
     {
@@ -3026,6 +3658,20 @@
         "Default layout": "Validated Markdown",
         "Model policy": "Agent-authored planning; no paid media generation or unverified provider call",
         "Downstream use": "$make-infographic or another verified Atom selected by Router intent matching"
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/legal-diagram-redraw.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/legal-diagram-redraw.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/legal-diagram-redraw.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/legal-diagram-redraw.png"
+          ]
+        }
       }
     },
     {
@@ -3064,6 +3710,20 @@
         "Default layout": "Validated Markdown",
         "Model policy": "Agent-authored planning; no paid media generation or unverified provider call",
         "Downstream use": "$make-infographic or another verified Atom selected by Router intent matching"
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/legal-evidence-timeline.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/legal-evidence-timeline.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/legal-evidence-timeline.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/legal-evidence-timeline.png"
+          ]
+        }
       }
     },
     {
@@ -3112,7 +3772,17 @@
           "displayName": "Editorial Cutout Explainer",
           "difference": "Editorial Cutout Explainer: Plan and create a generic editorial cutout explainer with shallow 2D motion and approved evidence beats. In contrast, Line-Doodle Explainer: Explain one topic with sparse line figures, narration beats, diagrams, and an approved animated storyboard."
         }
-      ]
+      ],
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/line-doodle-explainer.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/line-doodle-explainer.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/line-doodle-explainer.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/line-doodle-explainer.mp4"
+        }
+      }
     },
     {
       "id": "lip-product-commercial",
@@ -3149,6 +3819,16 @@
         "Default layout": "User-requested ratio",
         "Model policy": "Verified image route for anchors and catalog-selected video route for shots",
         "Downstream use": "Lipstick, tint, gloss, oil, and glaze campaigns"
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/lip-product-commercial.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/lip-product-commercial.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/lip-product-commercial.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/lip-product-commercial.mp4"
+        }
       }
     },
     {
@@ -3185,6 +3865,16 @@
         "Default layout": "Source ratio or 16:9",
         "Model policy": "Verified image route for text-only preview; catalog-selected video route for clip",
         "Downstream use": "Social and creator visual effects"
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/live-sketch-motion.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/live-sketch-motion.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/live-sketch-motion.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/live-sketch-motion.mp4"
+        }
       }
     },
     {
@@ -3243,6 +3933,16 @@
         "zh-CN": {
           "displayName": "制作卡点视频"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-beat-synced-video.svg",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-beat-synced-video.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-beat-synced-video.svg",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-beat-synced-video.mp4"
+        }
       }
     },
     {
@@ -3283,6 +3983,16 @@
       "locales": {
         "zh-CN": {
           "displayName": "制作生日视频"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-birthday-video.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/make-birthday-video.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-birthday-video.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/make-birthday-video.mp4"
         }
       }
     },
@@ -3337,6 +4047,16 @@
         "zh-CN": {
           "displayName": "制作讲解视频"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-explainer-video.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/make-explainer-video.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-explainer-video.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/make-explainer-video.mp4"
+        }
       }
     },
     {
@@ -3376,6 +4096,14 @@
       "locales": {
         "zh-CN": {
           "displayName": "制作流程图"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-flowchart.png"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-flowchart.png"
         }
       }
     },
@@ -3417,6 +4145,14 @@
         "zh-CN": {
           "displayName": "制作节日贺卡"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-holiday-card.png"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-holiday-card.png"
+        }
       }
     },
     {
@@ -3456,6 +4192,14 @@
       "locales": {
         "zh-CN": {
           "displayName": "制作信息图"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-infographic.png"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-infographic.png"
         }
       }
     },
@@ -3498,6 +4242,16 @@
         "zh-CN": {
           "displayName": "制作动态字体视频"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-kinetic-typography.svg",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-kinetic-typography.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-kinetic-typography.svg",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-kinetic-typography.mp4"
+        }
       }
     },
     {
@@ -3539,6 +4293,20 @@
       "locales": {
         "zh-CN": {
           "displayName": "制作档案照"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-mugshot-photo.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/make-mugshot-photo.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-mugshot-photo.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/make-mugshot-photo.png"
+          ]
         }
       }
     },
@@ -3598,6 +4366,14 @@
         "zh-CN": {
           "displayName": "制作音乐视频"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-music-video.png"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-music-video.png"
+        }
       }
     },
     {
@@ -3641,6 +4417,20 @@
         "zh-CN": {
           "displayName": "制作宠物肖像"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-pet-portrait.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/make-pet-portrait.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-pet-portrait.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/make-pet-portrait.png"
+          ]
+        }
       }
     },
     {
@@ -3680,6 +4470,16 @@
       "locales": {
         "zh-CN": {
           "displayName": "制作播客视频"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-podcast-video.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/make-podcast-video.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-podcast-video.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/make-podcast-video.mp4"
         }
       }
     },
@@ -3735,6 +4535,16 @@
         "zh-CN": {
           "displayName": "制作商品广告"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-product-commercial.jpg",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/make-product-commercial.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-product-commercial.jpg",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/make-product-commercial.mp4"
+        }
       }
     },
     {
@@ -3782,6 +4592,20 @@
         "zh-CN": {
           "displayName": "制作自拍照"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-selfie.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/make-selfie.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-selfie.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/make-selfie.png"
+          ]
+        }
       }
     },
     {
@@ -3825,6 +4649,20 @@
         "zh-CN": {
           "displayName": "制作剪影"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-silhouette.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/make-silhouette.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-silhouette.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/make-silhouette.png"
+          ]
+        }
       }
     },
     {
@@ -3865,6 +4703,16 @@
       "locales": {
         "zh-CN": {
           "displayName": "制作说话视频"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-talking-video.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/make-talking-video.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-talking-video.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/make-talking-video.mp4"
         }
       }
     },
@@ -3923,6 +4771,14 @@
         "zh-CN": {
           "displayName": "制作缩略图"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-thumbnail.png"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-thumbnail.png"
+        }
       }
     },
     {
@@ -3980,6 +4836,16 @@
         "zh-CN": {
           "displayName": "制作视频片头"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-video-intro.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/make-video-intro.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-video-intro.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/make-video-intro.mp4"
+        }
       }
     },
     {
@@ -4034,6 +4900,20 @@
         "zh-CN": {
           "displayName": "制作钱包照片"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-wallet-photo.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/make-wallet-photo.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-wallet-photo.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/make-wallet-photo.png"
+          ]
+        }
       }
     },
     {
@@ -4078,6 +4958,22 @@
         "zh-CN": {
           "displayName": "制作婚礼照片"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-wedding-photo.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/make-wedding-photo-1.png",
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/make-wedding-photo-2.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-wedding-photo.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/make-wedding-photo-1.png",
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/make-wedding-photo-2.png"
+          ]
+        }
       }
     },
     {
@@ -4115,6 +5011,16 @@
         "Default layout": "Source or user-requested ratio",
         "Model policy": "Current catalog-selected performance-capable video route",
         "Downstream use": "Character scenes and drama shots"
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/micro-expression-performance.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/micro-expression-performance.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/micro-expression-performance.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/micro-expression-performance.mp4"
+        }
       }
     },
     {
@@ -4167,7 +5073,15 @@
           "displayName": "Article Hand-drawn Illustrations",
           "difference": "Article Hand-drawn Illustrations: Turn an article's key ideas into sparse, memorable hand-drawn body illustrations. In contrast, Minimal Zine Poster: Create sparse editorial posters with aged paper, radical negative space, and one vivid accent."
         }
-      ]
+      ],
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/minimal-zine-poster.png"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/minimal-zine-poster.png"
+        }
+      }
     },
     {
       "id": "minimalist-product-ad-generator",
@@ -4216,7 +5130,17 @@
           "displayName": "Product Launch Video Plan",
           "difference": "Product Launch Video Plan: Product launch-film plan with hook, reveal, and end-card arc. In contrast, Minimalist Product Ad Generator: Produce a sparse, product-faithful commercial with approved copy and beat-level continuity."
         }
-      ]
+      ],
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/minimalist-product-ad-generator.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/minimalist-product-ad-generator.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/minimalist-product-ad-generator.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/minimalist-product-ad-generator.mp4"
+        }
+      }
     },
     {
       "id": "mono-color",
@@ -4274,7 +5198,15 @@
           "displayName": "Apply Photo Filter",
           "difference": "Apply Photo Filter: Apply one filter without changing scene content. In contrast, Mono Color: Create one- or two-ink editorial print images with active paper, typographic tension, and controlled halftone texture."
         }
-      ]
+      ],
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/mono-color.svg"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/mono-color.svg"
+        }
+      }
     },
     {
       "id": "music-video-subtitle-generator",
@@ -4311,6 +5243,16 @@
         "Default layout": "User-requested ratio, music window, subtitle language/style, and resolution",
         "Model policy": "Deterministic subtitle/audio finishing; current catalog video route only for needed visual clips",
         "Downstream use": "Human lyric, audio, creative, and publication review"
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/music-video-subtitle-generator.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/music-video-subtitle-generator.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/music-video-subtitle-generator.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/music-video-subtitle-generator.mp4"
+        }
       }
     },
     {
@@ -4363,7 +5305,15 @@
           "displayName": "Cross-model Video Prompt Adapter",
           "difference": "Cross-model Video Prompt Adapter: Semantic adaptation of an existing video prompt. In contrast, Narrative Video Prompt: Structured prompt for one narrative video shot."
         }
-      ]
+      ],
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/narrative-video-prompt.svg"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/narrative-video-prompt.svg"
+        }
+      }
     },
     {
       "id": "narrative-video-storyboard",
@@ -4398,6 +5348,14 @@
         "Default layout": "Validated Markdown",
         "Model policy": "Agent-authored planning; no paid media generation or unverified provider call",
         "Downstream use": "$plan-film-storyboard or another verified Atom selected by Router intent matching"
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/narrative-video-storyboard.svg"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/narrative-video-storyboard.svg"
+        }
       }
     },
     {
@@ -4452,6 +5410,20 @@
         "zh-CN": {
           "displayName": "服装设计"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/outfit-design.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/outfit-design.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/outfit-design.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/outfit-design.png"
+          ]
+        }
       }
     },
     {
@@ -4488,6 +5460,16 @@
         "Default layout": "16:9; user-requested ratio overrides",
         "Model policy": "GPT Image 2 Medium/2K for stills; current catalog-selected video route for clips; no standalone audio claim",
         "Downstream use": "Editorial explainers, social B-roll, and approved multi-clip assembly"
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/paper-collage-explainer-generator.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/paper-collage-explainer-generator.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/paper-collage-explainer-generator.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/paper-collage-explainer-generator.mp4"
+        }
       }
     },
     {
@@ -4524,6 +5506,16 @@
         "Default layout": "16:9 unless requested otherwise",
         "Model policy": "Current verified image route for stills and catalog-selected video route for shots; no standalone audio claim",
         "Downstream use": "Science, education, and knowledge shorts"
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/papercraft-stop-motion-explainer.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/papercraft-stop-motion-explainer.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/papercraft-stop-motion-explainer.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/papercraft-stop-motion-explainer.mp4"
+        }
       }
     },
     {
@@ -4600,6 +5592,22 @@
         "zh-CN": {
           "displayName": "照片拼贴"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/photo-collage.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/photo-collage-1.png",
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/photo-collage-2.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/photo-collage.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/photo-collage-1.png",
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/photo-collage-2.png"
+          ]
+        }
       }
     },
     {
@@ -4656,6 +5664,14 @@
       "locales": {
         "zh-CN": {
           "displayName": "规划漫画分镜"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/plan-comic-storyboard.svg"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/plan-comic-storyboard.svg"
         }
       }
     },
@@ -4714,6 +5730,14 @@
       "locales": {
         "zh-CN": {
           "displayName": "规划电影分镜"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/plan-film-storyboard.png"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/plan-film-storyboard.png"
         }
       }
     },
@@ -4787,6 +5811,14 @@
         "zh-CN": {
           "displayName": "海报设计"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/poster-design.png"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/poster-design.png"
+        }
       }
     },
     {
@@ -4840,7 +5872,17 @@
           "displayName": "Make Video Intro",
           "difference": "Make Video Intro: Create one short reusable branded intro with exact identity, legible title and a clean transition into program content. In contrast, Poster Motion: Animate an uploaded poster into one readable, full-frame motion poster."
         }
-      ]
+      ],
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/poster-motion.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/poster-motion.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/poster-motion.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/poster-motion.mp4"
+        }
+      }
     },
     {
       "id": "pov-short-film-generator",
@@ -4877,6 +5919,16 @@
         "Default layout": "User-requested duration, ratio, visual direction, and audio plan",
         "Model policy": "Kling Omni complex references; Kling 3 precise frames; Seedance 2.5 audiovisual/artistic; Veo eligible synchronous audio; Seedance 2.0 routine; H3 justified large motion",
         "Downstream use": "Human creative, continuity, safety, and publication review"
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/pov-short-film-generator.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/pov-short-film-generator.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/pov-short-film-generator.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/pov-short-film-generator.mp4"
+        }
       }
     },
     {
@@ -4918,6 +5970,20 @@
       "locales": {
         "zh-CN": {
           "displayName": "景观改造预览"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/preview-landscape.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/preview-landscape.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/preview-landscape.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/preview-landscape.png"
+          ]
         }
       }
     },
@@ -4961,6 +6027,20 @@
         "zh-CN": {
           "displayName": "墙面漆色预览"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/preview-paint.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/preview-paint.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/preview-paint.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/preview-paint.png"
+          ]
+        }
       }
     },
     {
@@ -4996,6 +6076,14 @@
         "Default layout": "Source ratio unless overridden",
         "Model policy": "Current verified image-edit route; catalog-selected video route only after still approval",
         "Downstream use": "Stylized stills and short motion tests"
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/primitive-folk-cgi-restyle.png"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/primitive-folk-cgi-restyle.png"
+        }
       }
     },
     {
@@ -5065,6 +6153,14 @@
         "zh-CN": {
           "displayName": "商品详情页"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/product-detail-page.jpg"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/product-detail-page.jpg"
+        }
       }
     },
     {
@@ -5112,7 +6208,15 @@
           "displayName": "Minimalist Product Ad Generator",
           "difference": "Minimalist Product Ad Generator: Produce a sparse, product-faithful commercial with approved copy and beat-level continuity. In contrast, Product Launch Video Plan: Product launch-film plan with hook, reveal, and end-card arc."
         }
-      ]
+      ],
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/product-launch-video.svg"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/product-launch-video.svg"
+        }
+      }
     },
     {
       "id": "product-packaging",
@@ -5171,6 +6275,14 @@
         "zh-CN": {
           "displayName": "商品包装设计"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/product-packaging.png"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/product-packaging.png"
+        }
       }
     },
     {
@@ -5226,6 +6338,20 @@
         "zh-CN": {
           "displayName": "职业头像"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/professional-headshot.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/professional-headshot.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/professional-headshot.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/professional-headshot.png"
+          ]
+        }
       }
     },
     {
@@ -5280,6 +6406,20 @@
         "zh-CN": {
           "displayName": "物体改色"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/recolor-object.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/recolor-object.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/recolor-object.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/recolor-object.png"
+          ]
+        }
       }
     },
     {
@@ -5323,6 +6463,22 @@
       "locales": {
         "zh-CN": {
           "displayName": "复刻社交照片风格"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/recreate-social-photo.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/recreate-social-photo-1.png",
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/recreate-social-photo-2.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/recreate-social-photo.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/recreate-social-photo-1.png",
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/recreate-social-photo-2.png"
+          ]
         }
       }
     },
@@ -5377,6 +6533,20 @@
         "zh-CN": {
           "displayName": "移除背景"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/remove-background.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/remove-background.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/remove-background.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/remove-background.png"
+          ]
+        }
       }
     },
     {
@@ -5419,6 +6589,20 @@
         "zh-CN": {
           "displayName": "移除眼镜"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/remove-glasses.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/remove-glasses.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/remove-glasses.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/remove-glasses.png"
+          ]
+        }
       }
     },
     {
@@ -5460,6 +6644,20 @@
       "locales": {
         "zh-CN": {
           "displayName": "移除图片标记"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/remove-image-mark.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/remove-image-mark.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/remove-image-mark.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/remove-image-mark.png"
+          ]
         }
       }
     },
@@ -5515,6 +6713,20 @@
         "zh-CN": {
           "displayName": "移除物体"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/remove-object.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/remove-object.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/remove-object.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/remove-object.png"
+          ]
+        }
       }
     },
     {
@@ -5569,6 +6781,20 @@
         "zh-CN": {
           "displayName": "移除照片滤镜"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/remove-photo-filter.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/remove-photo-filter.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/remove-photo-filter.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/remove-photo-filter.png"
+          ]
+        }
       }
     },
     {
@@ -5608,6 +6834,16 @@
       "locales": {
         "zh-CN": {
           "displayName": "移除视频标记"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/remove-video-mark.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/remove-video-mark.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/remove-video-mark.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/remove-video-mark.mp4"
         }
       }
     },
@@ -5669,6 +6905,20 @@
         "zh-CN": {
           "displayName": "渲染漫画页面"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/render-comic-page.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/render-comic-page.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/render-comic-page.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/render-comic-page.png"
+          ]
+        }
       }
     },
     {
@@ -5722,6 +6972,20 @@
       "locales": {
         "zh-CN": {
           "displayName": "房间风格改造"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/restyle-room.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/restyle-room.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/restyle-room.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/restyle-room.png"
+          ]
         }
       }
     },
@@ -5780,6 +7044,16 @@
         "zh-CN": {
           "displayName": "视频风格转换"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/restyle-video.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/restyle-video.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/restyle-video.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/restyle-video.mp4"
+        }
       }
     },
     {
@@ -5833,6 +7107,20 @@
       "locales": {
         "zh-CN": {
           "displayName": "修饰皮肤瑕疵"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/retouch-blemish.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/retouch-blemish.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/retouch-blemish.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/retouch-blemish.png"
+          ]
         }
       }
     },
@@ -5895,6 +7183,20 @@
         "zh-CN": {
           "displayName": "光头造型预览"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/shave-head.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/shave-head.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/shave-head.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/shave-head.png"
+          ]
+        }
       }
     },
     {
@@ -5947,7 +7249,15 @@
           "displayName": "Cross-model Video Prompt Adapter",
           "difference": "Cross-model Video Prompt Adapter: Semantic adaptation of an existing video prompt. In contrast, Short Audiovisual Prompt: Compact single-shot audiovisual video prompt."
         }
-      ]
+      ],
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/short-audiovisual-prompt.svg"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/short-audiovisual-prompt.svg"
+        }
+      }
     },
     {
       "id": "smooth-wrinkles",
@@ -6001,6 +7311,20 @@
         "zh-CN": {
           "displayName": "平滑皱纹"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/smooth-wrinkles.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/smooth-wrinkles.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/smooth-wrinkles.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/smooth-wrinkles.png"
+          ]
+        }
       }
     },
     {
@@ -6039,6 +7363,20 @@
         "Default layout": "Validated Markdown",
         "Model policy": "Agent-authored planning; no paid media generation or unverified provider call",
         "Downstream use": "$make-infographic or another verified Atom selected by Router intent matching"
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/social-knowledge-notes.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/social-knowledge-notes.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/social-knowledge-notes.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/social-knowledge-notes.png"
+          ]
+        }
       }
     },
     {
@@ -6083,7 +7421,15 @@
           "displayName": "Photo Collage",
           "difference": "Photo Collage: Arrange original photos into one intentional collage. In contrast, Spatial Four Views: Generate overhead, eye-level, reverse, and lateral views while preserving the same space."
         }
-      ]
+      ],
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/spatial-four-view.svg"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/spatial-four-view.svg"
+        }
+      }
     },
     {
       "id": "suspense-title-sequence-generator",
@@ -6120,6 +7466,16 @@
         "Default layout": "15 seconds and 16:9 by default; use requested ratio/duration when the approved route supports it",
         "Model policy": "Text-safe image route for anchors; current catalog video route for the approved motion plan; deterministic exact-copy finishing",
         "Downstream use": "Human title, credit, creative, and publication review"
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/suspense-title-sequence-generator.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/suspense-title-sequence-generator.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/suspense-title-sequence-generator.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/suspense-title-sequence-generator.mp4"
+        }
       }
     },
     {
@@ -6158,6 +7514,20 @@
         "Default layout": "Validated Markdown",
         "Model policy": "Agent-authored planning; no paid media generation or unverified provider call",
         "Downstream use": "$make-infographic or another verified Atom selected by Router intent matching"
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/technical-visual-explainer.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/technical-visual-explainer.png"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/technical-visual-explainer.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/technical-visual-explainer.png"
+          ]
+        }
       }
     },
     {
@@ -6193,6 +7563,14 @@
         "Default layout": "Validated Markdown",
         "Model policy": "Agent-authored planning; no paid media generation or unverified provider call",
         "Downstream use": "$make-video-intro or another verified Atom selected by Router intent matching"
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/testimonial-quote-video.svg"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/testimonial-quote-video.svg"
+        }
       }
     },
     {
@@ -6227,6 +7605,14 @@
         "Default layout": "User-requested ratio",
         "Model policy": "Current catalog-selected video route",
         "Downstream use": "Talking-head and knowledge editing"
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/transcript-broll-plan.svg"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/transcript-broll-plan.svg"
+        }
       }
     },
     {
@@ -6269,6 +7655,20 @@
       "locales": {
         "zh-CN": {
           "displayName": "翻译图片文字"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/translate-image-text.jpg",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/translate-image-text.jpg"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/translate-image-text.jpg",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/translate-image-text.jpg"
+          ]
         }
       }
     },
@@ -6327,6 +7727,16 @@
         "zh-CN": {
           "displayName": "视频超分辨率"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/upscale-video.png",
+          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/upscale-video.mp4"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/upscale-video.png",
+          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/upscale-video.mp4"
+        }
       }
     },
     {
@@ -6380,7 +7790,15 @@
           "displayName": "Recolor Object",
           "difference": "Recolor Object: Recolor one object without tinting the whole image. In contrast, Urban Daylight Documentary Grade: Recover clean urban daylight depth without changing the scene."
         }
-      ]
+      ],
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/urban-daylight-documentary-grade.svg"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/urban-daylight-documentary-grade.svg"
+        }
+      }
     },
     {
       "id": "video-model-advisor",
@@ -6415,6 +7833,14 @@
         "Default layout": "Validated Markdown",
         "Model policy": "Agent-authored planning; no paid media generation or unverified provider call",
         "Downstream use": "$generate-video or another verified Atom selected by Router intent matching"
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/video-model-advisor.svg"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/video-model-advisor.svg"
+        }
       }
     },
     {
@@ -6450,6 +7876,14 @@
         "Default layout": "Validated Markdown",
         "Model policy": "Agent-authored planning; no paid media generation or unverified provider call",
         "Downstream use": "$generate-video or another verified Atom selected by Router intent matching"
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/video-prompt-failure-diagnosis.svg"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/video-prompt-failure-diagnosis.svg"
+        }
       }
     },
     {
@@ -6521,6 +7955,22 @@
         "zh-CN": {
           "displayName": "虚拟试穿"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/virtual-try-on.png",
+          "sourceImages": [
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/virtual-try-on-1.png",
+            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/virtual-try-on-2.webp"
+          ]
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/virtual-try-on.png",
+          "sourceImages": [
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/virtual-try-on-1.png",
+            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/virtual-try-on-2.webp"
+          ]
+        }
       }
     },
     {
@@ -6560,6 +8010,14 @@
       "locales": {
         "zh-CN": {
           "displayName": "户型图可视化"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/visualize-floor-plan.png"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/visualize-floor-plan.png"
         }
       }
     },
@@ -6601,6 +8059,14 @@
         "zh-CN": {
           "displayName": "创作短剧系列"
         }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/write-short-drama-series.svg"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/write-short-drama-series.svg"
+        }
       }
     },
     {
@@ -6640,6 +8106,14 @@
       "locales": {
         "zh-CN": {
           "displayName": "创作短视频开场钩子"
+        }
+      },
+      "media": {
+        "cn": {
+          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/write-short-video-hooks.svg"
+        },
+        "global": {
+          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/write-short-video-hooks.svg"
         }
       }
     }

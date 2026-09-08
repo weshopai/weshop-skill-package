@@ -38,11 +38,10 @@
         "output": { "type": "object", "required": ["Media type"], "additionalProperties": { "type": "string" } },
         "similarSkills": { "type": "array", "maxItems": 3, "items": { "type": "object", "additionalProperties": false, "required": ["id", "displayName", "difference"], "properties": { "id": { "type": "string" }, "displayName": { "type": "string" }, "difference": { "type": "string", "minLength": 1 } } } }
         ,"media": {
-          "type": "object", "additionalProperties": false,
+          "type": "object", "additionalProperties": false, "required": ["cn", "global"],
           "properties": {
-            "cover": { "type": "string", "pattern": "^/(?:skill-covers/)?[A-Za-z0-9._/-]+\\.(png|jpg|jpeg|webp|gif|avif|svg)$" },
-            "coverMotion": { "type": "string", "pattern": "^/(?:skill-covers/)?[A-Za-z0-9._/-]+\\.(mp4|webm)$" },
-            "sourceImages": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "pattern": "^/(?:skill-covers/)?[A-Za-z0-9._/-]+\\.(png|jpg|jpeg|webp|gif|avif)$" } }
+            "cn": { "$ref": "#/$defs/marketMedia" },
+            "global": { "$ref": "#/$defs/marketMedia" }
           }
         },
         "locales": {
@@ -65,6 +64,14 @@
             "reasonCode": { "type": "string", "pattern": "^[a-z0-9._-]+$" }
           }
         }
+      }
+    },
+    "marketMedia": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "cover": { "type": "string", "pattern": "^https://[^/]+/.+\\.(png|jpg|jpeg|webp|gif|avif|svg)$" },
+        "coverMotion": { "type": "string", "pattern": "^https://[^/]+/.+\\.(mp4|webm)$" },
+        "sourceImages": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "pattern": "^https://[^/]+/.+\\.(png|jpg|jpeg|webp|gif|avif)$" } }
       }
     }
   }

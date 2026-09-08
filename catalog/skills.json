@@ -35,6 +35,11 @@
         "Default layout": "User-requested ratio, duration, resolution, language, and silent or dialogue-led audio mode",
         "Model policy": "Kling 3 precise frames; Kling Omni complex/motion references; Seedance 2.5 long audiovisual/artistic/performance; Veo source-image synchronous audio; Seedance 2.0 routine; H3 large/natural motion",
         "Downstream use": "Human creative, continuity, audio, safety, and publication review"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "3D 动画短片"
+        }
       }
     },
     {
@@ -73,6 +78,11 @@
         "Default layout": "Preserve source composition; no collage",
         "Model policy": "GPT Image 2 Medium/2K for consistency-sensitive final image editing",
         "Downstream use": "Cosmetic consultation and personal visualization"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "添加牙套"
+        }
       }
     },
     {
@@ -111,6 +121,11 @@
         "Default layout": "Original frame with overlays",
         "Model policy": "GPT Image 2 Medium with agent-led copy and placement verification",
         "Downstream use": "Comics, social posts, and annotations"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "添加对话气泡"
+        }
       }
     },
     {
@@ -150,6 +165,11 @@
         "Default layout": "Preserve source composition; no collage",
         "Model policy": "GPT Image 2 Medium/2K for consistency-sensitive final image editing",
         "Downstream use": "Tattoo consultation and placement planning"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "添加纹身"
+        }
       }
     },
     {
@@ -202,7 +222,12 @@
           "displayName": "Upscale Video",
           "difference": "Upscale Video: Increase supplied video resolution and clarity while preserving timing, content, grain intent and natural detail. In contrast, Add Video Effect: Add one specified effect to a supplied video at a defined time and region while preserving underlying footage."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "添加视频特效"
+        }
+      }
     },
     {
       "id": "ai-banner-design",
@@ -266,7 +291,12 @@
           "displayName": "Product Detail Page",
           "difference": "Product Detail Page: Build modular ecommerce detail-page image sets. In contrast, AI Banner Design: Research and design channel-ready commercial banners."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "AI 横幅设计"
+        }
+      }
     },
     {
       "id": "ai-product",
@@ -326,7 +356,12 @@
           "displayName": "Product Packaging",
           "difference": "Product Packaging: Turn product references into a structured packaging concept board. In contrast, AI Product: Place a real product into a new commercial scene."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "AI 商品场景"
+        }
+      }
     },
     {
       "id": "animate-image",
@@ -361,6 +396,11 @@
         "Default layout": "User-requested delivery format",
         "Model policy": "`kling` v1.0 with `modelName: Kling_3_0`",
         "Downstream use": "Motion posts and cinematic inserts"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "图片转动画"
+        }
       }
     },
     {
@@ -412,7 +452,12 @@
           "displayName": "Smooth Wrinkles",
           "difference": "Smooth Wrinkles: Reduce chosen skin or clothing wrinkles without flattening structure. In contrast, Apply Makeup: Preview one makeup look without replacing or reshaping the face."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "试妆"
+        }
+      }
     },
     {
       "id": "apply-photo-filter",
@@ -462,7 +507,12 @@
           "displayName": "Recolor Object",
           "difference": "Recolor Object: Recolor one object without tinting the whole image. In contrast, Apply Photo Filter: Apply one filter without changing scene content."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "应用照片滤镜"
+        }
+      }
     },
     {
       "id": "article-handdrawn-illustrations",
@@ -593,7 +643,12 @@
           "displayName": "Digital Product Promo Generator",
           "difference": "Digital Product Promo Generator: Produce one authentic digital-product promo plan and video with explicit inputs, boundaries, and acceptance checks. In contrast, Brand Promo Video Generator: Produce one authenticity-checked promotional short for a brand, app, website, shop, service, or launch."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "品牌宣传视频"
+        }
+      }
     },
     {
       "id": "brand-stream-mg",
@@ -752,7 +807,12 @@
           "displayName": "Shave Head",
           "difference": "Shave Head: Preview a natural bald or shaved-head appearance. In contrast, Change Bangs: Preview one fringe style without replacing the full haircut."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "更换刘海"
+        }
+      }
     },
     {
       "id": "change-pose",
@@ -813,7 +873,12 @@
           "displayName": "Virtual Try-On",
           "difference": "Virtual Try-On: Try on or replace a garment with fidelity checks. In contrast, Change Pose: Change a person’s pose without changing their look."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "更换姿势"
+        }
+      }
     },
     {
       "id": "character-reference-sheet",
@@ -848,6 +913,11 @@
         "Default quantity": "No independent output; `$create-character` returns 1 canonical sheet by default and optionally expands to 8 total images after confirmation",
         "Model policy": "Owned by `$create-character`",
         "Downstream use": "Backward-compatible routing only"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "角色参考设定表"
+        }
       }
     },
     {
@@ -1022,7 +1092,12 @@
           "displayName": "Restyle Room",
           "difference": "Restyle Room: Restyle a supplied room while preserving architecture, layout constraints and declared keep-items. In contrast, Clean Room: Remove room clutter without redesigning the space."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "清理房间杂物"
+        }
+      }
     },
     {
       "id": "co-op-game-intro-generator",
@@ -1095,6 +1170,11 @@
         "Default layout": "Source composition",
         "Model policy": "GPT Image 2 Medium",
         "Downstream use": "Family, archive-style, and editorial imagery"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "黑白照片上色"
+        }
       }
     },
     {
@@ -1147,7 +1227,12 @@
           "displayName": "Make Music Video",
           "difference": "Make Music Video: Cut supplied footage to one song through a validated lyric, rhythm, and visual-arc EDL. In contrast, Combine Videos: Combine supplied clips into one ordered video with intentional trims, transitions and audio handling; do not regenerate footage."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "合并视频"
+        }
+      }
     },
     {
       "id": "compose-lookbook",
@@ -1199,7 +1284,12 @@
           "displayName": "Create Image Deck",
           "difference": "Create Image Deck: Plan, generate, inspect, and package a consistent image-first deck. In contrast, Compose Lookbook: Arrange several outfit photos into one editorial page."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "编排 Lookbook"
+        }
+      }
     },
     {
       "id": "correct-video-color",
@@ -1251,7 +1341,12 @@
           "displayName": "Upscale Video",
           "difference": "Upscale Video: Increase supplied video resolution and clarity while preserving timing, content, grain intent and natural detail. In contrast, Correct Video Color: Correct white balance, exposure and shot-to-shot consistency without changing content or creative look."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "视频校色"
+        }
+      }
     },
     {
       "id": "create-animal",
@@ -1285,6 +1380,11 @@
         "Default layout": "User-requested or source-preserving format",
         "Model policy": "Z-Image by default for pure photorealistic text-to-image; GPT Image 2 Medium only when its documented hard constraints apply",
         "Downstream use": "Wildlife visuals and original creature concepts"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "创作动物"
+        }
       }
     },
     {
@@ -1319,6 +1419,11 @@
         "Default layout": "User-requested or source-preserving format",
         "Model policy": "GPT Image 2 Medium/2K for consistency-sensitive final image editing",
         "Downstream use": "Profile pictures and account icons"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "创建头像"
+        }
       }
     },
     {
@@ -1354,6 +1459,11 @@
         "Default layout": "Source-preserving or dimension-defined format",
         "Model policy": "STEP-first parametric CAD workflow",
         "Downstream use": "Mechanical design handoff, not engineering certification"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "创建 CAD 模型"
+        }
       }
     },
     {
@@ -1402,7 +1512,12 @@
           "displayName": "Create NPC",
           "difference": "Create NPC: Create one original non-player character image whose occupation, faction and gameplay role are visually legible. In contrast, Create Character: Build one canonical identity, then derive seven consistent character assets from it."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "创建角色"
+        }
+      }
     },
     {
       "id": "create-custom-skill",
@@ -1477,6 +1592,11 @@
         "Default layout": "User-requested or source-preserving format",
         "Model policy": "GPT Image 2 Medium/2K for controlled flat geometry and one selected output",
         "Downstream use": "Organizations, fictional worlds and civic concepts"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "设计旗帜"
+        }
       }
     },
     {
@@ -1529,7 +1649,12 @@
           "displayName": "Create Social Carousel",
           "difference": "Create Social Carousel: Create a coherent mobile-first social carousel as separately generated ordered pages. In contrast, Create Image Deck: Plan, generate, inspect, and package a consistent image-first deck."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "创建图片演示文稿"
+        }
+      }
     },
     {
       "id": "create-logo",
@@ -1570,7 +1695,12 @@
           "displayName": "Create Mascot Logo",
           "difference": "Create Mascot Logo: Create a compact, cute mascot mark with controlled silhouette, color, and separately labeled directions. In contrast, Create Logo: Design one selected original logo mark or lockup from a brand brief, after concept reduction and application checks."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "设计 Logo"
+        }
+      }
     },
     {
       "id": "create-mascot-logo",
@@ -1613,7 +1743,12 @@
           "displayName": "Create Logo",
           "difference": "Create Logo: Design one selected original logo mark or lockup from a brand brief, after concept reduction and application checks. In contrast, Create Mascot Logo: Create a compact, cute mascot mark with controlled silhouette, color, and separately labeled directions."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "设计吉祥物 Logo"
+        }
+      }
     },
     {
       "id": "create-npc",
@@ -1659,7 +1794,12 @@
           "displayName": "Create Character",
           "difference": "Create Character: Build one canonical identity, then derive seven consistent character assets from it. In contrast, Create NPC: Create one original non-player character image whose occupation, faction and gameplay role are visually legible."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "创建 NPC"
+        }
+      }
     },
     {
       "id": "create-social-carousel",
@@ -1712,7 +1852,12 @@
           "displayName": "Create Image Deck",
           "difference": "Create Image Deck: Plan, generate, inspect, and package a consistent image-first deck. In contrast, Create Social Carousel: Create a coherent mobile-first social carousel as separately generated ordered pages."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "创建社交媒体轮播图"
+        }
+      }
     },
     {
       "id": "create-white-background-product-mockup",
@@ -1778,7 +1923,12 @@
           "displayName": "Product Packaging",
           "difference": "Product Packaging: Turn product references into a structured packaging concept board. In contrast, White Background Product Mockup: Create product, flat-lay, and ghost-mannequin mockups without identity drift."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "白底商品主图"
+        }
+      }
     },
     {
       "id": "cross-model-video-prompt-adapter",
@@ -1989,7 +2139,12 @@
           "displayName": "Generate Film Storyboard",
           "difference": "Generate Film Storyboard: Generate reviewable film storyboard frames from narrative material with continuity locks. In contrast, Develop Story: Build or repair a story foundation before medium-specific production."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "开发故事"
+        }
+      }
     },
     {
       "id": "digital-product-promo-generator",
@@ -2176,7 +2331,12 @@
           "displayName": "Make Music Video",
           "difference": "Make Music Video: Cut supplied footage to one song through a validated lyric, rhythm, and visual-arc EDL. In contrast, Edit Social Video: Turn supplied footage into one platform-ready social video using current placement rules, a strong opening and evidence-faithful captions."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "剪辑社交视频"
+        }
+      }
     },
     {
       "id": "editorial-cutout-explainer",
@@ -2272,6 +2432,11 @@
         "Default layout": "Centered source unless the user requests directional safe area or copy space",
         "Model policy": "GPT Image 2 medium/2K first; one `expandimage` fallback only after visual failure or when exact arbitrary pixel geometry requires it",
         "Downstream use": "Ratio correction for every image Skill, posters, banners, product pages, social placements, and campaign variants"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "扩展图片"
+        }
       }
     },
     {
@@ -2310,6 +2475,11 @@
         "Default layout": "Preserve source composition; no collage",
         "Model policy": "GPT Image 2 Medium/2K for consistency-sensitive final image editing",
         "Downstream use": "Contact-lens preview, beauty planning, and personal visualization"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "更换眼睛颜色"
+        }
       }
     },
     {
@@ -2368,7 +2538,12 @@
           "displayName": "Virtual Try-On",
           "difference": "Virtual Try-On: Try on or replace a garment with fidelity checks. In contrast, Fashion Model Replacement: Replace a fashion model while keeping the outfit intact."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "替换时尚模特"
+        }
+      }
     },
     {
       "id": "film-reference-prompt-writer",
@@ -2474,6 +2649,11 @@
         "Default layout": "User-requested delivery format",
         "Model policy": "H3 large/natural motion; Kling Omni complex/motion references; Kling 3 precise frames/products; Seedance 2.5 long audiovisual/artistic/performance; Veo source-image premium synchronous audio; Seedance 2.0 routine",
         "Downstream use": "General video generation"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "生成视频"
+        }
       }
     },
     {
@@ -2565,7 +2745,12 @@
           "displayName": "Shave Head",
           "difference": "Shave Head: Preview a natural bald or shaved-head appearance. In contrast, Hair Color Change: Preview one new hair color without changing the person or cut."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "更换发色"
+        }
+      }
     },
     {
       "id": "hairstyle-change",
@@ -2621,7 +2806,12 @@
           "displayName": "Shave Head",
           "difference": "Shave Head: Preview a natural bald or shaved-head appearance. In contrast, Hairstyle Change: Preview one different hairstyle without changing identity."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "更换发型"
+        }
+      }
     },
     {
       "id": "handdrawn-live-action-fusion",
@@ -2743,7 +2933,12 @@
           "displayName": "Professional Headshot",
           "difference": "Professional Headshot: Research the channel, then create a properly posed and lit professional portrait. In contrast, ID Photo Format: Research the authority, correct the capture, then crop around the measured head."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "证件照格式化"
+        }
+      }
     },
     {
       "id": "image-combiner",
@@ -2788,6 +2983,11 @@
         "Video output": "No",
         "Model policy": "Route the best current multi-reference image editor; specialized combiner endpoints are optional",
         "Downstream use": "Subject-in-scene composition, multi-subject photos, concept visualization, campaign source assembly, and creative reference synthesis"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "图片合成"
+        }
       }
     },
     {
@@ -3038,7 +3238,12 @@
           "displayName": "Make Music Video",
           "difference": "Make Music Video: Cut supplied footage to one song through a validated lyric, rhythm, and visual-arc EDL. In contrast, Make Beat-Synced Video: Cut supplied visuals to measured music structure and verify the export."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "制作卡点视频"
+        }
+      }
     },
     {
       "id": "make-birthday-video",
@@ -3074,6 +3279,11 @@
         "Default layout": "User-requested or print-defined format",
         "Model policy": "Kling 3.0 for selected still animation plus deterministic timeline assembly; supplied audio only, with no copyright authorization requirement",
         "Downstream use": "Birthday tributes and keepsakes"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "制作生日视频"
+        }
       }
     },
     {
@@ -3122,7 +3332,12 @@
           "displayName": "Editorial Cutout Explainer",
           "difference": "Editorial Cutout Explainer: Plan and create a generic editorial cutout explainer with shallow 2D motion and approved evidence beats. In contrast, Make Explainer Video: Produce a fact-traceable narrated explainer with timed visual beats, subtitles, and final QC."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "制作讲解视频"
+        }
+      }
     },
     {
       "id": "make-flowchart",
@@ -3157,6 +3372,11 @@
         "Default layout": "Source-preserving or dimension-defined format",
         "Model policy": "GPT Image 2 Medium/2K; deterministic diagram rendering is the fallback for exact-copy failure",
         "Downstream use": "Process communication"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "制作流程图"
+        }
       }
     },
     {
@@ -3192,6 +3412,11 @@
         "Default layout": "User-requested or print-defined format",
         "Model policy": "GPT Image 2 exact-copy card design",
         "Downstream use": "Digital greetings and print cards"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "制作节日贺卡"
+        }
       }
     },
     {
@@ -3227,6 +3452,11 @@
         "Default layout": "Relationship-led information hierarchy",
         "Model policy": "GPT Image 2 Medium with agent-led copy verification and revision",
         "Downstream use": "Reports, education, and social explainers"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "制作信息图"
+        }
       }
     },
     {
@@ -3263,6 +3493,11 @@
         "Default layout": "Destination-specific with safe-area protection",
         "Model policy": "Deterministic code or motion tooling; no paid media generation",
         "Downstream use": "Title cards, lyric/caption pieces, social video, web hero, or editorial motion"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "制作动态字体视频"
+        }
       }
     },
     {
@@ -3300,6 +3535,11 @@
         "Default layout": "User-requested or print-defined format",
         "Model policy": "GPT Image 2 Medium/2K at 3:4; one result; no Tools-class API route",
         "Downstream use": "User-requested portrait output according to the API response"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "制作档案照"
+        }
       }
     },
     {
@@ -3353,7 +3593,12 @@
           "displayName": "Make Beat-Synced Video",
           "difference": "Make Beat-Synced Video: Cut supplied visuals to measured music structure and verify the export. In contrast, Make Music Video: Cut supplied footage to one song through a validated lyric, rhythm, and visual-arc EDL."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "制作音乐视频"
+        }
+      }
     },
     {
       "id": "make-pet-portrait",
@@ -3391,6 +3636,11 @@
         "Default layout": "User-requested or source-preserving format",
         "Model policy": "GPT Image 2 Medium/2K for consistency-sensitive final image editing",
         "Downstream use": "Keepsakes and pet profiles"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "制作宠物肖像"
+        }
       }
     },
     {
@@ -3426,6 +3676,11 @@
         "Default layout": "User-requested delivery format",
         "Model policy": "Deterministic audio-led assembly; GPT Image 2 Medium/2K for stills, Kling 3.0 for precise still animation, Seedance 2.5 for generated audio-visual shots",
         "Downstream use": "Podcast episodes and social highlights"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "制作播客视频"
+        }
       }
     },
     {
@@ -3475,7 +3730,12 @@
           "displayName": "Product Launch Video Plan",
           "difference": "Product Launch Video Plan: Product launch-film plan with hook, reveal, and end-card arc. In contrast, Make Product Commercial: Produce one truthful, continuity-safe short commercial in which the supplied product drives the action."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "制作商品广告"
+        }
+      }
     },
     {
       "id": "make-selfie",
@@ -3517,6 +3777,11 @@
         "Default layout": "One continuous phone-camera frame; no collage",
         "Model policy": "GPT Image 2 Medium/2K for consistency-sensitive final image editing",
         "Downstream use": "Personal social photos, travel memories, and casual group portraits"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "制作自拍照"
+        }
       }
     },
     {
@@ -3555,6 +3820,11 @@
         "Default layout": "Source composition",
         "Model policy": "GPT Image 2 Medium/2K for consistency-sensitive final image editing",
         "Downstream use": "Icons, posters, and profile graphics"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "制作剪影"
+        }
       }
     },
     {
@@ -3591,6 +3861,11 @@
         "Default layout": "User-requested delivery format",
         "Model policy": "Seedance 2.5 for audio-visual synchronization; no fallback to a model whose lip-sync inputs are unverified",
         "Downstream use": "Presenters, explainers and messages"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "制作说话视频"
+        }
       }
     },
     {
@@ -3643,7 +3918,12 @@
           "displayName": "Product Detail Page",
           "difference": "Product Detail Page: Build modular ecommerce detail-page image sets. In contrast, Make Thumbnail: Create a platform-aware cover or thumbnail."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "制作缩略图"
+        }
+      }
     },
     {
       "id": "make-video-intro",
@@ -3695,7 +3975,12 @@
           "displayName": "Poster Motion",
           "difference": "Poster Motion: Animate an uploaded poster into one readable, full-frame motion poster. In contrast, Make Video Intro: Create one short reusable branded intro with exact identity, legible title and a clean transition into program content."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "制作视频片头"
+        }
+      }
     },
     {
       "id": "make-wallet-photo",
@@ -3744,7 +4029,12 @@
           "displayName": "Professional Headshot",
           "difference": "Professional Headshot: Research the channel, then create a properly posed and lit professional portrait. In contrast, Make Wallet Photo: Prepare one wallet-size print portrait from a supplied photo using a real print dimension, crop and bleed specification."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "制作钱包照片"
+        }
+      }
     },
     {
       "id": "make-wedding-photo",
@@ -3783,6 +4073,11 @@
         "Default layout": "User-requested or print-defined format",
         "Model policy": "GPT Image 2 Medium/2K for consistency-sensitive final image editing",
         "Downstream use": "Creative portraits and private keepsakes"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "制作婚礼照片"
+        }
       }
     },
     {
@@ -4152,6 +4447,11 @@
         "Reference-aware route": "GPT Image 2 Medium/2K",
         "Required preservation": "Identity, body proportions, pose, hands, background, camera, crop, and protected pieces",
         "Downstream use": "Fashion Photoshoot, Change Pose, Poster Design, AI Banner Design, Photo Collage, and lookbook workflows"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "服装设计"
+        }
       }
     },
     {
@@ -4295,7 +4595,12 @@
           "displayName": "Create Image Deck",
           "difference": "Create Image Deck: Plan, generate, inspect, and package a consistent image-first deck. In contrast, Photo Collage: Arrange original photos into one intentional collage."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "照片拼贴"
+        }
+      }
     },
     {
       "id": "plan-comic-storyboard",
@@ -4347,7 +4652,12 @@
           "displayName": "Generate Film Storyboard",
           "difference": "Generate Film Storyboard: Generate reviewable film storyboard frames from narrative material with continuity locks. In contrast, Plan Comic Storyboard: Convert a story into a validated page-by-page comic production manifest."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "规划漫画分镜"
+        }
+      }
     },
     {
       "id": "plan-film-storyboard",
@@ -4400,7 +4710,12 @@
           "displayName": "Render Comic Page",
           "difference": "Render Comic Page: Render one storyboarded comic page with character, style, panel, and dialogue continuity. In contrast, Generate Film Storyboard: Generate reviewable film storyboard frames from narrative material with continuity locks."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "规划电影分镜"
+        }
+      }
     },
     {
       "id": "poster-design",
@@ -4467,7 +4782,12 @@
           "displayName": "Product Detail Page",
           "difference": "Product Detail Page: Build modular ecommerce detail-page image sets. In contrast, Poster Design: Create distinctive posters across varied art directions."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "海报设计"
+        }
+      }
     },
     {
       "id": "poster-motion",
@@ -4594,6 +4914,11 @@
         "Default layout": "Source-preserving or dimension-defined format",
         "Model policy": "GPT Image 2 Medium/2K for consistency-sensitive source-site editing",
         "Downstream use": "Landscape concept planning"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "景观改造预览"
+        }
       }
     },
     {
@@ -4631,6 +4956,11 @@
         "Default layout": "Source-preserving or dimension-defined format",
         "Model policy": "GPT Image 2 Medium/2K for consistency-sensitive final image editing",
         "Downstream use": "Paint selection and renovation previews"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "墙面漆色预览"
+        }
       }
     },
     {
@@ -4730,7 +5060,12 @@
           "displayName": "Poster Design",
           "difference": "Poster Design: Create distinctive posters across varied art directions. In contrast, Product Detail Page: Build modular ecommerce detail-page image sets."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "商品详情页"
+        }
+      }
     },
     {
       "id": "product-launch-video",
@@ -4831,7 +5166,12 @@
           "displayName": "White Background Product Mockup",
           "difference": "White Background Product Mockup: Create product, flat-lay, and ghost-mannequin mockups without identity drift. In contrast, Product Packaging: Turn product references into a structured packaging concept board."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "商品包装设计"
+        }
+      }
     },
     {
       "id": "professional-headshot",
@@ -4881,7 +5221,12 @@
           "displayName": "Make Wallet Photo",
           "difference": "Make Wallet Photo: Prepare one wallet-size print portrait from a supplied photo using a real print dimension, crop and bleed specification. In contrast, Professional Headshot: Research the channel, then create a properly posed and lit professional portrait."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "职业头像"
+        }
+      }
     },
     {
       "id": "recolor-object",
@@ -4930,7 +5275,12 @@
           "displayName": "Remove Photo Filter",
           "difference": "Remove Photo Filter: Remove an artificial grade and restore a natural look. In contrast, Recolor Object: Recolor one object without tinting the whole image."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "物体改色"
+        }
+      }
     },
     {
       "id": "recreate-social-photo",
@@ -4969,6 +5319,11 @@
         "Default layout": "Single image; no collage",
         "Model policy": "GPT Image 2 Medium/2K for consistency-sensitive final image editing",
         "Downstream use": "Personal and brand social posts"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "复刻社交照片风格"
+        }
       }
     },
     {
@@ -5017,6 +5372,11 @@
         "Required verification": "Alpha-channel inspection plus black, white, and checkerboard edge previews",
         "Optional output": "One additional solid-color composite when explicitly requested",
         "Downstream use": "Product compositing, posters, banners, collages, packaging layouts, and scene placement"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "移除背景"
+        }
       }
     },
     {
@@ -5054,6 +5414,11 @@
         "Default layout": "Source composition",
         "Model policy": "GPT Image 2 Medium/2K for consistency-sensitive final image editing",
         "Downstream use": "Portrait and profile-photo repair"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "移除眼镜"
+        }
       }
     },
     {
@@ -5091,6 +5456,11 @@
         "Default layout": "Source composition",
         "Model policy": "GPT Image 2 Medium/2K for consistency-sensitive final image editing",
         "Downstream use": "Ordinary photo and asset cleanup"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "移除图片标记"
+        }
       }
     },
     {
@@ -5140,7 +5510,12 @@
           "displayName": "Restyle Room",
           "difference": "Restyle Room: Restyle a supplied room while preserving architecture, layout constraints and declared keep-items. In contrast, Remove Object: Remove one object and naturally rebuild what was behind it."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "移除物体"
+        }
+      }
     },
     {
       "id": "remove-photo-filter",
@@ -5189,7 +5564,12 @@
           "displayName": "Recolor Object",
           "difference": "Recolor Object: Recolor one object without tinting the whole image. In contrast, Remove Photo Filter: Remove an artificial grade and restore a natural look."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "移除照片滤镜"
+        }
+      }
     },
     {
       "id": "remove-video-mark",
@@ -5224,6 +5604,11 @@
         "Default layout": "User-requested delivery format",
         "Model policy": "WeShop supplied video mark removal",
         "Downstream use": "Supplied asset cleanup"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "移除视频标记"
+        }
       }
     },
     {
@@ -5279,7 +5664,12 @@
           "displayName": "Generate Film Storyboard",
           "difference": "Generate Film Storyboard: Generate reviewable film storyboard frames from narrative material with continuity locks. In contrast, Render Comic Page: Render one storyboarded comic page with character, style, panel, and dialogue continuity."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "渲染漫画页面"
+        }
+      }
     },
     {
       "id": "restyle-room",
@@ -5328,7 +5718,12 @@
           "displayName": "Remove Object",
           "difference": "Remove Object: Remove one object and naturally rebuild what was behind it. In contrast, Restyle Room: Restyle a supplied room while preserving architecture, layout constraints and declared keep-items."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "房间风格改造"
+        }
+      }
     },
     {
       "id": "restyle-video",
@@ -5380,7 +5775,12 @@
           "displayName": "Upscale Video",
           "difference": "Upscale Video: Increase supplied video resolution and clarity while preserving timing, content, grain intent and natural detail. In contrast, Restyle Video: Transform the visual treatment of a supplied video while retaining timing, motion, subjects and continuity."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "视频风格转换"
+        }
+      }
     },
     {
       "id": "retouch-blemish",
@@ -5429,7 +5829,12 @@
           "displayName": "Smooth Wrinkles",
           "difference": "Smooth Wrinkles: Reduce chosen skin or clothing wrinkles without flattening structure. In contrast, Retouch Blemish: Remove temporary blemishes without plastic-looking skin."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "修饰皮肤瑕疵"
+        }
+      }
     },
     {
       "id": "shave-head",
@@ -5485,7 +5890,12 @@
           "displayName": "Hair Color Change",
           "difference": "Hair Color Change: Preview one new hair color without changing the person or cut. In contrast, Shave Head: Preview a natural bald or shaved-head appearance."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "光头造型预览"
+        }
+      }
     },
     {
       "id": "short-audiovisual-prompt",
@@ -5586,7 +5996,12 @@
           "displayName": "Retouch Blemish",
           "difference": "Retouch Blemish: Remove temporary blemishes without plastic-looking skin. In contrast, Smooth Wrinkles: Reduce chosen skin or clothing wrinkles without flattening structure."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "平滑皱纹"
+        }
+      }
     },
     {
       "id": "social-knowledge-notes",
@@ -5850,6 +6265,11 @@
         "Default layout": "Source layout",
         "Model policy": "GPT Image 2 Medium with agent-led translation verification and revision",
         "Downstream use": "Localized marketing and information graphics"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "翻译图片文字"
+        }
       }
     },
     {
@@ -5902,7 +6322,12 @@
           "displayName": "Restyle Video",
           "difference": "Restyle Video: Transform the visual treatment of a supplied video while retaining timing, motion, subjects and continuity. In contrast, Upscale Video: Increase supplied video resolution and clarity while preserving timing, content, grain intent and natural detail."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "视频超分辨率"
+        }
+      }
     },
     {
       "id": "urban-daylight-documentary-grade",
@@ -6091,7 +6516,12 @@
           "displayName": "Fashion Model Replacement",
           "difference": "Fashion Model Replacement: Replace a fashion model while keeping the outfit intact. In contrast, Virtual Try-On: Try on or replace a garment with fidelity checks."
         }
-      ]
+      ],
+      "locales": {
+        "zh-CN": {
+          "displayName": "虚拟试穿"
+        }
+      }
     },
     {
       "id": "visualize-floor-plan",
@@ -6126,6 +6556,11 @@
         "Default layout": "Source-preserving or dimension-defined format",
         "Model policy": "GPT Image 2 plan visualization",
         "Downstream use": "Early space planning"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "户型图可视化"
+        }
       }
     },
     {
@@ -6161,6 +6596,11 @@
         "Default layout": "Validated Markdown or JSON with stable episode and scene identifiers",
         "Model policy": "Agent-authored planning and writing; no paid image or video generation",
         "Downstream use": "Casting/assets, film storyboarding, shot generation, editing, and human editorial review"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "创作短剧系列"
+        }
       }
     },
     {
@@ -6196,6 +6636,11 @@
         "Default layout": "Concise numbered Markdown",
         "Model policy": "Agent-authored; no paid media call",
         "Downstream use": "Short-form scripting and A/B creative testing"
+      },
+      "locales": {
+        "zh-CN": {
+          "displayName": "创作短视频开场钩子"
+        }
       }
     }
   ]

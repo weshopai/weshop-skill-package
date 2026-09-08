@@ -290,7 +290,7 @@ Useful commands:
 | `npm run maintainers:validate` | Validate maintainer documentation |
 | `npm run web:build` | Build the generated visual Skill catalog |
 | `npm run skills:intake -- ...` | Start a provenance-safe external Skill intake |
-| `npm run media:upload -- ...` | Upload and verify a Skill cover, source image, or cover video in the reviewed Tencent COS prefix |
+| `npm run media:upload -- ...` | Upload and verify a Skill cover, source image, or cover video to the selected Tencent COS target (`--market cn|global|both`; global is the compatibility default) |
 | `npm run skills:custom:init -- ...` | Start an isolated user-owned custom Skill draft |
 | `npm run skills:custom:check -- ...` | Run mechanical local checks on a custom Skill |
 | `npm run skills:auto-update -- ...` | Install or inspect the Release-based background updater |

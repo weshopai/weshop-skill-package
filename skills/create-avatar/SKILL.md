@@ -12,7 +12,6 @@ description: Create one small-size-readable profile avatar from a supplied portr
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: blue
 - Short description: Create one small-size-readable profile avatar from a supplied portrait or fictional brief.
-- Cover image: https://ai-image.weshop.com/desktop/coverImage/create-avatar.png
 ## What this skill does
 
 - Creates a centered profile image whose face or defining symbol remains readable at icon size.

@@ -13,8 +13,6 @@ description: Change only both iris colors in one supplied portrait while preserv
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: rose
 - Short description: Preview one natural iris color without changing the eyes.
-- Cover image: https://ai-image.weshop.com/desktop/coverImage/eye-color-change.png
-- Source images: https://ai-image.weshop.com/desktop/sourceImage/eye-color-change.png
 ## What this skill does
 
 - Produces one portrait with one bilateral iris-color change.

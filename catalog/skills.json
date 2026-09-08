@@ -43,12 +43,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/3d-animation-short-generator.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/3d-animation-short-generator.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/3d-animation-short-generator.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/3d-animation-short-generator.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/3d-animation-short-generator.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/3d-animation-short-generator.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/3d-animation-short-generator.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/3d-animation-short-generator.mp4"
         }
       }
     },
@@ -96,15 +96,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/add-braces.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/add-braces.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/add-braces.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/add-braces.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/add-braces.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/add-braces.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/add-braces.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/add-braces.png"
           ]
         }
       }
@@ -153,15 +153,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/add-speech-bubble.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/add-speech-bubble.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/add-speech-bubble.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/add-speech-bubble.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/add-speech-bubble.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/add-speech-bubble.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/add-speech-bubble.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/add-speech-bubble.png"
           ]
         }
       }
@@ -211,15 +211,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/add-tattoo.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/add-tattoo.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/add-tattoo.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/add-tattoo.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/add-tattoo.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/add-tattoo.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/add-tattoo.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/add-tattoo.png"
           ]
         }
       }
@@ -282,12 +282,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/add-video-effect.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/add-video-effect.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/add-video-effect.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/add-video-effect.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/add-video-effect.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/add-video-effect.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/add-video-effect.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/add-video-effect.mp4"
         }
       }
     },
@@ -361,10 +361,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/ai-banner-design.png"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/ai-banner-design.png"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/ai-banner-design.png"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/ai-banner-design.png"
         }
       }
     },
@@ -434,15 +434,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/ai-product.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/ai-product.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/ai-product.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/ai-product.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/ai-product.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/ai-product.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/ai-product.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/ai-product.png"
           ]
         }
       }
@@ -488,12 +488,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/animate-image.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/animate-image.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/animate-image.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/animate-image.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/animate-image.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/animate-image.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/animate-image.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/animate-image.mp4"
         }
       }
     },
@@ -554,15 +554,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/apply-makeup.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/apply-makeup.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/apply-makeup.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/apply-makeup.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/apply-makeup.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/apply-makeup.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/apply-makeup.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/apply-makeup.png"
           ]
         }
       }
@@ -623,15 +623,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/apply-photo-filter.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/apply-photo-filter.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/apply-photo-filter.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/apply-photo-filter.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/apply-photo-filter.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/apply-photo-filter.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/apply-photo-filter.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/apply-photo-filter.png"
           ]
         }
       }
@@ -689,10 +689,10 @@
       ],
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/article-handdrawn-illustrations.png"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/article-handdrawn-illustrations.png"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/article-handdrawn-illustrations.png"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/article-handdrawn-illustrations.png"
         }
       }
     },
@@ -732,10 +732,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/backrooms-dreamcore.png"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/backrooms-dreamcore.png"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/backrooms-dreamcore.png"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/backrooms-dreamcore.png"
         }
       }
     },
@@ -789,12 +789,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/brand-promo-video-generator.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/brand-promo-video-generator.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/brand-promo-video-generator.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/brand-promo-video-generator.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/brand-promo-video-generator.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/brand-promo-video-generator.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/brand-promo-video-generator.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/brand-promo-video-generator.mp4"
         }
       }
     },
@@ -853,12 +853,12 @@
       ],
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/brand-stream-mg.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/brand-stream-mg.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/brand-stream-mg.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/brand-stream-mg.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/brand-stream-mg.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/brand-stream-mg.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/brand-stream-mg.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/brand-stream-mg.mp4"
         }
       }
     },
@@ -912,10 +912,10 @@
       ],
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/casting.png"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/casting.png"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/casting.png"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/casting.png"
         }
       }
     },
@@ -981,15 +981,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/change-bangs.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/change-bangs.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/change-bangs.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/change-bangs.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/change-bangs.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/change-bangs.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/change-bangs.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/change-bangs.png"
           ]
         }
       }
@@ -1061,15 +1061,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/change-pose.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/change-pose.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/change-pose.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/change-pose.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/change-pose.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/change-pose.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/change-pose.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/change-pose.png"
           ]
         }
       }
@@ -1115,15 +1115,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/character-reference-sheet.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/character-reference-sheet.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/character-reference-sheet.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/character-reference-sheet.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/character-reference-sheet.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/character-reference-sheet.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/character-reference-sheet.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/character-reference-sheet.png"
           ]
         }
       }
@@ -1166,12 +1166,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/character-toy-grid-motion.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/character-toy-grid-motion.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/character-toy-grid-motion.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/character-toy-grid-motion.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/character-toy-grid-motion.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/character-toy-grid-motion.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/character-toy-grid-motion.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/character-toy-grid-motion.mp4"
         }
       }
     },
@@ -1212,12 +1212,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/children-english-story-episode.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/children-english-story-episode.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/children-english-story-episode.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/children-english-story-episode.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/children-english-story-episode.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/children-english-story-episode.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/children-english-story-episode.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/children-english-story-episode.mp4"
         }
       }
     },
@@ -1274,10 +1274,10 @@
       ],
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/cinematic-video-prompt.svg"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/cinematic-video-prompt.svg"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/cinematic-video-prompt.svg"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/cinematic-video-prompt.svg"
         }
       }
     },
@@ -1336,15 +1336,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/clean-room.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/clean-room.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/clean-room.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/clean-room.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/clean-room.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/clean-room.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/clean-room.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/clean-room.png"
           ]
         }
       }
@@ -1386,12 +1386,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/co-op-game-intro-generator.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/co-op-game-intro-generator.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/co-op-game-intro-generator.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/co-op-game-intro-generator.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/co-op-game-intro-generator.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/co-op-game-intro-generator.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/co-op-game-intro-generator.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/co-op-game-intro-generator.mp4"
         }
       }
     },
@@ -1438,15 +1438,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/colorize-image.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/colorize-image.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/colorize-image.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/colorize-image.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/colorize-image.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/colorize-image.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/colorize-image.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/colorize-image.png"
           ]
         }
       }
@@ -1509,12 +1509,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/combine-videos.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/combine-videos.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/combine-videos.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/combine-videos.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/combine-videos.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/combine-videos.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/combine-videos.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/combine-videos.mp4"
         }
       }
     },
@@ -1576,10 +1576,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/compose-lookbook.png"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/compose-lookbook.png"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/compose-lookbook.png"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/compose-lookbook.png"
         }
       }
     },
@@ -1641,12 +1641,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/correct-video-color.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/correct-video-color.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/correct-video-color.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/correct-video-color.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/correct-video-color.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/correct-video-color.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/correct-video-color.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/correct-video-color.mp4"
         }
       }
     },
@@ -1690,10 +1690,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/create-animal.png"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/create-animal.png"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/create-animal.png"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/create-animal.png"
         }
       }
     },
@@ -1737,10 +1737,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/create-avatar.png"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/create-avatar.png"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/create-avatar.png"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/create-avatar.png"
         }
       }
     },
@@ -1785,10 +1785,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/create-cad.png"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/create-cad.png"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/create-cad.png"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/create-cad.png"
         }
       }
     },
@@ -1846,10 +1846,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/create-character.png"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/create-character.png"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/create-character.png"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/create-character.png"
         }
       }
     },
@@ -1895,10 +1895,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/create-custom-skill.svg"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/create-custom-skill.svg"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/create-custom-skill.svg"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/create-custom-skill.svg"
         }
       }
     },
@@ -1942,10 +1942,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/create-flag.png"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/create-flag.png"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/create-flag.png"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/create-flag.png"
         }
       }
     },
@@ -2007,10 +2007,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/create-image-deck.png"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/create-image-deck.png"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/create-image-deck.png"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/create-image-deck.png"
         }
       }
     },
@@ -2061,10 +2061,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/create-logo.png"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/create-logo.png"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/create-logo.png"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/create-logo.png"
         }
       }
     },
@@ -2117,10 +2117,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/create-mascot-logo.png"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/create-mascot-logo.png"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/create-mascot-logo.png"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/create-mascot-logo.png"
         }
       }
     },
@@ -2176,10 +2176,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/create-npc.png"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/create-npc.png"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/create-npc.png"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/create-npc.png"
         }
       }
     },
@@ -2242,10 +2242,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/create-social-carousel.png"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/create-social-carousel.png"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/create-social-carousel.png"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/create-social-carousel.png"
         }
       }
     },
@@ -2321,10 +2321,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/create-white-background-product-mockup.png"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/create-white-background-product-mockup.png"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/create-white-background-product-mockup.png"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/create-white-background-product-mockup.png"
         }
       }
     },
@@ -2381,10 +2381,10 @@
       ],
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/cross-model-video-prompt-adapter.svg"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/cross-model-video-prompt-adapter.svg"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/cross-model-video-prompt-adapter.svg"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/cross-model-video-prompt-adapter.svg"
         }
       }
     },
@@ -2426,12 +2426,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/data-driven-ad-creative-video.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/data-driven-ad-creative-video.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/data-driven-ad-creative-video.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/data-driven-ad-creative-video.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/data-driven-ad-creative-video.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/data-driven-ad-creative-video.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/data-driven-ad-creative-video.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/data-driven-ad-creative-video.mp4"
         }
       }
     },
@@ -2471,12 +2471,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/decorative-print-short.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/decorative-print-short.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/decorative-print-short.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/decorative-print-short.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/decorative-print-short.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/decorative-print-short.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/decorative-print-short.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/decorative-print-short.mp4"
         }
       }
     },
@@ -2516,10 +2516,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/detail-page-skill-course.svg"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/detail-page-skill-course.svg"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/detail-page-skill-course.svg"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/detail-page-skill-course.svg"
         }
       }
     },
@@ -2581,10 +2581,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/develop-story.svg"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/develop-story.svg"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/develop-story.svg"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/develop-story.svg"
         }
       }
     },
@@ -2633,12 +2633,12 @@
       ],
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/digital-product-promo-generator.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/digital-product-promo-generator.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/digital-product-promo-generator.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/digital-product-promo-generator.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/digital-product-promo-generator.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/digital-product-promo-generator.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/digital-product-promo-generator.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/digital-product-promo-generator.mp4"
         }
       }
     },
@@ -2679,12 +2679,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/dodge-game-video-generator.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/dodge-game-video-generator.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/dodge-game-video-generator.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/dodge-game-video-generator.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/dodge-game-video-generator.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/dodge-game-video-generator.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/dodge-game-video-generator.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/dodge-game-video-generator.mp4"
         }
       }
     },
@@ -2743,12 +2743,12 @@
       ],
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/dot-matrix-brand-wordmark-motion.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/dot-matrix-brand-wordmark-motion.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/dot-matrix-brand-wordmark-motion.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/dot-matrix-brand-wordmark-motion.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/dot-matrix-brand-wordmark-motion.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/dot-matrix-brand-wordmark-motion.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/dot-matrix-brand-wordmark-motion.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/dot-matrix-brand-wordmark-motion.mp4"
         }
       }
     },
@@ -2811,12 +2811,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/edit-social-video.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/edit-social-video.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/edit-social-video.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/edit-social-video.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/edit-social-video.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/edit-social-video.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/edit-social-video.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/edit-social-video.mp4"
         }
       }
     },
@@ -2868,12 +2868,12 @@
       ],
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/editorial-cutout-explainer.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/editorial-cutout-explainer.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/editorial-cutout-explainer.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/editorial-cutout-explainer.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/editorial-cutout-explainer.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/editorial-cutout-explainer.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/editorial-cutout-explainer.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/editorial-cutout-explainer.mp4"
         }
       }
     },
@@ -2932,15 +2932,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/expand-image.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/expand-image.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/expand-image.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/expand-image.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/expand-image.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/expand-image.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/expand-image.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/expand-image.png"
           ]
         }
       }
@@ -2989,15 +2989,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/eye-color-change.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/eye-color-change.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/eye-color-change.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/eye-color-change.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/eye-color-change.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/eye-color-change.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/eye-color-change.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/eye-color-change.png"
           ]
         }
       }
@@ -3066,10 +3066,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/fashion-model-replacement.jpg"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/fashion-model-replacement.jpg"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/fashion-model-replacement.jpg"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/fashion-model-replacement.jpg"
         }
       }
     },
@@ -3109,10 +3109,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/film-reference-prompt-writer.svg"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/film-reference-prompt-writer.svg"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/film-reference-prompt-writer.svg"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/film-reference-prompt-writer.svg"
         }
       }
     },
@@ -3153,12 +3153,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/fpv-tour-video-generator.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/fpv-tour-video-generator.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/fpv-tour-video-generator.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/fpv-tour-video-generator.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/fpv-tour-video-generator.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/fpv-tour-video-generator.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/fpv-tour-video-generator.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/fpv-tour-video-generator.mp4"
         }
       }
     },
@@ -3203,12 +3203,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/generate-video.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/generate-video.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/generate-video.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/generate-video.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/generate-video.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/generate-video.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/generate-video.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/generate-video.mp4"
         }
       }
     },
@@ -3248,10 +3248,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/h3-prompt-expert.svg"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/h3-prompt-expert.svg"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/h3-prompt-expert.svg"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/h3-prompt-expert.svg"
         }
       }
     },
@@ -3317,15 +3317,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/hair-color-change.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/hair-color-change.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/hair-color-change.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/hair-color-change.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/hair-color-change.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/hair-color-change.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/hair-color-change.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/hair-color-change.png"
           ]
         }
       }
@@ -3392,15 +3392,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/hairstyle-change.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/hairstyle-change.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/hairstyle-change.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/hairstyle-change.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/hairstyle-change.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/hairstyle-change.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/hairstyle-change.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/hairstyle-change.png"
           ]
         }
       }
@@ -3442,12 +3442,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/handdrawn-live-action-fusion.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/handdrawn-live-action-fusion.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/handdrawn-live-action-fusion.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/handdrawn-live-action-fusion.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/handdrawn-live-action-fusion.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/handdrawn-live-action-fusion.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/handdrawn-live-action-fusion.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/handdrawn-live-action-fusion.mp4"
         }
       }
     },
@@ -3487,10 +3487,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/handdrawn-story-video.svg"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/handdrawn-story-video.svg"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/handdrawn-story-video.svg"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/handdrawn-story-video.svg"
         }
       }
     },
@@ -3551,15 +3551,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/id-photo-format.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/id-photo-format.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/id-photo-format.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/id-photo-format.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/id-photo-format.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/id-photo-format.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/id-photo-format.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/id-photo-format.png"
           ]
         }
       }
@@ -3615,10 +3615,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/image-combiner.jpg"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/image-combiner.jpg"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/image-combiner.jpg"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/image-combiner.jpg"
         }
       }
     },
@@ -3661,15 +3661,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/legal-diagram-redraw.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/legal-diagram-redraw.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/legal-diagram-redraw.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/legal-diagram-redraw.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/legal-diagram-redraw.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/legal-diagram-redraw.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/legal-diagram-redraw.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/legal-diagram-redraw.png"
           ]
         }
       }
@@ -3713,15 +3713,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/legal-evidence-timeline.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/legal-evidence-timeline.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/legal-evidence-timeline.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/legal-evidence-timeline.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/legal-evidence-timeline.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/legal-evidence-timeline.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/legal-evidence-timeline.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/legal-evidence-timeline.png"
           ]
         }
       }
@@ -3775,12 +3775,12 @@
       ],
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/line-doodle-explainer.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/line-doodle-explainer.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/line-doodle-explainer.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/line-doodle-explainer.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/line-doodle-explainer.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/line-doodle-explainer.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/line-doodle-explainer.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/line-doodle-explainer.mp4"
         }
       }
     },
@@ -3822,12 +3822,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/lip-product-commercial.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/lip-product-commercial.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/lip-product-commercial.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/lip-product-commercial.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/lip-product-commercial.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/lip-product-commercial.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/lip-product-commercial.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/lip-product-commercial.mp4"
         }
       }
     },
@@ -3868,12 +3868,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/live-sketch-motion.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/live-sketch-motion.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/live-sketch-motion.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/live-sketch-motion.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/live-sketch-motion.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/live-sketch-motion.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/live-sketch-motion.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/live-sketch-motion.mp4"
         }
       }
     },
@@ -3936,12 +3936,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-beat-synced-video.svg",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-beat-synced-video.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/make-beat-synced-video.svg",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverImage/make-beat-synced-video.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-beat-synced-video.svg",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-beat-synced-video.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/make-beat-synced-video.svg",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverImage/make-beat-synced-video.mp4"
         }
       }
     },
@@ -3987,12 +3987,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-birthday-video.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/make-birthday-video.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/make-birthday-video.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/make-birthday-video.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-birthday-video.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/make-birthday-video.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/make-birthday-video.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/make-birthday-video.mp4"
         }
       }
     },
@@ -4050,12 +4050,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-explainer-video.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/make-explainer-video.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/make-explainer-video.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/make-explainer-video.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-explainer-video.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/make-explainer-video.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/make-explainer-video.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/make-explainer-video.mp4"
         }
       }
     },
@@ -4100,10 +4100,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-flowchart.png"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/make-flowchart.png"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-flowchart.png"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/make-flowchart.png"
         }
       }
     },
@@ -4148,10 +4148,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-holiday-card.png"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/make-holiday-card.png"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-holiday-card.png"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/make-holiday-card.png"
         }
       }
     },
@@ -4196,10 +4196,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-infographic.png"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/make-infographic.png"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-infographic.png"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/make-infographic.png"
         }
       }
     },
@@ -4245,12 +4245,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-kinetic-typography.svg",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-kinetic-typography.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/make-kinetic-typography.svg",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverImage/make-kinetic-typography.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-kinetic-typography.svg",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-kinetic-typography.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/make-kinetic-typography.svg",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverImage/make-kinetic-typography.mp4"
         }
       }
     },
@@ -4297,15 +4297,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-mugshot-photo.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/make-mugshot-photo.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/make-mugshot-photo.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/make-mugshot-photo.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-mugshot-photo.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/make-mugshot-photo.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/make-mugshot-photo.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/make-mugshot-photo.png"
           ]
         }
       }
@@ -4369,10 +4369,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-music-video.png"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/make-music-video.png"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-music-video.png"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/make-music-video.png"
         }
       }
     },
@@ -4420,15 +4420,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-pet-portrait.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/make-pet-portrait.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/make-pet-portrait.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/make-pet-portrait.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-pet-portrait.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/make-pet-portrait.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/make-pet-portrait.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/make-pet-portrait.png"
           ]
         }
       }
@@ -4474,12 +4474,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-podcast-video.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/make-podcast-video.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/make-podcast-video.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/make-podcast-video.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-podcast-video.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/make-podcast-video.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/make-podcast-video.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/make-podcast-video.mp4"
         }
       }
     },
@@ -4538,12 +4538,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-product-commercial.jpg",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/make-product-commercial.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/make-product-commercial.jpg",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/make-product-commercial.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-product-commercial.jpg",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/make-product-commercial.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/make-product-commercial.jpg",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/make-product-commercial.mp4"
         }
       }
     },
@@ -4595,15 +4595,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-selfie.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/make-selfie.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/make-selfie.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/make-selfie.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-selfie.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/make-selfie.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/make-selfie.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/make-selfie.png"
           ]
         }
       }
@@ -4652,15 +4652,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-silhouette.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/make-silhouette.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/make-silhouette.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/make-silhouette.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-silhouette.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/make-silhouette.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/make-silhouette.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/make-silhouette.png"
           ]
         }
       }
@@ -4707,12 +4707,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-talking-video.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/make-talking-video.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/make-talking-video.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/make-talking-video.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-talking-video.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/make-talking-video.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/make-talking-video.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/make-talking-video.mp4"
         }
       }
     },
@@ -4774,10 +4774,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-thumbnail.png"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/make-thumbnail.png"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-thumbnail.png"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/make-thumbnail.png"
         }
       }
     },
@@ -4839,12 +4839,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-video-intro.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/make-video-intro.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/make-video-intro.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/make-video-intro.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-video-intro.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/make-video-intro.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/make-video-intro.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/make-video-intro.mp4"
         }
       }
     },
@@ -4903,15 +4903,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-wallet-photo.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/make-wallet-photo.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/make-wallet-photo.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/make-wallet-photo.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-wallet-photo.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/make-wallet-photo.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/make-wallet-photo.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/make-wallet-photo.png"
           ]
         }
       }
@@ -4961,17 +4961,17 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/make-wedding-photo.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/make-wedding-photo.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/make-wedding-photo-1.png",
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/make-wedding-photo-2.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/make-wedding-photo-1.png",
+            "https://ai-image.weshop.com/desktop/sourceImage/make-wedding-photo-2.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/make-wedding-photo.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/make-wedding-photo.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/make-wedding-photo-1.png",
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/make-wedding-photo-2.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/make-wedding-photo-1.png",
+            "https://ai-global-image.weshop.com/desktop/sourceImage/make-wedding-photo-2.png"
           ]
         }
       }
@@ -5014,12 +5014,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/micro-expression-performance.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/micro-expression-performance.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/micro-expression-performance.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/micro-expression-performance.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/micro-expression-performance.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/micro-expression-performance.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/micro-expression-performance.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/micro-expression-performance.mp4"
         }
       }
     },
@@ -5076,10 +5076,10 @@
       ],
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/minimal-zine-poster.png"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/minimal-zine-poster.png"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/minimal-zine-poster.png"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/minimal-zine-poster.png"
         }
       }
     },
@@ -5133,12 +5133,12 @@
       ],
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/minimalist-product-ad-generator.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/minimalist-product-ad-generator.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/minimalist-product-ad-generator.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/minimalist-product-ad-generator.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/minimalist-product-ad-generator.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/minimalist-product-ad-generator.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/minimalist-product-ad-generator.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/minimalist-product-ad-generator.mp4"
         }
       }
     },
@@ -5201,10 +5201,10 @@
       ],
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/mono-color.svg"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/mono-color.svg"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/mono-color.svg"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/mono-color.svg"
         }
       }
     },
@@ -5246,12 +5246,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/music-video-subtitle-generator.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/music-video-subtitle-generator.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/music-video-subtitle-generator.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/music-video-subtitle-generator.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/music-video-subtitle-generator.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/music-video-subtitle-generator.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/music-video-subtitle-generator.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/music-video-subtitle-generator.mp4"
         }
       }
     },
@@ -5308,10 +5308,10 @@
       ],
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/narrative-video-prompt.svg"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/narrative-video-prompt.svg"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/narrative-video-prompt.svg"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/narrative-video-prompt.svg"
         }
       }
     },
@@ -5351,10 +5351,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/narrative-video-storyboard.svg"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/narrative-video-storyboard.svg"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/narrative-video-storyboard.svg"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/narrative-video-storyboard.svg"
         }
       }
     },
@@ -5413,15 +5413,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/outfit-design.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/outfit-design.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/outfit-design.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/outfit-design.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/outfit-design.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/outfit-design.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/outfit-design.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/outfit-design.png"
           ]
         }
       }
@@ -5463,12 +5463,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/paper-collage-explainer-generator.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/paper-collage-explainer-generator.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/paper-collage-explainer-generator.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/paper-collage-explainer-generator.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/paper-collage-explainer-generator.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/paper-collage-explainer-generator.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/paper-collage-explainer-generator.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/paper-collage-explainer-generator.mp4"
         }
       }
     },
@@ -5509,12 +5509,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/papercraft-stop-motion-explainer.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/papercraft-stop-motion-explainer.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/papercraft-stop-motion-explainer.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/papercraft-stop-motion-explainer.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/papercraft-stop-motion-explainer.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/papercraft-stop-motion-explainer.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/papercraft-stop-motion-explainer.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/papercraft-stop-motion-explainer.mp4"
         }
       }
     },
@@ -5595,17 +5595,17 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/photo-collage.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/photo-collage.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/photo-collage-1.png",
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/photo-collage-2.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/photo-collage-1.png",
+            "https://ai-image.weshop.com/desktop/sourceImage/photo-collage-2.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/photo-collage.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/photo-collage.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/photo-collage-1.png",
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/photo-collage-2.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/photo-collage-1.png",
+            "https://ai-global-image.weshop.com/desktop/sourceImage/photo-collage-2.png"
           ]
         }
       }
@@ -5668,10 +5668,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/plan-comic-storyboard.svg"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/plan-comic-storyboard.svg"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/plan-comic-storyboard.svg"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/plan-comic-storyboard.svg"
         }
       }
     },
@@ -5734,10 +5734,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/plan-film-storyboard.png"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/plan-film-storyboard.png"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/plan-film-storyboard.png"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/plan-film-storyboard.png"
         }
       }
     },
@@ -5814,10 +5814,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/poster-design.png"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/poster-design.png"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/poster-design.png"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/poster-design.png"
         }
       }
     },
@@ -5875,12 +5875,12 @@
       ],
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/poster-motion.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/poster-motion.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/poster-motion.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/poster-motion.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/poster-motion.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/poster-motion.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/poster-motion.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/poster-motion.mp4"
         }
       }
     },
@@ -5922,12 +5922,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/pov-short-film-generator.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/pov-short-film-generator.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/pov-short-film-generator.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/pov-short-film-generator.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/pov-short-film-generator.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/pov-short-film-generator.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/pov-short-film-generator.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/pov-short-film-generator.mp4"
         }
       }
     },
@@ -5974,15 +5974,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/preview-landscape.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/preview-landscape.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/preview-landscape.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/preview-landscape.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/preview-landscape.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/preview-landscape.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/preview-landscape.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/preview-landscape.png"
           ]
         }
       }
@@ -6030,15 +6030,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/preview-paint.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/preview-paint.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/preview-paint.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/preview-paint.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/preview-paint.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/preview-paint.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/preview-paint.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/preview-paint.png"
           ]
         }
       }
@@ -6079,10 +6079,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/primitive-folk-cgi-restyle.png"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/primitive-folk-cgi-restyle.png"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/primitive-folk-cgi-restyle.png"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/primitive-folk-cgi-restyle.png"
         }
       }
     },
@@ -6156,10 +6156,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/product-detail-page.jpg"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/product-detail-page.jpg"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/product-detail-page.jpg"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/product-detail-page.jpg"
         }
       }
     },
@@ -6211,10 +6211,10 @@
       ],
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/product-launch-video.svg"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/product-launch-video.svg"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/product-launch-video.svg"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/product-launch-video.svg"
         }
       }
     },
@@ -6278,10 +6278,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/product-packaging.png"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/product-packaging.png"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/product-packaging.png"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/product-packaging.png"
         }
       }
     },
@@ -6341,15 +6341,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/professional-headshot.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/professional-headshot.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/professional-headshot.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/professional-headshot.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/professional-headshot.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/professional-headshot.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/professional-headshot.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/professional-headshot.png"
           ]
         }
       }
@@ -6409,15 +6409,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/recolor-object.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/recolor-object.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/recolor-object.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/recolor-object.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/recolor-object.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/recolor-object.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/recolor-object.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/recolor-object.png"
           ]
         }
       }
@@ -6467,17 +6467,17 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/recreate-social-photo.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/recreate-social-photo.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/recreate-social-photo-1.png",
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/recreate-social-photo-2.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/recreate-social-photo-1.png",
+            "https://ai-image.weshop.com/desktop/sourceImage/recreate-social-photo-2.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/recreate-social-photo.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/recreate-social-photo.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/recreate-social-photo-1.png",
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/recreate-social-photo-2.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/recreate-social-photo-1.png",
+            "https://ai-global-image.weshop.com/desktop/sourceImage/recreate-social-photo-2.png"
           ]
         }
       }
@@ -6536,15 +6536,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/remove-background.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/remove-background.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/remove-background.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/remove-background.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/remove-background.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/remove-background.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/remove-background.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/remove-background.png"
           ]
         }
       }
@@ -6592,15 +6592,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/remove-glasses.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/remove-glasses.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/remove-glasses.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/remove-glasses.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/remove-glasses.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/remove-glasses.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/remove-glasses.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/remove-glasses.png"
           ]
         }
       }
@@ -6648,15 +6648,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/remove-image-mark.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/remove-image-mark.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/remove-image-mark.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/remove-image-mark.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/remove-image-mark.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/remove-image-mark.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/remove-image-mark.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/remove-image-mark.png"
           ]
         }
       }
@@ -6716,15 +6716,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/remove-object.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/remove-object.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/remove-object.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/remove-object.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/remove-object.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/remove-object.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/remove-object.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/remove-object.png"
           ]
         }
       }
@@ -6784,15 +6784,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/remove-photo-filter.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/remove-photo-filter.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/remove-photo-filter.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/remove-photo-filter.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/remove-photo-filter.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/remove-photo-filter.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/remove-photo-filter.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/remove-photo-filter.png"
           ]
         }
       }
@@ -6838,12 +6838,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/remove-video-mark.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/remove-video-mark.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/remove-video-mark.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/remove-video-mark.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/remove-video-mark.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/remove-video-mark.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/remove-video-mark.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/remove-video-mark.mp4"
         }
       }
     },
@@ -6908,15 +6908,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/render-comic-page.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/render-comic-page.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/render-comic-page.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/render-comic-page.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/render-comic-page.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/render-comic-page.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/render-comic-page.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/render-comic-page.png"
           ]
         }
       }
@@ -6976,15 +6976,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/restyle-room.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/restyle-room.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/restyle-room.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/restyle-room.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/restyle-room.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/restyle-room.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/restyle-room.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/restyle-room.png"
           ]
         }
       }
@@ -7047,12 +7047,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/restyle-video.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/restyle-video.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/restyle-video.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/restyle-video.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/restyle-video.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/restyle-video.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/restyle-video.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/restyle-video.mp4"
         }
       }
     },
@@ -7111,15 +7111,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/retouch-blemish.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/retouch-blemish.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/retouch-blemish.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/retouch-blemish.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/retouch-blemish.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/retouch-blemish.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/retouch-blemish.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/retouch-blemish.png"
           ]
         }
       }
@@ -7186,15 +7186,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/shave-head.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/shave-head.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/shave-head.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/shave-head.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/shave-head.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/shave-head.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/shave-head.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/shave-head.png"
           ]
         }
       }
@@ -7252,10 +7252,10 @@
       ],
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/short-audiovisual-prompt.svg"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/short-audiovisual-prompt.svg"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/short-audiovisual-prompt.svg"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/short-audiovisual-prompt.svg"
         }
       }
     },
@@ -7314,15 +7314,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/smooth-wrinkles.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/smooth-wrinkles.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/smooth-wrinkles.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/smooth-wrinkles.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/smooth-wrinkles.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/smooth-wrinkles.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/smooth-wrinkles.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/smooth-wrinkles.png"
           ]
         }
       }
@@ -7366,15 +7366,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/social-knowledge-notes.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/social-knowledge-notes.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/social-knowledge-notes.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/social-knowledge-notes.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/social-knowledge-notes.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/social-knowledge-notes.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/social-knowledge-notes.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/social-knowledge-notes.png"
           ]
         }
       }
@@ -7424,10 +7424,10 @@
       ],
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/spatial-four-view.svg"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/spatial-four-view.svg"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/spatial-four-view.svg"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/spatial-four-view.svg"
         }
       }
     },
@@ -7469,12 +7469,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/suspense-title-sequence-generator.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/suspense-title-sequence-generator.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/suspense-title-sequence-generator.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/suspense-title-sequence-generator.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/suspense-title-sequence-generator.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/suspense-title-sequence-generator.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/suspense-title-sequence-generator.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/suspense-title-sequence-generator.mp4"
         }
       }
     },
@@ -7517,15 +7517,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/technical-visual-explainer.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/technical-visual-explainer.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/technical-visual-explainer.png"
+            "https://ai-image.weshop.com/desktop/sourceImage/technical-visual-explainer.png"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/technical-visual-explainer.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/technical-visual-explainer.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/technical-visual-explainer.png"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/technical-visual-explainer.png"
           ]
         }
       }
@@ -7566,10 +7566,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/testimonial-quote-video.svg"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/testimonial-quote-video.svg"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/testimonial-quote-video.svg"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/testimonial-quote-video.svg"
         }
       }
     },
@@ -7608,10 +7608,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/transcript-broll-plan.svg"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/transcript-broll-plan.svg"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/transcript-broll-plan.svg"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/transcript-broll-plan.svg"
         }
       }
     },
@@ -7659,15 +7659,15 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/translate-image-text.jpg",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/translate-image-text.jpg",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/translate-image-text.jpg"
+            "https://ai-image.weshop.com/desktop/sourceImage/translate-image-text.jpg"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/translate-image-text.jpg",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/translate-image-text.jpg",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/translate-image-text.jpg"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/translate-image-text.jpg"
           ]
         }
       }
@@ -7730,12 +7730,12 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/upscale-video.png",
-          "coverMotion": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverVideo/upscale-video.mp4"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/upscale-video.png",
+          "coverMotion": "https://ai-image.weshop.com/desktop/coverVideo/upscale-video.mp4"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/upscale-video.png",
-          "coverMotion": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverVideo/upscale-video.mp4"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/upscale-video.png",
+          "coverMotion": "https://ai-global-image.weshop.com/desktop/coverVideo/upscale-video.mp4"
         }
       }
     },
@@ -7793,10 +7793,10 @@
       ],
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/urban-daylight-documentary-grade.svg"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/urban-daylight-documentary-grade.svg"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/urban-daylight-documentary-grade.svg"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/urban-daylight-documentary-grade.svg"
         }
       }
     },
@@ -7836,10 +7836,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/video-model-advisor.svg"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/video-model-advisor.svg"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/video-model-advisor.svg"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/video-model-advisor.svg"
         }
       }
     },
@@ -7879,10 +7879,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/video-prompt-failure-diagnosis.svg"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/video-prompt-failure-diagnosis.svg"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/video-prompt-failure-diagnosis.svg"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/video-prompt-failure-diagnosis.svg"
         }
       }
     },
@@ -7958,17 +7958,17 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/virtual-try-on.png",
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/virtual-try-on.png",
           "sourceImages": [
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/virtual-try-on-1.png",
-            "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/sourceImage/virtual-try-on-2.webp"
+            "https://ai-image.weshop.com/desktop/sourceImage/virtual-try-on-1.png",
+            "https://ai-image.weshop.com/desktop/sourceImage/virtual-try-on-2.webp"
           ]
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/virtual-try-on.png",
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/virtual-try-on.png",
           "sourceImages": [
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/virtual-try-on-1.png",
-            "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/sourceImage/virtual-try-on-2.webp"
+            "https://ai-global-image.weshop.com/desktop/sourceImage/virtual-try-on-1.png",
+            "https://ai-global-image.weshop.com/desktop/sourceImage/virtual-try-on-2.webp"
           ]
         }
       }
@@ -8014,10 +8014,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/visualize-floor-plan.png"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/visualize-floor-plan.png"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/visualize-floor-plan.png"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/visualize-floor-plan.png"
         }
       }
     },
@@ -8062,10 +8062,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/write-short-drama-series.svg"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/write-short-drama-series.svg"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/write-short-drama-series.svg"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/write-short-drama-series.svg"
         }
       }
     },
@@ -8110,10 +8110,10 @@
       },
       "media": {
         "cn": {
-          "cover": "https://txt2img-1322216870.cos.ap-shanghai.myqcloud.com/desktop/coverImage/write-short-video-hooks.svg"
+          "cover": "https://ai-image.weshop.com/desktop/coverImage/write-short-video-hooks.svg"
         },
         "global": {
-          "cover": "https://weshop-ai-image-va-1322216870.cos.na-ashburn.myqcloud.com/desktop/coverImage/write-short-video-hooks.svg"
+          "cover": "https://ai-global-image.weshop.com/desktop/coverImage/write-short-video-hooks.svg"
         }
       }
     }

@@ -13,8 +13,6 @@ description: Add one realistic braces treatment to the visible teeth of a suppli
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: rose
 - Short description: Preview one braces style on clearly visible teeth.
-- Cover image: https://ai-image.weshop.com/desktop/coverImage/add-braces.png
-- Source images: https://ai-image.weshop.com/desktop/sourceImage/add-braces.png
 ## What this skill does
 
 - Produces one smiling portrait with one braces treatment.

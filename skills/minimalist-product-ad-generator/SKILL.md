@@ -12,8 +12,6 @@ description: Produce one minimalist product film from supplied product assets, a
 - Route label: Product-faithful minimalist film
 - Tone: purple
 - Short description: Produce a sparse, product-faithful commercial with approved copy and beat-level continuity.
-- Cover image: https://ai-image.weshop.com/desktop/coverImage/minimalist-product-ad-generator.png
-- Cover motion: https://ai-image.weshop.com/desktop/coverVideo/minimalist-product-ad-generator.mp4
 
 - Similar skills: make-product-commercial, product-launch-video
 ## What this skill does

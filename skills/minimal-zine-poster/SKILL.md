@@ -12,7 +12,6 @@ Turn content or visual references into one quiet paper-poster system. Generate b
 - Display name: Minimal Zine Poster
 - Categories: Layout & Design
 - Status: Ready
-- Cover image: https://ai-image.weshop.com/desktop/coverImage/minimal-zine-poster.png
 - Route label: GPT Image 2 minimal-zine poster
 - Tone: coral
 - Short description: Create sparse editorial posters with aged paper, radical negative space, and one vivid accent.

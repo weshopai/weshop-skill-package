@@ -13,8 +13,6 @@ description: Remove an ordinary user-supplied overlay, logo, timestamp, or annot
 - Tone: slate
 - Short description: Remove an specified overlay or annotation while preserving motion and reconstructing the covered region consistently.
 
-- Cover image: https://ai-image.weshop.com/desktop/coverImage/remove-video-mark.png
-- Cover motion: https://ai-image.weshop.com/desktop/coverVideo/remove-video-mark.mp4
 ## What this skill does
 
 - Removes a specified mark without requiring copyright ownership, license, permission, or clearance.

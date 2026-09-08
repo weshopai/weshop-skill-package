@@ -12,7 +12,6 @@ description: Plan and create one ordered, visually consistent multi-page social 
 - Route label: GPT Image 2 ordered carousel
 - Tone: amber
 - Short description: Create a coherent mobile-first social carousel as separately generated ordered pages.
-- Cover image: https://ai-image.weshop.com/desktop/coverImage/create-social-carousel.png
 - Similar skills: compose-lookbook, photo-collage, create-image-deck
 ## What this skill does
 

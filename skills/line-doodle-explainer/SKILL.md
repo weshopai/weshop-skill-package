@@ -12,8 +12,6 @@ description: Use for a diagram-first educational short that turns a topic or les
 - Route label: Diagram-first line-doodle teaching production
 - Tone: blue
 - Short description: Explain one topic with sparse line figures, narration beats, diagrams, and an approved animated storyboard.
-- Cover image: https://ai-image.weshop.com/desktop/coverImage/line-doodle-explainer.png
-- Cover motion: https://ai-image.weshop.com/desktop/coverVideo/line-doodle-explainer.mp4
 - Similar skills: make-explainer-video, editorial-cutout-explainer
 ## What this skill does
 

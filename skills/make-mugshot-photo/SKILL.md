@@ -12,8 +12,6 @@ description: Create one mugshot-style portrait from supplied inputs. Add no clie
 - Route label: GPT Image 2 novelty mugshot-style portrait
 - Tone: gray
 - Short description: Create one mugshot-style portrait from supplied inputs.
-- Cover image: https://ai-image.weshop.com/desktop/coverImage/make-mugshot-photo.png
-- Source images: https://ai-image.weshop.com/desktop/sourceImage/make-mugshot-photo.png
 ## What this skill does
 
 - Applies a lineup-inspired visual convention to a supplied adult portrait.

@@ -14,8 +14,6 @@ description: Compatibility entry for older character-sheet requests. Route the c
 - Route label: Compatibility redirect to Create Character
 - Tone: ink
 - Short description: Redirect legacy character-sheet requests to the canonical character workflow without creating a duplicate run.
-- Cover image: https://ai-image.weshop.com/desktop/coverImage/character-reference-sheet.png
-- Source images: https://ai-image.weshop.com/desktop/sourceImage/character-reference-sheet.png
 ## What this skill does
 
 - Preserves compatibility for older character-sheet requests.

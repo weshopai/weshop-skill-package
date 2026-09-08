@@ -12,8 +12,6 @@ description: Use for controlled ad-video variants from approved tabular data fro
 - Route label: Agent-authored structured brief
 - Tone: blue
 - Short description: Controlled ad-video variants from approved tabular data.
-- Cover image: https://ai-image.weshop.com/desktop/coverImage/data-driven-ad-creative-video.png
-- Cover motion: https://ai-image.weshop.com/desktop/coverVideo/data-driven-ad-creative-video.mp4
 ## What this skill does
 
 - Freezes the request, approved facts, source assets, constraints, and acceptance checks.

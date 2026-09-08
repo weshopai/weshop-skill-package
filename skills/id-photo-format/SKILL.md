@@ -14,8 +14,6 @@ description: Prepare one supplied portrait for one explicitly named ID-photo or 
 - Tone: rose
 - Short description: Research the authority, correct the capture, then crop around the measured head.
 
-- Cover image: https://ai-image.weshop.com/desktop/coverImage/id-photo-format.png
-- Source images: https://ai-image.weshop.com/desktop/sourceImage/id-photo-format.png
 - Similar skills: make-wallet-photo, professional-headshot
 ## What this skill does
 

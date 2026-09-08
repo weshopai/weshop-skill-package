@@ -12,7 +12,6 @@ description: Create a consistent image-first presentation deck from supplied con
 - Route label: Image-first presentation production
 - Tone: blue
 - Short description: Plan, generate, inspect, and package a consistent image-first deck.
-- Cover image: https://ai-image.weshop.com/desktop/coverImage/create-image-deck.png
 - Similar skills: compose-lookbook, photo-collage, create-social-carousel
 ## What this skill does
 

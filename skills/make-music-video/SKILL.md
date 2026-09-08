@@ -10,7 +10,6 @@ description: Analyze one song and supplied footage, design a lyric- and music-aw
 - Categories: Film, Video
 - Status: Ready
 - Featured: no
-- Cover image: https://ai-image.weshop.com/desktop/coverImage/make-music-video.png
 - Route label: Music-aware EDL and deterministic render
 - Tone: purple
 - Short description: Cut supplied footage to one song through a validated lyric, rhythm, and visual-arc EDL.

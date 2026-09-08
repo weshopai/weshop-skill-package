@@ -13,8 +13,6 @@ description: Add or change only bangs in one supplied portrait while preserving 
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: rose
 - Short description: Preview one fringe style without replacing the full haircut.
-- Cover image: https://ai-image.weshop.com/desktop/coverImage/change-bangs.png
-- Source images: https://ai-image.weshop.com/desktop/sourceImage/change-bangs.png
 - Similar skills: hairstyle-change, hair-color-change, shave-head
 ## What this skill does
 

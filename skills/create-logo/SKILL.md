@@ -12,7 +12,6 @@ description: Design one selected original logo mark or lockup from a brand brief
 - Route label: GPT Image 2 logo generation
 - Tone: red
 - Short description: Design one selected original logo mark or lockup from a brand brief, after concept reduction and application checks.
-- Cover image: https://ai-image.weshop.com/desktop/coverImage/create-logo.png
 - Similar skills: create-mascot-logo
 ## What this skill does
 

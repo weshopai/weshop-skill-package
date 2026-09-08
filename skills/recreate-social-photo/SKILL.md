@@ -10,8 +10,6 @@ description: Recreate the composition, camera feel, lighting, color treatment, a
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: rose
 - Short description: Turn an everyday photo into a reference-led social photo.
-- Cover image: https://ai-image.weshop.com/desktop/coverImage/recreate-social-photo.png
-- Source images: https://ai-image.weshop.com/desktop/sourceImage/recreate-social-photo-1.png, https://ai-image.weshop.com/desktop/sourceImage/recreate-social-photo-2.png
 ## What this skill does
 - Maps source identity and reference visual grammar separately.
 - Recreates framing, pose energy, lens feel, light, grade, texture, and mood without copying reference identity.

@@ -10,8 +10,6 @@ description: Remove specified clutter from a room photograph with an AI-native c
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: green
 - Short description: Remove room clutter without redesigning the space.
-- Cover image: https://ai-image.weshop.com/desktop/coverImage/clean-room.png
-- Source images: https://ai-image.weshop.com/desktop/sourceImage/clean-room.png
 - Similar skills: remove-object, restyle-room
 ## What this skill does
 - Removes a declared clutter set as one coherent cleanup result.

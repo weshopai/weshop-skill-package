@@ -13,8 +13,6 @@ description: Create one wedding-style portrait of adults from supplied reference
 - Tone: rose
 - Short description: Create one wedding-style portrait of adults from supplied references while preserving both identities.
 
-- Cover image: https://ai-image.weshop.com/desktop/coverImage/make-wedding-photo.png
-- Source images: https://ai-image.weshop.com/desktop/sourceImage/make-wedding-photo-1.png, https://ai-image.weshop.com/desktop/sourceImage/make-wedding-photo-2.png
 ## What this skill does
 
 - Places supplied adults in a chosen wedding setup with controlled wardrobe, pose and venue.

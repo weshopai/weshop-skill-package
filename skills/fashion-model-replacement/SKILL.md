@@ -15,7 +15,6 @@ Produce one dressed-model image. Define the Skill by the replacement job and pre
 - Route label: WeShop AI Model or GPT Image 2
 - Tone: coral
 - Short description: Replace a fashion model while keeping the outfit intact.
-- Cover image: https://ai-image.weshop.com/desktop/coverImage/fashion-model-replacement.jpg
 - Similar skills: change-pose, virtual-try-on
 ## What this skill does
 

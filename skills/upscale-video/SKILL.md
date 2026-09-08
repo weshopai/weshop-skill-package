@@ -13,8 +13,6 @@ description: Increase supplied video resolution and clarity while preserving tim
 - Tone: green
 - Short description: Increase supplied video resolution and clarity while preserving timing, content, grain intent and natural detail.
 
-- Cover image: https://ai-image.weshop.com/desktop/coverImage/upscale-video.png
-- Cover motion: https://ai-image.weshop.com/desktop/coverVideo/upscale-video.mp4
 - Similar skills: add-video-effect, correct-video-color, restyle-video
 ## What this skill does
 

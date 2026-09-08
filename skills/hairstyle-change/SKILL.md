@@ -13,8 +13,6 @@ description: Replace only the hairstyle in one supplied portrait while preservin
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: rose
 - Short description: Preview one different hairstyle without changing identity.
-- Cover image: https://ai-image.weshop.com/desktop/coverImage/hairstyle-change.png
-- Source images: https://ai-image.weshop.com/desktop/sourceImage/hairstyle-change.png
 - Similar skills: change-bangs, hair-color-change, shave-head
 ## What this skill does
 

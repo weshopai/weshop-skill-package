@@ -10,8 +10,6 @@ description: Apply one controlled photographic color-and-texture treatment while
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: orange
 - Short description: Apply one filter without changing scene content.
-- Cover image: https://ai-image.weshop.com/desktop/coverImage/apply-photo-filter.png
-- Source images: https://ai-image.weshop.com/desktop/sourceImage/apply-photo-filter.png
 - Similar skills: remove-photo-filter, recolor-object
 ## What this skill does
 - Changes palette, tone curve, saturation, grain, bloom, and vignette as one treatment.

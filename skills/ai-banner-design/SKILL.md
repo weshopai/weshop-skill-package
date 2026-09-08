@@ -15,7 +15,6 @@ Research the placement before designing. Deliver one banner whose dimensions, sa
 - Route label: Research plus GPT Image 2 banner production
 - Tone: lime
 - Short description: Research and design channel-ready commercial banners.
-- Cover image: https://ai-image.weshop.com/desktop/coverImage/ai-banner-design.png
 - Similar skills: make-thumbnail, poster-design, product-detail-page
 ## What this skill does
 

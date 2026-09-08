@@ -10,8 +10,6 @@ description: Use for one supplied poster animated as a single continuous motion 
 - Route label: Final-lock-frame poster animation
 - Tone: purple
 - Short description: Animate an uploaded poster into one readable, full-frame motion poster.
-- Cover image: https://ai-image.weshop.com/desktop/coverImage/poster-motion.png
-- Cover motion: https://ai-image.weshop.com/desktop/coverVideo/poster-motion.mp4
 - Similar skills: brand-stream-mg, dot-matrix-brand-wordmark-motion, make-video-intro
 ## What this skill does
 - Analyzes poster layers, ratio, text hierarchy, and motion carriers.

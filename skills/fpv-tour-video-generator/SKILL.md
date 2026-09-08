@@ -12,8 +12,6 @@ description: Create one continuous scene-first FPV flythrough of a supplied arch
 - Route label: Continuous spatial FPV composition
 - Tone: purple
 - Short description: Produce one route-planned FPV flythrough with continuous spatial motion and landmark coverage.
-- Cover image: https://ai-image.weshop.com/desktop/coverImage/fpv-tour-video-generator.png
-- Cover motion: https://ai-image.weshop.com/desktop/coverVideo/fpv-tour-video-generator.mp4
 ## What this skill does
 
 - Separates scene/world references from an optional character identity guide and locks duration, ratio, landmarks, and flight constraints.

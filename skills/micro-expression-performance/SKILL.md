@@ -12,8 +12,6 @@ description: Use for a short character-performance shot where gaze, brows, mouth
 - Route label: Character acting-layer direction
 - Tone: purple
 - Short description: Direct a restrained emotional performance without changing the existing character, scene, dialogue, or camera intention.
-- Cover image: https://ai-image.weshop.com/desktop/coverImage/micro-expression-performance.png
-- Cover motion: https://ai-image.weshop.com/desktop/coverVideo/micro-expression-performance.mp4
 ## What this skill does
 
 - Converts an image, script beat, or emotion phrase into observable acting beats.

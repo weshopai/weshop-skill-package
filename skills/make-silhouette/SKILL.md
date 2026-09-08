@@ -10,8 +10,6 @@ description: Convert one named subject into a clean solid silhouette while prese
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: slate
 - Short description: Turn a subject into a recognizable silhouette.
-- Cover image: https://ai-image.weshop.com/desktop/coverImage/make-silhouette.png
-- Source images: https://ai-image.weshop.com/desktop/sourceImage/make-silhouette.png
 ## What this skill does
 - Isolates one target and converts its interior to a uniform fill.
 - Preserves gesture-defining contour details and optional negative spaces.

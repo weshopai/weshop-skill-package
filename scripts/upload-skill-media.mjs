@@ -61,13 +61,13 @@ const targetDefinitions = {
     bucket: process.env.WESHOP_COS_BUCKET_CN || "txt2img-1322216870",
     region: process.env.WESHOP_COS_REGION_CN || "ap-shanghai",
     prefix: process.env.WESHOP_COS_PREFIX_CN || process.env.WESHOP_COS_PREFIX || "desktop",
-    baseUrl: process.env.WESHOP_MEDIA_BASE_URL_CN,
+    baseUrl: process.env.WESHOP_MEDIA_BASE_URL_CN || "https://ai-image.weshop.com",
   },
   global: {
     bucket: process.env.WESHOP_COS_BUCKET_GLOBAL || "weshop-ai-image-va-1322216870",
     region: process.env.WESHOP_COS_REGION_GLOBAL || "na-ashburn",
     prefix: process.env.WESHOP_COS_PREFIX_GLOBAL || process.env.WESHOP_COS_PREFIX || "desktop",
-    baseUrl: process.env.WESHOP_MEDIA_BASE_URL_GLOBAL || process.env.WESHOP_MEDIA_BASE_URL,
+    baseUrl: process.env.WESHOP_MEDIA_BASE_URL_GLOBAL || process.env.WESHOP_MEDIA_BASE_URL || "https://ai-global-image.weshop.com",
   },
 };
 const secretId = process.env.TENCENTCLOUD_SECRET_ID;

@@ -13,8 +13,6 @@ description: Preview one supplied person with a natural bald or closely shaved s
 - Route label: GPT Image 2 consistency-sensitive edit
 - Tone: rose
 - Short description: Preview a natural bald or shaved-head appearance.
-- Cover image: https://ai-image.weshop.com/desktop/coverImage/shave-head.png
-- Source images: https://ai-image.weshop.com/desktop/sourceImage/shave-head.png
 - Similar skills: change-bangs, hairstyle-change, hair-color-change
 ## What this skill does
 
